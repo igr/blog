@@ -1,0 +1,13 @@
+baseURL = "https://oblac.rs/"
+languageCode = "en-us"
+title = "Oblac"
+theme = "journal"
+
+[Author]
+	name="igor"
+	homepage = "https://igo.rs/"
+
+[params]
+  description = "Blog meta description."
+  githubUsername = "igr"
+  tagline = "Blog. Kod. Razmišljanja. Stavovi."

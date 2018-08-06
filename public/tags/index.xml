@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Oblac</title>
+    <link>https://oblac.rs/tags/</link>
+    <description>Recent content in Tags on Oblac</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jul 2017 09:53:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://oblac.rs/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lično</title>
+      <link>https://oblac.rs/tags/li%C4%8Dno/</link>
+      <pubDate>Mon, 24 Jul 2017 09:53:22 +0000</pubDate>
+      
+      <guid>https://oblac.rs/tags/li%C4%8Dno/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
