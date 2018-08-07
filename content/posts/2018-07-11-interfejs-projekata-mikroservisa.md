@@ -1,7 +1,6 @@
 ---
 title: Interfejs projekata mikroservisa
 date: 2018-07-11T09:58:58+00:00
-author: oblac
 slug: interfejs-projekata-mikroservisa
 categories:
   - Razvoj

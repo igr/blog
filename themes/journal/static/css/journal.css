@@ -52,8 +52,7 @@ img {
 
 blockquote {
   padding: 1rem;
-  border-left: 5px solid #e5e5e5;
-  color: #686868;
+  border-left: 8px solid #e5e5e5;
   font-style: italic; }
   blockquote p {
     margin: 0; }
@@ -65,11 +64,11 @@ blockquote {
 
 a {
   border-bottom: 1px solid currentColor;
-  color: currentColor;
+  color: #bf2139;
   text-decoration: none; }
   a:hover {
-    border-bottom-color: currentColor;
-    color: #686868; }
+    border-bottom: 1px solid #fbfbfb;
+    color: #bf2139; }
 
 ol,
 ul {
@@ -95,7 +94,7 @@ abbr {
 kbd,
 code,
 pre {
-  font-family: '"Source Code Pro"', monospace; }
+  font-family: "Source Code Pro", monospace; }
 
 pre {
   max-width: 100%; }
@@ -110,6 +109,9 @@ article,
 section {
   display: block;
   margin-bottom: 1rem; }
+  article p,
+  section p {
+    line-height: 2rem; }
 
 h1 {
   font-size: 2.4rem;
@@ -124,7 +126,8 @@ h4,
 h5,
 h6 {
   margin: 0 0 .5rem;
-  font-family: "Josefin Sans", serif; }
+  font-family: "Josefin Sans", serif;
+  text-transform: uppercase; }
 
 h2 {
   font-size: 2rem; }
@@ -155,19 +158,27 @@ h6 {
   margin-bottom: 2rem; }
   .site-header h1,
   .site-nav h1 {
-    margin-bottom: .5rem; }
+    margin-bottom: .5rem;
+    border-left: 10px solid #bf2139;
+    padding-left: 10px;
+    padding-top: 10px; }
+  .site-header p,
+  .site-nav p {
+    color: #686868; }
 
 .site-nav a::before {
   content: '\2190';
   margin-right: .25rem; }
 
 .site-footer {
-  margin: 3rem 0 0;
-  font-size: .8125rem; }
+  margin: 5rem 0 2rem;
+  font-size: .75rem;
+  color: #686868; }
   .site-footer [itemprop="sameAs"] + [itemprop="sameAs"] {
     margin-left: .4rem; }
   @media screen and (min-width: 800px) {
     .site-footer {
+      margin-top: 3rem;
       margin-bottom: .5rem; } }
 
 .posts ol {
@@ -182,15 +193,22 @@ h6 {
       flex-direction: row; } }
 
 .posts time {
-  display: block; }
+  display: block;
+  color: #686868; }
   @media screen and (min-width: 800px) {
     .posts time {
       flex: 0 0 5rem; } }
   .posts time + a {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    font-family: "Josefin Sans", serif;
+    text-transform: uppercase; }
     @media screen and (min-width: 800px) {
       .posts time + a {
         margin-left: 2rem; } }
+
+.post .post-title {
+  margin-top: 80px;
+  letter-spacing: -2px; }
 
 .post .post-header {
   margin-bottom: 3rem; }
@@ -198,12 +216,104 @@ h6 {
 .post .post-date {
   display: block;
   margin: 0 0 1rem;
-  text-align: right; }
+  text-align: right;
+  color: #686868; }
 
 .hljs {
-  font-size: .875rem; }
+  font-size: .8rem; }
 
-p, li {
-  line-height: 2rem;
-  margin-bottom: 3rem;
+p,
+li {
+  line-height: 1.6rem;
   color: #444; }
+
+pre, table, p, li {
+  margin-bottom: 2rem; }
+
+table, td, th {
+  border-color: rgba(68, 68, 68, 0.3); }
+
+td, th {
+  padding: 10px 15px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  display: table-cell;
+  vertical-align: inherit; }
+
+caption, th {
+  text-align: left; }
+
+th {
+  font-weight: bold;
+  text-align: -internal-center; }
+
+thead {
+  background-color: #e5e5e5; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 1px solid;
+  border-left: 1px solid; }
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0; }
+
+.tags li {
+  float: left; }
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s; }
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px; }
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.tag:hover {
+  background-color: #bf2139;
+  color: white; }
+  .tag:hover a {
+    color: white; }
+
+.tag a {
+  color: #999;
+  font-size: 0.8rem;
+  border-bottom: none;
+  font-family: "Source Code Pro";
+  letter-spacing: -1px; }
+
+.tag a:hover {
+  color: white; }
+
+.tag:hover::after {
+  border-left-color: #bf2139; }
