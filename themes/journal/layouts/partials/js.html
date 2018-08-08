@@ -1,0 +1,10 @@
+
+  {{ partial "ga" . }}
+
+  <script src="{{ "js/highlight.pack.js" | relURL }}"></script>
+  <script>
+hljs.configure({
+  tabReplace: '    '
+})
+hljs.initHighlightingOnLoad();
+  </script>
