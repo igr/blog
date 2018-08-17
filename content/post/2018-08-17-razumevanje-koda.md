@@ -1,6 +1,6 @@
 ---
 title: Razumevanje koda
-date: 2018-08-17T21:04:18+00:00
+date: 2018-08-17T19:04:18+00:00
 slug: razumevanje-koda
 categories:
   - Razvoj
