@@ -1,10 +1,13 @@
       {{ if .IsHome -}}
       <header class="site-header">
-        <h1>{{ .Site.Title }}</h1>
-        <p>{{ .Site.Params.tagline }}</p>
+        <h1 id="title">{{ .Site.Title }}</h1>
+        <div class="tagline">{{ .Site.Params.tagline }}</div>
       </header>
-      {{- else -}}
+      {{ else }}
+      <header class="site-header-small">
+        <h1 id="title-small">{{ .Site.Title }}</h1>
+      </header>
       <nav class="site-nav">
-        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        <a href="{{ .Site.BaseURL }}">nazad</a>
       </nav>
       {{- end }}

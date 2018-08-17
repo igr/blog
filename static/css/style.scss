@@ -32,6 +32,7 @@ html {
 
 body {
   line-height: 1.6;
+  padding-bottom: 150px;
 }
 
 html,
@@ -166,6 +167,16 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+h1#title {
+  font-size: 3em;
+  letter-spacing: -7px;
+  color: #333;
+}
+h1#title-small {
+  font-size: 1.4em;
+  letter-spacing: -3px;
+  color: #666;
+}
 
 h2,
 h3,
@@ -222,25 +233,49 @@ h6 {
     color: $gray;
   }
 }
+.site-header-small {
+  @extend .site-header;
+  margin-bottom: 0.5rem;
+}
 
 .site-nav a::before {
   content: '\2190'; // left arrow
-  margin-right: .25rem;
+  margin-right: .2rem;
+}
+.site-nav {
+  font-size: 0.8em;
 }
 
-.site-footer {
-  margin: 5rem 0 2rem;
+footer {
+  margin: 0;
   font-size: .75rem;
   color: $gray;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #F0F0F0;
+  padding: 20px 0 10px 0;
 
   [itemprop="sameAs"] + [itemprop="sameAs"] {
     margin-left: .4rem;
   }
 
   @media screen and (min-width: $break-small) {
-    margin-top: 3rem;
-    margin-bottom: .5rem;
   }
+
+  #copyright {
+    font-size: 0.9em;
+    margin-top: 20px;
+    font-family: $monospace;
+    text-align: center;
+  }
+}
+
+.tagline {
+  color: #666;
+  font-size: 1.1em;
 }
 
 .posts {
@@ -413,19 +448,23 @@ table {
 }
 
 input {
-  font-family: $serif, serif;
+  font-family: $monospace;
   font-size: $fs;
-  border: 1px solid $text-color;
-  color: #999;
+  color: #666;
 }
 input:focus {
   border: 1px solid $red;
 }
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc;
+  opacity: 1; /* Firefox */
+}
 
 input[type=email] {
-  width: 80%;
+  width: 100%;
   padding: 10px;
+  border: 1px solid #aaa;
 }
-input[type=button] {
 
-}
+
+@import "button"
