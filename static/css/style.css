@@ -186,20 +186,25 @@ h6 {
   list-style: none; }
 
 .posts li {
-  margin-bottom: .5rem; }
+  margin-bottom: 1rem; }
   @media screen and (min-width: 800px) {
     .posts li {
       display: flex;
-      flex-direction: row; } }
+      flex-direction: row;
+      margin-bottom: .5rem; } }
 
 .posts time {
   display: block;
-  color: #686868; }
+  color: #686868;
+  font-size: 0.8em;
+  line-height: 0.9em; }
   @media screen and (min-width: 800px) {
     .posts time {
+      font-size: 1em;
+      line-height: inherit;
       flex: 0 0 5rem; } }
   .posts time + a {
-    margin-left: 1rem;
+    margin-left: 0rem;
     font-family: "Josefin Sans", serif;
     text-transform: uppercase; }
     @media screen and (min-width: 800px) {
@@ -317,3 +322,16 @@ table {
 
 .tag:hover::after {
   border-left-color: #bf2139; }
+
+input {
+  font-family: "Domine", serif;
+  font-size: 1.1rem;
+  border: 1px solid #444;
+  color: #999; }
+
+input:focus {
+  border: 1px solid #bf2139; }
+
+input[type=email] {
+  width: 80%;
+  padding: 10px; }

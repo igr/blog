@@ -1,5 +1,8 @@
   <article class="posts">
-    {{ range .Data.Pages.GroupByDate "2006" -}}
+
+    {{ $posts := where .Data.Pages "Section" "post" }}
+
+    {{ range $posts.GroupByDate "2006" -}}
     <section>
       <h2>{{ .Key }}</h2>
 

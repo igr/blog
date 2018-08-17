@@ -4,79 +4,32 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "3F6A06AA-1E70-4A2D-88E4-B2070BE7EF35"
+		"uuidString": "59D64884-3548-4A56-B230-3CE38C5837FE"
 		}
 	],
 "creatorBuild": "26667",
 "files": {
-	"\/.scss-lint.yml": {
-		"cB": 0,
-		"ft": 8192,
+	"\/highlight-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/.scss-lint.yml",
-		"oF": 0
-		},
-	"\/archetypes\/default.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/archetypes\/default.html",
+		"oAP": "\/highlight-min-min.css",
 		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
+		"oS": 3
 		},
-	"\/layouts\/404.html": {
-		"cB": 0,
-		"ft": 8192,
+	"\/highlight.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "\/layouts\/404.html",
-		"oF": 0
+		"oAP": "\/highlight-min.css",
+		"oF": 0,
+		"oS": 3
 		},
-	"\/layouts\/_default\/baseof.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/layouts\/_default\/baseof.html",
-		"oF": 0
-		},
-	"\/layouts\/_default\/list.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/layouts\/_default\/list.html",
-		"oF": 0
-		},
-	"\/layouts\/_default\/single.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/layouts\/_default\/single.html",
-		"oF": 0
-		},
-	"\/layouts\/partials\/bottom.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/layouts\/partials\/bottom.html",
-		"oF": 0
-		},
-	"\/layouts\/partials\/top.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/layouts\/partials\/top.html",
-		"oF": 0
-		},
-	"\/scss\/journal.scss": {
+	"\/style.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -84,358 +37,10 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/static\/css\/journal.css",
-		"oF": 3,
+		"oAP": "\/style.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/static\/android-icon-144x144.png": {
-		"ft": 32768,
-		"iS": 4934,
-		"oA": 0,
-		"oAP": "\/static\/android-icon-144x144.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/android-icon-192x192.png": {
-		"ft": 32768,
-		"iS": 5339,
-		"oA": 0,
-		"oAP": "\/static\/android-icon-192x192.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/android-icon-36x36.png": {
-		"ft": 32768,
-		"iS": 1367,
-		"oA": 0,
-		"oAP": "\/static\/android-icon-36x36.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/android-icon-48x48.png": {
-		"ft": 32768,
-		"iS": 1716,
-		"oA": 0,
-		"oAP": "\/static\/android-icon-48x48.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/android-icon-72x72.png": {
-		"ft": 32768,
-		"iS": 2033,
-		"oA": 0,
-		"oAP": "\/static\/android-icon-72x72.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/android-icon-96x96.png": {
-		"ft": 32768,
-		"iS": 2491,
-		"oA": 0,
-		"oAP": "\/static\/android-icon-96x96.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-114x114.png": {
-		"ft": 32768,
-		"iS": 3886,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-114x114.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-120x120.png": {
-		"ft": 32768,
-		"iS": 4030,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-120x120.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-144x144.png": {
-		"ft": 32768,
-		"iS": 4934,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-144x144.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-152x152.png": {
-		"ft": 32768,
-		"iS": 5194,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-152x152.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-180x180.png": {
-		"ft": 32768,
-		"iS": 7161,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-180x180.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-57x57.png": {
-		"ft": 32768,
-		"iS": 1755,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-57x57.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-60x60.png": {
-		"ft": 32768,
-		"iS": 1808,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-60x60.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-72x72.png": {
-		"ft": 32768,
-		"iS": 2033,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-72x72.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-76x76.png": {
-		"ft": 32768,
-		"iS": 2100,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-76x76.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon-precomposed.png": {
-		"ft": 32768,
-		"iS": 5913,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon-precomposed.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/apple-icon.png": {
-		"ft": 32768,
-		"iS": 5913,
-		"oA": 0,
-		"oAP": "\/static\/apple-icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/browserconfig.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/static\/browserconfig.xml",
-		"oF": 0
-		},
-	"\/static\/css\/highlight.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/static\/css\/highlight-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/static\/css\/journal.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/static\/css\/journal-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/static\/favicon-16x16.png": {
-		"ft": 32768,
-		"iS": 928,
-		"oA": 0,
-		"oAP": "\/static\/favicon-16x16.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/favicon-32x32.png": {
-		"ft": 32768,
-		"iS": 1253,
-		"oA": 0,
-		"oAP": "\/static\/favicon-32x32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/favicon-96x96.png": {
-		"ft": 32768,
-		"iS": 3357,
-		"oA": 0,
-		"oAP": "\/static\/favicon-96x96.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/favicon.ico": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/static\/favicon.ico",
-		"oF": 0
-		},
-	"\/static\/js\/highlight.pack.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/static\/js\/highlight.pack-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/static\/manifest.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/static\/manifest-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/static\/ms-icon-144x144.png": {
-		"ft": 32768,
-		"iS": 4934,
-		"oA": 0,
-		"oAP": "\/static\/ms-icon-144x144.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/ms-icon-150x150.png": {
-		"ft": 32768,
-		"iS": 5115,
-		"oA": 0,
-		"oAP": "\/static\/ms-icon-150x150.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/ms-icon-310x310.png": {
-		"ft": 32768,
-		"iS": 13181,
-		"oA": 0,
-		"oAP": "\/static\/ms-icon-310x310.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/ms-icon-70x70.png": {
-		"ft": 32768,
-		"iS": 1944,
-		"oA": 0,
-		"oAP": "\/static\/ms-icon-70x70.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/O.png": {
-		"ft": 32768,
-		"iS": 8915,
-		"oA": 0,
-		"oAP": "\/static\/O.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/static\/oblac.ico": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/static\/oblac.ico",
-		"oF": 0
-		},
-	"\/static\/oblac.sketch": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/static\/oblac.sketch",
-		"oF": 0
-		},
-	"\/theme.toml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/theme.toml",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -443,10 +48,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 555254627,
-	"displayValue": "journal",
-	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-ron",
+	"creationDate": 556144693,
+	"displayValue": "Blog CSS",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "meme-ariel",
 	"iconImageWasSetByUser": 1
 	},
 "projectSettings": {
