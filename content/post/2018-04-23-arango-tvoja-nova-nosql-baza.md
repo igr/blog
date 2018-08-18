@@ -13,7 +13,9 @@ tags:
   - razvoj
 ---
 
-Kada se pomene NoSQL baza, nekako uvek prvo pomislim na MongoDB; u sledećoj iteraciji razmišljanja pomislim na graf bazu Neo4j. Mongo odlično radi posao, Neo4j nisam još imao prilike da uposlim. Kako bilo, pomen za mene nove NoSQL baze izaziva prevrtanje očiju i uzdah: “ah, još jedna”. Šalu na stranu, u mnoštvu danas dostupnih tehnologija teško je pronaći dragulje.
+Kada se pomene NoSQL baza, nekako uvek prvo pomislim na MongoDB; u sledećoj iteraciji razmišljanja pomislim na graf bazu Neo4j. Mongo odlično radi posao, Neo4j nisam još imao prilike da uposlim. Kako bilo, pomen za mene nove NoSQL baze izaziva prevrtanje očiju i uzdah: "ah, još jedna". Šalu na stranu, u mnoštvu danas dostupnih tehnologija teško je pronaći dragulje.
+
+<!--more-->
 
 [ArangoDB](https://www.arangodb.com) je upravo takav izuzetak za koji mislim da zaslužuje pažnju. Reč je o tkzv. _multi-model_ bazi otvorenog koda: to znači da izvorno podržava _key/value_ zapise, dokumenta i grafove! Da, nije greška - u jednoj kutiji se nalaze tri motora. Tu nije kraj. Bazu krase [odlične performanse](https://www.arangodb.com/2018/02/nosql-performance-benchmark-2018-mongodb-postgresql-orientdb-neo4j-arangodb/) - mada da se razumemo, sigurno postoje slučajevi korišćenja kada neka druga baza preuzima tron. Konačno, sa bazom se priča kroz REST API, ali i kroz Foxx - javascript programski okvir koji daje potpun pristup funkcionalnostima. Poslednje što bih izdvojio iz moje kratkotrajne i burne veze sa ArangoDB: upiti se mogu pisati u jeziku koji liči na SQL: tkzv. AQL.
 
@@ -51,7 +53,7 @@ Izabrao sam da radim u JavaScript-u, radi jednostavnosti.
 
 Unos JSON podataka je prošao glatko. Slično kao i MongoDB, moguće je jednostavno proslediti ceo sadržaj ArangoDB kolekcije u jednoj liniji.
 
-### Web Interfejs
+### Web interfejs
 
 Prijatno me iznenadilo postojanje web interfejsa za ArangoDB. Startovanjem zvaničnog Docker imidža dobija se i web interfejs koji daje uvid u bazu, a nudi mogućnost i izvršavanja upita. To značajno olakšava rad i testiranje upita.
 
@@ -88,6 +90,6 @@ Svašta se vidi iz ovog koda. Priznajem, nije bilo lako doći do rešenja - no, 
 
 Isti primer, sa istim skupom podataka sam modelirao i na MongoDB, da bih uporedio i performanse. Isti MongoDB upit se izvršava za nekih 650ms; ArangoDB je to uradio za oko 580ms. Naravno, ne treba pridavati značaj konkretnim brojkama, niti je ovo nekakav ozbiljan test; merenje je samo ilustracija da iza ArangoDB postoji ozbiljna namera.
 
-## I Dalje...
+## I dalje...
 
 Priznajem, navukao sam se. Iako nisam isprobao sve što nudi, gledaću da ubuduće ArangoDB bude moj prvi izbor kod NoSQL baza.

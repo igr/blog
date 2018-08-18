@@ -13,6 +13,8 @@ tags:
 
 Postoji jedan primer softverskog sistema - ne znam bolji naziv koji uključuje i razvoj i procedure i infrastrukturu - koji me ne ostavlja ravnodušnim. Šta više, izdvojio sam jedan pasus izveštaja o prestanku rada tog sistema i njega držim kao podsetnik kako bi stvari trebalo da izgledaju. Te reči su mi uzor i vodilja. Daju nadu da je moguće dostići vanredno.
 
+<!--more-->
+
 Jula 2016. došlo je do prekida rada tog sistema usled softverske greške. [Izveštaj o incidentu](http://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016) počinje ovim pasusom:
 
 > On July 20, 2016 we experienced a 34 minute outage starting at 14:44 UTC. It took 10 minutes to identify the cause, 14 minutes to write the code to fix it, and 10 minutes to roll out the fix to a point where Stack Overflow became available again.

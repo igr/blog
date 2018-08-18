@@ -12,11 +12,14 @@ tags:
   - razvoj
   - xerox
 ---
+
 Uradimo sledeći ogled.
 
   + Uzmi olovku i parče hartije. Napiši nešto na papiru, nacrtaj.
   + Sada uzmi ciglu i priveži je za telo olovke.
   + Probaj da napišeš nešto.
+
+<!--more-->
 
 Identičan ogled je 1962. izveo [Douglas Engelbart](https://en.wikipedia.org/wiki/Douglas_Engelbart). Verovatno niste čuli za njega; on je samo jedan od najvećih tehnoloških vizionara, naročito na polju interakcije čoveka i kompjutera. Kako bilo, Daglas se pitao kako alatke _pospešuju_ ljudski intelekt; kako će izgledati kada u budućnosti budu postojale, citiram:
 
@@ -24,9 +27,9 @@ Identičan ogled je 1962. izveo [Douglas Engelbart](https://en.wikipedia.org/wik
 
 i kako će one uticati na naš rečnik, navike, edukaciju itd. Pošto razmišlja o tehnologiji budućnosti koja mu nije dostupna, Daglas ovim ogledom ilustruje suprotan pravac od pospešivanja: koliko se ‘kvarenjem’ alatke može otežati čoveku.
 
-Daglas u svojim istraživanjima zaključuje: alatke ne čine stvari samo “lakšim” (za upotrebu, korišćenje), već dozvoljavaju novi, do tada nezamisliv način razmišljanja i življenja.
+Daglas u svojim istraživanjima zaključuje: alatke ne čine stvari samo "lakšim" (za upotrebu, korišćenje), već dozvoljavaju novi, do tada nezamisliv način razmišljanja i življenja.
 
-## Švenk Na Razvoj Softver
+## Švenk na razvoj softvera
 
 Ova razmišljanja imaju veze i sa razvojem softvera. Programiranje je proces u kome čovek stvara i prenosi instrukcije mašini da bi ova izvršila predviđeni posao. Sve ostalo - i podvlačim: sve - predstavlja alat. I važno ga je tako označiti.
 

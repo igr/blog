@@ -16,7 +16,9 @@ tags:
 
 Ako bi trebalo da izaberem jednu stvar koju smatram neophodnom za efikasan tim, imao bih lak posao. Neko vreme već (godine su u pitanju) držim da i postoji _samo jedna_ ‘supstanca’ koja je od značaja za tim. Kada god pričam na tu temu sagovornici uvažavaju stav, ali ga često uzimaju zdravo za gotovo; i time mu umanjuju na značaju.
 
-Naravno, ja nemam argumente kojima bih potvrdio moje ‘mudrovanje’. Sva sreća, jedna kalifornijska firma ih ima. Tokom perioda od dve godine sproveli su studiju (simbolično nazvanu “Projekat Aristotel”) koja je proučavala 180 timova. Razumeli su da čak i kada je tim sastavljan od najboljih to ne garantuje da on funkcioniše na pravi način.
+<!--more-->
+
+Naravno, ja nemam argumente kojima bih potvrdio moje ‘mudrovanje’. Sva sreća, jedna kalifornijska firma ih ima. Tokom perioda od dve godine sproveli su studiju (simbolično nazvanu "Projekat Aristotel") koja je proučavala 180 timova. Razumeli su da čak i kada je tim sastavljan od najboljih to ne garantuje da on funkcioniše na pravi način.
 
 Dotična firma ne radi stvari tek tako. Tokom studije su definisali šta znači efikasan tim, sproveli pregršt intervjua i analizirali 250+ različitih atributa timova koristeći preko 35 različitih statističkih metoda sa preko stotinu varijabli.
 

@@ -14,10 +14,12 @@ tags:
 
 Pomalo sam razočaran prezentacijama koje sam imao prilike da ispratim nedavno na par različitih konferencija. Većina predavanja je pratila sledeći obrazac:
 
-  * predstavljanje predavača, firme u kojoj radi i sl.;
-  * (dugačak) uvod u problem;
-  * doticanje suštine prezentacije;
-  * kotrljanje ka završetku.
+<!--more-->
+
+  + predstavljanje predavača, firme u kojoj radi i sl.;
+  + (dugačak) uvod u problem;
+  + doticanje suštine prezentacije;
+  + kotrljanje ka završetku.
 
 Predvidivo. Dosadno.
 
@@ -25,7 +27,7 @@ Pre nego što nastavim dalje, da naglasim sledeće: postoji razlika kada se prez
 
 Vraćamo se temi.
 
-## Refaktoring Prezentacije
+## Refaktoring prezentacije
 
 Dragi prezenteru...
 
@@ -35,7 +37,7 @@ Prezentacija nije predavanje! Nismo u školi, pa da treba da praviš uvod. Oni k
 
 Ako gradiš prezentaciju tako da postepeno ide ka vrhuncu teme o kojoj pričaš, nešto grešiš. Publika nema strpljenja da prati put koji izgleda da je logičan. Pokazano je da je fokus ljudskog uma kratak; u vreme mobilnih uređaja je još kraći; reč je o svega par minuta. Zato odmah iznesi ključne stvari. Što pre iznesi premise i ponavljaj ih tokom prezentacije.
 
-Ljude zanima praktično. Zanima ih zašto si nešto uradio ovako, a ne onako. Odgovori na što više pitanja prezentacijom: više na “zašto”, a ukratko na “kako”. Podeli ideje iza rešenja. Pokaži i šta ne radi. Daj poređenja. Budi inženjer.
+Ljude zanima praktično. Zanima ih zašto si nešto uradio ovako, a ne onako. Odgovori na što više pitanja prezentacijom: više na "zašto", a ukratko na "kako". Podeli ideje iza rešenja. Pokaži i šta ne radi. Daj poređenja. Budi inženjer.
 
 Prezentacija je priča. Priča mora da budi emocije. Nasmej, rastuži, ostavi bez daha... Ako tvoja prezentacija ne učini nešta od toga, onda je prolazna.
 
@@ -45,7 +47,7 @@ Na zaboravi: većina slušaoca zapravo jedva čeka da završiš prezentaciju. Pr
 
 Završi prezentaciju u stilu: pozovi na akciju.
 
-## Prezentacija Je Sadržaj
+## Prezentacija je sadržaj
 
 Verovatno zvučim kao da pametujem; ali sam malo umoran od prezentacija za koje se ispostavi da su gubljenje vremena. Da, siguran sam da je većina mojih prezentacija bila podjednako dosadna; ali naučio sam nešto usput.
 

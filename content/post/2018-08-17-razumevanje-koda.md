@@ -12,6 +12,8 @@ tags:
 
 Svi mi koji razvijamo kod se zavaravamo da veći deo vremena provodimo u _pisanju_ koda. Istina je drugačija: veći deo vremena provodimo u čitanju koda - tačnije, u pokušaju da _razumemo_ kod.
 
+<!--more-->
+
 Negde sam pronašao i sledeće metrike:
 
 + na modifikovanje koda se potroši **5x** više vremena nego na pisanje novog koda; i

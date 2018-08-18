@@ -16,9 +16,11 @@ tags:
 
 _dotfiles_ je ime za skup konfiguracionih fajlova na linux operativnim sistemima. Konfiguracija najčešće uključuje podešavanja _shell_-a, skriptove, manje alate i sl. Konfiguracioni fajlovi se nalaze mahom u `$HOME` folderu.
 
+<!--more-->
+
 Problem sa konfiguracijom je njeno čuvanje i sinhronizacija sa drugim računarima. `$HOME` folder sadrži puno ostalih foldera i fajlova, te ih nije lako prosto backup-ovati ili sinhronizovati. Potrebno je sačuvati samo određene fajlove i foldere koji čine konfiguraciju, a sve ostalo prosto ignorisati – što ispada da nije tako trivijalno za sisteme za sinhronizaciju (Dropbox, Resillo Sync).
 
-## Upoznajte Homera
+## Upoznajte homera
 
 **Homer** je procedura koju koristim da čuvam konfiguracione fajlove na GitHub-u. Koristi se jedino `git`.
 
@@ -67,7 +69,7 @@ homer checkout
 
 Slično kao na početku, sa tom razlikom da se repo sada klonira. Komanda `checkout` može da pravi problema ukoliko postoje lokalni fajlovi koji su takođe prisutni i u repo-u.
 
-### Homer Na Dan
+### Homer na dan
 
 Raditi sa Homerom je jednostavno.
 

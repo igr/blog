@@ -12,6 +12,8 @@ tags:
 ---
 Java ima tih nekih izluđujućih momenata. Konverzija liste u niz je jedan od njih. Uobičajeni način na koji sam do sada radio bio je sledeći:
 
+<!--more-->
+
 ```java
 List<Foo> list;
 ...

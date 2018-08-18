@@ -10,7 +10,11 @@ tags:
   - windows
 ---
 
-Bilo je vreme kada sam prilično vladao Windows platformom i bio upućen u mnoge detalje i specifičnosti operativnog sistema (ko se još seća [BOZOSLIVEHERE](https://blogs.msdn.microsoft.com/oldnewthing/20031015-00/?p=42163)?). U to doba sam pravio male Windows aplikacije u čistom C-u (ponekad i u asembleru). Jedna od tih aplikacija je i **DM2** (_DialogMate2_). Reč je o miksu fukncionalnosti (za šta sam izgleda [talentovan](http://jodd.org)🙂 koje se najviše tiču upravljana prozorima aplikacija, prioritetom procesa, unapređenjem dijaloga za otvaranje i snimanje fajlova itd.; a kako je program bio proširiv _pluginovima_, mogao je, na kraju, da radi svašta nešto. Funkcionalnost na koju sam ponosan je tkzv. _floating windows_, jedinstveni način minimizacije prozora u male, transparentne ikone koje se slobodno razmeštaju po ekranu; što je, bar meni, značajno lakše za svakodnevni rad nego minimizacija u taskbar. Zanimljivo je da je ovaj koncept prvi put viđen u **DM2** i nikada posle.
+Bilo je vreme kada sam prilično vladao Windows platformom i bio upućen u mnoge detalje i specifičnosti operativnog sistema (ko se još seća [BOZOSLIVEHERE](https://blogs.msdn.microsoft.com/oldnewthing/20031015-00/?p=42163)?). U to doba sam pravio male Windows aplikacije u čistom C-u (ponekad i u asembleru). Jedna od tih aplikacija je i **DM2** (_DialogMate2_).
+
+<!--more-->
+
+Reč je o miksu fukncionalnosti (za šta sam izgleda [talentovan](http://jodd.org)🙂 koje se najviše tiču upravljana prozorima aplikacija, prioritetom procesa, unapređenjem dijaloga za otvaranje i snimanje fajlova itd.; a kako je program bio proširiv _pluginovima_, mogao je, na kraju, da radi svašta nešto. Funkcionalnost na koju sam ponosan je tkzv. _floating windows_, jedinstveni način minimizacije prozora u male, transparentne ikone koje se slobodno razmeštaju po ekranu; što je, bar meni, značajno lakše za svakodnevni rad nego minimizacija u taskbar. Zanimljivo je da je ovaj koncept prvi put viđen u **DM2** i nikada posle.
 
 Iako se aplikacija odavno ne razvija, dobijam informacije da se i dalje koristi; nedavno je brojka preuzimanja prešla vrednost od 250.000. Priznajem da sam potpuno zaboravio na nju i da nije bilo nedavnog neobično srdačnog pisma jednog od korisnika tako bi se i nastavilo. To me je sve pokrenulo da prebacim sors na [Github](https://github.com/igr/dm2) u nadi da će se naći neko bi nastavio razvoj, ali i da napišem ovih par linija.
 
@@ -28,7 +32,7 @@ Ne sećam se tačno kako sam došao do prvih korisnika. Da budem iskren, aplikac
 
 Zanimljivo je kako _open-source_ koncept može da zavara: čini vam se da kada objavite nešto pod OS licencom to znači da će se naći mnogo onih koji bi se aktivno bavili projektom i pomagali vam. Nažalost, ovo se retko dešava; _open-source_ je zapravo drugi naziv za samotne noći provedene sa računarom:) U slučaju **DM2** je bilo korisnika koji su slali manje ispravke, ali je većina razvoja bila na meni. Sve dok se nije pojavio **flyfancy**, čovek za koga nikada nisam saznao ko je i šta je i čime se bavi; sem da je iz Kine. On je uskočio u projekat i značajno ga unapredio, toliko da ga danas smatram ko-autorom, iako je došao u poslednjoj četvrtini.
 
-Raditi sa kineskim programerima zahteva izvesnu dozu... imaginacije 🙂 Ako ne vladaju engleskim jezikom kako treba, ponekada bude teško protumačiti “šta je pisac hteo da kaže”. Sva sreća, sa kodom nije bilo takvih prepreka, pa smo lepo gradili našu aplikaciju. Negde 2007. godine smo doživeli bum od 10.000 preuzimanja, što je bilo lepo videti.
+Raditi sa kineskim programerima zahteva izvesnu dozu... imaginacije 🙂 Ako ne vladaju engleskim jezikom kako treba, ponekada bude teško protumačiti "šta je pisac hteo da kaže". Sva sreća, sa kodom nije bilo takvih prepreka, pa smo lepo gradili našu aplikaciju. Negde 2007. godine smo doživeli bum od 10.000 preuzimanja, što je bilo lepo videti.
 
 ## Klon
 
@@ -38,7 +42,7 @@ Raditi sa kineskim programerima zahteva izvesnu dozu... imaginacije 🙂 Ako ne 
 
 Jedina stvar koja me je pogodila je bila kada je časopis [Svet Kompjutera](http://www.sk.rs/) objavio mali prikaz upravo gore pomenutog klona **DM2**. Prilično slepo (i naivno) verujem da bi mi sami trebalo da podržavano sve što nastaje lokalno, a ima nekog smisla. Pisao sam im u nadi da će ispraviti grešku u sledećem broju, bar nekom fusnotom, čime bi, eto, ukazali na program nastao na našim prostorima. Do toga nikada nije došlo. Tja.
 
-## I Na Kraju, Kraj
+## I na kraju, kraj
 
 Kako su paralelno rasla moja interesovanja za druge oblasti softverskog inženjerstva, rad na **DM2** se usporio i u jednom trenutku je potpuno obustavljen. No, **DM2** je nastavio da živi takav, kakav je; i čak se i dan-danas, toliko godina kasnije, preuzima i koristi. Ja odavno ne koristim Windows platformu tako da nemam ni načina da nastavim bilo kakav razvoj. Ko zna, možda će sa prebacivanjem na Github doći do neke promene.
 

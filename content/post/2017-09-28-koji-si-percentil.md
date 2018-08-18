@@ -17,9 +17,11 @@ tags:
 
 Puštanje u produkciju je za koji dan. Sve radi kao podmazano. Ostalo je još da izmeriš vreme odziva aplikacije na saobraćaj koji je klijent naveo u zahtevima. Koristiš najbolji alat za generisanje saobraćaja; beležiš vreme odziva transakcija u fajl. Nakon par sati, vraćaš se i izračunavaš srednje vreme odziva aplikacije. Ispod je vrednosti klijentovog zahteva. Zadovoljno potvrđuješ da je sve spremno.
 
+<!--more-->
+
 Dan nakon puštanja aplikacije u produkciju, ona prestaje da radi. Odziv je nemoguće veliki. Gde li si pogrešio, pitaš se?
 
-## Prokletstvo Sredine
+## Prokletstvo sredine
 
 Reč je o _srednjoj vrednosti_. Srednja vrednost **ne** oslikava udruženo ponašanje transakcija. Ako se bavimo analizom odziva sistema, gotovo nikada ne treba da se uzmemo u obzir srednju vrednost. Zapravo, mislim da je srednja vrednost jedna od najbanalnijih ocena skoro pa svakog uzorka, te svako merenje/istraživanje koje za rezultat isključivo nudi srednju vrednost ne uzimam za ozbiljno.
 
@@ -57,13 +59,13 @@ Neka se sada 98-i percentil uspori sa 1s na 1.5s, dok 95-ti percentil ostane sta
 
 Aplikacija je spora? Meri i prati 90-ti percentil i optimizuj aplikaciju tako da se on smanji. Želiš da povećaš protok? Smanji 75-ti percentil, a prati da se 90-ti percentil ne pogorša.
 
-Obrati pažnju na “dugačke repove”. Često se aplikacije dobro ponašaju do 90-tog percentila, dok značajno uspore na 98-om percentilu, čak i za nekoliko redova veličine. Ove transakcije mogu pod određenim uslovima da dovedu do zagušenja, ukoliko se zadesi da se uzastopno pozivaju.
+Obrati pažnju na "dugačke repove". Često se aplikacije dobro ponašaju do 90-tog percentila, dok značajno uspore na 98-om percentilu, čak i za nekoliko redova veličine. Ove transakcije mogu pod određenim uslovima da dovedu do zagušenja, ukoliko se zadesi da se uzastopno pozivaju.
 
 ## Pažljivo!
 
 Kao i sa svime, i sa percentilima se može preterati. Najčešća greška je da se računa srednja vrednost percentila - to, prosto, ne znači ništa. Ljudi često skladište merenja (na pr.: stanje sistema na svakih 5 sekundi) i teže da kasnije izračunavaju srednje vrednosti ovih rezultata. Najlakši način da pokažemo besmislenost ovog postupka su nulti i stoti percentil. Neka smo, dakle, merili, 100-ti percentil na svakih 5 sekundi tokom perioda od 5000 sekundi. Da li nam srednja vrednost skupa od 1000 izmerenih maksimuma može odgovoriti na pitanje koje je najveće vreme odziva? Ne, jer je najveće vreme odziva zapravo maksimum ovog skupa, a ne njegova srednja vrednost.
 
-Sledeći problem je premali uzorak, na primer “prozor” od samo 500 transakcija pri saobraćaju od 1000 poziva u sekundi. Slično, računanje percentila pretpostavljajući normalnu raspodelu je takođe pogrešno (osim ukoliko se zaista ne ustanovi da je raspodela normalna, što često ovde nije slučaj).
+Sledeći problem je premali uzorak, na primer "prozor" od samo 500 transakcija pri saobraćaju od 1000 poziva u sekundi. Slično, računanje percentila pretpostavljajući normalnu raspodelu je takođe pogrešno (osim ukoliko se zaista ne ustanovi da je raspodela normalna, što često ovde nije slučaj).
 
 ## Alat
 

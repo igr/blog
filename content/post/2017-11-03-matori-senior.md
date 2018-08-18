@@ -12,7 +12,9 @@ tags:
   - zreo
 ---
 
-Puno je oglasa koje traže “senior” programere. Smeta mi malo ta odrednica, jer više ukazuje na starosnu kategoriju. Šta je to zapravo senior?
+Puno je oglasa koje traže "senior" programere. Smeta mi malo ta odrednica, jer više ukazuje na starosnu kategoriju. Šta je to zapravo senior?
+
+<!--more-->
 
 Da li postaješ senior posle 5 godina rada u struci? Možda 10? Da li si senior ako si samo mator? Da li postaješ senior ranije ukoliko kidaš Spring ili React ili šta-god-da-je-aktuelno? Da li senior znači da si vodio projekat? Da li se jednostavno probudiš jednog dana kao senior? Ili postaješ tako što promeniš posao i dobiješ novu titulu?
 

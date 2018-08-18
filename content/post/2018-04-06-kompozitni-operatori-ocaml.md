@@ -12,6 +12,8 @@ tags:
 
 U verziji 4 OCaml uvodi dva kompozitna operatora koja brzo nađu svoju primenu. Posebno je interesantno kako nešto tako jednostavno značajno doprinosi čitkijem kodu.
 
+<!--more-->
+
 ## @@
 
 _Application operator_ je definisan kao:

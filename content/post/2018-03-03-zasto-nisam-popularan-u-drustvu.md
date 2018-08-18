@@ -13,7 +13,9 @@ tags:
 
 Javno diskutovati o nečemu nije baš šetnja po prolećnoj livadi. Čak i kada prevaziđeš iracionalan strah da ispadneš kompletan idiot, postoji nešto u razmeni mišljenja što mi stvara nelagodu.
 
-Nedorečenost. Ad-hoc diskusija je, možda, u redu kada je grupa manja i prisnija; u većoj grupi postaje neefikasna. Saopštavanje ideje uopšte nije jednostavno - naročito ako je to prvi put da si u prilici da diskutuješ na zadatu temu. Često osećam kako stvari o kojima diskutujemo nisu dovoljno “skuvane” da se plašim da ne postoji opravdanje za bilo koju nestruktuiranu i nepripremljenju diskusiju sa puno učesnika. (Sva sreća pa postoje [forme](http://www.liberatingstructures.com) efikasnije diskusije.)
+<!--more-->
+
+Nedorečenost. Ad-hoc diskusija je, možda, u redu kada je grupa manja i prisnija; u većoj grupi postaje neefikasna. Saopštavanje ideje uopšte nije jednostavno - naročito ako je to prvi put da si u prilici da diskutuješ na zadatu temu. Često osećam kako stvari o kojima diskutujemo nisu dovoljno "skuvane" da se plašim da ne postoji opravdanje za bilo koju nestruktuiranu i nepripremljenju diskusiju sa puno učesnika. (Sva sreća pa postoje [forme](http://www.liberatingstructures.com) efikasnije diskusije.)
 
 Čemu onda pribegavam? Da budem nepopularan: onaj tamo što stalno nešto, jelte.
 

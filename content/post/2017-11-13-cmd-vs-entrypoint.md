@@ -11,6 +11,8 @@ tags:
 
 Stvari su pomalo konfuzne kada su u pitanju ove dve `Dockerfile` instrukcije vrlo slične namene. Hajde da pokušam da ih pojasnim.
 
+<!--more-->
+
 ## Pojedinačno
 
 Obavezno je da se definiše bar jedna od ove dve instrukcije. Mogu i obe, ali ne može da ne bude ni jedne. Prosto, moramo reći Dockeru šta se startuje kada se kreira kontejner.
@@ -120,7 +122,7 @@ docker run foo [nova_cmd] [arg1] [arg2]
 
 Očigledno da je zamena `CMD` lakša i intuitivnija.
 
-## Kada Šta Koristiti?
+## Kada šta koristiti?
 
 Koristi `ENTRYPOINT` ako ne želiš da korisnici menjaju proces koji se startuje sa kontejnerom. Dodaj `CMD` za podrazumevani argument. Na primer:
 

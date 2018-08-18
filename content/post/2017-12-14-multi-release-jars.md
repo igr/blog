@@ -13,6 +13,8 @@ tags:
 
 Sa Javom 9 dolazi i [Multi-Release JAR Files](http://openjdk.java.net/jeps/238) specifikacija. Reč je o dodatnoj osobini JAR fajlova da podržavaju klase namenjene različitim verzijama Java platforme.
 
+<!--more-->
+
 Primer strukture MRJAR-a je dovoljan za razumevanje ove specifikacije:
 
     Foo.class
@@ -29,7 +31,7 @@ Kada se MRJAR koristi na novijem JDK (od verzije 9), dozvoljena je zamena bilo k
 
 ## Priprema
 
-Da bi napravili MRJAR, prvo se mora “uključiti” ova osobina u `MANIFEST.MF`:
+Da bi napravili MRJAR, prvo se mora "uključiti" ova osobina u `MANIFEST.MF`:
 
     Multi-Release: true
 
@@ -59,4 +61,4 @@ Da. Da ponovim još jednom ako to nije jasno: testovi koji zavise od implentacij
 
 Biću pomalo grub: ovaj primer specifikacije (koji se kuva još od 2014.) je dobra ilustracija _nemaštovitosti_ kompanije koja je preuzela razvoj Jave.
 
-<a spellcheck="false" href="http://bugs.java.com/view_bug.do?bug_id=8193346">bug report</a>
+[bug report](http://bugs.java.com/view_bug.do?bug_id=8193346)

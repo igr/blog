@@ -19,6 +19,8 @@ tags:
 ---
 Razvoj softvera se odavno prelio iz programerskog kruženja (IDE) u stari, dobri _shell_ . Web aplikacije, REST interfejsi, Docker, git... dobar deo vremena provodim u CLI. [bash](https://www.gnu.org/software/bash/) i [zsh](http://www.zsh.org/) su moj izbor. Evo nekoliko baš sjajnih alata koji su neizostavan deo većine mojih dnevnih _shell_ avantura.
 
+<!--more-->
+
 ## HTTPie
 
 Stari, dobri [curl](https://curl.haxx.se/) je našao zamenu! Iako je `curl` gotovo standardni alat za svaki rad iz CLI sa resursima na mreži, nikada mi nije potpuno ‘legao’. Moćan je, bez svake sumnje, no kod korišćenja mi svako malo nešto zasmeta, naročtio kada se JSON podaci šalju tamo-vamo.
@@ -39,7 +41,7 @@ Danas gotovo sve komunicira JSON porukama, koje kad-tad treba parsirati. Tu viš
 http $URL/v2/posts | jq '[.[] | {title: .title.rendered, date: .date_gmt}] | sort_by(.date) | reverse'
 ```
 
-HTTP poziv vraća listu članaka. `jq` prvo mapira svaki ogromni objekat u jednostavniji, sa samo dva ključa, zatim tako dobijenu listu sortira po datumu. Ovo je tek delić mogućnosti, prosto je nemoguće sve ovde ukratko opisati. Još jedna sjajna stvar je [“igralište”](https://jqplay.org/#), gde se `jq` može isprobati uživo.
+HTTP poziv vraća listu članaka. `jq` prvo mapira svaki ogromni objekat u jednostavniji, sa samo dva ključa, zatim tako dobijenu listu sortira po datumu. Ovo je tek delić mogućnosti, prosto je nemoguće sve ovde ukratko opisati. Još jedna sjajna stvar je ["igralište"](https://jqplay.org/#), gde se `jq` može isprobati uživo.
 
 ## Ag
 

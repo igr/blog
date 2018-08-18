@@ -12,6 +12,8 @@ tags:
 
 Kada se jednom zaustave i uklone svi Docker kontejneri:
 
+<!--more-->
+
 ```bash
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)

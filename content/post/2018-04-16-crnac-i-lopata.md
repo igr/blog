@@ -17,7 +17,9 @@ tags:
 
 Kada sam bio klinac, povremeno sam pomagao komšiji - on je bio Pravi Programer, sve sa velikim početnim slovima. To je bilo vreme modema, DOS-a, VisualBasic-a i dBASE-a; sada sam sigurno rastužio mlade čitateljke, ali bitno je za priču. Komšija je radio na informacionom sistemu koji se koristio od strane građevinskih firmi. Ja sam tu uskakao uglavnom da mu ‘zaobiđem’ po koju softversku zaštitu; pa smo tako često pričali o svačemu u vezi softvera i programiranja.
 
-Jednom mi je tako ispričao sledeću priču. Pošto je softver koji je razvijao imao veze sa građevinstvom, dešavalo se da putuje na razne lokacije gde su klijenti izvodili radove. Jednom prilikom se zadesio u nekoj od afričkih zemalja. Dok je tako boravio na gradilištu, primetio je crnca, radnika, kako sedi pored druma i ne radi ama baš ništa. Komšiji to nije bilo sasvim za pravo, pa mu je prišao i upitao ga zašto dangubi. “Lopata mi je pukla”, odgovorio je radnik, “nemam čime da nastavim da kopam”. Komšija je bio zatečen - u trenutku nije znao kako da se postavi. Zatim ga je uzeo za ruku i odveo do skladišta (koje je obojci bilo dobro poznato); tu su zajedno zadužili novu lopatu. Radnik se vratio na posao kao da ništa nije bilo.
+<!--more-->
+
+Jednom mi je tako ispričao sledeću priču. Pošto je softver koji je razvijao imao veze sa građevinstvom, dešavalo se da putuje na razne lokacije gde su klijenti izvodili radove. Jednom prilikom se zadesio u nekoj od afričkih zemalja. Dok je tako boravio na gradilištu, primetio je crnca, radnika, kako sedi pored druma i ne radi ama baš ništa. Komšiji to nije bilo sasvim za pravo, pa mu je prišao i upitao ga zašto dangubi. "Lopata mi je pukla", odgovorio je radnik, "nemam čime da nastavim da kopam". Komšija je bio zatečen - u trenutku nije znao kako da se postavi. Zatim ga je uzeo za ruku i odveo do skladišta (koje je obojci bilo dobro poznato); tu su zajedno zadužili novu lopatu. Radnik se vratio na posao kao da ništa nije bilo.
 
 Komšija je tada uzdahnuo i rekao mi:
 
@@ -27,4 +29,4 @@ Komšija je tada uzdahnuo i rekao mi:
 
 Imam više pitanja nego odgovora.
 
-Šta ti uradiš kada ti “pukne lopata”?
+Šta ti uradiš kada ti "pukne lopata"?

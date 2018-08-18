@@ -14,17 +14,19 @@ tags:
   - softver
 ---
 
-“Dakle, šta je vaša namera?”
+"Dakle, šta je vaša namera?"
+
+<!--more-->
 
 Trojica momaka kojima upućeno pitanje su ostali bez reči. Upravo su primili negativnu kritiku za pilot-projekat na kome je firma radila s velikim entuzijazmom i - očekivanjima. Razarajuća kritika nije došla od bilo koga; nema se puno prilika u životu sresti s ljudima čija dela nadmašuju mnoge.
 
 Jedan od momaka je odgovorio:
 
-“Pa, želeli smo da napravimo mašinu koja će znati da crta i slika kao što to ume čovek”.
+"Pa, želeli smo da napravimo mašinu koja će znati da crta i slika kao što to ume čovek".
 
 Muk. Kamera zumira lice njihovog sagovornika. [Hayao Miyazaki](https://en.wikipedia.org/wiki/Hayao_Miyazaki) ne progovara. Njegove reči i dalje odzvanjaju tišinom.
 
-“Duboko verujem da je ovo uvreda za život sam po sebi”.
+"Duboko verujem da je ovo uvreda za život sam po sebi".
 
 ## Zabrinutost
 
@@ -40,7 +42,7 @@ Jer mi smo ipak samo ljudi. Neophodnost interakcije, spontanosti, nepredvidivost
 
 Apokalipsa nije uništenje ljudske rase od strane robota. Naše _prepuštanje_ mašinama to jeste.
 
-## Zaboravljena Vizija
+## Zaboravljena vizija
 
 Šta smo to zaboravili usput?
 

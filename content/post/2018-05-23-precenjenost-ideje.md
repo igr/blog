@@ -8,7 +8,10 @@ tags:
   - ideja
   - razvoj
 ---
+
 Ne zavaravajte se: ideje ne vrede.
+
+<!--more-->
 
 Možete mi dati kilo jabuka i šumu, neću prokljuviti gravitaciju. Pokušaš li me ubediti da platforma na kojoj korisnici ostavljaju komentare ograničene dužine ima smisla, nasmejao bih ti se u lice. Praviš igricu u kojoj bacaš ptice na prasiće, lepo, zaobiđi me.
 

@@ -13,7 +13,9 @@ tags:
 
 Brutalni zakon kaže: onaj ko te kupi, tvoj je vlasnik.
 
-Multi-nacionalne kompanije ovo nazivaju “profesionalnim”.
+<!--more-->
+
+Multi-nacionalne kompanije ovo nazivaju "profesionalnim".
 
 > Klijent je kralj!
 
@@ -25,7 +27,7 @@ Da li je kralj go?
 
 Voleo bih da je neko poznati rekao sledeće:
 
-> Napredak leži u promeni iz “ZA” u “SA”.
+> Napredak leži u promeni iz "ZA" u "SA".
 
 Stanimo ovde. Da razmislimo.
 

@@ -14,6 +14,8 @@ tags:
 
 Tražimo seniora da se pridruži našem super-kul timu. Treba nam neko ko ima strast prema kodiranju i želi da napravi razliku.
 
+<!--more-->
+
 Prijavljeni mora da bude samo-motivisan, da izdržava pod pritiskom, ima sposobnost za multitasking i pravi jasan i efikasan korisnički interfejs.
 
 Ovo je sjajna prilika za učenje i brz napredak u dinamičnoj kompaniji. Idealan posao za perspektivne osobe.
@@ -47,7 +49,7 @@ Ne obećavaj stvari kao što su napredak i prilike za učenje, koje ne možeš t
 
 Kaži mi ovo:
 
-  * Nemoj da budeš “hard-worker” - budi lenj, automatizuj gluposti, budi precizan u izradi i idi ranije kući.
+  * Nemoj da budeš "hard-worker" - budi lenj, automatizuj gluposti, budi precizan u izradi i idi ranije kući.
   * Mrzi pritisak i kratke rokove - napravi plan i vrati (im) pritisak tamo odakle je došao.
   * Nosi se sa stresom tako što ga nećeš stvarati.
   * Uči sve vreme, ali detaljno. Nikako brzo.
@@ -57,7 +59,7 @@ Kaži mi ovo:
 
 I na posletku: tehnologija je samo sredstvo, alat. Koncept je ono što želiš da poznajem.
 
-## Šta Nedostaje?
+## Šta nedostaje?
 
 Kako vreme odmiče, sve mi se više čini da postoji **samo jedna** stvar koji bih tražio od kandidata.
 

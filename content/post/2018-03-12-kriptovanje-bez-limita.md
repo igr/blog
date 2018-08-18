@@ -17,7 +17,9 @@ tags:
   - razvoj
 ---
 
-Java odavno dolazi sa setom kripto-algoritama; interfejsi i implementacije su sadržane u “_Java Cryptography Extension_” (JCE) celini koja je sastavni deo JRE-a. Tu se mogu naći algoritmi za enkripciju, generisanje ključeva, heševa, potpisa itd.
+Java odavno dolazi sa setom kripto-algoritama; interfejsi i implementacije su sadržane u "_Java Cryptography Extension_" (JCE) celini koja je sastavni deo JRE-a. Tu se mogu naći algoritmi za enkripciju, generisanje ključeva, heševa, potpisa itd.
+
+<!--more-->
 
 Za simetrično kriptovanje sadržaja koristim `AES` enkripciju, podržanu u JCE. Inicijalizacija enkriptora i dekriptora izgleda nekako ovako (preuzeto iz [Jodd-a](http://jodd.org)):
 
@@ -48,13 +50,13 @@ Osim što postoji jedan problem:
 
 Zbog kojekakvih pravnih zavrzlama, Java dozvoljava samo najslabiji nivo enkripcije: `AES-128`. Ključevi dužine `192` i `256` nisu dozvoljeni, te kod rezultuje gornjom greškom.
 
-## Oslobađanje Ključeva
+## Oslobađanje ključeva
 
-Problem se rešava preuzimanjem [posebnog dodatka](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) kojim sadrži tkzv: “_Java Cryptography Extension Unlimited Strength Jurisdiction Policy Files_”. Reč je o verzijama sigurnosnih `policy` jar-ova koji nemaju ograničenja za dužinu ključeva.
+Problem se rešava preuzimanjem [posebnog dodatka](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) kojim sadrži tkzv: "_Java Cryptography Extension Unlimited Strength Jurisdiction Policy Files_". Reč je o verzijama sigurnosnih `policy` jar-ova koji nemaju ograničenja za dužinu ključeva.
 
 Ovo je dugo vremena bilo i jedino rešenje - prilično rogobatno, složite ćete se. Ipak se direktno zamenjuju JRE jar-ovi!
 
-Konačno, Java 8 **u151** i **u152** sadrži ovaj dodatak u JRE. Podrazumevano stanje “pune snage” kriptovanja je isključeno, a uključuje se na sledeći način:
+Konačno, Java 8 **u151** i **u152** sadrži ovaj dodatak u JRE. Podrazumevano stanje "pune snage" kriptovanja je isključeno, a uključuje se na sledeći način:
 
 ```java
 Security.setProperty("crypto.policy", "unlimited");

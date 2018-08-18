@@ -14,6 +14,8 @@ tags:
 
 U prenadošlom JavaScript ekosistemu trudim se da očuvam razum pragmatičnim pristupom: analizirajući ono što mi padne pod prste, čitajući o onome što prolazi pokraj mene. Nisam mudrijaš, drugim rečima, te me ne slušajte pažljivo.
 
+<!--more-->
+
 Zatrebalo mi je da pozivam nekakav API iz JS-a, pa se logično nametnulo da koristim `fetch()`. Dolazi kao deo ES6 ako se ne varam; konačno je integrisan HTTP klijent u jezik. Nažalost, nije sve tako bajno.
 
 Prva stvar koja mi je zasmetala je to što svaki poziv zahteva korak kojim se odgovor servera pretvara u JSON. Iako razumem ovaj dizajn (nije svaki odgovor JSON), kapiram da bi bar u JS svetu trebalo da bude podrazumevani tip odgovora. Svaki poziv je izgledao ovako:

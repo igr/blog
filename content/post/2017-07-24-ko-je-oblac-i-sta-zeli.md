@@ -10,6 +10,8 @@ tags:
 
 Mali blog sa nekim razmišljanjima. Ništa manje, ništa više.
 
+<!--more-->
+
 ## Neki odgovori
 
 > Koliko dugo se baviš programiranjem?
@@ -22,7 +24,7 @@ Ponajviše o softverskom inženjerstvu.
 
 > Zašto na srpskom?
 
-Tako najlakše razmišljam, posle svega. Smatram i da bi trebalo. I zato što ne znam da prevedem reč “štedro” na engleski.
+Tako najlakše razmišljam, posle svega. Smatram i da bi trebalo. I zato što ne znam da prevedem reč "štedro" na engleski.
 
 > Da li umišljaš da si najpametniji?
 

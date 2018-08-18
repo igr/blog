@@ -14,7 +14,9 @@ tags:
 ---
 Ovo može biti važno. Predstaviću dve činjenice koje imaju dalekosežne posledice; tiču se tehnoloških kompanija i ljudske prirode. Krenimo redom.
 
-## 1) Ljudu Su Podložni Ubeđivanju
+<!--more-->
+
+## 1) Ljudu su podložni ubeđivanju
 
 Smatramo da smo čvrstih stavova. Ne dopuštamo da je ono u šta verujemo promenljivo, a kamoli nametnuto. Naravno da ne, pa inteligentni smo; sami zaključujemo i donosimo stavove. Slušamo druge, naravno, osluškujemo, diskutujemo; ali na kraju sami odlučujemo.
 
@@ -26,11 +28,11 @@ Srž razloga zašto smo skloni manipulaciji je potreba za _pažnjom_ i _priznava
 
 A sada, ovo:
 
-## 2) Teh Kompanije Zloupotrebljavaju Ljudske Potrebe
+## 2) Teh kompanije zloupotrebljavaju ljudske potrebe
 
 Vrednost mnogih prozvoda se danas meri brojem njenih korisnika. Što je broj veći, to je potencijal za iskorišćenje grupe veći. Druga neophodnost koja ovakvom proizvodu treba je da što duže bude u upotrebi. Tehnološke kompanije to znaju. A znaju vrlo dobro i da ima načina da se manipuliše ljudima.
 
-O svemu ovome sam počeo da razmišljam kada sam primetio da klinci, osnovci, koriste Snapchat da skupljaju “vatrice”. Naime, ukoliko dvoje korisnika dovoljno često razmenjuju poruke i to traje danima, bivaju nagrađeni... vatricama. I klinci onda šalju potpuno nebitne fotke samo da bi produžili ovaj niz. Ovo je toliko apsurdno: koristimo tehnologiju koja staje u džep, moćniju od one koja nam je bila dostupna kada smo slali čoveka na Mesec, da bi uslikali banalnosti i to podelili putem globalne mreže. Sve zarad lažne vrednosti i priznavanja: broja vatrica. Sledeći primeri takođe potiču iz školskih klupa (!): nemali broj klinaca pravi svoje YouTube kanale, na kojima ne prenose ama baš ništa, isključivo da bi se identifikovali sa priznavanjem koji tamo neki “jutjuberi” (najčešće brezrazložno) dobijaju. Ili pak Musica.ly, gde za par sekundi videa možete da se osetite kao da je pažnja celog sveta usmerena na vas - osim što nije.
+O svemu ovome sam počeo da razmišljam kada sam primetio da klinci, osnovci, koriste Snapchat da skupljaju "vatrice". Naime, ukoliko dvoje korisnika dovoljno često razmenjuju poruke i to traje danima, bivaju nagrađeni... vatricama. I klinci onda šalju potpuno nebitne fotke samo da bi produžili ovaj niz. Ovo je toliko apsurdno: koristimo tehnologiju koja staje u džep, moćniju od one koja nam je bila dostupna kada smo slali čoveka na Mesec, da bi uslikali banalnosti i to podelili putem globalne mreže. Sve zarad lažne vrednosti i priznavanja: broja vatrica. Sledeći primeri takođe potiču iz školskih klupa (!): nemali broj klinaca pravi svoje YouTube kanale, na kojima ne prenose ama baš ništa, isključivo da bi se identifikovali sa priznavanjem koji tamo neki "jutjuberi" (najčešće brezrazložno) dobijaju. Ili pak Musica.ly, gde za par sekundi videa možete da se osetite kao da je pažnja celog sveta usmerena na vas - osim što nije.
 
 Od tada uočavam i ono drugo, koliko tehnološke kompanije rade na tome da zgrabe i vežu našu pažnju. Automatski puštaju sledeći video; čine sve da još malo skrolujemo na Instagramu, čine da gotovo manično proveravamo Twitter... Grabeći nam pažnju koju zapravo nismo želeli da posvetimo, uvlače nas dublje u svoj ekosistem; a potom bude neke namere koje nismo bili spremni da učinimo na početku. Baš sa Twitterom imam ružno iskustvo: tek nedavno sam se priključio, za potrebe mog projekta. Vrlo brzo je Twitter odvlačio previše moje pažnje. Lošiji deo toga je to što sam počeo da emitujem _kritiku_ koja je bila više ruganje nego kritička misao, samo zato što ceo Twitter ekosistem koji je meni bio na uvidu radio to isto. Trebala mi je pažnja i priznavanje i pripadanje krdu.
 
@@ -38,7 +40,7 @@ I znate šta još? Mi glorifikujemo svakog ko nam uspešno krade pažnju preko 
 
 Ovo je tek vrh ledenog brega. Važnija pitanja su ona koja slede: da li teh kompanije manipulišu i sa našim stavovima i mišljenjima o važnim temama? Nema sumnje - da. One to mogu, znaju kako i to rade. Dalje: kako na ljude utiče to što zapravo _ne_ dobijaju ono što traže?
 
-## Unapred Izgubljena Bitka
+## Unapred izgubljena bitka
 
 Često pričamo o tome kako sami treba da se izborimo i nađemo pravu meru u pregršti besmisla kojim smo okruženi. Zaboravite na to, bitka je već izgubljena - nema nikakvog izgleda da će se to desiti. Naša ljudska svojstva su zapisana u nama i ona se neće promeniti. Metode kojim se teh kompanije služe su toliko prefinjene i sveprisutne da gotovo ne možemo da zamislimo da može i drugačije.
 

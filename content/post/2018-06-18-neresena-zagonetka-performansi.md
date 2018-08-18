@@ -14,6 +14,8 @@ tags:
 
 Način na koji rade dinamičke Java kolekcije kao što su `ArrayList` ili `ByteOutputArrayStream` je sledeći:
 
+<!--more-->
+
   + alocira se inicijalni niz;
   + kada dođe do potrebe da se niz proširi, kreira se novi niz duple dužine, a prethodni sadržaj se prekopira;
   + na kraju, kada se od kolekcije zatraži njen sadržaj, kreira se konačni niz tačne dužine, a sadržaj korišćenog niza se prekopira u njega.
@@ -53,11 +55,11 @@ Međutim, drugi algoritam opet degradira posle prvog proširenja. Preciznije, pr
     # Warmup Iteration   5: 5009353.033 ops/s
 
 
-Druga sesija “zagrevanja” je magična - JVM primenjuje optimizaciju i drastično ubrzava kod! To se ne dešava u drugom algoritmu. Optimizacija koju JVM primenjuje je rekompajliranje koda na najviši nivo, nivo 4. Inače, postoji JVM opcija koja ispisuje informacije o kompajliranju: `-XX:+PrintCompilation`.
+Druga sesija "zagrevanja" je magična - JVM primenjuje optimizaciju i drastično ubrzava kod! To se ne dešava u drugom algoritmu. Optimizacija koju JVM primenjuje je rekompajliranje koda na najviši nivo, nivo 4. Inače, postoji JVM opcija koja ispisuje informacije o kompajliranju: `-XX:+PrintCompilation`.
 
 Razlika dva algoritma sada je samo u načinu kako metoda za proširivanje radi. Probao sam da promenim kod tako da okinem isti stepen optimizacije JVM, ali je to davalo polovične rezultate: za jedne dužine niza drugi algoritam radi bolje, dok za druge radi sporije. Nisam uspeo da dođem do ujednačeno boljih rezultata za drugi algoritam.
 
-## Hibridno Rešenje
+## Hibridno rešenje
 
 Iako na papiru stvari izgledaju da bi trebalo da se ponašaju drugačije, u stvarnosti se to ne dešava. Optimizacija koju radi JVM je tolika da dodatna kopiranja pri proširenju niza u prvom slučaju ne utiču na performanse. Zaista, te prve veličine memorija pri prvi proširivanjima su toliko male, da se benefiti drugog algoritma izgube u optimizaciji JVM.
 
@@ -65,7 +67,7 @@ Iako na papiru stvari izgledaju da bi trebalo da se ponašaju drugačije, u stva
 
 Vreme je za pogađanje: kolika je veličina niza posle koje ima smisla prebaciti se na drugi algoritam? Dakle? 256 bajtova? 1024? 10 KB? 512 KB?
 
-## Parti Misterija
+## Parti misterija
 
 Pokazuje se da drugi algoritam ima smisla tek... mnogo kasnije. Negde oko 128 MB. Kako sada pa to? Pa... i ovo ima smisla (mada je lako praviti se generalom posle bitke): sa porastom dužine niza, broj proširivanja se smanjuje kako raste unutrašnji niz, te je i sam broj kopiranja mali. Kada konačna dužina niza pređe 128 MB, drugi algoritam krene da ispoljava svoje prednosti. Nažalost, i dalje ne sa ujednačenim performansama:
 

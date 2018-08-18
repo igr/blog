@@ -14,19 +14,21 @@ tags:
 
 Da započnem citatom Stiva Džobsa:
 
+<!--more-->
+
 > Ne postoji dobra ili loša konferencija; postoji samo ona koju jeste ili niste iskoristili.
 
 Neka odstoji malo ova misao; za to vreme želim da ukažem na jedan zajednički sadržalac u stavu prema konferencijama koji sam primetio u okruženju: reč je o _nerazumevanju_ (a time i neiskorišćavanju) konferencija. Čini mi se da većina zanemaruje konferencije, a kada ih već poseti, ima nerealna očekivanja.
 
-U susret nam dolazi [VoxxedDays Belgrade 2017](https://belgrade.voxxeddays.com) - velika, “prava”, nezavisna, sve-tehnološka konferencija. Nema puno sličnih u regionu, a kod nas je zapravo jedina. Da odmah bude jasno: učestvujem u njenom organizovanju. Kako bilo, uzimam VDB17 tek kao primer konferencije koja se dešava tu, blizu, a koju bi valjalo _iskoristi_ na pravi način. Što nas vraća na gornju misao.
+U susret nam dolazi [VoxxedDays Belgrade 2017](https://belgrade.voxxeddays.com) - velika, "prava", nezavisna, sve-tehnološka konferencija. Nema puno sličnih u regionu, a kod nas je zapravo jedina. Da odmah bude jasno: učestvujem u njenom organizovanju. Kako bilo, uzimam VDB17 tek kao primer konferencije koja se dešava tu, blizu, a koju bi valjalo _iskoristi_ na pravi način. Što nas vraća na gornju misao.
 
-Konferencije nisu tu da bi te zabavile. Nisu tu da bi odsustvovao sa posla i družio se s poznanicima. Nećeš se vratiti sa konferencije s novim “_hands-on_” znanjem i još iste večeri refaktorisati tvoj projekat. I prestani da se pitaš: “šta mi pruža ova konferencija?” Izađi iz uloge pasivnog posmatrača i angažuj ulogu aktivnog učesnika pitanjem: “šta želim da iskoristim?” Onda ostaje da se to još samo i uradi. Evo nekih predloga kako.
+Konferencije nisu tu da bi te zabavile. Nisu tu da bi odsustvovao sa posla i družio se s poznanicima. Nećeš se vratiti sa konferencije s novim "_hands-on_" znanjem i još iste večeri refaktorisati tvoj projekat. I prestani da se pitaš: "šta mi pruža ova konferencija?" Izađi iz uloge pasivnog posmatrača i angažuj ulogu aktivnog učesnika pitanjem: "šta želim da iskoristim?" Onda ostaje da se to još samo i uradi. Evo nekih predloga kako.
 
-## Pre Konferencije
+## Pre konferencije
 
 Konferencija počinje pre zvaničnog datuma. Smisao sveg tog vremena pre konferencije je da postaneš spreman. Da, spremi se.
 
-**Prouči raspored** - naizgled očigledna stavka, no težimo da je shvatamo olako. Raspored predavanja treba da ti posluži da ustanoviš _cilj_: šta želiš da naučiš tokom konferencije. Na osnovu toga napravi plan kojim ćeš i ostvariti taj cilj. Ne bi trebalo da je tvoj raspored fiksan; uvek imaj po koje paralelno predavanje “u rezervi”, jer se dešava da izbrana sesija “iskoči” iz plana iz ma kojeg razloga.
+**Prouči raspored** - naizgled očigledna stavka, no težimo da je shvatamo olako. Raspored predavanja treba da ti posluži da ustanoviš _cilj_: šta želiš da naučiš tokom konferencije. Na osnovu toga napravi plan kojim ćeš i ostvariti taj cilj. Ne bi trebalo da je tvoj raspored fiksan; uvek imaj po koje paralelno predavanje "u rezervi", jer se dešava da izbrana sesija "iskoči" iz plana iz ma kojeg razloga.
 
 _Keynote_ ne bi trebalo propuštati, kao ni sva ostala dešavanja namenjena svim posetiocima. Takođe je poželjno uključiti u raspored i predavanja koju vode neki od industrijskih lidera, bez obzira na temu.
 
@@ -40,15 +42,15 @@ Spremi i odgovore 🙂 Budi spreman da uvek jasno kažeš čime se baviš, šta 
 
 **Spremi vizit kartice** - iako smo u digitalnoj eri, vizitka ostaje najlakši način prenosa ličnih informacija.
 
-**Promeni svoj stav** - večina nas ne spada u one koji lako prilaze nepoznatima i započinju priču, iz kojekakvih razloga. Kako se spremaš za konferenciju, probaj da napraviš “prelazak” u glavi i zameniš nelagodnost i moguću ličnu nesigurnost prihvatanjem stava da je konferencija deo tvojih poslovnih obaveza i da fokus prebaciš na tu stranu.
+**Promeni svoj stav** - večina nas ne spada u one koji lako prilaze nepoznatima i započinju priču, iz kojekakvih razloga. Kako se spremaš za konferenciju, probaj da napraviš "prelazak" u glavi i zameniš nelagodnost i moguću ličnu nesigurnost prihvatanjem stava da je konferencija deo tvojih poslovnih obaveza i da fokus prebaciš na tu stranu.
 
-## Za Vreme Konferencije
+## Za vreme konferencije
 
 Konačno, počinje cirkus.
 
 **Ko rano rani** - ne čeka u redu. Gledaj da ne gubiš vreme na takve trivijalnosti; bez obzira koliko da je konferencija dobro organizovana, uvek se može pojaviti gužva, naročtio pri registraciji. Izbegni to ranim dolaskom.
 
-**Podeli grupu** - ukoliko dolaziš sa grupom kolega, nema smisla da na sesije idete zajedno. Umesto toga se podelite tako da pokrijete što više sesija. Obavezno ustanovite “mesta okupljanja”: lokaciju i deo dana kada ćete se naći i ukratko podeliti najvažnije impresije.
+**Podeli grupu** - ukoliko dolaziš sa grupom kolega, nema smisla da na sesije idete zajedno. Umesto toga se podelite tako da pokrijete što više sesija. Obavezno ustanovite "mesta okupljanja": lokaciju i deo dana kada ćete se naći i ukratko podeliti najvažnije impresije.
 
 **Pričaj sa predavačima** - velika je šansa da su predavači eksperti u nekoj oblasti i da imaju veliko iskustvo. Nemoj da te je strah da im priđeš i postaviš im pitanja, oni su tu zbog tebe; gledaj, šta više, da nađeš načina i da provodiš vreme s njima. Predstavi im se, uzmi njihovu vizit karticu. Neverovatno je koliko se stvari može naučiti iz tek kratkog razgovora nakon predavanja - često predavači nisu u prilici da javno iskažu neki svoj stav ili iskustvo.
 
@@ -56,13 +58,13 @@ Konačno, počinje cirkus.
 
 **Učestvuj u sporednim događajima** - konferencije često organizuju još neka dešavanja pored redovnog programa. Nema razloga da ih propuštaš. Često je interesantno čuti predavače kako razmišljaju u neformalnijem okruženju i izdanju.
 
-**Manje pričaj, više slušaj**. Upijaj. Saznaj. Pitaj. Uči. Istražuj. Slušaj. Uvek imaj spremno neko pitanje u rukavu kojim možeš da započneš neobaveznu priču; na pr.: “na čemu sada radiš?”, “šta si zanimljivo skoro radio?”, “koje predavanje ti je do sada ostavilo utisak?” itd.
+**Manje pričaj, više slušaj**. Upijaj. Saznaj. Pitaj. Uči. Istražuj. Slušaj. Uvek imaj spremno neko pitanje u rukavu kojim možeš da započneš neobaveznu priču; na pr.: "na čemu sada radiš?", "šta si zanimljivo skoro radio?", "koje predavanje ti je do sada ostavilo utisak?" itd.
 
 **Nađi vreme za sebe** - konferencija može da bude težak i stresan događaj. Dozvoli sebi pauzu i vreme samo za sebe.
 
 **Zapamti šta si naučio** - vodi beleške, piši, crtaj, na papiru, elektronski, kako god. Upotrebi koji god način ti radi da se organizuješ i struktuiraš misli, iskustva, pratiš plan i sve ostalo što se dešava tokom konferencijskog dana. Trudi se da zapamtiš suštinu onoga što si naučio na konferenciji. Gledaj da na kraju svakog dana napraviš rezime, zapišeš zaključke, ideje i misli; naročito ako konfencija traje više dana.
 
-## Posle Konferencije
+## Posle konferencije
 
 Nazad u svakodnevicu.
 
@@ -70,6 +72,6 @@ Nazad u svakodnevicu.
 
 **Podeli, podeli, podeli** - kada jednom sumiraš sve što si saznao tokom konferenciji i kada ti se slegnu svi utisci, potrudi se da sve to podeliš. Napravi kratku prezentaciju kolegama u firmi, napiši članak na blogu, pojavi se u lokalnoj zajednici. Deljenje iskustava sa konferencija je jako vredno, i, ako ništa drugo, može da pokrene druge da urade to isto kada se i oni sami vrate sa nekog sjajnog događaja.
 
-## Na Kraju
+## Na kraju
 
 Bez obzira da li je u pitanju velika VDB17 konferencija, ili neki polu-dnevni _meetup_, gledaj da ih iskoristiš na najbolji način za tebe samog. Iako gornji citat nije zaista izrekao Stiv, gledaj da ga upamtiš i primeniš. Toliko.

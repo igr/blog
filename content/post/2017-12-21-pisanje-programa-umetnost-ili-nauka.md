@@ -12,7 +12,9 @@ tags:
   - umetnost
 ---
 
-[Guy Kawasaki](https://guykawasaki.com) započinje predgovor knjige “[Beyond Software Architecture](https://www.amazon.com/Beyond-Software-Architecture-Sustaining-Solutions/dp/0201775948)” sledećim rečima:
+[Guy Kawasaki](https://guykawasaki.com) započinje predgovor knjige "[Beyond Software Architecture](https://www.amazon.com/Beyond-Software-Architecture-Sustaining-Solutions/dp/0201775948)" sledećim rečima:
+
+<!--more-->
 
 > ...I think writing software is more art than science.
 

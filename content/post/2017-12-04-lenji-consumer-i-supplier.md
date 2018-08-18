@@ -17,6 +17,8 @@ tags:
 
 U poslednje vreme često koristim nešto što nazivam _lazy_ konfigurisanje. Da predstavim problem sledećim kodom:
 
+<!--more-->
+
 ```java
 public class Starter {
 	private Foo foo;
@@ -71,7 +73,7 @@ Naravno, moglo je sve odraditi i bez lista i samo sa jednom pozivom `withFoo()`.
 
 ## Supplier
 
-Još jedna stvar ovde se može “ulenjiti”. `Bar` prima instancu `Foo`. Šta ako se desi da se `foo` promeni _nakon_ što ga je `Bar` preuzeo? Drugim rečima, moramo da vodimo računa da nakon što se kreira instanca `Bar` ne smemo da menjamo `foo`.
+Još jedna stvar ovde se može "ulenjiti". `Bar` prima instancu `Foo`. Šta ako se desi da se `foo` promeni _nakon_ što ga je `Bar` preuzeo? Drugim rečima, moramo da vodimo računa da nakon što se kreira instanca `Bar` ne smemo da menjamo `foo`.
 
 U pomoć dolazi druga Java8 klasa: `Supplier`. Menjamo konstruktor za `Bar`:
 
@@ -89,7 +91,7 @@ bar = new Bar(() -> foo);
 
 Šta god da se sada desi sa `foo` i nakon što smo kreirali `Bar` neće uticati na izvršavanje.
 
-## Još Jedan Primer Za Consumer
+## Još jedan primer za Consumer
 
 Čest slučaj je registracija nekih klasa koje se kasnije instanciraju po potrebi:
 

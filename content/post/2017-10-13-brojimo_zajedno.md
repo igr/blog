@@ -17,9 +17,11 @@ tags:
 
 Zahtev ne može biti jednostavniji: odrediti ukupan broj poseta skupu stranica na prometnom sajtu, kako bi se obračunala naplata određene usluge.
 
+<!--more-->
+
 Prosto, zar ne?
 
-## Naivni Pristup
+## Naivni pristup
 
 Uvodimo jednostavan brojač:
 
@@ -37,7 +39,7 @@ public class Counter {
 
 Podelimo referencu na istu instancu brojača svim stranama i beležimo posetu. Gotovo: u produkciji sve radi, dobijaju se prve brojke. Tapšemo sami sebe po leđima i divimo se rešenju. Vreme je za povišicu 🙂
 
-## Paralelni Univerzum
+## Paralelni univerzum
 
 Problem sa brojačem je što je naizgled sve kako treba. Kao što je to uvek i slučaj u _multi-threading_ okruženju, nije jednostavno uočiti problem.
 
@@ -64,7 +66,7 @@ System.out.println(counter.count());
 
 Mogući rezultat: `9879737`. Gde je nestalo 120 hiljada poseta?!
 
-## Atomske Operacije
+## Atomske operacije
 
 Odgovor je zapravo jednostavan: instrukcija `counter++` **nije** atomska. Ne postoji garancija da će raditi ispravno u _multi-threading_ okruženju. Razlog zašto nije atomska se krije u bajtkodu. Ova Java instrukcija se pretvara u nekoliko bajtkod instrukcija koje rade sledeće: očitavaju vrednost registra, povećavaju je za jedan i upisuju vrednost nazad. Dva _threada_ mogu da prođu kroz ove bajtkod instrukcije bilo kojim redosledom; jasno se uočava slučaj koji dovodi do toga da se vrednost varijable ne uvećava.
 
@@ -84,7 +86,7 @@ Ali to i dalje ne čini operacije nad _volatile_ varijablama atomskim!
 
 ## AtomicLong
 
-“Atomski s leva”, prisećaju se svi koji su služili vojsci. Java 5 donosi sjajnu klasu: `AtomicLong` koja upravo odgovara našem problemu performantnih i atomskih operacija nad nekom varijablom. U našem slučaju bi koristili `getAndIncrement()` i `get()` metode koja su garantovano atomske:
+"Atomski s leva", prisećaju se svi koji su služili vojsci. Java 5 donosi sjajnu klasu: `AtomicLong` koja upravo odgovara našem problemu performantnih i atomskih operacija nad nekom varijablom. U našem slučaju bi koristili `getAndIncrement()` i `get()` metode koja su garantovano atomske:
 
 ```java
 AtomicLong atomicLong = new AtomicLong(0);
@@ -92,7 +94,7 @@ executeParallel(atomicLong::getAndIncrement);
 System.out.println(atomicLong.get());
 ```
 
-Ispod haube se dešava “magija” koja uključuje i famoznu `Unsafe` klasu; pogledajte sors za detalje. Kako bilo, ovo rešenje je bolje jer ne uključuje Javin `synchronized` mehanizam.
+Ispod haube se dešava "magija" koja uključuje i famoznu `Unsafe` klasu; pogledajte sors za detalje. Kako bilo, ovo rešenje je bolje jer ne uključuje Javin `synchronized` mehanizam.
 
 Može li to još bolje i brže?
 
@@ -106,7 +108,7 @@ executeParallel(longAdder::increment);
 System.out.println(longAdder.intValue());
 ```
 
-Uočavamo da ne postoji atomska operacija slična `getAndIncrement()` koja bi vratila tačnu vrednost u upravo ovom trenutku. I to je u redu, pošto očitavanje _nije_ problem. Da podsetim: problem je u “izgubljenim” operacijama uvećavanja vrednosti varijable; dakle, pri pisanju. `LongAdder` obezbeđuje da izmena vrednosti bude atomska.
+Uočavamo da ne postoji atomska operacija slična `getAndIncrement()` koja bi vratila tačnu vrednost u upravo ovom trenutku. I to je u redu, pošto očitavanje _nije_ problem. Da podsetim: problem je u "izgubljenim" operacijama uvećavanja vrednosti varijable; dakle, pri pisanju. `LongAdder` obezbeđuje da izmena vrednosti bude atomska.
 
 ## VarHandle
 
@@ -135,8 +137,8 @@ public class Counter {
 
 Sada se brojač može koristiti bezbedno u _multi-thread_ okruženju.
 
-## A Samo Sam Hteo Da...
+## A samo sam hteo da...
 
-Ovo putovanje kroz primere asinhronog inkrementiranja zapravo pokazuje koliko je teško razvijati kod koji se koristi u _mutli-thread_ okruženju. Lako je pogrešiti, a teško je uočiti problem. I to je prirodna stvar; prosto nismo napravljeni da razmišljamo na takav način. Zato se slažem sa mišljenjem da sam programski jezik pruži rešenja i konstrukte za paralelna izvršavanja; drugim rečima da se izmesti implementacija podrške paralelnog izvršavanja iz koda i ugrade u jezik. Neki programski jezici to nude od samog početka; nažalost, to se ne dešava sa Javom. Šteta.
+Ovo putovanje kroz primere asinhronog inkrementiranja zapravo pokazuje koliko je teško razvijati kod koji se koristi u _multi-thread_ okruženju. Lako je pogrešiti, a teško je uočiti problem. I to je prirodna stvar; prosto nismo napravljeni da razmišljamo na takav način. Zato se slažem sa mišljenjem da sam programski jezik pruži rešenja i konstrukte za paralelna izvršavanja; drugim rečima da se izmesti implementacija podrške paralelnog izvršavanja iz koda i ugrade u jezik. Neki programski jezici to nude od samog početka; nažalost, to se ne dešava sa Javom. Šteta.
 
 Ako vam se posle svega ovoga vrti u glavi, sve je ok; udahnite duboko i brojite u sebi... ili možda ne:)

@@ -12,6 +12,8 @@ tags:
 
 Tri razmišljanja namenja radnicima. Tri razmišljanja namenja poslodavcima. Onako, drugarski.
 
+<!--more-->
+
 ## Dragi radniče...
 
 **Iznos plate _nije_ mera tvoje vrednosti.** Ne izjednačavaj ova dva pojma. Prvi je u domenu ekonomije, a drugi je samo-vrednovanje. Nisu u jednakosti. Nisi bolji ako ti je veći... prihod.

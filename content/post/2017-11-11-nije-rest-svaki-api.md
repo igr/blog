@@ -14,7 +14,9 @@ tags:
   - web
 ---
 
-Napravio si HTTP API intefejs (_endpoints_) i nazivaš ga “REST API”. Najverovatnije je da nisi u pravu. No ne brini, svima nam se to događa. REST je nešto više.
+Napravio si HTTP API intefejs (_endpoints_) i nazivaš ga "REST API". Najverovatnije je da nisi u pravu. No ne brini, svima nam se to događa. REST je nešto više.
+
+<!--more-->
 
 Najkraća definicija REST-a je sadržana u sledećoj formuli:
 

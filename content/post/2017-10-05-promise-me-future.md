@@ -15,6 +15,8 @@ tags:
 
 U [prethodnom tekstu](https://oblac.rs/async-nonblocking) dotakao sam se pojma asinhronih operacija. One se izvršavaju nezavisno od _threada_ koji ih je startovao, a rezultat asinhrone operacije se može očekivati bilo kada.
 
+<!--more-->
+
 Postoji više softverskih konstrukta kojima se implementiraju asinhrone aplikacije. Najprostiji način je izvršavanje asinhronog koda u posebnom _threadu_ koji _callbackom_ obaveštava kada je posao završen. To je previše jednostavno za iole ozbiljniji rad sa asinhronim operacijama - teško je uvezivati ih, hvatati greške i sl.
 
 Bolje implementacije su _Future_ i _Promise_.
@@ -39,7 +41,7 @@ Iako zgodan, _future_ nije dovoljan. Pošto se po prirodi ne može menjati, nema
 
 ## Promise
 
-_Promise_ je softverski konstrukt koji “obećava” da će **proizvesti** rezultat. _Promise_ je kontejner i za varijablu i za dodeljivanje vrednosti varijabli - nije read-only; uključuje dakle i sam kod dodele. _Promise_ vraća svoju varijablu kao _future_ i može ga kompletirati (rezultatom ili _exceptionom_). _Promise_ se može zamisliti kao _future_ sa javnom `set()` metodom kroz koju se može upisati vrednost za _future_ koji vraća.
+_Promise_ je softverski konstrukt koji "obećava" da će **proizvesti** rezultat. _Promise_ je kontejner i za varijablu i za dodeljivanje vrednosti varijabli - nije read-only; uključuje dakle i sam kod dodele. _Promise_ vraća svoju varijablu kao _future_ i može ga kompletirati (rezultatom ili _exceptionom_). _Promise_ se može zamisliti kao _future_ sa javnom `set()` metodom kroz koju se može upisati vrednost za _future_ koji vraća.
 
 Evo sjajnog primera koji ilustruje _Promise_:
 
@@ -77,6 +79,6 @@ To momentalno ispunjava _promise_ i mi kažemo:
 
 Mamin _promise_ je ispunjen, ali ne na način kako je to prvobitno zamišljeno.
 
-## Sumarno i Sažeto
+## Sumarno i sažeto
 
 TL;DR: _future_ i _promise_ su dve strane asinhrone operacije: **_consumer_** i **_producer_**.

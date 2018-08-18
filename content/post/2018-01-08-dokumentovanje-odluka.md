@@ -13,9 +13,11 @@ tags:
 
 Dokumentacija projekta je vragolasta drugarica: kada nam ne treba, ima je previše; kada nam zatreba, ima je premalo. O dokumentaciji je puno toga već dokumentovano (eto šale): od toga kako se komentariše kod, do postojanja jezika kojim se opisuju softverski sistem.
 
+<!--more-->
+
 U svemu tome postoji vrsta dokumentacije koja je važna, a nisam imao prilike da vidim da se praktikuje. Reč je o dokumentovanju _odluka_ u vezi arhitekture sistema. Dakle, ne same aktuelne arhitekture, već odluka kojima se do nje došlo.
 
-## Odluke Su Deo Projekta
+## Odluke su deo projekta
 
 Na svakom projektu se donosi nemali broj - definitivnih - odluka. Koje biblioteke koristiti, kako su uvezane komponente sistema, kako one komuniciraju, gde su granice modula, kakav je tok podataka... Odluke se donose i za rešavanje tehnoloških izazova koji se javljaju u toku razvoja.
 

@@ -13,11 +13,13 @@
     <meta property="og:title" content="{{ .Site.Title }}">
     <meta property="og:type" content="website">
     <meta name="description" content="{{ .Site.Params.description }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
     {{- else -}}
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
     <meta property="og:type" content="article">
-    <meta name="description" content="{{ .Description }}">
+    <meta name="description" content="{{ .Summary }}">
+    <meta property="og:description" content="{{ .Summary }}" />
     {{- end }}
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Josefin+Sans:400,700|Domine:400,700">

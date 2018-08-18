@@ -10,7 +10,9 @@ tags:
   - razvoj
 ---
 
-Razlog za “naduvani” naslov leži u sledećem kodu. Možete li reći šta nije u redu sa ovom metodom:
+Razlog za "naduvani" naslov leži u sledećem kodu. Možete li reći šta nije u redu sa ovom metodom:
+
+<!--more-->
 
 ```java
 public boolean equals(CharSequence cs1, CharSequence cs2) {

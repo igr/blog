@@ -16,9 +16,11 @@ tags:
 
 _Maven Central_ je [centralno mesto](http://central.maven.org/maven2/) za Java artefakte. Da bi neka biblioteka (uključujući i sve njene verzije) bila dostupna, ona se objavljuje na centralnom repozitorijumu. Maven repozitorijum (skraćeno: _repo_) je u biti samo struktura foldera i fajlova, imenovana i organizaovana kako to već Maven zahteva.
 
+<!--more-->
+
 Pošto je Maven repo tek skup foldera i fajlova, nemoguće ga je pretraživati pukim pregledanjem. Srećom, postoji [sajt](https://mvnrepository.com/) preko koga je to moguće.
 
-## Gradle (Ne)Voli Maven Central
+## Gradle (ne)voli Maven Central
 
 Volim [Gradle](https://gradle.org/), ali baš ne volim kako je rešeno objavljivanje na centralnom repo-u! Zapravo, nije nikako rešeno 🙁 Svaka biblioteka koju objavljujem na Maven central repo-u sadrži jedan dosadan, ogroman blok u `build.gradle`. On izgleda otprilike [ovako](https://github.com/igr/nomen-est-omen/blob/master/build.gradle#L21). Da krenemo redom i objasnim šta je sve tu:
 

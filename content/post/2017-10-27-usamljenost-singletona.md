@@ -18,6 +18,8 @@ tags:
 
 Čini se da i digitalni vrapci znaju sve o singletonima; ipak često susrećem nepotpuno razumevanje teme. Izvinjavam se vrapcima u ime onih kojima je ova tema nova.
 
+<!--more-->
+
 Većina greši u samom početku. _Singleton_ objekat postoji samo kao jedna instanca u svakom trenutku života programa, a dodao bih, i u datom kontekstu. Sa singletonom nema nikakvih problema, to je obična klasa; ovaj članak se zapravo ne bavi njima. S druge strane, _Singleton Factory_ je objekat koji održava singletone. O njima već ima šta da se kaže.
 
 Da preskočimo banalne implementacije, Singleton Factory ima smisla jedino ako 1) ima metodu koja vraća instancu singletona, 2) ako je thread-safe, 3) ako singleton kreira _lazy_, i 4) ako je efikasan. Ovakav jedan Singleton Factory nema smisla:
@@ -78,11 +80,11 @@ callCtor(instance);	// pozovi konstruktor radi inicijalizacije
 
 Neka je thread A upravo završio drugi korak: objekat je kreiran, pridružen je `instance`, ali konstruktor nije pozvan. Drugi thread B je ušao u `get()` i kako referenca više nije `null` vraća nazad singleton kome konstruktor nije pozvan! To svakako nije ono što želimo da se ikada desi.
 
-## Fiks; Ili: Bloch Nije Uvek U Pravu
+## Fiks; ili: Bloch nije uvek u pravu
 
 Rešenje DCL problema je deklarisanje polja `instance` kao `volatile`. Polje klase označeno sa `volatile` čini da se čitanja i pisanja uvek izvršavaju direktno u i iz glavne memorije. Time se sve izmene varijable od strane jednog threada pravovremeno vide u ostalim threadovima - po cenu performansi. (Inače, ovo radi od Jave5).
 
-Digresija: čika Bloch u knjizi “_Effective Java_” (2nd edition) pod stavkom **#71** navodi primer DCL u kome `volatile` vrednost prvo prepisuje u lokalnu varijablu. Razlog za dodatni korak su, kako tvrdi, bolje performanse: čak 25% bolje. Nažalost, ne navodi validan dokaz koji bi ovo potvrdio; s druge strane drastične razlike su uvek sumnjive (bar meni). [Ovaj put Bloch nije u pravu](https://github.com/igr/java-benchmarks/blob/master/src/main/java/com/oblac/jmh/lang/Item71Benchmark.java).
+Digresija: čika Bloch u knjizi "_Effective Java_" (2nd edition) pod stavkom **#71** navodi primer DCL u kome `volatile` vrednost prvo prepisuje u lokalnu varijablu. Razlog za dodatni korak su, kako tvrdi, bolje performanse: čak 25% bolje. Nažalost, ne navodi validan dokaz koji bi ovo potvrdio; s druge strane drastične razlike su uvek sumnjive (bar meni). [Ovaj put Bloch nije u pravu](https://github.com/igr/java-benchmarks/blob/master/src/main/java/com/oblac/jmh/lang/Item71Benchmark.java).
 
 ## Elegantni Singleton
 

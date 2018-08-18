@@ -13,6 +13,8 @@ tags:
 
 Ovo što ćete sada videti je najmanji mogući primer lošeg UX:
 
+<!--more-->
+
 ![](/gfx/hours.png)
 
 Očigledno se traži unos (proteklog) vremena. I tu je kraj logici. Kako unosim minute? Broj nagoveštava upotrebu decimalnog sistema. Dakle, vrednost od `1.5` je jedan sat i 30 minuta. A koliko je 50 minuta decimalno?

@@ -10,7 +10,10 @@ tags:
   - startup
   - vreme
 ---
+
 Suočen sam bio s iskustvima nekoliko tehnoloških preduzetničkih poduhvata (dakle, startapa) u poslednje vreme. To me je podstaklo na razmišljanje, koje je na kraju formiralo misao sličnu rečima Stiva Džobsa koje je izustio pri obraćanju mladim preduzetnicima Silikonske doline:
+
+<!--more-->
 
 > Vi... vi ste zapravo _prodavci_. To što znate da napravite proizvod koji prodajete je sporedna stvar. Bitno je da uočite ovo što ranije tokom razvoja i da kroz ovu prizmu fokusirate svoje _vreme_.
 

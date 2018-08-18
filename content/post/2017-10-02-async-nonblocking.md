@@ -18,6 +18,8 @@ tags:
 
 Oba termina su u upotrebi kada pričamo o sistemima sa paralelnim izvršavanjem operacija. U mnogim slučajevima predstavljaju različiti naziv za istu stvar; ali postoji kontekst u kojem se razlikuju. Ne pomaže to što terminologija u softverskoj industriji nije ujednačena i što je ustanovljena praksa prenaglašavanja naziva zarad popularnosti. U vezi ovih pojmova ima stvari koje mi nisu sasvim jasne, pa je ovo pokušaj da bar koliko-toliko sumiram misli na jednom mestu.
 
+<!--more-->
+
 ## Non-blocking
 
 Da krenemo od suprotnog pojma: **blocking** operacija je ona na čiji rezultat mora da se sačeka. Na primer:
@@ -53,13 +55,13 @@ Da rezimiramo: blokiranje je pojam koje se tiče trajanja izvršavanja operacije
 
 Asinhrono svojstvo izvršavanja operacija se bavi redosledom toka operacija. **Asihnrona** operacija se izvršava nezavisno od glavnog toka programa, tj. od _threada_ iz kojeg je bila inicirana. Rezultat asinhrone operacije se može očekivati bilo kada, potpuno nezavisno od dela programa koji ju je inicirao. Asinhrona operacija ne implicira da je i neblokirajuća.
 
-Asinhrono opisuje _relaciju_ između dva modula, dva mesta u programu. Kao što kretanje tela ne može da postoji bez referentne tačke, tako i asinhrono izvršavanje mora da ima referentni tok u odnosu na koju nije sinhrono. Kada god pratim priču o asinhronim operacijama, gledam da pronađem tu referentnu tačku (“...asinhrono u odnosu na šta?”).
+Asinhrono opisuje _relaciju_ između dva modula, dva mesta u programu. Kao što kretanje tela ne može da postoji bez referentne tačke, tako i asinhrono izvršavanje mora da ima referentni tok u odnosu na koju nije sinhrono. Kada god pratim priču o asinhronim operacijama, gledam da pronađem tu referentnu tačku ("...asinhrono u odnosu na šta?").
 
 Asinhron način izvršavanja omogućuje i da neku blokirajuću operaciju učinimo da bude neblokirajuća - bar na tom mestu gde je pre postojala blokada. Postoji više softverskih konstrukta za to; o tome drugom prilikom.
 
 Primer: e-mail je asinhrona komunikacija. Kada pošalješ mejl, ne očekuješ odgovor baš istog trenutka. Ali je ova komunikacija blokirajuća, jer ne možeš da nastaviš konverzaciju dok god ne dobiješ odgovor nazad. Onog trenutka kada prestaneš da čekaš na mejl i počneš da radiš nešto drugo, komunikacija postaje asinhrona.
 
-## Zašto Non-Blocking?
+## Zašto non-blocking?
 
 Suština neblokirajuće aplikacije je da ne blokira sistem: uključujući UI, _threadove_, _file descriptore_ itd. Postoji više nivoa u aplikaciji koji se mogu blokirati, tako da treba obratiti pažnju na to šta se zapravo (ne) blokira. Najbolji primer je uporediti tradicionalne i non-blocking web servere.
 
@@ -71,7 +73,7 @@ Neblokirajući serveri su, po pravilu, značajno boljih performansi: broj _threa
 
 Da razbijemo jedan mit: ne znači da je aplikacija neblokirajuća ukoliko se koristi takav server. Kao što je rečeno, blokiranje može da nastane na više nivoa, pa ako su _handleri_ blokirajuće prirode, nismo ništa uradili.
 
-## Da Li Non-Blocking?
+## Da li non-blocking?
 
 Činjenica je da asinhroni kod nije baš trivijalno pisati i razumeti. Nije lako pratiti šta se dešava u message-driven sistemima. U jednom projektu smo probali da sve _handlere_ pišemo na asinhron način: da što pre oslobodimo _event-loop thread_ da ga ne bi blokirali kako bi on nastavio da opslužuje sledeće HTTP zahteve, dok mi još uvek aisnhrono procesiramo prethodni HTTP zahtev. To se svelo na to da _fork-join pool_ preuzme ulogu _working thread poola_. Što opet znači da umesto da pišemo kod kroz `CompletableFuture`, možemo jednostavnije da procesiramo HTTP zahteve u zasebnom, uobičajenom, dinamičkom _thread poolu_. Drugim rečima: iako dobavljanje HTTP zahteva radi na non-blocking način, procesiranje zahteva se izvršava na tradicionalni način, svaki u jednom _threadu_.
 

@@ -14,11 +14,13 @@ tags:
 
 Zgodno je znati za slabe (_weak_) reference u Javi.
 
+<!--more-->
+
 Kada se instancira objekat, on zauzme mesto u (_heap_) memoriji, a na njega ukazuje referenca koja se dodeljuje programskoj varijabli. Ovakve reference se nazivaju _jake_ reference. Reference imaju veze sa načinom rada GC-a (_garbage collector_); on periodično čisti memoriju od svih objekata na koje ne ukazuje ni jedna jaka reference. Drugim rečima, dok god postoji referenca na objekat, GC ga neće obrisati.
 
 Ovo nije potpuno tačno: moraju se uzeti u obzir i lanci uvezanih objekata. Zato se definiše tkzv. osnovni skup referenci koga čine sve reference aktivne u određenom momentu rada programa. Ovaj skup određuje da li je neki objekat _jako dostupan_: ukoliko postoji putanja do objekta počeviši od reference iz ovog osnovnog skupa, on je jako dostupan - te ga GC zaobilazi.
 
-Pored jakih referenci, Java poznaje _soft_, _weak_ i _phantom_ reference; ovde su date po “jačini” od jačih ka slabijima. U praksi ima smisla koristiti slabe reference. One menjaju prethodnu sliku na sledeći način: ako je neki objekat dostupan samo preko slabih referenci, onda nije jako dostupan, a objekat na koji ukazuju postaje kandidat za GC. Ukoliko, pak, postoji bar jedna jaka referenca koja ukazuje na objekat, on neće biti uklonjen. Drugim rečima, objekat na koje ukazuju slabe reference će biti uklonjen čim nestanu jake reference na njega.
+Pored jakih referenci, Java poznaje _soft_, _weak_ i _phantom_ reference; ovde su date po "jačini" od jačih ka slabijima. U praksi ima smisla koristiti slabe reference. One menjaju prethodnu sliku na sledeći način: ako je neki objekat dostupan samo preko slabih referenci, onda nije jako dostupan, a objekat na koji ukazuju postaje kandidat za GC. Ukoliko, pak, postoji bar jedna jaka referenca koja ukazuje na objekat, on neće biti uklonjen. Drugim rečima, objekat na koje ukazuju slabe reference će biti uklonjen čim nestanu jake reference na njega.
 
 Sledeći dijagram oslikava rečeno:
 
@@ -28,7 +30,7 @@ Crvenim su označeni nedostupni objekti, kandidati za GC. Plavim su označeni ja
 
 Objekat označen sa `x` je jako dostupan jer postoji bar jedna putanja sačinjena od jakih referenci. Pored te jake reference, na ovaj objekat ukazuje i slaba referenca, kao i jedan odbačeni (crveni) objekat. Ako bi nestala jaka referenca, objekat `x` bi postao slabo dostupan.
 
-## Kada Koristiti Slabe Reference?
+## Kada koristiti slabe reference?
 
 Slaba referenca se koristi kroz `WeakReference` _wrapper_ kojim se obuhvata ciljni objekat:
 
