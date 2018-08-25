@@ -10,3 +10,6 @@ title = "Oblac"
   description = "Oblac. Blog. Kod. Razmišljanja. Stavovi."
   githubUsername = "igr"
   tagline = "Blog. Kod. Razmišljanja. Stavovi."
+
+[permalinks]
+  posts = "/:slug"

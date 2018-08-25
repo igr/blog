@@ -49,7 +49,7 @@ Slaba referenca je zgodna da se koristi kada ciljni objekat ima ograničeno vrem
 
 Primer: pravimo gomilu taskova koje izvršava `Executor`, a za svaki task moramo sačuvati dodatne informacije. Jedan način je da ih smeštamo u mapu, gde je ključ task, a vrednost objekat sa dodatnim podacima. Nešto [ovako](https://github.com/igr/void/blob/master/src/main/java/v/o/i/d/ref/MapLeaker.java).
 
-Šta je problem u ovom kodu? To što nakon završetka taska ostaje u mapi. Nakon nekog vremena dolazi do neizbežnog `OutOfMemoryException`:![](oom.png)
+Šta je problem u ovom kodu? To što nakon završetka taska ostaje u mapi. Nakon nekog vremena dolazi do neizbežnog `OutOfMemoryException`:
 
 ![](oom.png)
 

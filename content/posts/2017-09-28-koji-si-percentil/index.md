@@ -31,7 +31,7 @@ Da li je onda standardna devijacija ta mera koja ima više smisla? Naravno da ne
 
 Evo još jednog primera. Sledeća četiri seta podataka imaju istu srednju vrednost i standardnu devijaciju:
 
-![](/gfx/uzorak.png)
+![](uzorak.png)
 
 Očigledno da je reč o potpuno različitim uzorcima.
 
@@ -39,13 +39,13 @@ Očigledno da je reč o potpuno različitim uzorcima.
 
 Percentili (_percentiles_) su realnija mera ocene ponašanja nekog uzorka, naročito za merenje performansi sistema. Definicija bi bila sledeća: percentil odgovara tački na distribuciji koja daje odgovarajući procenat rezultata do te tačke, uključujući i taj rezultat. Definišu se brojem od 0-100 (sličnost sa procentom je namerna). Nulti percentil je, dakle,  tačka ispod koje se ne nalazi ni jedan uzorak. Stoti percentil je tačka ispod koje se nalaze svi uzorci. 50-to percentil je i _medijana_, tj. tačka ispod koje se nalazi polovina izmerenih uzoraka. Za primer može da posluži sledeći histogram odziva aplikacije:
 
-![](/gfx/histogram.png)
+![](histogram.png)
 
 Prvo je očigledno da distribucija nije normalna - ovakav oblik krive je prirodniji. Srednja vrednost označena sa μ(a) je negde na 5 sekundi, 95-ti percentil je na nekih 15 sekundi. Drugim rečima, 95% transakcija se završi za 15 sekundi ili manje. Idealno, želimo da odziv bude što manji; to bi značilo da se 95-ti percentil pomeri u levu stranu što bliže srednjoj vrednosti.
 
 Percentili nam govore o tome koliko su _konzistentni_ odzivi naše aplikacije. U sledećem primeru su nacrtani odzivi srednje vrednosti (zeleno) i 95-tog percentila (plavo):
 
-![](/gfx/percentili.png)
+![](percentili.png)
 
 Srednja vrednost vremena odziva uzorka ne prelazi 1400ms, dok 95-ti percentil dobacuje do 2600ms.
 

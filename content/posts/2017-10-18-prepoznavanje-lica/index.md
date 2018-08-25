@@ -93,7 +93,7 @@ Sam kod nije nešto interesantan; više predstavlja istraživanje kako OpenCV ra
 
 ## La La primer
 
-![](/gfx/lala.gif)
+![](lala.gif)
 
 ## Dalja unapređenja
 

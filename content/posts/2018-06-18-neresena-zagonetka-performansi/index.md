@@ -20,7 +20,7 @@ Način na koji rade dinamičke Java kolekcije kao što su `ArrayList` ili `ByteO
   + kada dođe do potrebe da se niz proširi, kreira se novi niz duple dužine, a prethodni sadržaj se prekopira;
   + na kraju, kada se od kolekcije zatraži njen sadržaj, kreira se konačni niz tačne dužine, a sadržaj korišćenog niza se prekopira u njega.
 
-To se može predstaviti na ovaj način: ![](/gfx/niz1.jpg)
+To se može predstaviti na ovaj način: ![](niz1.jpg)
 
 Ono što mi je zasmetalo je to što se prilikom proširivanja niza sadržaj kopira više puta. Tako se ovde, na primer, inicijalni plavi deo kopira tri puta; sledeći ljubičasti dva i tako redom. Naravno, svaki put pri proširivanju se kopira ceo prethodni niz, ali ostaje činjenica da se jedan te isti memorijski sadržaj prenosi više puta sa jednog na drugo mesto.
 
@@ -32,7 +32,7 @@ Pomislio sam da možda postoji bolje rešenje od ovoga, koje neće prenositi blo
 
 Nešto, dakle, ovako:
 
-![](/gfx/niz2.jpg)
+![](niz2.jpg)
 
 Sva memorija se sada kopira samo _jednom_, na kraju, kada se zatraži sadržaj kolekcije.
 

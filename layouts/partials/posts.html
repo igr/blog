@@ -1,6 +1,6 @@
   <article class="posts">
 
-    {{ $posts := where .Data.Pages "Section" "post" }}
+    {{ $posts := where .Data.Pages "Section" "posts" }}
 
     {{ range $posts.GroupByDate "2006" -}}
     <section>

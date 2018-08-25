@@ -23,11 +23,11 @@ Tabla sa poljima sadrži izvestan broj tokena. Svaki token je označen brojem, k
 
 Primer jednog problema:
 
-![](/gfx/robots-1.png)
+![](robots-1.png)
 
 i korak do njegovog rešenja:
 
-![](/gfx/robots-2.png)
+![](robots-2.png)
 
 ## Ideja rešenja
 

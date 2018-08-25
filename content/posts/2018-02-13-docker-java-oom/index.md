@@ -38,7 +38,7 @@ Procesor mog računara ima `8` jezgara i `16 GB` memorije. Ukoliko se ne defini�
 
 Hajde sada da pokrenemo program u Docker kontejneru. Pre toga, moramo znati kako je Docker konfigurisan: koliko CPU i memorije mu stoji na raspolaganju. Na mom sistemu trenutno stanje je ovakvo:
 
-![](/gfx/docker-settings.png)
+![](docker-settings.png)
 
 Pokrećemo program:
 
