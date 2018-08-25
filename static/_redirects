@@ -1,3 +1,3 @@
 
-/post/:*           /:splat
-/posts/:*		   /:splat
+/post/*           /:splat
+/posts/*		   /:splat
