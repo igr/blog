@@ -1,6 +1,6 @@
 ---
 title: Tezej protiv Minotaura
-date: 2018-11-12T19:00:00+00:00
+date: 2018-12-02T19:00:00+00:00
 slug: tezej-protiv-minotaura
 categories:
   - Razvoj
@@ -9,8 +9,6 @@ tags:
   - programiranje
   - izazov
   - edukacija
-
-
 ---
 
 U praksi se retko susrećemo sa pravim programerskim izazovima. Zato ponekada izazivam sebe programerskim zadacima i problemima. Takav jedan problem je zadatak iz finala [ACM](https://en.wikipedia.org/wiki/International_Collegiate_Programming_Contest) takmičenja iz 1995: Tezej i Minotaur jure jedan drugog po lavirintu. Ovaj put, međutim, ne želim da se bavim logičkim rešenjem već primenjenim principima: namera mi je bila da rešenje bude što... čitljivije (bolje?).
