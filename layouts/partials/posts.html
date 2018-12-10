@@ -9,8 +9,8 @@
       <ol>
         {{ range .Pages -}}
         <li>
-          <time datetime="{{ .Date.Format "2006-01-02T15:04:05 MST" }}">{{ index $.Site.Data.months (printf "%d" .Date.Month) }} {{ .Date.Day}}</time>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05 MST" }}">{{ index $.Site.Data.months (printf "%d" .Date.Month) }} {{ .Date.Day}}</time>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
         {{- end }}
       </ol>

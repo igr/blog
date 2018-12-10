@@ -1,19 +1,16 @@
 ---
 title: Šta je to digitalizacija?
-date: 2018-12-10T19:00:00+00:00
+date: 2018-12-10T16:01:00+00:00
 slug: sta-je-to-digitalizacija
 categories:
   - Mišljenja
-  tags:
+tags:
   - razvoj
   - poslovanje
   - stav
   - digitalizacija
   - društvo
 ---
-
-
-# Šta je to digitalizacija?
 
 Dođi, prihvati ovaj poklon: bićeš digitalizovan. Tvoj posao će procvetati. Dobićeš mesto na Internetu. Tvoje  poslovanje će biti asimilovano u digitalnu eru. Doživećeš _transformaciju_. Ko pa može da kaže _ne_ digitalizaciji?
 
@@ -39,7 +36,7 @@ Poseban osvrt bih napravio na upliv digitalizacije u nauke i poslovanja koja po 
 
 Da bi pitanje iz naslova ostalo odgovoreno, poslužiću se rečima Stiva Džobsa:
 
-> Kada je alat kompjuter, sve postaje program. Kada je tehnologija Internet, sve postaje web sajt. To nije način.
+> Kada je alat kompjuter, sve postaje program. Kada je tehnologija Internet, sve postaje web sajt. To nije namera.
 
 Siguran sam da bi on to baš ovako rekao.
 
