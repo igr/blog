@@ -3,8 +3,8 @@ languageCode = "en-us"
 title = "Oblac"
 
 [Author]
-	name="igor"
-	homepage = "https://igo.rs/"
+  name="igor"
+  homepage = "https://igo.rs/"
 
 [params]
   description = "Oblac. Blog. Kod. Razmišljanja. Stavovi."
@@ -13,3 +13,6 @@ title = "Oblac"
 
 [permalinks]
   posts = "/:slug"
+
+[blackfriday]
+  hrefTargetBlank = true

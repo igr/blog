@@ -300,11 +300,13 @@ footer {
     color: $gray;
     font-size: 0.8em;
     line-height: 0.9em;
+    font-family: $serif;
 
     @media screen and (min-width: $break-small) {
-      font-size: 1em;
+      font-size: 0.9em;
       line-height: inherit;
-      flex: 0 0 5rem;
+      flex: 0 0 3rem;
+      letter-spacing: -1px;
     }
 
     + a {
