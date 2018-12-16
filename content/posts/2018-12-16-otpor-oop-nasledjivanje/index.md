@@ -1,5 +1,5 @@
 ---
-title: Otpor OOP: Nasleđivanje
+title: "Otpor OOP: Nasleđivanje"
 date: 2018-12-16T15:00:00+00:00
 slug: otpor-oop-nasledjivanje
 categories:
@@ -47,7 +47,7 @@ Idemo dalje. Nasleđivanje obećava da ne moramo da znamo implementacije klasa k
 
 ```java
 public class Array<T> {
-    private ArrayList<T> a = new ArrayList<>(); 
+    private ArrayList<T> a = new ArrayList<>();
     public void add(T element) {
         a.add(element);
     }
@@ -63,7 +63,7 @@ Nasledi ovu klasu tako da ujedno brojiš i koliko ima elemenata u nizu:
 
 ```java
 public class ArrayEx<T> extends Array<T> {
-    private int count = 0; 
+    private int count = 0;
     @Override
     public void add(T element) {
         super.add(element);
