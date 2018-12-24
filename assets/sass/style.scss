@@ -504,11 +504,24 @@ ul#social {
   font-size: 0.8em;
   display: flex;
   flex-flow: row nowrap;
+  font-family: $monospace;
   li {
     display:block;
-    width: 36px;
+    width: 30px;
   }
 }
 
+.box {
+  width: 100% !important;
+  padding-bottom: 100% !important;
+}
+
+figure a {
+  border-bottom: 0;
+}
+figcaption p {
+  font-family: $monospace;
+  color: #fff;
+}
 
 @import "button"

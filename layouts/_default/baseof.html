@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="{{ "css/highlight.css" | relURL }}">
     {{ $style := resources.Get "sass/style.scss" | toCSS | minify | fingerprint }}
     <link rel='stylesheet' href='{{ $style.RelPermalink }}' type='text/css' media='all' />
+
+    {{ if in .Params.features "photoswipe" }}
+    {{ end }}
+
     <link href="{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
 
     <meta property="og:locale" content="sr_RS" />
