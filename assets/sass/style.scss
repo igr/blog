@@ -499,4 +499,16 @@ input[type=text] {
   }
 }
 
+
+ul#social {
+  font-size: 0.8em;
+  display: flex;
+  flex-flow: row nowrap;
+  li {
+    display:block;
+    width: 36px;
+  }
+}
+
+
 @import "button"

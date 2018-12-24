@@ -1,0 +1,64 @@
+<!-- Social Share Button HTML -->
+<ul id="social">
+  <li style="flex-grow: 1; text-align: right; padding-right: 1em; color: #999;">Deli→</li>
+
+<!-- Twitter -->
+{{ if .Site.Params.socialShareTwitter | default true}}
+<li>
+  <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}" target="_blank" class="share-btn twitter">Tw</a>
+</li>
+{{ end }}
+
+<!-- Google Plus -->
+{{ if .Site.Params.socialShareGoogleplus | default true}}
+<li>
+  <a href="https://plus.google.com/share?url={{ .Permalink }}" target="_blank" class="share-btn google-plus">G+</a>
+</li>
+{{ end }}
+
+<!-- Facebook -->
+{{ if .Site.Params.socialShareFacebook | default true}}
+
+<li>
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="share-btn facebook">Fb</a>
+</li>
+{{ end }}
+
+<!-- Reddit -->
+{{ if .Site.Params.socialShareReddit | default true}}
+<li>
+  <a href="https://reddit.com/submit?mini=true&url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="share-btn reddit">Re</a>
+</li>
+{{ end }}
+
+<!-- LinkedIn -->
+{{ if .Site.Params.socialShareLinkedin | default true}}
+<li>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="share-btn linkedin">Ln</a>
+</li>
+{{ end }}
+
+<!-- StumbleUpon -->
+{{ if .Site.Params.socialShareStumbleupon | default false}}
+<li>
+  <a href="https://www.stumbleupon.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" class="share-btn stumbleupon">
+    <p>StumbleUpon</p>
+  </a>
+</li>
+{{ end }}
+
+<!-- Pintrest -->
+{{ if .Site.Params.socialSharePinterest | default false}}
+<li>
+  <a href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink }}&amp;description={{ .Title }}" target="_blank" class="share-btn pinterest">Pi</a>
+</li>
+{{ end }}
+
+<!-- Email -->
+{{ if .Site.Params.socialShareEmail | default true}}
+<li>
+  <a href="mailto:?subject=Check out this post by {{ .Site.Author.name }}&amp;body={{ .Permalink }}" target="_blank" class="share-btn email">Em</a>
+</li>
+{{ end }}
+
+</ul>
