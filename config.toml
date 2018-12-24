@@ -7,12 +7,15 @@ title = "Oblac"
   homepage = "https://igo.rs/"
 
 [params]
-  description = "Oblac. Blog. Kod. Razmišljanja. Stavovi."
+  description = "Oblac: blog / kod / mišljenja / stavovi / lično"
   githubUsername = "igr"
-  tagline = "Blog. Kod. Razmišljanja. Stavovi."
+  tagline = "blog / kod / mišljenja / stavovi / lično"
 
 [permalinks]
   posts = "/:slug"
 
 [blackfriday]
   hrefTargetBlank = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

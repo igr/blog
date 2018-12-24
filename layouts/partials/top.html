@@ -3,6 +3,7 @@
         <h1 id="title">{{ .Site.Title }}</h1>
         <div class="tagline">{{ .Site.Params.tagline }}</div>
       </header>
+      {{ partial "search" . }}
       {{ else }}
       <header class="site-header-small">
         <h1 id="title-small">{{ .Site.Title }}</h1>

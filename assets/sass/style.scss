@@ -278,7 +278,7 @@ footer {
   font-size: 1.1em;
 }
 
-.posts {
+.posts, .p {
 
   ol {
     margin-left: 0;
@@ -392,6 +392,7 @@ table {
 }
 
 .tag {
+  cursor: pointer;
   background: #eee;
   border-radius: 3px 0 0 3px;
   color: #999;
@@ -403,6 +404,12 @@ table {
   margin: 0 10px 10px 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -o-user-select: none;
+  -moz-user-select: none;
 }
 
 .tag::before {
@@ -467,6 +474,29 @@ input[type=email] {
   padding: 10px;
   border: 1px solid #aaa;
 }
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+}
 
+#search-results {
+  p {
+    font-size: 0.8em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+  }
+  .tags {
+    font-size: 0.7em;
+    margin-bottom: 3em;
+  }
+}
+.p {
+  @media screen and (min-width: $break-small) {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: .5rem;
+  }
+}
 
 @import "button"
