@@ -14,7 +14,7 @@ Nekada ne uhvatiš _unchecked exception_.
 Nekada se vrednost podeli sa nulom.
 Nekada nastane _stack overflow_.
 
-A ponekad sve to zajedno.
+A ponekad se dogodi sve to zajedno.
 
 {{< gallery >}}
 {{< figure link="/nova-godina-2019/2019-medium.jpg" caption="2018++">}}
@@ -22,5 +22,3 @@ A ponekad sve to zajedno.
 {{< load-photoswipe >}}
 
 Jbg.
-
-Uživajte.
