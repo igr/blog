@@ -11,7 +11,6 @@ tags:
   - programiranje
   - stav
   - edukacija
-
 ---
 
 Uvodi se informatika u osnovne škole. Postoje incijative, napravljeni su prvi kurikulumi, podignute online platforme; diskusija na ovu temu ne jenjava... Pored aktuelnih i mogućih problema koje ovakva dalekosežna akcija jedne (nesrećne) države nosi sa sobom, čini se da je bar ideja na mestu; uostalom, na mnogim mestima širom sveta ista ideja manje ili više uspešno biva implementirana.
