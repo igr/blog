@@ -1,6 +1,6 @@
 ---
 title: "Baštovan, Algoritmi i Strukture podataka"
-date: 2019-11-10T08:08:08+00:00
+date: 2019-02-10T08:08:08+00:00
 slug: bastovan-algoritmi-i-strukture-podataka
 categories:
   - Razvoj
