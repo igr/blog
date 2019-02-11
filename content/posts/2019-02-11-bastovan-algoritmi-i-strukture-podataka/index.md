@@ -15,9 +15,9 @@ Hleba i igara! Algoritama i struktura podataka! To je sve što treba nama, ubogi
 
 Citirao bih anonimni izvor:
 
-> Data structures and algorithms are an essential part of computer programming. 
+> Data structures and algorithms are an essential part of computer programming.
 
-Ovo je rekao _svako_, _uvek_.
+Ovo je rekao _svako_, _uvek_, _bar jednom_.
 
 Završen članak, idemo dalje.
 
