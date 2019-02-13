@@ -23,7 +23,7 @@ Završen članak, idemo dalje.
 
 ## Baštovan
 
-Dozvoli da ti ispričam priču. Jednoga dana, stari baštova je radio u bašti. Potkresivao je stabljike, vezivao ruže, čupao korov... Dođe podne, žega je bila velika. Odmorio se malo; prelomio pogaču i popio dugačak gutljaj vode. Potom se vratio bašti: list ovde, cvet onde; tamo potok, ovde hlad. Dođe i veče. Baštovan se uspravi; bilo je vreme da se pođe kući. Pogleda po bašti, zamisli se i reče:
+Dozvoli da ti ispričam priču. Jednoga dana, stari baštovan je radio u bašti. Potkresivao je stabljike, vezivao ruže, čupao korov... Dođe podne, žega je bila velika. Odmorio se malo; prelomio pogaču i popio dugačak gutljaj vode. Potom se vratio bašti: list ovde, cvet onde; tamo potok, ovde hlad. Dođe i veče. Baštovan se uspravi; bilo je vreme da se pođe kući. Pogleda po bašti, zamisli se i reče:
 
 > Ne, nemoj trošiti vreme na algoritme i strukture podataka. Neće od tebe napraviti boljeg programera.
 
