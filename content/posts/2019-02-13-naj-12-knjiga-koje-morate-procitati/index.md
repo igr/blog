@@ -27,7 +27,7 @@ Pa da počnemo sa sumarnim vizualom svih naslovnica tih knjiga:
 
 Šta želim da kažem?
 
-Da bi postali dobar programer, morate da postanete prvo solidan čovek. Čitanje knjiga je deo tog puta. Zato uvek čitajte _više_ nego što učite.
+Da bi postali dobar programer, morate da prvo postanete solidan čovek. Čitanje knjiga je deo tog puta. Zato _više_ čitajte nego što učite iz knjiga.
 
 S druge strane, tehničke knjige ne čitajte cele. Naučite da brzo skenirate poglavlja, prepoznavajući o čemu se priča i izdvajajući delove koji su bitni. Fokusirajte se na koncepte (_zašto_), a štiklirajte mentalno gde se sadržaj bavi implementacijom (_kako_).
 
