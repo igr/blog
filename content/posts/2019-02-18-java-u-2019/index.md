@@ -1,6 +1,6 @@
 ---
 title: "Java u 2019."
-date: 2019-02-19T09:09:09+00:00
+date: 2019-02-18T09:09:09+00:00
 slug: java-u-2019
 categories:
   - Mišljenja
