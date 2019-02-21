@@ -25,18 +25,28 @@ if (searchQuery) {
   $('#search-results').append("<p>Unesi reč ili frazu za pretragu.</p>");
 }
 
+var fuse;
+
+function justSearch(searchQuery) {
+  var result = fuse.search(searchQuery);
+  console.log({"matches":result});
+  if (result.length > 0) {
+    populateResults(result);
+  } else {
+    $('#search-results').append("<p>Ništa nije pronađeno :(</p>");
+  }
+}
+
 function executeSearch(searchQuery) {
-  $.getJSON( "/index.json", function( data ) {
-    var pages = data;
-    var fuse = new Fuse(pages, fuseOptions);
-    var result = fuse.search(searchQuery);
-    console.log({"matches":result});
-    if (result.length > 0) {
-      populateResults(result);
-    } else {
-      $('#search-results').append("<p>Ništa nije pronađeno :(</p>");
-    }
-  });
+  if (fuse) {
+    justSearch(searchQuery);
+  } else {
+    $.getJSON( "/index.json", function(data) {
+      var pages = data;
+      fuse = new Fuse(pages, fuseOptions);
+      justSearch(searchQuery);
+    });
+  }
 }
 
 function populateResults(result) {
