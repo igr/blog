@@ -18,14 +18,20 @@ Kada pričam, većina čuje samo "_bla, bla_". Zašto onda ne napravim sajt, pa 
 
 Te napravih: [bla bla](https://blablaigor.com). Koristi se jednostavno:
 
-+ Otvori pretraživač u _full-screen_ modu na što većem monitoru.
++ Otvori internet pretraživač u _full-screen_ modu na što većem monitoru.
 + [bla bla](https://blablaigor.com).
 + Uživaj.
+
+![](blabla.gif)
+
+## Napredno korišćenje
 
 Ukoliko ste **napredan** korisnik:
 
 + Pritisni `Enter` ili klikni crveni kvadrat.
 + Otkucaj nešto (na pr: `java docker`)
 + Uživaj.
+
+## Kod
 
 [Gulp 4 & JS](https://github.com/igr/blabla).
