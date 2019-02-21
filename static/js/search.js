@@ -25,15 +25,26 @@ if (searchQuery) {
   $('#search-results').append("<p>Unesi reč ili frazu za pretragu.</p>");
 }
 
+// hook form
+
+$("#search-form").submit(function() {
+  const searchQuery = $("#search-query").val();
+  executeSearch(searchQuery);
+  return false;
+});
+
+// searching
+
 var fuse;
 
 function justSearch(searchQuery) {
   var result = fuse.search(searchQuery);
   console.log({"matches":result});
+  $('#search-results').empty();
   if (result.length > 0) {
     populateResults(result);
   } else {
-    $('#search-results').append("<p>Ništa nije pronađeno :(</p>");
+    $('#search-results').append("<p>Nema ničega takvog.</p>");
   }
 }
 
