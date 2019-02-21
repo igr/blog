@@ -31,6 +31,7 @@ Ukoliko ste **napredan** korisnik:
 + Pritisni `Enter` ili klikni crveni kvadrat.
 + Otkucaj nešto (na pr: `java docker`)
 + Uživaj.
++ Sa `Escape` se vraćaš u osnovno korišćenje.
 
 ## Kod
 
