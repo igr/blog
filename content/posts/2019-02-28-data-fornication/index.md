@@ -28,7 +28,7 @@ Pozajmiću dva citata:
 
 > You can have data without information, but you cannot have information without data.
 
-[DKM](https://en.wikipedia.org/wiki/Daniel_Keys_Moran) kaže ovde dve stvari. Izdvoji bih prvi deo: podaci su, sami po sebi, _bezvredni_. Gomila ničega, mačka u džaku. Podaci ne nose bilo kakvu informaciju. Podaci su samo glupe jedince i nule; izjednačene su fotke mačaka sa rezultatima istraživanja.
+[DKM](https://en.wikipedia.org/wiki/Daniel_Keys_Moran) kaže ovde dve stvari. Izdvojio bih prvi deo: podaci su, sami po sebi, _bezvredni_. Gomila ničega, mačka u džaku. Podaci ne nose bilo kakvu informaciju. Podaci su samo glupe jedince i nule; izjednačene su fotke mačaka sa rezultatima istraživanja.
 
 Prvi korak u osvešćivanju podataka je stvaranje informacija na osnovu podataka. Da, ovo je trenutak kada se ujedinjuju svi Excel-i sveta i vesele se.
 
