@@ -327,6 +327,11 @@ footer {
     margin-top: 80px;
     letter-spacing: -2px;
     font-size: 3em;
+    line-height: 1.1em;
+    font-weight: 900;
+    @media screen and (min-width: $break-small) {
+      font-size: 5em;
+    }
   }
   .post-header {
     margin-bottom: 3rem;
