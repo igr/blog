@@ -1,7 +1,0 @@
-{{- $.Scratch.Add "index" slice -}}
-{{- range .Site.RegularPages -}}
-	{{ $dateMonth := index $.Site.Data.months (printf "%d" .Date.Month) }}
-	{{ $date := print $dateMonth " " .Date.Day }}
-    {{- $.Scratch.Add "index" (dict "title" .Title "permalink" .Permalink) -}}
-{{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
