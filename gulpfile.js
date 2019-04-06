@@ -15,7 +15,6 @@ const postsToRoot = (path) => {
 Spig
   .on('/**/*.{md,njk}')
   .pageCommon()
-  .summary()
   .collect('tags')
   .rename(postsToRoot)
   .render()
@@ -33,3 +32,8 @@ Spig
   .imageMinify()
 ;
 
+Spig
+  .on('/index.{json,xml}')
+  .kick("POST_RENDER")
+  .applyTemplate()
+;
