@@ -20,5 +20,7 @@ module.exports = nunjucksEnv => {
 
     .addFilter('rsDateShort', rs.dateShort)
     .addFilter('rsDateLong', rs.dateLong)
+
+    .addFilter('filterTags', require('./filters/tags'))
   ;
 };

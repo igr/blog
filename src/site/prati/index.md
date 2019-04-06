@@ -1,6 +1,5 @@
 ---
 title: "Prijava"
-layout: "prijava"
 ---
 
 # Prijava na mejling listu

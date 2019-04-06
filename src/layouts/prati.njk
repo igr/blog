@@ -1,0 +1,10 @@
+{% extends "base.njk" %}
+
+{% block main %}
+
+  {{ content | safe }}
+
+  {% include "partials/mailchimp.html" %}
+
+{% endblock %}
+
