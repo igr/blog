@@ -4,6 +4,11 @@ const Spig = require('./spig/spig');
 
 require('require-dir')('./spig/tasks');
 
+const postsToRoot = (path) => {
+  if (path.dirname.startsWith('/posts/')) {
+    path.dirname = path.dirname.substr(6);
+  }
+};
 
 // PAGES
 
@@ -12,11 +17,7 @@ Spig
   .pageCommon()
   .summary()
   .collect('tags')
-  .rename(path => {
-    if (path.dirname.startsWith('/posts/')) {
-      path.dirname = path.dirname.substr(6);
-    }
-  })
+  .rename(postsToRoot)
   .render()
   .applyTemplate()
   .htmlMinify()
@@ -28,6 +29,7 @@ Spig
 Spig
   .on('/**/*.{png,jpg,gif}')
   .imagesCommon()
+  .rename(postsToRoot)
   .imageMinify()
 ;
 

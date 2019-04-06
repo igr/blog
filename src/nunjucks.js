@@ -19,5 +19,6 @@ module.exports = nunjucksEnv => {
     .addFilter('groupByYear', pages.groupByDateYear)
 
     .addFilter('rsDateShort', rs.dateShort)
+    .addFilter('rsDateLong', rs.dateLong)
   ;
 };

@@ -1,0 +1,45 @@
+<!-- Social Share Button HTML -->
+<ul id="social">
+  <li style="flex-grow: 1; text-align: right; padding-right: 1em; color: #999;">podeli→</li>
+
+  <!-- Twitter -->
+  <li>
+    <a href="https://twitter.com/share?url={{ link }}&text={{ title }}" target="_blank" class="share-btn twitter">Tw</a>
+  </li>
+
+  <!-- Facebook -->
+  <li>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ link }}" target="_blank" class="share-btn facebook">Fb</a>
+  </li>
+
+  <!-- Reddit -->
+  <li>
+    <a href="https://reddit.com/submit?mini=true&url={{ link }}&title={{ title }}" target="_blank"
+       class="share-btn reddit">Re</a>
+  </li>
+
+  <!-- LinkedIn -->
+  <li>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ link }}&title={{ title }}" target="_blank"
+       class="share-btn linkedin">Ln</a>
+  </li>
+
+  <!-- StumbleUpon -->
+  <li>
+    <a href="https://www.stumbleupon.com/submit?url={{ link }}&amp;title={{ title }}" target="_blank"
+       class="share-btn stumbleupon">Su</a>
+  </li>
+
+  <!-- Pintrest -->
+  <li>
+    <a href="https://www.pinterest.com/pin/create/button/?url={{ link }}&amp;description={{ title }}" target="_blank"
+       class="share-btn pinterest">Pi</a>
+  </li>
+
+  <!-- Email -->
+  <li>
+    <a href="mailto:?subject=Check out this post by {{ site.author.name }}&amp;body={{ link }}" target="_blank"
+       class="share-btn email">Em</a>
+  </li>
+
+</ul>
