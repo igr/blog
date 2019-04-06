@@ -29,7 +29,7 @@ Za takve stvari se obično koriste [aliasi](https://en.wikipedia.org/wiki/Alias_
 ```bash
 alias lsf=' for f in *; do [[ -f "$f" ]] && ls -- "$f"; done'
 alias lt=' ls -lhart'
-alias dpsa='docker ps -a --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}"'
+alias ddrmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
 ```
 
 Komande ponekada imaju i poseban način za definisanje skraćenica, kao što to ima `git` u `.gitconfig`.

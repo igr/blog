@@ -45,6 +45,7 @@ fetch(url).then((response) => {
   if (response.ok) {
   } else {
   }
-});```
+});
+```
 
 Hvala!
