@@ -1,0 +1,14 @@
+{% if home %}
+  <header class="site-header">
+    <h1 id="title">{{ site.title }}</h1>
+    <div class="tagline">{{ site.tagline }}</div>
+  </header>
+  {% include "./search.html" %}
+{% else %}
+  <header class="site-header-small">
+    <h1 id="title-small">{{ site.title }}</h1>
+  </header>
+  <nav class="site-nav">
+    <a href="{{ site.baseURL }}">nazad</a>
+  </nav>
+{% endif %}

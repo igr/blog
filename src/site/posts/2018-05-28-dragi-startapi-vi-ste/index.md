@@ -1,7 +1,7 @@
 ---
 title: 'Dragi startapi, vi ste...'
 date: 2018-05-28T09:53:22+00:00
-permalink: dragi-startapi-vi-ste
+slug: dragi-startapi-vi-ste
 categories:
   - Mišljenja
 tags:

@@ -16,9 +16,6 @@ Nekada nastane _stack overflow_.
 
 A ponekad se dogodi sve to zajedno.
 
-{{< gallery >}}
-{{< figure link="/nova-godina-2019/2019-medium.jpg" caption="2018++">}}
-{{< /gallery >}}
-{{< load-photoswipe >}}
+![2018++](2019-medium.jpg)
 
 Jbg.
