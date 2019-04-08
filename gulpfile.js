@@ -14,9 +14,14 @@ const postsToRoot = (path) => {
 
 Spig
   .on('/**/*.{md,njk}')
+
+  ._("PREPARE")
   .pageCommon()
-  .collect('tags')
   .rename(postsToRoot)
+  .collect('tags')
+
+  ._("RENDER")
+  .summary()
   .render()
   .applyTemplate()
   .htmlMinify()
@@ -27,13 +32,24 @@ Spig
 
 Spig
   .on('/**/*.{png,jpg,gif}')
-  .imagesCommon()
+  ._("PREPARE")
+  .assetCommon()
   .rename(postsToRoot)
+
+  ._("IMGS")
   .imageMinify()
 ;
 
 Spig
-  .on('/index.{json,xml}')
-  .kick("POST_RENDER")
+  .on('/index.json')
+  ._("POST_RENDER")
   .applyTemplate()
+;
+
+Spig
+  .on(['/index.xml', '/sitemap.xml'])
+  ._("POST_RENDER")
+  .frontmatter()
+  .applyTemplate()
+  .htmlMinify()
 ;

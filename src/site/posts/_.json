@@ -1,4 +1,8 @@
 {
   "layout": "post",
-  "bundle": true
+  "bundle": true,
+  "kind": "post",
+  "sitemap": {
+    "priority": 1
+  }
 }
