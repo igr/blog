@@ -51,5 +51,4 @@ Spig
   ._("POST_RENDER")
   .frontmatter()
   .applyTemplate()
-  .htmlMinify()
 ;
