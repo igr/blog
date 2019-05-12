@@ -27,7 +27,7 @@ class SpigFiles {
    * Creates a file object and registers it.
    */
   createFileObject(fileName, virtual = false) {
-    const site = SpigConfig.siteConfig;
+    const dev = SpigConfig.dev;
 
     let absolutePath = Path.resolve(fileName);
 
@@ -39,7 +39,7 @@ class SpigFiles {
       path = fileName;
     } else {
       // real files
-      path = '/' + Path.relative(site.root + site.srcDir + site.dirSite, absolutePath);
+      path = '/' + Path.relative(dev.root + dev.srcDir + dev.dirSite, absolutePath);
     }
 
     const fileObject = this.createMeta(absolutePath, path);
@@ -97,7 +97,7 @@ class SpigFiles {
    * Builds a context for templates.
    */
   contextOf(file) {
-    const site = SpigConfig.siteConfig;
+    const site = SpigConfig.site;
     const purl = permalink(file.out);
     const fo = {
       content: file.contents,

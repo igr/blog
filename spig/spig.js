@@ -7,6 +7,7 @@ const LayoutResolver = require('./layout-resolver');
 const Path = require('path');
 const glob = require('glob');
 const log = require('fancy-log');
+const micromatch = require('micromatch');
 
 // system debug errors
 
@@ -56,26 +57,25 @@ class Spig {
 
   constructor(files) {
     this.tasks = {};
-    this.out = SpigConfig.siteConfig.outDir;
-    this.dev = process.env.NODE_ENV !== 'production';
+    this.out = SpigConfig.dev.outDir;
+    //this.dev = process.env.NODE_ENV !== 'production';
 
     this.tasks = {};
     for (const p of PHASES) {
       this.tasks[p] = [];
     }
 
-
-    const site = SpigConfig.siteConfig;
+    const dev = SpigConfig.dev;
     let filePatterns;
 
     if (Array.isArray(files)) {
       for (let i = 0; i < files.length; ++i) {
         const f = files[i];
-        files[i] = site.srcDir + site.dirSite + f;
+        files[i] = dev.srcDir + dev.dirSite + f;
       }
       filePatterns = files;
     } else {
-      filePatterns = [site.srcDir + site.dirSite + files];
+      filePatterns = [dev.srcDir + dev.dirSite + files];
     }
 
     // file names
@@ -184,7 +184,7 @@ class Spig {
    * @see fn_imageMinify
    */
   imageMinify(options) {
-    if (!SpigConfig.devConfig.production) {
+    if (!SpigConfig.site.production) {
       return this;
     }
     return this.use((file) => fn_imageMinify(file, options));
@@ -237,6 +237,11 @@ class Spig {
    */
   render() {
     return this.use((file) => {
+
+      if (!micromatch.isMatch(file.path, SpigConfig.dev.render)) {
+        return;
+      }
+
       const ext = Path.extname(file.path);
       switch (ext) {
         case '.njk':
@@ -272,7 +277,7 @@ class Spig {
    * @see fn_htmlMinify
    */
   htmlMinify(options) {
-    if (!SpigConfig.devConfig.production) {
+    if (!SpigConfig.site.production) {
       return this;
     }
     return this.use(file => fn_htmlMinify(file, options));

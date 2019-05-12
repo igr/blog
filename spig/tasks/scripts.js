@@ -12,23 +12,28 @@ const browserSync = require('browser-sync').create();
 const SpigConfig = require('../spig-config');
 
 gulp.task('js', () => {
-  const site = SpigConfig.siteConfig;
-  return gulp.src([site.srcDir + site.dirJs + '/**/*.js'])
+  const dev = SpigConfig.dev;
+
+  SpigConfig.site.assets['js'] = {};
+  SpigConfig.site.assets.js['dir'] = dev.dirJsOut;
+  SpigConfig.site.assets.js['bundle'] = dev.dirJsOut + '/' + SpigConfig.dev.names.bundle_js;
+
+  return gulp.src([dev.srcDir + dev.dirJs + '/**/*.js'])
     .pipe(plumber())
-    .pipe(gulpif(SpigConfig.devConfig.jsUseBabel, webpack({
+    .pipe(gulpif(SpigConfig.dev.jsUseBabel, webpack({
       mode: 'production'
     })))
     .pipe(sourcemaps.init())
-    .pipe(gulpif(SpigConfig.devConfig.jsUseBabel, babel({
+    .pipe(gulpif(SpigConfig.dev.jsUseBabel, babel({
       presets: ['es2015', '@babel/env', {
         "targets": {
-          "browsers": SpigConfig.devConfig.supportedBrowsers
+          "browsers": SpigConfig.dev.supportedBrowsers
         }
       }]
     })))
-    .pipe(concat(SpigConfig.siteConfig.jsBundleName))
-    .pipe(gulpif(SpigConfig.devConfig.production, uglify()))
+    .pipe(concat(SpigConfig.dev.names.bundle_js))
+    .pipe(gulpif(SpigConfig.site.production, uglify()))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(site.outDir + site.dirJs))
+    .pipe(gulp.dest(dev.outDir + dev.dirJsOut))
     .pipe(browserSync.stream());
 });
