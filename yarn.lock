@@ -5487,6 +5487,11 @@ markdown-it-html5-media@^0.6.0:
   dependencies:
     markdown-it "^8.4.0"
 
+markdown-it-link-attributes@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-link-attributes/-/markdown-it-link-attributes-2.1.0.tgz#32a74c94f7c5cdfd08868d2bee29c6fa70a08324"
+  integrity sha1-MqdMlPfFzf0Iho0r7inG+nCggyQ=
+
 markdown-it@^8.4.0, markdown-it@^8.4.2:
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-8.4.2.tgz#386f98998dc15a37722aa7722084f4020bdd9b54"
@@ -7842,7 +7847,7 @@ spdx-license-ids@^3.0.0:
   integrity sha512-uBIcIl3Ih6Phe3XHK1NqboJLdGfwr1UN3k6wSD1dZpmPsIkb8AGNbZYJ1fOBk834+Gxy8rpfDxrS6XLEMZMY2g==
 
 "spig@file:./spig":
-  version "1.5.0"
+  version "1.5.3"
   dependencies:
     "@babel/core" "^7.4.4"
     "@babel/preset-env" "^7.4.4"
@@ -7882,6 +7887,7 @@ spdx-license-ids@^3.0.0:
     markdown-it-attrs "^2.3.4"
     markdown-it-container "^2.0.0"
     markdown-it-html5-media "^0.6.0"
+    markdown-it-link-attributes "^2.1.0"
     micromatch "^4.0.2"
     mustache "^3.0.1"
     nunjucks "^3.2.0"
