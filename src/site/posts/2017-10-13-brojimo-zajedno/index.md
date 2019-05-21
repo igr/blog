@@ -1,7 +1,7 @@
 ---
 title: Brojimo zajedno
 date: 2017-10-13T09:53:22+00:00
-slug: brojimo_zajedno
+slug: brojimo-zajedno
 categories:
   - Razvoj
 tags:
