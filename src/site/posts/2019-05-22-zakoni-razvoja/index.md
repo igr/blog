@@ -35,9 +35,9 @@ Apokalipsa, sada?
 
 ## Stanje stvari
 
-Softver je **magična** stvar: editovanjem tekstualnih fajlova postižemo da ceo sistem radi na odgovarajući način. To je predivno dostignuće, ali ujedno i prokletstvo. Pošto ga je moguće menjati tako lako, softver se _neprestano_ menja, usložnjava, uvećava. I tako do trenutka kada više nije moguće jednostavno pojmiti šta se tačno dešava u sistemu.
+Softver je **magična** stvar: editovanjem tekstualnih fajlova postižemo da ceo sistem radi na odgovarajući način. To je predivno dostignuće, ali ujedno i prokletstvo. Pošto ga je moguće menjati tako lako, softver se _neprestano_ menja, usložnjava, uvećava. I tako do trenutka kada više nije moguće pojmiti šta se tačno dešava u sistemu.
 
-Ali nije softver kriv za to. On radi tačno ono što mu je iskodirano da radi. Greška je u tome što je pogrešno napisan.   
+Nije softver kriv za to. On radi tačno ono što mu je iskodirano da radi. Greška je u tome što je pogrešno napisan.   
 
 Suština galopirajuće kompleksnosti je nerazumevanje problema koji softver rešava. Mi, softverski inženjeri, ne kapiramo šta to tačno radimo. I, čini mi se, da nas baš briga za to.
 
@@ -54,4 +54,4 @@ Jer, ako mi to ne uradimo, ko će drugi?
 
 ## Misao za kraj
 
-> Da li možete da zamisliti razvoj... bez onoga što danas nazivamo programiranjem?
+> Da li možete da zamisliti razvoj softvera... bez aktivnosti koju danas nazivamo programiranjem?
