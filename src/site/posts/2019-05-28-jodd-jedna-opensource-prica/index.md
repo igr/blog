@@ -52,7 +52,7 @@ A onda uočim ovo:
 
 ![](jodd-downloads.png)
  
-U pitanju je statistika sa Maven Central-a, koja saopštava da su se **Jodd** biblioteke preuzimaju milion puta mesečno u proteklih par meseci, sa tedencijom rasta. Not bad.
+U pitanju je statistika sa Maven Central-a, koja saopštava da se **Jodd** biblioteke preuzimaju milion puta mesečno u proteklih par meseci, sa tedencijom rasta. Not bad.
 
 
 ## Greške su deo puta
