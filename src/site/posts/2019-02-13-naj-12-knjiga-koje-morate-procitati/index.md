@@ -32,3 +32,5 @@ Da bi postali dobar programer, morate da prvo postanete solidan čovek. Čitanje
 S druge strane, tehničke knjige ne čitajte cele. Naučite da brzo skenirate poglavlja, prepoznavajući o čemu se priča i izdvajajući delove koji su bitni. Fokusirajte se na koncepte (_zašto_), a štiklirajte mentalno gde se sadržaj bavi implementacijom (_kako_).
 
 Gde sam ono zaturio Kindle?
+
+NAPOMENA: ne trudite se da otkrijete naslove iza gorenje slike - oni su _namerno_ zamućeni. Ovaj tekst se zapravo ne bavi konkretnim naslovima, već opisanom 'raspodelom' knjiga koje bi trebalo čitati.
