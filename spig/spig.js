@@ -124,6 +124,14 @@ class Spig {
   }
 
   /**
+   * Allows to do additional computation on site.
+   */
+  with(fn) {
+    fn(this, SpigConfig.site);
+    return this;
+  }
+
+  /**
    * Uses generic function to manipulate files.
    */
   use(fn) {
@@ -177,7 +185,15 @@ class Spig {
    * Collects pages by given attribute name.
    */
   collect(attribute) {
-    return this.use((file) => fn_collect(this, file, attribute));
+    return this.use((file) => fn_collect(this, file, attribute, true));
+  }
+
+  /**
+   *
+   * Collects pages by given attribute name, but dont generate pages.
+   */
+  collectAttr(attribute) {
+    return this.use((file) => fn_collect(this, file, attribute, false));
   }
 
   /**
