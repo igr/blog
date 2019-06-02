@@ -17,6 +17,7 @@ Spig
 
   ._("PREPARE")
   .pageCommon()
+  .readingTime()
   .rename(postsToRoot)
   .collect('tags')
 

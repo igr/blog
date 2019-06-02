@@ -339,9 +339,23 @@ footer {
 
   .post-date {
     display: block;
-    margin: $std-margin;
+    margin: $std-margin $std-margin 0 $std-margin;
     text-align: right;
+  }
+  #readtime {
+    display: block;
+    margin: 0 $std-margin $std-margin $std-margin;
+    text-align: right;
+  }
+  .skew span {
+    &:before {
+      content: '/';
+      padding-right: 4px;
+    }
     color: $gray;
+    font-size: 1em;
+    font-family: $monospace;
+    letter-spacing: -1px;
   }
 }
 
@@ -530,4 +544,4 @@ figcaption p {
   color: #fff;
 }
 
-@import "button"
+@import "button";
