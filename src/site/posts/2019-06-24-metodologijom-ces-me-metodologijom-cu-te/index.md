@@ -12,7 +12,7 @@ tags:
 
 Scrum je jednostavan i postoji sa razlogom. Ukoliko ga ne pratiš temeljno, moraš razumeti implikacije. PRINCE2 je esencijalan za projekte bilo koje veličine. IITL, smišljen od strane engleske vlade, je sjajan za dostizanje rezultata, smanjenje troškova i isporučivanja najviših vrednosti krajnjim korisnicima. AgilePM je alternativa waterfall-u i rešava njegove nedostatke. Hoćete još citata?
 
-Upoznajte novu metodologiju: `ZDRUM`. Kida.
+Upoznajte novu metodologiju: `ZDRUM™`. Kida.
 <!--more-->
 
 ## NZS metodologija
@@ -26,7 +26,7 @@ U (softverskom) projektu učestvuje puno igrača: od klijenta do izvršioca. Zdr
 1. usmeravanje informacija, i
 2. njihovo procesiranje tako da ih svaki primalac razume.
 
-Nevolje nastaju kada se jedna ili obe ove premise ne događaju. Problem nastaje kada te nevolje pripišemo pogrešnim faktorima. Onda pribegavamo metodologijama... ali rešavamo pogrešne probleme. Ako usputno rešimo osnovni problem, super - no to se ne dešava toliko često.  
+Nevolje nastaju kada se jedna ili obe ove premise ne događaju. Problem nastaje kada te nevolje pripišemo pogrešnim faktorima. Onda pribegavamo metodologijama... ali rešavamo pogrešne probleme. Ako usputno rešimo osnovni problem, super - no to se ne dešava toliko često.
 
 ## ZDRUM™
 
@@ -51,9 +51,9 @@ Ovo su samo neki primeri `ZDRUM™`-a.
 
 ### U odbranu <metodologija-koju-imas-istetoviranu-na-bicepsu>
 
-Ne kažem da su metodologije loše. One, zapravo, nisu ni dobre, ni loše. One su alat. Ali ako je sve što imaš čekić, svaki problem će ličiti na ekser. Zato gledaj da imaš punu kutiju za alat. Ili to, ili ZDRUM™. 
+Ne kažem da su metodologije loše. One, zapravo, nisu ni dobre, ni loše. One su alat. Ali ako je sve što imaš čekić, svaki problem će ličiti na ekser. Zato gledaj da imaš punu kutiju za alat. Ili to, ili `ZDRUM™`.
 
 
 ## ZDRUM™ sertifikacija i koučing
 
-Javite se. ZDRUM™ je [CPR](https://en.wikipedia.org/wiki/Cardiopulmonary_resuscitation) za vaš projekat.
+Javite se. `ZDRUM™` je [CPR](https://en.wikipedia.org/wiki/Cardiopulmonary_resuscitation) za vaš projekat.
