@@ -90,7 +90,8 @@ Digresija: čika Bloch u knjizi "_Effective Java_" (2nd edition) pod stavkom **#
 
 Iako usamljen, ne znači da ne može da bude elegantan. Sledeće rešenje je baš takvo:
 
-```java">public class SingletonFactory {
+```java
+public class SingletonFactory {
 	public static Singleton get() {
 		return SingletonValue.instance;
 	}
