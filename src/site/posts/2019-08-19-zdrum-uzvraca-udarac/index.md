@@ -10,7 +10,7 @@ tags:
   - mišljenja
 ---
 
-Kako je [nedavna priča](/metodologijom-ces-me-metodologijom-cu-te/) o `ZDRUM` metodologiji je uzela maha, odlučio sam da posvetim manifest on-line.
+Kako je [nedavna priča](/metodologijom-ces-me-metodologijom-cu-te/) o `ZDRUM` metodologiji je uzela maha, odlučio sam da postavim manifest on-line.
 <!--more-->
 
 ![](zdrum-og.png)
