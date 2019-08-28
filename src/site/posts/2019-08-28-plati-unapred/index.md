@@ -16,7 +16,7 @@ tags:
 
 Da li daješ najbolje od sebe?
 
-Vidi, bavim se dugo računarskim tehnologijama: neki broje godine; ja, pak, decenije.Ne hvalim se; puka činjenica. Znaš šta sam naučio za sve to vreme, najvažnija stvar? Ima jedna. Zamisli. Jedna.
+Vidi, bavim se dugo računarskim tehnologijama: neki broje godine; ja, pak, decenije. Ne hvalim se; puka činjenica. Znaš šta sam naučio za sve to vreme, najvažnija stvar? Ima jedna. Zamisli. Jedna.
 
 > Tehnologija je samo alat.
 
@@ -36,7 +36,7 @@ Da li **TI** daješ najbolje od sebe? Ovde i sada?
 
 Vidi, moram da priznam nešto. Nisam budala. Umoran sam da počinjem ponovo. Ako nešto nekome znači: na ivici sam bio da se pustim, kada boli samo dok dišeš, polomljen, kada jedino što ostaje je da slepo veruješ da će se baš sutra promeniti sve, a ono ne dolazi, i tako opet, nada i bol, a sve što imaš je da - veruješ. U promenu.
 
-Odbijam. Obećavam da se nikada ne pustim. Čak i tada...
+Odbijam. Obećavam da se nikada ne pustim.
 
 Zato: da li si tu da učinimo promenu?
 
@@ -45,3 +45,4 @@ Zato: da li si tu da učinimo promenu?
 Šta dođavola čekaš?
 
 [heapspace.rs](https://heapspace.rs)
+
