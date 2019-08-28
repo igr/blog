@@ -10,7 +10,7 @@ tags:
 ---
 
 
-Želim da priznam nešto. Budala sam. Sve jedno, pročitaj ovo. Bez zadrške, briga te šta neka budala piše. Ili nisam. Ne znam. Ti mi reci.
+Želim da priznam nešto. Budala sam. Svejedno, pročitaj ovo. Bez zadrške, briga te šta neka budala piše. Ili nisam. Ne znam. Ti mi reci.
 
 <!--more-->
 
