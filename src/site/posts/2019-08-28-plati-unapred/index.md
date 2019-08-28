@@ -34,7 +34,7 @@ Da li **TI** daješ najbolje od sebe? Ovde i sada?
 
 > Give to help others.
 
-Vidi, moram da priznam nešto. Nisam budala. Umoran sam da počinjem ponovo. Ako nešto nekome znači: na ivici sam bio da se pustim, kada boli samo dok dišeš, polomljen, kada jedino što ostaje je da slepo veruješ da će se baš sutra promeniti sve, a ono ne dolazi, i tako opet, nada i bol, a sve što imaš je da - veruješ. U promenu.
+Vidi, moram da priznam nešto. Nisam budala. Umoran sam da počinjem ponovo. Ako nešto nekome znači: na ivici sam bio da (se) pustim, i tako opet, nada i bol, a sve što imaš je da - veruješ. U promenu.
 
 Odbijam. Obećavam da se nikada ne pustim.
 
