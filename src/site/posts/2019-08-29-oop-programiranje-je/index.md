@@ -46,7 +46,7 @@ O čemu dalje razmišljam? Alan Kay. Kao što Tony Hoare žali nastanak `null`-a
 
 Izdvajam početak i kraj ovog citata: slanje poruka i _ekstremno_ kasno uvezivanje. A dok ovo pišem, Java kompajler u pozadini upravo ekstremno rano uvezuje funkcije koje nisu poruke. Supr.
 
-## Nek ide sve do vraga
+## Nek ide sve bestraga
 
 Nije OOP nešto loše, da se razumemo. Isto kao što mogu da se naprave moćne koještarije u Excelu, slično radimo i u OOP, snalazimo se. On je takav kakav je. Problem je što gotovo da ne znamo za bilo šta drugo. Sve postaje OOP problem.
 
