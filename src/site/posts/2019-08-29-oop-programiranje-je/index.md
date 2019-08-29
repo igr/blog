@@ -50,7 +50,7 @@ Izdvajam početak i kraj ovog citata: slanje poruka i _ekstremno_ kasno uvezivan
 
 Nije OOP nešto loše, da se razumemo. Isto kao što mogu da se naprave moćne koještarije u Excelu, slično radimo i u OOP, snalazimo se. On je takav kakav je. Problem je što gotovo da ne znamo za bilo šta drugo. Sve postaje OOP problem.
 
-Šta je onda ispravno? Svako od nas je činio različite stvari u OOP koje su rešavale _drugačije_ probleme. Iz ovih raznolikih pristupa razvijaju se dalje principi (Liskov, Demeter, SRP, SLA...) koji sintetizuju ono što je danas OOP. Ali niko od nas ne može da tvrdi da _zna_ kako OOP treba da se koristi. Možda to znanje izvući socijalnom heuristikom?
+Šta je onda ispravno? Svako od nas je činio različite stvari u OOP koje su rešavale _drugačije_ probleme. Iz ovih raznolikih pristupa razvijaju se dalje principi (Liskov, Demeter, SRP, SLA...) koji sintetizuju ono što je danas OOP. Ali niko od nas ne može da tvrdi da _zna_ kako OOP treba da se koristi. Možda to znanje izvući socijalnom heuristikom? Socijalnom inteligencijom?
 
 Problemu se, izgleda, mora prići s druge strane, koja je jasna, precizna i egzaktna. Programiranje mora da postane nauka.
 
