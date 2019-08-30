@@ -1,33 +1,29 @@
 ---
 title: Ko je oblac?
 date: 2017-07-24T09:53:22+00:00
-slug: ko-je-oblac-i-sta-zeli
+slug: ko-je-oblac
 categories:
   - Lično
 tags:
   - lično
 ---
 
-Mali blog sa nekim razmišljanjima. Ništa manje, ništa više.
+Blog sa razmišljanjima. Ništa manje, ništa više.
 
 <!--more-->
 
-## Neki odgovori
+## O jeziku
 
-> Koliko dugo se baviš programiranjem?
+Blog pišem na maternjem jeziku; smatram da bi tako trebalo. Ujedno ne umem da prevedem reč "štedro" na engleski.
 
-Profesionalno 18+ godina. Inače, nešto maaaalo duže.
+## O stilu
 
-> O čemu ćeš pisati?
+Stil pisanja _neće leći svima_. Slični blogovi se mahom trude da budu jasni i nude pregršt detalja; predstavljaju analizu, vivisekciju teme; liče na rad za fakultet ili temu iz udžbenika.
 
-Ponajviše o softverskom inženjerstvu.
+Moji tekstovi nisu takvi. Iako se mahom bavim inženjerskim temama, ovo _nije_ tehnički materijal namenjen da pročitate i nešto saznate. Ne zato što mislim da je takav pristup pogrešan - nije, sasvim je na mestu i ima vrednost.
 
-> Zašto na srpskom?
+Ono što ćete naći ovde su: **priče**. Fikcija, pisana po životnim iskustvima:) Želim da tekst _pokrene_ i natera na _razmišljenje_, pa čak i stvori _emociju_. Nebrojeno puta zato će čitalac biti zapravo uskraćen informacijama, koje će biti sabijene u tek par reči. Pažljivo s njima. Nekada mnogo više stoji iza, nazigled, jednostavnog teksta. Tekst zapravo treba da bude tek _polazna tačka_ za sve što sledi dalje.
 
-Tako najlakše razmišljam, posle svega. Smatram i da bi trebalo. I zato što ne znam da prevedem reč "štedro" na engleski.
-
-> Da li umišljaš da si najpametniji?
-
-Ne.
+## O blac
 
 Toliko za sada.
