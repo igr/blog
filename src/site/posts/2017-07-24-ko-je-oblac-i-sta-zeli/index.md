@@ -22,7 +22,7 @@ Stil pisanja _neće leći svima_. Slični blogovi se mahom trude da budu jasni i
 
 Moji tekstovi nisu takvi. Iako se mahom bavim inženjerskim temama, ovo _nije_ tehnički materijal namenjen da pročitate i nešto saznate. Ne zato što mislim da je takav pristup pogrešan - nije, sasvim je na mestu i ima vrednost.
 
-Ono što ćete naći ovde su: **priče**. Fikcija, pisana po životnim iskustvima:) Želim da tekst _pokrene_ i natera na _razmišljenje_, pa čak i stvori _emociju_. Nebrojeno puta zato će čitalac biti zapravo uskraćen informacijama, koje će biti sabijene u tek par reči. Pažljivo s njima. Nekada mnogo više stoji iza, nazigled, jednostavnog teksta. Tekst zapravo treba da bude tek _polazna tačka_ za sve što sledi dalje.
+Ono što ćete naći ovde su: **priče**. Fikcija, pisana po životnim iskustvima:) Želim da tekst _pokrene_ i natera na _razmišljenje_, pa čak i stvori _emociju_. Ako može da bude i duhovit. Nebrojeno puta zato će čitalac biti zapravo uskraćen informacijama, koje će biti sabijene u tek par reči. Pažljivo s njima. Nekada mnogo više stoji iza, nazigled, jednostavnog teksta. Tekst zapravo treba da bude tek _polazna tačka_ za sve što sledi dalje.
 
 ## O blac
 
