@@ -22,7 +22,7 @@ Kliše da je srećan zaposleni ujedno i dobar radnik potiče iz nekih 1920-tih. 
 
 Tužna strana neprestanog hitanja sreći je da je time upravo gubimo. Jedna studija je posmatrala dve grupe koje su radile nešto što nas obično čini sretnim, s tom razlikom da je jednoj prvo bila predočena važnost da se bude srećan. Ta grupa je na kraju označila značajno manje ispunjenje srećom nego grupa kojoj ništa nije bilo rečeno. Zanimljivo je i istraživanje koje kaže da sreća dovodi do uspeha; a ne obratno. Razmislite o ovome na trenutak: da li se fokusiramo da samo uradimo zadatke sa TODO liste ili Jira table, ili ih zapravo svestrano rešavamo (i proživljavamo)?
 
-Na sve to, dodao bih nešto sa čime je trebalo da započnem tekst: mi zapravo i ne znamo šta je to sreća, niti kako da je izmenimo. Uvrnuto, naročito kada živimo u eri koja je nameće kao moralnu obavezu.
+Na sve to, dodao bih nešto sa čime je trebalo da započnem tekst: mi zapravo i ne znamo šta je to sreća, niti kako da je izmerimo. Uvrnuto, naročito kada živimo u eri koja je nameće kao moralnu obavezu.
 
 ## Trik
 Ah, da, trik. Kada god vidim neki "srećni" oglas ili izliv poslovne sreće, pomislim da je to:
