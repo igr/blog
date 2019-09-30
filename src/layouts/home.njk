@@ -6,7 +6,7 @@
 
     {% for k, v in posts | groupByYear('date') %}
       <section>
-        <h2>{{ k }}</h2>
+        <h2 class="year">{{ k }}</h2>
         <ol>
           {% for i in v %}
             <li>

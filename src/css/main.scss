@@ -191,6 +191,11 @@ h6 {
 h2 {
   font-size: 2.2rem;
 }
+h2.year {
+  position: sticky;
+  top: 0;
+  background-color: $white;
+}
 
 h3 {
   font-size: 1.6rem;
@@ -225,9 +230,12 @@ h6 {
 
   h1 {
     margin-bottom: .5rem;
-    border-left: 10px solid $red;
+    border-left: 20px solid $red;
     padding-left: 10px;
     padding-top: 10px;
+    border-radius: 10px 0px 0px 0px;
+    -moz-border-radius: 10px 0px 0px 0px;
+    -webkit-border-radius: 10px 0px 0px 0px;
   }
   p {
     color: $gray;
