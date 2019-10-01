@@ -27,7 +27,11 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="{{ link }}">
   <meta property="og:site_name" content="Oblac"/>
-  <meta property="og:image" content="{{ site.baseURL }}/o-wide.png"/>
+  {% if og.img %}
+  <meta property="og:image" content="{{site.baseURL}}/{{url}}{{ og.img }}"/>
+  {% else %}
+  <meta property="og:image" content="{{site.baseURL}}/o-wide.png"/>
+  {% endif %}
 
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Josefin+Sans:400,700|Domine:400,700">
