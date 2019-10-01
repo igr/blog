@@ -8,7 +8,7 @@ tags:
   - razvoj
   - posao
   - zapošljavanje
-  - olgasi
+  - oglasi
   - sreća
 ---
 Nemoguće je zanemariti prelivanje srećnih radnih okruženja i razdraganih radnih timova sa poslovnih mreža i oglasa za posao. Nikada mi nisu prijali. Odnedavno imam i trik kako ih zaobilazim.
