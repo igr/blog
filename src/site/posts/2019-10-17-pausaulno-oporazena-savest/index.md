@@ -8,6 +8,7 @@ tags:
   - razvoj
   - mišljenje
   - obrazovanje
+  - zajednica
 ---
 
 Dobar pokazatelj šta nam je važno je kada prestanemo da ćutimo dok nam se uzima. Tako je bilo i u kraljevstvu Jitututu.
