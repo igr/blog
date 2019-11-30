@@ -19,7 +19,7 @@ tags:
 
 Svaka zagonetka je zadata na tabli koju čine grupe trouglova različitih boja. Igrač odabira jednu takvu grupu i "prebojava je" u drugu boju. Pri tome se susedne grupe obojene istom bojom spajaju, čime formiraju novu, veću grupu trouglova. Cilj je obojiti celu tablu jednom bojom - za zadati broj poteza.
 
-Iako se to možda ne vidi iz opisa, mehanike igre je jednostavna. Igrač se trudi da prebojava grupe trouglova na takav način da se površina obojena jednom bojom sve više povećava.
+Iako se to možda ne vidi iz opisa, mehanike igre je jednostavna. Igrač se trudi da prebojava grupe trouglova na takav način da se površina obojena jednom bojom povećava.
 
 Jedna od prvih tabli je ova:
 
@@ -38,7 +38,7 @@ Prva stvar je naći način kako prebaciti tablu iz igrice na smisleni način u b
 
 Očitavanje pozicije trouglova nije problem. Iako tablu čine trouglovi, struktura je ipak obična matrica: dovoljno je uzimati piksel svako malo po `x` i `y` osi i time očitati boju trougla.
 
-Prvi izazov je prepoznavanje identične boje - kao što se sa gornje slike vidi, trouglovi nisu obojeni uniformno. Zato boje poredimo sa određenim dozvoljenim odstupanjem. Bez nekog većeg udubljivanja u problem, poredim svaku RGB komponentu ponaosob i gledam da li je razlika između komponenti u dozvoljenim granicama. Ukoliko se sve komponente boje poklapaju u datim granicama, smatram da je boja ista. Pokazuje se da ovo radi dobro; ipak u par slučajeva je bilo potrebno ručno prilagoditi sliku naglašavanjem ili promenom boja, jer igrica primenjuje nekakav filter preko table, čime su desni i viši trouglovi nešto svetliji.
+Prvi izazov je prepoznavanje identične boje - kao što se sa gornje slike vidi, trouglovi nisu obojeni uniformno. Zato boje poredimo sa određenim dozvoljenim odstupanjem. Bez nekog većeg udubljivanja u problem, poredim svaku RGB komponentu ponaosob i gledam da li je razlika između komponenti u dozvoljenim granicama. Ukoliko se sve komponente boje poklapaju u datim granicama, smatram da je boja ista. Pokazuje se da ovo radi dobro; ipak ponekad treba ručno prilagoditi sliku naglašavanjem ili promenom boja, jer igrica primenjuje nekakav filter preko table, čime su desni i viši trouglovi nešto svetliji.
 
 Važnija stvar u vezi trouglova je njihovo uvezivanje. Neophodna je informacija kako su trouglovi povezani, da bi znali koji su susedni, kako bi se boja "prelila" na njih. Nezgodno je to što su trouglovi postavljeni naizmenično: čas se dodiruju temenom (pa nisu povezani, tj. susedni), čas svojom stranicom (pa jesu povezani). Kako je tabla ipak samo matrica, dosta je primeniti baš to pravilo oko povezivanja svakog drugog trougla, pri čemu treba voditi računa i o trouglovima iznad (parsiranje kreće od levog gornjeg ćoška i ide redovima ka dole).
 
@@ -69,7 +69,7 @@ ukoliko ih nema, smatram da je čvor optimizovan i uklanjam ga iz skupa
 ponovljaj dok god ima neoptimizovanih čvorova u skupu
 ```
 
-Za sada je zadovoljavajuće, u ovoj fazi je bitno da radi :)
+Za sada je zadovoljavajuće.
 
 ## Rešavanje problema
 
@@ -85,7 +85,7 @@ u suprotnom, reši ponovo tako dobijenu tablu (rekurzija)
 U našem primeru bi to izgledalo ovako:
 
 + za prvi, levi zeleni čvor, generišemo "klikove". Naravno, ignorišemo klik s istom bojom, pa generišemo dva "klika": jedan s žutom i jedan s crvenom bojom. 
-  `[G* - Y - R - Y - G]`
+  `[G - Y - R - Y - G]`
 + Uzmemo žuti "klik" i primenimo ga na zeleni čvor. Čvor postaje žuti.
   `[Y - Y - R - Y - G]`
 + Redukujemo graf pošto postoje susedni čvorovi iste boje. 
@@ -97,7 +97,7 @@ U našem primeru bi to izgledalo ovako:
 
 Rešeno!
 
-Drugim rečima, prolazimo drvo svih mogućih grafova koji mogu da nastanu tokom igre i pronalazimo prvo koje rešava problem.
+Drugim rečima, prolazimo drvo svih mogućih grafova koji nastaju tokom igre i pronalazimo prvo koje rešava problem.
 
 ## Usložnjavanje
 
@@ -172,9 +172,9 @@ Specijalni slučaj je kada je tabla simetrična:
 
 ![](flower.jpg)
 
-Ova tabla je suludo matematički kompleksna! Gotovo da je svaki trougao zaseban, jako je malo grupa trouglova iste boje; a broj klikova je čak `10`! Algoritam ne uspeva da ovo reši za neko prihvatljivo vreme čekanja.
+Ova tabla je suludo matematički kompleksna! Gotovo da je svaki trougao zaseban, jako je malo grupa trouglova iste boje; a broj klikova je čak `10`. Algoritam ne uspeva da ovo reši za neko prihvatljivo vreme čekanja.
 
-Pošto je simetrična, mogu da posmatram samo jednu četvrtinu table! No stvari nisu tako jednostavne za implementaciju. Kada je tabla redukovana, klikove na trouglove koji nisu na ivicama četvrtine vrede kao 4 koraka, a ne jedan! Na primer, klik na crni gornje-levi ugao treba primeniti i na sve ostale crne uglove, pa ga zato treba računati četiri puta. To dalje značajno optimizuje pronalaženje rezultata, ali usložnjava kod.
+Pošto je simetrična, mogu da posmatram samo jednu četvrtinu table! No stvari nisu tako jednostavne za implementaciju. Kada je tabla redukovana, klikove na trouglove koji nisu na ivicama četvrtine vrede kao 4 koraka, a ne jedan. Na primer, klik na crni gornje-levi ugao treba primeniti i na sve ostale crne uglove, pa ga zato treba računati četiri puta. To dalje značajno optimizuje pronalaženje rezultata, ali usložnjava kod.
 
 Sa ovom optimizacijom, tabla se rešava za tričavih 12-tak sekundi, sa nekih `1.1m` kliktanja.
 
@@ -186,22 +186,22 @@ A onda je došla ovakva tabla na red:
 
 ![](kami5.jpg)
 
-Jednostavno rešenje, ali nezgodan slučaj za algoritam: ni jedan od prvih klikova ne eleminiše boju, čime se najvažnije optimizacija ne primenjuje. Očigledno je da ovde zapravo rešavamo 3 table ponaosob!
+Jednostavno rešenje, ali nezgodan slučaj za algoritam: ni jedan od prvih klikova ne eleminiše boju, čime se najvažnija optimizacija ne primenjuje. Očigledno je da ovde zapravo rešavamo 3 prostije table ponaosob.
 
-Nazad u editor: pišem kod koji deli tablu na više manjih tabli, te svaku rešava zasebno. Ovom prilikom malo varam jer pretpostavljam da je broj klikova za sve nove, manje table isti. Varam malo više i predviđam boju kojom sve bi sve table trebalo na kraju biti obojene; no ovo i nije toliko strašno, samo želim konačno u krevet.
+Nazad u editor: pišem kod koji deli tablu na više manjih tabli, te svaku rešavam zasebno. Ovom prilikom malo varam, jer pretpostavljam da je broj klikova za sve nove, manje table isti. Varam malo više i predviđam boju kojom sve bi sve table trebalo na kraju biti obojene; no ovo i nije toliko strašno, samo želim konačno u krevet.
 
 Rešeno!
 
 ### Sortiranje klikova
 
-Ipak, i dalje postoje table koje znaju da naprave problem. Nova optimizacija je ta da očekujemo da su klikovi na čvorove koji imaju najviše suseda "bolji" od ostalih klikova. Drugim rečima, bojimo oblasti koje imaju najviše suseda.
+Ipak, i dalje postoje table koje znaju da naprave problem. Nova optimizacija je ta da očekujemo da su klikovi na čvorove koji imaju najviše suseda "bolji" od ostalih klikova. Drugim rečima, prvo bojimo oblasti koje imaju najviše suseda. Ovo se implementira jednostavnim `sorted()` u strimu klikova.
 
 Rešeno... valjda :)
 
 ## Gde ja stadoh, ti produži
 
-Trenutni algoritam rešava veliki broj Kami2 tabli u razumnom vremenu - ali ne i sve. Takođe je potrebna manja izmena koda tu i tamo; nije sve automatizovano. Potpuno rešenje će morati da napiše neko pametniji :)
+Trenutni algoritam rešava veliki broj Kami2 tabli u razumnom vremenu - ali verovatno ne i sve. Takođe je potrebna manje prilagođavanje koda tu i tamo; nije sve automatizovano. Potpuno rešenje će morati da napiše neko pametniji :)
 
 Ovde negde i završavam. [Kod je dostupan](https://github.com/igr/kami-solver).
 
-Eh, kada bi AI zaista postojao...
+(Eh, kada bi AI zaista postojao...)
