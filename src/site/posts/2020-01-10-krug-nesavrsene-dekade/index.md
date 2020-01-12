@@ -53,4 +53,4 @@ I dalje razmišljamo na marginama stranica; ostaje mesta samo još za pitanje:
 
 > Kakav to tehnološki svet želimo da (do)živimo 2031.?
 
-Možda neću biti tu. Ali sve jedno, hajde da radimo na tome.
+Sve jedno, hajde da radimo na tome.
