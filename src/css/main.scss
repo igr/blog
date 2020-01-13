@@ -2,7 +2,7 @@ $black: #303030;
 $gray: #686868;
 $light-gray: #e5e5e5;
 $white: #fbfbfb;
-$line-color: #ccc;
+$line-color: #666;
 $text-color: #444;
 $red: #bf2139;
 $serif-head: 'Josefin Sans';
@@ -50,13 +50,19 @@ blockquote {
 }
 
 hr {
-  align: center;
   display: block;
   width: 80%;
-  height: 0;
-  margin: 2rem auto;
+  margin: 2rem auto 3rem auto;
   border: 0;
-  border-top: 1px solid $line-color;
+  text-align: center;
+}
+hr:after {
+  line-height: 1.4;
+  letter-spacing: 1em;
+  display: block;
+  color: $line-color;
+  font-size: 1.2em;
+  content: "...";
 }
 
 figure {
