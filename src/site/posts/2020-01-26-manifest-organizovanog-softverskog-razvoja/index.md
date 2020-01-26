@@ -16,7 +16,7 @@ Pre nego što momentalno napustiš stranu - priznajem, ovo više zvuči kao naja
 
 <!--more-->
 
-Neki drugi koji su isto razmišljali na ovu temu; krenuli su od ideje da celine koji učestvuju u razvoju softvera posmatraju kao socijalne grupe. Organizovali su istraživanje raznolikih softverskih kompanija; uočili su izvesne obrasce i ono što izdvaja produktivne timove. G. Cain i Copien iz AT&T Bell laboratorija su predstavili rezultate istraživanja u radu _"Social patterns in productive software development organizations"_, objavljenom krajem 1996. (!) godine. Mala trivija: početkom iste godine je uveden Internet u tadašnju Jugoslaviju.
+Neki drugi koji su isto razmišljali na ovu temu su krenuli od ideje da se celine koje učestvuju u razvoju softvera posmatraju kao socijalne grupe. Organizovali su istraživanje raznolikih softverskih kompanija; uočili su izvesne obrasce i ono što izdvaja produktivne timove. G. Cain i Copien iz AT&T Bell laboratorija su predstavili rezultate istraživanja u radu _"Social patterns in productive software development organizations"_, objavljenom krajem 1996. (!) godine. Mala trivija: početkom iste godine je uveden Internet u tadašnju Jugoslaviju.
 
 Neću prepričavati pomenuti rad, javno je dostupan i možete ga brzo naći pretragom; 20-tak strana neće uzeti puno vremena. Izdvojiću samo tri uvida koja nalazim ključnim za razvoj softvera, u vidu nekakvog manifesta (jer to zvuči tako dobro:)
 
