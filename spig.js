@@ -1,8 +1,6 @@
-"use strict";
+const { Spig } = require('spignite');
 
-const Spig = require('./spig/spig');
-
-require('require-dir')('./spig/tasks');
+Spig.hello();
 
 const postsToRoot = (path) => {
   if (path.dirname.startsWith('/posts/')) {
@@ -14,12 +12,13 @@ const postsToRoot = (path) => {
 
 Spig
   .on('/**/*.{md,njk}')
+  .watchSite()
 
   ._("PREPARE")
   .pageCommon()
   .readingTime()
   .rename(postsToRoot)
-  .collect('tags')
+  .tags()
 
   ._("RENDER")
   .summary()
@@ -33,23 +32,24 @@ Spig
 
 Spig
   .on('/**/*.{png,jpg,gif}')
-  ._("PREPARE")
+
+  ._("IMAGES")
   .assetCommon()
   .rename(postsToRoot)
-
-  ._("IMGS")
   .imageMinify()
 ;
 
 Spig
   .on('/index.json')
-  ._("POST_RENDER")
+  ._("RSS")
   .applyTemplate()
 ;
 
 Spig
   .on(['/index.xml', '/sitemap.xml'])
-  ._("POST_RENDER")
+  ._("SITEMAP")
   .frontmatter()
   .applyTemplate()
 ;
+
+Spig.run();

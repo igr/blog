@@ -1,12 +1,12 @@
 {
   "name": "blog",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "oblac.rs",
   "scripts": {
-    "clean": "gulp clean",
-    "dev": "gulp dev",
-    "serve": "gulp build && gulp serve",
-    "build": "gulp build"
+    "clean": "rm -rf out",
+    "dev": "node spig.js dev",
+    "build": "node spig.js",
+    "build:lambda": "cd netlify && build.sh"
   },
   "author": {
     "name": "Igor Spasić",
@@ -16,6 +16,6 @@
   "license": "MIT",
   "homepage": "https://oblac.rs",
   "dependencies": {
-    "spig": "file:./spig"
+    "spignite": "^2.0.3"
   }
 }
