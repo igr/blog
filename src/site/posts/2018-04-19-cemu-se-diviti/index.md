@@ -4,7 +4,7 @@ date: 2018-04-19T11:11:22+00:00
 slug: cemu-se-diviti
 categories:
   - Razvoj
-tags:
+tag:
   - ideal
   - primer
   - razvoj

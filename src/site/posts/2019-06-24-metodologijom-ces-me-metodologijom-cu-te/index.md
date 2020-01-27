@@ -4,7 +4,7 @@ date: 2019-06-24T06:13:13+00:00
 slug: "metodologijom-ces-me-metodologijom-cu-te"
 categories:
   - Mišljenja
-tags:
+tag:
   - razvoj
   - metodologije
   - mišljenja

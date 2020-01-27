@@ -4,7 +4,7 @@ date: 2017-10-18T09:53:22+00:00
 slug: prepoznavanje-lica
 categories:
   - Razvoj
-tags:
+tag:
   - analiza
   - detekcija
   - java

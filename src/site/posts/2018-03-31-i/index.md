@@ -4,7 +4,7 @@ date: 2018-03-31T11:11:22+00:00
 slug: i
 categories:
   - Prigovor
-tags:
+tag:
   - jezik
   - klijent
   - komunikacija

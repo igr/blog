@@ -4,7 +4,7 @@ date: 2018-06-06T12:06:22+00:00
 slug: izgubljena-sustina
 categories:
   - Mišljenja
-tags:
+tag:
   - izazov
   - kiritika
   - ljudi

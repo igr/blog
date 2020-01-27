@@ -4,7 +4,7 @@ date: 2017-12-04T09:53:22+00:00
 slug: lenji-consumer-i-supplier
 categories:
   - Razvoj
-tags:
+tag:
   - consumer
   - funk
   - funkcionalno

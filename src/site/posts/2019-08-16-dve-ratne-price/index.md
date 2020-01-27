@@ -4,7 +4,7 @@ date: 2019-08-16T06:06:06+00:00
 slug: "dve-ratne-price"
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - metodologije
 ---

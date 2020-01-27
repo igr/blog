@@ -4,7 +4,7 @@ date: 2018-04-03T09:53:22+00:00
 slug: fetch-no-fetch
 categories:
   - Razvoj
-tags:
+tag:
   - api
   - fetch
   - http

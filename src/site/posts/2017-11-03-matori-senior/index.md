@@ -4,7 +4,7 @@ date: 2017-11-03T09:45:22+00:00
 slug: matori-senior
 categories:
   - Mišljenja
-tags:
+tag:
   - osobine
   - posao
   - programer

@@ -4,7 +4,7 @@ date: 2017-08-03T09:53:22+00:00
 slug: kako-cuvati-dotfiles
 categories:
   - Saveti
-tags:
+tag:
   - backup
   - dotfiles
   - git

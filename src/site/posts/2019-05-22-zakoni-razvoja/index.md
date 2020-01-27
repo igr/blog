@@ -4,7 +4,7 @@ date: 2019-05-22T07:21:21+00:00
 slug: "zakoni-razvoja"
 categories:
   - Mišljenja
-tags:
+tag:
   - razvoj
 ---
 
@@ -16,7 +16,7 @@ Okej, vreme je da stanemo. Stop. Dosta više s nasumičnim razvojem. Ne pričamo
 
 Godine 1980. [NORAD](https://en.wikipedia.org/wiki/North_American_Aerospace_Defense_Command) je usled kompjuterske greške objavio da je u toku napad na Sjedinjene Države.
 
-Godine 1985. je otkrivena ozonska rupa iznad Antartika koju [NASA](https://www.nasa.gov) nije uočila za sedam godina proučavanja, usled greške u dizajnu softvera za analizu podataka. 
+Godine 1985. je otkrivena ozonska rupa iznad Antartika koju [NASA](https://www.nasa.gov) nije uočila za sedam godina proučavanja, usled greške u dizajnu softvera za analizu podataka.
 
 Godine 1996. raketa Ariane 5 je skrenula sa predviđene putanje 37 sekundi nakon poletanja, jer je ponovno upotrebljen kod koji je radio sa prethodnom generacijom raketa.
 
@@ -37,12 +37,12 @@ Apokalipsa, sada?
 
 Softver je **magična** stvar: editovanjem tekstualnih fajlova postižemo da ceo sistem radi na odgovarajući način. To je predivno dostignuće, ali ujedno i prokletstvo. Pošto ga je moguće menjati tako lako, softver se _neprestano_ menja, usložnjava, uvećava. I tako do trenutka kada više nije moguće pojmiti šta se tačno dešava u sistemu.
 
-Nije softver kriv za to. On radi tačno ono što mu je iskodirano da radi. Greška je u tome što je pogrešno napisan.   
+Nije softver kriv za to. On radi tačno ono što mu je iskodirano da radi. Greška je u tome što je pogrešno napisan.
 
 Suština galopirajuće kompleksnosti je nerazumevanje problema koji softver rešava. Mi, softverski inženjeri, ne kapiramo šta to tačno radimo. I, čini mi se, da nas baš briga za to.
 
 
-## Zakoni razvoja 
+## Zakoni razvoja
 
 Stvari moraju da se promene, iz korena. Dosta je više sa veličanjem pukog znanja kodiranja. Potrebno je da se osvrnemo ŠTA i KAKO to pravimo. Čak i kada imamo ideju kako se prave kompleskni sistemi, mi to ne radimo.
 

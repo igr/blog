@@ -4,7 +4,7 @@ date: 2019-03-06T16:26:54+00:00
 slug: heapcon-intro
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - programiranje
   - java

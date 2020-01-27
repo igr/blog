@@ -4,7 +4,7 @@ date: 2017-08-25T09:53:22+00:00
 slug: dm2-app-preuzeta-cetvrt-miliona-puta
 categories:
   - Prikaz
-tags:
+tag:
   - alat
   - open-source
   - windows

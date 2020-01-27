@@ -4,7 +4,7 @@ date: 2018-03-03T10:03:22+00:00
 slug: zasto-nisam-popularan-u-drustvu
 categories:
   - Lično
-tags:
+tag:
   - diskusija
   - lično
   - razvoj

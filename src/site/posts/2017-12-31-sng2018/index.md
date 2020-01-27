@@ -4,7 +4,7 @@ date: 2017-12-31T10:01:22+00:00
 slug: sng2018
 categories:
   - Lično
-tags:
+tag:
   - lično
 ---
 

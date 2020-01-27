@@ -4,7 +4,7 @@ date: 2017-11-11T09:53:22+00:00
 slug: nije-rest-svaki-api
 categories:
   - Razvoj
-tags:
+tag:
   - api
   - dizajn
   - http

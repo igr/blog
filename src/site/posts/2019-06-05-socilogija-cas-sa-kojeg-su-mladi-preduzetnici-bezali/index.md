@@ -4,7 +4,7 @@ date: 2019-06-05T07:21:21+00:00
 slug: "sociologija-cas-sa-kojeg-su-mladi-preduzetnici-bezali"
 categories:
   - Mišljenja
-tags:
+tag:
   - razvoj
   - društvo
   - mišljenja
@@ -13,7 +13,7 @@ tags:
 "...i ova inovativna aplikacija će učiniti svet boljim mestom", završavaju svoj _pitch_ mladi preduzetnici puni nade i očekivanja, sjajnih očiju uprtih u budućnost. Zapravo, licemerno želimo da budemo milioneri u 24. godini i zagrizemo američki san. Pri čemu ne umemo da razlikujemo inovaciju od lineranog progresa.
 <!--more-->
 
-Ne treba se zavaravati: ono što nam se dešava je linearni progres napretka. Više uređaja, više aplikacija, više servisa... Progres je neophodan, naravno. No umemo li da se otklonimo od utabanog puta i upustimo se u inovaciju?   
+Ne treba se zavaravati: ono što nam se dešava je linearni progres napretka. Više uređaja, više aplikacija, više servisa... Progres je neophodan, naravno. No umemo li da se otklonimo od utabanog puta i upustimo se u inovaciju?
 
 ## Čas sa kojeg smo bežali
 

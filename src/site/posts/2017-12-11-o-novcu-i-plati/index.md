@@ -4,7 +4,7 @@ date: 2017-12-11T10:09:22+00:00
 slug: o-novcu-i-plati
 categories:
   - Mišljenja
-tags:
+tag:
   - plata
   - posao
   - vrednost

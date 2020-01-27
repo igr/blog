@@ -5,7 +5,7 @@ slug: junit5
 categories:
   - Prikaz
   - Razvoj
-tags:
+tag:
   - framework
   - junit
   - prikaz

@@ -4,7 +4,7 @@ date: 2017-10-02T09:53:22+00:00
 slug: async-nonblocking
 categories:
   - Razvoj
-tags:
+tag:
   - asynchronous
   - izvršavanje
   - nio

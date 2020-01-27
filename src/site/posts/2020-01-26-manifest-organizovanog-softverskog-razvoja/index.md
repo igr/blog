@@ -4,7 +4,7 @@ date: 2020-01-26T01:20:20+00:00
 slug: manifest-organizovanog-softverskog-razvoja
 categories:
   - Razvoj
-tags:
+tag:
   - tehnologija
   - svest
   - razvoj

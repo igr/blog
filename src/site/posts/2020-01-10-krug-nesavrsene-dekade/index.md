@@ -4,7 +4,7 @@ date: 2020-01-10T01:20:20+00:00
 slug: krug-nesavrsene-dekade
 categories:
   - Mišljenja
-tags:
+tag:
   - lično
   - tehnologija
   - svest

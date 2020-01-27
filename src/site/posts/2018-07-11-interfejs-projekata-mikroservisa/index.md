@@ -5,7 +5,7 @@ slug: interfejs-projekata-mikroservisa
 categories:
   - Razvoj
   - Saveti
-tags:
+tag:
   - make
   - mikroservisi
   - organizacija

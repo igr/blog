@@ -4,7 +4,7 @@ date: 2019-08-29T11:11:11+00:00
 slug: "oo-programiranje-je"
 categories:
   - Mišljenja
-tags:
+tag:
   - lično
   - mišljenja
   - razvoj

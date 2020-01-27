@@ -4,7 +4,7 @@ date: 2017-12-06T09:53:22+00:00
 slug: ne-koristi-string-equals
 categories:
   - Razvoj
-tags:
+tag:
   - equals
   - java
   - razvoj

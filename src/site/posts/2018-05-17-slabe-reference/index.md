@@ -4,7 +4,7 @@ date: 2018-05-17T09:53:22+00:00
 slug: slabe-reference
 categories:
   - Razvoj
-tags:
+tag:
   - gc
   - java
   - razvoj

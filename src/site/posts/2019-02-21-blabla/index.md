@@ -4,7 +4,7 @@ date: 2019-02-21T10:21:22+00:00
 slug: bla-bla
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - javascript
   - gulp

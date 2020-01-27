@@ -4,7 +4,7 @@ date: 2017-10-27T11:11:22+00:00
 slug: usamljenost-singletona
 categories:
   - Razvoj
-tags:
+tag:
   - efikasnost
   - factory
   - java

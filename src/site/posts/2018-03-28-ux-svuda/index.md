@@ -4,7 +4,7 @@ date: 2018-03-28T12:10:22+00:00
 slug: ux-svuda
 categories:
   - Mišljenja
-tags:
+tag:
   - komunikacija
   - kritika
   - ui

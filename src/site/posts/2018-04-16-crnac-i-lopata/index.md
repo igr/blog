@@ -4,7 +4,7 @@ date: 2018-04-16T08:45:22+00:00
 slug: crnac-i-lopata
 categories:
   - Mišljenja
-tags:
+tag:
   - efikasnost
   - kolaboracija
   - menadžment

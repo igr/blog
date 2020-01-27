@@ -4,7 +4,7 @@ date: 2019-02-18T09:09:09+00:00
 slug: java-u-2019
 categories:
   - Mišljenja
-tags:
+tag:
   - razvoj
   - programiranje
   - stav

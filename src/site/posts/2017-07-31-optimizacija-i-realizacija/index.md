@@ -4,7 +4,7 @@ date: 2017-07-31T09:53:22+00:00
 slug: optimizacija-i-realizacija
 categories:
   - Mišljenja
-tags:
+tag:
   - brzina
   - knuth
   - kompleksnost

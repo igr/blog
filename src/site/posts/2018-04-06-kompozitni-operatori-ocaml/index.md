@@ -4,7 +4,7 @@ date: 2018-04-06T10:33:22+00:00
 slug: kompozitni-operatori-ocaml
 categories:
   - Razvoj
-tags:
+tag:
   - ocaml
   - operator
   - razvoj

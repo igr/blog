@@ -4,7 +4,7 @@ date: 2017-10-05T09:53:22+00:00
 slug: promise-me-future
 categories:
   - Razvoj
-tags:
+tag:
   - asynchronous
   - future
   - izvršavanje

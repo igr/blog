@@ -4,7 +4,7 @@ date: 2019-02-13T09:09:09+00:00
 slug: naj-12-knjiga-koje-morate-procitati
 categories:
   - Mišljenja
-tags:
+tag:
   - razvoj
   - programiranje
   - stav

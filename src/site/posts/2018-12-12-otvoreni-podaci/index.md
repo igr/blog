@@ -4,7 +4,7 @@ date: 2018-12-12T11:17:13+00:00
 slug: otvoreni-podaci
 categories:
   - Mišljenja
-tags:
+tag:
   - inicijativa
   - stav
   - digitalizacija

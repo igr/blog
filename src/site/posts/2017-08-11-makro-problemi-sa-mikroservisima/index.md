@@ -5,7 +5,7 @@ slug: makro-problemi-sa-mikroservisima
 categories:
   - Mišljenja
   - Razvoj
-tags:
+tag:
   - arhitektura
   - devops
   - docker

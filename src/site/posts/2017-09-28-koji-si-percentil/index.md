@@ -4,7 +4,7 @@ date: 2017-09-28T01:42:22+00:00
 slug: koji-si-percentil
 categories:
   - Razvoj
-tags:
+tag:
   - load
   - merenje
   - optimizacija

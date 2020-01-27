@@ -4,7 +4,7 @@ date: 2017-12-21T12:21:22+00:00
 slug: pisanje-programa-umetnost-ili-nauka
 categories:
   - Mišljenja
-tags:
+tag:
   - inženjerstvo
   - nauka
   - programer

@@ -5,7 +5,7 @@ slug: java9
 categories:
   - Prikaz
   - Razvoj
-tags:
+tag:
   - java
   - java9
   - prikaz

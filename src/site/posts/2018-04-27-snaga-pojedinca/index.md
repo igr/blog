@@ -4,7 +4,7 @@ date: 2018-04-27T09:53:22+00:00
 slug: snaga-pojedinca
 categories:
   - Mišljenja
-tags:
+tag:
   - odgovornost
   - pojedinac
   - razvoj

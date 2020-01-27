@@ -4,7 +4,7 @@ date: 2018-12-25T07:07:07+00:00
 slug: nova-godina-2019
 categories:
   - Lično
-tags:
+tag:
   - lično
 features:
   - photoswipe

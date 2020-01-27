@@ -4,7 +4,7 @@ date: 2017-09-17T09:53:22+00:00
 slug: nlp-bot-za-pet-dana
 categories:
   - Razvoj
-tags:
+tag:
   - analiza
   - bot
   - java

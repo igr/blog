@@ -4,7 +4,7 @@ date: 2017-11-13T11:01:22+00:00
 slug: cmd-vs-entrypoint
 categories:
   - Razvoj
-tags:
+tag:
   - docker
   - mikroservisi
 ---

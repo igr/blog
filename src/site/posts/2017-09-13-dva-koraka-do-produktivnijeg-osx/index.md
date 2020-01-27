@@ -5,7 +5,7 @@ slug: dva-koraka-do-produktivnijeg-osx
 categories:
   - Alati
   - Saveti
-tags:
+tag:
   - alfred
   - osx
   - produktivnost

@@ -4,7 +4,7 @@ date: 2017-11-17T09:53:22+00:00
 slug: anatomija-svakog-oglasa
 categories:
   - Mišljenja
-tags:
+tag:
   - oglas
   - osobine
   - posao

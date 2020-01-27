@@ -4,7 +4,7 @@ date: 2018-03-06T10:33:22+00:00
 slug: raznolikost-koda
 categories:
   - Razvoj
-tags:
+tag:
   - kvalitet
   - mikroservisi
   - različitost

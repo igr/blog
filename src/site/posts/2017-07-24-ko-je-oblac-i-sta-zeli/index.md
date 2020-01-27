@@ -4,7 +4,7 @@ date: 2017-07-24T09:53:22+00:00
 slug: ko-je-oblac
 categories:
   - Lično
-tags:
+tag:
   - lično
 ---
 

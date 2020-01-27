@@ -4,7 +4,7 @@ date: 2018-08-31T13:07:04+00:00
 slug: volatile-nije-programiranje
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - java
   - programiranje

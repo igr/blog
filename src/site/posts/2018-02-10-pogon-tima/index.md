@@ -4,7 +4,7 @@ date: 2018-02-10T17:32:59+00:00
 slug: pogon-tima
 categories:
   - Mišljenja
-tags:
+tag:
   - agilno
   - efikasnost
   - kolaboracija

@@ -4,7 +4,7 @@ date: 2018-01-08T23:48:22+00:00
 slug: dokumentovanje-odluka
 categories:
   - Razvoj
-tags:
+tag:
   - arhitektura
   - dokumentacija
   - komunikacija

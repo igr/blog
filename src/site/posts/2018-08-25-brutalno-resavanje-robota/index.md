@@ -4,7 +4,7 @@ date: 2018-08-25T13:07:04+00:00
 slug: brutalno-resavanje-robota
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - brutal-force
   - logika

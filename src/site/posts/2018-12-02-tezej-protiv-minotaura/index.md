@@ -4,7 +4,7 @@ date: 2018-12-02T19:00:00+00:00
 slug: tezej-protiv-minotaura
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - programiranje
   - izazov

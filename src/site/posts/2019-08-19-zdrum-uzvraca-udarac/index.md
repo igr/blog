@@ -4,7 +4,7 @@ date: 2019-08-19T17:17:17+00:00
 slug: "zdrum-uzvraca-udarac"
 categories:
   - Mišljenja
-tags:
+tag:
   - razvoj
   - metodologije
   - mišljenja

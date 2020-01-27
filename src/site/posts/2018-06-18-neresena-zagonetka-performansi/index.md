@@ -4,7 +4,7 @@ date: 2018-06-18T09:53:22+00:00
 slug: neresena-zagonetka-performansi
 categories:
   - Razvoj
-tags:
+tag:
   - java
   - jmh
   - optimizacija

@@ -6,7 +6,7 @@ categories:
   - Lično
 og:
   img: "supr-og.png"
-tags:
+tag:
   - sreća
   - lično
   - život

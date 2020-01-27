@@ -4,7 +4,7 @@ date: 2017-10-25T13:00:22+00:00
 slug: prezentacije-koje-to-jesu
 categories:
   - Mišljenja
-tags:
+tag:
   - događaj
   - konferencija
   - meetup

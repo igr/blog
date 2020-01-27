@@ -4,7 +4,7 @@ date: 2017-09-30T09:53:22+00:00
 slug: zajednica
 categories:
   - Mišljenja
-tags:
+tag:
   - lično
   - meetup
   - organizacija

@@ -4,7 +4,7 @@ date: 2017-08-01T09:53:22+00:00
 slug: maven-central-i-gradle
 categories:
   - Razvoj
-tags:
+tag:
   - artefakti
   - central
   - gradle

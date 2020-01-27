@@ -4,7 +4,7 @@ date: 2019-05-28T01:07:03+00:00
 slug: "jodd-jedna-opensource-prica"
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - jodd
   - framework
@@ -44,14 +44,14 @@ Open-source projekat često znači _upornu, tvrdoglavu posvećenost_ kodu koji d
 
 ## Nije sve lako
 
-Nepostojanje _feedback_-a je karakteristična za male OS projekte kao što je ovaj; to je često... poražavajuće. Ne znati da li projekat ikome zaista čini je Pandorina kutija. Bilo je više takvih [momenata](https://github.com/oblac/jodd/issues/585) kada sam je otvorio; uticalo je čak na moje duševno stanje u tom periodu. Ne mogu reći da je bilo lepo; bilo je grozno. Izgubiš sebe i pokušaš da ponovo pronađeš smisao u onome što radiš. A onda uhvatiš sebe kako prečesto osvežavaš [GitHub](https://github.com/oblac/jodd) stranicu da bi proverio broj zvezdica kojima su označili tvoj projekat :) Zato, ako koristite neki open-source projekat koga razvijaju pojedinci, pošaljite im po koju poruku; siguran sam da će im značiti.   
+Nepostojanje _feedback_-a je karakteristična za male OS projekte kao što je ovaj; to je često... poražavajuće. Ne znati da li projekat ikome zaista čini je Pandorina kutija. Bilo je više takvih [momenata](https://github.com/oblac/jodd/issues/585) kada sam je otvorio; uticalo je čak na moje duševno stanje u tom periodu. Ne mogu reći da je bilo lepo; bilo je grozno. Izgubiš sebe i pokušaš da ponovo pronađeš smisao u onome što radiš. A onda uhvatiš sebe kako prečesto osvežavaš [GitHub](https://github.com/oblac/jodd) stranicu da bi proverio broj zvezdica kojima su označili tvoj projekat :) Zato, ako koristite neki open-source projekat koga razvijaju pojedinci, pošaljite im po koju poruku; siguran sam da će im značiti.
 
 Ono što mi je jedno vreme teško padalo je gotovo nikakva podrška lokalne... bilo čega lokalnog. Da se razumemo, ne smatram da je **Jodd** revolucionarno dostignuće, ali verujem da sadrži par premisa koje su (i dalje) vredne. Ne želim da 'prodajem' priče i time podstičem interesovanje; neka svako sam uoči vrednost i zato se uključi u igru. To se ovde ne dešava. Prijatelj iz doline silikona mi je jednom prilikom napomenuo da su ljudi tamo mnogo... pa, prijemčiviji idejama. On je, primera radi, bio opčinjen time što je poterao jQuery skripte na Nashornu; i radio je dalje optimizacije CSS selektora. Kako bilo, nikada nije bilo ozbiljnije podrške; često ni razumevanja. Ne tražim da neko kodira umesto mene, ali često zatreba da se diskutuje o arhitekturi, podele misli; i tu najviše nedostaju sagovornici. Slično sam doživeo i sa drugim projektima, nažalost. No dobro, siguran sam da je to samo moje iskustvo i da nije nužno tako stanje stvari.
 
 A onda uočim ovo:
 
 ![](jodd-downloads.png)
- 
+
 U pitanju je statistika sa Maven Central-a, koja saopštava da se **Jodd** biblioteke preuzimaju milion puta mesečno u proteklih par meseci, sa tedencijom rasta. Not bad.
 
 
@@ -67,9 +67,9 @@ Verovali ili ne, termin "micro-framework" je skovan upravo za potrebe **Jodd** f
 
 Dobre stvari bavljenja open-source projektima je to što imaš prilike da dobro izučiš programerski ekosistem. Naučiš puno toga što ti zapravo i ostane; u ovom slučaju raznoliko poznavanje kako Java-stvari funkcionišu.
 
-Jako je lepo i kada preko svog projekta upoznaš nekoga, naročito iz drugih Open-Source projekata. Tako na primer, momci iz [Gatling](https://gatling.io)-a su puno pomogli sa konkretnim PR-ovima i savetima i optimizacijama; za [ByteBuddy](https://bytebuddy.net/) sam saznao i pre nego što je objavljen i tako redom. Tu su i redovni pomagači na projektu, ljudi koje nikada nisam upoznao, ali eto, odvajaju vreme da bar nekako pomognu.  
+Jako je lepo i kada preko svog projekta upoznaš nekoga, naročito iz drugih Open-Source projekata. Tako na primer, momci iz [Gatling](https://gatling.io)-a su puno pomogli sa konkretnim PR-ovima i savetima i optimizacijama; za [ByteBuddy](https://bytebuddy.net/) sam saznao i pre nego što je objavljen i tako redom. Tu su i redovni pomagači na projektu, ljudi koje nikada nisam upoznao, ali eto, odvajaju vreme da bar nekako pomognu.
 
-I super je kul kada napraviš stiker za svoj projekat :) Makar i kada srpska carina zapleni paket, jer sadrži više od "par identičnih stvari", te posumnjaju da se zapravo bavim nekakvom prodajom stikera i time se nezakonito bogatim? wtf, ljudi, 100 stikera :) 
+I super je kul kada napraviš stiker za svoj projekat :) Makar i kada srpska carina zapleni paket, jer sadrži više od "par identičnih stvari", te posumnjaju da se zapravo bavim nekakvom prodajom stikera i time se nezakonito bogatim? wtf, ljudi, 100 stikera :)
 
 
 ## Idemo dalje

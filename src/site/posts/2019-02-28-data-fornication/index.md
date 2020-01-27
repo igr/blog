@@ -4,7 +4,7 @@ date: 2019-02-28T10:08:08+00:00
 slug: data-fornication
 categories:
   - Mišljenja
-tags:
+tag:
   - razvoj
   - programiranje
   - podaci

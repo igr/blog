@@ -4,7 +4,7 @@ date: 2018-03-15T11:00:22+00:00
 slug: zamisao-dokumentacije
 categories:
   - Razvoj
-tags:
+tag:
   - agilno
   - dokumentacija
   - kvalitet

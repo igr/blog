@@ -4,7 +4,7 @@ date: 2018-03-01T23:45:52+00:00
 slug: as-a-user-i-want
 categories:
   - Mišljenja
-tags:
+tag:
   - agilno
   - projekti
   - razvoj

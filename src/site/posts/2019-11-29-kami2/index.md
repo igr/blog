@@ -4,7 +4,7 @@ date: 2019-11-29T11:12:13+00:00
 slug: kami2-vs-oblac
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - kotlin
   - algoritam
@@ -84,11 +84,11 @@ u suprotnom, reši ponovo tako dobijenu tablu (rekurzija)
 
 U našem primeru bi to izgledalo ovako:
 
-+ za prvi, levi zeleni čvor, generišemo "klikove". Naravno, ignorišemo klik s istom bojom, pa generišemo dva "klika": jedan s žutom i jedan s crvenom bojom. 
++ za prvi, levi zeleni čvor, generišemo "klikove". Naravno, ignorišemo klik s istom bojom, pa generišemo dva "klika": jedan s žutom i jedan s crvenom bojom.
   `[G - Y - R - Y - G]`
 + Uzmemo žuti "klik" i primenimo ga na zeleni čvor. Čvor postaje žuti.
   `[Y - Y - R - Y - G]`
-+ Redukujemo graf pošto postoje susedni čvorovi iste boje. 
++ Redukujemo graf pošto postoje susedni čvorovi iste boje.
   `[Y - R - Y - G]`
 + Za novi graf sve ovo rekurzivno ponavljamo: sada za prvi žuti čvor generišemo dva "klika": zeleni i crveni. Međutim, oba ne dovode do rešenja, pa kako je dostignut maksimalni broj klikova (`2`), vraćamo se nazad na početni graf i uzimamo sledeći, crveni "klik".
   `[R - Y - R - Y - G]`.

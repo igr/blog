@@ -4,7 +4,7 @@ date: 2017-10-13T09:53:22+00:00
 slug: brojimo-zajedno
 categories:
   - Razvoj
-tags:
+tag:
   - asynchronous
   - brzina
   - java

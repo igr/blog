@@ -4,7 +4,7 @@ date: 2018-08-17T19:04:18+00:00
 slug: razumevanje-koda
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - kod
   - razumevanje

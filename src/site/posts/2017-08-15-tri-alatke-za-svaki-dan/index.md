@@ -4,7 +4,7 @@ date: 2017-08-15T09:53:22+00:00
 slug: tri-alatke-za-svaki-dan
 categories:
   - Alati
-tags:
+tag:
   - alat
   - api
   - devops

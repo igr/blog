@@ -4,7 +4,7 @@ date: 2018-12-16T15:00:00+00:00
 slug: otpor-oop-nasledjivanje
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - programiranje
   - oop

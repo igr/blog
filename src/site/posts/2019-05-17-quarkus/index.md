@@ -4,7 +4,7 @@ date: 2019-05-17T09:52:43+00:00
 slug: quarkus
 categories:
   - Razvoj
-tags:
+tag:
   - java
   - mikroservisi
   - tehnologija
@@ -14,7 +14,7 @@ tags:
 [Quarkus](https://quarkus.io) je Kubernetes-Native Java framework prilagođen za GraalVM i HotSpot, sačinjen od najboljih Java biblioteka i standarda. Namera Quarkusa je da Javu načini vodećom platformom u Kubernetes i serverless okruženjima, a da u isto vreme ponudi programerima jedinstveni reaktivan i imperativan programerski model, koji optimalno adresira široki spektar distribuiranih arhitektura.
 <!--more-->
 
-Vredi izdvojiti da Quarkus dolazi iz Crvenog Kapčeta (Red Hat); zbog naglaska na K8s i Openshift. 
+Vredi izdvojiti da Quarkus dolazi iz Crvenog Kapčeta (Red Hat); zbog naglaska na K8s i Openshift.
 
 ## Java framework
 
@@ -22,10 +22,10 @@ Kao prvo, Quarkus je Java framework. Ne, u ovom slučaju nije "još-jedan"; prat
 
 Druga stvar je da se funkcionalnosti frameworka dodaju u projekat instaliranjem tkzv. [ekstenzija](https://quarkus.io/extensions/). Instaliranje je puko dodavanje zavisnosti u `build` fajl na Quarkus biblioteku koja wrappuje postojeću biblioteku i time čini stvari još jednostavnijim za rad. Na primer, ukoliko treba uključiti `RESTEasy JSON-B`, instalira se `io.quarkus:quarkus-resteasy-jsonb` ekstenzija, koja sa sobom donosi sve zavisnosti i podešavanja, te je sve odmah spremno za rad.
 
-Naravno, u projekat je moguće uključiti i 3rd party biblioteke koje nemaju svoju Quarkus ekstenziju. To radi očekivano bez problema - osim ako ne koristite Graal; više o tome kasnije. 
+Naravno, u projekat je moguće uključiti i 3rd party biblioteke koje nemaju svoju Quarkus ekstenziju. To radi očekivano bez problema - osim ako ne koristite Graal; više o tome kasnije.
 
-Evo nekih primera kako izgleda raditi sa Quarkusom.  
-    
+Evo nekih primera kako izgleda raditi sa Quarkusom.
+
 Konfiguracioni parametri koriste Microprofile:
 
 ```java
@@ -83,7 +83,7 @@ Primera radi, startovanje servera i aplikacije, koje zna da bude notorno dugo, u
 
 ```
 INFO  [io.quarkus]] (main) Quarkus 0.14.0 started in 1.285s. Listening on: http://[::]:8080
-INFO  [io.quarkus]] (main) Installed features: [cdi, jaeger, kubernetes, resteasy, resteasy-jsonb 
+INFO  [io.quarkus]] (main) Installed features: [cdi, jaeger, kubernetes, resteasy, resteasy-jsonb
 ```
 
 a kao _native_ kod:
@@ -91,7 +91,7 @@ a kao _native_ kod:
 ```
 INFO  [io.quarkus]] (main) Quarkus 0.14.0 started in 0.027s. Listening on: http://[::]:8080
 INFO  [io.quarkus]] (main) Installed features: [cdi, jaeger, kubernetes, resteasy, resteasy-jsonb, smallrye-health, smallrye-opentracing]
-``` 
+```
 
 Da, nije greška, server je startovan za 27 milisekundi. Da, Graal kida :)
 
@@ -99,7 +99,7 @@ Da li moramo negde da platimo za ovu brzinu? Naravno. Kompajliranje Graal-om u _
 
 Drugi problem je da sve ne-Quarkus zavisnosti nemaju garanciju da rade sa Graal-om. Naravno, u većini slučajeva to nije problem, no dešava se da neka biblioteka prosto ne može da se kompajlira u _native_ kod.
 
-Nazad na optimizaciju: ne čini je samo _native_ kod. Tu su i druge optimizacije, kao na primer analiza metapodataka prilikom kompajliranja i zamena refleksija konkretnim pozivima (gde je moguće) itd. Sve to bi trebalo da proizvede optimizovaniji kod, čak i kada se izvršava u osnovnom obliku, kao Java jar. 
+Nazad na optimizaciju: ne čini je samo _native_ kod. Tu su i druge optimizacije, kao na primer analiza metapodataka prilikom kompajliranja i zamena refleksija konkretnim pozivima (gde je moguće) itd. Sve to bi trebalo da proizvede optimizovaniji kod, čak i kada se izvršava u osnovnom obliku, kao Java jar.
 
 ## Docker, K8s, OpenShift
 
@@ -135,7 +135,7 @@ Ništa novo.
 Quarkus je još mlada platforma; intenzivno se radi na njoj. Možda je najbolji odgovor na pitanje "Zašto?" upravo sledeći citat:
 
 > _Not_ trying to _reinvent_ the enterprise world, and using familiar technology, but with a _highly-optimized implementation_.
-   
-Brzina i lakoća razvoja, ekstenzije i Graal čine ga vrlo zanimljivim za razvoj. Nedostatak je, možda, vezivanje za vendora, te razvoj i širenje fukncionalnosti zavisi od njega i open-source zajednice. 
+
+Brzina i lakoća razvoja, ekstenzije i Graal čine ga vrlo zanimljivim za razvoj. Nedostatak je, možda, vezivanje za vendora, te razvoj i širenje fukncionalnosti zavisi od njega i open-source zajednice.
 
 GitHub: [hello-quarkus](https://github.com/igr/hello-quarkus)

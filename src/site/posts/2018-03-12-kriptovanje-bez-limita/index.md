@@ -4,7 +4,7 @@ date: 2018-03-12T12:12:22+00:00
 slug: kriptovanje-bez-limita
 categories:
   - Razvoj
-tags:
+tag:
   - aes
   - enkripcija
   - java

@@ -4,7 +4,7 @@ date: 2019-06-04T08:07:03+00:00
 slug: "kratka-studija-dizajna-funkcija"
 categories:
   - Razvoj
-tags:
+tag:
   - razvoj
   - framework
   - programiranje
@@ -53,14 +53,14 @@ Funkcija `calcScore()` mi ne dozvoljava da se opustim, iako radi šta treba. Nij
 
 Lambda u `forEach` koriste objekat koji dolazi izvan (`resource`). Dalje, kreira se vrednost `Health`, da bi se već u sledećem koraku iskoristila dalje. S druge strane, nema smisla da lambda uopšte bude svestna `Score`.
 
-Druga stvar je važnija i ne uočava se iz gornjeg koda: postoji nemali broj mogućnosti kako dizajnirati klase `Score`, `Health`... i njihov odnos. Ni jedan od tih načina nije posebno loš ili dobar. Svodi se na lični izbor, na kraju krajeva - što baš i nije vrlina koda. 
+Druga stvar je važnija i ne uočava se iz gornjeg koda: postoji nemali broj mogućnosti kako dizajnirati klase `Score`, `Health`... i njihov odnos. Ni jedan od tih načina nije posebno loš ili dobar. Svodi se na lični izbor, na kraju krajeva - što baš i nije vrlina koda.
 
 ## Funkcionalno razmišljanje
 
 Napomena: ovo što sledi je samo primer - _ogled_ jednog načina razmišljanja.
 
 Funkcije posmatram kao _jediničnu transformaciju_. One su korak transformacije ulaza. Rešenje problema je sada niz tranformacija koje treba primeniti na ulaz (`List<Resource>`) da bi došli do rezultata (`Map<String, Score>`). Nešto ovako:
- 
+
 ```
 List<Resource> -> Resource ->
 Check -> CheckHealth ->
@@ -96,9 +96,9 @@ Da li je ovo zaista bolje?
 
 Da, ovo je bolje. Da li može čitljivije - može, naravno. Na primer, iako je provera `Supplier`, dozvolio bih zaseban funkcionalni interfejs koji bi imenom obevaštavao da radimo zaista provere (na pr: `checkResource()`). Kolektori su posebna priča: u gornjem primeru nisu na prvo čitanje jasni, ali se daju bar izmestiti u posebne klase. Tu već negde udaramo u funkcionalna ograničenja Jave (i nepostojanja monada kao osnovne gradivne jedinice koda).
 
-Suština boljitka je u pristupu. Ponavljam, primenjujemo jedinične transformacije sve dok ne dobijemo željeni izlaz. Ništa više, ništa manje. To je vrednost. 
+Suština boljitka je u pristupu. Ponavljam, primenjujemo jedinične transformacije sve dok ne dobijemo željeni izlaz. Ništa više, ništa manje. To je vrednost.
 
-## Isto to, sada u Kotlinu 
+## Isto to, sada u Kotlinu
 
 Iskreno, gornji Java kod nisam napisao 'iz rukava', naročito deo sa kolektorima na kraju. Igre radi, okušao sam se u Kotlinu:
 
@@ -116,7 +116,7 @@ database
   )
   .mapValues { Score(it.key, it.value) }
   .mapKeys { it.key.resource.id }
-```  
+```
 
 Meni je ovaj kod baš legao. Nije sve moralo u ovoliko koraka, ali - zašto da ne. Ima tu stvari i koje se ne vide, kao na primer keširanje na nivou resursa (radi boljih performansi).
 

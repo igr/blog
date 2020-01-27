@@ -4,7 +4,7 @@ date: 2017-12-14T13:17:22+00:00
 slug: multi-release-jars
 categories:
   - Razvoj
-tags:
+tag:
   - jar
   - java
   - java9

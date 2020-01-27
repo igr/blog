@@ -4,7 +4,7 @@ date: 2018-04-23T09:00:22+00:00
 slug: arango-tvoja-nova-nosql-baza
 categories:
   - Razvoj
-tags:
+tag:
   - arango
   - baza
   - graf

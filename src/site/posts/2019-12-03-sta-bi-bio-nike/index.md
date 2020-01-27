@@ -4,7 +4,7 @@ date: 2019-12-04T07:55:01+00:00
 slug: sta-bi-bio-nike-softverskog-inzenjerstva
 categories:
   - Mišljenja
-tags:
+tag:
   - lično
   - tehnologija
   - zabavno

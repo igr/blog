@@ -7,7 +7,7 @@ guid: https://oblac.rs/?p=153
 slug: zabrinutost-napretkom
 categories:
   - Mišljenja
-tags:
+tag:
   - budućnost
   - napredak
   - razvoj

@@ -4,7 +4,7 @@ date: 2018-02-15T10:42:55+00:00
 slug: odlucnost-vizije
 categories:
   - Mišljenja
-tags:
+tag:
   - efikasnost
   - ideja
   - kolaboracija

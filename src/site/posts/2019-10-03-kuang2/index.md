@@ -4,7 +4,7 @@ date: 2019-10-03T03:02:03+00:00
 slug: kuang2
 categories:
   - Lično
-tags:
+tag:
   - razvoj
   - lično
   - virus

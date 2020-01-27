@@ -4,7 +4,7 @@ date: 2018-05-20T09:53:22+00:00
 slug: google-pali-ai
 categories:
   - Kritika
-tags:
+tag:
   - ai
   - duplex
   - google
