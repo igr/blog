@@ -22,11 +22,11 @@ module.exports = (pages) => {
       continue;
     }
     result.push({
-      contents: cleanup(p.plain),
+      contents: cleanup(p.content),
       date: rs.dateShort(p.date),
       permalink: p.link,
       title: p.title,
-      tags: p.tags
+      tags: p.tag
     });
   }
 

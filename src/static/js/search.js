@@ -1,5 +1,5 @@
 summaryInclude = 60;
-var fuseOptions = {
+const fuseOptions = {
   shouldSort: true,
   includeMatches: true,
   threshold: 0.0,
@@ -16,13 +16,13 @@ var fuseOptions = {
   ]
 };
 
-var searchQuery = param("s");
+const searchQuery = param("s");
 
 if (searchQuery) {
   $("#search-query").val(searchQuery);
   executeSearch(searchQuery);
 } else {
-  $('#search-results').append("<p>Unesi reč ili frazu za pretragu.</p>");
+  $('#search-results').append("<p>Unesi pojam za pretragu.</p>");
 }
 
 // hook form
@@ -70,9 +70,9 @@ function populateResults(result) {
       snippetHighlights.push(searchQuery);
     } else {
       $.each(value.matches,function(matchKey,mvalue) {
-        if (mvalue.key == "tags" || mvalue.key == "categories" ) {
+        if (mvalue.key === "tags" || mvalue.key === "categories" ) {
           snippetHighlights.push(mvalue.value);
-        } else if (mvalue.key == "contents") {
+        } else if (mvalue.key === "contents") {
           start = mvalue.indices[0][0] - summaryInclude > 0 ? mvalue.indices[0][0]-summaryInclude : 0;
           end = mvalue.indices[0][1] + summaryInclude<contents.length?mvalue.indices[0][1] + summaryInclude:contents.length;
           snippet += contents.substring(start,end);
@@ -85,14 +85,14 @@ function populateResults(result) {
       snippet += contents.substring(0, summaryInclude * 2);
     }
     //pull template from hugo template definition
-    var templateDefinition = $('#search-result-template').html();
+    const templateDefinition = $('#search-result-template').html();
     //replace values
-    var htmlTags = '';
+    let htmlTags = '';
     for (let t of value.item.tags) {
       htmlTags += '<li class="tag">' + t + '</li>';
     }
 
-    var output = render(templateDefinition, {
+    const output = render(templateDefinition, {
       key: key,
       title: value.item.title,
       link: value.item.permalink,
@@ -117,7 +117,7 @@ function param(name) {
 
 function render(templateString, data) {
   var conditionalPattern = /\$\{\s*isset ([a-zA-Z]*) \s*\}(.*)\$\{\s*end\s*}/g;
-  // since loop below depends on re.lastInxdex, we use a copy to capture any manipulations whilst inside the loop
+  // since loop below depends on re.lastIndex, we use a copy to capture any manipulations whilst inside the loop
   var copy = templateString;
   var conditionalMatches;
   while ((conditionalMatches = conditionalPattern.exec(templateString)) !== null) {
