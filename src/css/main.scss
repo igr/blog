@@ -104,13 +104,15 @@ blockquote {
 }
 
 a {
-  border-bottom: 1px solid currentColor;
   color: $red;
   text-decoration: none;
-
+  border: 0;
+  background: linear-gradient(to bottom, $red 0%, $red 1000%) repeat-x 0 100%;
+  background-size: 1px 2px;
+  transition: .2s;
   &:hover {
-    border-bottom: 1px solid $white;
-    color: $red;
+    color: #fff;
+    background-size: 1px 40px;
   }
 }
 
@@ -230,8 +232,7 @@ h6 {
   }
 }
 
-.site-header,
-.site-nav {
+.site-header {
   margin-bottom: 2rem;
 
   h1 {
@@ -324,6 +325,7 @@ footer {
       margin-left: 0rem;
       font-family: $serif-head, serif;
       text-transform: uppercase;
+      padding-top: 4px;
 
       @media screen and (min-width: $break-small) {
         margin-left: 2rem;
@@ -477,6 +479,7 @@ table {
   color: #999;
   font-size: 0.8rem;
   border-bottom: none;
+  background: none;
   font-family: $monospace;
   letter-spacing: -1px;
 }
