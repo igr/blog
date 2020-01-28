@@ -2,11 +2,11 @@ const { Spig } = require('spignite');
 
 Spig.hello();
 
-const postsToRoot = (path) => {
+function postsToRoot(path) {
   if (path.dirname.startsWith('/posts/')) {
     path.dirname = path.dirname.substr(6);
   }
-};
+}
 
 // PAGES
 
@@ -14,14 +14,17 @@ Spig
   .on('/**/*.{md,njk}')
   .watchSite()
 
-  ._("PREPARE")
-  .pageCommon()
+  ._('META')
+  .pageMeta()
   .readingTime()
-  .rename(postsToRoot)
   .tags()
-
-  ._("RENDER")
   .summary()
+
+  ._('INIT')
+  .pageLinks()
+  .rename(postsToRoot)
+
+  ._('RENDER')
   .render()
   .applyTemplate()
   .htmlMinify()
@@ -33,23 +36,33 @@ Spig
 Spig
   .on('/**/*.{png,jpg,gif}')
 
-  ._("IMAGES")
-  .assetCommon()
+  ._('IMAGES')
+  .assetLinks()
   .rename(postsToRoot)
   .imageMinify()
 ;
 
+
 Spig
   .on('/index.json')
-  ._("RSS")
+
+  // need to execute BEFORE render phase, so we can collect
+  // correct URLS and Markdown content.
+
+  ._('RENDER^BEFORE')
   .applyTemplate()
 ;
 
+
 Spig
   .on(['/index.xml', '/sitemap.xml'])
-  ._("SITEMAP")
+
+  ._('META')
   .frontmatter()
+
+  ._('RENDER^BEFORE')
   .applyTemplate()
 ;
+
 
 Spig.run();
