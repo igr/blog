@@ -246,7 +246,7 @@ h6 {
 }
 .site-header-small {
   @extend .site-header;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 a#home {
   background: none;
@@ -513,6 +513,22 @@ input[type=text] {
   border: 1px solid #aaa;
 }
 
+#menu {
+  float: right;
+  a {
+    font-size: 20px;
+    font-family: $monospace;
+    background: #666;
+    color: #fff;
+    padding: 4px;
+    &:hover {
+      background-color: #aaa;
+    }
+  }
+}
+#search-form {
+  display: none;
+}
 #search-results {
   p {
     font-size: 0.8em;
@@ -524,6 +540,14 @@ input[type=text] {
     margin-bottom: 3em;
   }
 }
+#quick-links {
+  a {
+    font-size: 0.8rem;
+    margin-right: 20px;
+  }
+}
+
+
 .p {
   @media screen and (min-width: $break-small) {
       display: flex;

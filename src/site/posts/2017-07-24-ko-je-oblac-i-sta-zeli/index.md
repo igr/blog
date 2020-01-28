@@ -8,22 +8,27 @@ tag:
   - lično
 ---
 
-Blog sa razmišljanjima. Ništa manje, ništa više.
+<img src="/igor.png" style="float:right; width: 50%;" alt="Zdravo!">
+
+Postoji puno raznolikog sadržaja na mreži.
+
+Zahvalan sam što čitaš moj. Pišem prvenstveno o tehnologijama i softverskom inženjerstvu; ponekad o idejama koje smatram vrednim. Ništa manje, ništa više.
+
+
+Dostupan sam za diskusiju - šta više, bilo bi mi zadovoljstvo da pričamo o sličnim temama i idejama.
+
+Sve o meni možeš naći [ovde](https://igo.rs).
 
 <!--more-->
 
 ## O jeziku
 
-Blog pišem na maternjem jeziku; smatram da bi tako trebalo. Ujedno ne umem da prevedem reč "štedro" na engleski.
+Blog pišem na maternjem jeziku; smatram da time uvećavamo baštinu naše zemlje. Ujedno ne umem da prevedem reč "štedro" na engleski.
 
 ## O stilu
 
-Stil pisanja _neće leći svima_. Slični blogovi se mahom trude da budu jasni i nude pregršt detalja; predstavljaju analizu, vivisekciju teme; liče na rad za fakultet ili temu iz udžbenika.
+Stil pisanja _neće prijati svima_. Slični blogovi mahom nude pregršt detalja i spoljnih linkova; predstavljaju vivisekciju teme; liče na rad za fakultet ili temu iz udžbenika.
 
-Moji tekstovi nisu takvi. Iako se mahom bavim inženjerskim temama, ovo _nije_ tehnički materijal namenjen da pročitate i nešto saznate. Ne zato što mislim da je takav pristup pogrešan - nije, sasvim je na mestu i ima vrednost.
+Moji tekstovi nisu takvi. Ne zato što mislim da je takav pristup pogrešan - sasvim je na mestu i ima vrednost.
 
-Ono što ćete naći ovde su: **priče**. Fikcija, pisana po životnim iskustvima:) Želim da tekst _pokrene_ i natera na _razmišljenje_, pa čak i stvori _emociju_. Ako može da bude i duhovit. Nebrojeno puta zato će čitalac biti zapravo uskraćen informacijama, koje će biti sabijene u tek par reči. Pažljivo s njima. Nekada mnogo više stoji iza, nazigled, jednostavnog teksta. Tekst zapravo treba da bude tek _polazna tačka_ za sve što sledi dalje.
-
-## O blac
-
-Toliko za sada.
+Ono što ćete naći ovde su: **priče**. Želim da tekst _pokrene_ i natera na _razmišljenje_, pa čak i stvori _emociju_. Nebrojeno puta će čitalac zapravo biti uskraćen informacijama, a srž ideje biti sabijen u tek par reči. Pažljivo s time. Nekada mnogo više stoji iza, nazigled, jednostavnog teksta.

@@ -1,4 +1,16 @@
 {% if home %}
+  <script>
+    function showDiv(Div) {
+      const x = document.getElementById(Div);
+      console.log(x.style.display);
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <div id="menu"><a href="#" onclick="showDiv('search-form');">?</a></div>
   <header class="site-header">
     <h1 id="title">{{ site.title }}</h1>
     <div class="tagline">{{ site.tagline }}</div>
