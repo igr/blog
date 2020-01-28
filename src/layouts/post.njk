@@ -16,10 +16,8 @@
   </article>
 
   <ul class="tags">
-    {% for t in tags %}
-      {% set tagPage = site.pageOfCollection('tags', t) %}
-
-      <li class="tag"><a href="{{ tagPage.url }}">{{ t }}</a></li>
+    {% for t in tag %}
+      <li class="tag"><a href="/tag/{{ t | slugify }}">{{ t }}</a></li>
     {% endfor %}
   </ul>
 

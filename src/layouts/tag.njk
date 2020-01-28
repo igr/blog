@@ -7,7 +7,7 @@
 
 
 <article class="posts">
-  {% set posts = site.pages | pagesWithin('/posts/') | sortBy('date') | reverse | filterTags(content) %}
+  {% set posts = site.tagGroup(content) | sortBy('date') | reverse %}
 
   {% for k, v in posts | groupByYear('date') %}
     <section>

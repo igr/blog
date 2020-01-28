@@ -2,7 +2,7 @@
 
 {% block main %}
   <article class="posts">
-    {% set posts = site.pages | pagesWithin('/posts/') | sortBy('date') | reverse %}
+    {% set posts = site.pages() | pagesWithin('/posts/') | sortBy('date') | reverse %}
 
     {% for k, v in posts | groupByYear('date') %}
       <section>
