@@ -6,9 +6,6 @@
   {% include "./search.html" %}
 {% else %}
   <header class="site-header-small">
-    <h1 id="title-small">{{ site.title }}</h1>
+    <h1 id="title-small"><a id="home" href="{{ site.baseURL }}">{{ site.title }}</a></h1>
   </header>
-  <nav class="site-nav">
-    <a href="{{ site.baseURL }}">nazad</a>
-  </nav>
 {% endif %}

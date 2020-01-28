@@ -115,7 +115,6 @@ a {
     background-size: 1px 40px;
   }
 }
-
 ol,
 ul {
   margin: 0 0 1rem 1.25rem;
@@ -249,13 +248,13 @@ h6 {
   @extend .site-header;
   margin-bottom: 0.5rem;
 }
-
-.site-nav a::before {
-  content: '\2190'; // left arrow
-  margin-right: .2rem;
-}
-.site-nav {
-  font-size: 0.8em;
+a#home {
+  background: none;
+  color: $gray;
+  &:hover {
+    letter-spacing: 6px;
+    color: $gray;
+  }
 }
 
 footer {
