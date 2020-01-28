@@ -38,9 +38,7 @@ Spig
 
   ._('IMAGES')
   .assetLinks()
-  .rename(postsToRoot)
-  .imageMinify()
-;
+  .rename(postsToRoot);
 
 
 Spig
