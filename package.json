@@ -17,6 +17,7 @@
   "homepage": "https://oblac.rs",
   "dependencies": {
     "remove-markdown": "^0.3.0",
+    "slugify": "^1.3.6",
     "spignite": "^2.0.6"
   }
 }
