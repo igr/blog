@@ -20,17 +20,21 @@ $break-small: 800px;
   --text-color: #303030;
   --bg-color: #fff;
   --bg-light-color: #e5e5e5;
+  --bg-tag-color: #e5e5e5;
   --title-small-color: #686868;
   --title-color: #333;
   --line-color: #686868;
+  --time-color: #686868;
 }
 [data-theme="dark"] {
   --text-color: #fff;
   --bg-color: #282c35;
   --bg-light-color: #363c48;
+  --bg-tag-color: #363c48;
   --title-small-color: #ccc;
   --title-color: #fff;
   --line-color: #ccc;
+  --time-color: #999;
 }
 
 *,
@@ -53,7 +57,7 @@ html {
 
 body {
   line-height: 1.6;
-  transition:color 0.2s ease-out, background 0.2s ease-out;
+  transition:color 0.4s ease-out, background 0.4s ease-out;
 }
 
 html,
@@ -329,7 +333,7 @@ footer {
 
   time {
     display: block;
-    color: $gray;
+    color: var(--time-color);
     font-size: 0.8em;
     line-height: 0.9em;
     font-family: $serif;
@@ -355,6 +359,7 @@ footer {
 }
 
 .post {
+  margin-bottom: 100px;
 
   .post-title {
     margin-top: 80px;
@@ -441,7 +446,6 @@ table {
 
 .tags {
   list-style: none;
-  margin: 140px 0 0 0;
   overflow: hidden;
   padding: 0;
 }
@@ -452,7 +456,7 @@ table {
 
 .tag {
   cursor: pointer;
-  background: #eee;
+  background: var(--bg-tag-color);
   color: #999;
   border-radius: 3px 0 0 3px;
   display: inline-block;
@@ -486,7 +490,7 @@ table {
 .tag::after {
   background: var(--bg-color);
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
+  border-left: 10px solid var(--bg-tag-color);;
   border-top: 13px solid transparent;
   content: '';
   position: absolute;
