@@ -109,7 +109,7 @@ img {
 
 blockquote {
   padding: 1rem;
-  border-left: 8px solid $light-gray;
+  border-left: 8px solid var(--bg-light-color);
   font-style: italic;
 
   p {
