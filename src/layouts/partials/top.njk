@@ -10,10 +10,9 @@
       }
     }
   </script>
-  <div id="menu"><a href="#" onclick="showDiv('search-form');">?</a></div>
   <header class="site-header">
     <h1 id="title">{{ site.title }}</h1>
-    <div class="tagline">{{ site.tagline }}</div>
+    <div class="tagline">{{ site.tagline }} / <a id="menu" href="#" onclick="showDiv('search-form');">?</a></div>
   </header>
   {% include "./search.html" %}
 {% else %}
