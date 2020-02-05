@@ -26,7 +26,7 @@ Spig
     if (fileRef.dir.startsWith('/posts/')) {
       const slug = fileRef.attr('slug');
       if (!slug) {
-        fileRef.setAttr('slug', slugify(fileRef.attr('title')));
+        fileRef.setAttr('slug', slugify(fileRef.attr('title')).toLowerCase());
       }
     }
   })
@@ -57,6 +57,8 @@ Spig
   // correct URLS and Markdown content.
 
   ._('RENDER^BEFORE')
+  // calling pageMeta so we can have page methods!
+  .pageMeta()
   .applyTemplate()
 ;
 
