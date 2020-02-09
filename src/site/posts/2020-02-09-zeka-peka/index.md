@@ -1,6 +1,7 @@
 ---
 title: Čuvajmo Zeke Peke
 date: 2020-02-09T01:07:03+00:00
+description: Malo Zeke Peke, malo zakeranja, malo sertifikata, malo čačkanja. I Zdrum.
 categories:
   - Tehnologija
 tag:
