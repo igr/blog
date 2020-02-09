@@ -21,6 +21,7 @@ Buka koju samo ja čujem, unutra, u sebi. Nepodnošljiva buka informacija koje s
 Želim da znam kuda vodi ovaj put. Ne želim da znam išta o onome što nije predmet mog fokusa ili pak nije moja borba koju sam odlučio da vodim. Počinjem da osećam odbojnost ka _neželjenim_ informacijama, da mi ponašanje fiktivnog junaka g. Holmsa u 'Grimiznoj studiji' postaje blisko: odbija da zna da li se Mesec vrti oko Zemlje - ili je obratno - jer to nije predmet njegovog interesovanja.
 
 ![](gmaps.png)
+{.center}
 
 Kao da je bilo nekad, kada smo umeli da prepoznamo vrednost informacija. One su i dalje vredne - šta više, vrednost im se uvećava u tehnološkom društvu; no upravo zato živimo kakofoniju informacija i, time, pogrešnih obrazaca. I ne radi se samo o tome da _ne želim_ da saznajem za bilo kakvu organizaciju ili radnju dok vozim: takav dotok informacija ne mogu da _isključim_. U isto vreme ne dobijam informacije koje su mi tog trenutka vrednije: kuda treba ići, već samo nagađanja izvedena iz skupa vozila koje dele istu prostorno-vremensku koordinatu. Krug.
 
