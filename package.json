@@ -1,12 +1,11 @@
 {
   "name": "blog",
-  "version": "2.0.6",
+  "version": "2.0.8",
   "description": "oblac.rs",
   "scripts": {
     "clean": "rm -rf out",
     "dev": "node spig.js dev",
-    "build": "node spig.js",
-    "build:lambda": "cd netlify && build.sh"
+    "build": "node spig.js"
   },
   "author": {
     "name": "Igor Spasić",

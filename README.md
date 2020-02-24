@@ -8,16 +8,25 @@
 
 highlight.js languages:
 
-+ CSS
-+ HTTP
-+ JavaScript
 + Bash
-+ Makefile
-+ JSON
-+ SQL
++ CSS
 + HTML
++ HTTP
++ JSON
 + Java
-+ Properties
-+ Shell
-+ OCaml
++ JavaScript
 + Kotlin
++ Makefile
++ Markdown
++ Properties
++ SCSS
++ SQL
++ Shell
++ TOML
++ YAML
++ plaintext
+
+Other:
++ Dockerfile
++ OCaml
+
