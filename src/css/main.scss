@@ -6,6 +6,7 @@ $line-color: #666;
 $text-color: #444;
 $red: #bf2139;
 $night: #282c35;
+$share-color: #444;
 
 $serif-head: 'Josefin Sans';
 $serif: 'Domine';
@@ -596,7 +597,18 @@ ul#social {
   font-family: $monospace;
   li {
     display:block;
-    width: 30px;
+    width: 24px;
+    background-color: $share-color;
+    color: white;
+  }
+  a {
+    color: #eee;
+    text-decoration: none;
+    background: none;
+    padding: 2px;
+    &:hover {
+      text-transform: uppercase;
+    }
   }
 }
 

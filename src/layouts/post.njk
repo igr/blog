@@ -7,9 +7,8 @@
       <h1 class="post-title">{{ title }}</h1>
       <time class="post-date skew" datetime="{{ date | dateISO }}"><span>{{ date | rsDateLong }}</span></time>
       <div id="readtime" class="skew"><span>{{ readingTime.minutes | round(0, "ceil") }} min</span></div>
+      {% include "partials/share-links.njk" %}
     </header>
-
-    {% include "partials/share-links.njk" %}
 
     {{ content | safe }}
 
