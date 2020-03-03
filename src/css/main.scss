@@ -387,12 +387,10 @@ footer {
 
   .post-date {
     display: block;
-    margin: $std-margin $std-margin 0 $std-margin;
     text-align: right;
   }
   #readtime {
     display: block;
-    margin: 0 $std-margin $std-margin $std-margin;
     text-align: right;
   }
   .skew span {
@@ -591,6 +589,7 @@ a#menu {
 
 
 ul#social {
+  margin-top: 4px;
   font-size: 0.8em;
   display: flex;
   flex-flow: row nowrap;
