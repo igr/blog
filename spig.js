@@ -22,14 +22,6 @@ Spig
   .summary()
 
   ._('INIT')
-  .do('slug-from-title', fileRef => {
-    if (fileRef.dir.startsWith('/posts/')) {
-      const slug = fileRef.attr('slug');
-      if (!slug) {
-        fileRef.setAttr('slug', slugify(fileRef.attr('title')).toLowerCase());
-      }
-    }
-  })
   .pageLinks()
   .rename(postsToRoot)
 
