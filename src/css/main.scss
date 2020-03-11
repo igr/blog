@@ -373,13 +373,18 @@ footer {
     font-weight: 900;
     @media screen and (min-width: $break-small) {
       font-size: 5em;
+      overflow-wrap: inherit;
+      word-wrap: inherit;
+      word-break: inherit;
+      hyphens: inherit;
     }
     overflow-wrap: break-word;
     word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
+    word-break: break-word;
     hyphens: auto;
+    //-webkit-hyphens: auto;
+    //-ms-hyphens: auto;
+    //-moz-hyphens: auto;
   }
   .post-header {
     margin-bottom: 3rem;
