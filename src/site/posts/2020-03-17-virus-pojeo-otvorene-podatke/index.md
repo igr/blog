@@ -9,7 +9,7 @@ tag:
   - društvo
 ---
 
-Namera se najbolje očitava u vanrednim okolnostima. I kada se sve zatvori, podaci _moraju_ da ostanu otvoreni.
+Namera se najbolje očitava u vanrednim okolnostima. I kada se sve zatvori, podaci _moraju_ ostati otvoreni.
 
 Ne mogu da oćutim, jbg.
 
