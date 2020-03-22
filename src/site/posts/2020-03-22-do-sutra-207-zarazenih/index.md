@@ -38,7 +38,7 @@ Kada bi ova predikcija koristila ispravne podatke, mogla bi da pruži precizniju
 
 Međutim, ovo je banalna analiza. Nedostaju podaci koji bi bili odvojeni po naseljenim mestima. Trebalo bi zatim uključiti korelaciju sa gustinom naseljenosti mesta u kojima se pojavljuju zaraze: kriva se sigurno ponaša drugačije na mestima gde je manja gustina stanovništva. A tu su korelacije sa ostalim otvorenim podacima - šta je sa podacima o saobraćuju? I konačno, sa demografskim podacima: starosne grupe takođe imaju udela u ovakvoj analizi. Itd.
 
-Kalmanov filter radi na bliskom rastojanju - u ovom slučaju su to dani. Ne daje tačnu predikciju za duži period: takva analiza bi zahtevala dodatne proračune. Na primer - primećujem ugrubo logaritamsko ponašanje trenda (varijabla `LOGY` uključuje logiratmski graf). Na primer, Kalman kaže da sa trenutnim trendom dostižemo brojku od 1000+ tek druge nedelje aprila, logaritamska formula je sumornija (i verovatno tačnija) i predviđa kraj marta. Imamo li sve što je potrebno do tada?
+Kalmanov filter radi na bliskom rastojanju - u ovom slučaju su to dani. Ne daje tačnu predikciju za duži period: takva analiza bi zahtevala dodatne proračune. Na primer - primećujem ugrubo logaritamsko ponašanje trenda (varijabla `LOGY` uključuje logiratmski graf). Kalman kaže da sa trenutnim trendom dostižemo brojku od 1000+ tek druge nedelje aprila, logaritamska formula je sumornija (i verovatno tačnija) i predviđa kraj marta. Imamo li sve što je potrebno do tada?
 
 Ponavljam: ovo je sve ilustracija kako bi se otvoreni podaci mogli koristiti - kada bi oni postojali. A sada zamislite šta bi neko ko se zaista razume u sve ovo mogao da napravi kada bi imao sve potrebne podatke!
 
@@ -50,7 +50,7 @@ Jedna od prethodnih nedaća, poplave, su takođe pokazale nespremnost sistema (m
 
 Nažalost, kada nedaća prođe, odnese i svako razumevanje treće strane o potrebi za istom. Kako bilo, nastavio sam da se bavim idejom sporta radi na svoju ruku, preimenovao projekat (iz Boup:) u SOVA (Sistem za Obaveštavanje u Vanrednim okolnostimA). Negde sam tako došao do upotrebe [IPFS](https://ipfs.io) klastera za skladištenje i objavu dokumenata; zanimljiva tehnologija.
 
-Zamislite kada bi takva platforma postojala: jedna kojoj bi se moglo verovati, dostupna za različita scenarija vanrednih okolnosti; koja bi se hranila otvorenim podacima i pomagala efikasnijim delovanjem.
+Zamislite kada bi takva platforma postojala: jedna kojoj bi se moglo verovati, dostupna za različita scenarija vanrednih okolnosti; koja bi se hranila otvorenim podacima i pomagala usmeravanjem delovanja.
 
 Tja.
 
