@@ -11,7 +11,7 @@ tag:
   - vue
 ---
 
-Uzmite kokice, udobno se zavalite i gledajte kako razvoj jedne app kreće svoj Ikarov let ka svrsishodnosti. Da li će pohrliti ka Suncu naivnosti i razbiti se o stene neupotrebljivosti? Ili će, možda, ovaj let krenuti nekim drugim tokom?
+Spremite kokice, udobno se zavalite i gledajte kako razvoj jedne app kreće svoj Ikarov let ka svrsishodnosti. Da li će pohrliti ka Suncu naivnosti i razbiti se o stene neupotrebljivosti? Ili će, možda, ovaj let krenuti nekim drugim tokom?
 
 <!--more-->
 
