@@ -25,7 +25,7 @@ Svaki put kada mi neko kaže: "Hajde de, ovo su _samo_ dva ekrana; pa koliko mo�
 
 Kako bilo, pre dve nedelje sam uradio potpuno suprotno: rekao 'DA' projektu koga je trebalo od nule dovesti do vrednosti. Par ekrana samo, očas posla.
 
-## Poletanje
+## Skok
 
 Za utehu (i opravdanje), aplikacija ima humanu namenu: **besplatna psihoterapeutska pomoć** za sve kojima treba. Okuplja stručne volontere koji nude svoje termine kada su u mogućnosti da pomažu.
 
@@ -45,7 +45,7 @@ _Exposed_ mi je zapao za oko jer jako liči na ono što je Jodd DbOom trebalo da
 
 Ovo je tek polovina priče. Treba sve ovo uvezati na pravi način. Na bekendu gledam da ne koristim anemične servise (o tome drugi put), tu je validacija, autentikacija, uključiti testove, staviti sve u Docker, te podići app na server; a dan traje koliko traje...
 
-## Skok
+## Pad?
 
 Aplikacija je dovedena u razumno stanje za desetak dana (dva vikenda). Nažalost, za smislenu produkciju treba neko bolje okruženje od jedne-u-sve instance na Herokuu, ali time zaista ne mogu da se bavim. Količina frontend koda je takođe prerasla moje mogućnosti da se razumno bavim njime, te i tu posustajem. A na keca bih častio najvećom pizzom onoga ko bi mi podesio sitnicu u Ngnix proksiju.
 
