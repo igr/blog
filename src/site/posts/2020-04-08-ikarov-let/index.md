@@ -27,7 +27,7 @@ Kako bilo, pre dve nedelje sam uradio potpuno suprotno: rekao 'DA' projektu koga
 
 ## Poletanje
 
-Za utehu (i opravdanje), aplikacija ima humanu namenu: **besplatna psihoterapeutska pomoć** za sve kojima je ona treba. Okuplja stručne volontere koji nude svoje termine kada su u mogućnosti da pomažu.
+Za utehu (i opravdanje), aplikacija ima humanu namenu: **besplatna psihoterapeutska pomoć** za sve kojima treba. Okuplja stručne volontere koji nude svoje termine kada su u mogućnosti da pomažu.
 
 Kako reći "NEtflix" ovome?
 
@@ -35,7 +35,7 @@ Da začinim stvari, za tehnologije biram _Vue_, _Ktor_ i _Exposed_. Dozvoljavam 
 
 ## Let
 
-_Vue_ mi je baš legao. Mali, zaokružen, radi kako kaže da radi, solidno izgleda u Typescript-u. Pronašao sam i odličnu biblioteku komponenti: _Vuetify_, iz drugog pokušaja. Napravio sam nekakvu podelu na komponente, ekrane i okvire; i niz nekih drugih odluka za koje mislim da mogu da budu solidna i ponovljiva arhitektura sličnih aplikacija. Treba vremena za to; naročito je uzbudljivo kada linter krene da se buni oko spejsa u komentaru, a ti samo želiš da vidiš prokletu stranicu. No ima mi smisla ovo "nazi" lintovanje, ne srećeš ga često na bekendu.
+_Vue_ mi je baš legao. Mali, zaokružen, radi kako kaže da radi, solidno izgleda u Typescript-u. Pronašao sam i odličnu biblioteku komponenti: _Vuetify_, iz drugog pokušaja. Napravio sam nekakvu podelu na komponente, ekrane i okvire; i niz nekih drugih odluka za koje mislim da mogu da budu solidna i ponovljiva arhitektura sličnih aplikacija. Treba vremena za to; naročito je uzbudljivo kada linter krene da se buni oko spejsa u komentaru, a ti samo želiš da vidiš prokletu stranicu.
 
 _Kotlin_ pratim od prve najave: to je Java kakva je trebalo da bude da nije završila u grotlu najneinventivnije firme na svetu. Ipak, nisu sve sami kotlinorozi na\_polju; nekada mi se čini da prosto nudi previše, te i da nisu uvek ustanovljene najbolje prakse. No, ovo je tek fus-nota, a ne zamerka. Kotlin je odlična alatka. A ako želite da se otisnete malo dalje, potražite Arrow.
 
@@ -49,7 +49,7 @@ Ovo je tek polovina priče. Treba sve ovo uvezati na pravi način. Na bekendu gl
 
 Aplikacija je dovedena u razumno stanje za desetak dana (dva vikenda). Nažalost, za smislenu produkciju treba neko bolje okruženje od jedne-u-sve instance na Herokuu, ali time zaista ne mogu da se bavim. Količina frontend koda je takođe prerasla moje mogućnosti da se razumno bavim njime, te i tu posustajem. A na keca bih častio najvećom pizzom onoga ko bi mi podesio sitnicu u Ngnix proksiju.
 
-S druge strane, muči me moralno pitanje, kao da hronični nedostatak sna nije dovoljan. Da li sam imao za pravo da uopšte pokušam sve ovo, ako _znam_ da nisam u mogućnosti da sam isporučim (na nivou na kome bi trebalo da bude), a _bez osnova_ se nadam konkretnoj "pusti-ja-ću-ovo-da-preuzmem" pomoći? Da li se namera računa?
+S druge strane, muči me moralno pitanje, kao da hronični nedostatak sna nije dovoljan. Da li sam imao za pravo da uopšte pokušam sve ovo, ako _znam_ da nisam u mogućnosti da sam isporučim (na nivou na kome bi trebalo da bude), a _bez osnova_ se nadam konkretnoj "pusti-ja-ovo-preuzimam" pomoći? Da li se namera računa?
 
 Prava tragi-komedija, kao što sam nagovestio. Nadam se da ste spremili dovoljno kokica, padanje kreće da bude zabavno.
 
