@@ -76,7 +76,7 @@ To je to, spremni ste da budete stari.
 
 Hajde da pogledamo kako izgleda jedan COBOL program:
 
-```cobol
+```txt
         IDENTIFICATION DIVISION.
         PROGRAM-ID. HELLO.
         DATA DIVISION.
@@ -136,7 +136,7 @@ U proceduralnom delu se piše program. Gornji radi neke osnovne računske radnje
 
 Ono zašta je COBOL napravljen je i obrada podataka, a to znači rad sa fajlovima. Sam jezik ima ugrađen u sebe rad sa fajlovima i zapisima. Evo kako to izgleda:
 
-```cobol
+```txt
        IDENTIFICATION DIVISION.
        PROGRAM-ID. FILES.
 
