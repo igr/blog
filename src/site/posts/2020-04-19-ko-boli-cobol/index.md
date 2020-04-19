@@ -10,7 +10,7 @@ tag:
   - cobol
 ---
 
-COBOL. Članak koji sam pisao za [StartIt](https://startit.rs/sta-raditi-s-220-milijardi-linija-cobol-koda-nista/), malko poboljšan; da ostane i ovde.
+COBOL. Članak koji sam napisao za [StartIt](https://startit.rs/sta-raditi-s-220-milijardi-linija-cobol-koda-nista/), malko poboljšan; da ostane i ovde.
 
 <!--more-->
 
@@ -62,9 +62,9 @@ Prethodni put kada je COBOL bio aktuelan je bilo na prelasku u 2000. godinu, pov
 
 Ostaje nam da iz svega ovoga nešto i naučimo.
 
-Mi, programeri, smo opsednuti đinđuvama novih jezika i rešenja. "Programeri su kao deca" - rekao mi je jednom CTO jedne singapurske banke - "jure unaokolo: vidi ovaj jezik, vidi onaj jezik - igrajući se s njima, a vrlo lako (se) poseku i nešto polome", odgvarajući mi na pitanje o usvajanju novih tehnologija u njihovom sistemu. I nije u krivu. Industrija ne mari da li se tvoj kod može napisati na ovaj ili onaj način - nju zanima da li će tvoj kod raditi i posle 20 godina i da li će i tada biti nekog ko će razumeti šta tu piše. Industrija je ta koja daje vrednost kodu, na kraju krajeva. Java je novi COBOL i - ovo ću priznati samo sada i nikada više - Oracle zaista radi dobru stvar po pitanju Jave: održava čvrstu kompatibilnost sa starijim verzijama i jako oprezno uvodi novine. Ja prvi blatim Javu na sva usta kao najdosadniji moderni jezik na svetu; ali to iz mene govori (dosadni) koder, a ne inženjer.
+Mi, programeri, bivamo opsednuti đinđuvama softverskih novina. "Programeri su kao deca" - rekao mi je jednom CTO jedne singapurske banke - "jure unaokolo kao sumanuti: vidi ovo, vidi ono - privučeni tehnološkim novotarijama, a vrlo lako se poseku i nešto polome", odgovarajući mi na pitanje o usvajanju novih tehnologija u njihovom bankarskom sistemu. I nije u krivu. Industrija ne mari da li se tvoj kod može napisati na ovaj ili onaj način - nju zanima da li će tvoj kod raditi i posle 20 godina i da li će i tada biti nekog ko će razumeti šta tu piše. Industrija je ta koja daje vrednost dobranom delu koda, na kraju krajeva. Tako, na primer: Java je novi COBOL i - ovo ću priznati samo jednom - Oracle zaista radi dobru stvar: održava čvrstu kompatibilnost sa starijim verzijama i jako oprezno uvodi novine. Prvi ja blatim Javu na sva usta kao najdosadniji moderni jezik na svetu; ali to iz mene govori (dosadni) koder, a ne inženjer.
 
-Zato moramo biti pažljivi - *jako pažljivi* - sa tehnologijama koje usvajamo i koje postaju standard. Nisam siguran da li organski pristup i pravi. Uzmimo Python na primer. Zamislite koliko bi koštalo industriju prebaciti programe iz verzije 2 u verziju 3, da su izabrale Python kao jezik za svoje kompjuterske sisteme. Zato, ponavljam, moramo biti jako pažljivi sa time šta koristimo. Nekada _više_ nije i _bolje_.
+Zato moramo biti pažljivi - _jako pažljivi_ - sa tehnologijama koje usvajamo i koje postaju standard. Nisam siguran da li je organski pristup i pravi: kada usvajamo nešto samo zato što je popularno. Uzmimo Python na primer. Zamislite koliko bi koštalo industriju da prebaci programe iz verzije 2 u verziju 3, da su izabrale Python kao jezik za svoje kompjuterske sisteme. Ili pak AngularJS, promašeni koncept koji je bačen u korpu. Zato, ponavljam, moramo biti pažljivi sa time šta usvajamo. Nekada _više_ nije i _bolje_.
 
 Možemo još nešto da naučimo iz svega ovoga, a tiče se našeg svakodnevnog rada. Ako ništa drugo, bar da mi, koji razvijamo softver, ne zaboravimo podjednako važne vrednosti svakog kompjuterskog sistema: robusnost i održivost. **Piši kod koji želiš da te nadživi**. S druge strane, u robusnost i kvalitet se mora ulagati. "Što je brzo, to je i kuso", reče stari COBOL programer.
 
