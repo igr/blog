@@ -4,7 +4,20 @@
   "title": "Oblac",
   "description": "Oblac: blog / kod / mišljenja / stavovi / lično",
   "tagline" : "blog / kod / mišljenja / ideje / lično",
+  "tagline_en": "blog / code / thinking / ideas / personal",
   "author": {
     "name": "Oblac"
-  }
+  },
+  "lang": [
+    {
+      "key": "rs",
+      "name": "Serbian",
+      "prefix": ""
+    },
+    {
+      "key": "en",
+      "name": "English",
+      "prefix": "/en"
+    }
+  ]
 }

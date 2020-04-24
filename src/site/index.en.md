@@ -1,4 +1,4 @@
 ---
-layout: "home"
+layout: "home_en"
 home: true
 ---

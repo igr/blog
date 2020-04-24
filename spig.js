@@ -1,11 +1,13 @@
 const { Spig } = require('spignite');
-const slugify = require('slugify');
 
 Spig.hello();
 
 function postsToRoot(path) {
   if (path.dirname.startsWith('/posts/')) {
     path.dirname = path.dirname.substr(6);
+  }
+  else if (path.dirname.startsWith('/en/posts/')) {
+    path.dirname = '/en' + path.dirname.substr(9);
   }
 }
 

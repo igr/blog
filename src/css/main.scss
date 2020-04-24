@@ -26,6 +26,7 @@ $break-small: 800px;
   --title-color: #333;
   --line-color: #686868;
   --time-color: #686868;
+  --red-color: #bf2139;
 }
 [data-theme="dark"] {
   --text-color: #fff;
@@ -36,6 +37,7 @@ $break-small: 800px;
   --title-color: #fff;
   --line-color: #ccc;
   --time-color: #999;
+  --red-color: #bf2139;
 }
 
 *,
@@ -387,7 +389,7 @@ footer {
     //-moz-hyphens: auto;
   }
   .post-header {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   .post-date {
@@ -592,21 +594,31 @@ a#menu {
   }
 }
 
-
 ul#social {
+  float: right;
   margin-top: 4px;
   font-size: 0.8em;
-  display: flex;
-  flex-flow: row nowrap;
   font-family: $monospace;
+  border: 1px solid var(--title-color);
   li {
     display:block;
     width: 24px;
-    background-color: $share-color;
-    color: white;
+    background-color: var(--title-color);
+    color: var(--bg-light-color);
+    float: right;
+    margin: 0;
+  }
+  li:first-child {
+    display:block;
+    width: inherit;
+    letter-spacing: -2px;
+    background-color: inherit;
+    color: var(--title-color);
+    float: right;
+    padding: 0 2px;
   }
   a {
-    color: #eee;
+    color: var(--bg-light-color);
     text-decoration: none;
     background: none;
     padding: 2px;
@@ -627,6 +639,46 @@ figure a {
 figcaption p {
   font-family: $monospace;
   color: #fff;
+}
+
+#lang {
+  font-family: $monospace;
+  position: relative;
+  top: -20px;
+  border: 1px solid var(--title-color);
+  float:left;
+  //transform: rotate(-4deg);
+  padding-left: 2px;
+  a {
+    margin-left: 2px;
+    position: relative;
+    top: -1px;
+    font-size: 0.8em;
+    padding: 6px 10px;
+    background: none;
+    background-color: var(--title-color);
+    color: var(--bg-light-color);
+    &:hover {
+      text-transform: uppercase;
+      color: var(--bg-color);
+    }
+  }
+}
+
+p.unr {
+  border: 2px solid var(--title-color);
+  border-left: 16px solid var(--red-color);;
+  padding: 2rem;
+  font-size: 1.1rem;
+  letter-spacing: -2px;
+  font-family: $monospace;
+  margin-bottom: 4rem;
+  //background-color: var(--bg-light-color);
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 @import "button";

@@ -12,11 +12,14 @@
   </script>
   <header class="site-header">
     <h1 id="title">{{ site.title }}</h1>
-    <div class="tagline">{{ site.tagline }} / <a id="menu" href="#" onclick="showDiv('search-form');">?</a></div>
+    <div class="tagline">
+      {{ site.tagline_en if (lang.key === 'en') else site.tagline }}
+      {% if not lang %} / <a id="menu" href="#" onclick="showDiv('search-form');">?</a>{% endif %}
+    </div>
   </header>
   {% include "./search.html" %}
 {% else %}
   <header class="site-header-small">
-    <h1 id="title-small"><a id="home" href="{{ site.baseURL }}">{{ site.title }}</a></h1>
+    <h1 id="title-small"><a id="home" href="{{ site.baseURL }}{{ lang.prefix }}">{{ site.title }}</a></h1>
   </header>
 {% endif %}
