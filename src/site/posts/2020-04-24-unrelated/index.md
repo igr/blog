@@ -13,7 +13,7 @@ techn/~~ology~~ + ~~soci~~/ology = technology
 {.unr}
 
 before: social distance + physical proximity
-&nbsp;today: social distance w/out physical proximity
+&nbsp;today: social distance - physical proximity
 &nbsp;after: social distance + physical proximity
 {.unr}
 
