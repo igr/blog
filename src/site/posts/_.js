@@ -18,7 +18,7 @@ module.exports = (fileRef) => {
   }
   if (cats.indexOf('Nepovezano') !== -1) {
     fileRef.setAttr('description',
-      "'Unrelated' crtice pozivaju da pronađeš pitanja na koje treba dati odgovor, u vezi tehnologija, društva i svakodnevice."
+      "'Unrelated' crtice pozivaju da pronađeš pitanja na koja treba dati odgovor, u vezi tehnologija, društva i svakodnevice."
     );
   }
 
