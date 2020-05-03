@@ -46,9 +46,3 @@ Smisao zajednice je u zajedničkim aktivnostima. To je glavna razlika između pa
 ## Koja je pouka?
 
 **Učestvuj**.
-
-Jednom je neko rekao:
-
-> Ili si deo rešenja, ili si deo problema.
-
-Zajednica je način da budeš deo rešenja.

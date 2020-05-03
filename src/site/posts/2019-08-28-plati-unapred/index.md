@@ -44,5 +44,4 @@ Zato: da li si tu da učinimo promenu?
 
 Šta dođavola čekaš?
 
-[heapspace.rs](https://heapspace.rs)
 
