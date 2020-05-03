@@ -34,10 +34,10 @@ Spig
 ;
 
 
-// IMAGES
+// ASSETS
 
 Spig
-  .on('/**/*.{png,jpg,gif}')
+  .on('/**/*.{png,jpg,gif,pdf}')
 
   ._('IMAGES')
   .assetLinks()
