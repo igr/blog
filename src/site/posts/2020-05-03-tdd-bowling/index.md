@@ -16,7 +16,7 @@ Postoji jedna TDD kata koja mi naročito privlači pažnju. Često imam problem 
 
 Hajde prvo da se brzo dogovorimo šta je to **TDD**. Ako mislite da ima veze sa testiranjem, grešite.
 
-> TDD je _razvoj u malim koracima_.
+> TDD je _razvoj u malim koracima_. Dakle: praksa dizajna softvera.
 
 Ideja je da se razvija samo ono što je potrebno. Malim koracima (_baby steps_) dolazimo do cilja sigurnije, bez bojazni da preteramo sa _over-engineeringom_. Veća nego potrebna složenost je čest problem razvoja, a prirodni je sled stvari svakog rešavanja problema.
 
@@ -237,7 +237,7 @@ private def simpleFrameScore(rollNdx: Int): Int = {
 }
 ```
 
-Lepo, zar ne? Ipak nije sve tako sjajno: funkcije nisu _potpuno_ ispravne. Vezane su za `rollNdx`, očekujući da je sinhronizovan sa frejmom. Nažalost, ne postoji čista korelacija (u smislu "čistih funkcija") između frejma i bacanja, jer zavisi od istorije. Funkcija `isSpare` ima smisla samo ako već nije detektovan strajk, na primer. To čini da funkcije ne rade potpuno ono za šta su predviđene da rade.
+Lepo, zar ne? Ipak nije sve tako sjajno: funkcije nisu _potpuno_ ispravne. Vezane su za `rollNdx`, očekujući da je sinhronizovan sa frejmom. Nažalost, ne postoji čista korelacija (u smislu "čistih funkcija") između frejma i bacanja, jer zavisi od istorije. Funkcija `isSpare` ima smisla samo ako je već detektovan strajk, na primer. To čini da funkcije ne rade potpuno ono za šta su predviđene da rade.
 
 ## Za to vreme...
 
