@@ -26,7 +26,7 @@ Moving on: every bit of development with TDD is either refactoring or adding sin
 
 ## Let's go bowling
 
-A typical TDD kata is the calculation of bowling scores. [Following the example of Bob's course](Bowling_Game_Kata.pdf) in my workshops, I first let attendees model the problem in a "standard" way. In a matter of minutes, we come out with a rich class diagram. Next, we start tackling the kata in a TDD way. The idea is to point out a simpler solution that does not require additional classes and is (relatively) easily achievable by TDD practice.
+A typical TDD kata is the calculation of bowling scores. [Following the example of Bob's course](/tdd-kuglanje-i-teca-bob/Bowling_Game_Kata.pdf) in my workshops, I first let attendees model the problem in a "standard" way. In a matter of minutes, we come out with a rich class diagram. Next, we start tackling the kata in a TDD way. The idea is to point out a simpler solution that does not require additional classes and is (relatively) easily achievable by TDD practice.
 
 The kata is described in detail in the enclosed PDF. In short, the player plays 10 times - frames. A player rolls the ball twice during each frame. The score is equal to the number of knocked pins. If a player gets all the pins in the first roll (a strike), the frame ends. Strike roll has a score bonus: the sum of knocked pins of the next two rolls. If a player knocks all pins down within two rolls (spare), the bonus is a number of knocked pins of the next roll.
 
