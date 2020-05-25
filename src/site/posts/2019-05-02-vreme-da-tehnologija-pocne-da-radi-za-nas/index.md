@@ -3,7 +3,7 @@ title: "Vreme je da tehnologija počne da radi za nas"
 date: 2019-05-02T11:12:13+00:00
 slug: vreme-da-tehnologija-pocne-da-radi-za-nas
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - razvoj
   - stav

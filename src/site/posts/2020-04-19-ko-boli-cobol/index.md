@@ -2,7 +2,7 @@
 title: "Ko boli Kobol"
 date: 2020-04-19T01:07:03+00:00
 categories:
-  - Tehnologija
+  - Stav
 tag:
   - društvo
   - razvoj

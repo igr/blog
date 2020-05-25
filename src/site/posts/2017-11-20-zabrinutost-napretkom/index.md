@@ -1,12 +1,9 @@
 ---
 title: Zabrinutost napretkom
 date: 2017-11-20T10:37:22+00:00
-author: oblac
-layout: post
-guid: https://oblac.rs/?p=153
 slug: zabrinutost-napretkom
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - budućnost
   - napredak

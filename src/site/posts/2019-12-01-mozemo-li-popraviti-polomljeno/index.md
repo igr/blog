@@ -3,7 +3,7 @@ title: Možemo li popraviti polomljeno?
 date: 2019-12-01T00:00:01+00:00
 slug: mozemo-li-popraviti-polomljeno
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - lično
   - tehnologija

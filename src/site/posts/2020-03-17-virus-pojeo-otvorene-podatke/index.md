@@ -2,7 +2,7 @@
 title: "Virus koji je pojeo otvorene podatke"
 date: 2020-03-17T01:07:03+00:00
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - opendata
   - mišljenja

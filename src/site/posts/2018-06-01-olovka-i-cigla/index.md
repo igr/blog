@@ -3,7 +3,7 @@ title: Olovka i cigla
 date: 2018-06-01T11:01:22+00:00
 slug: olovka-i-cigla
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - alat
   - efikasnost

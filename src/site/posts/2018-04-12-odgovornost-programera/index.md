@@ -3,7 +3,7 @@ title: Odgovornost programera
 date: 2018-04-12T09:53:22+00:00
 slug: odgovornost-programera
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - istorija
   - java

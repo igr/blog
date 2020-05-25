@@ -3,7 +3,7 @@ title: "Sociologija, čas sa kojeg su mladi preduzetnici bežali"
 date: 2019-06-05T07:21:21+00:00
 slug: "sociologija-cas-sa-kojeg-su-mladi-preduzetnici-bezali"
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - razvoj
   - društvo

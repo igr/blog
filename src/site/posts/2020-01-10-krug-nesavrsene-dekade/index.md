@@ -3,7 +3,7 @@ title: Krug nes(a)vršene dekade
 date: 2020-01-10T01:20:20+00:00
 slug: krug-nesavrsene-dekade
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - lično
   - tehnologija

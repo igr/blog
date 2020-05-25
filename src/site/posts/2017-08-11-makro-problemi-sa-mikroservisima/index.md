@@ -3,7 +3,6 @@ title: Makro problemi sa mikroservisima
 date: 2017-08-11T09:53:22+00:00
 slug: makro-problemi-sa-mikroservisima
 categories:
-  - Mišljenja
   - Razvoj
 tag:
   - arhitektura

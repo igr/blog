@@ -3,7 +3,7 @@ title: "Plati unapred"
 date: 2019-08-28T00:01:01+00:00
 slug: "plati-unapred"
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - lično
   - mišljenja

@@ -3,7 +3,7 @@ title: "Ti si ono što kodiraš u slobodno vreme"
 date: 2019-05-19T20:42:43+00:00
 slug: "ti-si-ono-sto-kodiras-u-slobodno-vreme"
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - razvoj
 ---

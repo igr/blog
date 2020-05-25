@@ -3,7 +3,7 @@ title: Iskoristi konferenciju!
 date: 2017-09-06T09:53:22+00:00
 slug: iskoristi-konferenciju
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - događaj
   - konferencija

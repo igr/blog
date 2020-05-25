@@ -3,7 +3,7 @@ title: "Zakoni razvoja"
 date: 2019-05-22T07:21:21+00:00
 slug: "zakoni-razvoja"
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - razvoj
 ---

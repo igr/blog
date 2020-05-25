@@ -3,7 +3,7 @@ title: Izgubljena suština
 date: 2018-06-06T12:06:22+00:00
 slug: izgubljena-sustina
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - izazov
   - kiritika

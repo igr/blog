@@ -3,7 +3,7 @@ title: Kako Slack tiho ubija tvoj tim
 date: 2017-12-26T09:53:22+00:00
 slug: kako-slack-tiho-ubija-tvoj-tim
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - kolaboracija
   - komunikacija

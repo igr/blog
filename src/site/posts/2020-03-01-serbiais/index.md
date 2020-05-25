@@ -2,7 +2,7 @@
 title: Serbia is
 date: 2020-03-01T01:07:03+00:00
 categories:
-  - Projekat
+  - Lično
 tag:
   - projekat
   - razvoj

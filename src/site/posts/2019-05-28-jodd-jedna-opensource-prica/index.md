@@ -3,7 +3,7 @@ title: "Jodd, jedna open-source priča"
 date: 2019-05-28T01:07:03+00:00
 slug: "jodd-jedna-opensource-prica"
 categories:
-  - Razvoj
+  - Lično
 tag:
   - razvoj
   - jodd

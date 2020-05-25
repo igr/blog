@@ -4,7 +4,6 @@ date: 2018-07-11T09:58:58+00:00
 slug: interfejs-projekata-mikroservisa
 categories:
   - Razvoj
-  - Saveti
 tag:
   - make
   - mikroservisi

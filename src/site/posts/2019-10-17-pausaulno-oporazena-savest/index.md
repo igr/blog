@@ -3,7 +3,7 @@ title: Paušalno oporažena savest
 date: 2019-10-17T03:02:03+00:00
 slug: pausalno-oporazena-savest
 categories:
-  - Lično
+  - Stav
 tag:
   - razvoj
   - mišljenje

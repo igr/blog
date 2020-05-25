@@ -2,7 +2,7 @@
 title: "Do sutra 207 zaraženih"
 date: 2020-03-22T01:07:03+00:00
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - opendata
   - mišljenja

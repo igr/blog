@@ -3,7 +3,7 @@ title: Precenjenost ideje
 date: 2018-05-23T09:53:22+00:00
 slug: precenjenost-ideje
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - ideja
   - razvoj

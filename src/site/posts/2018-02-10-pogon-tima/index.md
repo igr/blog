@@ -3,7 +3,7 @@ title: Pogon tima
 date: 2018-02-10T17:32:59+00:00
 slug: pogon-tima
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - agilno
   - efikasnost

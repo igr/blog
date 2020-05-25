@@ -3,7 +3,7 @@ title: Ne učite decu programiranju
 date: 2018-09-18T17:13:14+00:00
 slug: ne-ucite-decu-programiranju
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - razvoj
   - lično

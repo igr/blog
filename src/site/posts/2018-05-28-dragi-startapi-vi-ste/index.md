@@ -3,7 +3,7 @@ title: 'Dragi startapi, vi ste...'
 date: 2018-05-28T09:53:22+00:00
 slug: dragi-startapi-vi-ste
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - preduzetništvo
   - prodavanje

@@ -2,7 +2,7 @@
 title: Buka je u modi
 date: 2020-02-02T02:02:02+00:00
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - tehnologija
   - svest

@@ -3,7 +3,7 @@ title: Ko je kralj?
 date: 2018-03-22T09:53:22+00:00
 slug: ko-je-kralj
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - klijent
   - optimizacija

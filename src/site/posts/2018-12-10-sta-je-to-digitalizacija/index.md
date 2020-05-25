@@ -3,7 +3,7 @@ title: Šta je to digitalizacija?
 date: 2018-12-10T16:01:00+00:00
 slug: sta-je-to-digitalizacija
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - razvoj
   - poslovanje

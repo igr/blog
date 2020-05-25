@@ -2,7 +2,7 @@
 title: Code Review aplikacije еПорези
 date: 2020-02-13T01:07:03+00:00
 categories:
-  - CodeReview
+  - Razvoj
 tag:
   - code
   - review

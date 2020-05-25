@@ -3,7 +3,7 @@ title: Besmisao sastanaka
 date: 2018-04-30T09:53:22+00:00
 slug: besmisao-sastanaka
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - efikasnost
   - kolaboracija

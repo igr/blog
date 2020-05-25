@@ -3,7 +3,7 @@ title: Crnac i lopata
 date: 2018-04-16T08:45:22+00:00
 slug: crnac-i-lopata
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - efikasnost
   - kolaboracija

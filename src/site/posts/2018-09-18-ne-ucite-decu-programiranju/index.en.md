@@ -2,7 +2,7 @@
 title: Don't teach kids programming
 date: 2018-09-18T17:13:14+00:00
 categories:
-  - Ideas
+  - Opinion
 tag:
   - development
   - kids

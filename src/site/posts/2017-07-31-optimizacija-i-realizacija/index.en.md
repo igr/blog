@@ -2,7 +2,7 @@
 title: Optimisation and realization
 date: 2017-07-31T09:53:22+00:00
 categories:
-  - Thinking
+  - Development
 tag:
   - perfromance
   - knuth

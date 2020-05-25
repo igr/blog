@@ -4,12 +4,10 @@ date: 2017-09-13T09:53:22+00:00
 slug: dva-koraka-do-produktivnijeg-osx
 categories:
   - Alati
-  - Saveti
 tag:
   - alfred
   - osx
   - produktivnost
-  - savet
   - shell
 ---
 Urbana legenda kaže da je jedan od osnivača Gugla (nije jasno koji) sažeo premisu većine (u tome vreme budućih) proizvoda na sledeći način:

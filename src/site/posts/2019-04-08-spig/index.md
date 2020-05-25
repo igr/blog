@@ -3,7 +3,7 @@ title: "Spig"
 date: 2019-04-08T12:52:12+00:00
 slug: spig
 categories:
-  - Razvoj
+  - Lično
 tag:
   - razvoj
   - programiranje

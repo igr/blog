@@ -3,7 +3,7 @@ title: Anatomija svakog oglasa
 date: 2017-11-17T09:53:22+00:00
 slug: anatomija-svakog-oglasa
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - oglas
   - osobine

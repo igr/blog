@@ -3,7 +3,7 @@ title: W.H.O.R.E.
 date: 2019-09-30T17:03:22+00:00
 slug: whore
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - razvoj
   - posao

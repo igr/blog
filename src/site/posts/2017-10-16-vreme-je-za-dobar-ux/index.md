@@ -3,7 +3,7 @@ title: Vreme je za dobar UX
 date: 2017-10-16T09:53:22+00:00
 slug: vreme-je-za-dobar-ux
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - komunikacija
   - kritika

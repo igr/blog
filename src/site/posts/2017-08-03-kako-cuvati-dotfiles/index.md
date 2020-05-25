@@ -3,13 +3,12 @@ title: Kako čuvati dotfiles
 date: 2017-08-03T09:53:22+00:00
 slug: kako-cuvati-dotfiles
 categories:
-  - Saveti
+  - Alati
 tag:
   - backup
   - dotfiles
   - git
   - osx
-  - savet
   - shell
   - sync
 ---
@@ -20,7 +19,7 @@ _dotfiles_ je ime za skup konfiguracionih fajlova na linux operativnim sistemima
 
 Problem sa konfiguracijom je njeno čuvanje i sinhronizacija sa drugim računarima. `$HOME` folder sadrži puno ostalih foldera i fajlova, te ih nije lako prosto backup-ovati ili sinhronizovati. Potrebno je sačuvati samo određene fajlove i foldere koji čine konfiguraciju, a sve ostalo prosto ignorisati – što ispada da nije tako trivijalno za sisteme za sinhronizaciju (Dropbox, Resillo Sync).
 
-## Upoznajte homera
+## Upoznajte Homera
 
 **Homer** je procedura koju koristim da čuvam konfiguracione fajlove na GitHub-u. Koristi se jedino `git`.
 

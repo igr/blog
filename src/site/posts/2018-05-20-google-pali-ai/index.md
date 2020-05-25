@@ -3,7 +3,7 @@ title: Google, Pali AI
 date: 2018-05-20T09:53:22+00:00
 slug: google-pali-ai
 categories:
-  - Kritika
+  - Stav
 tag:
   - ai
   - duplex

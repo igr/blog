@@ -3,7 +3,7 @@ title: "Nadziranje nije sloboda"
 date: 2019-05-03T00:10:55+00:00
 slug: nadziranje-nije-sloboda
 categories:
-  - Mišljenja
+  - Stav
 tag:
   - razvoj
   - tehnologija

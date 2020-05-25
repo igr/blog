@@ -3,7 +3,7 @@ title: "VertX i greška u arhitekturi"
 date: 2019-05-20T22:22:22+00:00
 slug: "vertx-i-greska-u-arhitekturi"
 categories:
-  - Mišljenja
+  - Razvoj
 tag:
   - razvoj
   - vertx
