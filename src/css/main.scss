@@ -20,6 +20,7 @@ $break-small: 800px;
 :root {
   --text-color: #303030;
   --bg-color: #fff;
+  --bg-shade: #f4f4f4;
   --bg-light-color: #e5e5e5;
   --bg-tag-color: #e5e5e5;
   --title-small-color: #686868;
@@ -30,6 +31,7 @@ $break-small: 800px;
 }
 [data-theme="dark"] {
   --text-color: #fff;
+  --bg-shade: #363c48;
   --bg-color: #282c35;
   --bg-light-color: #363c48;
   --bg-tag-color: #363c48;
@@ -316,8 +318,23 @@ footer {
 }
 
 .tagline {
-  color: var(--title-small-color);
-  font-size: 1.1em;
+  font-size: 1.0em;
+  font-family: $monospace;
+  letter-spacing: -2px;
+  a {
+    color: var(--title-small-color);
+    background: var(--bg-shade);
+    padding: 4px;
+    border-radius: 4px;
+
+    &:hover {
+      background: var(--bg-light-color);
+    }
+  }
+  a.selected {
+    color: #fff;
+    background: var(--red-color);
+  }
 }
 
 .posts, .p {
@@ -553,17 +570,6 @@ input[type=text] {
   border: 1px solid #aaa;
 }
 
-a#menu {
-  font-size: 20px;
-  font-family: $monospace;
-  background: #666;
-  color: #fff;
-  padding: 4px;
-  border-radius: 4px;
-  &:hover {
-    background-color: #aaa;
-  }
-}
 #search-form {
   display: none;
 }

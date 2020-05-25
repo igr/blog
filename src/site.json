@@ -2,9 +2,7 @@
   "name": "Oblac",
   "baseURL": "https://oblac.rs",
   "title": "Oblac",
-  "description": "Oblac: blog / kod / mišljenja / stavovi / lično",
-  "tagline" : "blog / kod / mišljenja / ideje / lično",
-  "tagline_en": "blog / code / thinking / ideas / personal",
+  "description": "Oblac blog : stav | razvoj | alati | lično",
   "author": {
     "name": "Oblac"
   },

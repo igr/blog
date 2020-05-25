@@ -1,7 +1,7 @@
 {% if home %}
   <script>
-    function showDiv(Div) {
-      const x = document.getElementById(Div);
+    function showDiv(div) {
+      const x = document.getElementById(div);
       console.log(x.style.display);
       if (x.style.display === "block") {
         x.style.display = "none";
@@ -9,12 +9,77 @@
         x.style.display = "block";
       }
     }
+    function ready(callback) {
+      // in case the document is already rendered
+      if (document.readyState !== 'loading') callback();
+      // modern browsers
+      else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+      // IE <= 8
+      else document.attachEvent('onreadystatechange', function () {
+          if (document.readyState === 'complete') callback();
+        });
+    }
+
+    let selected = null;
+    function click(target) {
+      const clickedId = `a-${target}`;
+      const clickedClass = `c-${target}`;
+      if (!selected) {
+        // select category by hiding all others
+        document.querySelectorAll(`article.posts li`).forEach(e => {
+          const linkClass = e.getAttribute('class');
+          if (linkClass !== clickedClass) { e.style.display = "none"; }
+        });
+        selected = target;
+        // select just link, select all others
+        document.querySelectorAll(`.tagline a`).forEach(e => {
+          const linkid = e.getAttribute('id');
+          if (linkid !== clickedId) { e.removeAttribute('class'); }
+          else { e.setAttribute('class', 'selected'); }
+        });
+      }
+      else if (selected === target) {
+        // show all
+        document.querySelectorAll(`article.posts li`).forEach(e => {
+          e.style.display = "flex";
+        });
+        selected = null;
+        // deselect all links
+        document.querySelectorAll(`.tagline a`).forEach(e => {
+          e.removeAttribute('class');
+        });
+      }
+      else {
+        // switch whats selected
+        document.querySelectorAll(`article.posts li`).forEach(e => {
+          const linkClass = e.getAttribute('class');
+          if (linkClass !== clickedClass) { e.style.display = "none"; }
+          else { e.style.display = 'flex'; }
+        });
+        selected = target;
+        // select just link, select all others
+        document.querySelectorAll(`.tagline a`).forEach(e => {
+          const linkid = e.getAttribute('id');
+          if (linkid !== clickedId) { e.removeAttribute('class'); }
+          else { e.setAttribute('class', 'selected'); }
+        });
+      }
+    }
+    ready(() => {
+      document.getElementById("a-stav").addEventListener('click', () => {click('stav');});
+      document.getElementById("a-razvoj").addEventListener('click', () => {click('razvoj');});
+      document.getElementById("a-alati").addEventListener('click', () => {click('alati');});
+      document.getElementById("a-licno").addEventListener('click', () => {click('licno');});
+    });
   </script>
   <header class="site-header">
     <h1 id="title">{{ site.title }}</h1>
     <div class="tagline">
-      {{ site.tagline_en if (lang.key === 'en') else site.tagline }}
-      {% if not lang %} / <a id="menu" href="#" onclick="showDiv('search-form');">?</a>{% endif %}
+      {% if not lang %}
+        <a href="#" id="a-stav">stav</a> <a href="#" id="a-razvoj">razvoj</a> <a href="#" id="a-alati">alati</a> <a href="#" id="a-licno">lično</a> <a id="menu" href="#" onclick="showDiv('search-form');">?</a>
+      {% else %}
+        opinion / development / tools / personal
+      {% endif %}
     </div>
   </header>
   {% include "./search.html" %}
