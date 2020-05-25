@@ -68,7 +68,6 @@
     ready(() => {
       document.getElementById("a-stav").addEventListener('click', () => {click('stav');});
       document.getElementById("a-razvoj").addEventListener('click', () => {click('razvoj');});
-      document.getElementById("a-alati").addEventListener('click', () => {click('alati');});
       document.getElementById("a-licno").addEventListener('click', () => {click('licno');});
     });
   </script>
@@ -76,9 +75,9 @@
     <h1 id="title">{{ site.title }}</h1>
     <div class="tagline">
       {% if not lang %}
-        <a href="#" id="a-stav">stav</a> <a href="#" id="a-razvoj">razvoj</a> <a href="#" id="a-alati">alati</a> <a href="#" id="a-licno">lično</a> <a id="menu" href="#" onclick="showDiv('search-form');">?</a>
+        <a href="#" id="a-stav">stav</a> <a href="#" id="a-razvoj">razvoj</a> <a href="#" id="a-licno">lično</a> <a id="menu" href="#" onclick="showDiv('search-form');">?</a>
       {% else %}
-        opinion / development / tools / personal
+        opinion | development | personal
       {% endif %}
     </div>
   </header>

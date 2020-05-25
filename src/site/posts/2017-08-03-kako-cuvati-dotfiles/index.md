@@ -3,7 +3,7 @@ title: Kako čuvati dotfiles
 date: 2017-08-03T09:53:22+00:00
 slug: kako-cuvati-dotfiles
 categories:
-  - Alati
+  - Lično
 tag:
   - backup
   - dotfiles
