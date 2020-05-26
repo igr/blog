@@ -2,7 +2,6 @@
   <script>
     function showDiv(div) {
       const x = document.getElementById(div);
-      console.log(x.style.display);
       if (x.style.display === "block") {
         x.style.display = "none";
       } else {
@@ -27,41 +26,39 @@
       if (!selected) {
         // select category by hiding all others
         document.querySelectorAll(`article.posts li`).forEach(e => {
-          const linkClass = e.getAttribute('class');
-          if (linkClass !== clickedClass) { e.style.display = "none"; }
+          if (!e.classList.contains(clickedClass)) { e.classList.add('none'); }
         });
         selected = target;
         // select just link, select all others
         document.querySelectorAll(`.tagline a`).forEach(e => {
           const linkid = e.getAttribute('id');
-          if (linkid !== clickedId) { e.removeAttribute('class'); }
-          else { e.setAttribute('class', 'selected'); }
+          if (linkid !== clickedId) { e.classList.remove('selected'); }
+          else { e.classList.add('selected'); }
         });
       }
       else if (selected === target) {
         // show all
         document.querySelectorAll(`article.posts li`).forEach(e => {
-          e.style.display = "flex";
+          e.classList.remove('none');
         });
         selected = null;
         // deselect all links
         document.querySelectorAll(`.tagline a`).forEach(e => {
-          e.removeAttribute('class');
+          e.classList.remove('selected');
         });
       }
       else {
         // switch whats selected
         document.querySelectorAll(`article.posts li`).forEach(e => {
-          const linkClass = e.getAttribute('class');
-          if (linkClass !== clickedClass) { e.style.display = "none"; }
-          else { e.style.display = 'flex'; }
+          if (!e.classList.contains(clickedClass)) { e.classList.add('none'); }
+          else { e.classList.remove('none'); }
         });
         selected = target;
         // select just link, select all others
         document.querySelectorAll(`.tagline a`).forEach(e => {
           const linkid = e.getAttribute('id');
-          if (linkid !== clickedId) { e.removeAttribute('class'); }
-          else { e.setAttribute('class', 'selected'); }
+          if (linkid !== clickedId) { e.classList.remove('selected'); }
+          else { e.classList.add('selected'); }
         });
       }
     }
