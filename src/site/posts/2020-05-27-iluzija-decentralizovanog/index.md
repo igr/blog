@@ -11,7 +11,7 @@ tag:
   - kvalitet
 ---
 
-Halapljivo konzumiramo apsurd: decentralizovanu mreža razapetu između nekolicine moćnih centara.
+Halapljivo konzumiramo apsurd: decentralizovanu mrežu razapetu između nekolicine moćnih centara.
 
 <!-- more -->
 
