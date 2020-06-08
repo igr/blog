@@ -84,7 +84,7 @@ Dalje, implementacija funkcije može, kao i svaki klasa, da sadrži i druge meto
 
 ```kt
 object DetermineNextTimeslots : (Int, DateTime) -> List<TimeslotAndDoctor> {
-  override fun invoke(minItemsCount: Int, from: DateTime): List<TimeslotAndDoctor> {
+  override fun invoke(count: Int, from: DateTime): List<TimeslotAndDoctor> {
     // implementacija
   }
   val uptTo10 = { dateTime: DateTime -> DetermineNextTimeslots(10, dateTime) }
