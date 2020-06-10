@@ -291,15 +291,17 @@ a#home {
 }
 
 footer {
+  letter-spacing: -1px;
   border-top: 10px solid $red;
   margin: 100px 0 0 0;
+  font-size: 0.9em;
 
   color: $gray;
   width: 100%;
   left: 0;
   bottom: 0;
   text-align: center;
-  background-color: #FbFbFb;
+  background-color: var(--bg-shade);
   padding: 60px 0 60px 0;
 
   [itemprop="sameAs"] + [itemprop="sameAs"] {
@@ -310,10 +312,29 @@ footer {
   }
 
   #copyright {
-    font-size: 0.9em;
     margin-top: 20px;
     font-family: $monospace;
     text-align: center;
+  }
+
+  a {
+    font-family: $monospace;
+    color: var(--title-small-color);
+    background: none;
+    &:hover {
+      color: var(--red-color);
+    }
+  }
+}
+#quick-links a {
+  letter-spacing: -1px;
+  font-size: 0.8rem;
+  margin-right: 20px;
+  font-family: $monospace;
+  color: var(--title-small-color);
+  background: none;
+  &:hover {
+    color: var(--red-color);
   }
 }
 
@@ -582,12 +603,6 @@ input[type=text] {
   .tags {
     font-size: 0.7em;
     margin-bottom: 3em;
-  }
-}
-#quick-links {
-  a {
-    font-size: 0.8rem;
-    margin-right: 20px;
   }
 }
 
