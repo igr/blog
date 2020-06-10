@@ -15,7 +15,6 @@ function postsToRoot(path) {
 
 Spig
   .on('/**/*.{md,njk}')
-  .watchSite()
 
   ._('META')
   .pageMeta()

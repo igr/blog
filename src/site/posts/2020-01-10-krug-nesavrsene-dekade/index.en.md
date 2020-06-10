@@ -1,7 +1,6 @@
 ---
 title: The Circle Of An Imperfect Decade
 date: 2020-01-10T01:20:20+00:00
-slug: the-circle-of-an-imperfect-decate
 description: 'Everyday technology, for the last decade or so.'
 categories:
   - Opinion
