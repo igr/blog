@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "oblac.rs",
   "scripts": {
     "clean": "rm -rf out",
@@ -16,6 +16,6 @@
   "homepage": "https://oblac.rs",
   "dependencies": {
     "remove-markdown": "^0.3.0",
-    "spignite": "^2.2.2"
+    "spignite": "^2.2.3"
   }
 }
