@@ -9,7 +9,6 @@ tag:
   - posao
   - programer
   - senior
-  - zreo
 ---
 
 Puno je oglasa koje traže "senior" programere. Smeta mi malo ta odrednica, jer više ukazuje na starosnu kategoriju. Šta je to zapravo senior?

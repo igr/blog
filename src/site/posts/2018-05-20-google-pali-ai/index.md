@@ -6,7 +6,6 @@ categories:
   - Stav
 tag:
   - ai
-  - duplex
   - google
 ---
 

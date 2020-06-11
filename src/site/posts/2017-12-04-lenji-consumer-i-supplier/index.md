@@ -6,7 +6,6 @@ categories:
   - Razvoj
 tag:
   - consumer
-  - funk
   - funkcionalno
   - java
   - java8

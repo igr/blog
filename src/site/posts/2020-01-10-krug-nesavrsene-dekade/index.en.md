@@ -6,7 +6,7 @@ categories:
   - Opinion
 tag:
   - personal
-  - technologies
+  - technology
 ---
 
 

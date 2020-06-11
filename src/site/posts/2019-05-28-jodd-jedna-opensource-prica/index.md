@@ -10,7 +10,7 @@ tag:
   - framework
   - programiranje
   - java
-  - alatke
+  - alat
 ---
 
 Priče o start-up-ovima i milionima "uzetih" investicija svakako izmame uzdahe i pokrenu interesovanje. Ovo nije takva priča. Šta više, nije uopšte priča sa slatkim ivicama i ukusnim krajem. Zamislite malo poznat skup Java alata i frameworka otvorenog koda, proizvedenih u Beogradu, koji se preuzimaju milion puta mesečno, a za koji sigurno niste čuli.

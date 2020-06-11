@@ -6,7 +6,7 @@ categories:
   - Stav
 tag:
   - razvoj
-  - mišljenje
+  - mišljenja
   - obrazovanje
   - zajednica
 ---

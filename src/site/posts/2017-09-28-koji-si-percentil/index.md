@@ -12,7 +12,6 @@ tag:
   - razvoj
   - statistika
   - test
-  - testiranje
 ---
 
 Puštanje u produkciju je za koji dan. Sve radi kao podmazano. Ostalo je još da izmeriš vreme odziva aplikacije na saobraćaj koji je klijent naveo u zahtevima. Koristiš najbolji alat za generisanje saobraćaja; beležiš vreme odziva transakcija u fajl. Nakon par sati, vraćaš se i izračunavaš srednje vreme odziva aplikacije. Ispod je vrednosti klijentovog zahteva. Zadovoljno potvrđuješ da je sve spremno.

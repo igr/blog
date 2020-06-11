@@ -11,7 +11,7 @@ tag:
   - fowler
   - infrastruktura
   - mikroservisi
-  - problemi
+  - problem
   - proizvod
   - razvoj
 ---

@@ -5,7 +5,7 @@ slug: optimizacija-i-realizacija
 categories:
   - Razvoj
 tag:
-  - brzina
+  - performanse
   - knuth
   - kompleksnost
   - optimizacija

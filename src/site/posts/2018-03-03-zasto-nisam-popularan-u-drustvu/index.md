@@ -5,7 +5,6 @@ slug: zasto-nisam-popularan-u-drustvu
 categories:
   - Lično
 tag:
-  - diskusija
   - lično
   - razvoj
   - stav

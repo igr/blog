@@ -6,7 +6,7 @@ categories:
   - Stav
 tag:
   - agilno
-  - projekti
+  - projekat
   - razvoj
   - story
   - user

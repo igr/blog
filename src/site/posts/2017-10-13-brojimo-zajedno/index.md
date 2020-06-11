@@ -6,7 +6,6 @@ categories:
   - Razvoj
 tag:
   - asynchronous
-  - brzina
   - java
   - java9
   - optimizacija
