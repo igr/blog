@@ -28,6 +28,7 @@ Ovo stanje stvari se može posmatrati na dva načina. Jedan je pripisavanje rezu
 ## Rewritten by machine on new technology
 
 Čitanje je aktivno. Gledanje je pasivno.
+
 Istraživanja to potvrđuju, nije nikakva tajna: gledanje video sadržaja ne stavlja u pogon kongitivne procese na način kako to postiže čitanje. Dalja istraživanja na tu temu ukazuju da je usvajanje sadržaja potpunije ukoliko je u formi teksta.
 
 Međutim, istraživanja do kojih sam došao nisu potpuna; pomenute prednosti nisu toliko drastične da bi mogli da nepobitno pritisnemo "stop" na video i zauvek ga isključimo iz jednačine. Video ima svoje tantijeme: može da bude efikasan i udobniji za korišćenje.
