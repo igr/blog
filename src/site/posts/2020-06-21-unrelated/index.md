@@ -12,7 +12,7 @@ tag:
 1 employe   = working
 2 employees = consulting
 3 emlpoyees = meeting
-4 employess = waste of time
+4+ employess = waste of time
 {.unr}
 
 startup != product
@@ -20,6 +20,6 @@ startup != company
 startup == yourself
 {.unr}
 
-PhD.            == you are hired!
-self-motivation == meh, do this test
+PhD.           == you are hired!
+self-motivated == meh, do this test
 {.unr}
