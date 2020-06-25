@@ -11,7 +11,7 @@ tag:
 
 1 employe   = working
 2 employees = consulting
-3 emlpoyees = meeting
+3 employees = meeting
 4+ employess = waste of time
 {.unr}
 
@@ -21,5 +21,5 @@ startup == yourself
 {.unr}
 
 PhD.           == you are hired!
-self-motivated == meh, do this test
+self-motivated == meh, do this test first
 {.unr}
