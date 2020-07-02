@@ -4,6 +4,8 @@ date: 2017-07-24T09:53:22+00:00
 slug: ko-je-oblac
 categories:
   - Lično
+meta:
+  img: "ig.png"
 tag:
   - lično
 ---
@@ -13,7 +15,6 @@ tag:
 Postoji puno raznolikog sadržaja na mreži.
 
 Zahvalan sam što čitaš moj. Pišem prvenstveno o tehnologijama i softverskom inženjerstvu; ponekad o idejama koje smatram vrednim. Ništa manje, ništa više.
-
 
 Dostupan sam za diskusiju - bilo bi mi zadovoljstvo da pričamo o sličnim temama i idejama.
 

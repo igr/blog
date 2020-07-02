@@ -3,6 +3,8 @@ title: "Unrelated #274"
 date: 2020-04-24T01:07:03+00:00
 categories:
   - Unrelated
+meta:
+  img: "ig.png"
 tag:
   - unrelated
   - technology

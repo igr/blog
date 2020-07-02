@@ -3,6 +3,8 @@ title: "Olako shvaćeni pokloni otvorenog koda"
 date: 2020-05-12T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - open-source
   - razvoj

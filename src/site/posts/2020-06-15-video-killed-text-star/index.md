@@ -3,6 +3,8 @@ title: "Video killed the text star"
 date: 2020-06-15T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - video
   - razvoj

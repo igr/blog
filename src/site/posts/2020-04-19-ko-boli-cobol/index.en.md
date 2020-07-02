@@ -3,6 +3,8 @@ title: "Who’s Suffering From Cobol?"
 date: 2020-04-19T01:07:03+00:00
 categories:
   - Opinion
+meta:
+  img: "ig.png"
 tag:
   - društvo
   - development

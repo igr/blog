@@ -3,6 +3,8 @@ title: "TDD kuglanje i teča Bob"
 date: 2020-05-03T01:07:03+00:00
 categories:
   - Razvoj
+meta:
+  img: "ig.png"
 tag:
   - tdd
   - razvoj

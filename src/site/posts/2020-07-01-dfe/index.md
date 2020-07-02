@@ -3,6 +3,8 @@ title: "DFE FTW!"
 date: 2020-07-01T01:07:03+00:00
 categories:
   - Razvoj
+meta:
+  img: "ig.png"
 tag:
   - projekat
   - razvoj

@@ -3,6 +3,8 @@ title: "TDD bowling and uncle Bob"
 date: 2020-05-03T01:07:03+00:00
 categories:
   - Development
+meta:
+  img: "ig.png"
 tag:
   - tdd
   - development

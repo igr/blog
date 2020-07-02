@@ -3,6 +3,8 @@ title: "Anemični servisi, krcati domeni"
 date: 2020-06-08T01:07:03+00:00
 categories:
   - Razvoj
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - kvalitet

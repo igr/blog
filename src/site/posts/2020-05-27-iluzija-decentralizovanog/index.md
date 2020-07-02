@@ -3,6 +3,8 @@ title: "Iluzija decentralizovanog"
 date: 2020-05-27T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - centralizovano
   - tehnologija

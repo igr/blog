@@ -3,6 +3,8 @@ title: "Direktan prenos Ikarovog leta"
 date: 2020-04-08T01:07:03+00:00
 categories:
   - Lično
+meta:
+  img: "ig.png"
 tag:
   - društvo
   - razvoj
