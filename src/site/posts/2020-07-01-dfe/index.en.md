@@ -18,7 +18,7 @@ It is not something that is taught in agile courses. It's not a glamorous topic 
 
 DFE is an acronym for **Developer-First Experience**, defined as:
 
-> It is the duty of project managers to remove any doubts that a developer encounters during their work. The project should be set up exclusively for the developer.
+> It is the duty of project managers to remove any doubts that a developer encounters during their work. The project should be set up exclusively to suit the developers.
 
 
 ## Doubts
