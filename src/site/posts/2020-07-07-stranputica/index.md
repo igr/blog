@@ -3,6 +3,8 @@ title: "Stranputica (softverskog) razvoja"
 date: 2020-07-07T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - tehnologija
   - razvoj
