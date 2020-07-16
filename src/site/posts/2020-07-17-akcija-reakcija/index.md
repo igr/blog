@@ -57,9 +57,9 @@ Fokus je na generisanju sadržaja. Više vredi puno ničega, nego jedno nešto. 
 
 Tehnologija danas, mediji, društvene mreže... sve više agresivno zahtevaju reakciju.
 
-Reakcija je svaka naivno usvojena informacija. Reakcija je istina bez pokrića. Reakcija je verovanje bez osnova. Zaboravljena je moć reči: lako se stvaraju one bez težine, a još lakše se usvajaju tuđe. Koristi se pravo da se kaže, samo zato što se to može, a ne zato što ima šta. Teže je priznati da ne znaš, nego da se nema šta reći.
+Reakcija je svaka naivno usvojena informacija. Reakcija je istina bez pokrića. Reakcija je verovanje bez osnova. Zaboravljena je moć reči: lako se stvaraju one bez težine, a još lakše se usvajaju tuđe. Koristi se pravo da se kaže, samo zato što se to može, a ne zato što ima šta. Teže je priznati da se ne zna, nego da se nema šta reći.
 
-Zaboravili da tragamo, jer dobijamo servirano. Zaboravili da se izgubimo, jer smo navođeni. Zaboravili da vredimo, a da ne podelimo.
+Zaboravili da tragamo, jer dobijamo servirano. Zaboravili da se izgubimo, jer smo navođeni. Zaboravili da vredimo, bez da to ne podelimo.
 
 ## 5.
 
