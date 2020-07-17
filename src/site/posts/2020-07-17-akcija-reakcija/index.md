@@ -27,7 +27,7 @@ Ako je akcija _svetlost_, onda je reakcija _senka_.
 
 Tehnologija danas, mediji, društvene mreže... veličaju naše reakcije. Reakcija postaje važnija od akcije: multiplicira se, deli, umnožava. Postaje važnija od istine; mnogo senki može da zakloni svetlo. Reakcija se čak i zahteva, postaje obavezna. Uvijena je u laku dostupnost i instant konzumaciju.
 
-Reakcija je lajk i nelajk upućen u etar. Reakcija je komentar ostavljen na mreži. Reakcija je podela sadržaja. Reakcija je odgovor na pitanje koje se agresivno nameće.  Makar bile i smilene, sa dobrom namerom, to su samo reakcije.
+Reakcija je lajk i dislajk upućen u etar. Reakcija je komentar ostavljen na mreži. Reakcija je podela sadržaja. Reakcija je odgovor na pitanje koje se agresivno nameće.  Makar bile i smilene, sa dobrom namerom, to su samo reakcije.
 
 Reakcija je jeftina. Ne uzima mnogo vremena, ne treba truda.
 
