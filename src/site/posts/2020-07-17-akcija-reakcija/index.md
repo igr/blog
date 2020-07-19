@@ -3,6 +3,8 @@ title: "Akcija : Reakcija"
 date: 2020-07-17T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - tehnologija
   - društvo
