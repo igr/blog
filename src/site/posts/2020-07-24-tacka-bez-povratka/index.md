@@ -1,6 +1,8 @@
 ---
 title: "Tačka bez povratka"
 date: 2020-07-24T01:07:03+00:00
+meta:
+  img: "ig.png"
 categories:
   - Razvoj
 tag:
