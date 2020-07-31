@@ -18,21 +18,21 @@ Ili: da li zapošljavaš da rade za tebe ili sa tobom?
 
 <!--more-->
 
-Folklor kompanije Apple sadrži i ove dve priče.
+Folklor kompanije _Apple_ sadrži i ove dve priče.
 
 ## Kalkulator
 
-Kris Espinoza je bio jedan od najranijih i najmlađih prvobitnih zaposlenika u kompaniji Apple. Nakon povratka u kompaniju, dobio je zadatak da se stvori dokumentaciju za Quickdraw. Da bi bolje razumeo program, a ponesen idejom 'desktop ornamenata', odlučio je da nacrta kalkulator.
+Kris Espinoza je bio jedan od najranijih i najmlađih prvobitnih zaposlenika u kompaniji _Apple_. Nakon povratka u kompaniju, dobio je zadatak da se stvori dokumentaciju za Quickdraw. Da bi bolje razumeo program, a ponesen idejom 'desktop ornamenata', odlučio je da nacrta kalkulator.
 
-Kada je bio zadovoljan onime što je uradio, pokazao ga je Stivu.
+Kada je bio zadovoljan onim što je uradio, pokazao ga je Stivu.
 
-Direktan kakav je znao da bude, Stiv je odmah odgovorio: "Pa, imamo nekakvu osnovu; no, u suštini, ništa ne valja. Pozadinska boja je pretamna, neke linije su pogrešne debljine i dugmići su preveliki."
+Direktan kakav je znao da bude, Stiv je odmah odgovorio: "Pa, imamo nekakvu osnovu; no... ništa ne valja. Pozadinska boja je tamna, neke linije su pogrešne debljine, a dugmići su preveliki."
 
 Kris je rešio da radi na crtežu dok god se Stivu ne dopadne. Sledećih para dana je neprestano menjao crtež prema Stivovim smernicama od prethodnog dana. No, i dalje nije dolazio do rešenja.
 
 Konačno, Kris je promenio pristup: napravio je nešto što je nazvao: "The Steve Jobs Roll Your Own Calculator Construction Set". Svaka odluka vezana sa dizajnom kalkulatora je bila parametrizovana i mogla se menjati iz menija.
 
-Stiv je uzeo program i stao da se igra sa parametrima. Nakon nekih desetak minuta, zadovoljio se time što je postigao. Isti taj dizajn je par meseci kasnije upotrebljen i za interfejs programa za kalkulator, koji je postojao na meku još mnogo godina.
+Stiv je uzeo program i stao da se igra sa parametrima. Nakon desetak minuta, zadovoljio se time što je postigao. Isti taj dizajn je par meseci kasnije upotrebljen i za interfejs programa za kalkulator, koji je postojao na meku još mnogo godina.
 
 ## NeXT
 
