@@ -46,7 +46,7 @@ Polovo rešenje je bilo prihvaćeno. Ni jedan drugi dizajner nije bio anagažova
 
 Ove anegdote pripadaju suprotnim krajevima spektra: u jednoj CEO ima aktivnu ulogu, u drugoj je pasivan. U kojoj je priči Stiv ispravno postupio?
 
-U prvoj priči učestvuju CEO i programer. Nisu dizajneri, ali prvi ima konkretnu ideju, te je sprovodi. Ovaj deo do sada zvuči smisleno. Ironija je što Stiv ne postupa tako sa namerom, već je u pitanju njegova narav. Pri tome je utrošeno neracionalno puno vremena, opravdano jedino hijerarhijskim odnosom aktera priče.
+U prvoj priči učestvuju CEO i pisac dokumentacije. Nisu dizajneri, ali prvi ima konkretnu ideju, te je sprovodi. Ovaj deo do sada zvuči smisleno. Ironija je što Stiv ne postupa tako sa namerom, već je u pitanju njegova narav. Pri tome je utrošeno neracionalno puno vremena, opravdano jedino hijerarhijskim odnosom aktera priče.
 
 U drugoj priči, Stiv postupa na sličan način: traži da nametne svoje mišljenje i želi da kontroliše pravac razvoja. Međutim, biva odbijen. Ironija je što Stiv ponovo ne postupa tako sa namerom, već je (opravdana) samouverenost Pola Randa ta koja mu ne ostavlja mnogo opcija. Da je neko drugi bio u pitanju stvari se ne bi završile na isti način.
 
