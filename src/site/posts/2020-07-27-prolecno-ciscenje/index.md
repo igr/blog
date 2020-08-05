@@ -3,6 +3,8 @@ title: "Prolećno čišćenje"
 date: 2020-07-27T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - tehnologija
   - društvo

@@ -3,6 +3,8 @@ title: "Ironija Stiva Džobsa"
 date: 2020-07-31T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - tehnologija
   - društvo
