@@ -3,6 +3,8 @@ title: "Heštag"
 date: 2020-08-05T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - tehnologija
   - društvo
