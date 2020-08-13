@@ -52,3 +52,26 @@ Ovo je poziv da arhitektura koda bude primarni fokus, te da ne trpi zbog pogreš
 I ono što neprestano ponavljam: kada god pričamo o performansama aplikacije, moramo uzeti u obzir ceo sistem, a ne samo kod. No to je već neka druga tema.
 
 p.s. nadam se da više niko ne koristite `final` pod izgovorom da je 'brži' kod :)
+
+# Dodatak
+
+Nadahnut odličnim [odgovorom](https://www.linkedin.com/feed/update/urn:li:activity:6698851995274547200?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6698851995274547200%2C6699464736146280448%29) [Jovana Popovića](https://www.linkedin.com/in/jovan-popovic/), dužan sam da naglasim ono što možda nisam dovoljno :)
+
+Kreiranje objekta (kao i svaka alokacija) _svakako_ da ima cenu. Poenta je da `new` odavno nema nikakve **dodatne** penale, kao što se to možda još misli.
+
+Primera radi, uporediću kreiranje objekta jednostavne klase koja sadrži jednan properti sa najprostijim ekvivalentim kontejnerom: nizom od jednog elementa. U oba slučaja se alocira memorija za čuvanje istog podatka, samo je kontejner drugačiji. [Rezultat](https://github.com/igr/java-benchmarks/blob/master/src/main/java/com/oblac/jmh/lang/NewBenchmark.java) (na JVM 8) je:
+
+```text
+allocArray    avgt   20  3.282 ± 0.060  ns/op
+createFoo     avgt   20  2.896 ± 0.045  ns/op
+```
+
+Alokacija objekta je čak i nešto brža :) Da ponovim, `new` košta, ali nema **dodatnog**, vanrednog usporavanja.
+
+Vredi ponovo skrenuti pažnju i na ovo: ako bi imali klasu sa više propertija, njena _inicijalizacija_ traje duže. Objekat je svojevrsni kontejner; sve vrednosti treba setovati na uobičajene. `new` sam po sebi nema penala.
+
+Ovo su sve izolovani slučajevi koje sam merio; u praksi teško da performanse možemo da posmatramo kao uniju pojedinačnih delova. Tako, na primer, `String s = a + b + c` ili `new Foo(a + b + c)` nemaju smisla da se porede, jer većina vremena odlazi na konkatenaciju stringova.
+
+## Šta poneti odavde?
+
+Dizajn softvera ne treba da trpi preuranjene optimizacije u ime performansi - sve dok se to ne dokaže pravilnim benchmark testovima. Na to se nadovezuje opsednutost primitivama (o [kojoj sam pisao](/opsednutost-primitivnim/)), korišćene nepromenljivih klasa, itd.
