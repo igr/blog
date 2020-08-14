@@ -201,8 +201,7 @@ section {
 }
 
 h1 {
-  margin-top: 2em;
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1.2em;
   font-family: $serif-head, serif;
   text-transform: uppercase;
@@ -405,6 +404,11 @@ footer {
 
 .post {
   margin-bottom: 100px;
+
+  h1 {
+    font-size: 3em;
+    margin-top: 3em;
+  }
 
   .post-title {
     margin-top: 80px;
