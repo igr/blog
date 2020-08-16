@@ -9,7 +9,7 @@ tag:
   - društvo
 ---
 
-Znamo šta nam je činiti. Narcisoidni, ne dohvatamo se toga. Uljujkani u komfor, postajemo licemerni.
+Znamo šta nam je činiti. Narcisoidni, ne prihvatamo se toga. Uljujkani u komfor, postajemo licemerni.
 
 Al se\*em.
 <!--more-->
@@ -34,11 +34,11 @@ Rezultat svega je _ono_ što ti se danas pojavljuje u pretraživaču. Mesto na k
 
 ## 2
 
-Najopasnija stvar je besplatni sadržaj: mnogo je skup! Plaćamo vremenom, reklamama, gutanjem nefiltriranog, nekvalitetnog i urušavanjem vrednosti.
+Najopasnija stvar je besplatni sadržaj: mnogo je skup! Plaćamo vremenom, reklamama, gutanjem nefiltriranog, nekvalitetnog i urušavanjem vrednosti. Samo zato što je dostupan, ne znači da treba konzumirati.
 
-Možeš li da zamisliš sve drugačije? Da li bi pristao da konzumiraš manje, ali kvalitetnije? Da li bi platio za to, kao što plaćaš i za ukusno jelo, udobne cipele ili izdržljiv ranac? Da li možeš da zamisliš mrežu bez reklama? Da li bi pristao da ne objavljuješ sebe na zajedničkim mestima, već na svom privatnom? Da li bi pristao da ulažeš vreme u svoj sadržaj, duže od jednog klika, dva filtera i tri heštega? Da li shvataš da je privatnost dvosmerna ulica - isto kao što ti ne želiš tuđu, ni mi ne želimo tvoju?
+Možeš li da zamisliš sve drugačije? Da li bi pristao da upotrebljavaš manje, ali kvalitetnije? Da li bi platio za to, kao što plaćaš i za ukusno jelo, udobne cipele ili izdržljiv ranac? Da li možeš da zamisliš mrežu bez reklama? Da li bi pristao da imaš lični digitalni prostor, a ne da budeš razvodnjen nekontrolisanim deljenjem na tuđem? Da li bi pristao da ulažeš vreme i trud u svoj sadržaj: duže od jednog klika, dva filtera i tri heštega? Da li smeš da izađeš iz digitalnog komfora i odupreš se volumenu kritičkim razmišljanjem, po cenu mnogo manje interakcije?
 
-Decentralizovana mreža, ironično, oscilira danas samo oko centara. Njih ne možemo da promenimo, glupo je boriti se protiv. Zato sebe promeniti možemo. Umemo li da iskoraknemo iz ovog besmisla; formiramo ne na druge centre, već nove _čvorove_? Gde 'zajedno' ne znači 'svi emituju sve', već predstavlja nemi čin koji govori sam za sebe.
+Decentralizovana mreža, ironično, oscilira danas samo oko centara. Njih ne možemo da promenimo, glupo je boriti se protiv. Zato sebe promeniti možemo. Umemo li da iskoraknemo iz ovog besmisla; formiramo ne druge centre, već pregršt malih, fokusiranih _čvorova_? Da se okupljamo oko vrednosti, a ne mnogoprisutnosti. Da pričamo samo tamo gde žele da nas čuju. Da prepoznajemo trud, a ne usrkavamo količinu. Gde 'zajedno' ne znači 'svi emituju sve', već predstavlja čin koji govori sam za sebe.
 
 ## 3
 
@@ -46,7 +46,7 @@ Zašto ti je bitno da drugi vide tvoju intimu? Time ona prestaje da to bude, gle
 
 Zamisli sobu punu ljudi, u kojoj svi pričamo na glas. To nije razgovor. Ne razaznaju se tokovi misli, niti se izdvajaju vredne stvari od trivije. Zamisli još u toj sobi glasne zvučnike, svaki pušta svoj zvuk, besplatno. Grupišemo se oko zvučnika, tamo gde je veća gužva, jer to i ostali rade. Što smo bliži, to se sve manje razaznaju reči, a sve više čuje zvuk zvučnika.
 
-Kakofonija. Buka je odličan način asimilacije razmišljanja. Buka je entropija misli prikrivena lažnim smislom.
+Kakofonija. Buka je odličan način asimilacije razmišljanja. Digitalna buka je entropija misli prikrivena lažnim smislom.
 
 Ugasi ton. Vrati se. Obriši se.
 
@@ -68,6 +68,6 @@ Sve ovo znamo. Ali nam je i dalje važnije da budemo važni.
 
 Dramiš! Ako ti je sve potaman, onda ništa.
 
-Ništa nećeš postići ovime! A ti?
+Ništa nećeš postići ovime! Da, a ti?
 
-Niko te i nije pitao za mišljenje! Jbg, tako je kako je.
+Niko te i nije pitao za mišljenje! Jbg.
