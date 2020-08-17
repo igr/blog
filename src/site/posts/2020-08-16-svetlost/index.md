@@ -26,6 +26,7 @@ Sve što se danas čuva tamo negde u oblaku ima svoju težinu. Troši se energij
 ## Očuvanje energije
 
 Kada bi video onu sijalicu od 60W uključenu u toku dana, sigurno bih je isključio. Zašto onda nisam?
+
 Zato što mi je trebao Gugl. Šta misliš, koliko košta kada dobiješ nazad rezultate pretrage: proračunavanja, slanje podataka kroz kablove ispod okeana, pa do tvog računara?
 
 `17` sekundi 60W svetla.
