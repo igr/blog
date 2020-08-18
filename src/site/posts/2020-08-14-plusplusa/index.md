@@ -63,7 +63,7 @@ C, C++14 (gcc 8.3) najčešće daju rešenje `13`. Postfix inkrementacija se ovd
 
 C++17 dodatno pročišćava specifikaciju, te ovi kompajleri daju rezultat `12` uz izbacivanje upozorenja:
 
-```text
+```plaintext
 warning: multiple unsequenced modifications to 'a'
 ```
 
