@@ -12,7 +12,7 @@ tag:
 
 \- Dobar dan, Cico. Javili ste se za poziciju Kavlin++ programera?
 \- Dobar dan; da.
-- Napišite program koji štampa `n` veće od `2` tako da je `a^n + b^n = c^n`.
+\- Napišite program koji štampa `n` veće od `2` tako da je `a^n + b^n = c^n`.
 <!--more-->
 \- Sastavi algoritam za rekurzivni obilazak Milerovog-BS stabla, te implementaciju koristeći bar 10 dizajn paterna i 5 najnovijih frejmvorka.
 \- I, konačno, opišite koncizno kako vidite sebe u sledećih 1825 dana, a analizu dajte po sedmičnim segmentima.
