@@ -19,6 +19,7 @@ Teško je zamisliti da Guglov UI tim ne ubraja znalce. Kapiram da postoje detalj
 Iz nekog razloga, UI tim koji radi na _Meet_ aplikaciji je odlučio da poređa dugmiće na sledeći način:
 
 ![](meet1.jpg)
+{.center}
 
 Ovakav UI mi nikako ne prija: uhvatim sebe da svaki put upotrebljavam dodatni kognitivni napor samo da bih kliknuo na odgovarajuće dugme; tačnije, da ne pritisnem dugme koje _ne_ treba.
 
@@ -39,6 +40,7 @@ Razumem da iza svega stoje studije i analize; da verovatno ima smislenog razloga
 UI treba da postane **adaptivan**, po meri pojedinca. Fleksibilan, dinamičan, da dozvoli slobodne rasporede i svakakve promene: kako korisniku već odgovara. Briga me ako je dugme potpuno izmešteno sa strane i potpuno drugačijeg oblika, ako više nikada ne budem pravio grešku. Makar bilo i najružnije dugme ikada. Zar nije to smisao UX-a, na kraju krajeva?
 
 ![](meet2.jpg)
+{.center}
 
 UX ne treba da bude proizvod UI. UX treba da bude cilj, a UI samo implementacija. Estetika je važna, ali je tek jedan sastojak iskustva. Plašim se da to danas nije slučaj.
 
