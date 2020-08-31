@@ -1,6 +1,8 @@
 ---
 title: "Svetlo koje ne vidimo"
 date: 2020-08-16T01:07:03+00:00
+meta:
+  img: "ig.png"
 categories:
   - Stav
 tag:
