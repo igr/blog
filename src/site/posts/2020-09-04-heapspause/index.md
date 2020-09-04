@@ -65,6 +65,7 @@ Jedna od prvih većih akcija je bila "Topla i spržena Java" - oduvek sam imao d
 Ah, da; krajem decembra 2004. sam napravio i prve brendirane majice:
 
 ![](tshirt.png)
+{.center}
 
 Ako sam nešto naučio za sve ove godine, to je priprema materijala za štampu. Vrlo programerska stvar.
 
@@ -79,7 +80,7 @@ Prvo okupljanje ('meetup' nije postojao) je bilo **14. avgusta 2004.** u Geneksu
 
 Naredna okupljanja nisu bila česta; čekalo se i po par meseci na sledeće. Prvi predavači su neki od pionira u Java tehnologijama na ovim prostorima: [Dejan Krsmanović](https://www.linkedin.com/in/dejankrsmanovic76/), [Mateja Opačić](https://www.linkedin.com/in/mateja-opacic-3a69755/), [Predrag Spasojević](www.linkedin.com/in/predrag-spasojevic-17132b1/)... Teme su bile solidne, a predavanja posećena.
 
-A onda se desio Spring.
+A onda je došlo proleće.
 
 Godinu dana od nastanka JavaSveta, **19. maja 2005** imali smo prilike da ugostimo tvorce Spring frameworka (Boot nije bio ni u petogodišnjem planu), uz pomoć firme S4HC. Predavanje je zaslužilo da se organizuje u Hajatu; trajalo je 3 sata, a slušalo ga je nešto više od 150 prisutnih. Kada ovako napišem, zvuči lako. To nipošto nije bio slučaj: niti je bilo jednostavno, a ni jeftino po mene. No, dovesti dvojac iz Springa je bio ekvivalent Kojotu koji je konačno uhvatio Pticu Trkačicu: šou se mora održati. I bi ga. Volim prepričavati trivijalnu anegdotu: najavljivanje da u Beogradu postoji Silikonska dolina, te odlazak u nju sa zbunjenim predavačima.
 
@@ -124,9 +125,9 @@ Prva tehnološka konferencija posle tektonskih društvenih promena u našem dru�
 
 To je ujedno bilo i poslednji IT Dan. Nikola više nije bio u prilici da dolazi; a, već uobičajeno, lokalna pomoć nije pristizala.
 
-## JavaSvet.rs
+## JavaSvet dot rs
 
-**Februara 2009.** počinje treći ciklus JavaSveta. Da je JavaSvet ptica, bio bi feniks sa dijagnostikovanim poremećajem pažnje. Da ne bude da samo kukam i naričem: problemi su ostali isti, a(li) i ja sam.
+**Februara 2009.** počinje treći ciklus JavaSveta. Da je JavaSvet ptica, bio bi feniks sa dijagnostikovanim poremećajem sećanja. Da ne bude da samo kukam i naričem: problemi su ostali isti, a(li) i ja sam.
 
 ![](sajt3.png)
 {.center}
