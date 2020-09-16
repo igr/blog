@@ -20,7 +20,7 @@ Nezamislivo se ostvarilo: Jodd artifakti se preuzimaju `2.500.000` puta mesečno
 
 Pre svega - ovo nije nikakav 'uspeh' koji bi se našao u kakvom pseudo-dokumentarnom filmu. Šta god da iskodirate, objavite i budete samo tu sledećih 15-tak godina, naći će već neko mesto upotrebe.
 
-Kada održavaš 80+k linija čistog koda, pre ili kasnije shvatiš besmisao tog zadatka. Kao što je usamljenost bolna emocija, siguran sam da postoji i 'usamljeni razvoj', stanje u kome podjednako bolno hronično kodiraš usamljeni u nameri. Da bih konačno tome stao na put, izdvojio sam četiri najkorišćenija frejmworka (prema statistikama) i njima pružio priliku da rastu dalje svaki za sebe.
+Kada održavaš `80+k` linija čistog koda, pre ili kasnije shvatiš besmisao tog zadatka. Kao što je usamljenost bolna emocija, siguran sam da postoji i 'usamljeni razvoj': stanje u kome podjednako bolno hronično kodiraš usamljen u nameri. Da bih tome stao na put, izdvojio sam četiri najkorišćenija frejmworka (prema statistikama) i njima pružio priliku da rastu dalje svaki za sebe.
 
 Najvrednija biblioteka se pokazala [Lagarto](https://lagarto.jodd.org) - brzo parsiranje HTML-a na nekoliko načina.
 
