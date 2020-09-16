@@ -14,7 +14,7 @@ tag:
 
 Iz šale sam obećao sebi da ću objaviti novu verziju [Jodd](https://github.com/oblac/jodd)-a tek kada se duplira upotreba, neuveren u takav ishod.
 
-Nezamislivo se ostvarilo: Jodd artifakti se preuzimaju 2.500.000 puta mesečno sa Maven Centrala. Nažalost.
+Nezamislivo se ostvarilo: Jodd artifakti se preuzimaju `2.500.000` puta mesečno sa Maven Centrala. Nažalost.
 
 <!--more-->
 
@@ -22,5 +22,7 @@ Pre svega - ovo nije nikakav 'uspeh' koji bi se našao u kakvom pseudo-dokumenta
 
 Kada održavaš 80+k linija čistog koda, pre ili kasnije shvatiš besmisao tog zadatka. Kao što je usamljenost bolna emocija, siguran sam da postoji i 'usamljeni razvoj', stanje u kome podjednako bolno hronično kodiraš usamljeni u nameri. Da bih konačno tome stao na put, izdvojio sam četiri najkorišćenija frejmworka (prema statistikama) i njima pružio priliku da rastu dalje svaki za sebe.
 
-I to je sve ispalo kako treba; usput polovično ispunio obećanje.
+Najvrednija biblioteka se pokazala [Lagarto](https://lagarto.jodd.org) - brzo parsiranje HTML-a na nekoliko načina.
+
+I to je sve ispalo baš kako treba; usput polovično ispunio obećanje.
 Novo neću dati :)
