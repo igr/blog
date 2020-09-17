@@ -3,6 +3,8 @@ title: "Lestvice ka formalnom kodu"
 date: 2020-08-19T01:07:03+00:00
 categories:
   - Razvoj
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - tla

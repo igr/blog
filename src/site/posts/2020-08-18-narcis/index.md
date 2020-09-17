@@ -3,6 +3,8 @@ title: "Licemerje narcisoidnosti"
 date: 2020-08-18T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - tehnologija
