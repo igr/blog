@@ -123,7 +123,7 @@ public class NextCharGenerator {
 
 Dometi Jave se ovde završavaju. Da bi videli kako kod može dalje da evoluira, moramo da posegnemo (bar) za Kotlinom.
 
-Kotlin ima pregršt korisnih trikova u rukavu. Jedan je i _range_ - definisanje skupa navođenjem samo početne i krajnje vrednosti. U Java primeru naš skup je definisan stringom koga čine _svi_ karakteri koje želimo da koristimo: to je nekih `100+` karaktera koji će nepotrebno stajati u fajlu, otvoreni za svaku moguću grešku. U Kotlinu se svodi na:
+Kotlin ima pregršt korisnih trikova u rukavu. Jedan je i _range_ - definisanje skupa navođenjem samo početne i krajnje vrednosti. U Java primeru alfabet je definisan stringom koga čine _svi_ karakteri koje želimo da koristimo: to je nekih stotinjak karaktera koji će nepotrebno stajati u fajlu, otvoreni za svaku moguću grešku. U Kotlinu se svodi na:
 
 ```kt
 val alphabet = ('a'..'c') + ('A'..'C')
