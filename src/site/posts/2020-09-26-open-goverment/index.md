@@ -10,7 +10,7 @@ tag:
   - država
 ---
 
-Vlada varljivo vlada, vidimo vazdan. Vagaju vešto, vabe vaši verno, vonjaju više. Varošane vredne vukovi vrebaju: vrtlog, vakum, vezane vizije.
+Vlada varljivo vlada, vidimo vazdan. Vagaju vešto, verno vabe vaši, vonjaju više. Varošane vredne vukovi vrebaju: vrtlog, vakuum, vezane vizije.
 
 Otvoreni podaci ne postoje bez Otvorene vlade.
 
@@ -38,7 +38,7 @@ Bojim se da kod nas to nije slučaj. U Zakonu o elektronskoj upravi (koliko lai�
 
 Ako bih izdvojio jednu praksu koju treba sprovesti na putu za dosezanje Otvorene vlade, to je: **Otvoreni dijalog**. Angažovanjem stručnjaka i civilnih društava, Otvorena vlada dobija potvrdu da li su programi i servisi dizajnirani i ostvareni da zadovolje potrebe države. Tek kada su građani osnaženi da izraze svoje uvide i mišljenja, a vlada demonstrira spremnost da te javne komentare smileno uvrsti u deo procesa donošenja odluka, možemo reći da postoji Otvoreni dijalog.
 
-Sve ostalo dolazi iz toga, zahvaljujući darovima tehnologije.
+Sve ostalo može proisteći iz njega, zahvaljujući darovima tehnologije.
 
 ## Vukovi vrebaju
 
