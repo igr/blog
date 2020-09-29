@@ -3,6 +3,8 @@ title: "Shape-ologija"
 date: 2020-08-24T01:07:03+00:00
 categories:
   - Razvoj
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - soc

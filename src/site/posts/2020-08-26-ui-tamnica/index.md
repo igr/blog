@@ -3,6 +3,8 @@ title: "UI tamnica"
 date: 2020-08-26T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - ui
