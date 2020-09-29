@@ -30,7 +30,7 @@ Prvi razlog se tiče potrebe da čovek nešto znači. Ovo osećanje nije ni dobr
 
 Dakle, reč je emitovanju nekakvog _mišljenja_ - čak i kada ono nije u formi reči, već, recimo, u formi fotke vaše mačke koja radi što i sve mačke na svetu. Pridodajemo važnost (opravdanu ili ne) emitovanom, jer smo - eto - posebni, a mišljenje je naš izražaj. Zato brojimo srca i palce, pričamo o dosegu, maštamo o prepoznavanju.
 
-Malo mišljenja je zaista vredno. To što imamo internet, [ne znači](https://oblac.rs/licemerje-narcisoidnosti/) da smo vredni konzumiranja. Zapravo, što više razmišljam (ha!), čini se da je mišljenje (a ne misao!) precenjen proizvod.
+Malo mišljenja je zaista vredno. To što imamo internet, [ne znači](https://oblac.rs/licemerje-narcisoidnosti/) da smo vredni konzumiranja. Zapravo, što više razmišljam (ha!), čini se da je mišljenje (ali ne misao!) precenjen proizvod.
 
 ## Sadržaj
 
