@@ -10,8 +10,6 @@ tag:
   - galaksija
 ---
 
-# Zadužbina
-
 Jednu planetu na samom kraju **Galaksije**, Asimovljev junak naseljava enciklopedistima čiji je zadatak da sačuvaju najvažnije tekovine, znanja i veštine civilizacije.
 
 <!--more-->
