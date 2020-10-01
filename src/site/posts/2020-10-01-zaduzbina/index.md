@@ -46,7 +46,7 @@ Ponavljam, firme nisu antagonisti ove priče. Svi mi, svakim danom, žmureći iz
 
 ## EB
 
-U šali kažem: teško društvu u kome IT određuje šta je vredno, a šta ne.
+U šali kažem: teško društvu u kome IT određuje šta je vredno.
 
 Zašto brendiranje mora da bude uzrok akcije? Da li postoje vrednosti koje premašuju domet neke generacije, te ih vredi negovati; iako to, možda, trenutno nije popularno? Da li je brending ako se uradi u tišini?
 
