@@ -3,6 +3,8 @@ title: "Merenje izmene"
 date: 2020-08-31T01:07:03+00:00
 categories:
   - Razvoj
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - izmena
