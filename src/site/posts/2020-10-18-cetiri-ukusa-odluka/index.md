@@ -33,4 +33,8 @@ Dalje, predlozi mogu biti različite važnosti. Tako, na primer, važniji predlo
 
 Moguće je uvesti i bodovanje; na primer: `+3`, `+1`, `-2` i `-4`. Ovde je ideja da zabrinutost i neslaganja budu pažljivo uzeta u obzir, te se boduju više. Konstruktivne zamerke mogu da pomognu više nego slaganja sa predlogom.
 
-I konačno, samo suočavanje sa glasanjem zahteva konkretizaciju donošenje odluke. Drugim rečima, bolje je nešto odlučiti, nego ništa.
+I konačno, samo suočavanje sa glasanjem zahteva konkretizaciju donošenja odluke. Drugim rečima, bolje je _nešto_ odlučiti, nego ništa.
+
+## Zašto ovo ne radi?
+
+Alat gubi svoju vrednost kada ne služi. Ako postoje učestale drastične razlike u glasanju, ono prestaje da donosi vrednost.
