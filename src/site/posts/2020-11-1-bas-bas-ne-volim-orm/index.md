@@ -22,9 +22,9 @@ Onda su došli OOP programeri. Videvši tabele u bazi, pomislili su da ih mapira
 
 OOP programeri su odlučili da je sve to baratanje sa bazama previše. Kako vole prečice, neko je negde pomislio da je mudro da _ne razmišljamo_ o bazi, već se posvetimo isključivo mapiranim entitetima u odabranom OOP jeziku. Ko će još da uči SQL? Jer, na kraju, baza je samo implementacija, zar ne?
 
-Pogrešili su u konceptu. Upiti rade na i sa dinamičkim - dakle, _runtime_ - strukturama podataka. Podaci o tabelama i veze jesu definisane pre korišćenja (_compile time_), ali definisanje seta na kome se operiše je ostavljeno korisniku u _runtime_. Drugim rečima, kroz upit se određuje da li vraćamo jednu ili deset kolona, kao i to da li pravimo join-ove ili ugnježdene upite. I to je potpuno legitimno - šta više, upravo se tako izražava i koristi moć baza i domenskog jezika SQL.
+Greška je u konceptu. Upiti rade na i sa dinamičkim (dakle, _runtime_) strukturama podataka i, naročito, relacijama. Definisanje seta na kome se operiše je ostavljeno korisniku u _runtime_. Kroz upit se određuje da li se vraća jedna ili deset kolona, kao i koje se relacije koriste. I to je potpuno legitimno - šta više, upravo se tako izražava i koristi moć baza i domenskog jezika SQL. S druge strane, u slučaju generalnog OOP jezika, sve relacije između klasa i njihov izgled su zauvek čvrsto uvezani u _compile time_.
 
-Zato ORM nije prečica, već over-engineering. Umesto da se bavimo bazama, bavimo se JPA. Pažljivo baratamo entitetima (jer nisu tek tako obični objekti), dodajemo kojekakve anotacije, pišemo pseudo-SQL: sve u cilju da JPA fasada proizvede upit kakav samo zamislili na samom početku. I sva ta muka da bi imali... šta to, tačno? Da bi sakrili SQL? Da bi u produkciji mogli da zamenimo bazu preko noći? Mda, srećno s time.
+Zato ORM nije prečica, već over-engineering. Umesto da se bavimo bazama, bavimo se JPA. Pažljivo baratamo entitetima (jer nisu tek tako obični objekti), dodajemo kojekakve anotacije, pišemo pseudo-SQL: sve u cilju da JPA fasada proizvede upit kakav samo zamislili na samom početku. I sva ta muka da bi imali... šta to, tačno? Da bi prikrili SQL? Da bi u produkciji mogli da zamenimo bazu preko noći? Mda, srećno s time.
 
 ## Greška u koracima
 
