@@ -1,6 +1,6 @@
 ---
 title: "Baš, baš, ne volim ORM"
-date: 2020-10-20T01:07:03+00:00
+date: 2020-11-01T01:07:03+00:00
 categories:
   - Razvoj
 tag:
