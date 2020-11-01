@@ -28,9 +28,9 @@ Zato ORM nije prečica, već over-engineering. Umesto da se bavimo bazama, bavim
 
 ## Greška u koracima
 
-Glupo je menjati domenski jezik (SQL) univerzalnim jezikom (OOP programski jezik). Time se potpuno urušava smisao postojanja domenskog jezika! Zapravo, naša nastojanja bi trebalo da su u suportnom smeru: treba nam što više domenskih jezika! Ukoliko je OOP jedini alat koji imas, onda ti svaki problem izgleda kao OOP problem.
+Glupo je menjati domenski jezik (SQL) univerzalnim jezikom (OOP programski jezik). Time se potpuno urušava smisao postojanja domenskog jezika! Zapravo, naša nastojanja bi trebalo da su u suportnom smeru: treba nam više domenskih jezika! Ukoliko je OOP jedini alat koji imas, onda ti svaki problem izgleda kao OOP problem.
 
-Ponavljam: treba nam što više domenskih jezika. Ono što OOP programeri treba da reše nije fasada za te jezike, već adapter. Treba nam način da _lako_ koristimo drugi domenski jezik, kao što je SQL; a ne da ga izopštimo.
+Ponavljam: treba nam više domenskih jezika. Ono što OOP programeri treba da reše nije fasada za te jezike, već adapter. Treba nam način da _lako_ koristimo drugi domenski jezik, kao što je SQL; a ne da ga izopštimo.
 
 Konkretno, u slučaju baza - treba nam **samo** mapiranje. `OM`, a ne `ORM`. Lak način da dinamički set podataka mapiramo u objekte. Korak dalje su prečice _samo_ u korišćenju jezika - generisanje kao sa JOOQ, ili templejtski SQL kao u Jodd (pozor: samo-reklama). Sve ostalo možemo da rešimo sami.
 
