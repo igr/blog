@@ -23,7 +23,7 @@ Izgovorio ju je neko ko ima prilično iskustva iza sebe. Moja reakcija je bila: 
 
 Namestilo se da baš ovo bude kulminacija mojih razmišljanja na temu kolektivnog razvoja. Kao što možda znate, verujem u samo jednu metodologiju: [Zdrum](https://oblac.rs/zdrum-uzvraca-udarac/). Iako, priznajem, ona ne radi.
 
-Razmišljajući o uzrocima, počeo sam sa uobičajenim: motivacija, iskustvo, ciljevi itd. Međutim, motivisan i iskusan (i šta sve već) radnik nije garant da dobijamo _najbolje_ od njega. Spas tražimo u kojekavim metodologijama; lečimo posledice, a ne uzrok. Pravimo taskove, a p\(r)opuštamo kvalitet.
+Razmišljajući o uzrocima, počeo sam sa uobičajenim: motivacija, iskustvo, ciljevi itd. Međutim, motivisan i iskusan (i šta sve već) radnik nije garant da dobijamo _najbolje_ od njega. Spas tražimo u kojekavim metodologijama; lečimo posledice, a ne uzrok. Pravimo taskove, a p(r)opuštamo kvalitet.
 
 Ogoljavajuću tako problem do krajnjih granica, pronalazim razliku između _razvoja_ i _rada_. Razvoj je sila, rad je energija. Razvoj je taj koji ide nekamo, rad je taj koji se akumulira i ne troši nužno na pravi način.
 
