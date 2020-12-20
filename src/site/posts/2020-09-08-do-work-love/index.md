@@ -3,6 +3,8 @@ title: "Do Work Love"
 date: 2020-09-08T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - programiranje
