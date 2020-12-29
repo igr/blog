@@ -1,5 +1,5 @@
 ---
-title: "# Zašto pristajemo na loš softver?"
+title: "Zašto pristajemo na loš softver?"
 date: 2020-12-29T01:07:03+00:00
 categories:
   - Stav
