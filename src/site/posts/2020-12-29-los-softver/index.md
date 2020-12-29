@@ -33,7 +33,7 @@ Odgovoriću citirajući opasku g. Dijkstra, izrečenu na pomenutoj konferenciji:
 
 > We may not change our thinking habits.
 
-Pola veka kasnije, ova misao odzvanja. Da li je vreme da se dignemo ruke?
+Pola veka kasnije, ova misao odzvanja. Da li je vreme da dignemo ruke?
 
 ## Drugi razlog
 
