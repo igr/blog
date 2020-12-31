@@ -11,5 +11,5 @@ tag:
 
 2019 == disinformation
 2020 == polarity
-2021 == .\*ression
+2021 == .\*ession
 {.unr}
