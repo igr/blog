@@ -55,6 +55,6 @@ Za to vreme, oko `600` miliona ljudi u Africi nema pristup elektricitetu.
 
 Ne potcenjujem onoga koji čita ovo - razumeš i sam da ovo nije poziv da isečemo sve kablove, pustimo kosu i odemo u planine.
 
-Svet tehnologije takođe traži odgovorno ponašanje. Gornji podaci su javno dostupni: sam Gugl, Erikson i dr.  ih objavljuju. Neke firme vraćaju nazad potrošnju izgradnjom čistih izvora energije. Mnoge to i dalje ne rade. Besomučna konzumacija i hiperprodukcija ne idu u prilog.
+Svet tehnologije takođe traži odgovorno ponašanje. Gornji podaci su javno dostupni: sam Gugl, Erikson i dr.  ih objavljuju. Neke firme vraćaju nazad potrošnju izgradnjom "čistih" izvora energije. Nažalost, takvi energetski izvori bivaju zapravo (prilično!) zaprljani. Dalje, mnoge firme ni ne pokušavaju da o tome vode računa. Besomučna konzumacija i hiperprodukcija ne idu u prilog.
 
 Odavno je došlo vreme da pričamo i o ovome.
