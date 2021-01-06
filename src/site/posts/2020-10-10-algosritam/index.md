@@ -4,7 +4,7 @@ date: 2020-10-10T01:07:03+00:00
 categories:
   - Stav
 tag:
-  - algortam
+  - algoritam
   - društvo
   - razvoj
   - tehnologija

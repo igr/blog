@@ -8,7 +8,7 @@ meta:
 tag:
   - video
   - razvoj
-  - učenjenje
+  - učenje
 ---
 
 Pogledaj ovamo.
