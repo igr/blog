@@ -10,8 +10,6 @@ tag:
   - sadržaj
 ---
 
-# 22 min or less
-
 Sve što imaš da kažeš može da stane u `22` minuta ili manje.
 
 Zameni 'manje' sa 'mora'.
