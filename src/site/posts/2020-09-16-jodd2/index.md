@@ -3,6 +3,8 @@ title: "Jodd Šest"
 date: 2020-09-16T01:07:03+00:00
 categories:
   - Lično
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - jodd
