@@ -26,7 +26,7 @@ Važnije šta bledi je dokolica. Preovladava zato dosada... Pre svega: dokolica 
 
 Ne živi se danas brže, već površnije usled izobilja. Put popločan žutim Lego kockama otvara prostor dosadi, jer ne skrećemo da se prepustimo dokolici.
 
-Umeće razvoja softvera, slično Lego kockama, služi nam isključivo da stignemo do cilja. Završi program, napravi app, podeli link, pozovi sve, zagrizi tehnolgije, budi kul, gomilaj saobraćaj, uposli mreže i klaude...
+Umeće razvoja softvera, slično Lego kockama, služi nam isključivo da stignemo do cilja. Završi program, napravi app, podeli link, pozovi sve, zagrizi tehnologije, kul, gomilaj saobraćaj, uposli mreže i klaude...
 
 To samo po sebi i nije loše. Fora je što nema ničeg drugog. Nema koda iz dokolice.
 
