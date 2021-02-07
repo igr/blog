@@ -82,9 +82,9 @@ U nedostatku boljeg termina, alternativa o kojoj pričam nazivam **opisno** (dek
 
 Štaaaaaaaa?
 
-Svaka komponenta definiše poruke koje prozivodi i na koje reaguje. Termin 'poruke' ne treba shvatiti kao događaje (_events_), već kao funkcije. Događaji su samo način prenošenja poruka. Tako komponenta za slanje mejla (na pr. `B`) može da prima poruku o potrebi slanja odgovarajućeg sadržaja. Međutim, `B` ne zna kada ovu poruku treba poslati. Zanimljivo, komponenta `A` takođe ne zna da treba slati mejl, niti je svestna da postoji `B`. Komponenta `B`, dalje, ne poznaje iste poruke koje se šalju `A`: brisanje knjige u `A` nije ono što `B` (slanje mejla) uopšte razume. Konačno, korisnikova akcija rezultuje samo slanjem poruke komponenti `A` i ne treba da je se tiču ostale komponente.
+Svaka komponenta definiše poruke koje prozivodi i na koje reaguje. Termin 'poruke' ne treba shvatiti kao događaje (_events_), već kao funkcije. Događaji su samo način prenošenja poruka. Tako komponenta za slanje mejla (na pr. `B`) može da prima poruku o potrebi slanja odgovarajućeg sadržaja. Međutim, `B` ne zna kada ovu poruku treba poslati. Zanimljivo, komponenta `A` takođe ne zna da treba slati mejl, niti je svesna da postoji `B`. Komponenta `B`, dalje, ne poznaje iste poruke koje se šalju `A`: brisanje knjige u `A` nije ono što `B` (slanje mejla) uopšte razume. Konačno, korisnikova akcija rezultuje samo slanjem poruke komponenti `A` i ne treba da je se tiču ostale komponente.
 
-Gde onda upisujemo `if A then B`? U _konektorima_ (opet nemam bolji termin). To su objekti koji opisuju isključivo interakciju između dve i samo dve komponente i rade adaptaciju poruka. Postojanje konektora takođe implicira API koji ima i (uobičajene) ulazne - ali i izlazne poruke. Skup svih konektora predstavlja _opis_ sistema. Opis sistema je, zapravo, program.
+Gde onda pišemo `if A then B`? U _konektorima_ (opet nemam bolji termin). To su objekti koji opisuju isključivo interakciju između dve i samo dve komponente i rade adaptaciju poruka. Postojanje konektora takođe implicira API koji ima i (uobičajene) ulazne - ali i izlazne poruke. Skup svih konektora predstavlja _opis_ sistema. Opis sistema je, zapravo, program.
 
 To sve nekako izgleda sada ovako:
 
