@@ -3,6 +3,8 @@ title: "Zaštiti ili omogući"
 date: 2020-09-17T01:07:03+00:00
 categories:
   - Razvoj
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - programiranje
