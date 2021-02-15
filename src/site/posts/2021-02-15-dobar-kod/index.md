@@ -23,12 +23,12 @@ Ono što zameram ovakvim istraživanjima je da ne uključuju cenu dodatnih resur
 
 Problem sa procenom uticaja lošeg koda je u različitim trenucima kada se ovaj uticaj meri: koštanje stvaranja nije u jasnoj srazmeri sa koštanjem efekta. Kada se meri _pre_ nego što se napiše, uticaj lošeg koda je zamaskiran resursima i trenutnim troškovima; čini se skupo ulagati u nešto što diretkno ne doprinosi cilju: kodu koji radi. Kada se meri _nakon_ što je kod napisan, stvari postaju konkretnije; te kako vreme prolazi tako i cena ružnog koda (efekta) raste.
 
-## Šta je, uopšte, ružan kod?
+Tako da: što je više ponovne interakcije sa kodom, to je cena njegove ružnoće veća.
 
-Prvo pitanje, čiji odgovor prethodi ovoj diskusiji, mora biti baš to: šta je ružan kod? Moj odgovor bi bio:
+## Teorija razbijenog prozora
 
-> Ružan kod je onaj koji ne komunicira nameru drugom programeru.
+Ima jedan pojavni oblik ružnog koda koji nalazim posebno važnim. Naime, postoji kriminološka teorija koja govori o širenju vandalizma. Glasi ovako: ako na zgradi postoji jedan polomljeni prozor, velika je šansa da će vandali razbiti i ostale prozore.
 
-Ovakav odgovor, iako jasan, je prilično apstraktan, nemerljiv. Ako je tako, šta bi onda mogli zaključiti? Treba li ulagati u dobar kod, ili je to samo mit?
+Ova teorija se pokazuje na primeru smeća i prirode: ukoliko neko baci smeće na čistu livadu i niko ga ne pokupi, ljudi će početi da tu bacaju smeće. Otuda pravilo izviđača da se kamp-mesto ostavi u istom ili boljem stanju nego je zatečeno.
 
-Zaključak kome naginjem je da treba ulagati u _dobru_ **arhitekturu**. Kod može biti bolji ili lošiji, ali arhitetkura _mora_ biti izuzetna.
+Ista teorija se može primeniti na razvoj softvera: ružan kod pravi mesta za novi ružan kod. Ružan kod pravi pozitivnu povratnu spregu i nastavlja sa degradacijom kvaliteta.
