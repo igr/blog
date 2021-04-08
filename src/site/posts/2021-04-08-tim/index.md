@@ -37,4 +37,4 @@ Poverenje je ono koje stavlja ego na drugo mesto. Poverenje je sloboda da se fok
 
 ----
 
-Ne možemo se oslanjati na to da se inženjeri (ili ma ko!) sami organizuju. Očekivati tako nešto je nezrelo.
+Ne možemo se oslanjati na to da se inženjeri (ili ma ko!) sami organizuju. Očekivati to je nezrelo.
