@@ -38,3 +38,5 @@ Poverenje je ono koje stavlja ego na drugo mesto. Poverenje je sloboda da se fok
 ----
 
 Ne možemo se oslanjati na to da se inženjeri (ili ma ko!) sami organizuju. Očekivati to je nezrelo.
+
+A Sinek je tu zbog ironije.
