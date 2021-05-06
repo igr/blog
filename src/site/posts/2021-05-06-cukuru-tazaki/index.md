@@ -1,5 +1,5 @@
 ---
-title: "Bezbojni Cukuru Tazaki je dr*ažija"
+title: "Bezbojni Cukuru Tazaki je dr*adžija"
 date: 2021-05-06T01:06:08+00:00
 categories:
   - Stav
@@ -33,7 +33,7 @@ To je govor koji prenosi samo činjenice. Obe strane se trude da izbace suvišno
 
 Trebalo bi više da se govori o tome kako ispravno razumeti drugoga. Pogledajmo samo razvoj softvera - tu najviše čitamo i tumačimo tuđi kod. Zašto to onda ne primenjujemo i u komunikaciji?
 
-Dalje: najmoćnija stvar za tim, prema nekim istraživanjima, je kreiranje okruženja gde pojedinci kompetentno sami upravljaju sobom. A ne harmonija i glatka interakcija saradnika. Mislite o tome (napomena: bez preuveličavanja, molim).
+Dalje: najmoćnija stvar za tim, prema nekim istraživanjima, je kreiranje okruženja gde pojedinci kompetentno sami upravljaju sobom. A ne harmonija i glatka interakcija saradnika. Misliti o tome (napomena: bez preuveličavanja).
 
 ## Bez reči
 Ima ovde nečeg važnije od ravnopravnog (ne)uviđanja obe strane komunikacije. A to je prestanak komunikacije, tišina. Zarad prividnog zadovoljavajućeg stanja stvari.
