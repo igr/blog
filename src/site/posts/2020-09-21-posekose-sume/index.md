@@ -3,6 +3,8 @@ title: "Posekoše nam šume otvorenog koda"
 date: 2020-09-21T01:07:03+00:00
 categories:
   - Stav
+meta:
+  img: "ig.png"
 tag:
   - razvoj
   - it
