@@ -18,7 +18,7 @@ Paraleni uverzumi; ili šbbkbb.
 
 \- Učitelju, poslušajte me.
 \- Ne, dragi Srinivasa. Ljudi će razumeti našu borbu sami.
-\- Učitelju, stvari više nisu iste. Moramo biti na mreži... Moramo podeliti vašu tihu borbu. Hajde da počnemo bar sa Instagramom? Fotka dnevno, heštag #hunger4piece... Izmučeni ste gladovanjem, videće se lepo sa filterom...
+\- Učitelju, stvari više nisu iste. Moramo biti na mreži... Moramo podeliti vašu tihu borbu. Hajde da počnemo bar sa Instagramom? Fotka dnevno, heštag #hunger4peace... Izmučeni ste gladovanjem, videće se lepo sa filterom...
 \- Ne, dragi prijatelju. Ljudi će razumeti vrednost za koju gladujemo. U pitanju je mir; retko šta je uzvišenije od toga.
 \- Ali... moramo da sakupljamo lajkove. Da bi došli do što više ljudi. Da bi oni potom dalje delili vaše misli i objave na mreži.
 \- Ne. Gladujemo za mir, a ne za lajkove.
