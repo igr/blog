@@ -1,6 +1,6 @@
 ---
 title: "Tri stigmate"
-date: 2021-06-27T01:06:08+00:00
+date: 2021-05-27T01:06:08+00:00
 categories:
   - Stav
 tag:
