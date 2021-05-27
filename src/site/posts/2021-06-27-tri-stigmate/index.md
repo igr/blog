@@ -31,15 +31,15 @@ Broj pratilaca: `137`. Tehnologija je došla 1843. godine.
 
 "Imam san...", započeo je svoj govor.
 
-"...da li si video šta je juče objavljeno... kakve dobre funkcionalnosti... hej, koliko je skočio bitkoin... ništa ne čujem šta priča... zašto na kanalu ima indijaca... očekujem puno od govora... kul ti je stori... rasporićemo vam utrobe crnco-ljupci... huh, secka mi net, šta sam propustio..." - kakofonija na kanalu.
+_"...da li si video šta je juče objavljeno... kakve dobre funkcionalnosti... hej, koliko je skočio bitkoin... ništa ne čujem šta priča... zašto na kanalu ima indijaca... očekujem puno od govora... kul ti je stori... rasporićemo vam utrobe crnco-ljupci... huh, secka mi net, šta sam propustio..."_ - kakofonija na kanalu.
 
 "Imam san...", ponovio je govornik, "da će jednog dana ova nacija ustati..."
 
-"...ko je pustio ove na kanal... dobar početak... uključi snimanje na stori... glave ćemo vam polupati... malo mi je 'san' nategnuto... i dalje mi secka net... šta sam propustio... ajde guglaj lika... može tišina na kanalu... ko je administrator... pogrešan kanal, izvinite... nudimo 2% popusta za... kolki je rezultat na tekmi... mogao je da ubaci muziku..." - kakofonija na kanalu.
+_"...ko je pustio ove na kanal... dobar početak... uključi snimanje na stori... glave ćemo vam polupati... malo mi je 'san' nategnuto... i dalje mi secka net... šta sam propustio... ajde guglaj lika... može tišina na kanalu... ko je administrator... pogrešan kanal, izvinite... nudimo 2% popusta za... kolki je rezultat na tekmi... mogao je da ubaci muziku..."_ - kakofonija na kanalu.
 
 "...naša nacija ustati i živeti istinsko značenje svoje vere", pokušao je govornik po treću put.
 
-"...šta je sad ovo, teologija... a gde su prava seksualnih manjina... moram na sastanak, ispadam... da li će biti objava na fejsu... kul, proradio strim na jutjubu... ha, vidi ovaj tiktok, presmešan... ima li ovde neka devojka... mrzimo crnce... pao gol!... ukoliko odete na ovaj link dobijate 5% popusta... može neko da ponovi..." - kakofonija na kanalu.
+_"...šta je sad ovo, teologija... a gde su prava seksualnih manjina... moram na sastanak, ispadam... da li će biti objava na fejsu... kul, proradio strim na jutjubu... ha, vidi ovaj tiktok, presmešan... ima li ovde neka devojka... mrzimo crnce... pao gol!... ukoliko odete na ovaj link dobijate 5% popusta... može neko da ponovi..."_ - kakofonija na kanalu.
 
 Martin Luther King je zbunjeno izašao sa _Clubhouse_ kanala. Bio je baptistički sveštenik, poznat u svojoj parohiji. Ostavio je iza sebe blog i, kasnije, video kanal.
 
