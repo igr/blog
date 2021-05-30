@@ -2,7 +2,7 @@
 title: "Žuta štampa, itd"
 date: 2021-05-30T01:06:08+00:00
 categories:
-  - Lično
+  - Stav
 tag:
   - razvoj
   - tim
