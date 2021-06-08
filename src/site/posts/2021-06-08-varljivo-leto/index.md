@@ -2,7 +2,7 @@
 title: "Varljivo leto '68"
 date: 2021-06-08T01:06:08+00:00
 categories:
-  - Stav
+  - Razvoj
 tag:
   - razvoj
 ---
