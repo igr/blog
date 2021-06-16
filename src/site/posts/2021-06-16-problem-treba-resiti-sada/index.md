@@ -33,6 +33,6 @@ Primarni zadatak je _migracija_. Usputni zadatak **nije** rešavanje problema - 
 
 Načinjene su pretpostavke bez osnova. Ne znači da će migracioni tok rada biti i način kako korisnici koriste aplikaciju. Šta više, često to nije slučaj. Može se desiti da se korisnici _nikada_ ne susretnu sa ovim problemom. Druga neosnovana pretpostavka je da treba povećati parametre connection poola. Treća pretpostavka je da aplikacija mora da radi sve vreme. Zanimljivo, u svetu mikroservisa, to nipošto ne mora da bude slučaj. Problem se može ublažiti resetovanjem poda kada se zabode.
 
-Puno toga u ovoj trenutku još _ne znamo_. A kada puno toga ne znam, vodim računa o pretpostavkama - svaka se mora proveriti.
+Puno toga u ovom trenutku _ne znamo_. A kada puno toga ne znam, vodim računa o pretpostavkama - svaka se mora proveriti.
 
 Zato: ne rešavamo problem sada, već rešavamo primarni zadatak. Pokušamo da usput detektujemo problem. Konkretno rešavanje se ostavlja za onda kada se ima dovoljno provernih pretpostavki.
