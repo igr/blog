@@ -20,7 +20,7 @@ Da započnem citatom Stiva Džobsa:
 
 Neka odstoji malo ova misao; za to vreme želim da ukažem na jedan zajednički sadržalac u stavu prema konferencijama koji sam primetio u okruženju: reč je o _nerazumevanju_ (a time i neiskorišćavanju) konferencija. Čini mi se da većina zanemaruje konferencije, a kada ih već poseti, ima nerealna očekivanja.
 
-U susret nam dolazi [VoxxedDays Belgrade 2017](https://belgrade.voxxeddays.com) - velika, "prava", nezavisna, sve-tehnološka konferencija. Nema puno sličnih u regionu, a kod nas je zapravo jedina. Da odmah bude jasno: učestvujem u njenom organizovanju. Kako bilo, uzimam VDB17 tek kao primer konferencije koja se dešava tu, blizu, a koju bi valjalo _iskoristi_ na pravi način. Što nas vraća na gornju misao.
+U susret nam dolazi **VoxxedDays Belgrade 2017** - velika, "prava", nezavisna, sve-tehnološka konferencija. Nema puno sličnih u regionu, a kod nas je zapravo jedina. Da odmah bude jasno: učestvujem u njenom organizovanju. Kako bilo, uzimam VDB17 tek kao primer konferencije koja se dešava tu, blizu, a koju bi valjalo _iskoristi_ na pravi način. Što nas vraća na gornju misao.
 
 Konferencije nisu tu da bi te zabavile. Nisu tu da bi odsustvovao sa posla i družio se s poznanicima. Nećeš se vratiti sa konferencije s novim "_hands-on_" znanjem i još iste večeri refaktorisati tvoj projekat. I prestani da se pitaš: "šta mi pruža ova konferencija?" Izađi iz uloge pasivnog posmatrača i angažuj ulogu aktivnog učesnika pitanjem: "šta želim da iskoristim?" Onda ostaje da se to još samo i uradi. Evo nekih predloga kako.
 

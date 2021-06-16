@@ -33,7 +33,7 @@ Stvar kojom sam zabrinut je:
 
 > Težimo da sve što kompjuteri mogu da urade, čega je svakim danom sve više, to i treba da rade.
 
-Plaši me to. Mislim da ne treba. Mašine ne trebaju da rade sve što ljudi znaju da rade. Da preformulišem: ljudima _ne treba_ da mašine rade sve što oni rade.
+Plaši me to. Mislim da ne treba. Mašine ne trebaju da rade sve što ljudi znaju da rade. Da preformulišem: ljudima _ne treba_ da mašine rade sve što oni rade.
 
 Jer mi smo ipak samo ljudi. Neophodnost interakcije, spontanosti, nepredvidivosti je u genima našeg bića. Ne smemo to sami sebi oduzeti.
 
@@ -45,7 +45,7 @@ Apokalipsa nije uništenje ljudske rase od strane robota. Naše _prepuštanje_ m
 
 Kratak rez. Čovek sa bradicom prikazuje bežični uređaj koji je veličine zgodne da se drži rukama. Ima ekran u boji, reaguje na dodir. Služi za upravljanje domom: od ulaznih vrata do televizora. Meh, ništa posebno... osim što je [video](https://youtu.be/1CsTH9S79qI) iz 1991. godine (a čikica je James Gosling).
 
-Kratak rez. Čovek sa brčićima u odelu, belom košuljom i kravatom elokventno objašnjava novi koncep rešavanja problema mašinskih inženjera. Objašnjava kako do tog momenta da bi rešili problem moramo vrlo precizno da ga napišemo da bi računar uopšte prihvatio kod; ukoliko izostavimo makar i zarez, program neće raditi. Slično, moramo razumeti sve aspekte problema do detalja da bi mogli da kompjuteru predočimo rešenje. Novi sistem, koji se predstavlja na snimku, kreće od druge premise: vizuelnog modelovanja i adaptivnog učenja. Sistem uči u interakciji sa inženjerom i tako dolazi do rešenja. Zvuči kao fantastika? [Video](http://www.wgbh.org/article/?item_id=3360989) je iz 1964. Izvinite me na trenutak, kod mi se ne kompajlira, imam manjak karaktera krajem 2017. godine.
+Kratak rez. Čovek sa brčićima u odelu, belom košuljom i kravatom elokventno objašnjava novi koncep rešavanja problema mašinskih inženjera. Objašnjava kako do tog momenta da bi rešili problem moramo vrlo precizno da ga napišemo da bi računar uopšte prihvatio kod; ukoliko izostavimo makar i zarez, program neće raditi. Slično, moramo razumeti sve aspekte problema do detalja da bi mogli da kompjuteru predočimo rešenje. Novi sistem, koji se predstavlja na snimku, kreće od druge premise: vizuelnog modelovanja i adaptivnog učenja. Sistem uči u interakciji sa inženjerom i tako dolazi do rešenja. Zvuči kao fantastika? [Video](https://www.youtube.com/watch?v=6orsmFndx_o) je iz 1964. Izvinite me na trenutak, kod mi se ne kompajlira, imam manjak karaktera krajem 2017. godine.
 
 Kratak rez. Šta ovime pokušavam da kažem?
 

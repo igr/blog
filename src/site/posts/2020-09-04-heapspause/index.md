@@ -43,7 +43,7 @@ Mogu da posvedočim da je zajednica bila tu za svakoga ko je delio iste vrednost
 ![](sajt.png)
 {.center}
 
-JavaSvet je postao prva zvanična JUG - Java User Group - na ovim prostorima. Ako mislite da je to bilo lako, varate se: nismo postojali ucrtani ni u jednoj mapi, te je potrajalo objasniti Sun-u da zaista postojimo. Na kraju, bilo je lepo videti JavaSvet upisan u listu svih JUG-ova pod imenom naše zemlje. Novembra iste godine se oformila i JUG-NS iz Novog Sada, koja je bila pohvalno aktivna jedno vreme. Kasnije se spisku priključila i [NišJUG](https://nisjug.org) - koja, verovali ili ne, još uvek postoji i aktivno radi. Svaka čast [Draženu Nikoliću](www.linkedin.com/in/drazennis/) i prijateljima iz Niš; prepoznajem sav njihov trud - hvala vam što ste tu i na uvek lepoj saradnji. Da je ovo film, zajedno bi leteli iznad kukavičjeg gnezda.
+JavaSvet je postao prva zvanična JUG - Java User Group - na ovim prostorima. Ako mislite da je to bilo lako, varate se: nismo postojali ucrtani ni u jednoj mapi, te je potrajalo objasniti Sun-u da zaista postojimo. Na kraju, bilo je lepo videti JavaSvet upisan u listu svih JUG-ova pod imenom naše zemlje. Novembra iste godine se oformila i JUG-NS iz Novog Sada, koja je bila pohvalno aktivna jedno vreme. Kasnije se spisku priključila i [NišJUG](https://nisjug.org) - koja, verovali ili ne, još uvek postoji i aktivno radi. Svaka čast [Draženu Nikoliću](https://www.linkedin.com/in/drazennis/) i prijateljima iz Niš; prepoznajem sav njihov trud - hvala vam što ste tu i na uvek lepoj saradnji. Da je ovo film, zajedno bi leteli iznad kukavičjeg gnezda.
 
 Podjednako nelako je bilo registrovati udruženje građana tih godina. **14. decembra 2004.** to i zvanično postajemo posle puno hladnih dana provedenih na šalterima. Pri tome smo uspeli da rešimo i birokratski _dead lock_: kada jedan papir zahteva postojanje drugog, koji ne može da se izda bez prvog. Bar je finalizacija bila zanimljiva; proceduralno potpisivanje u SIV-u, u jednoj od onih lepih, prostranih kancelarija.
 
@@ -80,7 +80,7 @@ Prvo okupljanje ('meetup' nije postojao) je bilo **14. avgusta 2004.** u Geneksu
 ![](s1.jpg)
 {.center}
 
-Naredna okupljanja nisu bila česta; čekalo se i po par meseci na sledeće. Prvi predavači su neki od pionira u Java tehnologijama na ovim prostorima: [Dejan Krsmanović](https://www.linkedin.com/in/dejankrsmanovic76/), [Mateja Opačić](https://www.linkedin.com/in/mateja-opacic-3a69755/), [Predrag Spasojević](www.linkedin.com/in/predrag-spasojevic-17132b1/)... Teme su bile solidne, a predavanja posećena.
+Naredna okupljanja nisu bila česta; čekalo se i po par meseci na sledeće. Prvi predavači su neki od pionira u Java tehnologijama na ovim prostorima: [Dejan Krsmanović](https://www.linkedin.com/in/dejankrsmanovic76/), [Mateja Opačić](https://www.linkedin.com/in/mateja-opacic-3a69755/), [Predrag Spasojević](https://www.linkedin.com/in/predrag-spasojevic-17132b1/)... Teme su bile solidne, a predavanja posećena.
 
 A onda je došlo proleće.
 
