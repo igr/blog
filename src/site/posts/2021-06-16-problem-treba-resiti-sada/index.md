@@ -9,7 +9,7 @@ tag:
   - analiza
 ---
 
-Jedna programerska ilustracija za podeliti.
+Jedna mala inženjerska ilustracija za podeliti.
 
 <!--more-->
 
@@ -23,7 +23,7 @@ Postoji pristup samo logovima i kodu. Nema pristupa bazi, niti detaljima JVMa (m
 
 ----
 
-Prirodna rekacija na ovo stanje je: moramo rešiti problem. Ako nam se ovako nešto desilo pri migraciji, desiće se i korisnicima. Uključimo logove, povećamo connection pool parametre - moramo odmah i prvo (i hitno) odstraniti problem.
+Prirodna rekacija na ovo stanje je: moramo rešiti problem. Ako nam se ovako nešto desilo pri migraciji, desiće se i korisnicima. Uključimo logove, povećamo connection pool parametre... pritisnemo Toyota Way dugme; prionemo i odmah i prvo i hitno da odstranimo problem.
 
 **Netačno.**
 
@@ -31,8 +31,8 @@ Prirodna rekacija na ovo stanje je: moramo rešiti problem. Ako nam se ovako ne�
 
 Primarni zadatak je _migracija_. Usputni zadatak **nije** rešavanje problema - već njegovo _detektovanje_.
 
-Načinjene su pretpostavke bez osnova. Ne znači da će migracioni tok rada biti i način kako korisnici koriste aplikaciju. Šta više, često to nije slučaj. Može se desiti da se korisnici _nikada_ ne susretnu sa ovim problemom. Druga neosnovana pretpostavka je da treba povećati parametre connection poola. Treća pretpostavka je da aplikacija mora da radi sve vreme. Zanimljivo, u svetu mikroservisa, to nipošto ne mora da bude slučaj. Problem se može ublažiti resetovanjem poda kada se zabode.
+Načinjene su pretpostavke bez osnova. Ne znači da će migracioni tok rada biti i način kako korisnici koriste aplikaciju. Šta više, često to nije slučaj. Može se desiti da se korisnici _nikada_ ne susretnu sa ovim problemom. Druga neosnovana pretpostavka je da treba povećati parametre connection poola. Treća pretpostavka je da aplikacija mora da radi sve vreme. Zanimljivo, u svetu mikroservisa, to nipošto ne mora da bude slučaj. Problem se može ublažiti resetovanjem poda kada se zabode. Četvrta neosnovana pretpostavka je da infrastruktura radi kako treba. Itd.
 
 Puno toga u ovom trenutku _ne znamo_. A kada puno toga ne znam, vodim računa o pretpostavkama - svaka se mora proveriti.
 
-Zato: ne rešavamo problem sada, već rešavamo primarni zadatak. Pokušamo da usput detektujemo problem. Konkretno rešavanje se ostavlja za onda kada se ima dovoljno provernih pretpostavki.
+Zato: ne rešavamo problem odmah, već ga ublažavamo; fokus je na primarnom zadatku. Pokušamo da usput detektujemo problem. Rešavanje se ostavlja za onda kada se ima dovoljno provernih pretpostavki.
