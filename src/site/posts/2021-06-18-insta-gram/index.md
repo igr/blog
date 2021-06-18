@@ -102,6 +102,6 @@ INSTAGRAM: (setno) Tada sam... mislim... donosio zaista neku vrednost.
 
 **KRAJ PRVOG ČINA**
 
-> Kojeg vuka hraniš, taj će te biti na fonu.
+> Kojeg vuka hraniš, taj će ti izlaziti na fonu.
 
 🤷‍♂️
