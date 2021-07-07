@@ -31,7 +31,7 @@ Prva stvar koja se uočava je nesiguran izuzetak: nije greška u stanju, već u 
 Druga stvar je korišćenje `Try` monada umesto `if` ili `try` bloka. U primeru se ne vidi, ali tih desetak linija koda značajno uvećava `Try` blok; čini stvari manje čitljivim. Kako bilo, primećujem da se ovakva zamena smatra 'dobrom praksom', kao da korišćenje `Try` ili `Optional` - na ovakav način (!) - nekako pospešuje kod. Takvo razmišljanje nema osnova. Ako već postoji namera da se uvodi kontejner za rezultat, onda ga i treba vratiti:
 
 ```java
-private Try<Byffer> doit(...) { }
+private Try<Byffer> foo(...) { }
 ```
 
 S druge strane, korišćenje starog dobrog - i jasnog - `try` bloka omogućava da se izuzetak hvata samo tamo gde se i baca:
@@ -51,7 +51,7 @@ Naravno, ako se složimo da to uopšte želimo da radimo.
 ## Dva
 
 ```java
-return Optional<List> doit() {
+return Optional<List> foo() {
   // izračunaj listu, itd.
   return Optional.ofNullable(list)
 }
@@ -74,7 +74,7 @@ public static Either<String, Number> parseStringToNumber(String number) {
     }
 }
 
-public static void execute(String... numbers) {
+public static void foo(String... numbers) {
     final List<Number> validNumbers = new LinkedList<>();
     final Set<String> invalidInputs = new LinkedHashSet<>();
 
