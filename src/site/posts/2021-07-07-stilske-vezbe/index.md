@@ -18,7 +18,7 @@ Tri stilske vežbe preuzete iz pravih projekata i jedna fusnota.
 ## Jedan
 
 ```java
-private long foo(final int operationMode, final long input, final byte[] key) {
+private long foo(final int mode, final long input, final byte[] key) {
   return Try.of(() -> {
     // desetak linija koda
     return ByteBuffer.wrap(/* nesto */);
@@ -52,7 +52,7 @@ Naravno, ako se složimo da to uopšte želimo da radimo.
 
 ```java
 return Optional<List> doit() {
-  // izračunaj listu
+  // izračunaj listu, itd.
   return Optional.ofNullable(list)
 }
 ```
@@ -102,7 +102,8 @@ enum EitherMark {RIGHT, LEFT}
 // ...
 var s = Arrays.stream(numbers)
     .map(PrimerTri::parseStringToNumber)
-    .collect(Collectors.groupingBy(it -> it.isRight() ? EitherMark.RIGHT : EitherMark.LEFT));
+    .collect(Collectors.groupingBy(it ->
+        it.isRight() ? EitherMark.RIGHT : EitherMark.LEFT));
 
 final List<Number> validNumbers = s
     .get(EitherMark.RIGHT)
