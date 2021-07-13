@@ -30,9 +30,9 @@ Imam luksuz da ne koristim mnoge mreže (social notwork, tja). Kada me slučaj n
 
 "Izobilje" je novi beli šećer našeg tehnološkog društva; i mi ga halapljivo gutamo.
 
-Problem količine se odražava na Verterovu mladu dušu. Da naglasim tehničku stranu izvora patnje: sve više softverskih proizvoda radi sve _lošije_. Nemam nikakvu pametnu metriku da potkrepim tvrdnje, sem svakodnevnog dugotrajnog boravka na mreži, u aplikacijama, i razvijenoj osetljivosti usled profesionalnog poziva. Ujedno i opravdanim frustracijama usled razmimoilaženja onoga kako aplikacija treba da mi radi i onoga kako je zamišljena da radi. Da ne bude zabune - nije reč o samoljublju, već o potrebi. Pogotovo ako interakcija sa softverom uključuje novac ili pozamašno vreme. Da, onda imam pravo da želim da aplikacija radi kako mi treba.
+Problem količine se odražava na Verterovu mladu dušu. Da naglasim tehničku stranu izvora patnje: sve više softverskih proizvoda radi sve _lošije_. Nemam nikakvu pametnu metriku da potkrepim tvrdnje, sem svakodnevnog dugotrajnog boravka na mreži, u aplikacijama, i razvijenoj osetljivosti usled profesionalnog poziva. Ujedno i opravdanim frustracijama usled razmimoilaženja onoga kako aplikacija treba da mi radi i onoga kako je zamišljena da radi. Da ne bude zabune - nije reč o samoljublju, već o potrebi. Pogotovo ako interakcija sa softverom uključuje novac ili pozamašno vreme. Da, onda imam pravo da ištem aplikaciju koja radi kako mi treba.
 
-S druge strane, možda je sve samo do, opet, izobilja - ovaj put pregršti servisa, aplikacija i... svega što potpada pod pojam tehnologije. U većem skupu podataka lakše je uočiti obrazac: verovatno zato uočavam propuste, te se sve češće nalazim da džangrizam šta se to, sto mu gromova, dešava i šta se očekuje da uradim!?
+S druge strane, možda je sve samo do, opet, izobilja - ovaj put pregršti servisa, aplikacija i... svega što potpada pod pojam tehnologije. U većem skupu podataka lakše je uočiti obrazac: verovatno zato uočavam propuste, te se sve češće uhvatim da džangrizam šta se to, sto mu gromova, dešava i šta se očekuje da uradim!?
 
 Da ne bi ostalo na pukom duvanju u vetar, hajde da zamislimo vrli novi svet u kome su stvari drugačije. Šta treba promeniti da tehnologija evoluira dalje... ka čoveku?
 
