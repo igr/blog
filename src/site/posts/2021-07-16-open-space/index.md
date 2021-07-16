@@ -1,5 +1,6 @@
 ---
 title: "IKEA ❤️ open space"
+slug: "ikea-heart-open-space"
 date: 2021-07-16T01:07:03+00:00
 categories:
   - Stav
