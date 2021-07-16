@@ -1,5 +1,5 @@
 ---
-title: "IKEA ❤️ open space"
+title: "IKEA ❤ open space"
 slug: "ikea-heart-open-space"
 date: 2021-07-16T01:07:03+00:00
 categories:
@@ -19,7 +19,7 @@ Kako broj programera raste, odjednom preti da ponestane mesta. Kako rešiti ovaj
 
 CEO razmišlja. Posle par dana, otvara sajt firme IKEA i prelistava ponudu radnih stolova. Ideja polako počinje da se javlja... Pronalazi _uže_ stolove, čime štedi dvadesetak centimetara po stolu u odnosu na postojeće. Sumarno, to daje prostora za nekoliko novih radnih mesta. Problem rešen!
 
-## CTO ❤️ open space
+## CTO ❤ open space
 
 Uobičajena priča o open space je slatka, šarena, idilična zamisao. Ako izmaknemo zidove, primaknemo stolove, uvučemo stolice - odjednom postajemo Bolji Tim. Komunikacija teče tako lako: Srđan iz četvrtog reda može da vikne Milanu da pogleda PR; a Dušan iz dizajnerske sekcije da zatraži od Vlade odgovor na hitan mejl. Paket aranžman uživo.
 
@@ -29,7 +29,7 @@ Pretpostavka "otvorene komunikacije" (da tako jednim imenom obuhvatimo sve kanal
 
 Stvari nisu tako jednostavne.
 
-## Radnik ❤️ open space
+## Radnik ❤ open space
 
 Izostavljen faktor otvorene komunikacije je _trenutak_ interakcije. Interakcija u digitalnom svetu može biti sinhrona ili asinhrona. Narušavanje jednačine dovodi do toga da se sinhrona komunikacija nameće radniku: sada, odmah i uvek. Rezultat verovatno donosi više interakcije, ali stvara manjak _smislene_ komunikacije.
 
@@ -43,7 +43,7 @@ Opet istraživanja kažu: sam boravak u open space prostoru čini naše raspolo�
 
 Rad od kuće nije pitanje sedenja u donjem vešu i gledanju Netfliksa kada ti baš nije dan. To je forsiranje asinhrone komunikacije, stanja u kome nisi dostupan uvek, zarad postizanja radnog fokusa i, konačno, većeg učinka.
 
-## CFO ❤️ open space
+## CFO ❤ open space
 
 Da pomenemo i slona u sobi: otorena komunikacija (i open space) je drastično jeftiniji izbor. Nije blam da iza razloga izbora budu finansije, dok god se to iskreno komunicira.
 
@@ -53,7 +53,7 @@ Druga istraživanja ukazuju na to da je fizička blizina zaista bitna za komunik
 
 Naravno, daljina je drugačija metrika od gustine.
 
-## Ko ❤️ open space?
+## Ko ❤ open space?
 
 Open space, ako je već finansijski neophodan, mora biti **opravdan**. Ne možemo samo zgurati radnike i očekivati da stvari prosto rade - to onda nije prostor, već farma. Uticaj otvorene komunikacije se mora meriti i pratiti. Sve više istraživanja pokazuje negativne efekte open space kancelarija kakve su sada; na to ne možemo više žmuriti.
 
