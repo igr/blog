@@ -11,7 +11,7 @@ tag:
   - iskustvo
 ---
 
-Dan kada je Don otpisao karijeru i postao senior Kihot, programer vetrenjača.
+Dan kada je Don otpisao karijeru i postao ~~señor~~/senior Kihot, programer vetrenjača.
 
 <!--more-->
 
