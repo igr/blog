@@ -45,7 +45,7 @@ U takvom poretku, Don pobediti vetrenjače ne može. Puno truda treba uložiti d
 
 ![](kh-vr.jpg)
 
-S druge strane, stagnacija je tako primamljivo komforna. Donov programerski um uočava naupkle obrasce, godine mu dozvoljavaju da ih saopšti bez ustezanja. Zalud. Ne traži se zrelost. Već komforna, glasna, šarena sve-uspešnost.
+S druge strane, stagnacija je tako primamljivo komforna. Donov programerski um uočava napukle obrasce, godine mu dozvoljavaju da ih saopšti bez ustezanja. Zalud. Ne traži se zrelost. Već komforna, glasna, šarena sve-uspešnost.
 
 Svi gubimo, ali se smejemo samo Don Kihotu.
 
