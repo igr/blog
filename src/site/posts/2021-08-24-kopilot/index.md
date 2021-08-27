@@ -63,3 +63,9 @@ Takvim programskim jezicima ne treba kopilot.
 Da dodam i podsticaj: granice domena (_boundaries_) su jedna od najvažnijih svojstava softverskih sistema. Nameski domenski programski jezici su upravo savršena granica između domena.
 
 Otuda bojazan da mašinerija iza kopilota troši naš fokus i nečije resurse na stranu koja je vrednosno kratkoročna.
+
+----
+
+## (Dopuna)
+
+Svega par dana nakon što je gornji tekst objavljen, konačno nalazim istraživanje ([An Empirical Cybersecurity Evaluation of GitHub Copilot’s Code Contributions](https://arxiv.org/abs/2108.09293)) koje se bavi kopilotovim generisanim kodom. Prema njemu, oko 40% slučajeva je ranjivo i može biti zloupotrebljeno.
