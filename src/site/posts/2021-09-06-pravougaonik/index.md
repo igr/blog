@@ -1,6 +1,6 @@
 ---
 title: "Kvadrat vs Pravougaonik"
-date: 2021-08-06T01:06:08+00:00
+date: 2021-09-06T01:06:08+00:00
 categories:
   - Razvoj
 tag:
