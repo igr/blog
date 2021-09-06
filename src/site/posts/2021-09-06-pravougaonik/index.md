@@ -77,7 +77,7 @@ rect.setWidth(4);
 println(areaOf(rect));  // 16 ?!
 ```
 
-Ne. Nada. Jok. `Square` se **NE** ponaša kao `Rectangle`.
+Ne. `Square` se **NE** ponaša kao `Rectangle`.
 
 Ovim se narušava jedno od najvažnijih pravila OOP-a: Liskov Substitution Principle (LSP). O njemu i patkama možete pročitati na puuuno mesta mnogo bolja objašnjenja nego što to sam umem da objasnim.
 
