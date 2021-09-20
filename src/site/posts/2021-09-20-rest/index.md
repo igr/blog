@@ -21,20 +21,24 @@ Mislim da je to put kojim ređe treba ići.
 
 Trik za razlučivanje suštine je pitati: **zašto**? Zašto mislimo da je generički API dobar?
 
-Prvo, klijentu predajemo biznis logiku i namećemo dodatnu odgovornost. Nije li upravo ideja servera ta da klijenti imaju slobodu da budu "glupi"? Zahtevi dolaze sa strane klijenta; no to ne znači da se na klijentu i trebaju razrešavati. (Ukoliko uopšte nemamo servis - što je takođe validan pristup - ova tačka ne važi).
+Prvo, klijentu predajemo biznis logiku i namećemo dodatnu odgovornost. Nije li upravo ideja servera ta da klijenti imaju slobodu da budu "glupi"? Zahtevi dolaze sa strane klijenta; no to ne znači da se na klijentu i trebaju razrešavati. (Ukoliko nemamo servis - što je takođe validan pristup - ova tačka ne važi).
 
 Drugo, svaka generalizacija servisnog sloja namenjenog klijentima se protivureči sa idejom servisa. Servisi jesu biznis logika, stoga jesu vrlo konkretna _specijalizacija_ zahteva.
 
-Treće: kakav je odnos modela/entitija i REST resursa? Nikakav. Ponavljam, _nikakav_. REST resurs je bilo šta što se može dobaviti URL-om. Resurs _ne zna_ ništa o implementaciji: koliko je entiteta upotrebljeno, kako su uvezani u kodu, odakle su dobavljeni itd. Upravo je ideja resura da bude razdvojen (_decoupled_) od detalja implementacije.
+Treće: kakav je odnos modela/entitija i REST resursa? Nikakav. Ponavljam, _nikakav_. REST resurs je bilo šta što se može dobaviti URI-om. I to je to. Resurs _ne zna_ ništa o implementaciji: koliko je entiteta upotrebljeno, kako su uvezani u kodu, odakle su dobavljeni itd. Upravo je ideja resura da bude razdvojen (_decoupled_) od detalja implementacije. Kao što bi to sam R. Fielding rekao:
+
+> Any information that can be named can be a resource \[...\] A resource is a conceptual mapping to a set of entities, not the entity that corresponds to the mapping at any particular point in time.
 
 ## BFF
 
-Do sada nisam pomenuo performanse komunikacije. Naime, generalni API iz prvobitne tvrdnje je "pričljiv": za dobavljanje potrebnog sadržaja je neophodno uputiti više zahteva ka serveru. To samo po sebi zvuči kao dovoljan razlog da se okrenemo konkretnijim resursima. Ipak, budimo precizni - reč je o _optimizaciji_ koja je, sticjem okolnosti, u skladu sa opisanim razlozima.
+Do sada nisam pomenuo performanse komunikacije. Naime, generalni API iz prvobitne tvrdnje je "pričljiv": za dobavljanje potrebnog sadržaja je neophodno uputiti više zahteva ka serveru. To samo po sebi zvuči kao dovoljan razlog da se okrenemo konkretnijim resursima. Ipak, budimo precizni - reč je o _optimizaciji_ koja je, sticajem okolnosti, u skladu sa opisanim razlozima.
 
-Kako bilo, postoji obrazac mikroservisa koji se često pojavljuje u praksi: Backend For Frontend (BFF). Reč je o tankom servisnom sloju koji je upravo prilagođen tipu klijenta. Zadatak ovog arhitekturalnog obrasca je da smanji "pričljivost" klijenta i kroz API-je dostavlja odmah sav potreban sadržaj. Pogledati: Netflix.
+Kako bilo, postoji obrazac mikroservisa koji se često pojavljuje u praksi: Backend For Frontends (BFF). Reč je o tankom servisnom sloju koji je upravo prilagođen tipu klijenta. Zadatak ovog arhitekturalnog obrasca je da smanji "pričljivost" klijenta i kroz API-je dostavlja odmah sav potreban sadržaj. Pogledati: Netflix.
 
 ## Public
 
-Ovo ne znači da generali API nikada neće postojati. Naprotiv - kada klijent _nije_ poznat, jedino rešenje je generalni API. Drugim rečima, javni API-ji su mahom generalni API-ji; oni ne znaju na koji će način biti upotrebljeni. To što ih ujedno koristimo i za saopstvene klijent je, opet, samo optimizacija (najčešće) resursa: ne da nam se, jelte, da napravimo klijentski API sloj.
+Ovo ne znači da generali API nikada neće postojati. Naprotiv - kada klijent _nije_ poznat, jedino rešenje je generalni API. Drugim rečima, javni API-ji su mahom generalni API-ji; oni ne znaju na koji će način biti upotrebljeni. To što ih ujedno koristimo i za saopstvene klijent je, opet, samo optimizacija (najčešće) resursa: ne da nam se, jelte, da iskucamo klijentski API sloj.
 
 I u takvoj postavci ima mesta za optimizaciju "pričljivosti" za generalne REST API-je. Imao sam prilike da dizajniram i implementiram tanak servisni sloj koji u okviru jednog HTTP zahteva ostvari više drugih, ali interno, na strani servera. Rezultat se mogao kombinovati na proizvoljan način, entiteti filtrirati i sl. (Bilo je to pre GraphQL).
+
+Opušteno sa RESTom.
