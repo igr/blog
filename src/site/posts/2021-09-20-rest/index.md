@@ -51,6 +51,6 @@ Ironija je da REST nije alat-za-sve; više je ilustracija mogućeg alata za "dis
 
 > REST is designed to be efficient for large-grain hypermedia data transfer, optimizing for the common case of the Web, but resulting in an interface that is not optimal for other forms of architectural interaction.
 
-Ono što se desilo tih godina je ilutracija neprestane potrebe tehnološke zajednice da **ne** koristi standarde i da nalazi nove i nove načine kako da samo urade stvari. "Get things done" je opasna mantra koja lako može da zanemari mnoge standarde, prakse i pravila. Eto, danas samo vraćamo `500` kada nastane logička greška - srećno sa (s)nalaženjem šta je pravi problem.
+Ono što se desilo tih godina je ilustracija neprestane potrebe tehnološke zajednice da **ne** koristi standarde i da nalazi nove i nove načine kako da samo urade stvari. "Get things done" je opasna mantra koja lako može da zanemari mnoge standarde, prakse i pravila. Eto, danas samo vraćamo `500` kada nastane logička greška - srećno sa (s)nalaženjem šta je pravi problem.
 
 Opušteno, dakle, sa RESTom. Dozvoljeno je da ga prilagodiš potrebama. Ili da koristiš GraphQL. Ili Json-RPC. Ili...
