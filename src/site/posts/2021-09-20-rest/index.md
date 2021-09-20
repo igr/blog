@@ -41,4 +41,16 @@ Ovo ne znači da generali API nikada neće postojati. Naprotiv - kada klijent _n
 
 I u takvoj postavci ima mesta za optimizaciju "pričljivosti" za generalne REST API-je. Imao sam prilike da dizajniram i implementiram tanak servisni sloj koji u okviru jednog HTTP zahteva ostvari više drugih, ali interno, na strani servera. Rezultat se mogao kombinovati na proizvoljan način, entiteti filtrirati i sl. (Bilo je to pre GraphQL).
 
-Opušteno sa RESTom.
+## Opušteno...
+
+...sa RESTom. REST nije "go-to" model arhitekture web API-ja. Zvuči kao da pre REST-a, mi ubogi programeri nismo imali pojma kako da pišemo web API-je, te je sada to odjednom razjašnjeno. Zanimljivo, do eksplozije web API-ja dolazi dosta kasnije; te REST svakako nije nikakav pokretač.
+
+Šta više, REST disertacija je služila Fieldingu kao smernica prilikom dizajniranja HTTP 1.1 protokola: šta od predloga ulazi u implementaciju. Na primer, Fielding je odbio metod `MGET` za batch-ovane zahteve, jer nisu u skladu sa smernicama (u vezi proksija i keša); a takav zahtev je čest u modernim API-jima. Kolačići isto nisu REST. Dakle, REST je više smernica za _proširenje_ HTTP, a ne za konstrukciju sistema koji se baziraju na HTTP-u.
+
+Ironija je da REST nije alat-za-sve; više je ilustracija mogućeg alata za "distributed hypermedia systems". To se više puta napominje u disertaciji:
+
+> REST is designed to be efficient for large-grain hypermedia data transfer, optimizing for the common case of the Web, but resulting in an interface that is not optimal for other forms of architectural interaction.
+
+Ono što se desilo tih godina je ilutracija neprestane potrebe tehnološke zajednice da **ne** koristi standarde i da nalazi nove i nove načine kako da samo urade stvari. "Get things done" je opasna mantra koja lako može da zanemari mnoge standarde, prakse i pravila. Eto, sada samo vraćamo `500` kada nastane logička greška - srećno sa (s)nalaženjem šta je pravi problem.
+
+Opušteno, dakle, sa RESTom. Dozvoljeno je da ga prilagodiš potrebama. Ili da koristiš GraphQL. Ili Json-RPC. Ili...
