@@ -1,6 +1,6 @@
 ---
 title: "REST, opet"
-date: 2021-10-20T01:06:08+00:00
+date: 2021-09-20T01:06:08+00:00
 categories:
   - Razvoj
 tag:
