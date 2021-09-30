@@ -54,11 +54,12 @@ return Mono
     // konstruiši rezultat od T1-T4
   });
 ```
-Ovaj kod radi.
 
-Međutim, blok prve sledeće `map()` (koja praktično uvek ide iza `zip()`) će biti baš veliki. Koristiće se `getT1()`...`getT4()` metode za dobavljanje elemenata tuplea, čija imena ništa ne znače, te treba dodatno kognitivno procesirati mapiranja ulaza.
+Ovaj kod (uglavnom) radi.
 
-To sve može drugačije:
+Blok prvog sledećeg `map()` poziva (koja praktično uvek ide iza `zip()`) će biti veliki. Koristiće se `getT1()`...`getT4()` metode za dobavljanje elemenata tuplea, čija imena ništa ne znače, te treba dodatno kognitivno pratiti mapiranja ulaza. Naročito ako se izvrši promena argumenata `zip()` metode. Vrlo lako se tu uveče i neko `if`, čime kompleksnost bloka značajno poraste.
+
+To može drugačije:
 
 ```java
 Function<Org, Mono<Org>> orgWithAddress =
@@ -76,21 +77,105 @@ Function<Org, Mono<Org>> orgWithContact =
                     .build())
       .map(org::withContact);
 
-Function<OrgDto, Mono<OrgDto>> orgUpdateContact =
+Function<Org, Mono<Org>> orgUpdateContact =
   org -> userRepo
       .findById(userId)
       .map(it -> org.getContact()
             .withName(it.getName())
       )
-      .map(orgDto::withContact);
+      .map(org::withContact);
 
 return orgRepo
       .save(orgInput)
-            .flatMap(orgWithAddress)
-            .flatMap(orgWithContact)
-            .flatMap(orgUpdateContact);
+      .flatMap(orgWithAddress)
+      .flatMap(orgWithContact)
+      .flatMap(orgUpdateContact);
 ```
 
 Drugim rečima, `zip()` četiri elementa se može pretvoriti u tri `flatMap()` poziva. Gornji kod je izvučen iz projekta i očišćen za potrebe primera, te možda nije potpuno ispravan.
 
-Kako bilo, uočavam da često vrlo brzo skrenemo u imperativni način razmišljanja, koji podrazumeva ogromne blokove koda unutar, na pr., `map()` ili `flatMap()` poziva. Iako takav kod radi posao, smatram da nije u duhu paradigme i _postepenoj_ modifikaciji ulaza našim funkcijama.
+Ovakav način razmišljanja mi je bliži. Gledam da postepeno modifikujem ulaz zasebnim funkcijama, koje su zgodne za novu upotrebu.
+
+### Kad ono, međutim
+
+Sekvencijalni pozivi `flatMap` su neophodni kada zavise jedan od drugoga. Šta ako su ovi pozivi nezavisni? Onda ima smisla pozvati ih paralelno; `flatMap` to ne nudi?
+
+Sad, zavisi od implementacije. Spring ne nudi još `parallel().runOn()`, tako da se `zip()` vraća u igru. Da ponovim, `zip()` kombinuje rezultate paralelnih strimova. Hajde da pogledamo drugi primer, koji pravi kompoziciju više objekata:
+
+```java
+Function<Org, Mono<Org>> orgWithAddress =
+    org -> addressRepo
+        .findByOrg(org.getId())
+        .map(addressMapper::map)
+        .collect(Collectors.toList())
+        .map(org::withAddress)
+        .switchIfEmpty(Mono.just(org));
+
+Function<Org, Mono<Org>> orgWithContact =
+    org -> contactRepo
+        .findContactByOrgId(org.getId())
+        .map(contactMapper::map)
+        .map(org::withContact)
+        .switchIfEmpty(Mono.just(org));
+
+return orgRepo
+    .findById(id)
+    .switchIfEmpty(...)
+    .map(orgMapper::map)
+    .flatMap(orgWithAddress)
+    .flatMap(orgWithContact);
+```
+
+Poslednja dva poziva `flatMap()` mogu biti izvršena paralelno, zar ne? Podaci o adresama i kontaktu su nezavisni. Možemo da ih `zip`-ujemo:
+
+```java
+Function<Org, Mono<Org>> zip =
+    org -> Mono
+        .zip(Mono.just(org), orgWithAddress.apply(org), orgWithContact.apply(org))
+        .map(Tuple2::getT1);
+
+return orgRepo
+    .findById(id)
+    .switchIfEmpty(...)
+    .map(orgMapper::map)
+    .flatMap(zip);
+```
+
+Kul! Zar ne? Zar neeeee!?
+
+Bilo bi kul da ne radimo sa imutabilnim objektima. Metoda `withXxx()` pravi novu instancu, tako da su rezultati funkcija koji su argumenti `zip` metode zapravo tri različita imutabilna objekta, od kojih se samo prvi, neizmenjen, vraća nazad. Umesto toga, mi moramo paralelno izvršiti funkcije, ali sekvencijalno spojiti rezultate:
+
+```java
+Function<Org, Mono<List<Address>>> orgAddresses =
+    org -> addressRepo
+        .findByOrg(org.getId())
+        .map(addressMapper::map)
+        .collect(Collectors.toList())
+        .switchIfEmpty(Mono.just(List.of()));
+
+Function<Org, Mono<Contact>> orgContact =
+    org -> contactRepo
+        .findContactByOrgId(org.getId())
+        .map(contactMapper::map);
+
+Function<Org, Mono<Org>> zip =
+    org -> Mono
+        .zip(Mono.just(org), orgAddresses.apply(org), orgContact.apply(org))
+        .map(it -> it.mapT1(x -> x.withAddress(it.getT2())))
+        .map(it -> it.mapT1(x -> x.withContact(it.getT3())))
+        .map(Tuple2::getT1);
+
+return orgDao
+    .findById(id)
+    .switchIfEmpty(...)
+    .map(orgMapper::map)
+    .flatMap(zip);
+```
+
+Trik za de-tuplovanje. Java još uvek NE poznaje destrukturalizaciju (čik izgovori ovu reč brzo!); kad će, neće skoro. Rešavam to u koracima, na prikazani način. Naravno, moglo je spojiti dva `mapT1` poziva u jedan; nemam primedbu na to: ovako mi je za nijansu čitljivije - bar je tako danas.
+
+Kul! Zar ne? Nee!????
+
+Stvar sa `zip()` je da emituje isključivo kada _svi_ ulazni strimovi dostave svoje vrednosti. Problem je sa `orgContact`; on više ne poziva `switchIfEmpty()`, te ukoliko nema kontakta, `zip` daje prazan rezultat. To sada otvara drugu kutiju drugarice Pandore, o `null` i nepostojećim vrednostima; to ostavljam za drugi put.
+
+Uh, nisam planirao ovoliko koda. Posle kažu, lako je programirati.
