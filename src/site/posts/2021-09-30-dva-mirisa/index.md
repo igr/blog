@@ -30,7 +30,7 @@ Koji pristup odabrati?
 
 Drugi pristup deluje kao zicer: testiramo naš API-je od HTTP zahteva do baze, pa nazad kroz HTTP odgovor. Pokrivamo time sve slojeve i mnogo više koda odjednom. To je dobra stvar, zar ne? Reč je, zapravo, o funkcionalnim testovima, zar ne?
 
-Nisam za to da programeri pišu funkcionalne testove. Bliži mi je prvi pristup - programeri pišu unit i integracione testove. Dalje, u drugom pristupu se testira _previše_ toga odjednom. Jedan deo onoga što pokrivamo takvim testovima su i sami alati (spring, http, mapiranja), što je nepotrebno u svakodnevnom radu.
+Nisam za to da programeri pišu funkcionalne testove. Bliži mi je prvi pristup - programeri pišu unit i integracione testove. Dalje, u drugom pristupu se testira _previše_ toga odjednom. Jedan deo onoga što pokrivamo takvim testovima su i sami alati (spring, http, mapiranja), što je nepotrebno u svakodnevnom radu. Ponavljam, testiraju se i _implementacioni detalji_, a to nije ideja testova.
 
 Vrednujem granularne testove, po slojevima. Servisni sloj zaslužuje zasebne testove, koji ne uključuju bilo kakvog klijenta. Klijentski sloj zahteva lagane mokovane testove, jer nema razloga podizati testing server i slati prave HTTP zahteve samo da bi proverili da li radi mapiranje JSON sadržaja na neki tip - koji je upravo upotrebljen za generisanje API šeme!
 
