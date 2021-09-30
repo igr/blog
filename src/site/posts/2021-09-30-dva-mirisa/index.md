@@ -11,8 +11,6 @@ tag:
   - funkcionalno
 ---
 
-# Dva mirisa
-
 Iz svakodnevnog života programera.
 
 <!--more-->
