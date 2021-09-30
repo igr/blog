@@ -28,19 +28,19 @@ Na koje načine programeri mogu da pišu testove?
 
 Koji pristup odabrati?
 
-Drugi pristup deluje kao zicer: testiramo naš API-je od HTTP zahteva do baze, pa nazad kroz HTTP odgovor. Pokrivamo time sve slojeve i mnogo više koda odjednom. To je dobra stvar, zar ne? Reč je, zapravo, o funkcionalnim testovima, zar ne?
+Drugi pristup deluje kao zicer: testiramo API-je od HTTP zahteva do baze, pa nazad kroz HTTP odgovor. Pokrivamo time sve slojeve i mnogo više koda odjednom. To je dobra stvar, zar ne? Reč je, zapravo, o funkcionalnim testovima, zar ne?
 
-Nisam za to da programeri pišu funkcionalne testove. Bliži mi je prvi pristup - programeri pišu unit i integracione testove. Dalje, u drugom pristupu se testira _previše_ toga odjednom. Jedan deo onoga što pokrivamo takvim testovima su i sami alati (spring, http, mapiranja), što je nepotrebno u svakodnevnom radu. Ponavljam, testiraju se i _implementacioni detalji_, a to nije ideja testova.
+Nisam za to da programeri pišu funkcionalne testove. Bliži mi je prvi pristup - programeri pišu unit i integracione testove. Dalje, u drugom pristupu se testira _previše_ toga odjednom. Jedan deo onoga što pokrivamo takvim testovima su i sami alati (spring, http, mapiranja), što je nepotrebno u svakodnevnom radu. Ponavljam, testiraju se i _implementacioni detalji_, a to nije ideja ovih testova.
 
 Vrednujem granularne testove, po slojevima. Servisni sloj zaslužuje zasebne testove, koji ne uključuju bilo kakvog klijenta. Klijentski sloj zahteva lagane mokovane testove, jer nema razloga podizati testing server i slati prave HTTP zahteve samo da bi proverili da li radi mapiranje JSON sadržaja na neki tip - koji je upravo upotrebljen za generisanje API šeme!
 
-Tačno je da suma proverenih komponenti ne znači nužno da zajedno rade kako treba - osim ako se testovi ne pišu tako. Gledam da svaku granicu testiram sa _obe_ strane; na način koji izdaleka podseća na PACT testove. Kako bilo, ostavljamo prostor i za zasebne funkcionalne testove, koji nisu deo svakodnevne rutine programera, i koji ne blokiraju razvoj.
+Tačno je da suma proverenih komponenti ne znači nužno da zajedno rade kako treba - osim ako se testovi ne pišu tako. Gledam da svaku granicu testiram sa _obe_ strane; na način koji izdaleka podseća na PACT testove. Kako bilo, ostavljamo prostor i za zasebne funkcionalne testove, koji nisu deo svakodnevne rutine programera i koji ne blokiraju razvoj.
 
 ## Zip i Tuple1000
 
 Uobičajena metoda u funcionalnom programiranju je `zip()`. Ona, ukratko, spaja više ulaze u jedan.
 
-U reaktivnom steku, `zip()` deluje vrlo pogodna da spoji nekoliko non-blocking poziva. Na primer, napisano uprošćenim kodom:
+U reaktivnom steku, `zip()` deluje vrlo pogodna da spoji nekoliko paralelnih strimova. Primer, napisan uprošćenim kodom:
 
 ```java
 var org = orgRepo.save(orgInput);
@@ -57,9 +57,9 @@ return Mono
 
 Ovaj kod (uglavnom) radi.
 
-Blok prvog sledećeg `map()` poziva (koja praktično uvek ide iza `zip()`) će biti veliki. Koristiće se `getT1()`...`getT4()` metode za dobavljanje elemenata tuplea, čija imena ništa ne znače, te treba dodatno kognitivno pratiti mapiranja ulaza. Naročito ako se izvrši promena argumenata `zip()` metode. Vrlo lako se tu uveče i neko `if`, čime kompleksnost bloka značajno poraste.
+Blok prvog sledećeg `map()` poziva (koja praktično uvek ide iza `zip()`) će biti veliki. Koristiće se `getT1()`...`getT4()` metode za dobavljanje elemenata tuplea, čija imena ništa ne znače, te treba dodatno kognitivno pratiti mapiranja ulaza. Promena argumenata `zip()` metode zahteva promenu na više mesta nego što je to očekivano, a to nije miris koji cenimo u kodu. Vrlo lako se tu uveče i neko `if`, čime kompleksnost bloka poraste.
 
-To može drugačije:
+Može i drugačije:
 
 ```java
 Function<Org, Mono<Org>> orgWithAddress =
@@ -80,9 +80,7 @@ Function<Org, Mono<Org>> orgWithContact =
 Function<Org, Mono<Org>> orgUpdateContact =
   org -> userRepo
       .findById(userId)
-      .map(it -> org.getContact()
-            .withName(it.getName())
-      )
+      .map(it -> org.getContact().withName(it.getName()))
       .map(org::withContact);
 
 return orgRepo
@@ -98,9 +96,9 @@ Ovakav način razmišljanja mi je bliži. Gledam da postepeno modifikujem ulaz z
 
 ### Kad ono, međutim
 
-Sekvencijalni pozivi `flatMap` su neophodni kada zavise jedan od drugoga. Šta ako su ovi pozivi nezavisni? Onda ima smisla pozvati ih paralelno; `flatMap` to ne nudi?
+Sekvencijalni pozivi `flatMap` su neophodni kada zavise jedan od drugoga. Šta ako su ovi pozivi nezavisni? Onda ima smisla pozvati ih paralelno; a `flatMap` to ne može sam da uradi?
 
-Sad, zavisi od implementacije. Spring ne nudi još `parallel().runOn()`, tako da se `zip()` vraća u igru. Da ponovim, `zip()` kombinuje rezultate paralelnih strimova. Hajde da pogledamo drugi primer, koji pravi kompoziciju više objekata:
+Zavisi od implementacije. Spring ne nudi još `parallel().runOn()`, tako da se `zip()` vraća u igru. Da ponovim, `zip()` kombinuje rezultate paralelnih strimova. Hajde da pogledamo novi primer, koji pravi kompoziciju više objekata:
 
 ```java
 Function<Org, Mono<Org>> orgWithAddress =
@@ -126,12 +124,15 @@ return orgRepo
     .flatMap(orgWithContact);
 ```
 
-Poslednja dva poziva `flatMap()` mogu biti izvršena paralelno, zar ne? Podaci o adresama i kontaktu su nezavisni. Možemo da ih `zip`-ujemo:
+Poslednja dva poziva `flatMap()` mogu biti izvršena paralelno, zar ne? Podaci o adresama i kontaktu su nezavisni, te možemo da ih `zip`-ujemo:
 
 ```java
 Function<Org, Mono<Org>> zip =
     org -> Mono
-        .zip(Mono.just(org), orgWithAddress.apply(org), orgWithContact.apply(org))
+        .zip(Mono.just(org),
+            orgWithAddress.apply(org),
+            orgWithContact.apply(org)
+        )
         .map(Tuple2::getT1);
 
 return orgRepo
@@ -143,7 +144,7 @@ return orgRepo
 
 Kul! Zar ne? Zar neeeee!?
 
-Bilo bi kul da ne radimo sa imutabilnim objektima. Metoda `withXxx()` pravi novu instancu, tako da su rezultati funkcija koji su argumenti `zip` metode zapravo tri različita imutabilna objekta, od kojih se samo prvi, neizmenjen, vraća nazad. Umesto toga, mi moramo paralelno izvršiti funkcije, ali sekvencijalno spojiti rezultate:
+Bilo bi kul da ne radimo sa imutabilnim objektima. Metoda `withXxx()` pravi novu instancu, tako da su rezultati funkcija koji su argumenti `zip` metode zapravo tri različita imutabilna objekta, od kojih se samo prvi, neizmenjen, vraća nazad. To nije ono što smo hteli: da paralelno izvršimo funkcije, ali sekvencijalno spojimo rezultate. Zato:
 
 ```java
 Function<Org, Mono<List<Address>>> orgAddresses =
@@ -172,10 +173,12 @@ return orgDao
     .flatMap(zip);
 ```
 
-Trik za de-tuplovanje. Java još uvek NE poznaje destrukturalizaciju (čik izgovori ovu reč brzo!); kad će, neće skoro. Rešavam to u koracima, na prikazani način. Naravno, moglo je spojiti dva `mapT1` poziva u jedan; nemam primedbu na to: ovako mi je za nijansu čitljivije - bar je tako danas.
+Trik za de-tuplovanje. Java još uvek NE poznaje destrukturalizaciju (čik izgovori ovu reč brzo!); kad će, neće skoro. Rešavam to u koracima na prikazani način. Naravno, moglo je spojiti dva `mapT1` poziva u jedan; nemam primedbu na to. Ovako mi je za nijansu čitljivije - bar je tako danas.
 
 Kul! Zar ne? Nee!????
 
-Stvar sa `zip()` je da emituje isključivo kada _svi_ ulazni strimovi dostave svoje vrednosti. Problem je sa `orgContact`; on više ne poziva `switchIfEmpty()`, te ukoliko nema kontakta, `zip` daje prazan rezultat. To sada otvara drugu kutiju drugarice Pandore, o `null` i nepostojećim vrednostima; to ostavljam za drugi put.
+Stvar sa `zip()` je da emituje isključivo kada _svi_ ulazni strimovi dostave svoje vrednosti. Problem je štp `orgContact` više ne definiše `switchIfEmpty()`, te ukoliko nema kontakta `zip()` daje prazan rezultat. To otvara drugu kutiju drugarice Pandore, punu `null` i nepostojećih vrednostima; ostavljam je za neki drugi put.
 
-Uh, nisam planirao ovoliko koda. Posle kažu, lako je programirati.
+Ima još jedna zvrčka. Da li su dva paralelna poziva brža od dva sekvencijalna? Očigledan odgovor je da jesu; dva paralelna poziva traju koliko jedan najduži, te su svakako kraći od zbira trajanja dva sekvencijalna poziva. Osim ako zajednički working thread pool nije zagušen, pri nešto uvećanom saobraćaju. Kako isti pool opslužuje sve paralelne operacije, može se desiti da se na drugi poziv _čeka_ više nego što bi trebalo. Drugim rečima, trajanje dva paralelna poziva jednako je trajanju najdužeg PLUS vreme čekanja između dva poziva. Eto nam još jedne Pandorine kutije.
+
+Uh, nisam planirao ovoliko teksta. Posle kažu, lako je programirati.
