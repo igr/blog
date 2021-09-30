@@ -177,7 +177,7 @@ Trik za de-tuplovanje. Java još uvek NE poznaje destrukturalizaciju (čik izgov
 
 Kul! Zar ne? Nee!????
 
-Stvar sa `zip()` je da emituje isključivo kada _svi_ ulazni strimovi dostave svoje vrednosti. Problem je štp `orgContact` više ne definiše `switchIfEmpty()`, te ukoliko nema kontakta `zip()` daje prazan rezultat. To otvara drugu kutiju drugarice Pandore, punu `null` i nepostojećih vrednostima; ostavljam je za neki drugi put.
+Stvar sa `zip()` je da emituje isključivo kada _svi_ ulazni strimovi dostave svoje vrednosti. Problem je što `orgContact` više ne definiše `switchIfEmpty()`, te ukoliko nema kontakta `zip()` daje prazan rezultat. To otvara drugu kutiju drugarice Pandore, punu `null` i nepostojećih vrednostima; ostavljam je za neki drugi put.
 
 Ima još jedna zvrčka. Da li su dva paralelna poziva brža od dva sekvencijalna? Očigledan odgovor je da jesu; dva paralelna poziva traju koliko jedan najduži, te su svakako kraći od zbira trajanja dva sekvencijalna poziva. Osim ako zajednički working thread pool nije zagušen, pri nešto uvećanom saobraćaju. Kako isti pool opslužuje sve paralelne operacije, može se desiti da se na drugi poziv _čeka_ više nego što bi trebalo. Drugim rečima, trajanje dva paralelna poziva jednako je trajanju najdužeg PLUS vreme čekanja između dva poziva. Eto nam još jedne Pandorine kutije.
 
