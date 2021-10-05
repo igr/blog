@@ -23,7 +23,7 @@ Tako gledano, programer mora da poznaje algoritmiku. Tačnije, mora da bude upoz
 
 Dalje, algoritmika nema nikakve veze sa stepenom složenosti problema. U tom grmu leži zec. Negde smo u glavama prespojili da složenost problema iziskuje dobru algoritmiku. Te jednakost tranzitivno pretpostavlja dobrog programera, poznavaoca dobre algoritmike.
 
-Ne. Rešavanje problema se prvo svodi na logičko razrešenje, a tek potom na raščlanavanje u algoritamske korake. Jednostavniji problemi su trivijalni u prvom koraku, te nam izmiče prilikom obučavanja. Logičko rešavanje zahteva poznavanje drugih domenskih znanja: matematike, statistike itd. koje nisu algoritmika.
+Ne. Rešavanje problema se prvo svodi na logičko razrešenje, a tek potom na raščlanavanje u algoritamske korake. Jednostavniji problemi su trivijalni u prvom koraku, te nam izmiče prilikom obučavanja. Logičko rešavanje zahteva poznavanje drugih domenskih znanja: matematike, statistike itd. koja nisu algoritmika.
 
 Upravo je to jedan od razloga zašto tkzv. "coding interviews" imaju pogrešan fokus. Umesto da se bavimo algoritmikom (i mnogo čime drugim), kandidata merimo kroz rešavanje nekakvih akademskih problema. [Stop Coding Interviews](https://stopcodinginterviews.com), što bi rekao Džobs.
 
