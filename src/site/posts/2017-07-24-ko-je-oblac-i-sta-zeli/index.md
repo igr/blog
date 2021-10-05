@@ -16,7 +16,7 @@ Postoji puno raznolikog sadržaja na mreži.
 
 Zahvalan sam što čitaš moj. Pišem prvenstveno o tehnologijama i softverskom inženjerstvu; ponekad o idejama koje smatram vrednim. Ništa manje, ništa više.
 
-Dostupan sam za diskusiju - bilo bi mi zadovoljstvo da pričamo o sličnim temama i idejama.
+Dostupan sam za diskusiju - bilo bi mi zadovoljstvo da pričamo na slične teme.
 
 Više o meni možeš naći [ovde](https://igo.rs).
 
@@ -28,4 +28,4 @@ Blog pišem na maternjem jeziku; smatram da time uvećavamo baštinu naše zemlj
 
 ## O stilu
 
-Ne pišem tako da bih se dopao svima. Moji tekstovi nisu detaljni novinarski članci. Oni su **priče**, da pokrenu na razmišljenje, stvore akciju. Pažljivo s time. Nekada mnogo više stoji iza, nazigled, jednostavnog pasusa.
+Ne pišem tako da bih se dopao svima. Moji tekstovi nisu novinarski članci. Oni su **priče**, tu da pokrenu na razmišljenje. Volim da čačnem - ne da bih izazvao reakciju, već akciju. Pažljivo s time. Nekada mnogo više stoji iza, nazigled, jednostavnog pasusa.
