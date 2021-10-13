@@ -29,6 +29,8 @@ Nimalo lak zadatak. Organizovanje razvoja uopšte nije naivno. Nažalost, o tome
 
 Organizovanje projekta nije lako ponovljivo. Nema istih projekata, ma koliko bili slični. Timovi nisu isti. Klijenti su različiti. Domeni su drugačiji. Infrastruktura, stil, jezici.
 
+Organizavanje projekta je ujedno i temelj _arhitekture_ projekta. Nije reč samo o podešavanjima i konfiguraciji, već o nacrtu projekta: modulima, zavisnosti, uvezanosti, koherentnosti.
+
 ---
 
 Velika strast mi je upravo organizovanje projekata. Zahteva prvo razumevanje vrednosti, a zatim davanje velikog poverenja. To se, uglavnom, ne dešava; bar ne meni (kme, kme). Jedno vreme sam planirao da napišem i priručnik na temu, svojevrsnu listu stavkni koje treba uvesti bolje pre nego kasnije. No, razumevanje ove discipline je danas malo; bojim se da takav napor nije vredan. Lakše je da razvoj bude skuplji nego što bi trebalo.
