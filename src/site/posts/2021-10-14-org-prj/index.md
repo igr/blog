@@ -15,7 +15,7 @@ tag:
 
 **Organizovanje projekta** je jedna od najvažnijih etapa u razvoju softvera.
 
-Nailazim na trend neuviđanja ove činjenice. Fokus inicijalnog razvoja je često samo menadžement i funkcionalnost; sve ostalo se desi usput. Podrazumeva se. Neko namesti.
+Nailazim na trend neuviđavanja ove činjenice. Fokus inicijalnog razvoja je često samo menadžement i funkcionalnost; sve ostalo se desi... usput. Neplanirano. Podrazumeva se. Neko namesti.
 
 Zapravo, ima toliko stvari, odluka, procedura koje treba postaviti kako treba. Neke postavke su dalekosežne i značajnije. Neke odluke su, pak, trivijalne. Ali i kada su male, postoji jasno rezonovanje _zašto_ postoje u projektu: neko je promislio o njima.
 
