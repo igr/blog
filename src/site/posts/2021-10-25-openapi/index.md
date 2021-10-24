@@ -24,7 +24,7 @@ Par činjenica sa projekta:
 
 Šta sve ovde nije OK?
 
-OpenAPI definicija _nije_ samo opis endpointa. OpenAPI je ujedno i _single source of truth_; jedinstveno mesto koje sadrži tačne informacije.
+OpenAPI definicija _nije_ samo opis endpointa. OpenAPI je ujedno i _single source of truth_; jedinstveno mesto koje sadrži informacije koje smatramo tačnima.
 
 U ovom primeru to nije slučaj. Time što UI i Test tim pravi svaki svoje klijente, efikasno se narušava ovaj koncept. Informacija sa izvora se _ručno_ prenosi dalje; postoji mogućnost greške i neusaglašenosti - na račun utroška vremena.
 
@@ -32,7 +32,7 @@ OpenAPI definiciju treba koristiti za _generisanje_... pa, svega što je potrebn
 
 Dalje, dobar deo testova OpenAPI endpointa se može generisati iz definicije. Zadatak testnog tima je, u tim slučajevima, ne da piše takve testove, već da se uveri da li su biznis pravila ispravno zavedena u definiciji. Ovo otvara nova pitanja (odakle zapravo dolaze biznis informacije), ali to već prevazilazi fokus ovog teksta.
 
-Konačno, nema razloga da se u toku razvoja (uključujući i testiranje) koriste pravi treći servis za dobavljanje tokena i proveru korisnika. Iako neophodan, treći servis ne spada u domen programa niti je potrebno da ga testiramo. Zato bi trebalo koristiti bilo koji drugi način za mokovanje korisnika, kako bi svakodnevni razvoj bio jednostavniji. Gledam da napravim _automatsko_ kreiranje neophodnih tokena i korisnika, shodno trenutnim potrebama. Ušteda na vremenu je značajna.
+Konačno, nema razloga da se u toku razvoja (uključujući i testiranje) koristi pravi treći servis za dobavljanje tokena i proveru korisnika. Iako neophodan, treći servis ne spada u domen programa niti je potrebno da ga testiramo. Zato bi trebalo koristiti bilo koji drugi način za mokovanje korisnika, kako bi svakodnevni razvoj bio jednostavniji. Gledam da napravim _automatsko_ kreiranje neophodnih tokena i korisnika, shodno trenutnim potrebama. Ušteda na vremenu je značajna.
 
 Ili... sve to nije toliko važno.
 
@@ -46,17 +46,17 @@ Nažalost, zamisao SpringDoc programera je da se OpenAPI definicija dobavi sa po
 
 Ovo je potpuno neprihvatljiva prečica. Primer nerazume, kratkoročne uštede (čega tačno?).
 
-Ako se generiše iz koda, proces generisanje OpenAPI definicije _ne sme_ da zavisi od servera. Idealno samo od strukture klasa (što se čini da je slučaj).
+Ako se generiše iz koda, proces generisanja OpenAPI definicije _ne sme_ da zavisi od servera. Idealno samo od strukture klasa (što se čini da je slučaj).
 
 Ili... nisam dobro pročitao dokumentaciju.
 
 ## Priča 3
 
-Tim je napisao mali endpoint za generisanje slika. Slike mogu biti vraćene u PNG ili SVG formatu. Tip slike se određuje `accept` hederom na istom endpointu. Endpoint ima svoju OpenAPI definiciju.
+Tim je napravio mali endpoint za generisanje slika. Slike mogu biti vraćene u PNG ili SVG formatu. Tip slike se određuje `accept` hederom na istom endpointu. Endpoint ima svoju OpenAPI definiciju.
 
 Problem je što standardni generator klijenata _ne može_ da generiše različite endpointe po hederima. Time smo primorani da ručno pravimo klijenta za ovaj mikroservis.
 
-Predlog je dat da se umesto hedera koristi ekstenzija za određivanje tipa slike (`.png`, `.svg`). Dakle, da umesto jednog endpointa postoje dva (ili koliko bude trebalo), za svaki tip slike. Kod se minimalno menja. Šta više, trenutni `match` blok (Skalin `switch`) bi nestao i bio zamenjen metodama koje pozivaju postojeći zajednički kod. Takvu OpenAPI definiciju je sada moguće iskoristiti za generisanje klijenata.
+Predlog je dat da se umesto hedera koristi ekstenzija za određivanje tipa slike (`.png`, `.svg`). Dakle, da umesto jednog endpointa postoje dva (ili koliko bude trebalo), za svaki tip slike. Kod se minimalno menja. Šta više, trenutni `match` blok (Skalin `switch`) bi nestao - što je dobra stvar - i bio zamenjen metodama koje pozivaju postojeći zajednički kod. Takvu OpenAPI definiciju je sada moguće iskoristiti za generisanje klijenata.
 
 Predlog _ne_ prolazi. Razlog: iako se trenutno koriste samo dva grafička formata, njihov broj _možda_ nekada može biti veći. To bi onda povećalo i broj endpointa, jer se svaki završava novom ekstenzijom. Uostalom, nije naš problem što zvanični OpenAPI generator ne radi u ovom slučaju.
 
