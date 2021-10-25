@@ -9,8 +9,6 @@ tag:
   - dina
 ---
 
-# Dina
-
 Postoji li paralela između novog filma i softverskog razvoja?
 
 <!--more-->
