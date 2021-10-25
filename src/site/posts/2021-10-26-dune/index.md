@@ -27,7 +27,7 @@ Knjiški čistunci se naslađuju velikim podudaranjem i ponekim razlikama filma 
 
 ## Kodiranje, projekti i razvoj
 
-Nova Dina je film za vreme kojeg možete slobodno otići do toaleta ili napravite laganu večeru i vratite se (ne zaboravite vino!); ništa nećete propustiti. U takvim mentalnim pauzama, iz dubina peska mi je izronilo sledeće pitanje: _Nije li upravo takav i razvoj softvera?_
+Nova Dina je film za vreme kojeg možete slobodno otići do toaleta ili napravite laganu večeru i vratite se (ne zaboravite vino!); ništa nećete propustiti. U takvim mentalnim pauzama, iz dubina peska mi je izronilo sledeće pitanje: _Nije li upravo takav i razvoj softvera danas?_
 
 Spoljašnje i vizuelno postaje važnije od toga kako radimo.
 
