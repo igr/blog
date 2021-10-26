@@ -23,11 +23,9 @@ Ako bi trebalo da sumiram film kroz jedan lik, izdvojio bih konkubinu Lejdi Dže
 
 Knjiški čistunci se naslađuju velikim podudaranjem i ponekim razlikama filma i knjige; zaboravljaju da je najmanje važno da film prepričava knjigu lenjivcima i objašnjava im svaku pojedinost. Knjiga je _ideja_ koja vredi biti forkovana; ima prava da bude smela i zakorači dalje od vizije pisca, koja je u slučaju Dine opterećena politikom (trag vremena kada je priča nastala) i protkana prosečnim stilom, koji na trenutak podseća na udžbenik istorije, pre nego delo naučne (?) fantastike. Jodorowsky takođe nije mario da prati radnju, već je svoju filmsku Dinu sagledavao kao delo sazrevanja, otklon od politike ka samorazvoju. Nešto što bih Denisu svakako preporučio; granice njegovog stvaralaštva su dostignute i bilo bi atreidski časno da počne da ih se drži; nema tog melanža kojim će ikada dobaciti do "Odiseje u svemiru".
 
-> I'm sorry Dune, I'm afraid I can't watch that.
-
 ## Kodiranje, projekti i razvoj
 
-Nova Dina je film za vreme kojeg možete slobodno otići do toaleta ili napravite laganu večeru i vratite se (ne zaboravite vino!); ništa nećete propustiti. U takvim mentalnim pauzama, iz dubina peska mi je izronilo sledeće pitanje: _Nije li upravo takav i razvoj softvera danas?_
+Nova Dina je film za vreme kojeg možete slobodno otići do toaleta ili napravite laganu večeru i vratite se (ne zaboravite vino!); ništa nećete propustiti. U takvim mentalnim pauzama, iz dubina peska mi je izronilo sledeće pitanje: _Nije li upravo takav i razvoj softvera kakvog danas poznajemo?_
 
 Spoljašnje i vizuelno postaje važnije od toga kako radimo.
 
