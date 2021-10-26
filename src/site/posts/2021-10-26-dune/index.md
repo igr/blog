@@ -13,6 +13,8 @@ Postoji li paralela između novog filma i softverskog razvoja?
 
 <!--more-->
 
+(Ne sledi filmska recenzija.)
+
 ## Pesak, crvi i začin
 
 Denis Villeneuve je binaran režiser: zna da odlično sklopi priču, do onog trenutka kada ga ona prevaziđe, te priča sklopi njega i odloži ga u donju fioku; tamo gde držimo sitnice koje nam obično ne trebaju, a žao nam da ih bacimo. Ironično, odličan "Dolazak" predstavlja i Denisov odlazak, prelaz na stranu koja se dodvorava TikTok publici i Instagram ukusima, izostanak hrabrosti da pitanju ostanu neodgovorena, a priča bude važnija od predivnih vizuelnih kreacija pogodnih za trejlere, deljenje i loženje YA umova.
