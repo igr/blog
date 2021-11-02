@@ -1,5 +1,5 @@
 ---
-title: "Zajednički termin"
+title: "Zajednički čas"
 date: 2021-11-03T01:06:08+00:00
 categories:
   - Stav
@@ -24,9 +24,9 @@ Rešenje je jednostavno.
 
 Zamisli kada bi se **sve** domaće firme usaglasile i odabrale jednočasovan termin za _sva_ moguća online okupljanja? Recimo, petkom od 15-16?
 
-Aaaaaa, čujem već programere, pa predavanja će biti preklopljena! Odlično zapažanje, vredno inspektora Lestrada. Ako treba da biram, radije bih da odslušam _nešto_ i propustim drugo, nego da ne odslušam baš ništa. Uvek se mogu prebaciti u toku predavanja na drugo. Nije problem ponoviti predavanje, ukoliko ima interesovanja. Predavanja nek traju pola sata. Ukratko: pa šta. Programeri smo, da se pragmatično brzo rešiti.
+Aaaaaa, čujem već programere, pa predavanja će biti preklopljena! Odlično zapažanje, vredno inspektora Lestrada. Ako treba da biram, radije bih da odslušam _nešto_ i propustim drugo, nego da ne odslušam baš ništa. Uvek se mogu prebaciti u toku predavanja na drugo. Nije problem ponoviti predavanje, ukoliko ima interesovanja. Predavanja nek traju pola sata. Ukratko: pa šta. Programeri smo, da se pragmatično rešiti.
 
-Neeeee, čujem već firme, pa znaš li ti koliko košta jedan sat programera! Sigurno koliko petnaest minuta stonog fudbala svaki dan? Ili koliko još jedan od sastanaka kojem prisustvuje nepotreban broj ljudi? Zašto ovo ne bi bio _benefit_ koji pružate zaposlenima, umesto časova grnčarije s duhom Patrika Svejzija? Ukratko: košta, ali ako ne umete povratiti vrednost, možda se posvetite prodavanju pomenute grnčarije.
+Neeeee, čujem već firme, pa znaš li ti koliko košta jedan sat programera! Sigurno koliko petnaest minuta stonog fudbala svaki dan? Ili koliko još jedan od sastanaka kojem prisustvuje nepotreban broj ljudi i koji je mogao da bude mejl? Zašto ovaj zajednički čas ne bi bio _benefit_ koji pružate zaposlenima, umesto časova grnčarije s duhom Patrika Svejzija? Ukratko: košta, ali ako ne umete povratiti vrednost, možda se posvetite prodavanju pomenute grnčarije.
 
 ## ‘Ajmo!?
 
