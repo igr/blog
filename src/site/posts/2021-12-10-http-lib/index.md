@@ -66,17 +66,18 @@ Priznajem da nisam navikao da razmišljam na taj način. [Pre par godina](https:
 
 ```kt
 val a = Input.build()
-val b: Output = a.send()  // ne nužno `a`!
+val b: Output = a.send()  // ili:
+val b: Output = connection.send(a)
 ```
 
-Dok danas razdvajam funkcije od OO modela (uskoro više o tome):
+Dok danas razdvajam funkcije od OO modela (više o tome uskoro):
 
 ```kt
 val a = Input.build()
-val b: Output = a.map { send }
+val b: Output = a.map { send(it) }
 ```
 
-Kako bilo, vredi obratiti pažnju na način kako je biblioteka modelovana.
+Kako bilo, vredi obratiti pažnju na način kako je ova biblioteka modelovana.
 
 Koji je ispravan način? Zanimljivo, dizajn zavisi i od namere autora, ne samo od prirode domena. Pričajmo.
 
