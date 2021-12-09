@@ -45,7 +45,7 @@ Zanimljivo mi je kako se očitavaju vrednosti iz `Response`:
 System.out.println(new Body.Of(response).asString());
 ```
 
-Ovo mi se dopada - `Body` nije deo kompozicije `Response`, već način parsiranja odgovora. Ima smisla, naročito kada znamo da je `Response` zapravo lazy izvršilac pozivanja HTTP zahteva. To otvara mesta za različite implementacije parsiranja sadržaja.
+Ovo mi se dopada - `Body` nije deo kompozicije `Response`, već način parsiranja odgovora. Ima smisla, naročito kada znamo da je `Response` zapravo lazy izvršilac pozivanja HTTP zahteva. To otvara mesta za različite implementacije parsiranja sadržaja. Međutim, `Body` sada postaje svestan `Response` tipa, a to ne bi trebalo; pa očekujem da se `Response` spušta na neki osnovniji tip.
 
 Uočio sam nešto u implementaciji šta me žulja: dubina kompozicije objekata je _ogromna_. Da bih prilikom debagovanja došao do `Body` u `Request` instanci, potrebno je da "zaronim" čak 13-tak koraka u dubinu! Nisam se udubljivao u detalje; na slepo smatram da to nije OK.
 
