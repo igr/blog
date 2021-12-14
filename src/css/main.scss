@@ -150,7 +150,7 @@ a {
 }
 ol,
 ul {
-  margin: 0 0 1rem 1.25rem;
+  margin: 0 0 1rem 1.5rem;
   padding: 0;
   list-style-position: outside;
 
@@ -195,7 +195,7 @@ article,
 section {
   display: block;
   margin-bottom: 1rem;
-  p {
+  p, li {
     line-height: 2rem;
   }
 }
