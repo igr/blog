@@ -1,6 +1,7 @@
 ---
 title: "Stilske Vežbe"
 date: 2021-12-16T01:06:08+00:00
+slug: stilske-vezbe-2
 categories:
   - Razvoj
 tag:
