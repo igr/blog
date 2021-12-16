@@ -24,20 +24,20 @@ U autobusu S za vreme najveće gužve. Jedan tip od svojih dvadesetšest godina,
 
 ## Java
 
-Autobus je PrevoznoSredstvo. Autobus je na Trasi `23`, u smeri ka Stanici `Mon de Per`. Autobus sadrži Osobu koja je tipa Putnik. OsobaFactory pravi `96` Osoba koje dodeljuje Autobusu. Jedna Osoba ima `26` godina, `null` ime, `null` adresu. Ta Osoba ima atribut "dužina vrata" sa vrednošću `10`. Osoba takođe sadrži kolekciju predmeta. U kolekciji predmeta se nalazi jedan PredmetZaGlavu koga implementira naročiti Šešir, na kome `getTraka()` vraća Uzica koja je i NeštoZaŠešir.
+Autobus je PrevoznoSredstvo. Autobus je na Trasi `23`, u smeri ka Stanici `Mon de Per`. Autobus sadrži kolekciju Putnika koji jesu i Osobe. OsobaFactory pravi `96` Osoba koje dodeljuje Autobusu. Jedna Osoba ima `26` godina, `null` ime, `null` adresu. Ta Osoba ima atribut "dužina vrata" sa vrednošću `10`. Osoba takođe sadrži kolekciju predmeta. U kolekciji predmeta se nalazi jedan PredmetZaGlavu koga implementira naročiti Šešir, na kome `getTraka()` vraća Uzica koja je i NeštoZaŠešir.
 
-Ova Osoba iterira sve osobe Autobusa, sortira po udaljenosti obrnutim redom i preuzima prvu nađenu Osobu koja je `Optional`. Osoba kreira Poruku, sa tonom "piskutavo" na `0.9d`, "empatično" na `0.1d`, sadržaj je `enum` TipPoruke.PREBACIVANJE. Osoba izvršava operaciju `kažiMi` na pronađenoj osobi sa formiranom Porukom.
+Osoba iterira sve osobe Autobusa, sortira po udaljenosti obrnutim redom i preuzima prvu nađenu Osobu koja je `Optional`. Osoba kreira Poruku, sa tonom "piskutavo" na `0.9d`, "empatično" na `0.1d`, sadržaj je `enum` TipPoruke.PREBACIVANJE. Osoba izvršava metodu `kažiMi` na pronađenoj osobi sa formiranom Porukom.
 
 Osoba je kao Putnik prilikom pridruživanja Autobusu startovala background thread većeg prioriteta koji iterira sva Mesta u Autobusu. Thread u tom trenutku pronalazi Mesto koje nema Putnika i call-back-uje Osobu. Osoba se pridružuje se nađenom Mestu. Autobus osvežava broj slobodnih mesta.
 
 ## Scala
 
-Trasa, `23`, stanica `Mon De Per`, PrevoznoSredstvo odgovara mu Autobus preslikava u kolekciju Osoba sa osobinom Putnika, `26` (\*1) , `^^10` (\*2) -> u set predmeta dodaj Šešir koji je TrakaŠešir (\*3).
+Trasa, `23`, stanica `Mon De Per`, PrevoznoSredstvo odgovara mu Autobus `flatMap` u kolekciju Osoba sa osobinom Putnika, `26` (\*1) , `^^10` (\*2) -> u set predmeta dodaj Šešir koji je TrakaŠešir (\*3).
 
-Autobus za svakog Putnika min dist (\*4) prva mapira se u Poruka `0.9` `0.1` Prebacivanje aplicira Putnik je proširen kao MestoPretraživač. Autobus za svako Mesto prvo ako prazno >> (\*5). Autobus vraća novi Autobus sa osveženim stanjem.
+Autobus za svakog Putnika min dist (\*4) prva `map` u Poruka `0.9` `0.1` Prebacivanje `apply` Putnik je proširen kao MestoPretraživač. Autobus za svako Mesto prvo ako prazno >> (\*5). Autobus vraća novi Autobus sa osveženim stanjem.
 
 1. implicitna godina.
-2. ^^ = operator za visinu vrata `10`.
+2. `^^` operator za visinu vrata.
 3. trait za vraćanje Traka umesto Uzica.
 4. implicitna funkcija za razdaljinu između dve Osobe
 5. operator za zauizmanje mesta
