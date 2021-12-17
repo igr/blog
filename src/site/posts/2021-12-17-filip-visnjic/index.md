@@ -44,13 +44,15 @@ mladi koda junaci se osokoliše.
 
 <!--more-->
 
+---
+
 Filip Višnjić je hladnog decembarskog dana leta 2021., otpevao ovu pesmu, po ko zna koji put. `Filip Višnjić` ovde nije ime poznatog slepog guslara, već ime role koju programeri obožavaju da dele na projektu. Kao što znamo, programeri rade pametne stvari, a to je da proizvode koda, a zatim da proizvedu još malko više. Vremenom je nastalo nepisano pravilo, gotovo tajna, koja se prenosi sa kolena na koleno kroz generacije programera. Pravilo kaže:
 
 > Budi Filip Višnjić.
 
 Sve informacije koje imaš o projektu, drži u glavi, po mogućstvu u stihu. Em ćeš vredeti više, egu baš godi, te koristi libidu, a bore na licu se jave kasnije. "Sve informacije koje nisu kod koji može da se kompajlira nije programiranje", priča se da je spevao (pravi) Filip Višnjić. Što bi se onda time bavili! Zapamti šta možeš i šta ti treba, ćao, zdravo, čeka te nova linija koda. Budi slep za sve ostalo. Koda, koda, koda mi daj; sve što nije kod, eto ti ga Fića, nek ti otpeva.
 
-Da bi pomogli našim programerima da proizvedu još koda, predlažem da se usvoji praksa zapošljavanja namenske osobe za rolu "Filipa Višnjića". Ona će pamtiti sve što nije kod, gde se šta nalazi, ko šta zna, kako startovati ovo ili ono, zašto nema loga i kada se ono beše izmenila konfiguracija. Predlažem slobodu u stilu pevanja, epska poezija može se proširiti fantastikom Dine, ili dramom Seksa i grada.
+Da bi pomogli našim programerima da proizvedu još koda, predlažem da se usvoji praksa zapošljavanja namenske osobe za rolu "Filipa Višnjića". Ona će pamtiti sve što nije kod, gde se šta nalazi, ko šta zna, kako startovati ovo ili ono, zašto nema loga i kada se ono beše izmenila konfiguracija. Predlažem slobodu u stilu pevanja, epska poezija može se proširiti fantastikom Dine, ili dramom Seks i grada.
 
 Pored raznih PM, PO, SM, TL, HR, EB, hitno, dakle, da se uvede i rola: FV.
 
