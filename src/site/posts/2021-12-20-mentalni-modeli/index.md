@@ -1,5 +1,6 @@
 ---
 title: "Dugoročni uticaj programiranja na svakodnevni način razmišljanja"
+title_short: "Dugoročni uticaj programiranja na način razmišljanja"
 date: 2021-12-21T01:06:08+00:00
 categories:
   - Stav
@@ -26,8 +27,7 @@ No kratki koraci mogu da prouzrokuju kratkovidost. Ukoliko je sve šta vidimo sa
 
 Drugi mentalni model je izazov; tako ga zovem ne da bih se dodvorio neopravdanom optimizmu i problemo-mrscima, već da naglasim važnost - neprestanu potrebu za sagledavanjem dometa ovog modela razmišljanja. Evo u čemu je izazov, kako to već g. Tyson kaže:
 
-Dovoljno poznavanja o subjektu, da misliš da si u pravu - ali nedvoljno znanja o subjektu da
-znaš da nisi u pravu.
+Dovoljno poznavanja o subjektu, da misliš da si u pravu - ali nedvoljno znanja o subjektu da znaš da nisi u pravu.
 
 Progamerske veštine, nažalost, često stvaraju iluziju izjednačavanja mišljenja da si u pravu sa time da jesi u pravu. Direktna posledica je eksponencijalni rast _svega_ u vezi sa programiranjem: novi frejmvorci, nove biblioteke, novi jezici... teže je da razumemo staro, nego da napravimo novo, čime posredno smatramo da samo mi i jesmo u pravu. Ovaj model razmišljanja teži da se prelije na ostale životne sfere; naterani da hitro sudimo o stvarima koje ne poznajemo, ističemo više ono šta znamo, a metemo pod tepih šta ne razumemo i ne poznajemo. (Zamisli kakav bi to bio jalov svet u kome bi živeli samo programeri!)
 
