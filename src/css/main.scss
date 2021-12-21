@@ -13,6 +13,7 @@ $share-color: #444;
   font-weight: 800;
   src: url(/fonts/CooperBT-Bold_gdi.eot);
   src: url(/fonts/CooperBT-Bold_gdi.eot?#iefix) format("embedded-opentype"), url(/fonts/CooperBT-Bold_gdi.woff) format("woff"), url(/fonts/CooperBT-Bold_gdi.ttf) format("truetype");
+  font-display: swap;
 }
 
 $serif-oblac: 'CooperBT';
