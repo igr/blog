@@ -12,7 +12,6 @@ tag:
 ---
 
 Svakako da ono čime se bavimo utiče na način kako razmišljamo. Samouvid je alatka kojom prepoznajemo obrasce mentalnog modela kojim se služimo, da bi razumeli kako ga koristimo. Kao kakav utabani puteljak kroz šumu, ovi obrasci nas usmeravaju u sigurnom, isprobanom pravcu, ali nam sakrivaju sve ono što nije nadomak puta.
-Svakako da ono čime se bavimo utiče na način kako razmišljamo. Samouvid je alatka kojom prepoznajemo obrasce mentalnog modela kojim se služimo, da bi razumeli kako ga koristimo. Kao kakav utabani puteljak kroz šumu, ovi obrasci nas usmeravaju u sigurnom, isprobanom pravcu, ali nam sakrivaju sve ono što nije nadomak puta.
 
 <!--more-->
 
