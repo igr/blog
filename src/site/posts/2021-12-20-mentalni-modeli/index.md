@@ -31,7 +31,7 @@ Dovoljno poznavanja o subjektu, da misliš da si u pravu - ali nedvoljno znanja 
 
 Progamerske veštine, nažalost, često stvaraju iluziju izjednačavanja mišljenja da si u pravu sa time da jesi u pravu. Direktna posledica je eksponencijalni rast _svega_ u vezi sa programiranjem: novi frejmvorci, nove biblioteke, novi jezici... teže je da razumemo staro, nego da napravimo novo, čime posredno smatramo da samo mi i jesmo u pravu. Ovaj model razmišljanja teži da se prelije na ostale životne sfere; naterani da hitro sudimo o stvarima koje ne poznajemo, ističemo više ono šta znamo, a metemo pod tepih šta ne razumemo i ne poznajemo. (Zamisli kakav bi to bio jalov svet u kome bi živeli samo programeri!)
 
-Da se vratimo na temu: kako idu stvari u softverskom razvoju, sve je niža lestvica znanja, dok srazmerno raste lestvica poznavanja. To je u redu, jer programiranje bi trebalo da je mahom primena. Opasnost nastaje onda kada pomešamo "poznavanje" i "znanje". Tada strada prepoznavanje vrednosti.
+Da se vratimo na temu: kako idu stvari u softverskom razvoju, sve je niža lestvica znanja, dok srazmerno raste lestvica poznavanja. To je u redu, jer programiranje bi trebalo da je mahom primena. Opasnost nastaje onda kada pomešamo "poznavanje" i "znanje". Strada prepoznavanje vrednosti.
 
 ## Šala
 

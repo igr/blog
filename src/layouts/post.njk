@@ -37,8 +37,13 @@
 
 
 {% block footerfiles %}
+{#
 <script>
-hljs.configure({tabReplace: '    '});
-hljs.initHighlightingOnLoad();
+let script = document.querySelector('#hljs');
+script.addEventListener('load', function() {
+  // hljs.configure({tabReplace: '  '});
+  // hljs.highlightAll();
+});
 </script>
+#}
 {% endblock %}

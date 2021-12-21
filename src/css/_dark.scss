@@ -30,6 +30,9 @@
   background-color: #fff;
   bottom: 4px;
   content: "";
+  background-image: url("/sun.svg");
+  background-position: 0 2px;
+  background-repeat: no-repeat;
   height: 26px;
   left: 4px;
   position: absolute;
@@ -43,6 +46,8 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px);
+  background-image: url("/moon.svg");
+  background-position: 2px 3px;
 }
 
 .slider.round {

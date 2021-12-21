@@ -28,4 +28,4 @@ Blog pišem na maternjem jeziku; smatram da time uvećavamo baštinu naše zemlj
 
 ## O stilu
 
-Ne pišem tako da bih se dopao svima. Moji tekstovi nisu novinarski članci. Oni su **priče**, tu da pokrenu na razmišljenje. Volim da čačnem - ne da bih izazvao reakciju, već akciju. Pažljivo s time. Nekada mnogo više stoji iza, nazigled, jednostavnog pasusa.
+Ne pišem da bih se dopao. Moji tekstovi nisu novinarski članci. Oni su **priče**, tu da pokrenu na razmišljenje. Volim da čačnem - ne da bih izazvao reakciju, već akciju. Pažljivo s time.

@@ -8,12 +8,20 @@ $red: #bf2139;
 $night: #282c35;
 $share-color: #444;
 
+@font-face {
+  font-family: CooperBT;
+  font-weight: 800;
+  src: url(/fonts/CooperBT-Bold_gdi.eot);
+  src: url(/fonts/CooperBT-Bold_gdi.eot?#iefix) format("embedded-opentype"), url(/fonts/CooperBT-Bold_gdi.woff) format("woff"), url(/fonts/CooperBT-Bold_gdi.ttf) format("truetype");
+}
+
+$serif-oblac: 'CooperBT';
 $serif-head: 'Josefin Sans';
 $serif: 'Domine';
 $monospace: 'Source Code Pro';
 
 $fs: 1.1rem;
-$fs-large: 1.2rem;
+$fs-large: 1.4rem;
 $std-margin: 0 0 1rem;
 $break-small: 800px;
 
@@ -206,16 +214,19 @@ h1 {
   font-family: $serif-head, serif;
   text-transform: uppercase;
   font-weight: bold;
+  //font-family: $serif-oblac;
 }
 h1#title {
   font-size: 3em;
-  letter-spacing: -7px;
+  letter-spacing: -4px;
   color: var(--title-color);
+  font-family: $serif-oblac;
 }
 h1#title-small {
   font-size: 1.4em;
   letter-spacing: -3px;
   color: var(--title-small-color);
+  font-family: $serif-oblac;
 }
 
 h2,
@@ -381,6 +392,7 @@ footer {
     font-size: 0.8em;
     line-height: 0.9em;
     font-family: $serif;
+    padding-top: 2px;
 
     @media screen and (min-width: $break-small) {
       font-size: 0.9em;
@@ -396,12 +408,16 @@ footer {
       padding-top: 4px;
 
       @media screen and (min-width: $break-small) {
-        margin-left: 2rem;
+        margin-left: 1rem;
       }
     }
   }
 }
-
+.posts {
+  li {
+    line-height: 1.1rem;
+  }
+}
 .post {
   margin-bottom: 100px;
 
