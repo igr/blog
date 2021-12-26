@@ -61,10 +61,9 @@ Možda **zajednički razvoj**?
 
 Žao mi je što ispadam Grinč, ali programiranje nije ona romantična, usamljena algoritamski-izazovna aktivnost kakva nam se predstavlja. Razvoj softvera nije skup usamljenih PR-ova. Tim nije prosta suma članova.
 
-Softverski razvoj je komunikacija. Razvoj projekta je _zajednički_ poduhvat. Tim je zajednička aktivnost.
-PR nije ništa od toga.
+Softverski razvoj je komunikacija. Razvoj projekta je _zajednički_ poduhvat. Tim je zajednička aktivnost. PR nije ništa od toga.
 
-Neki programer će frknuti opet: "mi smo to probali, nič ne valja". Pokazuje se da nisu zaista probali, niti bilo kako smisleno merili učinke, osim inicijalnog, zastrašujućeg, provođenja vremena zajedno. "Zajednički razvoj", "pair programming" ili "mob programming", kako se već nazivaju različite varijante istoga, ne znači prosto sedanje u "istu" stolicu, jedna tastatura, jedan ekran. Ne. Zajednički razvoj zahteva promišljeno organizovanu aktivnost, prostor i resurse; merenje.
+Neki programer će frknuti opet: "mi smo to probali, ne valja". Pokazuje se da nisu zaista probali, niti bilo kako smisleno merili učinke, osim inicijalnog, zastrašujućeg, provođenja vremena zajedno. "Zajednički razvoj", "pair programming" ili "mob programming", kako se već nazivaju različite varijante istoga, ne znači prosto sedanje u "istu" stolicu, jedna tastatura, jedan ekran. Ne. Zajednički razvoj zahteva promišljeno organizovanu aktivnost, prostor i resurse; merenje.
 
 
 ## Zaključak
