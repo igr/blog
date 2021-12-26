@@ -1,4 +1,4 @@
----
+  ---
 title: "PR PogReška"
 date: 2021-12-27T01:06:08+00:00
 categories:
@@ -41,7 +41,7 @@ Ilustracija? Pitajte NASU kako joj je dok vozi rovere po Marsu sa 6 minuta zadr�
 
 Ilustrativno je i što toliko insistiramo na [sastancima](https://oblac.rs/okvir-za-sastanke-oksa/). Njima se služimo kao zakrpama za razumevanje. Sve ono što ne uspevamo da ostvarimo limitiranim asinhronim razvojem, trudimo se da rešimo beskonačnim sastancima. Kada bi programiranje bilo pravovremeno, možda nam sastanci ne bi trebali?
 
-Deljenje znanja - dokumentovano ili usmeno - je notorno loše na svim softverskim projektima: ko pa još ima vremena da se i time bavi!? Uostalom, tu je uvek [neko](https://oblac.rs/filip-visnjic-guslar-projekta/) ko zna ono što nam treba, dosta je samo da ga pitamo. Opet, stvari nisu takve.
+Deljenje znanja - dokumentovano ili usmeno - je notorno loše na svim softverskim projektima: ko pa još ima vremena da se i time bavi!? Uostalom, tu je uvek [neko](https://oblac.rs/filip-visnjic-guslar-projekta/) ko zna ono što nam treba, dosta je samo da ga pitamo. Stvari nisu takve.
 
 Dokumentacija su sve one informacije koje _ceo tim_ ne zna o projektu. Ako ima nešto što znao samo deo tima, to se dokumentuje. Ukoliko se aktivno radi na tome da tim razume što više, to manje dokumentacije treba! PR zato naročito škodi svemu što nije kod - a toga, ma šta mislili, uvek ima _više_ nego što je koda. Dokumentacija nije, dakle, samo pisani tekst! Dokumentacija je i aktivnost prenošenja znanja _celom_ timu.
 
@@ -49,26 +49,29 @@ Zatim: traži se da razvoj bude brži, jeftiniji. U svoj toj prekomerenoj suludo
 
 > Kod koji ne leti, ne vredi. (Alan Ford)
 
-Uočavam još nešto: programeri kao da se boje refaktorisanja. PR mora da bude _savršen_, ali samo u očima onih koji ga pregledaju. Da bi namirili nadgledače, pre se odlučujemo da dopunjavamo PR, čime produžavamo njegovu bezvrednost, nego da uradimo refaktoring kasnije. Možda jer smo naučili da se "kasnije" nikada ne dogodi? Šta to tek govori o nama?
+Uočavam još nešto: programeri kao da se boje refaktorisanja. PR mora da bude _savršen_, ali samo u očima onih koji ga pregledaju. Da bi namirili nadgledače, pre se odlučujemo da dopunjavamo PR, čime produžavamo njegovu bezvrednost, nego da uradimo refaktoring kasnije. Možda jer smo naučili da se "kasnije" nikada ne dogodi? Šta to tek govori?
 
 ## Ne diraj mi PR!
 
-Gotovo svaki programer će pre ili kasnije frknuti na ovaj tekst: "pa, vidi druže, nama PR odlično radi". Da, ekser se može zakucati i tastaturom umesto čekićem. To ne znači da tako i treba. Pokazuje se, zapravo, da timovi kojima radi PR imaju nešto zajedničko: veličina PR je mala, a code-review se dešava brzo. Tipično se u toku dana pojave i obradi po nekoliko PR-ova.
+Gotovo svaki programer će pre ili kasnije frknuti na ovaj tekst: "pa, vidi druže, nama PR odlično radi posao". Da, ekser se može zakucati i tastaturom umesto čekićem. To ne znači da tako i treba. Pokazuje se, zapravo, da timovi kojima radi PR imaju nešto zajedničko: veličina PR je mala, a code-review se dešava brzo. Tipično se u toku dana pojave i obradi po nekoliko PR-ova.
 
 Tu se negde i svi slažemo: mali PR i brzi code-review jesu _dobra stvar_. Hajde da interpoliramo dalje: šta bi bilo bolje od ovoga? Kakav je to još manji PR i još brži code-review? Možda nepostojeći?
 
-Možda **zajednički razvoj.**
+Možda **zajednički razvoj**?
 
 Žao mi je što ispadam Grinč, ali programiranje nije ona romantična, usamljena algoritamski-izazovna aktivnost kakva nam se predstavlja. Razvoj softvera nije skup usamljenih PR-ova. Tim nije prosta suma članova.
 
 Softverski razvoj je komunikacija. Razvoj projekta je _zajednički_ poduhvat. Tim je zajednička aktivnost.
 PR nije ništa od toga.
 
+Neki programer će frknuti opet: "mi smo to probali, nič ne valja". Pokazuje se da nisu zaista probali, niti bilo kako smisleno merili učinke, osim inicijalnog, zastrašujućeg, provođenja vremena zajedno. "Zajednički razvoj", "pair programming" ili "mob programming", kako se već nazivaju različite varijante istoga, ne znači prosto sedanje u "istu" stolicu, jedna tastatura, jedan ekran. Ne. Zajednički razvoj zahteva promišljeno organizovanu aktivnost, prostor i resurse; merenje.
+
+
 ## Zaključak
 
-Da sumiram: 1) razumevanje projekta, 2) brzina razvoja, 3) kakvoća, 4) timski duh - sve je to nagriženo PR praksom. Ne morate verovati meni. Jednom kada programiranje prestane da bude samo proizvodenja koda, stvari postaju očigledne.
+Da sumiram: 1) razumevanje projekta, 2) brzina razvoja, 3) kakvoća, 4) timski duh - sve je to nagriženo PR praksom.
 
-Ne želiš asinhroni razvoj skupa pojedinaca. Želiš maksimum timskog truda, sada.
+Ne želiš limitirani asinhroni razvoj skupa pojedinaca. Želiš maksimum timskog truda, sada.
 
 Onda, šta čekamo? Zašto ne menjamo? Zašto ne primenjujemo zajedničko programiranje i ne nalazimo nove obrasce _zajedničkog_ razvoja?
 
