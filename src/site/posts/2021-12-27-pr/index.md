@@ -11,7 +11,7 @@ tag:
 
 Volim Pull Requestove (PR). Radim sam, bez ometanja, u vreme koje mi odgovara, svojim tempom. Pošaljem izmene, uradi se _code review_; kod svakako postane bolji posle par iteracija. Izmene zatim odu na glavnu granu; to je to, razvoj ide dalje.
 
-Izrečeno ništa nije dalje od istina.
+Izrečeno ništa nije dalje od istine.
 
 <!--more-->
 
@@ -21,7 +21,7 @@ Kako je uopšte nastao PR?
 
 GitHub je stvoren kao platforma za open-source projekte. Karakteristika takvih projekata je da svako može da učestvuje. Štaviše, podrazumeva se da kontributori _nisu_ članovi projektnog tima. U takvoj postavci, GitHub nudi PR kao odličan kanal za komunikaciju. Kontributor daje _predlog_ popravke ili dopune, a tim dalje odlučuje šta sa time da radi.
 
-Komunikacija između kontributora i tima je _asinhrona_.
+Komunikacija između kontributora i projektnog tima je _asinhrona_.
 
 ## GitHub obmanjuje programere
 
