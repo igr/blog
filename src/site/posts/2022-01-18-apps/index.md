@@ -9,8 +9,6 @@ tag:
   - tehnologija
 ---
 
-# Sjaj i beda aplikacija
-
 Svakih nekoliko meseci, spontano započnem bolan, sagorevajući proces revizije meni bitnih aplikacija.
 
 Zaključak ovog procesa bude uvek isti: nešto baš mašimo u razvoju aplikacija. A greška je u sledećem:
