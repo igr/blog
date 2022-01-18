@@ -33,8 +33,8 @@ Druga posledica je da za preostale namene koristim šta stignem. Tu prihvatam i 
 
 ----
 
-Zamislite svet u kome stvarni alat radi kao i aplikacije. Imao bih čekić za plave eksere, čekić sa ugrađenim nožem i kašikom kada majstorišem napolju, a i fenski čekić sa vremenskom prognozom koga mogu da držim pored stola i kuckam. Za slučaj da zatrebaju klješta, kupuje se "dual" dodatak, da sa dva čekića mogu da klještim. A kada nadogradim verziju čekića, on odjednom dobije dve glave koja svaka gleda na različitu stranu, da bih mogao da kucam dva paralelna eksera različite boje u isto vreme.
+Zamislite svet u kome stvarni alat radi kao i aplikacije. Imao bih čekić za plave eksere, čekić sa ugrađenim nožem i kašikom kada majstorišem napolju, a i fensi čekić sa vremenskom prognozom koga mogu da držim na radnom stolu i kuckam. Za slučaj da zatrebaju klješta, kupuje se "dual" dodatak, da sa dva čekića mogu da klještim. A kada nadogradim verziju čekića, on odjednom dobije dve glave koja svaka gleda na različitu stranu, da bih mogao da kucam dva paralelna eksera različite boje u isto vreme.
 
 Bilo bi kul kada ne bi postojali zidovi aplikacija okolo funkcionalnosti. Dobiješ prazan papir, a sam kombinuješ funkcionalnosti kako ti trebaju. Nešto kao... Excel??? :) Jedini način danas da se dostigne ovakva sloboda jeste programiranje. No, ono je skupo.
 
-Možda jednog dana dobijemo low-code platforme za kombinovanje funkcionalnih modula.
+Možda jednog dana dobijemo low-code platforme za kombinovanje funkcionalnih modula aplikacije.
