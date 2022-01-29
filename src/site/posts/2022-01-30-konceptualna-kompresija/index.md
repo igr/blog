@@ -18,9 +18,9 @@ Zanimljivo je da pitanje nema konačan odgovor. Divergetno, služi da mu se nepr
 
 > Šta bi trebalo da znam, a šta da zaboravim?
 
-Svi se slažemo da poznavati i, dalje, razumeti neku oblast, tehnologiju, veštinu predstavlja "dobru stvar"™. Učimo da bi razumeli, a zatim da bi naučeno ispravno primenili.
+Svi se slažemo da poznavati i, dalje, razumeti neku oblast, tehnologiju, veštinu predstavlja "dobru stvar"™. Učimo da bi razumeli, a zatim naučeno primenili.
 
-No, učenje je, suštinski, banalno jednostavna aktivnost. Ne omalovažavam sticanje znanja; ono je jedno od retkih transcedentalnih vrednosti koje ljudsko biće može sebi da priušti tokom života. Ipak, učenje je jednosmeran proces, fokusiran na svojstva i kapacitete pojedinačnog ljudskog uma.
+No, učenje je, suštinski, jednostavna (ali zahtevna) aktivnost. Ne omalovažavam sticanje znanja; ono je jedno od retkih transcedentalnih vrednosti koje ljudsko biće može sebi da priušti tokom života. Ipak, učenje je jednosmeran proces, fokusiran na svojstva i kapacitete pojedinačnog ljudskog uma.
 
 Primena naučenog je vrednost koju delimo drugima: kolegama, klijentima, okolini. Poznavanjem neke veštine i znanja, vredni smo trećoj strani koja nije u mogućnosti da je sama stekne.
 
@@ -44,20 +44,20 @@ Pre nego što nastavim: konceptualna kompresija je "dobra stvar"™. Tu nema dvo
 
 Problem, i pitanje kojim se bavim sa početka teksta, je: _šta od postojećih koncepata treba kompresovati_?
 
-Jedna od osobina konceptualne kompresije je to da se odigrava u budućnosti. Sadašnji koncepti kojima se bavimo su ti koje treba pojednostaviti, zarad boljitka koji se _ne vidi sada_, već dolazi. Zato je teško razmišljati na tu temu. Ako se u (ne)jednačinu doda i sve veći broj tehnologija i svakakvih rešenja kojima smo okruženi, budućnost postaje zamagljena, nejasna, nepredvidiva. U takvim vremenskim uslovima se put tek nazire.
+Jedna od osobina konceptualnog zažimanja je to da se odigrava u budućnosti. Sadašnji koncepti kojima se bavimo su ti koje treba pojednostaviti, zarad boljitka koji se _ne vidi sada_, već tek dolazi. Zato je teško razmišljati na tu temu. Ako se u (ne)jednačinu doda i sve veći broj tehnologija i svakakvih rešenja kojima smo okruženi, budućnost postaje zamagljena, nejasna, nepredvidiva. U takvim vremenskim uslovima se put samo nazire.
 
-Primer: smatram da sve vezano sa implementacijom memorijskih jedinica treba da [postane prošlost](https://oblac.rs/volatile-nije-programiranje/). Programiranje paralelnih radnji ne bi trebalo da se bavi nitima i procesorima. Mrežni interfejsi (REST, GraphQL) bi trebalo da su transparentni. Meta-programiranje bi moglo da dobije više našeg prostora, gde programiramo domenski jezik, u kome tek stvarmo rešenje.
+Primer: smatram da sve vezano sa implementacijom memorijskih jedinica treba da [postane prošlost](https://oblac.rs/volatile-nije-programiranje/). Programiranje paralelnih radnji ne bi trebalo da se bavi nitima i procesorima. Komunikacijski interfejsi (REST, GraphQL) bi trebalo da su transparentni. Meta-programiranje bi moglo da dobije više prostora; da programiramo domenski jezik, u kome tek stvarmo rešenje.
 
-Međutim, mnoge, mnoge koncepte softverskog razvoja ne umem da procenim. Kontraverzna tema je skladištenje podataka: baze i SQL. Baze su danas toliko dobre i brze, da se tek sa pristojno velikom količinom pohranjenog sadržaja javlja potreba za pravilnom upotrebom. Ilustracije radi: poznata firma je tek sa milionskim brojem korisnika došla do momenta kada su se uopšte i primetili efekti loše definisanih indeksa. Dalje, da li je poznavanje SQL danas neophodnost? [Baš ne volim ORM](https://oblac.rs/bas-bas-ne-volim-orm/), no svako malo se zapitam - nije li ORM konceptualna kompresija programiranja baza? Dalje, moderne desktop aplikaciju su sve više pisane multi-platformskim kodom. Moderni editori lepo rade i lepo izgledaju, ali se muče sa fajlovima od dvadesetak megabajta i stotinak hiljada redova. Takvih problema nisam imao pre dvadesetak godina. Da li je u toku kompresija?
+Međutim, mnoge koncepte softverskog razvoja ne umem da procenim. Kontraverzna tema je skladištenje podataka: baze i SQL. Baze su danas toliko dobre i brze, da se tek sa pristojno velikom količinom pohranjenog sadržaja javlja potreba za pravilnom upotrebom. Ilustracije radi: poznata firma je tek sa milionskim brojem korisnika došla do momenta kada su se uopšte i primetili efekti loše definisanih indeksa. Dalje, da li je poznavanje SQL danas neophodnost? [Baš ne volim ORM](https://oblac.rs/bas-bas-ne-volim-orm/), no svako malo se zapitam - nije li ORM konceptualna kompresija programiranja baza? Dalje, moderne desktop aplikaciju su sve više pisane multi-platformskim kodom. Moderni editori lepo rade i lepo izgledaju, ali se muče sa fajlovima od dvadesetak megabajta i stotinak hiljada redova. Takvih problema nisam imao pre dvadesetak godina. Da li je u toku kompresija?
 
-Drugi problem konceptualne kompresije je to što pojednostavljanjem nešto gubimo. To je u redu: gubimo _sada_, zarad toga da bude bolje _sutra_. No kako ne znamo šta treba kompresovati, još teže je odlučiti čega se, zapravo odreći.
+Drugi problem konceptualne kompresije je to što pojednostavljanjem nešto gubimo. To je u redu: gubimo _sada_, zarad toga da bude bolje _sutra_. No kako ne znamo šta treba sažeti, još teže je odlučiti čega se, zapravo odreći.
 
-Konceptualna kompresija je jedna od retkih procesa gde višegodišnje iskustvo i specijalizovano znanje zapravo _smeta_. Naviknuti na jedne obrasce razvoja, teško prihvatamo druge. Zato je i teško odreći se nečega, teško je da budemo objektivni iza iskustva. Ako bi me danas pitao, ne bih odrekao SQL-a; ali jesam zaboravio gomilu specifičnosti SQLa i neke od baza. Da li to iz mene govori samo [matori developer](https://oblac.rs/senor-don-kihot/) koji ne prihvata neminovnost razvoja? Možda nove generacije programera i NE treba da znaju SQL, kao što ne znaju ni različite algoritme za sortiranje, kao što ne pomišljaju na bajtove i bitove?
+Konceptualna kompresija je jedna od retkih procesa gde višegodišnje iskustvo i specijalizovano znanje zapravo _smeta_. Naviknuti na jedne obrasce razvoja, teško prihvatamo druge. Zato je i teško odreći se nečega, teško je da budemo objektivni iza iskustva. Ako bi me danas pitao, ne bih odrekao SQL-a; ali jesam zaboravio gomilu specifičnosti upotreba. Da li to iz mene govori samo [matori developer](https://oblac.rs/senor-don-kihot/) koji ne prihvata neminovnost razvoja? Možda nove generacije programera i NE treba da znaju SQL, kao što ne znaju ni različite algoritme za sortiranje, kao što ne pomišljaju na bajtove i bitove?
 
-Konceptualna kompresija boli. Teško je proceniti i uložiti u ispravan pravac napretka. Usled mnoštva novina koje, zapravo, i nisu novine, već komercijalno nametanje sopstvenih rešenja, rizikujemo da propustimo ispravan put.
+Konceptualna kompresija boli. Teško je proceniti i uložiti u ispravan pravac napretka. Usled mnoštva tehnoloških novina koje, zapravo, i nisu novine, već komercijalno nametanje rešenja, rizikujemo da propustimo ispravan put.
 
 ## Biće...
 
-... šta biti mora. Bar da mislimo o tome.
+... šta biti mora. Bar da radimo na tome.
 
 Idemo dalje.
