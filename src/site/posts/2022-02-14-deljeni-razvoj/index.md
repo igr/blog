@@ -22,7 +22,7 @@ Izdvajanje procedura, konfiguracija sličnog koda i poslovne logike u zajedničk
 
 Nije problem u vrednosti deljenog razvoja. Problem je u tehnološkoj adolescenciji njegovih vlasnika.
 
-Da bi došli do deljenog razvoja, firme/timovi moraju da prihvate njegovu težinu. Deljeni razvoj zahteva mnogo više marifetluka nego istovetan primnjen u projektu. Potrebno ga je ispravno napraviti, dokumentovati, primeniti, objasniti, razumeti i neprestano održavati... To nije projekat "sa strane" koji se sklepa u ničim izazvanoj pauzi između redovnih zadataka. Deljeni razvoj je strategija. Zahteva tehnološku zrelinu.
+Da bi došli do deljenog razvoja, firme/timovi moraju da prihvate njegovu težinu. Deljeni razvoj zahteva mnogo više marifetluka nego istovetan primenjen u projektu. Potrebno ga je ispravno napraviti, dokumentovati, primeniti, objasniti, razumeti i neprestano održavati... To nije projekat "sa strane" koji se sklepa u ničim izazvanoj pauzi između redovnih zadataka. Deljeni razvoj je strategija. Zahteva tehnološku zrelinu.
 
 Zrelinu koju, kako ispada, malo ko ima da ponudi.
 
