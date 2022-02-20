@@ -12,7 +12,7 @@ tag:
 
 Stotinjak knjiga fikcije u kućnoj biblioteci me ne čini piscem. Stotinjak odgledanih filmova me ne čini režiserom.
 
-Zašto se firme koje iznajmljuju IT radnike predstavljaju kao IT firme?
+Zašto se, onda, firme koje iznajmljuju IT radnike predstavljaju kao IT firme?
 
 <!--more-->
 
