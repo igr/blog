@@ -33,3 +33,21 @@ Plašim se da je ovakav kontraktorski benefit samo kratkoročan, koji će ostavi
 Jasno, model softverskog razvojnog studija je skuplji. Problem je što ne uočavamo vrednost razlike u ceni.
 
 Otkrio sam toplu vodu: poslovni svet se vodi profitom! Baš toliko je važno poznavanje softverskih obrazaca i čistog koda.
+
+---
+
+## Dopuna, tri dana kasnije
+
+Da preduhitrim moguće reakcije i čitanja između redova:
+
++ U fokusu _nisu_ domaće firme (niti se bavim geografijom).
++ Nigde se _ne osporava kvalitet rada_ kontraktorske firme niti uspešnost.
++ Kontraktorska firma _može_ da ima timove sjajnih IT stručnjaka, ali da i dalje bude kontraktorska firma. I to je sasvim u redu, stručnjacima se ne osporava trud. Ne omalovažavam: da znam kome i kako, i sam bih vodim jednu firmu.
++ Kontraktorske firme na potpuno _isti način_ mogu da posluju u bilo kom drugom poslovnom domenu (zgodan lakmus test.)
++ Dovodim u pitanje _predstavljanje i imenovanje_ - jer je, kao i u programiranju, važno ispravno nazivati stvari. U suprotnom se firma ponaša kako nije u skladu sa njenom prirodom; bolne efekte sam iskusio toliko puta da je postao obrazac. Želju, svakako, razumem; no, treba se pogledati u ogledalo. Ipak, čak i to nije glavna tema.
+
+Postavljam pitanje: šta gubimo?
+
+Ne umem da odgovorim sažeto: reč je o takvom načinu razvoja koje prevazilazi granice klijenta. Zamislimo, dakle, takav razvoj fokusiran na rešenje, a ne na klijenta? Šta daje vrednost firmi?
+
+Siguran sam da bi svako mogao da nađe svoje odgovore na ova pitanja.
