@@ -34,9 +34,9 @@ Evo jedne provokacije za test fataliste: da li je bolji kod koji je 100% pokrive
 
 ## Ipak workshop?
 
-Uprkos svemu napisano, držim [TDD radionice](https://oblacodemia.com/tdd/). Smatram da ovu praksu treba probati, propustiti kroz prste; čitanje o njoj nije dovoljno.
+Uprkos svemu napisanom, držim [TDD radionice](https://oblacodemia.com/tdd/). Smatram da ovu praksu treba probati, propustiti kroz prste; čitanje o njoj nije dovoljno.
 
-TDD nije nikakva magična praksa. Bolja je od kaubojskog programiranja, to svakako; kao što je i svaki drugi smisleni pristup.
+TDD nije nikakva magična rabota. Bolja je od kaubojskog programiranja, to svakako; kao što je slučaj i sa svakom drugom smislenom praksom.
 
 O TDD ne treba pisati hvalospeve. Ima šta da dopuni softverskim veštinama, i to je to; idemo dalje.
 
