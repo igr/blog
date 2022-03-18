@@ -18,7 +18,7 @@ U početku je sve jednostavno. Nepotpuno formalno obrazovanje daje zamajac učen
 
 Nikada ne prestaj učiti, kažu.
 
-Desetak godina kasnije, sve je i dalje okej. Sakupljeno znanje sada češće primenjuješ, a kroz primenu ga dodatno produbljuješ. Primećuje se napredak u usvajanju znanja; brže se odbacuje nebitno, a fokusira na važno. Ovo stanje svima odgovara: zaposlenom na intervjuima za posao, firmama na projektima za klijente.
+Desetak godina kasnije, sve je i dalje okej. Sakupljeno znanje sada češće primenjuješ, a kroz primenu ga dodatno produbljuješ. Primećuje se napredak u usvajanju znanja; brže se odbacuje nebitno, a fokusira na važno. Ovo stanje svima odgovara: zaposlenom na intervjuima za posao, firmama za dobijanje novih projekata.
 
 Nikada ne prestaj učiti, kažu.
 
