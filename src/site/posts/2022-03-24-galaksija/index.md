@@ -5,7 +5,7 @@ categories:
   - Stav
 tag:
   - film
-  - galakcija
+  - galaksija
   - zajednica
 ---
 
