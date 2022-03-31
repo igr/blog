@@ -30,7 +30,7 @@ Auth se ne završava njegovim postavljanjem u projektu. Potrebno je napraviti i 
 
 > Programeri moraju da mogu da pozivaju API-je _bez_ ikakvih tokena, headera i bilo čega drugoga što nije isključivo vezano za bisnis logiku poziva.
 
-Evo kako rešenje može da izgleda. Na jednom projektu sam dodao par flegova u `.env`, kojima se 1) uključuje/isključuje nekakav 'developer mod' i 2) definišu podaci o korisniku. Kada je pomenuti mod uključen, dodaje se filter pre poziva koji proverava postojanje neophodnih tokena. Ukoliko ih nema, filter sam dobavlja podatke, ubacuje ih u trenutni zahtev, i, _voila_ - dobijamo validan auth poziv. Ako token istekne, dovoljno je ponoviti zahtev. Na drugom nekom projektu, bilo je dovoljno kreirati `Principal` instance i umetnuti ih u sesiju.
+Evo kako rešenje može da izgleda. Na jednom projektu sam dodao par flegova u `.env`, kojima se 1) uključuje/isključuje nekakav 'developer mod' i 2) definišu podaci o korisniku. Kada je pomenuti mod uključen, dodaje se filter pre poziva koji proverava postojanje neophodnih tokena. Ukoliko ih nema, filter sam dobavlja podatke, ubacuje ih u trenutni zahtev, i, _voila_ - dobijamo validan auth poziv. Ako token istekne, dovoljno je ponoviti zahtev. Na drugom nekom projektu, bilo je dovoljno kreirati `Principal` instance i umetnuti ih u sesiju. Ili, ukoliko želimo _potpuno_ odvajanje, dev fleg može da postane prost lokalni proksi, odvojeni modul, koji se diže samo u lokalu.
 
 Nikakva nuklearna fizika. Samo stav da projekat **mora** da bude developer-friendly.
 
