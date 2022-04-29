@@ -47,7 +47,7 @@ Izvedene boje:
 
 Zgodna računica boja:
 
-```
+```text
 DATA + FUNCTION   -> 🟦 + 🟨 == 🟩 (green is good!)
 DATA + STATE      -> 🟦 + 🟥 == 🟪
 FUNCTION + STATE  -> 🟨 + 🟥 == ACTION 🟧
