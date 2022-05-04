@@ -10,7 +10,7 @@ tag:
   - firma
 ---
 
-Prvo da postavim kulise: velika firma, mnoštvo timova. Jedan od zadataka je integracija sa novim spoljnim sistemom, trećom stranom. Deo integracije zahteva pisanje malog servisa koji periodično dostavljaju potrebne podatke.
+Prvo da postavim kulise: velika firma, mnoštvo timova. Jedan od zadataka je integracija sa novim spoljnim sistemom, trećom stranom. Deo integracije zahteva pisanje malog servisa koji periodično dostavlja potrebne podatke.
 
 <!--more-->
 
@@ -24,7 +24,7 @@ Odgovornost je isto što i imati _poštovanje_ i dati _poverenje_ drugoj osobi.
 
 ## Ignorisanje == prihvatanje
 
-Pomenuti servis radio posao. Kod, s druge strane, je slabog kvaliteta. Da ne bude zabune: kod je objektivno, bez ikakvog preterivanja ili upliva ličnih uverenja, nezreo: mešavina koncepata, mala kohezija komponenti; svašta nešto je tu "mirisalo". Takođe, ne mislim da je autor kriv (zapravo, i ne tražim krivca); uradio je kako je umeo, verujem, na najbolji način.
+Pomenuti servis radi posao. Kod, s druge strane, je slabog kvaliteta. Da ne bude zabune: kod je objektivno, bez ikakvog preterivanja ili upliva ličnih uverenja, nezreo: mešavina koncepata, mala kohezija komponenti; svašta nešto je tu "mirisalo". Takođe, ne mislim da je autor kriv (zapravo, i ne tražim krivca); uradio je kako je umeo, verujem, na najbolji način.
 
 Šta sam uradio povodom toga?
 
@@ -32,11 +32,11 @@ Baš ništa. I to je OK.
 
 ## Putem kojim se ređe ide
 
-Put do kvaliteta je da on postane deo zahteva. Time ujedno i deo razvojnog procesa.
+Put do kvaliteta je da on postane deo zahteva. Time i deo razvojnog procesa.
 
 Jer:
 
 1. Dobar kod se neće desiti sam od sebe.
 2. Razumevanje šta je dobar kod bi trebalo da dolazi sa višeg nivoa odgovornosti.
 
-Molim da se druga stavka shvati na _najskromniji_ mogući način; implicitno prisustna hijerarhija je tu iz dva razloga. Razumevanje je subjektivno, te je potrebno poravnati zahteve; što je zadatak koji prevazilazi jedan tim. Slično, odgovornost za (ono što smo se složili da je) dobar kod nije samo na proizvođaču koda, već prevazilazi (čak) tim.
+Molim da se druga stavka shvati na _najskromniji_ mogući način; implicitno prisutna hijerarhija je tu iz dva razloga. Razumevanje je subjektivno, te je potrebno poravnati zahteve; što je zadatak koji prevazilazi jedan tim. Slično, odgovornost za (ono što smo se složili da je) dobar kod nije samo na proizvođaču koda, već prevazilazi (čak i) tim.
