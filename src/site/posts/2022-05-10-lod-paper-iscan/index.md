@@ -298,3 +298,5 @@ inv:
 ```
 
 Sada je sve zeleno ✅. Funkcije su čiste. Apstrakcija ostaje fokusirana, ne preliva se. **LoD** zadovoljen.
+
+Ostaje da napomenem da u zadnja dva primera pišem samo funkcije, a ne pravim instance funkcija. To je sasvim dovoljno za potrebe primera; jer nemamo nikakav drugi modul sa kojim se treba (labavo) uvezati.
