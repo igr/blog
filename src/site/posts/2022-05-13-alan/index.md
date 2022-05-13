@@ -6,8 +6,8 @@ categories:
 tag:
   - razvoj
   - kvalitet
-  - LoD
-  - OOP
+  - lod
+  - oop
 ---
 
 Za Alana, OOP čine samo tri stvari.

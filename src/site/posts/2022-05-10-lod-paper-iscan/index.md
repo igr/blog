@@ -6,7 +6,7 @@ categories:
 tag:
   - razvoj
   - kvalitet
-  - LoD
+  - lod
   - primer
   - iscan
 ---
