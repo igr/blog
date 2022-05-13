@@ -1,5 +1,5 @@
 ---
-title: "Alan Key vs Alana Ford"
+title: "Alan Key vs Alan Ford"
 date: 2022-05-13T01:07:03+00:00
 categories:
   - Razvoj
@@ -24,7 +24,7 @@ Većina OOP jezika ne radi ovako.
 
 Da bi se bolje razumelo o čemu Alan govori, pomaže pogledati  _Smalltalk_, jezik koji je izumeo. Za razliku od većine današnjih mejnstrim jezika, objekti u _Smalltalku_ imaju samo metode. Nema propertija. Metode mogu da menjaju interno stanje objekta kojem pripadaju. Niko drugi, sa strane, ne može da menja podatke (stanje) objekta.
 
-U našim OOP jezicima, ovo znači da objekti komuniciraju isključivo pozivajući metode. Ne mogu da čitaju ili pišu stanje koje se čuva u drugom objektu. Slanje poruka je implementirano kao poziv metoda na primalačkom objektu. Jedino je primalački objekat odgovoran za značenje i efekat poslate poruke (pozvane metode). Pozivanje metoda ima semantiku "slanja poruka".
+Prevedeno na naše OOP jezike, ovo znači da objekti komuniciraju isključivo pozivajući metode. Ne mogu da čitaju ili pišu stanje koje se čuva u drugom objektu. Slanje poruka je implementirano kao poziv metoda na primalačkom objektu. Jedino je primalački objekat odgovoran za značenje i efekat poslate poruke (pozvane metode). Pozivanje metoda ima semantiku "slanja poruka".
 
 U našim OOP jezicima je dozvoljeno direktno modifikovati stanje objekata: `alanFord.setHeight(187)`. Takva linija ne znači ništa, naročito ne znači primalačkom objektu. Samo izvor, pozivač, ima ideju o čemu se radi, razbacanu kroz kod njegove aktuelne metode.
 
@@ -36,7 +36,7 @@ Ako pogledate [prethodni članak](https://oblac.rs/lod-paperboy-and-iscan/), upr
 
 **BOOP** je ono što je OOP danas == "Bad OOP". Razmišljamo o objektima kao strukturama podataka na koje su zakačene funkcije.
 
-Alan je stvari video drugačije. Video je objekat kao kolekciju _mogućnosti_, _sposobnosti_, koje se pozivaju slanjem poruke. Kako se poruka šalje je nebitno. Bitno je da objekat _nije_ kolekcija podataka. Objekat sadrži stanje neophodno da se sposobnosti izvrše.
+Alan je stvari video drugačije. Video je objekat kao kolekciju _mogućnosti_, _sposobnosti_, koje se pozivaju slanjem poruke. Kako se poruka šalje je nebitno. Bitno je da objekat _nije_ kolekcija podataka. Objekat sadrži samo stanje neophodno da se sposobnosti izvrše.
 
 > Tko spava, nije budan.
 
@@ -46,7 +46,7 @@ Moduo.
 
 U **BOOP** mi grupišemo metode u objekte, pogrešno vođeni time šta sve možemo da radimo sa podacima iz objekta. To su samo sposobnosti koji dele zajedničko stanje.
 
-Ponavljam uporno pojam "sposobnost" i čekam da se neko javi i kaže "funkcija". Upravo, sposobnosti jesu funkcije. Da podestim na [mudrost Broja Jedan](https://github.com/igr/color-code/blob/main/doc/13-function.md), funkcija o kojoj pričam nije deklarisana funkcija u programskom jeziku. Ne, to je _first-class citizen_, instanca; ono što nazivam FUNCTION (sve kapitalno) u prethodnim tekstovima.
+Ponavljam uporno pojam "sposobnost" dok čekam da se neko javi i kaže "funkcija". Upravo, sposobnosti jesu funkcije. Da podestim na [mudrost Broja Jedan](https://github.com/igr/color-code/blob/main/doc/13-function.md), funkcija o kojoj pričam nije deklarisana funkcija u programskom jeziku. Ne, to je _first-class citizen_, instanca; ono što nazivam FUNCTION (sve kapitalno) u prethodnim tekstovima.
 
 Kolekcija funkcija (sposobnosti) je moduo.
 
@@ -64,6 +64,6 @@ Koliko sam uspeo da ukačim, klase (i nasleđivanje) je došlo iz programskog je
 
 ## Tko leti, vrijedi
 
-Dve stvari čine da se osećam kao da sam u stripu Alana Forda. Prva je da se posle pedestak godina i dalje pitamo šta radimo. Druga je da nismo uspostavili dovoljno jasno vrednost kvalitetnog koda. Kao timejdžerski seks, svi o tome pričamo, a najmanje radimo.
+Dve stvari čine da se osećam kao da sam u stripu Alana Forda. Prva je da se posle pedestak godina i dalje pitamo šta radimo. Druga je da nismo uspostavili dovoljno jasno vrednost kvalitetnog koda. Kao tinejdžerski seks, svi o tome pričamo, a najmanje radimo.
 
 Koga i briga za dobar kod?
