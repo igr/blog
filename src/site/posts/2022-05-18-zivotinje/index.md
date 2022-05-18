@@ -16,7 +16,7 @@ Važno! Obrati pažnju! Sačuvajmo životinje!
 ![](zeka-peka.jpg)
 {.center}
 
-Svaki put kada programer položi za AWS&co sertifikat, jedan **Zeka Peka** skonča.
+Svaki put kada programer dobije AWS&co sertifikat, jedan **Zeka Peka** skonča.
 
 ----
 
