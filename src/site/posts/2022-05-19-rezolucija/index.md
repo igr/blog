@@ -30,4 +30,4 @@ Oskudica je odličan destilator vrednosti.
 
 ---- 
 
-Stvaramo predmete, sadržaj i vrednosti kojima primarna namena postaje da se _gleda_, a ne da se _koristi_.
+Stvaramo predmete, sadržaj i vrednosti kojima primarna namena postaje da se _gledaju_, a ne da se _koriste_.
