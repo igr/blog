@@ -1,4 +1,4 @@
-summaryInclude = 60;
+summaryInclude = 80;
 const fuseOptions = {
   shouldSort: true,
   includeMatches: true,
@@ -11,7 +11,6 @@ const fuseOptions = {
   keys: [
     {name:"title",weight:0.8},
     {name:"contents",weight:0.5},
-    {name:"tags",weight:0.3},
     {name:"categories",weight:0.3}
   ]
 };
@@ -44,16 +43,16 @@ function justSearch(searchQuery) {
   if (result.length > 0) {
     populateResults(result);
   } else {
-    $('#search-results').append("<p>⛈ 404.</p>");
+    $('#search-results').append("<p style='text-align:center;font-size: 1.5em'>⛈ 404.</p>");
   }
 }
 
 function executeSearch(searchQuery) {
-  $('#search-results').append("<p>...🌤 pretraga u toku...</p>");
+  $('#search-results').append("<p style='text-align:center;font-size: 1.5em'>...🌤 pretraga u toku...</p>");
   if (fuse) {
     justSearch(searchQuery);
   } else {
-    $.getJSON( "/index.json", function(data) {
+    $.getJSON("/index.json", function(data) {
       var pages = data;
       fuse = new Fuse(pages, fuseOptions);
       justSearch(searchQuery);
@@ -62,6 +61,7 @@ function executeSearch(searchQuery) {
 }
 
 function populateResults(result) {
+  $('#search-results').empty();
   $.each(result,function(key,value) {
     var contents = value.item.contents;
     var snippet = "";
@@ -97,13 +97,11 @@ function populateResults(result) {
       key: key,
       title: value.item.title,
       link: value.item.permalink,
-      //tags: htmlTags,
       categories: value.item.categories,
       snippet: snippet,
       date: value.item.date
     });
-
-    $('#search-results').empty();
+    
     $('#search-results').append(output);
 
     $.each(snippetHighlights, function(snipkey, snipvalue) {
