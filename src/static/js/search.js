@@ -39,16 +39,17 @@ var fuse;
 
 function justSearch(searchQuery) {
   var result = fuse.search(searchQuery);
-  console.log({"matches":result});
+  //console.log({"matches":result});
   $('#search-results').empty();
   if (result.length > 0) {
     populateResults(result);
   } else {
-    $('#search-results').append("<p>Nema ničega takvog.</p>");
+    $('#search-results').append("<p>⛈ 404.</p>");
   }
 }
 
 function executeSearch(searchQuery) {
+  $('#search-results').append("<p>...🌤 pretraga u toku...</p>");
   if (fuse) {
     justSearch(searchQuery);
   } else {
@@ -87,21 +88,22 @@ function populateResults(result) {
     //pull template from hugo template definition
     const templateDefinition = $('#search-result-template').html();
     //replace values
-    let htmlTags = '';
-    for (let t of value.item.tags) {
-      htmlTags += '<li class="tag">' + t + '</li>';
-    }
+    //let htmlTags = '';
+    //for (let t of value.item.tags) {
+    //  htmlTags += '<li class="tag">' + t + '</li>';
+    //}
 
     const output = render(templateDefinition, {
       key: key,
       title: value.item.title,
       link: value.item.permalink,
-      tags: htmlTags,
+      //tags: htmlTags,
       categories: value.item.categories,
       snippet: snippet,
       date: value.item.date
     });
 
+    $('#search-results').empty();
     $('#search-results').append(output);
 
     $.each(snippetHighlights, function(snipkey, snipvalue) {

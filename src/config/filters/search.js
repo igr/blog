@@ -25,8 +25,7 @@ module.exports = (pages) => {
       contents: cleanup(p.content),
       date: rs.dateShort(p.date),
       permalink: p.link,
-      title: p.title,
-      tags: p.tag
+      title: p.title
     });
   }
 

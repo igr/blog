@@ -462,13 +462,13 @@ footer {
   }
   .skew span {
     &:before {
-      content: '/';
+      content: '';
       padding-right: 4px;
     }
     color: $gray;
     font-size: 1em;
     font-family: $monospace;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
   }
 }
 
@@ -518,21 +518,19 @@ table {
   list-style: none;
   overflow: hidden;
   padding: 0;
+  text-align: center;
 }
 
-.tags li {
-  float: left;
-}
 
 .tag {
   cursor: pointer;
   background: var(--bg-tag-color);
   color: #999;
-  border-radius: 3px 0 0 3px;
+  border-radius: 4px;
   display: inline-block;
   height: 26px;
   line-height: 26px;
-  padding: 0 20px 0 23px;
+  padding: 0 10px 0 16px;
   position: relative;
   margin: 0 10px 10px 0;
   text-decoration: none;
@@ -546,26 +544,12 @@ table {
 }
 
 .tag::before {
-  background: var(--bg-color);
-  border-radius: 10px;
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-  content: '';
-  height: 6px;
-  left: 10px;
+  content: '#';
+  font-weight: bold;
+  top: 2px;
+  left: 4px;
   position: absolute;
-  width: 6px;
-  top: 10px;
-}
-
-.tag::after {
-  background: var(--bg-color);
-  border-bottom: 13px solid transparent;
-  border-left: 10px solid var(--bg-tag-color);;
-  border-top: 13px solid transparent;
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
+  font-size: 0.8em;
 }
 
 .tag:hover {
