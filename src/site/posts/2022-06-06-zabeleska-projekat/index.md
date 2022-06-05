@@ -13,8 +13,6 @@ tag:
   - arhitektura
 ---
 
-# Zabeleške o Java bekend primeru
-
 Sastavio sam mali primer SpringBoot/JPA/Kafka/OpenAPI bekend projekta.
 
 [Github Repo](https://github.com/igr/paywent).
