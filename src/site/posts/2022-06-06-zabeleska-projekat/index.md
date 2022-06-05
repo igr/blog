@@ -130,4 +130,4 @@ Za ceo projekat mi je trebalo oko tri radna dana. Nije puno. Ovo naglašavam, je
 
 Tu je [kod](https://github.com/igr/paywent), super ako nekome pomogne.
 
-Iskreno bih želeo da nastavim sa razvojem ovog primera do potpunog.
+Želeo bih da nastavim sa razvojem ovog primera do potpunog.
