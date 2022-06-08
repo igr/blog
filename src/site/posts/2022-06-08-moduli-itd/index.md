@@ -30,6 +30,7 @@ Iz nekog razloga, naučeni smo da entitete mapiramo u _klase_.
 **Zašto!?**
 
 Baš tako, zašto? Zašto je izabrano da klasa bude nosioc implementacije entiteta? Samo zato što imamo OOP?
+
 Zanimljivo je šta i sam R. Martin kaže povodom neophodnosti OOP za kreiranje entiteta:
 
 > Sve što je potrebno je da kritične podatke i kritična pravila poslovanja povežete u jedan zaseban softverski modul.
@@ -70,13 +71,13 @@ Funkcija je instanca koja ima ulaz i izlaz. Tok programa je niz ulančanih funkc
 
 Podaci su nepromenljive imenice. Podaci su ulazi i izlazi operacija.
 
-Grupisanje podataka se obavlja kompozicijom, ne nasleđivanjem.
+Grupisanje podataka se obavlja kompozicijom, ne nasleđivanjem - niti ugnježdavanjem.
 
 Akcije su nečiste funkcije. Zarazne su i trebaju biti ograničene.
 
-Poslovne operacije (funkcije) i poslovni podaci (data objekti) su nerazdvojno povezani u modulu (entitetu).
+Poslovne operacije (funkcije) i poslovni podaci (data objekti) su neraskidivo povezani u modulu (entitetu).
 
-To je sve što postoji.
+To je sve što se ima reći.
 
 ---- 
 
@@ -86,7 +87,7 @@ Programski jezici su podjednako uticajni - utiču na način kako razmišljamo o 
 
 Evolucija koncepata bi trebalo da bude zajednička za sve jezike. Trebalo bi i da prestane podela na OOP i funkcionalne jezike (što je i inače potpuno pogrešna podela).
 
-Pod izgovorom složenosti, umesto toga, dobili smo razne skript-jezike. Neki su potpuno promenili način kako gledamo na stvari, te premestili biznis logiku nazad na korisnički interfejs. Da bi se onda radovali kada se taj isti jezik pojavio na bekendu. Samo smo napravili još jedan krug, umesto da idemo dalje.
+Pod izgovorom složenosti, umesto toga, dobili smo razne skript-jezike. Neki su potpuno promenili način kako gledamo na stvari, te premestili biznis logiku nazad na korisnički interfejs. Da bi se onda slavili kada se taj isti jezik vrati na bekend. Samo smo napravili još jedan krug, umesto da idemo dalje.
 
 Popularnost oblačne infrastrukture ne ide na ruku - programski jezik je samo lepak; a kod vrišti od detalja.
 
