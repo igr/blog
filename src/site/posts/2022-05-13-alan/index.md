@@ -64,6 +64,6 @@ Koliko sam uspeo da ukačim, klase (i nasleđivanje) je došlo iz programskog je
 
 ## Tko leti, vrijedi
 
-Dve stvari čine da se osećam kao da sam u stripu Alana Forda. Prva je da se posle pedestak godina i dalje pitamo šta radimo. Druga je da nismo uspostavili dovoljno jasno vrednost kvalitetnog koda. Kao tinejdžerski seks, svi o tome pričamo, a najmanje radimo.
+Dve stvari čine da se osećam kao da sam u stripu Alana Forda. Prva je da se posle pedesetak godina i dalje pitamo šta radimo. Druga je da nismo uspostavili dovoljno jasno vrednost kvalitetnog koda. Kao tinejdžerski seks, svi o tome pričamo, a najmanje radimo.
 
 Koga i briga za dobar kod?
