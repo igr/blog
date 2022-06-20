@@ -97,4 +97,4 @@ Slično je kada kod nema svoje downstream zavisnosti (kod koji zavisi od njega).
 
 Šta ako u oba slučaja izdvojimo kod straničenja u funkciju koja prima samo `fetch`? Time nas ne zanima implementacija - da li je upotrebljen `while` ili ne? Odlično zapažanje. Razlika je u tome da u drugom slučaju baratamo direktnom sekvencom što nam ostavlja mesta za dodatnu manipulaciju elementima. Upravo ta namera da se enkapsulira `while` je već ostvarena u drugom primeru!
 
-Drugi primer je odlična mešavina tkzv. OOP i funkcionalnog koda. I dosta s time, više. Ne postoji funkcionalan ili OOP stil programiranja. Postoji samo mešanje i razdvajanje interesa koda. To je
+Drugi primer je odlična mešavina tkzv. OOP i funkcionalnog koda. I dosta s time, više. Ne postoji funkcionalan ili OOP stil programiranja. Postoji samo mešanje i razdvajanje interesa koda. To je sve.
