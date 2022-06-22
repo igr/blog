@@ -81,12 +81,12 @@ Da li je izrada specifikacija skupa za izradu? Skupo je koliko je nevažno da sp
 
 Da li ima mesta za uobičajene testove? Da, postoji kod koji nisu poslovne funkcije.
 
-"Ma, to su sve samo testovi...kažeš ti" i - okej. Nisu :) Kako god nazivali, bitan je pristup. Specifikacijom želimo da definišemo ponašanje, što tačnije, što preciznije. Testovi potvrđuju implementaciju specifikacije, a ne samu specifikaciju. Specifikacija je starija od testova.
+"Ma, to su sve samo testovi...", kažeš ti. Okej, nisu :) Kako god nazivali, bitan je pristup. Specifikacijom želimo da definišemo ponašanje, što tačnije, što preciznije. Testovi potvrđuju implementaciju specifikacije, a ne samu specifikaciju. Specifikacija je starija od testova.
 
 ## Kraj primera
 
 Nekoliko poslednjih tekstova čini celinu; ovim je završavam.
 
-Da li sam sve ovo ikada koristio u praksi? Ne budi smešan.
+Da li sam sve ovo koristio u praksi? Ne budi smešan.
 
 Idemo dalje.
