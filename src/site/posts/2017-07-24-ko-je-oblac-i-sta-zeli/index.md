@@ -22,6 +22,10 @@ Više o meni možeš naći [ovde](https://igo.rs).
 
 <!--more-->
 
+## O razlogu
+
+Da bi razmišljali, potrebno je pisati.
+
 ## O jeziku
 
 Blog pišem na maternjem jeziku; smatram da time uvećavamo baštinu naše zemlje. Ujedno ne umem da prevedem reč "štedro" na engleski.
