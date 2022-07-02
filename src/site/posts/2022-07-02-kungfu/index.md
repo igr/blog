@@ -17,9 +17,9 @@ Spoiler alert: ukoliko kanite upustiti se u izazov, ne čitajte dalje.
 
 <!--more-->
 
-Kada je skup reči veliki (160 hiljada), uobičajeni pristup provere svih mogućih ishoda bi trajao beskonačno. Šta god da smislite, sirovi broj mogućnosti brzo postaje prevelik za svu procesorsku moć koja vam je na raspolaganju. Zanimljivo, tokom eskperimentisanja na tu stranu, brutal-force algoritam koji je paralelno koristio sve CPU računara je toliko intezivno radio da je siroti (stariji) Mek trošio bateriju iako je bio priključen na izvor električne energije.
+Kada je skup reči veliki (160 hiljada), uobičajeni pristup provere svih mogućih ishoda bi trajao beskonačno. Šta god da smislite, sirovi broj mogućnosti brzo postaje prevelik za svu procesorsku moć koja vam je na raspolaganju. Zanimljivo, tokom eskperimentisanja na tu stranu, brute-force algoritam koji je paralelno koristio sve CPU računara je toliko intezivno radio da je siroti Mek trošio bateriju iako je bio priključen na izvor električne energije.
 
-Problem Kaladonta se može preslikati u ciklični orijentisani graf. Čvorovi su početni i krajnji slogovi (slog je ovde deo reči dužine 2 slova, prema pravilu igre). Grana grafa povezuje dva čvora i predstavlja reč. Reč `oblac` se može predstaviti vezom `(ob)->(ac)`. Ove čvorove identično povezuju sve reči koje isto počinju i završavaju (recimo: `obrazac`). U suštini, same reči nam nisu važne (sadržaj između početka i kraja reči), već samo čvorovi i postojanje veza između njih.
+Problem Kaladonta se može preslikati u ciklični orijentisani graf. Čvorovi su početni i krajnji slogovi (slog je ovde deo reči dužine 2 slova, prema pravilu igre). Grana grafa povezuje dva čvora i predstavlja reč. Reč `oblac` se može predstaviti vezom `(ob)->(ac)`. Ove čvorove identično povezuju sve reči koje isto počinju i završavaju (recimo: `obrazac`). U suštini, same reči nam nisu važne (sadržaj između početka i kraja reči), već samo 1) čvorovi i 2) postojanje veza između njih.
 
 ## Alg 1
 
@@ -41,13 +41,13 @@ Novi pristup je sporiji, jer zahteva neprestano računanje "prohodnosti" čvora 
 
 U međuvremenu sam čitao o algoritmima tkzv. "veštačkih inteligencija" (glupog li naziva). Naslućujem da bi nekakav evolutivni algoritam imao smisla: koji bi birao nasumično jedan od najboljih izbora za sledeći čvor. Informacije o nasumičnosti bi se potom mešale ukoliko daju bolje (duže) rezultate.
 
-Za početak, puštao sam algoritam da samo nasumično bira jedan od dva najbolja sledeća čvora. U jednom trenutku sam za trunku prebacio dosadašnji rezultat: `24590`. Ipak, uplašilo me je trajanje: - ako je 1.5s jedno izračunavanje, a u evoluciji imamo bar 10; i to sve izvrtimo bar 1000 puta, dolazim do 250min (4+h) rada.
+Za početak, puštao sam algoritam da samo nasumično bira jedan od dva najbolja sledeća čvora. U jednom trenutku sam za trunku prebacio dosadašnji rezultat: `24590`. Ipak, uplašilo me je trajanje: - ako je 1.5s jedno izračunavanje, a u evoluciji ih imamo bar 10; i to sve izvrtimo bar 1000 puta, dolazim do 250min (4+h) rada.
 
 ## Alg 4
 
-U međuvremenu sam još čitao; nemam baš nikakve slične softverske veštine koje bi mi pomogle. Moje rešenje je verovatno i naivno, a deo onoga što sledi opisano neprecizno.
+Onda sam još čitao; nemam baš nikakve slične softverske veštine koje bi mi pomogle. Moje rešenje je verovatno i naivno, a deo onoga što sledi opisano neprecizno.
 
-Ispostavlja se da postoji problem ranca (_knapsack_) na kome se oprobavaju razni ML algoritmi. On pripada tkzv. Integer Programming (IP) problemima, koji se bave matematičkim programima (?) u kojima su sve varijable celi brojevi. Takav je i problem Kaladonta: sve vreme samo brojimo upotrebljene veze.
+Ispostavlja se da postoji problem ranca (_knapsack_) na kome se oprobavaju razni ML algoritmi. On pripada tkzv. Integer Programming (IP) problemima, koji se bave matematičkim programima (?) u kojima su sve varijable celi brojevi. Takav je i problem Kaladonta: sve vreme samo brojimo upotrebljene veze grafa.
 
 Takođe postoji alat GPKL (i razni drugi) u kome možete da opišete matematički model i njegova ograničenja; i prepustite mu da pronađe optimalno rešenje za zadata pravila. To umnogome olakšava rešavanje ukoliko bi postojao način da se graf opiše na takav način.
 
@@ -63,7 +63,7 @@ Zadovoljavajuće. Probao bih da optimizujem ekstrakciju putanje koja uzima više
 
 ## Izazov
 
-Jedna regionalna firma upućuje sličan javan izazov - na dobronameran i pristojan način. To je, svakako, mnogo bolje od plitko-duhovitih ne-inženjerskih sadržaja koji se prelivaju sa poslovnih mreža. Ipak, pitam se, šta se iz ovog izazova može zaključiti o meni? Da sam samo predugo rudario; mogao sam da potpuno promašim pristup (i jesam nekoliko puta) i nikada ne dođem do rešenja (uzimajući u obzir da se ovo radi u tkzv. slobodno vreme). Da li je to vrednost koja je danas na ceni? To me je sve podsetilo na drugu, ovaj put domaću firmu, koja daje nekakav NP problem kao test za intervju za posao (rešava se primenom A\* algoritma). Firma se ne bavi sličnim softverskim alatkama, a ni ne dobacuje daleko s inježerskim veština; šta to onda govori?
+Jedna regionalna firma upućuje sličan javan izazov - na dobronameran i pristojan način. To je, svakako, mnogo bolje od plitko-duhovitih ne-inženjerskih sadržaja koji se prelivaju sa poslovnih mreža. Ipak, pitam se, šta se iz ovog izazova može zaključiti o učesniku izazova? U mom slučaju, da sam samo predugo rudario; mogao sam da potpuno promašim pristup (i jesam nekoliko puta) i nikada ne dođem do rešenja (uzimajući u obzir da se ovo radi u tkzv. slobodno vreme). Da li je to vrednost koja je danas na ceni? To me je sve podsetilo na drugu, ovaj put domaću firmu, koja daje nekakav NP problem kao test za intervju za posao (rešava se primenom A\* algoritma). Firma se ne bavi sličnim softverskim alatkama, a ni ne dobacuje daleko s inježerskim veštinama; šta to onda govori?
 
 ---- 
 
