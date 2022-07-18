@@ -1,6 +1,6 @@
 ---
 title: "Imaš STD?"
-date: 2022-08-18T01:07:03+00:00
+date: 2022-07-18T01:07:03+00:00
 categories:
   - Razvoj
 tag:
