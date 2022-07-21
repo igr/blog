@@ -14,7 +14,7 @@ Postavljanje tehnologije između čoveka i cilja nije nikakva digitalna evolucij
 
 Očitavanje lične karte i ograničenja zvaničnog rešenja su ilustracija teze: kompleksna instalacija, isključivost izbora operativnog sistema, dodatni hardver...
 
-Paradoksalno je što je rezultat očitavanja jedan običan A4 papir, PDF.
+Rezultat očitavanja je jedan običan A4 papir, PDF.
 
 Kada bi samo postojao način da se podaci pročitaju sa same kartice i generiše dokument... čekaj malo!?!
 
