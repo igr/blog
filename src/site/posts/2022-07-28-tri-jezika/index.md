@@ -23,7 +23,7 @@ Zanimljivost s pointerima: pristupio sam praktično do krajnosti ("get things do
 
 ## V
 
-[V](https://vlang.io) je mlad jezik koga bi trebalo imati na `v`idiku. Jednostavan, siguran, performantan; generiše značajno manje izvršne datoteke. Ekosistem još nije još toliko veliki. Krase ga i alati koji konvertuju postojeći C kod u V; primer koji vredi izdvojiti je bezbolna translacija DOOM koda; te kompajliranje generisanog koda igrice za manje od sekunde.
+[V](https://vlang.io) je mladi jezik koga bi trebalo imati na `v`idiku. Jednostavan, siguran, performantan; generiše značajno manje izvršne datoteke. Ekosistem još nije toliko veliki. Krase ga i alati koji konvertuju postojeći C kod u V; primer koji vredi izdvojiti je bezbolna translacija DOOM koda; te kompajliranje generisanog koda igrice za manje od sekunde.
 
 U `v` sam napisao tek kratak proračun; par struktura i funkcija. Ipak, _osećam_ dozu "lakoće" koju nisam imao sa Go. Ne umem da se bolje izrazim: pisanje koda je prosto teklo samo od sebe; ceo proces instaliranja, kompajliranja i jednostavnog debagovanja je prošao sa značajno manje `WTF` nego u prethodnom slučaju. Možda je samo primer bio suviše prost.
 
@@ -37,6 +37,6 @@ Crystal nisam mnogo pisao; više sam proučavao već napisani kod; proveo sam č
 
 Razumevanje je bilo udobno. Sintaksa je takva da se svašta uradi u malo teksta, a nemaš osećaj da nešto propuštaš. Zanimljivost: iznenadila me je čitljivost `break <expression>` konstrukta (koju sam predložio na Kotlin forumu, više razgovora radi).
 
-Ipak, jednostavnost ima cenu. Postojeći kod je imao grešku-dve, koje se nisu dala tako lako pronaći; upravo jer je napisana linija mnogo toga radila odjednom. Ništa dramatično, svakako.
+Ipak, jednostavnost ima cenu. Postojeći kod je imao grešku-dve, koje se nisu dale tako lako pronaći; upravo jer je napisana linija mnogo toga radila odjednom. Ništa dramatično, svakako.
 
 Zanimljivo iznenađenje za letnje dane.
