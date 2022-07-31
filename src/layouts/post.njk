@@ -18,7 +18,7 @@
       {% if not enPage %}
       <div id="lang">β<a href="https://oblac-rs.translate.goog{{ defPage.url }}?_x_tr_sl=sr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" target="blank">Translate</a></div>
       {% endif %}
-      
+
       <div id="readtime" class="skew"><span>{{ readingTime.minutes | round(0, "ceil") }} min</span></div>
       {% if lang.key === 'en' %}
         <time class="post-date skew" datetime="{{ date | dateISO }}"><span>{{ date | dateDisplay }}</span></time>
@@ -26,7 +26,7 @@
         <time class="post-date skew" datetime="{{ date | dateISO }}"><span>{{ date | rsDateLong }}</span></time>
       {% endif %}
 
-      
+
       {% include "partials/share-links.njk" %}
     </header>
 
@@ -42,9 +42,41 @@
 
 {% endblock %}
 
-
-
 {% block footerfiles %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ title }}",
+    "image": "{% if meta.img %}{{site.baseURL}}{{url}}{{ meta.img }}{% else %}{{site.baseURL}}/o-wide.png{% endif %}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Oblac",
+      "url": "https://igo.rs",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://igo.rs/igr.png",
+        "width": "200",
+        "height": "175"
+      }
+    },
+    "url": "{{site.baseURL}}{{url}}",
+    "datePublished": "{{ date | dateISO }}",
+    "dateCreated": "{{ date | dateISO }}",
+    "dateModified": "{{ date | dateISO }}",
+    "description": "{{ description if description else summary }}",
+    "author": {
+      "@type": "Person",
+      "name": "Igor Spasić",
+      "url": "https://igo.rs"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://oblac.rs"
+    }
+  }
+</script>
+
 {#
 <script>
 let script = document.querySelector('#hljs');
