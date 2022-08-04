@@ -29,11 +29,11 @@ PullRequest deli tim na one koji kažu "kako" od onih koji su samo "ruke". PullR
 
 ---- 
 
-Anemični servisi jesu pošast programiranja. Samo nemamo ⚾️🥎🏀 da radimo drugačije. Zamisli život bez klasa.
+Anemični servisi jesu pošast programiranja. Samo nemamo 🏐🥎🏀 da radimo drugačije. Zamisli život bez klasa za ples.
 
 ---- 
 
-U Haskelu funkcija zvanično prima samo jedan parametar. Kod je niz ulančanih operacija koje transformišu podatke. One su domenski glagoli, ne operativni. ⛓
+Kod je niz ulančanih operacija koje transformišu podatke. Funkcije su domenski glagoli, ne operativni. Funkcije u Haskelu imaju zvanično samo jedan ulaz. Veština sastavljanja koda nije softverski razvoj. 🐡
 
 ---- 
 
