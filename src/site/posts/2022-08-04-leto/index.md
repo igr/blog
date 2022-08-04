@@ -45,7 +45,7 @@ Ne mogu da odlučim da li je `flatMap` nazvan ispravno; jer prvo radi `map`, pa 
 
 ----
 
-Formula dejlija koja ne radi: `trajanje = f(broj_ljudi)`. Formula dejlija koji radi: `trajanje = f(novine)`. Mala tajna: projekat neće propasti ukoliko se dejli ne odigrava svaki dan. 🧪
+Formula dejlija koja ne radi: `trajanje = f(broj_ljudi)`. Formula dejlija koji radi: `trajanje = f(novine)`. Mala tajna: projekat neće propasti ukoliko se dejli ne odigrava svaki dan. ✨
 
 ---- 
 
