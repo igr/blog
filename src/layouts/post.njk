@@ -64,7 +64,7 @@
     "datePublished": "{{ date | dateISO }}",
     "dateCreated": "{{ date | dateISO }}",
     "dateModified": "{{ date | dateISO }}",
-    "description": "{{ description if description else summary }}",
+    "description": {{ description if description else summary | dump | safe }},
     "author": {
       "@type": "Person",
       "name": "Igor Spasić",
