@@ -69,7 +69,7 @@
     });
   </script>
   <header class="site-header">
-    <h1 id="title">{{ site.title }}</h1>
+    <div id="title">{{ site.title }}</div>
     <div class="tagline">
       {% if not lang %}
         <a href="#" id="a-stav">stav</a> <a href="#" id="a-razvoj">razvoj</a> <a href="#" id="a-licno">lično</a> <a id="menu" href="#" onclick="showDiv('search-form');">?</a>
@@ -81,6 +81,6 @@
   {% include "./search.html" %}
 {% else %}
   <header class="site-header-small">
-    <h1 id="title-small"><a id="home" href="{{ site.baseURL }}{{ lang.prefix }}">{{ site.title }}</a></h1>
+    <div id="title-small"><a id="home" href="{{ site.baseURL }}{{ lang.prefix }}">{{ site.title }}</a></div>
   </header>
 {% endif %}

@@ -217,16 +217,19 @@ h1 {
   font-weight: bold;
   //font-family: $serif-oblac;
 }
-h1#title {
-  font-size: 3em;
+div#title {
+  line-height: 1.2em;
+  font-family: $serif-head, serif;
+  font-weight: bold;
+  font-size: 4em;
   letter-spacing: -4px;
   color: var(--title-color);
   font-family: $serif-oblac;
 }
-h1#title-small {
+div#title-small {
   font-size: 1.4em;
-  letter-spacing: -3px;
-  color: var(--title-small-color);
+  letter-spacing: -2px;
+  color: var(--red-color);
   font-family: $serif-oblac;
 }
 
@@ -279,11 +282,30 @@ h6 {
 .site-header {
   margin-bottom: 2rem;
 
-  h1 {
+  div#title {
     margin-bottom: .5rem;
     border-left: 16px solid $red;
     padding-left: 10px;
     padding-top: 10px;
+    padding-bottom: 0;
+  }
+  div#title:before {
+    content: "";
+    position:absolute;
+    margin:-20px -34px;
+    width:30px;
+    height:30px;
+    transform:rotate(50deg);
+    //border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    overflow:hidden;
+  }
+  div#title-small {
+    border-left: 16px solid $red;
+    margin-bottom: .5rem;
+    padding-left: 10px;
+    padding-top: 1px;
   }
   p {
     color: $gray;
@@ -297,8 +319,8 @@ a#home {
   background: none;
   color: var(--title-small-color);
   &:hover {
-    letter-spacing: 6px;
-    color: var(--title-small-color);
+    letter-spacing: 4px;
+//    color: var(--title-small-color);
   }
 }
 
