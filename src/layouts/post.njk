@@ -47,7 +47,7 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "{{ title }}",
+    "headline": "{{ title | json | safe }}",
     "image": "{% if meta.img %}{{site.baseURL}}{{url}}{{ meta.img }}{% else %}{{site.baseURL}}/o-wide.png{% endif %}",
     "publisher": {
       "@type": "Organization",
@@ -64,7 +64,7 @@
     "datePublished": "{{ date | dateISO }}",
     "dateCreated": "{{ date | dateISO }}",
     "dateModified": "{{ date | dateISO }}",
-    "description": "{{ description if description else summary | json }}",
+    "description": "{{ description if description else summary | json | safe }}",
     "author": {
       "@type": "Person",
       "name": "Igor Spasić",

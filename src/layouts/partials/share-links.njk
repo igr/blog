@@ -5,7 +5,7 @@
 
   <!-- Twitter -->
   <li>
-    <a href="https://twitter.com/share?url={{ link }}&text={{ title }}" target="_blank" class="share-btn twitter" title="Twiter">Tw</a>
+    <a href="https://twitter.com/share?url={{ link }}&text={{ title | urlencode }}" target="_blank" class="share-btn twitter" title="Twiter">Tw</a>
   </li>
 
   <!-- Facebook -->
@@ -15,17 +15,17 @@
 
   <!-- Reddit -->
   <li>
-    <a href="https://reddit.com/submit?mini=true&url={{ link }}&title={{ title }}" target="_blank" class="share-btn reddit" title="Reddit">Re</a>
+    <a href="https://reddit.com/submit?mini=true&url={{ link }}&title={{ title | urlencode }}" target="_blank" class="share-btn reddit" title="Reddit">Re</a>
   </li>
 
   <!-- LinkedIn -->
   <li>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ link }}&title={{ title }}" target="_blank" class="share-btn linkedin" title="LinkedIn">Ln</a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ link }}&title={{ title | urlencode }}" target="_blank" class="share-btn linkedin" title="LinkedIn">Ln</a>
   </li>
 
   <!-- Email -->
   <li>
-    <a href="mailto:?subject=Check out this post by {{ site.author.name }}&amp;body={{ link }}" target="_blank" class="share-btn email" title="Email">Em</a>
+    <a href="mailto:?subject={{ title | urlencode }}&amp;body={{ link }}" target="_blank" class="share-btn email" title="Email">Em</a>
   </li>
 
 </ul>

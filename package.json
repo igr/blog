@@ -1,11 +1,12 @@
 {
   "name": "blog",
-  "version": "2.3.2",
+  "version": "3.0.0",
   "description": "oblac.rs",
+  "type": "commonjs",
   "scripts": {
     "clean": "rm -rf out",
-    "dev": "node spig.js dev",
-    "build": "node spig.js"
+    "dev": "node spig.mjs dev",
+    "build": "node spig.mjs"
   },
   "author": {
     "name": "Igor Spasić",
@@ -15,7 +16,7 @@
   "license": "MIT",
   "homepage": "https://oblac.rs",
   "dependencies": {
-    "remove-markdown": "^0.3.0",
-    "spignite": "^2.3.2"
+    "remove-markdown": "^0.5.0",
+    "spignite": "^3.0.0-0"
   }
 }

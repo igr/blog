@@ -1,4 +1,4 @@
-const { Spig } = require('spignite');
+import { Spig } from "spignite";
 
 Spig.hello();
 

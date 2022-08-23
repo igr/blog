@@ -10,7 +10,5 @@ module.exports = nunjucksEnv => {
     .addFilter('filterTags', require('./filters/tags'))
     .addFilter('searchIndex', require('./filters/search'))
     .addFilter('postsOnly', require('./filters/postsOnly'))
-
-    .addFilter('json', require('./filters/jsonString'))
   ;
 };
