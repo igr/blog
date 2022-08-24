@@ -11,7 +11,7 @@ tag:
 
 Iz života programera.
 
-<--more-->
+<!--more-->
 
 Na projektu se koristio SpringBoot za pravljenje vrlo uobičajenog APIja. Projekat je mahom bio neopterećen ostalim delovima ekosistema klijenta, pisan od početka. Inače, pisanje projekata od nule se dešava toliko retko da takvu priliku treba ceniti na primeren način - uspostavljanjem delotvornog razvojnog okruženja.
 
