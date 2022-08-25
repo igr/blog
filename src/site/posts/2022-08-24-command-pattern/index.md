@@ -19,13 +19,13 @@ Kako bilo, dočekao me je projekat u ranoj fazi izrade. Sve je bilo prepoznatlji
 
 ## Obrazac
 
-**Command Pattern** je jedan od načina za razdvajanja mesta pozivanja (tj. zahteva za izvršavanje) i zapravog izvršavanja pozvane komponente.
+**Command Pattern** je jedan od načina za razdvajanja mesta poziva (tj. zahteva za izvršavanje) i zapravog izvršavanja pozvane komponente.
 
-Na primer, komponenta `A` želi da izvrši `foo()` koja je implementirana u `B`. Umesto da to uradi direktno (dakle `b.foo()`), `A` će poslati komandu `Foo` nekakvom izvršiocu komandi `E`. `Foo` je često obična data klasa, praktično argument za `foo()`. Izvršilac `E` potom pronalazi komponentu koja može da opsluži ovu komandu i izvršava je.
+Na primer, komponenta `A` želi da izvrši `foo()` koja je implementirana u `B`. Umesto da to uradi direktno (dakle `b.foo()`), `A` će poslati komandu `Foo` nekakvom izvršiocu komandi `E`. Izvršilac `E` potom pronalazi komponentu koja može da opsluži ovu komandu i izvršava je. Komanda `Foo` je često obična data klasa, praktično argument za `foo()`. 
 
 Drugim rečima, umesto `A -> b.foo()`, odigrava se: `A -> E -> b.foo()`.
 
-Vrednost ovog programerskog obrasca je tamo gde je labavo uvezivanje komponenti neophodno. Kako se odluke izvršioca `E` dešavaju u runtime, ovim obrascem se dozvoljava bilo kakva implementacija `B`: lokalna, udaljena, čak i zamena tokom izvršavanja programa.
+Vrednost ovog programerskog obrasca je tamo gde je labavo uvezivanje komponenti neophodno. Kako se odluke izvršioca `E` dešavaju u runtime, ovim obrascem se dozvoljava bilo kakva implementacija `B`: lokalna, udaljena, čak i njena zamena tokom izvršavanja programa.
 
 ## Zašto?
 
@@ -37,7 +37,7 @@ Prihvatio sam odgovor. Ne postoji stvar za koju sigurno možeš tvrditi da je zn
 
 Kada treba podići glas? Nije stvar toliko u "nadjačavanju" (možda i jeste!?) koliko u delotvornosti reakcije.
 
-Kako bilo, prvo vreme smo kodirali pod komandom ovog obrasca. Labava uvezanost ima cenu - pratiti tok izvršavanja od A do B zahteva više klik-i-klakova, a tok misli se prekida.
+Kako bilo, prvo vreme smo kodirali pod komandom ovog obrasca. Labava uvezanost ima cenu - pratiti tok izvršavanja od `A` do `B` zahteva više klik-i-klakova, a tok misli se prekida.
 
 ## Par nedelja kasnije...
 
