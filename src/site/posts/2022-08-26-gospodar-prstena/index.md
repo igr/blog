@@ -1,6 +1,6 @@
 ---
 title: "Gospodar prstena"
-date: 2022-08-24T01:07:03+00:00
+date: 2022-08-26T01:07:03+00:00
 categories:
   - Stav
 tag:
