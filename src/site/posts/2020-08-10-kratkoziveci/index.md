@@ -55,7 +55,9 @@ I ono što neprestano ponavljam: kada god pričamo o performansama aplikacije, m
 
 p.s. nadam se da više niko ne koristite `final` pod izgovorom da je 'brži' kod :)
 
-# Dodatak
+---
+
+## Dodatak
 
 Nadahnut odličnim [odgovorom](https://www.linkedin.com/feed/update/urn:li:activity:6698851995274547200?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6698851995274547200%2C6699464736146280448%29) [Jovana Popovića](https://www.linkedin.com/in/jovan-popovic/), dužan sam da naglasim ono što možda nisam dovoljno :)
 
