@@ -19,9 +19,9 @@ Ovakve vizije su fokusirane ka spolja - onima koji nalaze vrednost u vašem proi
 
 Manjkaju vizije koje su usmerene ka unutra. Pogledati se i adresirati probleme. One koje se zaista tiču vašeg svakodnevnog rada i učinkovitosti. Evo odmah primera; dolazi sa istog mesta kojim komanduje nadahnuti CEO.
 
-Upoznajmo se s akterima. Odeljenje `Infra` je zaduženo za AWS, konfiguracije, skaliranja, prava pristupa... Odelenje `Support` je zaduženo za rešavanje produkcijskih problema na aplikacijama koje se vrte na pomenutim infrastrukturama.
+Upoznajmo se s akterima. Odeljenje `Infra` je zaduženo za AWS, konfiguracije, skaliranja, prava pristupa... Odelenje `Support` je zaduženo za rešavanje produkcijskih problema na aplikacijama koje se vrte na infrastrukturama.
 
-Jedan od uobičajenih problema je vezan za prava pristupa: aplikativna omponenta ne može da pristupi određenim resursima. Kako se slučaj rešava? Čitaj pažljivo.
+Jedan od uobičajenih problema je vezan za prava pristupa: aplikativna komponenta ne može da pristupi resursima. Kako se slučaj rešava? Čitaj pažljivo.
 
 `Infra` pravi poduže uputsvo na delimično zapuštenom, a svakako preobimnom wikiju. Detaljno se opisuju koraci: šta treba uraditi na AWS, pa na nekom GitHub-u, o čemu voditi računa, kako ne pokvariti prava drugima itd.; dokument obiluje AWS terminima i svime onime čime nas AWS neumorno zatrpava kako bi mogao da naplaćuje [skupe sertifikate](https://oblac.rs/ugrozene-vrste/) umesto da unapredi korisničko iskustvo. Svako iz `Support` tima, dakle, bi trebalo da sam podesi prava pristupa - ukoliko, ironično, uopšte ima dovoljno prava za konkretan slučaj.
 
