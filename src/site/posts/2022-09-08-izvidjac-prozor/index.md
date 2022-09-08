@@ -9,7 +9,7 @@ tag:
   - praksa
 ---
 
-Da li mali izviđač može da popravi prozor?
+Može li mali izviđač da popravi slomljeni prozor?
 
 <!--more-->
 
