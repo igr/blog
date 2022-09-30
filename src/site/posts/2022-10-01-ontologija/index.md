@@ -7,6 +7,11 @@ tag:
   - razvoj
 ---
 
+Razmišljanja.
+
+<!--more-->
+
+
 ## Saznanje
 
 Kako znamo da znamo?
