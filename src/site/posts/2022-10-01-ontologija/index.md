@@ -138,9 +138,11 @@ Jasnoća nije konstanta. Uključuje i "kako"-saznanja i doživljava se i čulima
 
 Komunikacija (verbalna, pisana, kroz kod) je inherentno nejasna. Saznanja nam pomažu da efikasnije različimo komunicirane apstrakcije. Otuda potreba za standardima - dogovorenim načinima izrade, kako ne bi svaki put nanovo razumevali detalje koji se ponavljaju.
 
-Ponavljam: jasnoća je nestabilna, volatilna, gotovo trascendentalna. Nemoguće je postići potpunu jasnoću; tim ljudi tek ne može da se posloži oko apstrakcija. To je okej, prihvata se i radi na tome. U suprotnom, komunikacija biva zapuštena. Nestabilnost jasnoće je lepo ilustrovana u pregledima koda (code review): mahom se povratne informacije tiču trenutnih, ličnih osećaja razumevanja, a ne suštine promene. Prijavljivanje nejasnoće je svakako potrebno, ali je pre toga važno da se dogovorimo i definišemo šta je to "jasno" za projekat. Nedostatak praznog reda u kodu je nebitno.
+Ponavljam: jasnoća je nestabilna, volatilna, gotovo trascendentalna. Jasnoća - istina - je proces, a ne statička osobina prostora-vremena. Ne možemo je kao takvu uhvatiti i koristiti kao etalon; neprestano se menja.
 
-Nestabilnost jasnoće iziskuje potrebu za poverenjem. Kada ne razumemo dovoljno, jedna mogućnost je da se prepustimo poverenju onih koji razumeju više, ekspertima. Mikromenadžment je upravo suprotno: zataškano nerazumevanje nekoga ko nije stručan. Ovde stajem, apstrakcija "poverenje" je složena i zahteva više pažnje, za koju nisam dovoljno stručan.
+Nemoguće je postići potpunu jasnoću; tim ljudi tek ne može da se posloži oko apstrakcija. To je okej, prihvata se i radi na tome. U suprotnom, komunikacija biva zapuštena. Nestabilnost jasnoće je lepo ilustrovana u pregledima koda (code review): mahom se povratne informacije tiču trenutnih, ličnih osećaja razumevanja, a ne suštine promene. Prijavljivanje nejasnoće je svakako potrebno, ali je pre toga važno da se dogovorimo i definišemo šta je to "jasno" za projekat. Nedostatak praznog reda u kodu je nebitno.
+
+Nestabilnost jasnoće iziskuje potrebu za poverenjem. Kada ne razumemo dovoljno, jedna mogućnost je da se prepustimo poverenju onih koji razumeju više. Mikromenadžment je upravo suprotno: zataškano nerazumevanje nekoga ko nije stručan. Ovde stajem, apstrakcija "poverenje" je složena i zahteva više pažnje, za koju nisam dovoljno stručan.
 
 Kako je jasnoća mera razumevanja komunikacije, fokus softverskog razvoja ne bi trebalo da je na pisanju koda, već na čitanju zarad razumevanja. Svako može da napiše program koji radi. Čitanje i mentalno procesiranje napisanog koda je ograničeno fizičkim kapacitetima našeg uma. Ukratko, postoji konačan (mali) broj detalja na koje naš um može da obrati pažnja u isto vreme - kažu, do sedam.
 
@@ -164,7 +166,7 @@ Jasnoća je ultimativna neophodnost softverskog razvoja.
 
 Zaključci.
 
-**Komunikacija u okviru jednog skupa apstrakcija je jasnija od one koja se odvija kroz nekoliko.** Prelivanje apstrakcija umanjuje jasnoću. To ne znači da ne možemo da se naučimo - zapravo, naviknemo - na mešanje apstrakcija; možemo, ali to nije ideja.
+**Komunikacija u okviru jednog skupa apstrakcija je jasnija od one koja se odvija kroz nekoliko skupova apstrakcija.** Prelivanje apstrakcija umanjuje jasnoću. To ne znači da ne možemo da se naučimo - zapravo, naviknemo - na mešanje apstrakcija; možemo, ali to nije ideja.
 
 Navika, isto kao i podrazumevano, su smetnja jasnoći. Jasnoća je proizvod aktivnosti, navika je pasivna.
 
