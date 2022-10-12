@@ -8,8 +8,6 @@ tag:
   - devops
 ---
 
-# A onda su došli DevOpsi...
-
 Kao da sve nije već bilo dovoljno komplikovano.
 
 p.s. nijedan DevOps nije nastradao tokom pisanja ovog teksta.
