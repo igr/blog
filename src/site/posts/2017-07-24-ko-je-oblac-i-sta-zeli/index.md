@@ -34,8 +34,5 @@ Blog pišem na maternjem jeziku; smatram da time uvećavamo baštinu naše zemlj
 
 Ne pišem da bih se dopao. Moji tekstovi nisu novinarski članci. Oni su **priče**, tu da pokrenu na razmišljenje.
 
-## O stavovima
-
-Nisam definisan svojim stavovima. Stavove usvajamo, menjamo, nadograđujemo, ali _oni ne čine nas same_.
 
 [🍀](https://www.websitecarbon.com/website/oblac-rs/)

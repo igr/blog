@@ -26,7 +26,6 @@
         <time class="post-date skew" datetime="{{ date | dateISO }}"><span>{{ date | rsDateLong }}</span></time>
       {% endif %}
 
-
       {% include "partials/share-links.njk" %}
     </header>
 
@@ -34,11 +33,13 @@
 
   </article>
 
-  <ul class="tags">
+  <!--ul class="tags">
     {% for t in tag %}
       <li class="tag"><a href="/tag/{{ t | slugify }}">{{ t }}</a></li>
     {% endfor %}
-  </ul>
+  </ul-->
+
+  {% include "partials/post-bottom.njk" %}
 
 {% endblock %}
 
