@@ -280,6 +280,7 @@ h6 {
 
 .site-header {
   margin-bottom: 2rem;
+  display: flex;
 
   h1#title {
     margin-bottom: .5rem;
@@ -373,9 +374,10 @@ footer {
 }
 
 .tagline {
-  font-size: 1.0em;
+  font-size: 0.8em;
   font-family: $monospace;
-  letter-spacing: -2px;
+  margin-top: 1em;
+  margin-left: 0.5em;
   a {
     color: var(--title-small-color);
     background: var(--bg-shade);

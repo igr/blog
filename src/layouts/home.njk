@@ -9,7 +9,7 @@
         <h2 class="year">{{ k }}</h2>
         <ol>
           {% for i in v %}
-            <li class="c-{{ i.categories[0] | slugify }}">
+            <li>
               <time datetime="{{ i.date | dateISO }}">{{ i.date | rsDateShort }}</time>
               <a href="{{ i.url }}">{{ i.title_short if i.title_short else i.title }}</a>
             </li>
