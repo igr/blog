@@ -6,19 +6,6 @@
     <header class="post-header">
       <h1 class="post-title">{{ title }}</h1>
 
-      {% set defPage = site.pageOfSrc(src_default) %}
-      {% set enPage = site.pageOfSrc(src_en) %}
-      {% if enPage and lang.key !== 'en' %}
-        <div id="lang">β<a href="{{ enPage.url }}">English</a></div>
-      {% endif %}
-      {% if lang.key === 'en' %}
-        <div id="lang">β<a href="{{ defPage.url }}">Srpski</a></div>
-      {% endif %}
-
-      {% if not enPage %}
-      <div id="lang">β<a href="https://oblac-rs.translate.goog{{ defPage.url }}?_x_tr_sl=sr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" target="blank">Translate</a></div>
-      {% endif %}
-
       <div id="readtime" class="skew"><span>{{ readingTime.minutes | round(0, "ceil") }} min</span></div>
       {% if lang.key === 'en' %}
         <time class="post-date skew" datetime="{{ date | dateISO }}"><span>{{ date | dateDisplay }}</span></time>
@@ -26,18 +13,24 @@
         <time class="post-date skew" datetime="{{ date | dateISO }}"><span>{{ date | rsDateLong }}</span></time>
       {% endif %}
 
-      {% include "partials/share-links.njk" %}
+      {% set defPage = site.pageOfSrc(src_default) %}
+      {% set enPage = site.pageOfSrc(src_en) %}
+      {% if enPage and lang.key !== 'en' %}
+        <div id="lang"><a href="{{ enPage.url }}">English</a></div>
+      {% endif %}
+      {% if lang.key === 'en' %}
+        <div id="lang"><a href="{{ defPage.url }}">Srpski</a></div>
+      {% endif %}
+      {% if not enPage %}
+      <div id="lang"><a href="https://oblac-rs.translate.goog{{ defPage.url }}?_x_tr_sl=sr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" target="blank">Translate</a></div>
+      {% endif %}
     </header>
 
     {{ content | safe }}
 
-  </article>
 
-  <!--ul class="tags">
-    {% for t in tag %}
-      <li class="tag"><a href="/tag/{{ t | slugify }}">{{ t }}</a></li>
-    {% endfor %}
-  </ul-->
+    {% include "partials/share-links.njk" %}
+  </article>
 
   {% include "partials/post-bottom.njk" %}
 

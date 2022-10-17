@@ -648,11 +648,10 @@ input[type=text] {
 }
 
 ul#social {
-  float: right;
   margin-top: 4px;
   font-size: 0.8em;
   font-family: $monospace;
-  border: 1px solid var(--title-color);
+  letter-spacing: -2px;
   li {
     display:block;
     width: 24px;
@@ -660,15 +659,6 @@ ul#social {
     color: var(--bg-light-color);
     float: right;
     margin: 0;
-  }
-  li:first-child {
-    display:block;
-    width: inherit;
-    letter-spacing: -2px;
-    background-color: inherit;
-    color: var(--title-color);
-    float: right;
-    padding: 0 2px;
   }
   a {
     color: var(--bg-light-color);
@@ -696,12 +686,9 @@ figcaption p {
 
 #lang {
   font-family: $monospace;
-  position: relative;
-  top: -20px;
-  border: 1px solid var(--title-color);
-  float:left;
+  text-align: right;
   //transform: rotate(-4deg);
-  padding-left: 2px;
+  padding-top: 4px;
   a {
     margin-left: 2px;
     position: relative;
@@ -711,6 +698,7 @@ figcaption p {
     background: none;
     background-color: var(--title-color);
     color: var(--bg-light-color);
+    letter-spacing: -2px;
     &:hover {
       text-transform: uppercase;
       color: var(--bg-color);
