@@ -30,7 +30,7 @@ Projektu je potreban očigledan rad na gotovo nepostojećem sadržaju koji bi "p
 
 Naime, specifikacija HTML-a je napisana vrlo precizno, ujednačeno i algoritamski. Reč je o velikoj state-mašini (što svaki parser i jeste) i pravilima za svako stanje. Pokazalo se da se tekstualna pravila preslikavaju gotovo identično u kod!
 
-Fantastična ideja i njene zveri je sledeća: napraviti procesor specifikacije, čak ne treba ni NLP upotrebiti. Rezultat bi bio parser u nekakvom pseudo-jeziku; parser je samo stanje i jednostavan rad sa nizom karaktera. Iz takvog rezultata bi se potom generisala implementacija u _bilo_ koji programski jezik! Ne samo da bi `Lagarto` bio tehnološki-agnostičan, već bi uvek bio i ažuriran prema poslednjoj verziji HTML specifikacije.
+Fantastična ideja i njene zveri je sledeća: napraviti procesor specifikacije, čak ne treba ni NLP upotrebiti. Rezultat bi bio parser u nekakvom pseudo-jeziku; parser je samo stanje i jednostavan rad sa nizom karaktera. Iz takvog rezultata bi se potom generisala implementacija u _bilo_ koji programski jezik! Ne samo da bi `Lagarto` bio tehnološki-agnostičan, već bi uvek bio i ažuriran prema poslednjoj verziji HTML specifikacije. Wow!
 
 Zašto ne stvarati sintaksu nekog poznatog parsera (pa svakako već koristim jFlex za `CSSelly`)? Razlika je što takva definicija nije jezički agnostična. S druge strane, state-mašina HTML nije kompleksna, samo je ogromna. Mada, ko zna, možda je i to izvodljivo; vredi probati.
 
@@ -54,8 +54,8 @@ To bi izgledalo ovako nekako. Bekend opisuje podatke koje nudi kroz API. U toj d
 
 Šta raditi sa `DTL`? Generisati kod! Svaki prelaz ima svoju implementaciju. FE/BE je na pr. TypeScript klijent i SpringBoot API. BE/DB prelaz je JPA/SQL. BE/Servis prelaz je Java i Go API s druge strane. Itd.
 
-Da, generisani neće biti super-sjajan. Ali bi trebalo da je brzina izrade funkcionalnosti višestruko veća! Danas se puno vremena troši na potpuno iste radnje, iznova: mapiraj ulaze u modele, konvertuj modele u druge, pretoči u bazu i nazad.
+Da, generisani sadržaj neće biti super-sjajan. Ali bi trebalo da je brzina izrade višestruko veća. Danas se puno vremena troši na potpuno iste radnje, iznova: mapiraj ulaze u modele, konvertuj modele u druge, pretoči u bazu i nazad.
 
-`DTL` bi trebalo da opiše celokupni tok transformacije podataka, od izvora do upotrebe. On ujedno služi i kao formalna definicija sistema.
+`DTL` bi trebalo da opiše celokupni tok transformacije podataka, od izvora do upotrebe. On ujedno služi i kao formalna definicija sistema, pošto se bavi obema stranam u komunikaciji preko granica.
 
 Ideja o `DTL` ne može daleko da dobaci; svestan sam toga. Ipak, ima nečeg golicavo interesantnog, našta pomislim svaki put kada napišem još-jedan-enpoint.
