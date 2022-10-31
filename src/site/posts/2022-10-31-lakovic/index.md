@@ -19,7 +19,7 @@ Vreme je da saznamo. FOTO/VIDEO.
 
 > Lako je devu, da se sokoli,
 > dok prima platu, njega ne boli.
->
+
 > Nije mu žao da kao neki trut,
 > za svoje zasluge bude istaknut.
 
@@ -29,7 +29,7 @@ Vreme je da saznamo. FOTO/VIDEO.
 > i HRica Mica,
 > pričali su jednog dana,
 > kol'ko dev bi još banana.
->
+
 > Dogovor prođe sretno,
 > izveden vrlo spretno,
 > uz dodatak veće vlasti,
@@ -41,7 +41,7 @@ Vreme je da saznamo. FOTO/VIDEO.
 > agilan svuda da će biti red,
 > neće tu da radi šta bilo ko,
 > sastanaka mora da bar bude sto.
->
+
 > Nek znaju i stranci,
 > qa, dizajn i front,
 > svi ti indijanci,
@@ -53,8 +53,8 @@ Vreme je da saznamo. FOTO/VIDEO.
 > nemaš nova iskušenja,
 > tražio si projekat buran,
 > al biraš bekend siguran.
->
-> Teorija mu je snažna,
+
+> Vika mu je snažna,
 > Izvedba je drumska,
 > Jira mu je lažna,
 > A kod mu je šumska.
@@ -72,7 +72,7 @@ Vreme je da saznamo. FOTO/VIDEO.
 > našao zemlju dembeliju,
 > Ne pita se više gde li je,
 > razmišlja li sada zrelije.
->
+
 > Programira tako danima,
 > menja softvera građe,
 > samo baš ga ne zanima,
