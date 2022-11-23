@@ -25,22 +25,23 @@ Da bi se izborili sa postrance-efektima, guramo ih u kontejner. Kontajner postan
 
 Svi postrance-efekti se guraju u monad. Koji? Mora da postoji jedan koji će enkapsulirati izvršavanje. Takav se tradicionalno zove `IO` monad. Pošto imamo jedan, moguće je kombinovati ih.
 
-Za razliku od Haskela, Scala nema IO monad ugrađen u sam jezik. Služimo se implementacijama. Jedna dolazi iz Cats Effect biblioteke.
+Za razliku od Haskela, Scala nema IO monad ugrađen u sam jezik. Služimo se implementacijama. Jedna dolazi iz [Cats Effect](https://typelevel.org/cats-effect/) biblioteke.
 
 Pisanje programa je pisanje specifikacije, a ne izvršnog koda. Specifikacija može, ali i ne mora da se izvrši.
 
-## Type i Data tipova
+## Type i Data tipovi
 
-Cats biblioteka donosi i implementacije Type i Data tipova. Pomenuti Monad; pa Either, State, itd su tek neke koje želimo da koristimo. Dodatno obogaćuje sintaksu i olakšava pisanje implicitima.
+[Cats](https://typelevel.org/cats/) biblioteka donosi implementacije Type i Data tipova. Pomenuti `Monad`; pa `Either`, `State`, itd su neke koje želimo da koristimo. Dodatno obogaćuje sintaksu i olakšava pisanje implicitima.
 
 ## Tag Types
 
 Ne želimo da sve bude `String` ili `Int`. `BookId` nije isto što i `UserId`. Aliasi pomažu, ali esencijalno ne menjaju stanje stvari. Zato pravimo nove tipove koji imaju referencu na drugi, osnovni tip.
 
+I ovde ima gotovih biblioteka, ali sam sklepao sam svoju, čapkajući sa različitih mesta.
+
 
 ## Primer
-Čitamo ENV varijable. Čitamo XML fajlove koji opisuju gradove. Parsiramo XML u objekte. Za svaki grad pozivamo HTTP poziv koji dovlači dodatne podatke. Spajamo ove podatke u jedan JSON. Pišemo JSON nazad u fajlove.
 
-Biramo implementaciju HTTP klijenta, blokirajuću ili async.
+Čitamo ENV varijable. Čitamo XML fajlove koji opisuju gradove. Parsiramo XML u objekte. Za svaki grad pozivamo HTTP poziv koji dovlači dodatne podatke. Spajamo ove podatke u jedan JSON. Pišemo JSON nazad u fajlove. Biramo implementaciju HTTP klijenta, blokirajuću ili async.
 
-[Github primer](https://github.com/igr/citycatz)
+[Github primer.](https://github.com/igr/citycatz)
