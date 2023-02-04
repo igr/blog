@@ -41,11 +41,11 @@ Sve je to predigra onoga što nam zapravo treba: fokusirani moduli AI koji uče 
 
 Prompt je: "Napiši mi članak... u stilu New York Times-a"
 
-Prvo, pretpostavlja se da poznajemo "New York Times" stil pisanja novinskog članka. Da smo toliki stručnjaci da, na primer, možemo da ga razlikujemo od "The Atlantic" sadržaja. Da baš, baš želimo taj prvi stil, ali ne i drugi. Da umemo da raspoznajemo umetničke pravce. Da smo vrsni poznavaoci muzike, razlikujemo Betovena od Dmitri Shotstakovicha (izmišljena ličnost). Da znamo šta znači "bolja" knjiga. Da znamo da razlikujemo Nespresso kapsule kafe na osnovu samo jednog gutljaja. Danas smo svi stručnjaci, džepni eksperti. Jer, zašto bi zatražili nešto što ne razumemo niti poznajemo; to bi bilo licemerno, zar ne?
+Prvo, pretpostavlja se da poznajemo "New York Times" stil pisanja novinskog članka. Da smo toliki stručnjaci da, na primer, možemo da ga razlikujemo od "The Atlantic" sadržaja. Da baš, baš želimo taj prvi stil, ali ne i drugi. Da umemo da raspoznajemo umetničke pravce. Da smo vrsni poznavaoci muzike, razlikujemo Betovena od Dmitri Shostakovicha (ličnost koju je izmislio AI). Da znamo šta znači "bolja" knjiga. Da znamo da razlikujemo Nespresso kapsule kafe na osnovu samo jednog gutljaja. Danas smo svi stručnjaci, džepni eksperti. Jer, zašto bi zatražili nešto što ne razumemo niti poznajemo; to bi bilo licemerno, zar ne?
 
 Drugo, prihvatanje rezultata bez namere i ideje šta želimo i zašto je osobina male dece: ona hoće _nešto_ (šareno, zvučno, glasno, pokretno, slatko...), bez ideje šta tačno i zašto. Žele da zadovolje svoj ego poriv sada i odmah. Zato, prvi i jedini rezultat je dovoljan. Sva sreća pa nismo više deca; u suprotnom bi bilo baš licemerno da pristajemo na dečje ponašanje, zar ne?
 
-Dalje, čini se da prihvatamo rezultate bez jasnog razumevanja odakle dolaze. Stavljamo teška pitanja pod tepih [konceptualne kompresije](https://oblac.rs/konceptualna-kompresija/), jer ovo mora biti napredak. Nije važno odakle stiže i kako, ko gubi, a kod dobija; sve dok nama dolazi. Čak pretaje da bude važno da li je tačno. Nešto slično radimo i prirodi; znamo kako se ta priča završava. Dovoljno smo zreli da to ne ponovimo, u suprotnom bi bilo baš licemerno očekivati da će ovaj put biti drugačije, zar ne?
+Dalje, čini se da prihvatamo rezultate bez jasnog razumevanja odakle dolaze. Stavljamo teška pitanja pod tepih [konceptualne kompresije](https://oblac.rs/konceptualna-kompresija/), jer ovo mora biti napredak. Nije važno odakle stiže i kako, ko gubi, a kod dobija; sve dok nama dolazi. Čak prestaje da bude bitno da li je sasvim tačno. Nešto slično radimo i Prirodi; znamo kako se ta priča završava. Dovoljno smo zreli da to ne ponovimo, u suprotnom bi bilo baš licemerno očekivati da će ovaj put biti drugačije, zar ne?
 
 Konačno, traženje nama potrebnog odgovora u generalnoj probibalističkoj crnoj kutiji opšteg sadržaja podrazumeva da verujemo u magiju. Kako drugačije objasniti predubeđenje da kutija poznaje baš naše lične sisteme vrednosti? U suprotnom, bilo bi licemerno očekivati da je kutija pisana baš za naše mentalne modele, baš za ovaj tvoj trenutak, zar ne?
 
@@ -67,7 +67,7 @@ Inteligencija i racionalnost su precenjeni.
 
 Mi, programeri naročito, volimo jednostavna pitanja. Konvergentne probleme. Jedan odgovor: šta je bolje, šta je brže, šta uraditi... Želimo da imamo algoritam, obrasce i alatke za sve. Imam problem, želim rešenje; bolje pre nego kasnije. Da možemo, odgovor na sve bi nam bio `42`.
 
-Teme kojima se manje bavimo su divergenta pitanja. Ona koja nemaju jedan odgovor, kojima se odgovori menjaju vremenom. Imamo obrasce kako da o njima razmišljamo, ali nema pravila kako da njih odgovaramo. Zato nisu laka.
+Teme kojima se manje bavimo su divergenta pitanja. Ona koja nemaju jedan odgovor, kojima se odgovori menjaju vremenom. Takva pitanja traže da neprestano odgovaramo na njih. Imamo obrasce kako da o njima razmišljamo, ali nema nam pravila kako da im odgovaramo. Zato nisu laka.
 
 Nadam se niko ne pomišlja da će AI servirati odgovore.
 
