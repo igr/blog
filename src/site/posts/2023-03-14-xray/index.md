@@ -112,7 +112,7 @@ Još uvek vagam ovu odluku.
 **Transakcije u kontrolerima.** Nema razloga da transakcije započinju na servisnom sloju, naročito kada je baza detalj. U projektu započinju u kontroleru. Tu je transakcija samo opis, a implementacija transakcije dolazi iz implementacije repozitorijuma.
 
 ```kt
- override fun postUser(newUser: NewUserRequest): UserResponse = tx {
+ fun postUser(newUser: NewUserRequest): UserResponse = tx {
         createUser(newUser.toUser()).let {
             UserResponse.from(it)
         }
