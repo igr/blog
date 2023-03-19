@@ -20,7 +20,7 @@ Nego, priča ne počinje ovde. Mora da se premota malo unazad, taman na mesto gd
 
 (Liči na dobro mesto da uvedemo božanstva u priču? Ne još; molim za strpljenje, uskoro.)
 
-U strahu možda jesu velike oči, ali ne vidiš mnogo dalje od sebe. Suočavanje sa problemom ovde znači razumeti zašto tim tako razmišlja. Zašto ne volimo izmene u kodu? Da li ih izjednačavamo sa slabošću? Zašto se refaktorisanje doživljava kao žulj u cipeli, technički dug, kugla i lanac?
+U strahu možda jesu velike oči, ali ne vidiš mnogo dalje od sebe. Suočavanje sa problemom ovde znači razumeti zašto tim tako razmišlja. Zašto ne volimo izmene u kodu? Da li ih izjednačavamo sa slabošću? Zašto se refaktorisanje doživljava kao žulj u cipeli, tehnički dug, kugla i lanac?
 
 (Možda ovde? Ne još.)
 
