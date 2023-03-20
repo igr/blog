@@ -54,7 +54,7 @@ Zašto je i utopija? Verujemo da je razvojvera dovoljan i jedini odgovor na sve.
 
 ## LI
 
-Javilo mi se, dakle, kako promeniti kod na ono što mi se ukazalo kao bolje. Jedino objašnjenje koje zapravo mogu da pružim je da mi... (sledi ironičan krešendo)... verujete. Mogu samo da se pravdam vremenom provedenim razmišljajući o razvoju softvera; a to sve i dalje ne znači da jesam u pravu. Imam odgovore na mnoga pitanja, ali sam siguran i da mnoge ne želite čuti.
+Javilo mi se, dakle, kako promeniti kod na ono što mi se ukazalo kao bolje. Jedino objašnjenje koje zapravo mogu da pružim je da mi... (sledi ironičan krešendo)... verujete. Mogu samo da se pravdam vremenom provedenim razmišljajući o razvoju softvera. Imam odgovore na mnoga pitanja, ali sam siguran i da mnoge ne želite čuti. Među njih spada odgovor "da" na pitanje: "može li i dalje bolje?"; kako odmičete tako se prostranstvo uvida povećava. No na kraju, to su samo moji uvidi. Ono što, na žalost, ne mogu da pružim je dokaz da sveukupni kod postaje kvalitetniji. Mogu da pričam o visokoj koheziji, maloj među-zavisnosti (gotovo svi principi su izvedeni iz ovih); opet je sve samo rekla-kazala. Ili rekla-zaboravila.
 
 Razvoj softvera je nedokaziv, nepotpuni zadatak; čak ni empirijska aktivnost, jer se iskustvo ne sakuplja.
 
