@@ -58,10 +58,12 @@ Idemo dalje.
 Biznis sloj radi sa bazom. Baza bi trebalo da je tehnički detalj. Ne želimo da pišemo kod prema načinu kako radi baza, već takav kod da bazu uvek možemo zameniti. Namerno ovako pišem, izazivam: svako zna da nikada nećemo menjati bazu u projektu. Zapravo, pišemo takav kod koji je toliko labavo uvezan sa bazom da, nemajući bolji i kraći primer, samo kažemo da se ona može zameniti kada god. Konkretna zamena baze nije u fokusu. Labavo uvezivanje jeste. Da nacrtamo i to:
 
 ![](m4.png)
+{.center}
 
 Poučeni prethodnim, ne želimo da bilo šta vezano za implementaciju baze prodre u servisni sloj:
 
 ![](m5.png)
+{.center}
 
 Biznis `B` ne vidi bazu `D` i priča sa njom samo preko `R`, interfejsa prema bazi. Da li je sada sve ok?
 
@@ -76,9 +78,10 @@ Komunikacija je uvek **dvosmerna**. Komunikacija je opisana vokabularom. Kako po
 Razlika je značajna. Prvo: `B` nije implementacija `A`, već je `A` opis domenskog vokabulara. Zatim, `R` pripada biznis logici `B`, a ne bazi `D`. `R` je opis onoga šta treba biznis logici.
 
 ![](m6.png)
+{.center}
 
 To je već moduo.
 
 Ovakav moduo se može već odvajati, deliti na sitnije, zameniti. Još nešto krasi ovakav moduo: mogućnost da bude čist, sastavljen samo od čistih funkcija, bez efekata.
 
-Nije ovo neka mudrost - ako se dobro sećam, hex arhitektura upravo priča o ovome - a primećujem dozu nerazumevanja šta gde kome pripada i čemu služi... a i crtalo mi se.
+Nije ovo neka mudrost - ako se dobro sećam, hex arhitektura upravo priča o ovome.
