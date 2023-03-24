@@ -84,4 +84,9 @@ To je već moduo.
 
 Ovakav moduo se može već odvajati, deliti na sitnije, zameniti, mikroservisirati... Još nešto krasi ovakav moduo: mogućnost da bude čist, sastavljen samo od čistih funkcija, bez efekata.
 
+Više modula sarađuje zajedno i dozvoljeno im je da dele zajedničku implementaciju baze `D`.
+
+![](m7.png)
+{.center}
+
 Nije ovo neka mudrost - ako se dobro sećam, hex arhitektura upravo priča o ovome.
