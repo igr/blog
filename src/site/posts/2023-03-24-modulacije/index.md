@@ -90,3 +90,5 @@ Više modula sarađuje zajedno i dozvoljeno im je da dele zajedničku implementa
 {.center}
 
 Nije ovo neka mudrost - ako se dobro sećam, hex arhitektura upravo priča o ovome.
+
+Zanimljivo, rekao bih da je namera modula pre viša kohezija, a ne toliko labavo uvezivanje. Ne stiče se takav utisak, jer se puno govori o razdvajanju celina. Zato vredi podvući: nije cilj da imamo potpuno labave komponente, to čak i nije moguće ostvariti. Cilj je da imamo veliku koheziju.
