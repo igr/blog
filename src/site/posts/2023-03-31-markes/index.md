@@ -36,7 +36,7 @@ Važnije pitanje: otkuda data klasi dvostruka odgovorst, sopstveno stanje i stan
 
 ---
 
-Namera celog ovog odeljka je da ukaže na nedostatak uobičajenog načina modelovanja i razmišljanja. Na sva gornja pitanja se, naravno, može dati OOP odgovor. Primećuje se zanimljivo svojstvo. Što je domenski rečnik u vezi relacija konkretniji, to nam treba više funkcija. Ujedno `Person` odjednom radi mnogo više toga. Ukoliko krenemo ka generalnijim opisima relacija služeći se opštim kolekcijama, izmeštamo biznis odgovornost van `Person` na milost programera koji se služi kodom.
+Namera celog ovog odeljka je da ukaže na nedostatak uobičajenog načina modelovanja i razmišljanja. Na sva gornja pitanja se, naravno, može dati OOP odgovor. Primećuje se zanimljivo svojstvo. Što je domenski rečnik u vezi relacija konkretniji, to nam treba više funkcija. Ujedno `Person` odjednom radi mnogo više toga. Ukoliko krenemo ka generalnijim opisima relacija služeći se opštim kolekcijama, izmeštamo biznis odgovornost van `Person` na milost programera koji se služi kodom. Ili u `PersonService`, omiljenom _Homelenderu_ OOP carstva. Ček, ili možda u `BookService` ?
 
 Narativ oko OOP kao da se fokusira na generalizaciju, koja dovodi do razvodnjavanja API-ja. Generalizacija je uvek udaljavanje od konkretnog. To ne želimo. Biznis sloj bi trebalo da je vrlo konkretan, uvezan, stabilan. Sad je i pravo vreme da p(r)ozovemo [ORM](https://oblac.rs/bas-bas-ne-volim-orm/) alate koji ne znaju za drugačije.
 
