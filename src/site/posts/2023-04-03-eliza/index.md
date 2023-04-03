@@ -33,7 +33,7 @@ Da se vratimo dobrim vibracijama. Pesma grupe Beach Boys je objavljena krajem �
 
 Niste valjda pomislili da pričamo o aktuelnim tehnološkim dešavanjima?
 
-Nešto pre nego što je pesma o vibracijama postala hit, na MIT univerzitetu je napisan program koji je trebalo da istraži komunikaciju mašina i ljudi. Autor, J. Weizenbaum, je želeo da demonstrira površnu i rogobatnu komunikaciju sa tadašnjim računarima; svakako daleko od toga da prođu Turingov test. Program se zvao `ELIZA` i simulirao je rad Rogerijanskog terapeuta. Koristeći prepoznavanje obrazaca u tekstu i pretvaranje izjavne rečenice u pitanje, program se služio prilično jednostavnim algoritmom da postavlja pitanja pacijentu na osnovu prethodnog odgovora i tako nastavi razgovor. `ELIZA` je bila jedan od prvih chatbot-ova. Svakako, vrlo brzo i lako bi se moglo utvrditi da je u pitanju samo program postavljanjem iole kompleksnijeg pitanja.
+Nešto pre nego što je pesma o vibracijama postala hit, na MIT univerzitetu je napisan program koji je trebalo da istraži komunikaciju mašina i ljudi. Autor, J. Weizenbaum, je želeo da demonstrira površnu i rogobatnu komunikaciju sa tadašnjim računarima; svakako daleko od toga da prođu Turingov test. Program se zvao `ELIZA` i simulirao je rad Rogerijanskog terapeuta. Koristeći prepoznavanje obrazaca u tekstu i transformacijama rečenica u pitanje, program se služi prilično jednostavnim algoritmom da postavlja pitanja pacijentu na osnovu prethodnog odgovora i tako nastavlja razgovor. `ELIZA` je bila jedan od prvih chatbot-ova. Svakako, vrlo brzo i lako bi se moglo utvrditi da je u pitanju samo program postavljanjem iole kompleksnijeg pitanja.
 
 Desilo se neočekivano.
 
@@ -47,7 +47,7 @@ Ova priča sadrži zrnce istine koje bi trebalo da nas nečemu pouči. Deo koji 
 
 Razumevanje traži vreme.
 
-Možda ne postoji ništa ljudskije nego proces razumevanja. Ono je u osnovi svih naših poriva i dela, predumišljaj naših aktivnosti. Razumevanjem definišemo stvarnost. Razumevanje je implementacija svesnosti.
+Možda ne postoji ništa ljudskije nego proces razumevanja. Ono je u osnovi svih naših poriva i dela, predumišljaj naših aktivnosti. Razumevanjem definišemo stvarnost; nikada ne prestaje. Razumevanje je implementacija svesnosti.
 
 S druge strane, tehnologija nam se nudi kao pomoć kojom, esencijalno, ubrzavamo stvari, procese, delanje.
 
