@@ -49,6 +49,6 @@ Razumevanje traži vreme.
 
 Možda ne postoji ništa ljudskije nego proces razumevanja. Ono je u osnovi svih naših poriva i dela, predumišljaj naših aktivnosti. Razumevanjem definišemo stvarnost; nikada ne prestaje. Razumevanje je implementacija svesnosti.
 
-S druge strane, tehnologija nam se nudi kao pomoć kojom, esencijalno, ubrzavamo stvari, procese, delanje.
+Sa druge strane, tehnologija nam se nudi kao pomoć kojom, esencijalno, ubrzavamo stvari, procese, delanje.
 
 Da li stižemo i da razumemo brže?
