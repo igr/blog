@@ -13,9 +13,9 @@ Pazi kako govoriš, ostvariće se.
 
 <!--more-->
 
-Postoji dobra praksa koju gledam da implementiram u projektima koje radim. Reč je o sintaksi jezika. Govornog, ne programskog.
+Postoji dobra praksa koju gledam da uključim u projekte koje radim. Reč je o sintaksi jezika. Govornog, ne programskog.
 
-[RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) definiše desetak ključnih reči koje se često nalaze u specifikacijama: MUST, SHOULD, MAY... Kada je na snazi RFC, ključne reči se pišu velikim slovima kako bi se naglasilo da pratimo specifikaciju.
+[RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) definiše desetak ključnih reči koje se često nalaze u specifikacijama: MUST, SHOULD, MAY... Kada je na snazi RFC, ključne reči se pišu velikim slovima kako bi naglasili da pratimo specifikaciju.
 
 Dobro je imati ovakvu definiciju pri ruci. Ne zato što ne znamo šta reči znače, već kao podsetnik za ispravnu upotrebu. Ima smisla da RFC 2119 bude jedan od ADR; jezik projekta je takođe njegova arhitektura.
 
@@ -25,11 +25,11 @@ Ključne reči iz RFC 2119 se odlično preslikavaju na role u projektu ili firmi
 
 Izvršna pozicija je ta koja "seče" odluke. Ovakva rola bi trebalo da emituje MUST govor. Na konkretna pitanja se nedvosmisleno odgovara. Slično važi i za rolu na kojoj je odgovornost za deo posla: na njoj je da odredi šta je MUST za učiniti. Ovde nema mesta za SHOULD/MAY nedoumice! Ukoliko je nešto zaista nejasno, rola bi trebalo da istraži zašto je tako. Svaka nedoumica ostavlja mesta nejasnoći i nesigurnosti, koje se preslikavaju na implementaciju.
 
-Strana na kojoj nije odgovornost je ta koja predlaže. Takav govor je SHOULD/MAY govor. U tom kontekstu te ključne reči naglašavaju znalački predlog.
+Strana na kojoj nije odgovornost je ta koja predlaže. Takav govor je SHOULD/MAY govor. U tom kontekstu te ključne reči naglašavaju znalački predlog, adekvatnu mogućnost.
 
 ---
 
-MUST nije naređenje. To je samo eksplicitno naglašavanje, potvrda i podsetnik da je kontrola odluke na mestu.
+MUST nije naređenje. To je eksplicitno naglašavanje, potvrda i podsetnik da je kontrola odluke na mestu.
 
 SHOULD nije neznanje. Ono je upravo deljenje znanja, dobavljanje resursa za odgovor, obaveštavanje.
 
