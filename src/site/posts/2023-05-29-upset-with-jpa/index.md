@@ -64,7 +64,7 @@ Manjkavost pristupa je pisanje native sql koda. Ako si već rešio da koristiš 
 
 Tokom jedne privatne, letnje večere u Pasadeni, izvesni Stiv Dž. je prokomentarisao:
 
-> Kako se povećava broj korisnika, tako proizvod mora da postaje jednostavniji.
+> Kako se povećava broj korisnika, tako proizvod mora da postane jednostavniji.
 
 Nije toliko važno dal' sam baš prisustvovao večeri, niti da li je Stiv upotrebio reč "gluplji"; sličan rezon bi mogao da se primeni i na razvoj softvera. Danas su programski jezici i frameworci takođe proizvodi koji nam se prodaju, poput pelena, dezodoransa i magičnih kuglica za pranje veša. Ako je već tako, zašto onda ne postoji gotovo rešenje za ovaj čest problem u razvoju softvera?
 
