@@ -32,11 +32,11 @@ Da ponovim zapažanje: [religija](https://oblac.rs/pomoz-bog/) u programera je n
 
 ## Rešavanje problema
 
-Za početak, problem se može bar zataškati. Uvođenjem `unique contraints` koji obuhvata polja po kojima se traži (prirodan primarni ključ) makar rešavamo problem nekonzistentnosti u bazi. Upis drugog identiteta je time onemogućen.
+Za početak, problem se može bar zataškati. Uvođenjem `unique constraints` koji obuhvata polja po kojima se traži (prirodan primarni ključ) makar rešavamo problem nekonzistentnosti u bazi. Upis drugog identiteta je time onemogućen.
 
 Upotreba mehanizama za lokovanja u bazi je ovde nemoguća, jer podatak ne postoji, nema reda, nema na čemu postaviti katanac. Rešenje zato može da lokuje nešto što postoji. Može se napraviti posebna tabela koja sadrži samo lokove. Red u ovoj tabeli predstavlja tačku sinhronizacije za tabelu iz našeg sistema. Tada bi nekakva operacija `saveOrUpdate` konsultovala i ovu tabelu. Reč je o distributivnom mehanizmu za lokovanje, te je bilo kakvo alternativno rešenje takođe validno: Redis, ShedLock... Uvedena kompleksnost je pozamašna.
 
-Jedno polu-rešenje koje baš nigde nisam video je trivijalno. Ukoliko postoji `unique constraint` na prirodnom ključu, metoda `saveOrUpdate` može da bude trivijalno napisana, baš kao što se predlaže svuda, s tom razlikom da se stavi da je "ponovljiva". Ukoliko nastane greška u vezi sa konkurentnim zapisom, samo ponovimo funkciju. Sledeće izvršavanje ne bi trebalo da pukne; iako nema garancije da je paralelno izvršavanje došlo do `save` i konačno upisalo red u bazu. Rešenje je toliko transparentno i jednostavno, da ga ne bih odbacio, iako nije potpuno korektno. "Miriše" mi da još ima šta da se kaže, istraži, uporedi... Možda je sasvim dovoljno dobro?
+Jedno polu-rešenje koje baš nigde nisam video je trivijalno. Ukoliko postoji `unique constraints` na prirodnom ključu, metoda `saveOrUpdate` može da bude trivijalno napisana, baš kao što se predlaže svuda, s tom razlikom da se stavi da je "ponovljiva". Ukoliko nastane greška u vezi sa konkurentnim zapisom, samo ponovimo funkciju. Sledeće izvršavanje ne bi trebalo da pukne; iako nema garancije da je paralelno izvršavanje došlo do `save` i konačno upisalo red u bazu. Rešenje je toliko transparentno i jednostavno, da ga ne bih odbacio, iako nije potpuno korektno. "Miriše" mi da još ima šta da se kaže, istraži, uporedi... Možda je sasvim dovoljno dobro?
 
 Rešenje koje koristim je tkzv. `upsert` - ili `on conflict` - operacija u bazi. Svaka baza vredna pomena ima rešenje za ovaj slučaj korišćenja. Knjiški primer `upsert` je sledeći:
 
