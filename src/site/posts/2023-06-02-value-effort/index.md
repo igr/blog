@@ -11,8 +11,6 @@ tag:
   - merenje
 ---
 
-# Termitologija
-
 Da li je prijava na sistem use-case?
 
 <!--more-->
@@ -45,12 +43,12 @@ Nije neka mudrost:
 
 Važno: reč je o _relativnom_ odnosu napora i vrednosti. Ova skala nije za upoređivanje dva korisnička zahteva, nego mera svakog ponaosob.
 
-Ono što razdvaja gorenje soljenje pameti od pameti je kako uporediti dve ortogonalne dimenzije; naročito kako kvantifikovati vrednost? Dok za napor možemo i nešto da smislimo (broj potrebnih dana, brzina razvoja), za merenje vrednost nema mnogo pomoći - ili bar ne znam za njih. Ukoliko postoji, to manje govori o mojoj neupućenosti (iako je na mestu), koliko da su razvojni procesi takvi da neka slična informacija nikada nija došla do mene, što ima težinu zbog nemalog broja različitih okruženja u kojima sam radio.
+Ono što razdvaja gornje soljenje pameti od pameti je kako uporediti dve ortogonalne dimenzije; naročito kako kvantifikovati vrednost? Dok za napor možemo i nešto da smislimo (broj potrebnih dana, brzina razvoja), za merenje vrednost nema mnogo pomoći - ili bar ne znam za njih. Ukoliko postoji, to manje govori o mojoj neupućenosti (iako je na mestu), koliko da su razvojni procesi takvi da neka slična informacija nikada nija došla do mene, što ima težinu zbog nemalog broja različitih okruženja u kojima sam radio.
 
-Kako bilo, siguran sam da postoji bar nekakav način od koga možemo krenuti. Ako je ceo proizvod 100% vrednosti onda svaka funkcionalost predstavlja nekakav udeo. Kako upoređujemo dve vrednosti?
+Kako bilo, siguran sam da postoji bar nekakav model od koga možemo krenuti. Ako je ceo proizvod 100% vrednosti onda svaka funkcionalost predstavlja nekakav udeo. Kako upoređujemo dve vrednosti?
 
 Da li je neophodna? Ukoliko ne bi postojala, da li korisnici i dalji mogu da koriste proizvod? Koliko često je funkcionalnost u aktivnoj upotrebi? Ako ne bi radila kako treba (usled greške), koliko bi to oštetilo korisnike i/ili firmu? Koliko je komplikovana za korišćenje? Koliko je jasna/nejasna vrednost? Koliki je domet vrednosti (broj korisnika u sistemu, broj interakcija)? Kako bilo, metrika vrednosti mora neprestano da se osvežava, iznova meri, upoređuje, kako odmiče razvoj.
 
-Time je tek prvi deo jednačine gotov. Sledi drugi: upoređivanje sa naporom. Da li 11 jedinica napora odgovara 7 jedinicama vrednosti?
+Time je tek prvi deo jednačine gotov. Sledi drugi: upoređivanje sa naporom. Da li 11 jedinica napora odgovara 7 jedinicama vrednosti? Koliko sati je jedan dram?
 
-Naravno da neće nikada postojati egzaktna formula procene. Svaki projekat je neponovljivi univerzum za sebe. Možda bi bilo bi kul da pričamo više o tome?
+Neće nikada postojati egzaktna formula procene. Svaki projekat je neponovljivi univerzum za sebe. Možda bi bilo bi kul da pričamo više o tome?
