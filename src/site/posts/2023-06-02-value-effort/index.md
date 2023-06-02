@@ -1,5 +1,6 @@
 ---
 title: "Value/Effort"
+slug: value-effort
 date: 2023-06-02T07:07:07+00:00
 categories:
   - Razvoj
