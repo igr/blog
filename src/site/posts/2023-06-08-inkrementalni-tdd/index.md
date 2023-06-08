@@ -25,7 +25,7 @@ Inkrementalni razvoj sa uskraćenim informacijama podseća na TDD. Može biti ne
 
 Da sumiram: tim za razvoj ne sme biti uskraćen informacija o zahtevima. Izmene ne možemo da predvidimo, ali bar možemo da ih sami ne stvaramo.
 
-Evo jedne bolje prakse da zameni TDD: `DR4F`. "Dry Run 4 Fun" je opozicija: razvoj počinje na papiru, a ne u editoru. Osmišljava se arhitektura, API, uočavaju se _detalji_ koje treba implementirati. Kod se uopšte ne piše, ali sve ostalo je tu. `Dry Run` faza traje dok se ne prođu svi zahtevi i sve izmene. Nakon toga, razvoj kreće. Sve je ujedno i zabavno, jer ceo tim učestvuje. `Dry Run` se ponavlja sa svakom sledećom izmenom.
+Evo jedne bolje prakse da zameni TDD: `DR4F`. "Dry Run 4 Fun" je opozicija: razvoj počinje na papiru, a ne u editoru. Osmišljava se arhitektura, API, uočavaju se _detalji_ koje treba implementirati. Kod se uopšte ne piše, ali sve ostalo je tu. `Dry Run` faza traje dok se ne prođu svi zahtevi i sve izmene. Nakon toga, kreće kuckanje. Sve je ujedno i zabavno, jer ceo tim učestvuje. `Dry Run` se ponavlja sa svakom sledećom izmenom.
 
 (Tražim DEV influensere za promovisanje #dr4f brenda.)
 
