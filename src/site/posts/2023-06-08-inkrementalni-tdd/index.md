@@ -1,5 +1,5 @@
 ---
-title: "Inkrementalni razvoj kao TDD projekta"
+title: "Inkrementalni razvoj je TDD projekta?"
 date: 2023-06-08T07:07:07+00:00
 categories:
   - Razvoj
@@ -9,7 +9,7 @@ tag:
   - izmene
 ---
 
-A to nije okej.
+To nije okej.
 
 <!--more-->
 
