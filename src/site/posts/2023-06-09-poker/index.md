@@ -18,7 +18,7 @@ _Milorad je novi igrač, senior dev. Zna dosta, ali još nije upućen u projekat
 
 Sekunda. Žaklina ne trepećući gleda u kameru.
 
-_Ah, Žak, stara mustra, igra svoju igru. Provalio sam je još pre par sprintova. Čeka da svi izbace svoje brojke, pa nasumično odluči za neku. Ne želi da se bavi ovom igorm, strah ju je u suštini. Unosi uvek neizvesnost; sa njom rezultat može lako da prevagne na stranu na koju ne treba. Hm, hm, Žaki, šta li ćeš danas odabrati..._
+_Ah, Žak, stara mustra, igra svoju igru. Provalio sam je još pre par sprintova. Čeka da svi izbace svoje brojke, pa nasumično odluči za neku. Ne želi da se bavi ovom igrom, strah ju je u suštini. Unosi uvek neizvesnost; sa njom rezultat može lako da prevagne na stranu na koju ne treba. Hm, hm, Žaki, šta li ćeš danas odabrati..._
 
 Sekunda. Garsija nestrpljivo kucka prstom po stolu.
 
