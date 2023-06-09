@@ -34,7 +34,7 @@ _Dang! Nisam stigao da pogledam... Da vidimo: mikroservis, 2-3 nova API poziva, 
 
 ----
 
-Igranje pokera za potrebe planiranje je samo igra. Suština ove ceremonije je dobronameran egoistički poriv: verujemo da smo sposobni da iznesemo kompleksnu analizu za infinitezimalno vreme da bi dobili na objektivnosti zajedničkog merenja. I već sama ova rečenica nije suvisla. Ne postoji objektivna estimacija. Nije važno čuti mišljenje svih o svemu, već samo odgovornih o onome šta znaju. Konačno, estimacije izvedena na osnovu rečenice-dve u tiketu je isto što i gledanje u staklenu kuglu zarad uvida u tokove budućnosti: radi samo na vašarima.
+Igranje pokera za potrebe planiranja je samo igra. Suština ove ceremonije je dobronameran egoistički poriv: verujemo da smo sposobni da iznesemo kompleksnu analizu za infinitezimalno vreme da bi dobili na objektivnosti zajedničkog merenja. I već sama ova rečenica nije suvisla. Ne postoji objektivna estimacija. Nije važno čuti mišljenje svih o svemu, već samo odgovornih o onome šta znaju. Konačno, estimacije izvedena na osnovu rečenice-dve u tiketu je isto što i gledanje u staklenu kuglu zarad uvida u tokove budućnosti: radi samo na vašarima.
 
 Malo o predviđanjima, iz ugla hroničnog estimatičara: nemam još sve posloženo da bih mogao da ponudim jezgrovit odgovor.
 
