@@ -1,6 +1,6 @@
 ---
 title: "Tokovi razvoja"
-date: 2023-06-08T07:07:07+00:00
+date: 2023-06-14T07:07:07+00:00
 categories:
   - Razvoj
 tag:
