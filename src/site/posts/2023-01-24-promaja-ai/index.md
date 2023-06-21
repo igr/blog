@@ -32,6 +32,7 @@ Ako smo nešto naučili do sada, a imamo sasvim lep uzorak, to je da svaka tehno
 To znači da ćemo AI koristiti za pridobijanje pažnje i akumuliranje nepostojećih vrednosti, dok, zapravo, hranimo mašineriju za manipulaciju. Čekam prvog AInfluensera da potvrdi rečeno.
 
 Slede novi talasi mediokritetskog, nebitnog i plaćenog sadržaja. Grabljenje pažnje. Fokus na količinu.
+
 Nema razloga da bude drugačije: tako je uvek bilo do sada. AI tek treba da povrati uložene novce.
 
 ## AI == Application Ignorance

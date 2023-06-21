@@ -35,7 +35,7 @@ Da sumiram: nema ničega elegantnog u Pajton kodu. (Al' kida sa ekosistemom.)
 
 ----
 
-Tu ću negde stati; nije mi namera da bacam drvlje i kamenje.  Niti tinjam gnevom ili nezadovoljstvom; šta više, takve emocije su ovde potpuno isključene. Da, postoje pajtonisti koji pišu dobar kod; neki slegnu ramenima i opovrgnu sve napisano odgovarajući da ne znam šta je to _dobar_ Pajton. Ah, i ćorava koka zrno nađe - u svakom programskom ekosistemu se može napraviti odličan softver. To što se nešto koristi, ne znači da je i valjano.
+Tu ću negde stati; nije mi namera da bacam drvlje i kamenje.  Niti tinjam gnevom ili nezadovoljstvom; štaviše, takve emocije su ovde potpuno isključene. Da, postoje pajtonisti koji pišu dobar kod; neki slegnu ramenima i opovrgnu sve napisano odgovarajući da ne znam šta je to _dobar_ Pajton. Ah, i ćorava koka zrno nađe - u svakom programskom ekosistemu se može napraviti odličan softver. To što se nešto koristi, ne znači da je i valjano.
 
 Nego, kako smo došli do ovde?
 
