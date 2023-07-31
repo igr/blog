@@ -25,9 +25,9 @@ Preko noći, Elze je zauvek nestala.
 
 ----
 
-Linter nema milosti. Okrutnost je slabost svakog neinteligentnog sustava; uporno se sprovodi da se slabost ne bi ukazala. Linter posmatra programski kod samo kao struktuiran tekst, bez trunke razumevanja. Zato zahteva slepa pravila. Što je što programeri baš vole pravila.
+Linter nema milosti. Okrutnost je slabost svakog neinteligentnog sustava; uporno se sprovodi da se slabost ne bi ukazala. Linter posmatra programski kod samo kao struktuiran tekst, bez trunke razumevanja. Zato zahteva slepa pravila. Štos je što programeri baš vole pravila.
 
-Jedna zanimljiva rasprava mi je privukla pažnju. Na jednom projektu je uključen linter i podrazumevano pravilo je obrisalo `else` koje je u vezi sa `return`:
+Jedna zanimljiva rasprava mi je privukla pažnju. Na projektu je uključen linter i podrazumevano pravilo je obrisalo `else` koje je u vezi sa `return`:
 
 ```plaintext
 if what?
@@ -49,7 +49,7 @@ Ima kome je pravilo zasmetalo, te je usledila slek diskusija. Svi su pristojno i
 **A** - Sviđa mi se pravilo. Ne volim bespotreban kod. Teže mi je da razumem drugačije. Pravilo je podrazumevano. Piše u knjizi.
 **B** - Ne sviđa mi se pravilo. Teže mi je da razumem drugačije.
 **C** - `if` je problem, ne `else`.
-**D** - zameniti sa `switch` konstruktom. Ili pak ne, jer je u korišćenom jeziku `switch` nova stvar (da, leta gospodnjeg 2023.), pa će biti nepoznata ostalim programerima.
+**D** - zameniti sa `switch` konstruktom. Ili pak ne, jer je u korišćenom jeziku `switch` nova stvar, pa će biti nepoznata ostalim programerima.
 **E** - nisu sva pravila ista. Neka pravila su arbitrarna: za njih postoji samo doza saglasnosti među programerima koliko je pravilo važno.
 **F** - pošto u diskusiji učestvuje samo šestoro, to nije dovoljan uzorak za donošenje statistički značajne odluke.
 
@@ -58,7 +58,7 @@ Ima kome je pravilo zasmetalo, te je usledila slek diskusija. Svi su pristojno i
 
 Nisam učestvovao u diskusiji; vodila se u drugoj vremenskoj zoni. Nisam siguran ni da li bih učestvovao; brzina kojom se razmenjuju stavovi kroz poruke na sleku ne odgovara načinu kako sam dolazim do odgovora. (Ujedno odličan trenutak zapitati se kako bi takva komunukcija trebalo da izgleda!)
 
-Javio mi se Bob Marli u snu. "Vidi, čo’ek", reče mi između dva dima, "Elze plače. Aj budi gari, ljubi te rasta; napiši koju. Pevati nemoj, ni u snu; to ću ja. Aj, čo’ek, odoh da pikam loptu.""
+Jedne noći mi se javio Bob Marli. "Vidi, čo’ek", reče mi između dva dima, "Elze plače. Aj budi gari, ljubi te rasta; napiši koju. Pevati nemoj, ni u snu; to ću ja. Aj, čo’ek, odoh da pikam loptu.""
 
 Kad te lepo zamole, uradiš, pa čak i kada Bob Marli zvuči kao vojvođanski predratni prevarant.
 
@@ -96,7 +96,7 @@ Zato su odgovori **A** i **B** besmisleni; nije im mesto u ovakvoj diskusiji. Da
 
 **C** je zanimljiv odgovor: ako već `if` nosi kognitivnu težinu, hajde da ga nema. Za početak, `if` mora da postane izraz - to se neće desiti skoro u nekim mainstream jezicima. Dalje, `return` bi trebalo da je samo jedan; i to poslednji. Neki jezici i ne zahtevaju eksplicitno pisanje `return`, podrazumeva se da se vraća rezultat poslednjeg izraza. I konačno, trebalo bi da se otklonimo ka funkcionalnom (rekao bih: proceduralnom), što je tema za drugi put.
 
-**D** je nepotpun. Switch konstrukt - nemam bolji naziv, podrazumevam i sve što liči na njega (_for comprehension_) - zahteva ADT i posle pattern matching. Drugim rečima, ne želiš da ti uslov bude `boolean`. Eto lepog i smislenijeg pravila za lint - izbaciti `boolean` iz potpisa metoda.
+**D** je nepotpun. Switch konstrukt - nemam bolji naziv, podrazumevam i sve što liči na njega (_for comprehension_) - zahteva ADT i posle pattern matching. Drugim rečima, ne želiš da ti uslov bude `boolean`. Eto smislenijeg pravila za lint - izbaciti `boolean` iz potpisa metoda.
 
 **F** je ispravno razmišljanje sa dve pogrešne pretpostavke. Prva je već objašnjena: ne znamo da merimo razumevanje, a odlučujemo o njemu. Druga pretpostavka je da bi trebalo da postoji ubedljiv dogovor programera u firmi oko pravila razumevanja. Pomalo naivno:) Umesto toga, bolje je ukloniti sva nejasna pravila ukoliko žuljaju: pisanje koda mora da teče.
 
