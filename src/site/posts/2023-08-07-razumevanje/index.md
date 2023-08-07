@@ -115,7 +115,7 @@ Nastavak ovog istraživanja započeto sa banalnim `else`/`return` je potom rezul
 
 ## Kako razumemo?
 
-Teško je opisati koliko sam željno progutao sve napisano u knjizi... Suština se poklapa sa mojim uvidima, od čega se uzbuđeno naježiš i poželiš još. Imaš i šta; knjiga nastavlja dalje gde sam zapeo i nudi sažetak naučnih razumevanja o razumevanju. Ovo nije predstavljanje knjige, te neću detaljno o sadržaki; evo samo najvažnoijeg zapisa.
+Teško je opisati koliko sam željno progutao sve napisano u knjizi... Suština se poklapa sa mojim uvidima, od čega se uzbuđeno naježiš i poželiš još. Imaš i šta; knjiga nastavlja dalje gde sam zapeo i nudi sažetak naučnih razumevanja o razumevanju. Ovo nije predstavljanje knjige, te neću detaljno o sadržaju; evo samo najvažnijeg.
 
 Postoje tri kognitivna procesa: STM (short-term, kratkoročna memorija), LTM (long-term, dugoročna memorija) i radna memorija.
 
@@ -135,9 +135,9 @@ Razumevanje se obavlja na sledeći način:
 
 Dalje, razmišljamo u "delovima" (chunk). Što više informacija imamo sačuvano o određenoj temi, to je lakše efikasno podeliti informacije u delove. Delovi služe kao prečice u razmišljanju, jer umanjuju kognitivni napor razumevanja.
 
-Konačno - što se više suočavamo sa kodom i ponavljamo; mi učimo. Punimo i održavamo LTM da bi koristila radnoj memoriji.
+Konačno - što se više suočavamo sa različitim kodom i ponavljamo; mi učimo. Punimo i održavamo LTM da bi koristila radnoj memoriji. Gradimo delove razumevanja.
 
-Odjednom mi sve ima smisla. I zašto imamo obrasce, i zašto su koding intervjui debilni, i zašto i sa iskustvom pišeš loš kod, i šta je navika, i odakle pravila o čistom kodu... Predivnoća. Da mogu, bavio bih se ovom temom svo preostalo vreme. Vidim da se naša programerska okruženja (alatke) moraju modifikovati zarad boljeg razumevanja. Ono što sada imamo je i dalje samo linearni tekst. Treba nam kognitivno sintaksno bojenje, mrežno uvezivanje, a ne hijerarhijsko, merenje kognitivne opterećenosti... Eh.
+Odjednom mi sve ima smisla. I zašto imamo obrasce, i zašto su koding intervjui debilni, i zašto i sa iskustvom pišeš loš kod, i šta je navika, i odakle pravila o čistom kodu... Da mogu, bavio bih se ovom temom svo preostalo vreme. Vidim da se naša programerska okruženja (alatke) moraju modifikovati zarad boljeg razumevanja. Ono što sada imamo je i dalje samo linearni tekst. Treba nam kognitivno sintaksno bojenje, mrežno uvezivanje, a ne hijerarhijsko, merenje kognitivne opterećenosti... Eh.
 
 ----
 
