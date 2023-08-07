@@ -9,7 +9,7 @@ tag:
   - razvoj
 ---
 
-Dođeš do nekih uvida, dosađuješ ljdima o tome, a potom dobiješ potvrdu od relevantne strane. Dobar osećaj.
+Dođeš do nekih uvida, dosađuješ ljudima o tome, a potom dobiješ potvrdu od relevantne strane. Dobar osećaj.
 
 <!--more-->
 
