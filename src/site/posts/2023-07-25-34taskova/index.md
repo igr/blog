@@ -9,6 +9,8 @@ tag:
 
 "Milooooojko! Uspela sam!"
 
+<!--more-->
+
 Topli, letnji dan je tromo odugovlačio svoje popodnevne sate, kao da se i sam umorio od sveopšte žege. Usijani beton gradskih blokova žmirkao je omorom, koja je uporno pronalazila put do radne sobe u stanu Martinovića.
 
 "Milojkoooooo, bre!", dreknula je Ljubica još glasnije.
