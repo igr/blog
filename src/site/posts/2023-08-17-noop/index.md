@@ -16,7 +16,7 @@ Programiranje bi trebalo da je jednostavnije nego što jeste.
 
 Naučeno teško napuštamo. Kada ideja jednom postane popularna, uprošćava se do nerazumevanja.
 
-Sledi angedota iz starog Japana. Programer je čuo da tamo negde živi mudrac koji je dostigao konačni nivo razumevanja kako pisati kod. Krenuo da je ga traži. Prošao je preko sedam mora i sedam gora za sedam i dvadeset godina. Konačno, programer je pronašao mudraca: ovaj je mirno sedeo za kompjuterom u skromnoj sobi. Došavši do njega, sada već matori programer ga upita: "Kako ispravno pisati program?" Mudrac se zamisli za trenutak, pa odgovori:
+Sledi angedota iz starog Japana. Programer je čuo da tamo negde živi mudrac koji je dostigao konačni nivo razumevanja kako pisati kod. Krenuo je da ga traži. Prošao je preko sedam mora i sedam gora za sedam i dvadeset godina. Konačno, programer je pronašao mudraca: ovaj je mirno sedeo za kompjuterom u skromnoj sobi. Došavši do njega, sada već matori programer ga upita: "Kako ispravno pisati program?" Mudrac se zamisli za trenutak, pa odgovori:
 
 > Piši proceduralni kod.
 
