@@ -1,6 +1,6 @@
 ---
 title: "PP, FP, OOP, Imp"
-date: 2023-17-08T07:07:07+00:00
+date: 2023-08-17T07:07:07+00:00
 categories:
   - Razvoj
 tag:
