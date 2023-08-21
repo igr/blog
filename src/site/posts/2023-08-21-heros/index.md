@@ -15,8 +15,8 @@ O programiranju je najlakše pričati.
 
 <!--more-->
 
-Osmislio sam nekakav zadatak koji bi mogao da posluži za prikaz različitih metodologija i načina programiranja, kao i programskih jezika. Nije algoritamski, ali nije ni baš trivijalan. Postoji mogućnost da se kod odvoji u celine, module.
+Osmislio sam nekakav zadatak koji bi mogao da posluži za prikaz različitih metodologija i načina programiranja, kao i programskih jezika. Nije algoritamski, ali nije ni baš trivijalan. Postoji mogućnost da se kod odvoji u bar dve celine, modula.
 
-Nisam siguran da li je primer ipak dovoljan, upao sam u analizu-paralizu... kako bilo, ostavljam ovde link na repo sa opisom zadatka i dve implementacije.
+Na kraju nisam siguran da li je primer ipak dovoljan, upao sam u analizu-paralizu... kako bilo, ostavljam ovde link na repo sa opisom zadatka i dve implementacije.
 
 [hero-vs-monsters](https://github.com/igr/hero-vs-monsters)
