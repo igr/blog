@@ -3,7 +3,7 @@ title: "Lutajuća razmišljanja"
 date: 2023-09-01T07:07:07+00:00
 categories:
   - Razvoj
-tag
+tag:
   - razvoj
 ---
 
