@@ -63,7 +63,7 @@ Tehnologija nije tu da nekoga zabavi. Tehnologija je tu da bude primenjena nauka
 
 Kada sam prvi put radio sa Skalom, bolelo je. Psovao sam, udario kuče koje nemam, razbio skupocenu vazu sa ostrva Murano koju nikada nisam kupio, dramio i kukao na sav glas. Međutim, to je deo puta na kome te čeka ishod: preciznost, ispravnost, jasnoća. Nisam vanredno pametan pa da ne budem ponizan pred ovakvim darovima.
 
-## Ili si deo problema, ili si deo rešenja.
+## Ili si deo problema, ili si deo rešenja
 
 Nije ovo osuda odluke koju je dotični sproveo u delo. Razumljivo je da ima problema sa TypeScriptom; od BabeSkripta ne možeš napraviti devojku. Slobodan je da čini kako mu se prohte.
 
