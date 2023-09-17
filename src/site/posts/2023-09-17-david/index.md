@@ -69,4 +69,4 @@ Nije ovo osuda odluke koju je dotični sproveo u delo. Razumljivo je da ima prob
 
 Ovo je osuda nedostatku **tehnološke etike** koja bi naša struka trebalo da ima: neznanje se ne može pravdati ličnim preferencama.
 
-Drug Dejvid ne bi trebalo da se bavi javim traženjem izgovora za svoje odluke. Dosta je bilo priznati: "mi ne znamo za bolje." I to bi bilo sasvim dovoljno, taman za jednu vožnju liftom.
+Drug Dejvid ne bi trebalo da se bavi javnim traženjem izgovora za svoje odluke. Dosta je bilo priznati: "mi ne znamo za bolje." I to bi bilo sasvim dovoljno, taman za jednu vožnju liftom.
