@@ -1,6 +1,6 @@
 ---
 title: "Tok misli, moduli, demistifikacija"
-date: 2023-09-01T07:07:07+00:00
+date: 2023-09-23T07:07:07+00:00
 categories:
   - Razvoj
 tag:
@@ -33,6 +33,7 @@ Menjamo `a()` i `b()` da pozivaju `r()` umesto `s()`.
 Graf poziva izgleda:
 
 ![](b.png)
+{.center}
 
 ---- 
 
@@ -41,6 +42,7 @@ Graf poziva izgleda:
 Problem je što su i `r()` i `s()` dostupne u isto vreme u okviru iste kompajbilne jedinice. Hajde da na graf poziva dodamo graf mogućih poziva funkcije `s()`:
 
 ![](c.png)
+{.center}
 
 Crvenom su označani mogući pozivi `s()` koji zaobilaze `r()`. U pitanju su **greške**.
 
@@ -55,6 +57,7 @@ Deklarisanje vidljivosti u programskim jezicima nije baš sjajna; korišćenje f
 Drugi način je da se `s()` odvoji u zasebnu kompajbilnu jedinicu, kojoj može da pristupa samo `r()`. To je nemoguće, jer sve što vidi `r()` to vide i `a()` i `b()` (deo su istog konteksta). Dakle, `r()` i `s()` se odvajaju, a `r()` je dostupan samo preko svog API interfejsa:
 
 ![](d.png)
+{.center}
 
 ----
 
@@ -77,6 +80,7 @@ Dosadno vs. ispravno: ili ćemo prihvatiti vrednost ispravnog, ili ćemo naći n
 Elegantnije rešenje bi bilo da odvojimo `s()` na takav način da ga možemo zameniti sa `r()`; polimorfizam.
 
 ![](e.png)
+{.center}
 
 Često nije moguće zbog korišćenih frejmvorka.
 
