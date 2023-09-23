@@ -39,12 +39,12 @@ Graf poziva izgleda:
 
 Šta je problem?
 
-Problem je što su i `r()` i `s()` dostupne u isto vreme u okviru iste kompajbilne jedinice. Hajde da na graf poziva dodamo graf mogućih poziva funkcije `s()`:
+Problem je što su i `r()` i `s()` dostupne u isto vreme u kontekstu iste kompajbilne jedinice. Hajde da na graf poziva dodamo graf mogućih poziva funkcije `s()`:
 
 ![](c.png)
 {.center}
 
-Crvenom su označani mogući pozivi `s()` koji zaobilaze `r()`. U pitanju su **greške**.
+Crvenom su označani pozivi `s()` koji zaobilaze `r()`. U pitanju su **greške**.
 
 > Ukoliko postoji mogućnost greške, ona će se sigurno dogoditi. Programiranje je proces koji nastoji da umanji mogućnost greške 1) u razvojnom procesu i 2) tokom izvršavanja sistema.
 
@@ -71,7 +71,7 @@ Drugi način je da se `s()` odvoji u zasebnu kompajbilnu jedinicu, kojoj može d
 
 Da li vam je ovaj tok razmišljanja razuman (ukoliko je pretpostavka tačna)?
 
-Ako je tako, zašto onda ne bi od samog početka projekta  razdvajali `r()` od `a()`? Šta uštedimo time što to ne radimo?
+Ako je tako, zašto onda ne bi od samog početka projekta razdvajali `s()` od `a()`? Šta uštedimo time što to ne radimo?
 
 Dosadno vs. ispravno: ili ćemo prihvatiti vrednost ispravnog, ili ćemo naći način da ga dostignemo na manje "dosadan" način. (A šta tačno znači 'dosadno'? Da li je pisanje testova dosadno? Dokumentacije? Analiza sistema?) Možda je problem u programskom jeziku koji ne ume da deklariše wrappere elegantnije? Možda možemo da generišemo kod?
 
@@ -86,7 +86,7 @@ Elegantnije rešenje bi bilo da odvojimo `s()` na takav način da ga možemo zam
 
 ## Demistifikacije
 
-"Koliko često menjate bazu u toku razvoja?" je pogrešno pitanje koje se često koristi u pežorativnom smislu. Prava namena nikada nije da menjamo bazu: pretpostavljamo da upiti nisu dovoljni.
+"Koliko često menjate bazu u toku razvoja?" je pitanje koje se često koristi u pežorativnom smislu dovodeći u pitanju razlog postojanja opisanog sloja. Prava namena nikada nije da menjamo bazu, već pretpostavljamo da upiti `s()` nisu atomski, dovoljni.
 
 ----
 
@@ -100,23 +100,26 @@ Ne vidim potrebu da se crtaju krugovi i heksagrami. Moduli se uvezuju kako se uv
 
 ## Bonus: SF
 
-Hajde da se razmaštamo. Hajde da prihvatimo da je OK pisati kod koji ostavlja mesta ljudskoj grešci; sigurno je skuplje praviti ispravan kod nego onaj u kome se greške dozvoljavaju i ispravljaju armijom programera.
+Hajde da se razmaštamo. Hajde da prihvatimo da je OK pisati kod koji ostavlja mesta ljudskoj grešci; sigurno je skuplje praviti ispravan kod nego onaj u kome se greške dozvoljavaju i ispravljaju _nekada_.
 
-Ako imamo nekakav kod, onda:
+Ako imamo nekakav (pravi, tipizirani, a ne script) kod, onda:
 
-+ možemo izvući graf poziva iz statičke analize (i dalje nije 100% obuhvaćeno)
-+ znamo koje sve funkcije mogu da se vide i komponuju (nadovežu)
++ možemo izvući graf poziva iz statičke analize (nije kompletan)
++ znamo koje funkcije mogu da se komponuju (nadovežu)
 + imamo runtime "rendgenski" snimak tokova podataka i poziva funkcija.
++ znamo gde su ulazi i izlazi
++ znamo gde su fizičke granice: procesi, mreža
++ znamo kako su podaci rasportranjeni
 
-Reč je o nekakvom grafu, u kome su čvorovi funkcije. To je različito od teorije kategorija kako se sada primenjuje u programskim jezicima. Liči da bi mogla da se napravi kategorija sa navedenom postavkom. Ali, udaljio sam se sad od teme.
+Reč je o nekakvom naprednom grafu poziva, u kome su čvorovi funkcije. Liči da bi mogla da se napravi slobodna kategorija sa navedenom postavkom: objekat je funkcija, relacija je postojanje poziva. To je različito od teorije kategorija kako se sada primenjuje u programskim jezicima. Udaljio sam se sad od teme.
 
-Naš sistem bi bio samo-regulišući. U njega bi samo ugurali kod, a sistem bi sam sebe analizirao - i menjao - tokom rada.
+Naš sistem bi bio _samo-regulišući_. U njega bi samo ugurali kod, a sistem bi sam sebe analizirao - i **menjao** - tokom rada.
 
-Na primer, ako primeti da iz `a()` se zove `s()`, a postoji - pazi sad, _duži_ put (jer duže znači da se radi više), sistem bi mogao da sam bira poziv na `r()`. Time bi nas terao da između dva poziva ne postoji više načina kako da se dođe od jednog do drugog. Ne samo da bi prepoznao grešku, već bi mogao da je i sanira.
+Na primer, ako primeti da iz `a()` se zove `s()`, a postoji _duži_ put (jer duže znači da se radi više), sistem bi mogao da sam bira poziv na `r()`. Gledao bi da između dva poziva ne postoji više načina kako da se dođe od jednog do drugog. Ne samo da bi prepoznao grešku, već bi mogao da je i sanira.
 
-Dalje, sistem bi mogao da pronalazi setove funkcija za koje postoji nekakva zakonitost:
+Sistem bi mogao da zna gde se sve menjaju podaci i da broj tih lokacija smanji. Sistem bi mogao da prepozna moguće race-conditions i _sam_ uključi lokovanje pristupa. Sistem bi mogao da napravi novi čvor (dakle, funkciju) koji grupiše nekoliko identičnih poziva sa različitih mesta u jednu tačku. Broj poziva preko fizičkih granica bi se tako umanjivao. Sistem bi mogao da pronalazi setove funkcija za koje postoji nekakva zakonitost:
 
 + slojevi se dobijaju grupisanjem funkcija koje su na istoj udaljenosti od ulaza.
 + vertikalni slojevi se dobijaju grupisanjem svih poziva koji završavaju u istom izlazu (na pr. u tabeli `books`.)
 
-Mogli bi da imamo i načina da opišemo pravila grupisanja, tokova i sl.
+Mogao bi da postoji način da opišemo pravila grupisanja, tokova i, uopšte, sistema. šbbkbb.
