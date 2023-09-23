@@ -13,7 +13,7 @@ Fahreta Jahić je bila tek osmogodišnja klinka kada se održala prva konferenci
 
 <!--more-->
 
-Malo je poznato da se Fahreta u slobodno vreme bavila tehnologijama; svoje muzičko umeće je nadahnuto prelila na ništa manje nego softversko inžernjerstvo. Smeo potez, vanredno neubičajen za to vreme. Između nastupa po hotelima i restoranima Juge, Fahreta je polako dolazila do sve većih uvida u razvoj softvera koji su bili daleko ispred svog vremena. Nemajući kome da ih podeli, a na predlog Milovana Ilića, uradila je ono što joj je išlo od ruke - tačnije, od glasnih žica - i utkala svoje ideje u tekstove svojih najpopularnijih pesama.
+Malo je poznato da se Fahreta u slobodno vreme bavila tehnologijama; svoje muzičko umeće je nadahnuto prelila na ništa manje nego softversko inženjerstvo. Smeo potez, vanredno neuobičajen za to vreme. Između nastupa po hotelima i restoranima Juge, Fahreta je polako dolazila do sve većih uvida u razvoj softvera koji su bili daleko ispred svog vremena. Nemajući kome da ih podeli, a na predlog Milovana Ilića, uradila je ono što joj je išlo od ruke - tačnije, od glasnih žica - i utkala svoje ideje u tekstove svojih najpopularnijih pesama.
 
 ## Sitnije, Cile, Sitnije
 
@@ -22,7 +22,7 @@ Malo je poznato da se Fahreta u slobodno vreme bavila tehnologijama; svoje muzi�
 > sitnije, Cile, sitnije
 > pokaži mi najbitnije
 
-Fahreta ovde sasvim jasno govori o mikroservisima, servisnoj arhitekturi. Postavlja pravilo za granicu konteksta: mikroservis mora da obavlja _najbitnije_ stvari. U suportnom, nije odgovarajuća granulacija apstrakcije komponente; mora se refaktorisati, _usitniti_.
+Fahreta ovde sasvim jasno govori o mikroservisima, servisnoj arhitekturi. Postavlja pravilo za granicu konteksta: mikroservis mora da obavlja _najbitnije_ stvari. U suprotnom, nije odgovarajuća granulacija apstrakcije komponente; mora se refaktorisati, _usitniti_.
 
 Mikroservis mora da bude raspoloživ odmah, sve vreme. Mikroservis je efemeran: može se restartovati, zameniti, nadograditi bez uticaja na ostatak sistema; _najhitnije_.
 
@@ -52,7 +52,7 @@ Ostaje nepoznato da li je Fahreta isključivo verovala u inkrementalni razvoj. O
 
 Nema mesta nedoumici: Fahreta je velika pristalica funkcionalnog razvoja. Pesma govori o kompoziciji funkcija. Disko i kolo su tipovi koje treba _blisko_ uvezati, to se postiže morfizmom, tj. funkcijom. Simbolično, _harmonika_ predstavlja konstruktor tipova: drži jedan tip (`Muzika[Disko]`), pa onda kroz `flatMap` radi transformacija koja daje novi tip (`Muzika[Kolo]`).
 
-Finalna strofa nagoveštava da je kompozicija mehanizam koji zadvoljava različite "želje" - nisu li to i dalje tipovi programskoh jezika? Direktan put od `A` (disko klub) do `C` (poselo) ide preko `B` (Brena.)
+Finalna strofa nagoveštava da je kompozicija mehanizam koji zadovoljava različite "želje" - nisu li to i dalje tipovi programskog jezika? Direktan put od `A` (disko klub) do `C` (poselo) ide preko `B` (Brena.)
 
 ## Hajde da se volimo
 
