@@ -22,11 +22,11 @@ Malo je poznato da se Fahreta u slobodno vreme bavila tehnologijama; svoje muzi�
 > sitnije, Cile, sitnije
 > pokaži mi najbitnije
 
-Fahreta ovde sasvim jasno govori o mikroservisima, servisnoj arhitekturi. Postavlja pravilo za granicu konteksta: mikroservis mora da obavlja _najbitnije_ stvari. U suprotnom, nije odgovarajuća granulacija apstrakcije komponente; mora se refaktorisati, _usitniti_.
+Fahreta ovde sasvim jasno govori o mikroservisima, servisnoj arhitekturi. Postavlja pravilo za granicu konteksta: mikroservis mora da obavlja _najbitnije_ stvari. U suprotnom, nije odgovarajuća granulacija apstrakcije komponente; mora se dalje refaktorisati, _usitniti_.
 
-Mikroservis mora da bude raspoloživ odmah, sve vreme. Mikroservis je efemeran: može se restartovati, zameniti, nadograditi bez uticaja na ostatak sistema; _najhitnije_.
+Mikroservis mora da bude raspoloživ odmah, sve vreme. Mikroservis je efemeran: može se restartovati, zameniti i nadograditi bez uticaja na ostatak sistema; _najhitnije_.
 
-Neosporan je izuzetan fokus na usitnjavanju. Smatra se da je Fahreta ovde otišla i dalje od servisne arhitekture i da upućuje na svakodnevni razvoj koda. Programski kod treba da bude usitnjen: klase iseckane na metode, metode što kraće... Kontraverzno je što mnogo kasnije nešto vrlo slično zapisuje Robert Cecil Martin, zvani "tečo", u svojim poznatim knjigama.
+Neosporan je izuzetan fokus na usitnjavanju. Smatra se da je Fahreta ovde otišla i dalje od servisne arhitekture i da upućuje na svakodnevni razvoj koda. Programski kod takođe treba da bude usitnjen: klase iscepkane na metode, metode da su što kraće... Kontraverzno je što tek mnogo kasnije nešto vrlo slično zapisuje Robert Cecil Martin, zvani "tečo", u svojim poznatim knjigama.
 
 ## Čik pogodi
 
@@ -35,13 +35,13 @@ Neosporan je izuzetan fokus na usitnjavanju. Smatra se da je Fahreta ovde otišl
 > šta mi treba
 > šta mi godi
 
-Za Fahretu razvoj softvera nije bio samo pisanje koda. Iste godine kada Ken Schwaber počinje da ukazuje na Skram, pojavila se pesma koja sumira izvesne prakse agilnih metodologija.
+Za Fahretu razvoj softvera nije samo pisanje koda. Iste godine kada Ken Schwaber počinje da ukazuje na Skram, pojavila se pesma koja sumira izvesne prakse agilnih metodologija.
 
 Pitanje u refrenu pesme je zapravo upućivanje na korisničke zahteve koji će biti implementirani. Da budemo precizniji - na vrednosti koje razvoj softvera treba da isporuči: ono što nam _treba_ (da softver radi ispravno) i ono šta nam _godi_ (udoban UI i UX su obavezan deo proizvoda.)
 
 Ipak, genijalnost ove pesme leži u definisanju iteracija razvoja! Time što je u pitanju refren koji se učestalo _ponavlja_, Fahreta stavlja u prvi plan iterativni softverski razvoj, koji u svakoj iteraciji mora da odgovori na potpuno ista pitanja.
 
-Ostaje nepoznato da li je Fahreta isključivo verovala u inkrementalni razvoj. Ostatak pesme to, možda, nagoveštava: tekst obećava sve moguće _darove_ ukoliko se prati iterativni proces proizvodnje vrednosti. Neki od progresivnijih glasova u agilnoj zajednici tvrde da pesma čak nosi nagoveštaj Kaizen pristupa razvoja.
+Ostaje nepoznato da li je Fahreta isključivo verovala u inkrementalni razvoj. Ostatak pesme to, možda, nagoveštava: tekst obećava sve moguće _darove_ ukoliko se prati iterativni proces proizvodnje vrednosti. Neki od progresivnijih glasova u agilnoj zajednici tvrdi da pesma čak nosi nagoveštaj Kaizen filozofije.
 
 ## Mile Voli Disko
 
@@ -63,9 +63,9 @@ Finalna strofa nagoveštava da je kompozicija mehanizam koji zadovoljava različ
 
 Ova Fahretina pesma pravi svojevrstan razdor u IT zajednici.
 
-Jedni smatraju da je pesma ironična osuda preduzetničkog života, u kome je energično guranje (engl: hustle) sve šta postoji. Bitno je da se _igra_ dalje, i samo dalje. Cilj je da se dođe do proizvoda koga korisnici _vole_, time njegova vrednost postaje enormna; kao da se vidi naznaka postojanja socijalnih mreža u ostatku pesme ("šta radi rodbina" - nije li ovo pitanje za Facebook? "napila se, napila" - nije li ovo video za TikTok?)
+Jedni smatraju da je pesma ironična osuda preduzetničkog života, u kome je energično guranje (engl: hustle) sve šta postoji. Bitno je da se _igra_ dalje, i samo dalje. Cilj je da se dođe do proizvoda koga korisnici _vole_, time njegova vrednost postaje enormna. Kao da se naslućuje nastanak socijalnih mreža u ostatku pesme ("šta radi rodbina" - nije li ovo pitanje za Facebook? "napila se, napila" - nije li ovo video za TikTok?)
 
-Drugačiji pogled vatreno brane kolege iz ljudskih resursa (HR). Čak je i osamdesetih važilo da su softverski stručnjaci pomalo povučeni. Kolege iz ljudskih resursa tvrde da ova pesma govori o zajedničkom radu u timu, u kome bi svi zajedno trebalo da _igramo_ kako svira. Jedino timski možemo doći dotle da se zaista i _volimo_ u poslovnom okruženju, što je ultimativni cilj svake HR kancelarije. Pomalo romantična analiza, ali svakako na mestu.
+Drugačiji pogled vatreno brane kolege iz ljudskih resursa (HR). Čak je i osamdesetih važilo da su softverski stručnjaci pomalo povučeni. Kolege iz ljudskih resursa tvrde da ova pesma govori o zajedničkom radu u timu, u kome bi svi zajedno trebalo da _igramo_ kako već svira. Jedino zajedno možemo doći dotle da se zaista i _volimo_ u poslovnom okruženju, što u prenesenom značenju stavlja funkcionalan tim na prvo mesto; a to je ultimativni cilj svake HR kancelarije. Pomalo romantična analiza, ali svakako na mestu.
 
 # Čačak, Čačak
 
@@ -85,7 +85,7 @@ public class Čačak extends Život implements RockNRoll {
 }
 ```
 
-Ovo je trenutno opšte-važeće razumevanje ove pesme, kakvo je navedeno u univerzitetskim udžbenicima. Dužni smo da se osvrnemo i na nadogradnju ovog razmišljanja.
+Ovo je danas opštevažeće razumevanje ove pesme, kakvo je navedeno i u univerzitetskim udžbenicima. Dužni smo da se osvrnemo i na nadogradnju ovog razmišljanja.
 
 Nemali broj stručnjaka smatra da je `Život` zapravo `trait` (_moj i tvoj_). Smatra se da nema razloga praviti zajednički interfejs za `Život`; oni mogu biti potpuno različiti u kontekstu izvršavanja koda pesme. Nude sledeću implementaciju:
 
@@ -108,7 +108,7 @@ Ovakva implementacija je svakako potpunija; ali zahteva naprednije programske je
 
 ---
 
-Tekst je preuzet iz knjige: "Lepa Brena i Slatki Greh"; u izdanju Manning izdavačke kuće:
+Tekst je preuzet iz knjige: "Lepa Brena i Slatki Greh"; obavljena u izdavačkoj kući Manning:
 
 ![](book.png)
 {.center}
