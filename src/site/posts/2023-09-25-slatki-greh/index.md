@@ -7,8 +7,6 @@ tag:
   - smešno
 ---
 
-# Slatki Greh
-
 Fahreta Jahić je bila tek osmogodišnja klinka kada se održala prva konferencija softverskih inženjera u Garmischu, živopisnom nemačkom planinskom gradiću.
 
 <!--more-->
