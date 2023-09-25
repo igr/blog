@@ -11,7 +11,7 @@ Fahreta Jahić je bila tek osmogodišnja klinka kada se održala prva konferenci
 
 <!--more-->
 
-Malo je poznato da se Fahreta u slobodno vreme bavila tehnologijama; svoje muzičko umeće je nadahnuto prelila na ništa manje nego softversko inženjerstvo. Smeo potez, vanredno neuobičajen za to vreme. Između nastupa po hotelima i restoranima Juge, Fahreta je polako dolazila do sve većih uvida u razvoj softvera koji su bili daleko ispred svog vremena. Nemajući kome da ih podeli, a na predlog Milovana Ilića, uradila je ono što joj je išlo od ruke - tačnije, od glasnih žica - i utkala svoje ideje u tekstove svojih najpopularnijih pesama.
+Malo je poznato da se Fahreta u slobodno vreme bavila tehnologijama; svoje muzičko umeće je nadahnuto prelila na ništa manje nego softversko inženjerstvo. Smeo potez, vanredno neuobičajen za to vreme. Između nastupa po hotelima i restoranima Juge, Fahreta je polako dolazila do sve većih uvida u razvoj softvera koji su bili daleko ispred svog vremena. Nemajući kome da ih podeli, a na predlog Milovana Ilića, uradila je ono što joj je išlo od ruke - tačnije, od glasnih žica - i utkala ideje u tekstove svojih najpopularnijih pesama.
 
 ## Sitnije, Cile, Sitnije
 
