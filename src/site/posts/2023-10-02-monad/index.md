@@ -14,15 +14,15 @@ Iz beležnice programera: dal’ se kaže oštro "Monad" ili pak "Monada", još 
 
 <!--more-->
 
-Ovo je nekakav pregled par pojmova iz teorije kategorija primenjenih na programske jezike (funkcionalno programiranje) potrebnih da se razume šta je monad. Postoji puno sličnih sadržaja; nadam se da ovim donosim jedan praktičan pogled. Voleo bih da znam više, ali tako je - kako je; i ovo malo možda bude od pomoći, pa makar i ne bilo sve tačno.
+Ovo je nekakav pregled pojmova iz teorije kategorija primenjenih na programske jezike (funkcionalno programiranje) potrebnih da se razume šta je monad. Postoji puno sličnih sadržaja; nadam se da ovim donosim jedan praktičan pogled. Voleo bih da znam više, ali tako je - kako je; i ovo malo možda bude od pomoći, pa makar i ne bilo sve tačno.
 
 ---
 
-Monad je minimalna apstrakcija kompozicija funkcija. Zato ima smisla razumeti njegovu definiciju:
+Monad je apstrakcija kompozicija funkcija. Zato ima smisla razumeti njegovu definiciju:
 
 > Monad je monoid u kategoriji endofunktora.
 
-Teorija kategorija je generalna teorija koja se najviše bavi relacijama, tj. odnosima između objekata. Reč je o apstraktnoj, tkzv. "čistoj" matematici: ne zanimaju nas konkretni brojevi, već relacije, odnosi, relacije relacija... Takvo apstraktno razmišljanje je našlo primenu u svim granama nauke. A gde je apstrakcija, tu ima mesta za filozofiju :)
+Teorija kategorija je generalna teorija koja se najviše bavi relacijama, tj. odnosima između objekata. Reč je o apstraktnoj, tkzv. "čistoj" matematici: ne zanimaju nas konkretni brojevi, već relacije, odnosi, relacije relacija... Takvo apstraktno razmišljanje je našlo primenu u raznim granama nauke. A gde je apstrakcija, eto mesta za filozofiju :)
 
 Legenda:
 
@@ -32,15 +32,15 @@ Legenda:
 
 ## Kategorija
 
-⭐️ **Skup** je nekakva kolekcija različitih stvari, koji se nazivaju _elementi_ skupa. Elementi skupa mogu biti bilo šta. Skup može biti prazan. Elementi skupa mogu biti i drugi skupovi.
+⭐️ **Skup** je kolekcija različitih stvari, koji se nazivaju _elementi_ skupa. Elementi skupa mogu biti bilo šta. Skup može biti prazan. Elementi skupa mogu biti i drugi skupovi.
 
-⭐️ **Algebarska struktura** je praktično skup koga čine:
+⭐️ **Algebarska struktura** je skup koga čine:
 
 + jedan ili više elemenata,
 + operacije nad elementima, tipično binarne,
-+ konačan broj identiteta.
++ konačan broj posebnih elemenata koji se nazivaju identitet.
 
-Takav neprazan skup je, praktično, algebarska struktura; kao i sve ovde ostale kasnije navedene.
+Takav neprazan skup je, praktično, algebarska struktura; kao i sve ostale kasnije navedene.
 
 ⭐️ **Kategorija** je algebarska struktura koju čine _objekti_ i _morfizmi_. Pored toga, u kategoriji vladaju dva _zakona_.
 
@@ -108,10 +108,10 @@ Kojim god redom da izvršavamo kompoziciju `∘`, rezultat ostaje isti. Zato nam
 
 ⭐️ **Klasa** u matematici je kolekcija skupova koji se svaki jedinstveno može odrediti nekom osobinom koju dele svi članovi tog skupa. Skup `{2, Plavo}` ne može da pripada klasi. Skupovi `{2,8}` i `{Plavo, Crveno, Žuto}` bi mogli da čine jednu klasu.
 
-🤦‍♂️ U kategoriji `C` se nalaze:
+🤦‍♂️ Sumiramo: u kategoriji `C` se nalaze:
 
 + objekti - koji pripadaju klasi `ob(C)`.
-+ morfizmi - koji pripadaju klasi `hom(C)`. Kada se napiše `hom(A,B)` to formira `hom` klasu svih morfizama od `A` do `B`.
++ morfizmi - koji pripadaju klasi `hom(C)`. Kada se napiše `hom(A,B)` to označava `hom` klasu svih morfizama od `A` do `B`.
 + Binarna operacija `∘` koja se naziva "kompozicija morfizama", koja za svaka tri objekta `A`, `B` i `C` imamo definisano:  
 
   ```plaintext  
@@ -135,7 +135,7 @@ Međutim, ako promenimo šta je morfizam u WWW grafu, stvari se menjaju. Ako mor
 + identitet postoji: putanja do samog sebe. ✅
 + asocijativnost je na mestu. ✅
 
-⭐️ Ovakva kategorija se naziva i slobodnom ("free category"), jer se konstruiše nad slobodnom spajanju linija direktnog grafa, tj. nad putanjama.
+⭐️ Ovakva kategorija se naziva i slobodnom ("free category"), jer se konstruiše nad slobodnim spajanjem linija direktnog grafa, tj. nad putanjama.
 
 ## Primer kategorije: Nasleđivanje programskih tipova
 
@@ -149,13 +149,13 @@ Tipovi u programskom jeziku čine kategoriju.
 
 ## Kratko o tipovima u programskom jeziku
 
-Tip u programskom jeziku određuje _skup_ svih mogućih vrednosti koje su tog tipa. Na primer, `Number` predstavlja skup svih mogućih brojeva koji se mogu predstaviti u programskom jeziku. Ovaj skup uključuje i `Int`, koji je podskup samo celih brojeva.
+Tip u programskom jeziku određuje _skup_ svih mogućih vrednosti koje su tog tipa. Na primer, `Bool` je skup dve vrednosti. `Number` predstavlja skup svih mogućih brojeva koji se mogu predstaviti u programskom jeziku. Ovaj skup uključuje i `Int`, koji je podskup samo celih brojeva.
 
-I funkcije u programskom jeziku imaju tip. Tip `String→Int` je skup svih mogućih parova vrednosti `String, Int` (po već nekom pravilu.)
+I funkcije u programskom jeziku imaju tip. Tip `String→Int` je skup svih mogućih parova vrednosti `String, Int` (bez obzira šta funkcija konkretno radi.)
 
 Tipovi u programskom jeziku zato mogu da tvore klasu u teoriji kategorija.
 
-🔥 Tipovi u programskom jeziku su samo vrednosti. Zato se mogu kombinovati. Zato kada je funkcija "first-class citizen" ona predstavlja takođe vrednost.
+🔥 Tipovi u programskom jeziku su samo vrednosti. Zato se mogu kombinovati. Zato kada je funkcija "first-class citizen", ona predstavlja takođe vrednost.
 
 ## Kategorije u programiranju: Scal/Hask
 
@@ -202,7 +202,7 @@ Kontejner nosi vrednost(i). Kontejner je kutija u koju stavljamo vrednost. Konte
 
 (Šredinger je stavio mačku u kutiju `Maybe` :)
 
-Nije dovoljno da samo primenjujemo funkcije (morfizme) na sadržaj kontejnera. Neophodno je da te kontejnere takođe nekako kompozujemo. Nadalje pričamo o tome.
+Nije dovoljno da samo primenjujemo funkcije (morfizme) na sadržaj kontejnera. Neophodno je da te kontejnere takođe nekako kombinujemo. Zato kontejner mora da ima odgovarajuće ponašanje, tj. interfejs. Nadalje pričamo o tome.
 
 Kontejner u programskom jeziku možemo uopšteno označiti i ovako: `F[_]`.
 
@@ -220,7 +220,7 @@ Kontejner u programskom jeziku možemo uopšteno označiti i ovako: `F[_]`.
 
 🤦‍♂️ **Kovarijant** funktor označava smer `C→D`. Postoji i **kontravarijant** funktor od tkzv. "obrnute kategorije" ka `D`. Primetite nazive: da li podsećaju na generičke parametre u programiranju?
 
-⭐️ **Endofunktor.** Kategorije `C` i `D` ne moraju biti različite: funktor može da preslikava kategoriju u samu sebe. Takav funktor se naziva endofunktor. Za funktor se kaže da je _homomorfizam kategorije_ (jer održava njenu strukturu).
+⭐️ **Endofunktor.** Kategorije `C` i `D` ne moraju biti različite: funktor može da preslikava kategoriju u samu sebe. Takav funktor se naziva endofunktor. Za funktor se kaže da je _homomorfizam kategorije_ (jer održava njenu strukturu.)
 
 U kategoriji programskog jezika svi funktori su ujedno endofunktori; preslikavaju kategoriju samu u sebe.
 
@@ -309,7 +309,7 @@ Primeri monoida:
 
 ## Prirodne transformacije
 
-Vratimo se kratko nazad. Počeli smo sa kategorijom objekata koji se mapiraju jedan na drugi. Funktor je dao mogućnost preslikavanja kategorija. Postoji sledeći, viši nivo apstrakcije: mapiranje funktora. Dakle:
+Vratimo se kratko nazad. Počeli smo sa kategorijom objekata koji se mapiraju jedan na drugi. Funktor je dao mogućnost preslikavanja celih kategorija. Postoji sledeći, viši nivo apstrakcije: mapiranje funktora. Dakle:
 
 + strelice/morfizmi preslikavaju objekte jedan u drugi unutar kategorije.
 + funktori preslikavaju cele kategorije.
@@ -345,7 +345,6 @@ Bitno je da elementi monade (endofunktori) čine kategoriju da bi mogli da ih ko
 
 🚀 **Monada** je monoid u kategoriji endofunktora. Monoid nam donosi pakovanje vrednosti i otpakovanje ugnježdenih struktura, funktor nam donosi uvezivanje monada.
 
-
 ## Monad u programiranju
 
 🔥 Slično funktoru, monad je konstruktor tipova, kontejnera za vrednost, koji zadovoljavaju određeni kriterijum. Tipovi (kontejneri) koje monad kreira moraju da implementiraju `flatMap()` i `unit()` funkcije.
@@ -380,9 +379,8 @@ Rezultat je `List[User]` sa 2 elementa.
 
 ![](e.png)
 
-Funkcija `flatMap()` pretvara `F[E[_]]` u `F[_]`.
-
-⭐️ Funkcija `unit()` "podiže" vrednost u kontejner monade: `A→M[A]`.
++ Funkcija `flatMap()` pretvara `F[F[_]]` u `F[_]`.
++ Funkcija `unit()` "podiže" vrednost u kontejner monade: `A→M[A]`.
 
 ⭐️ Monad u Skali može da izgleda ovako:
 
@@ -403,7 +401,6 @@ def map[A, B](ma: M[A])(f: A => B): M[B] =
 ```
 
 Šta se dešava? Izvršimo mapiranje ulaza `f(x)`, ali kako vrednost nije u kontejneru moramo je "podići" sa `unit()`. Ovu kompoziciju definišemo kao funkciju, koja je sada argument za `flatMap`. `flatMap()` radi samo sa funkcijama koje podižu vrednost u kontejner.
-
 
 ## Trivija za kraj
 
