@@ -1,6 +1,6 @@
 ---
 title: "Monad"
-date: 2023-10-01T07:07:07+00:00
+date: 2023-10-02T07:07:07+00:00
 categories:
   - Razvoj
 tag:
@@ -206,8 +206,6 @@ Nije dovoljno da samo primenjujemo funkcije (morfizme) na sadržaj kontejnera. N
 
 Kontejner u programskom jeziku možemo uopšteno označiti i ovako: `F[_]`.
 
-Ova dva "sveta" su zapravo dve kategorije! Jednu, "običnu", smo upoznali.
-
 ## Funktor
 
 ⭐️ **Funktor** je funkcija koja preslikava jednu kategoriju (algebarsku strukturu) u drugu i održava njenu strukturu. Za dve kategorije `C` i `D`, funktor je funkcija `F:C→D` koja:
@@ -232,20 +230,20 @@ U kategoriji programskog jezika svi funktori su ujedno endofunktori; preslikavaj
 
 Opšti konstruktor tipa se može zapisati i kao: `F[_]`.
 
-⭐️ U programiranju funktor je konstruktor tipova koji zadovoljavaju određeni kriterijum. Tip koji funktor konstruiše kao konstruktor tipova, dakle, mora da implementira `map`/`fmap` funkciju, koja radi preslikavanje sadržaja.
+⭐️ U programiranju _funktor je konstruktor tipova_ koji zadovoljavaju određeni kriterijum. Tip koji funktor konstruiše kao konstruktor tipova, dakle, mora da implementira `map`/`fmap` funkciju, koja radi preslikavanje sadržaja.
 
 Ukratko:
 
 + funktor (konstruktor tipova) preslikava `A` u `F[A]`.
-+ `map` preslikava sadržaj, na pr. iz `F[A]` u `F[B]`. 
++ `F[A]` implementira `map()` koji preslikava sadržaj, na pr. iz `F[A]` u `F[B]`. 
 + zadržane su osobine kompozicije i identitet.
 
-⭐️ Funkcija `map(f:A→B)` primenjuje morfizam na vrednost koju funktor nosi. Funkcija `map()` "**podiže**" (engl.: _lift_) morfizam iz "običnog" sveta u svet "kontejnera" i primenjuje ga na vrednost.
+⭐️ Funkcija `map(f:A→B)` primenjuje morfizam na vrednost koju funktor nosi. Funkcija `map()` "**podiže**" (engl.: _lift_) morfizam iz "običnog" sveta u svet "kontejnera" i primenjuje ga na vrednost u kontejneru.
 
 ![](d.png)
 {.center}
 
-Funkcija `map(f)` je takođe morfizam za funktore!
+Funkcija `map(f)` je takođe morfizam za funktore.
 
 ⭐️ Kako izgleda `Functor` trait u Skali:
 
@@ -287,7 +285,7 @@ Monoid dozvoljava "divide-and-conquer" strategiju, inkrementalnu akumulaciju, pa
 
 ## Monoid u programiranju
 
-⭐️ U programiranju monoid je tip koji implementira funkciju `foldLeft`/`reduce`.
+⭐️ U programiranju monoid je tip (dakle, skup) koji implementira funkciju `foldLeft`/`reduce`.
 
 ```scala
 def foldLeft[B](z: B)(op: (B, A) ? B): B
@@ -297,7 +295,7 @@ def foldLeft[B](z: B)(op: (B, A) ? B): B
 
 Monoid ne mora da sadrži samo iste tipove. Rekli smo da je monoid skup (što je vrlo širok pojam); element mogu biti i, na pr.: `Int` i `String`.
 
-⭐️ Monoid se formalno zapisuje kao triplet: `(S, *, id)`: skup, operacija, identitet.
+⭐️ Monoid se formalno zapisuje kao triplet: `(S, *, id)`: skup elemenata, operacija, identitet.
 
 Primeri monoida:
 
@@ -307,14 +305,14 @@ Primeri monoida:
 
 ⭐️ Monoid u programiranju je tip koji sadrži binarnu asocijativnu funkciju i element identiteta.
 
-🔥 Sažetak. Monoid je osobina nekog kontejnera: definiše kombinovanje dve vrednost (`foldLeft`) i postojanje nultog-elementa za kombinovanje (identitet).
+🔥 Sažetak. Monoid je struktura, kontejner koji ima implementiranu funkciju za kombinovanje dve vrednost (`foldLeft`); ta implementacija mora da definiše i nulti-element za kombinovanje (tkzv. identitet).
 
 ## Prirodne transformacije
 
-Vratimo se kratko nazad. Počeli smo sa kategorijom objekata koji se mapiraju jedan na drugi. Funktor je dao mogućnost mapiranja sadržaja i preslikavanja kategorija. Postoji sledeći, viši nivo apstrakcije: mapiranje funktora. Dakle:
+Vratimo se kratko nazad. Počeli smo sa kategorijom objekata koji se mapiraju jedan na drugi. Funktor je dao mogućnost preslikavanja kategorija. Postoji sledeći, viši nivo apstrakcije: mapiranje funktora. Dakle:
 
 + strelice/morfizmi preslikavaju objekte jedan u drugi unutar kategorije.
-+ funktori preslikavaju kategorije.
++ funktori preslikavaju cele kategorije.
 + **prirodne transformacije** preslikavaju funktore.
 
 ![](f.png)
@@ -328,11 +326,11 @@ Primer prirodne transformacije: metoda `head()` na `List[T]` vraća `Option[T]`.
 
 ⭐️ **Monad** se definiše kao triplet `M = (F, unit, flatMap)`.
 
-+ `F` je neki endofunktor `F:C→C`
-+ `unit` je prirodna transformacija od identity funktora `Id:C→C` na naš funktor `F`. Dakle: `unit:Id→F`. Ona "upakuje" tip u monad.
-+ `flatMap` je prirodna transformacija: `T∘T→T`. Ovde je `T∘T` kompozicija endofunktora; to je kontejner u kontejneru. `flatMap` zna da otpakuje ugnježdene strukture. Ona dozvoljava ulančavanje monada.
++ `F` je skup elemenata endofunktora: `F:C→C`
++ `unit` je prirodna transformacija od identiti funktora `Id:C→C` na naš funktor `F`. Dakle: `unit:Id→F`. Ona "upakuje", podiže vrednost u monad.
++ `flatMap` je prirodna transformacija: `T∘T→T`. Ovde je `T∘T` kompozicija endofunktora; kontejner u kontejneru. `flatMap` zna da otpakuje ugnježdene strukture. Ona time dozvoljava ulančavanje monada.
 
-Podseća na monoid? To je zato što i jeste.
+Da li ova definicija podseća na monoid? To je zato što monad i jeste monoid.
 
 ## Monad (korak #2)
 
@@ -340,16 +338,17 @@ Podseća na monoid? To je zato što i jeste.
 
 + objekti: endofunktori. ✅
 + morfizmi su prirodne transformacije endofunktora. ✅
-+ kompozicije prirodnih transformacije postoji. Nisam baš razumeo kako, ali kapiram da se prenosi usled očuvanja struktura. ✅
-+ identit endofunktor: `unit/lift/pure`. ✅
++ kompozicije prirodnih transformacije postoji. Nisam baš razumeo kako, ali kapiram da se sposobnost kompozicije prenosi usled očuvanja struktura. ✅
++ identit endofunktor: `unit`/`lift`/`pure`. ✅
 
-🚀 **Monada** je monoid u kategoriji endofunktora.
+Bitno je da elementi monade (endofunktori) čine kategoriju da bi mogli da ih kombinujemo.
+
+🚀 **Monada** je monoid u kategoriji endofunktora. Monoid nam donosi pakovanje vrednosti i otpakovanje ugnježdenih struktura, funktor nam donosi uvezivanje monada.
 
 
 ## Monad u programiranju
 
-🔥 Slično funktoru, monad je kontejner za vrednost. Funktor ume da kombinuje morfizme.
-Monad sada ume da kombinuje funktore; to je nešto što nismo umeli ranije.
+🔥 Slično funktoru, monad je konstruktor tipova, kontejnera za vrednost, koji zadovoljavaju određeni kriterijum. Tipovi (kontejneri) koje monad kreira moraju da implementiraju `flatMap()` i `unit()` funkcije.
 
 Primer:
 
@@ -367,23 +366,23 @@ def fetchUser(id: Int): Option[User] =
 val users = List(1,2,3).map(id => getUser(id))
 ```
 
-Rezultat je `List[Option[User]]` sa 3 elementa, kontejneri u kontejneru. To nije ono šta želimo.
+Rezultat je `List[Option[User]]` sa 3 elementa, kontejneri u kontejneru. To nije ono što želimo.
 
-Potrebno je da transformišemo kontejner `List` tako što ćemo _kombinovati_ elemente - funktore. Kombinovanje funktora nam omogućava monad.
+Potrebno je da transformišemo kontejner `List` tako što ćemo _kombinovati_ elemente i otpakovati ugnježdene kontejnere.
 
-⭐️ Funkcija `flatMap()` radi upravo to - mapira, pa potom "izravnjava" sadržaj kontejnera:
+⭐️ Funkcija `flatMap()` radi upravo to - mapira, pa potom "izravnjava" (ispravlja) sadržaj kontejnera:
 
 ```scala
 val users = List(1,2,3).flatMap(id => getUser(id))
 ```
 
-Rezultat sada je `List[User]` sa 2 elementa.
+Rezultat je `List[User]` sa 2 elementa.
 
 ![](e.png)
 
-Funkcija `flatMap()` zapravo pretvara `F[F[_]]` u `F[_]`.
+Funkcija `flatMap()` pretvara `F[E[_]]` u `F[_]`.
 
-⭐️ Funkcija `unit()` daje i ono poslednje šta nedostaje: "podizanje" vrednosti u monad, kontejner: `A→M[A]`
+⭐️ Funkcija `unit()` "podiže" vrednost u kontejner monade: `A→M[A]`.
 
 ⭐️ Monad u Skali može da izgleda ovako:
 
@@ -394,6 +393,8 @@ trait Monad[M[_]] {
 }
 ```
 
+Ovde je `M` monad, konstruktor tipa koji implementira `flatMap` i `unit`. U govoru često izjednačavamo tip koji monad kreira sa pojmom "monad" (slično je i sa funktorom.) Drugim rečima, često za sam kontejner kažemo da je monad.
+
 ⭐️ Monad je ujedno i funktor. Zanimljivo da metodu `map` funktora možemo da dobijemo kao:
 
 ```scala
@@ -401,15 +402,13 @@ def map[A, B](ma: M[A])(f: A => B): M[B] =
   flatMap(ma)(x => unit(f(x)))
 ```
 
-Šta ovde radimo? Izvršimo mapiranje ulaza (`f(x)`), ali kako vrednost nije u kontejneru moramo je "podići" sa `unit()`. Ovu kompoziciju definišemo kao funkciju, koja je sada argument za `flatMap`.
+Šta se dešava? Izvršimo mapiranje ulaza `f(x)`, ali kako vrednost nije u kontejneru moramo je "podići" sa `unit()`. Ovu kompoziciju definišemo kao funkciju, koja je sada argument za `flatMap`. `flatMap()` radi samo sa funkcijama koje podižu vrednostu kontejner.
 
 
 ## Trivija za kraj
 
 Ime "monad" je spoj "monoid" i "triad": "monoid" jer je monoid u kategoriji endofunktora, "triad" jer pakuje tri stvari: endofunktor sa dve prirodne transformacije.
 
-Obećao sam filozofiju: teorija kategorija se ne bavi mnogo vrednostima. Može se doći do shvatanja da nije važna vrednost objekta, već da je objekat definisan samo svojim relacijama. Da ponovim: _nešto_ je definisano samo svojim relacijama, a ne onime što zapravo _jeste_! To govori Yoneda lema. Da li to znači da je postojanje definisano samo ostvarenim interakcijama?
+Obećao sam filozofiju: teorija kategorija se ne bavi mnogo vrednostima. Može se doći do shvatanja da nije važna vrednost objekta, već da je objekat definisan samo svojim relacijama. Da ponovim: _nešto_ je definisano samo svojim relacijama, a ne onime što zapravo _jeste_! To govori Yoneda lema. Da li to znači da je postojanje _bilo čega_ jednoznačno definisano samo postojećim relacijama?
 
-Idemo dalje.
-
-(Kog sam andraka ovo i pisao...)
+(Kog sam andraka sve ovo i pisao...) Idemo dalje.
