@@ -42,13 +42,13 @@ Legenda:
 
 Takav neprazan skup je, praktično, algebarska struktura; kao i sve ovde ostale kasnije navedene.
 
-⭐️ **Kategorija** je algebarska struktura koju čine _objekati_ i _morfizami_. Pored toga, u kategoriji vladaju dva _zakona_.
+⭐️ **Kategorija** je algebarska struktura koju čine _objekti_ i _morfizmi_. Pored toga, u kategoriji vladaju dva _zakona_.
 
 ⭐️ **Objekti** kategorije mogu biti šta god, postojeće ili zamišljeno: brojevi, avioni, kamioni, cveće, skupovi, matrice.
 
 ⚠️ Objekti iz teorije kategorija nisu u vezi sa OOP, samo dele isto ime. Zaboravimo na objekte iz OOP! Amen.
 
-⭐️ **Morfizmi** su relacije između objekata. Morfizmi se nazviju i "strelicama" (engl.: _arrow_). Morfizam je mapiranje između dva objekta kategorije. Nemaju svi parovi objekata kategorije morfizam između njih.
+⭐️ **Morfizmi** su relacije između objekata. Morfizmi se nazivaju i "strelicama" (engl.: _arrow_). Morfizam je mapiranje između dva objekta kategorije. Nemaju svi parovi objekata kategorije morfizam između njih.
 
 Ako su `A` i `B` objekti iz kategorije `C`, onda se njihova relacija, tj. morfizam `f` piše kao:
 
@@ -137,7 +137,7 @@ Međutim, ako promenimo šta je morfizam u WWW grafu, stvari se menjaju. Ako mor
 
 ⭐️ Ovakva kategorija se naziva i slobodnom ("free category"), jer se konstruiše nad slobodnom spajanju linija direktnog grafa, tj. nad putanjama.
 
-## Primer kategorije: Nasleđivanje programerskih tipova
+## Primer kategorije: Nasleđivanje programskih tipova
 
 Hajde da definišemo kategoriju nad tipovima u programu:
 
@@ -226,7 +226,7 @@ U kategoriji programskog jezika svi funktori su ujedno endofunktori; preslikavaj
 
 ## Funktor u programiranju
 
-⭐️ **Type constructor** je generička definicija programerskog tipa. `List` nije tip, ali `List[String]` jeste tip. `List` je konstruktor tipova; obeležava se `List[_]`. Konstruktor tipa je ujedno i funkcija, jer `A→List[A]`.
+⭐️ **Type constructor** je generička definicija programskog tipa. `List` nije tip, ali `List[String]` jeste tip. `List` je konstruktor tipova; obeležava se `List[_]`. Konstruktor tipa je ujedno i funkcija, jer `A→List[A]`.
 
 Opšti konstruktor tipa se može zapisati i kao: `F[_]`.
 
@@ -263,7 +263,7 @@ Da se podsetimo: `List` nije tip. `List[String]` je tip, ali više nije funktor 
 
 ## Monoid
 
-⭐️ **Polugrupa** je neprazan skup (algebarska struktura) koji ima asocijativnu binarnu operaciju `*` (oznaka, nije množenje). Operacija `*` vraća elmenat iz istog skupa.
+⭐️ **Polugrupa** je neprazan skup (algebarska struktura) koji ima asocijativnu binarnu operaciju `*` (oznaka, nije množenje). Operacija `*` vraća elemenat iz istog skupa.
 
 ⭐️ **Monoid** je polugrupa koja još ima element identiteta `id`, koji za svaki element iz grupe `x` zadovoljava:
 
@@ -402,7 +402,7 @@ def map[A, B](ma: M[A])(f: A => B): M[B] =
   flatMap(ma)(x => unit(f(x)))
 ```
 
-Šta se dešava? Izvršimo mapiranje ulaza `f(x)`, ali kako vrednost nije u kontejneru moramo je "podići" sa `unit()`. Ovu kompoziciju definišemo kao funkciju, koja je sada argument za `flatMap`. `flatMap()` radi samo sa funkcijama koje podižu vrednostu kontejner.
+Šta se dešava? Izvršimo mapiranje ulaza `f(x)`, ali kako vrednost nije u kontejneru moramo je "podići" sa `unit()`. Ovu kompoziciju definišemo kao funkciju, koja je sada argument za `flatMap`. `flatMap()` radi samo sa funkcijama koje podižu vrednost u kontejner.
 
 
 ## Trivija za kraj
