@@ -325,19 +325,20 @@ a#home {
   }
 }
 
-footer {
-  letter-spacing: -1px;
-  border-top: 10px solid $red;
+footer {  
+  letter-spacing: -1.5px;
+  border-top: 8px solid $red;
   margin: 100px 0 0 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
 
   color: $gray;
   width: 100%;
   left: 0;
+  position: fixed;
   bottom: 0;
   text-align: center;
   background-color: var(--bg-shade);
-  padding: 60px 0 60px 0;
+  padding: 20px 0 8px 0;
 
   [itemprop="sameAs"] + [itemprop="sameAs"] {
     margin-left: .4rem;
@@ -347,9 +348,10 @@ footer {
   }
 
   #copyright {
-    margin-top: 20px;
+    margin-top: 8px;
     font-family: $monospace;
     text-align: center;
+    font-size: 0.8em;
   }
 
   a {
