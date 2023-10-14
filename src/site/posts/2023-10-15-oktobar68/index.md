@@ -7,7 +7,7 @@ tag:
   - razvoj
 ---
 
-Dok Brajan Adam dečački peva o letu '69 kao najboljim danima ikada, u softverskoj industriji vlada samo-prozvana kriza. Pošto je godina iz naslova pesme samo referenca na seksualni čin, dozvoljeno nam je da je promenimo, te upotrebimo istu pesmu za godinu pre, 1968. Najbolje godine, ikada, zar ne?
+Dok Brajan Adam dečački peva o letu '69 kao najboljim danima ikada, u softverskoj industriji vlada samo-prozvana kriza. Pošto je godina iz naslova pesme samo referenca na seksualni čin, dozvoljeno nam je da je promenimo, te upotrebimo istu pesmu za godinu pre, 1968. Najbolje godine, zar ne?
 
 ---
 
@@ -19,7 +19,7 @@ Red je i da postavimo u fokus i stepen razvitka informatičkih sistema tog doba.
 
 Da ne bude zabune: svi učesnici konferencije su i dalje (bili) samo ljudi; ne pravim idole od njih. Ima i potpuno promašenih zapažanja, ali neobično malo. Takođe se oseća breme vremena u razmišljanjima; no to je potpuno u redu, jer su se okupili da reše aktuelan problem, a ne da gledaju u staklenu kuglu.
 
-Iza obe konferencije je ostao pisani izveštaj. Kopkalo me je da ga pročitam i vidim koliko su razmišljanja tada bila drugačija. Sigurno smo napredovali za ovih pedestak godina, zar ne? Ono što sam zatekao me je zaprepastilo (FOTO, VIDEO). Šalu na stranu, primetna je konvergencija zrelih ideja i zaključaka. Gde su završile?
+Iza obe konferencije je ostao pisani izveštaj. Kopkalo me je da ga pročitam i vidim koliko su razmišljanja tada bila drugačija. Sigurno smo napredovali za ovih pedesetak godina, zar ne? Ono što sam zatekao me je zaprepastilo (FOTO, VIDEO). Šalu na stranu, primetna je konvergencija zrelih ideja i zaključaka. Gde su završile?
 
 Izdvojiću delove izveštaja prve konferencije koji su mi zapali za oko. Ima ih mnogo, mnogo više; dobar deo nisam preneo, neke sam verovatno propustio; a i ne bi imalo smisla da sve stavim ovde.
 
@@ -157,4 +157,4 @@ Stari latini kažu: "Nomen est omen." Da li nam je naziv profesije ujedno i usud
 
 > Most of the designers of manufacturers’ software are designing, I think, for their own benefit — they are literally playing games. They have no conception of validating their design before sending it out, or even evaluating the design in the light of potential use. The real problem is training the people to do the design. Most designers of software are damn well incompetent, one way or another.
 
-Igramo se, zar ne?
+Liči mi da se sve više bavimo prečicama: kako zanemariti ispravno zarad već nekog proizvoljnog izgovora. Igramo se, zar ne? 
