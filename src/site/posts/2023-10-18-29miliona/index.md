@@ -26,7 +26,7 @@ Zanimljivo je da verovatno svi biramo neki proizvoljan broj, na pr. `1294`, koji
 
 Da pokažem da merenje ne mora da bude skupo, napravio sam [kratak primer](https://github.com/igr/pgimdb). Tražim korelaciju vremena odziva i utroška memorije. Rezultati su neprecizni, ali tačni: sistemska greška sigurno nije mala. Merenje memorije je štapom i kanapom. JVM nije "zagrejana". Kako bilo, rezultat je ponovljiv i čini se dovoljnim da dobijem grubu sliku šta se dešava u sistemu.
 
-Kao šlag na tortu, fitujem rezultat krivom koju biram _isključivo_ zbog svog dramatično izgleda. Ona mi saoštava da je neka lepa vrednost između `10^4` i `10^5` logaritamske skale. Time sam dobio nekakve granice. Koju vrednost uzeti sada već zavisi od ostatka sistema: koliko ima preostale memorije, koliko paralelnih sličnih poziva radi itd. Ovde je `10^5` smisleniji izbor od `1294` i `1000`.
+Kao šlag na tortu, fitujem rezultat krivom koju biram _isključivo_ zbog svog dramatičnog izgleda. Ona mi saoštava da je neka lepa vrednost između `10^4` i `10^5` logaritamske skale. Time sam dobio nekakve granice. Koju vrednost uzeti sada već zavisi od ostatka sistema: koliko ima preostale memorije, koliko paralelnih sličnih poziva radi itd. Ovde je `10^5` smisleniji izbor od `1294` i `1000`.
 
 Sve ovo je trajalo nekih 30-tak minuta.
 
