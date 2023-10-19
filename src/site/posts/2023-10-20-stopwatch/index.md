@@ -43,7 +43,7 @@ Divno, čisto OOP razmišljanje... Štoperica je predmet iz stvarnog života, na
 
 Fundamentalna greška koju nas OOP uči je da "preslikavamo" objekte iz stvarnosti u program. Automobil, televizor, štoperica, kvadrat, voće... sve su primeri iz OOP udžbenika koji se tako lako modeluju klasama. Lako je da razmišljamo na taj način: tim se objektima služimo, možemo da ih jasno zamislimo, postoji nekakvo ne-programersko iskustvo sa takvim pojmovima.
 
-Naučeni smo da razmišljamo o objektima kao nekakvim kutijama, kontejnerima koji imaju svoje stanje i nude metode kojima se to stanje menja. Tok razmišljanja uvek započinje odatle: od nekakvog kvadrata koga nazovemo "štoperica" i u koga upišemo imena operacija, eventualno i varijable stanja. Klasni dijagram, ako baš hoćete. Nacrtani klasni kvadrat ujedno služi kao mentalna sigurnosna mreža; možemo da pokažemo prstom na njega i kažemo: evo, to je štoperica.
+Naučeni smo da razmišljamo o objektima kao nekakvim kutijama koje imaju svoje stanje i nude metode kojima se to stanje menja. Tok razmišljanja uvek započinje odatle: od nekakvog nacrtanog kvadrata koga nazovemo "štoperica" i u koga upišemo imena operacija, eventualno i varijable stanja. Klasni dijagram, ako baš hoćete. Nacrtani klasni kvadrat ujedno služi kao mentalna sigurnosna mreža; možemo da pokažemo prstom na njega i kažemo: evo, to je štoperica.
 
 Hajde sada da izbrišemo linije klasnog kvadrata - i bukvalno i u prenosnom značenju. Šta nam preostaje? Koja je to apstrakcija štoperice za kojom tragamo?
 
