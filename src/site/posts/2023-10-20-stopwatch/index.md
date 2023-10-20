@@ -41,9 +41,9 @@ Divno, čisto OOP razmišljanje... Štoperica je predmet iz stvarnog života, na
 
 ## Modelujemo ponašanja, ne predmete
 
-Fundamentalna greška koju nas OOP uči je da "preslikavamo" objekte iz stvarnosti u program. Automobil, televizor, štoperica, kvadrat, voće... sve su primeri iz OOP udžbenika koji se tako lako modeluju klasama. Lako je da razmišljamo na taj način: tim se objektima služimo, možemo da ih jasno zamislimo, postoji nekakvo ne-programersko iskustvo sa takvim pojmovima.
+Fundamentalna greška koju nas OOP uči je da "preslikavamo" objekte iz stvarnosti u program. Automobil, televizor, štoperica, kvadrat, voće... sve su primeri iz OOP udžbenika koji se tako lako modeluju klasama. Lako je da razmišljamo na taj način: tim se objektima služimo, možemo da ih jasno zamislimo, postoji značajno ne-programersko iskustvo u vezi tih predmeta.
 
-Naučeni smo da razmišljamo o objektima kao nekakvim kutijama koje imaju svoje stanje i nude metode kojima se to stanje menja. Tok razmišljanja uvek započinje odatle: od nekakvog nacrtanog kvadrata koga nazovemo "štoperica" i u koga upišemo imena operacija, eventualno i varijable stanja. Klasni dijagram, ako baš hoćete. Nacrtani klasni kvadrat ujedno služi kao mentalna sigurnosna mreža; možemo da pokažemo prstom na njega i kažemo: evo, to je štoperica.
+Naučeni smo da razmišljamo o objektima kao nekakvim kutijama koje imaju svoje stanje i nude metode kojima se to stanje menja. Tok razmišljanja uvek započinje od nekakvog nacrtanog kvadrata koga nazovemo "štoperica" i u koga upišemo imena operacija, eventualno i varijable stanja. Klasni dijagram, ako baš hoćete. Nacrtani klasni kvadrat ujedno služi kao mentalna sigurnosna mreža; možemo da pokažemo prstom na njega i kažemo: evo, to je štoperica.
 
 Hajde sada da izbrišemo linije klasnog kvadrata - i bukvalno i u prenosnom značenju. Šta nam preostaje? Koja je to apstrakcija štoperice za kojom tragamo?
 
@@ -88,7 +88,7 @@ Stanja su: `RunningStopwatch` i `MeasuredDuration`. Operacije su:
 + `() -> RunningStopwatch`
 + `(RunningStopwatch) -> MeasuredDuration`
 
-Obratite pažnju da je ime funkcija _suvišno_ - jasno je šta funkcije rade.
+Obratite pažnju da je ime operacija (funkcija) _suvišno_ - jasno je šta funkcije rade!
 
 ## FAQ
 
@@ -109,7 +109,7 @@ _Pfff!_ 🤷‍♂️
 Kada je merenje u istom scope-u, nije nam bitno međustanje, već samo krajnji rezultat. Možemo da uvedemo i ovu pomoćnu funkciju:
 
 ```java
-public static Duration run(Runnable runnable) {
+public static Duration measure(Runnable runnable) {
   var sw = start();
   runnable.run();
   return stop(sw).get();
@@ -122,11 +122,11 @@ Potpis funkcije je njen tip. U Javi tako nešto ne postoji, zato:
 
 ```java
 @FunctionalInterface
-public interface Start() {
-  public RunningStopwatch invoke() =
+public interface Start {
+  public RunningStopwatch invoke();
 }
 @FunctionalInterface
-public interface Stop() {
+public interface Stop {
   public MeasuredDuration invoke(RunningStopwatch s);
 }
 ```
@@ -135,10 +135,8 @@ Onda:
 
 ```java
 public class StopWatch {
-  private final Start start =
-    () -> new RunningStopwatch(); // default impl
-  private final Stop stop =
-    (sw) -> new MeasuredDuration(sw);
+  final Start start = RunningStopwatch::new;
+  final Stop stop = MeasuredDuration::new;
   
   // ctor, builder, injection...
 }
@@ -147,3 +145,38 @@ public class StopWatch {
 Gle, vratili smo se u `StopWatch`.
 
 Sada opisujemo _ponašanje_.
+
+## Prljavo vreme
+
+Ima nečega prljavog u ovim funkcijama - nisu čiste. Funkcije se oslanjaju na _sporedni efekat_, vreme na računaru. Ukoliko se funkcija pozove dva puta za redom sa istim ulazom, daće različite rezultate. To ne želimo.
+
+Zato se dobavljanje vremena odstranjuje u interfejs `Clock`:
+
+```java
+public interface Clock extends Supplier<Instant> {
+  Instant get();
+}
+```
+
+Sada pređašnji kod izgleda ovako:
+
+```java
+public class StopWatch {
+  private final Start start =
+    () -> new RunningStopwatch(clock);
+  private final Stop stop =
+    (sw) -> new MeasuredDuration(clock, sw);
+}
+```
+
+gde je `clock` neka implementacija časovnika.
+
+Sada su funkcije štoperice čiste i jasne.
+
+## Merenje u kontejneru
+
+Čekaj, zar nije merenje vremena nekakav kontekst oko izvršavanja? Jeste, to smo videli u primeru `measure()`. Čim imaš kontekst, imaš kontejner, imaš potencijalni... monad.
+
+Hajde da ovde stanemo. U Javi sve dalje bi bilo besmisleno bolno raditi.
+
+Postigli smo već sasvim dovoljno: opis ponašanja, imutabilna stanja, čiste funkcije.
