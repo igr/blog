@@ -21,7 +21,7 @@ Jedan od saveta koji se često ponavlja je da nam ne treba više niti od ukupnog
 
 ## Intenzivan posao
 
-Zamislimo nekakav _intenzivan_ proračun koji traje par sekundi. Nazvan je "intenzivan", jer se celokupna snaga jednog jezgra CPU koristi za posao. Na primer, takav jedan posao može biti izračunavanje decimala broja **π** manje efiksanim algoritmom. 
+Zamislimo nekakav _intenzivan_ proračun koji traje par sekundi. Nazvan je "intenzivan", jer se celokupna snaga jednog jezgra CPU koristi za posao. Na primer, takav jedan posao može biti izračunavanje decimala broja **π** manje efikasnim algoritmom. 
 
 Na mom računaru proračun `13000` decimala π traje koju desetinku duže od `3` sekunde (u daljem tekstu: `3s`). To će biti naš intenzivan posao kojim ćemo upošljavati niti.
 
@@ -69,7 +69,7 @@ Kada koristimo fiksan thread pool, samo `CPU#` (`12`) niti radi sve vreme punom 
 ![](c.png)
 {.center}
 
-Razlika je opterećenje sistema. `1200` niti koje rade čini da preostale niti u sistemu rade **podjednako sporo**; jer se CPU vreme sada deli između svih niti. Dakle, samo ako intezivan posao nije eksluzivan za program, ovaj pristup će usporiti rad drugih delova aplikacije. Izgladnjavanje se dešava svim nitima u sistemu, ne samo ovima iz ogleda. Da ponovim, CPU vreme se deli na `100+` niti.
+Razlika je opterećenje sistema. `1200` niti koje rade čini da preostale niti u sistemu rade **podjednako sporo**; jer se CPU vreme sada deli između svih niti. Dakle, samo ako intenzivan posao nije ekskluzivan za program, ovaj pristup će usporiti rad drugih delova aplikacije. Izgladnjavanje se dešava svim nitima u sistemu, ne samo ovima iz ogleda. Da ponovim, CPU vreme se deli na `100+` niti.
 
 Kada radi samo `12` niti, to nije slučaj. One rade punom parom, ali ostaje vremena da sistem opsluži druge niti, ukoliko je potrebno. CPU vreme se deli na `12+` niti.
 
@@ -117,7 +117,7 @@ Da li ćemo uspeti? Da li će ubrzanje biti značajno? Ili je pretpostavka pogre
 
 👩‍🔬 (Merenje.)
 
-**CRVENA**. Kako se uvećava broj poslova, proračuni se sada _pravilnije raspoređuju_ za vreme spavanja. Sada je garantovano da nikada ne radi više od `CPU#` niti u isto vreme, ikao je ukupan broj niti mnogostruko veći. Rezultat govori za sebe.
+**CRVENA**. Kako se uvećava broj poslova, proračuni se sada _pravilnije raspoređuju_ za vreme spavanja. Sada je garantovano da nikada ne radi više od `CPU#` niti u isto vreme, iako je ukupan broj niti mnogostruko veći. Rezultat govori za sebe.
 
 Otkuda i dalje postoji blago povećanje trajanja obrade sa povećanjem poslova? Prosto, ne uspevamo apsolutno tačno napakovati poslove u periode dok neka nit spava.
 
@@ -125,7 +125,7 @@ Zanimljivo: nikada nigde nisam video da iko radi ovakvu optimizaciju.
 
 ## Manje niti, manje niti
 
-Poslednji ogled sa semaforom i dalje pati od problema viška niti. Iako samo `CPU#` niti radi u isto vreme (zahvaljući semaforu) i dalje postoji nit za svaki posao. Broj niti na sistemu je limitiran, čime se ujedno ograničava ukupan broj realnih poslova koji se mogu efikasno obraditi.
+Poslednji ogled sa semaforom i dalje pati od problema viška niti. Iako samo `CPU#` niti radi u isto vreme (zahvaljujući semaforu) i dalje postoji nit za svaki posao. Broj niti na sistemu je limitiran, čime se ujedno ograničava ukupan broj realnih poslova koji se mogu efikasno obraditi.
 
 Jedno rešenje je ograničavanje prethodno neograničenog thread poola. Takav pool bi imao nekakav softverski limit, a višak zadataka bi se čuvao u kakvom redu.
 
@@ -145,7 +145,7 @@ Kakve su performanse ovakvog sistema? Da li je ovakva komplikovana promena oprav
 
 👩‍🔬 (Merenje.)
 
-Razultat je gotovo identičan thread-poolu sa semaforima! Za razliku od malo pre, sada postoji samo `CPU#` niti za proizvoljan broj poslova. Lepo.
+Rezultat je gotovo identičan thread-poolu sa semaforima! Za razliku od malo pre, sada postoji samo `CPU#` niti za proizvoljan broj poslova. Lepo.
 
 (Da li smo to na pragu otkrivanja virtuelnih niti? :)
 
@@ -159,7 +159,7 @@ broj_niti = CPU# / utilitizacija
 
 U našem ogledu, utilizacija je `1/18 = 0.054`, pa je optimalan broj niti `222` što je približno `18 x CPU#`.
 
-Za razliku od gornjih ogleda, ne postoji jednostavan, determinističi način za određivanje utilitizacije. Najbolje je prosto meriti upotrebu niti (u Javi je to moguće kroz `ThreadMXBean`.)
+Za razliku od gornjih ogleda, ne postoji jednostavan, deterministički način za određivanje utilitizacije. Najbolje je meriti upotrebu niti (u Javi je to moguće kroz `ThreadMXBean`.)
 
 Ni ovo nije dovoljno. Bitna je i vremenska raspodela kada poslovi rade. Može se dogoditi da se svi poslovi, bez obzira na utilitizaciju, probude i počnu da rade u istom trenutku. U našem primeru, to je `222` poslova. Rezultat je izgladnjivanje niti i usporavanje.
 
