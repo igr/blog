@@ -145,11 +145,11 @@ Kakve su performanse ovakvog sistema? Da li je ovakva komplikovana promena oprav
 
 👩‍🔬 (Merenje.)
 
-Rezultat je gotovo identičan thread-poolu sa semaforima! Za razliku od malo pre, sada postoji samo `CPU#` niti za proizvoljan broj poslova. Lepo.
+Rezultat je gotovo identičan thread poolu sa semaforima! Razlika je da sada koristimo samo `CPU#` niti za proizvoljan broj poslova. Lepo.
 
 ## Formula
 
-Nije dovoljni reći da je optimalan broj niti za obradu poslova jednak broju jezgra. Neophodno nam je da znamo koliko nit spava, a koliko radi. Taj odnos se naziva _utilitizacija_: procenat vremena koji nit provede radeći.
+Nije dovoljno reći da je optimalan broj niti za obradu poslova jednak broju jezgra. Neophodno nam je da znamo koliko nit spava, a koliko radi. Taj odnos se naziva _utilitizacija_: procenat vremena koji nit provede radeći.
 
 ```plaintext
 broj_niti = CPU# / utilitizacija 
