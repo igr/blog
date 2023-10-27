@@ -179,9 +179,11 @@ Pa... kada je u pitanju intenzivan posao, virtuelne niti ne čine razliku - vrem
 ![](e.png)
 {.center}
 
-Ni jedna nit ne radi sve vreme jedan posao. Niti se dodeljuju poslovima. Virtuelna nit je zapravo posao. Čim virtuelna nit/posao blokira trenutnu nit koja je izvršava, ona se "otkačinje" i stavlja u memorijski red, čime se prava nit oslobađa za drugi posao.
+Nijedna nit ne radi sve vreme jedan posao. Niti se dodeljuju poslovima. Virtuelna nit je zapravo posao. Čim virtuelna nit/posao blokira trenutnu nit koja je izvršava, ona se "otkačinje" i stavlja u memorijski red, čime se prava nit oslobađa za drugi posao.
 
 Dakle, virtuelne niti se bave "pakovanjem" izvršavanja paralelnih poslova u periodima dok su neki poslovi blokirani. Virtuelne niti imaju smisla za realne poslove, one koje se ne bave eksluzivno nekakvim proračunom. Hajde da vidimo kako se virtuelne niti ponašaju u drugom ogledu.
+
+👩‍🔬 (Merenje.)
 
 **NARANDŽASTA**. Nađite nandžarastu krivu na poslednjem grafiku. Nema je? Tu je, sakrivena ispod crvene :)
 
