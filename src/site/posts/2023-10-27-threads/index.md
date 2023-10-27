@@ -46,7 +46,7 @@ Idemo dalje. Hajde da povećamo broj poslova na neki umnožak `N` broja `CPU#`. 
 
 👩‍🔬 (Merenje.)
 
-Brzina izvršavanja je u oba slučaja _ista_. Povećavanjem broja niti preko broja dostupnih jezgra **ne možemo** ubrzati intenzivne poslove. Grafik je kranje dosadan:
+Brzina izvršavanja je u oba slučaja _ista_. Povećavanjem broja niti preko broja dostupnih jezgra **ne možemo** ubrzati intenzivne poslove. Grafik je dosadan:
 
 ![](a.png)
 {.center}
