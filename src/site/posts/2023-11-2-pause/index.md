@@ -12,7 +12,7 @@ Bolje je da učim više, a ćutim duže.
 
 <!--more-->
 
-Mnogo vremena ode na pisanje.
+Pažljivo pisanje iziskuje mnogo vremena.
 
 ---
 
