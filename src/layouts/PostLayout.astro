@@ -1,0 +1,89 @@
+---
+const {post} = Astro.props
+import Disclaimer from "../components/Disclaimer.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
+import {site} from "../config";
+import PostDate from "../components/PostDate.astro"
+const postDate = new Date(post.data.date);
+const link = encodeURIComponent(Astro.url.origin + Astro.url.pathname);
+const linkTitle = encodeURIComponent(post.data.title);
+let schema = JSON.stringify(
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.data.title,
+    "image": Astro.url.origin + "/o-wide.png",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Oblac",
+      "url": "https://igo.rs",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://igo.rs/igr.png",
+        "width": "200",
+        "height": "175"
+      }
+    },
+    "url": Astro.url,
+    "datePublished": postDate.toISOString(),
+    "dateCreated": postDate.toISOString(),
+    "dateModified": postDate.toISOString(),
+    "description": post.data.description,
+    "author": {
+      "@type": "Person",
+      "name": "Igor Spasić",
+      "url": "https://igo.rs"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://oblac.rs"
+    }
+  }
+);
+---
+
+<BaseLayout home={false} title={post.data.title} description={post.data.description}>
+  <header class="site-header-small">
+    <div id="title-small"><a id="home" href={Astro.url.origin}>{site.title}</a></div>
+  </header>
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">{post.data.title}</h1>
+      <PostDate date={post.data.date} short={false}/>
+      <div id="lang">
+        <a
+          href={"https://oblac-rs.translate.goog" + Astro.url.pathname + "?_x_tr_sl=sr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"}
+          target="blank">Translate</a>
+      </div>
+    </header>
+
+    <slot/>
+
+    <ul id="social">
+      <li>
+        <a href={"https://twitter.com/share?url=" + link + "&text=" + linkTitle} target="_blank"
+           class="share-btn twitter" title="Twiter">Tw</a>
+      </li>
+      <li>
+        <a href={"https://www.facebook.com/sharer/sharer.php?u=" + link} target="_blank" class="share-btn facebook"
+           title="Facebook">Fb</a>
+      </li>
+      <li>
+        <a href={"https://reddit.com/submit?mini=true&url=" + link + "&title=" + linkTitle} target="_blank"
+           class="share-btn reddit" title="Reddit">Re</a>
+      </li>
+      <li>
+        <a href={"https://www.linkedin.com/shareArticle?mini=true&url=" + link + "&title=" + linkTitle}
+           target="_blank" class="share-btn linkedin" title="LinkedIn">Ln</a>
+      </li>
+      <li>
+        <a href={"mailto:?subject=" + linkTitle + "&body=" + link} target="_blank" class="share-btn email"
+           title="Email">Em</a>
+      </li>
+    </ul>
+
+  </article>
+  <Disclaimer/>
+</BaseLayout>
+
+<script type="application/ld+json" set:html={schema} is:inline></script>

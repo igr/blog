@@ -1,22 +1,25 @@
 {
   "name": "blog",
-  "version": "3.0.0",
-  "description": "oblac.rs",
-  "type": "commonjs",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "clean": "rm -rf out",
-    "dev": "node spig.mjs dev",
-    "build": "node spig.mjs"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "author": {
-    "name": "Igor Spasić",
-    "email": "igor.spasic@gmail.com",
-    "url": "https://igo.rs/"
-  },
-  "license": "MIT",
-  "homepage": "https://oblac.rs",
   "dependencies": {
-    "remove-markdown": "^0.5.0",
-    "spignite": "^3.0.0"
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/mdx": "^3.1.0",
+    "@astrojs/rss": "^4.0.6",
+    "astro": "^4.10.1",
+    "remark-flexible-containers": "^1.2.1",
+    "sass": "^1.77.4",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.1",
+    "prettier-plugin-astro": "^0.14.0"
   }
 }

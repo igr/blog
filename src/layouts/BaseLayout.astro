@@ -1,0 +1,140 @@
+---
+const {home, title, description} = Astro.props
+import {site} from '../config'
+import '../styles/main.scss';
+import Footer from '../components/Footer.astro'
+const postTitle = title + " - " + site.title
+---
+<!DOCTYPE html>
+<html lang="sr-rs">
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes"/>
+  <meta name="author" content={site.author}/>
+  <meta name="twitter:site" content="@oblac_rs"/>
+  <meta name="twitter:card" content={site.description}/>
+
+  {home
+    ?
+    <title>{site.title}</title>
+    <meta property="og:title" content={site.title}/>
+    <meta name="twitter:title" content={site.title}/>
+    <meta property="og:type" content="website"/>
+    <meta name="description" content={site.description}/>
+    <meta name="twitter:description" content={site.description}/>
+    <meta property="og:description" content={site.description}/>
+    :
+    <title>{postTitle}</title>
+    <meta property="og:title" content={postTitle}/>
+    <meta name="twitter:title" content={postTitle}/>
+    <meta property="og:type" content="article"/>
+    <meta name="description" content={description}/>
+    <meta name="twitter:description" content={description}/>
+    <meta property="og:description" content={description}/>
+    <meta property="article:author" content={Astro.url.origin}/>
+  }
+
+  <meta property="og:locale" content="sr_RS"/>
+  <meta property="og:url" content={Astro.url}/>
+  <meta property="og:site_name" content="Oblac"/>
+  <meta property="og:image" content={Astro.url.origin + "/o-wide.png"}/>
+  <meta name="twitter:image" content={Astro.url.origin + "/o-wide.png"}/>
+
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Josefin+Sans:400,700|Domine:400,700&display=swap"
+        crossorigin>
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Josefin+Sans:400,700|Domine:400,700">
+  </noscript>
+
+  <link rel="icon" href="/favicon-16x16.png" sizes="16x16"/>
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32"/>
+  <link rel="icon" href="/favicon-96x96.png" sizes="96x96"/>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+
+  <meta name="msapplication-TileImage" content="ms-icon-310x310.png"/>
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/android-icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="72x72" href="/android-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="36x36" href="/android-icon-36x36.png">
+
+  <meta name="msapplication-square70x70logo" content="/ms-icon-70x70.png"/>
+  <meta name="msapplication-square150x150logo" content="/ms-icon-150x150.png"/>
+  <meta name="msapplication-square310x310logo" content="/ms-icon-310x310.png"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+
+  <link rel="prefetch" as="image" href="/moon.svg">
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="Oblac"
+    href={`${Astro.site}rss.xml`}
+  />
+</head>
+
+<body>
+<div class="theme-switch-wrapper">
+  <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox"/>
+    <div class="slider round"></div>
+  </label>
+</div>
+<div class="container">
+  <slot/>
+</div>
+<Footer/>
+</body>
+</html>
+
+<script is:inline>
+  function ready(callback) {
+    // in case the document is already rendered
+    if (document.readyState !== 'loading') callback(); // modern browsers
+    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback); // IE <= 8
+    else document.attachEvent('onreadystatechange', function () {
+        if (document.readyState === 'complete') callback();
+      });
+  }
+
+  ready(() => {
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+      }
+    }
+
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+  });
+</script>

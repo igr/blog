@@ -1,0 +1,33 @@
+@import "vars";
+@font-face {
+  font-family: CooperBT;
+  font-weight: 800;
+  src: url(/fonts/CooperBT-Bold_gdi.eot);
+  src: url(/fonts/CooperBT-Bold_gdi.eot?#iefix) format("embedded-opentype"), url(/fonts/CooperBT-Bold_gdi.woff) format("woff"), url(/fonts/CooperBT-Bold_gdi.ttf) format("truetype");
+  font-display: swap;
+}
+:root {
+  --text-color: #303030;
+  --bg-color: #fff;
+  --bg-shade: #f4f4f4;
+  --bg-light-color: #f1f1f1;
+  --bg-tag-color: #e5e5e5;
+  --title-small-color: #686868;
+  --title-color: #333;
+  --line-color: #686868;
+  --time-color: #686868;
+  --red-color: #bf2139;
+  --font-serif-oblac: $serif-oblac;
+}
+[data-theme="dark"] {
+  --text-color: #fff;
+  --bg-shade: #363c48;
+  --bg-color: #282c35;
+  --bg-light-color: #363c48;
+  --bg-tag-color: #363c48;
+  --title-small-color: #ccc;
+  --title-color: #fff;
+  --line-color: #ccc;
+  --time-color: #999;
+  --red-color: #bf2139;
+}

@@ -1,0 +1,81 @@
+@import "vars";
+
+.tagline {
+  font-size: 0.8em;
+  font-family: $monospace;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  a {
+    color: var(--title-small-color);
+    background: var(--bg-shade);
+    padding: 4px;
+    border-radius: 4px;
+
+    &:hover {
+      background: var(--bg-light-color);
+    }
+  }
+  a.selected {
+    color: #fff;
+    background: var(--red-color);
+  }
+}
+
+.tags {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+
+.tag {
+  cursor: pointer;
+  background: var(--bg-tag-color);
+  color: #999;
+  border-radius: 4px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px 0 16px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+}
+
+.tag::before {
+  content: '#';
+  font-weight: bold;
+  top: 2px;
+  left: 4px;
+  position: absolute;
+  font-size: 0.8em;
+}
+
+.tag:hover {
+  background-color: $red;
+  color: white;
+  a {
+    color: white;
+  }
+}
+.tag a {
+  color: #999;
+  font-size: 0.8rem;
+  border-bottom: none;
+  background: none;
+  font-family: $monospace;
+  letter-spacing: -1px;
+}
+.tag a:hover {
+  color: white;
+}
+.tag:hover::after {
+  border-left-color: $red;
+}

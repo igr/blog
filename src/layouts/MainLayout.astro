@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import {site} from "../config";
+---
+
+<BaseLayout home={true}>
+  <header class="site-header">
+    <h1 id="title">{site.title}</h1>
+  </header>
+  <slot/>
+</BaseLayout>

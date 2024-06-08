@@ -1,0 +1,25 @@
+@import "vars";
+
+input {
+  font-family: $monospace;
+  font-size: $fs;
+  color: #666;
+}
+input:focus {
+  border: 1px solid $red;
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc;
+  opacity: 1; /* Firefox */
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+}

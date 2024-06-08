@@ -1,0 +1,49 @@
+---
+import {getCollection} from 'astro:content';
+import MainLayout from "../layouts/MainLayout.astro"
+import PostDate from "../components/PostDate.astro"
+import type {CollectionEntry} from 'astro:content';
+
+const allPosts: CollectionEntry<"posts">[] = (await getCollection('posts'))
+  .sort((a, b) => b.data.date - a.data.date);
+
+//const allPosts = await getCollection('posts');
+
+const groups = new Map<string, CollectionEntry<"posts">[]>
+allPosts.forEach((post: CollectionEntry<"posts">) => {
+  const year = new Date(post.data.date).getFullYear().toString();
+  const yearGroup = groups.get(year) || [];
+  yearGroup.push(post);
+  groups.set(year, yearGroup);
+});
+const years = Array.from(groups.keys()).sort((a, b) => b.localeCompare(a));
+---
+
+<MainLayout>
+  <article class="posts">
+  {years.map(year => (
+    <section>
+      <h2 class="year">{year}</h2>
+      <ol>
+        {groups.get(year)!.map(post => (
+          <li>
+            <PostDate date={post.data.date} short={true}/>
+            <div><a href={post.slug}>{post.data.title}</a><br>
+              <div class="desc">{post.data.description}</div>
+            </div>
+          </li>
+        ))}
+      </ol>
+      </section>
+  ))}
+  </article>
+</MainLayout>
+
+<style lang="scss">
+  h2.year {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    z-index: 1;
+  }
+</style>
