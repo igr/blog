@@ -1,5 +1,6 @@
 @import "vars";
 @import "root";
+
 *,
 *::before,
 *::after {
@@ -20,7 +21,7 @@ html {
 
 body {
   line-height: 1.6;
-  transition:color 0.4s ease-out, background 0.4s ease-out;
+  transition: color 0.4s ease-out, background 0.4s ease-out;
 }
 
 html,
@@ -43,6 +44,7 @@ hr {
   border: 0;
   text-align: center;
 }
+
 hr:after {
   line-height: 1.4;
   letter-spacing: 1em;
@@ -74,9 +76,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .center {
   text-align: center;
 }
+
 p:has(img) {
   text-align: center;
 }
@@ -102,11 +106,13 @@ a {
   color: var(--red-color);
   transition: .2s;
   padding: 2px 0 0 0;
+
   &:hover {
     color: #fff;
     background-color: var(--red-color);
   }
 }
+
 ol,
 ul {
   margin: 0 0 1rem 1.5rem;
@@ -145,24 +151,32 @@ pre {
   letter-spacing: -1px;
   tab-size: 2;
 }
+
 kbd {
   background-color: var(--bg-light-color);
   padding: .125rem .25rem 0;
 }
+
 kbd,
 code {
   margin: 0;
 }
+
 p code {
   background-color: var(--bg-light-color);
   padding: .125rem .25rem 0;
 }
+
 article,
 section {
   display: block;
   margin-bottom: 1rem;
+
   p, li {
-    line-height: 2rem;
+    line-height: 1.5rem;
+    @media screen and (min-width: $break-small) {
+      line-height: 2rem;
+    }
   }
 }
 
@@ -178,6 +192,7 @@ h1 {
   font-weight: bold;
   //font-family: $serif-oblac;
 }
+
 h1#title {
   line-height: 1.2em;
   font-weight: bold;
@@ -192,32 +207,37 @@ h1#title {
   padding-bottom: 0;
   text-transform: none;
 }
+
 h1#title:before {
   content: "";
-  position:absolute;
-  margin:-20px -36px;
-  width:32px;
-  height:32px;
-  transform:rotate(50deg);
+  position: absolute;
+  margin: -20px -36px;
+  width: 32px;
+  height: 32px;
+  transform: rotate(50deg);
   //border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
   border-radius: 8px;
   background-color: var(--bg-color);
-  overflow:hidden;
+  overflow: hidden;
 }
+
 div#title-small {
   font-size: 1.4em;
   letter-spacing: -2px;
   color: var(--red-color);
   font-family: $serif-oblac;
+
   a {
     text-decoration: none;
   }
+
   border-left: 16px solid $red;
   margin-bottom: .5rem;
   padding-left: 10px;
   padding-top: 1px;
   border-top-left-radius: 10px;
 }
+
 h2,
 h3,
 h4,
@@ -230,16 +250,24 @@ h6 {
 
 h2 {
   font-size: 2.2rem;
+  line-height: 2.4rem;
+  @media screen and (min-width: $break-small) {
+    line-height: 2.2rem;
+  }
 }
+
 h3 {
   font-size: 1.6rem;
 }
+
 h4 {
   font-size: 1.3rem;
 }
+
 h5 {
   font-size: 1.25rem;
 }
+
 h6 {
   font-size: 1rem;
 }
@@ -259,16 +287,19 @@ h6 {
   margin-bottom: 2rem;
   display: flex;
 }
+
 .site-header-small {
   @extend .site-header;
   margin-bottom: 2rem;
 }
+
 a#home {
   background: none;
   color: var(--title-small-color);
+
   &:hover {
     letter-spacing: 4px;
-//    color: var(--title-small-color);
+    //    color: var(--title-small-color);
   }
 }
 
@@ -306,6 +337,7 @@ footer {
     color: var(--title-small-color);
     text-decoration: none;
     padding: 2px;
+
     &:hover {
       background-color: var(--title-small-color);
       color: #fff;
@@ -314,7 +346,6 @@ footer {
 }
 
 .posts, .p {
-
   ol {
     margin-left: 0;
     list-style: none;
@@ -330,10 +361,12 @@ footer {
     }
   }
 }
+
 .posts {
   li {
     line-height: 1.1rem;
   }
+
   .desc {
     margin-top: 6px;
     font-size: 0.8rem;
@@ -342,6 +375,7 @@ footer {
     font-family: $serif-head;
     opacity: 0.8;
   }
+
   time {
     display: block;
     color: var(--time-color);
@@ -360,17 +394,23 @@ footer {
     + div {
       margin-left: 0;
       padding-top: 6px;
+
       a {
         text-transform: uppercase;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         font-family: $serif-head, serif;
+        @media screen and (min-width: $break-small) {
+          letter-spacing: -2px;
+        }
       }
+
       @media screen and (min-width: $break-small) {
         margin-left: 1rem;
       }
     }
   }
 }
+
 .post {
   margin-bottom: 100px;
 
@@ -401,6 +441,7 @@ footer {
     //-ms-hyphens: auto;
     //-moz-hyphens: auto;
   }
+
   .post-header {
     margin-bottom: 5rem;
   }
@@ -409,11 +450,13 @@ footer {
     display: block;
     text-align: right;
   }
+
   .skew span {
     &:before {
       content: '';
       padding-right: 4px;
     }
+
     color: $gray;
     font-size: 1em;
     font-family: $monospace;
@@ -423,48 +466,53 @@ footer {
 
 p,
 li {
-  line-height: 1.6rem;
   color: var(--text-color);
 }
+
 pre, table, p, li {
   margin-bottom: 2rem;
 }
 
 
 table, td, th {
-    border-color: rgba(68,68,68,0.3);
+  border-color: rgba(68, 68, 68, 0.3);
 }
+
 td, th {
-    padding: 10px 15px;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    display: table-cell;
-    vertical-align: inherit;
+  padding: 10px 15px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  display: table-cell;
+  vertical-align: inherit;
 }
+
 caption, th {
-    text-align: left;
+  text-align: left;
 }
+
 th {
-    font-weight: bold;
+  font-weight: bold;
   //noinspection CssInvalidPropertyValue
   text-align: -internal-center;
 }
+
 thead {
   background-color: $light-gray;
 }
+
 table {
-    border-collapse: separate;
-    border-spacing: 0;
-    border-top: 1px solid;
-    border-left: 1px solid;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 1px solid;
+  border-left: 1px solid;
 }
 
 
 .p {
   @media screen and (min-width: $break-small) {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: .5rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5rem;
   }
 }
 
@@ -473,19 +521,22 @@ ul#social {
   font-size: 0.8em;
   font-family: $monospace;
   letter-spacing: -2px;
+
   li {
-    display:block;
+    display: block;
     width: 24px;
     background-color: var(--title-color);
     color: var(--bg-light-color);
     float: right;
     margin: 0;
   }
+
   a {
     color: var(--bg-light-color);
     text-decoration: none;
     background: none;
     padding: 2px;
+
     &:hover {
       text-transform: uppercase;
     }
@@ -500,6 +551,7 @@ ul#social {
 figure a {
   border-bottom: 0;
 }
+
 figcaption p {
   font-family: $monospace;
   color: #fff;
@@ -510,16 +562,18 @@ figcaption p {
   text-align: right;
   //transform: rotate(-4deg);
   padding-top: 4px;
+
   a {
     margin-left: 2px;
     position: relative;
     top: -1px;
     font-size: 0.8em;
     padding: 6px 10px;
-    background: none;
+    text-decoration: none;
     background-color: var(--title-color);
     color: var(--bg-light-color);
     letter-spacing: -2px;
+
     &:hover {
       text-transform: uppercase;
       color: var(--bg-color);
@@ -536,18 +590,20 @@ figcaption p {
   font-family: $monospace;
   margin-bottom: 4rem;
   //background-color: var(--bg-light-color);
-  box-shadow: 20px 20px rgba(0,0,0,.15);
+  box-shadow: 20px 20px rgba(0, 0, 0, .15);
   transition: all .4s ease;
+
   &:hover {
     box-shadow: none;
   }
+
   p {
     margin: 0;
   }
 }
 
 #stav {
-  color:#686868;
+  color: #686868;
   margin-top: 4rem;
   margin-bottom: 3rem;
   font-size: 0.8rem;
@@ -556,10 +612,12 @@ figcaption p {
   text-align: center;
   padding: 2rem 4rem;
   line-height: 1rem;
+
   a {
     color: var(--title-color);
     text-decoration: none;
     padding: 2px;
+
     &:hover {
       color: #fff;
     }
