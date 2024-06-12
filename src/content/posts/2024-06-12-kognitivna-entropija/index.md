@@ -3,10 +3,10 @@ title: "Kognitivna entropija"
 date: 2024-06-12T01:06:08+00:00
 slug: kognitivna-entropija
 description: >
-  Ako bih sumirao suštinu razvoja softvera u jednoj rečenici, to bi bilo:
+  Ako bih sumirao suštinu razvoja softvera u jednoj rečenici.
 ---
 
-Ako bih sumirao suštinu razvoja softvera u jednoj rečenici, to bi bilo:
+Ako bih sumirao suštinu razvoja softvera u jednoj rečenici, glasila bi ovako:
 
 > Razvoj softvera treba neprestano težiti smanjenju nedoumica.
 
