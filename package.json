@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.7.0",
     "@astrojs/mdx": "^3.1.0",
     "@astrojs/rss": "^4.0.6",
+    "@astrojs/sitemap": "^3.1.5",
     "astro": "^4.10.1",
     "remark-flexible-containers": "^1.2.1",
     "sass": "^1.77.4",
