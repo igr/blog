@@ -6,8 +6,6 @@ description: >
   Početak mudrosti je nazvati stvari njihovim pravim imenom.
 ---
 
-# Imenovanje namera i interpretacija
-
 > Početak mudrosti je nazvati stvari njihovim pravim imenom.
 
 (Konfučije.)
