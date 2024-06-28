@@ -84,4 +84,4 @@ SRP pokušava da sabije i koheziju, i uvezanost, i module, i separation of conce
 
 Ne pomaže ni to što je primena SRP binarna, crno/belo: ili si prekršio  "pravilo" ili nisi. A to je tek besmisleno; nema sistema koji ima potpunu koheziju i nultu uvezanost.
 
-Ako nam je softversko inženjerstvo poziv, onda moramo biti precizni. SRP to nije. Treba da odbaciti.
+Ako nam je softversko inženjerstvo poziv, onda moramo biti precizni. SRP to nije. Ergo, treba ga odbaciti.
