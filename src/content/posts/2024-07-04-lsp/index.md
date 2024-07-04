@@ -42,7 +42,7 @@ Hijerarhija - dakle, nasleđivanje - je tek sporadično korisna apstrakcija. Dru
 
 Ovaj rad ističe i zanimljive benefite hijerarhije tipova, kao što je - inkrementalni dizajn, zašta prvi put čujem. Ideja je sledeća: u početku `P` i `Q` koriste tip `T`, a onda, vremenom, `Q` se menja tako da koristi sada novi tip `S` koji je pod-tip izvornog `T`. Ovaj primer i nije najbolji; inkrementalni dizajni nije posledica niti ekskluziva hijerarhije tipova. Zanemaruje se i kompleksnost hijerarhije usled usložnjavanja sistema.
 
-Pomenuti rad _nije_ taj na koji se treba oslanjati. Iako ima neke interesantne - i vrlo relevantne - uvide, on je začetak ideje koja dolazi kasnije. Upravo početak: "What is wanted here is something like..." (koji se često izostavlja!) je samo sumiranje za potrebe teksta i boljeg razumevanja, a _nikako_ definicija.
+Pomenuti rad _nije_ taj na koji se treba oslanjati. Iako ima neke interesantne - i vrlo relevantne - uvide, on je začetak ideje koja dolazi kasnije. Upravo početak: "What is wanted here is something like..." (koji se često izostavlja!) je naznaka da je reč o sumiranju za potrebe teksta i boljeg razumevanja, a _nikako_ definicija.
 
 ----
 
@@ -114,7 +114,7 @@ Idemo dalje. Robert sam 2020. godine priznaje da je pogrešno interpretirao Barb
 
 Problem LSP-a je: _nasleđivanje_ i hijerarhije tipova; upravo ono čime se bavi. Reč je o lepom i kvalitetnom pokušaju formalizacije podtipova; međutim, većina je ostala u tekstu, a malo toga je završilo u programskim jezicima. Ta činjenica takođe govori: ako je nasleđivanje još uvek, posle pola veka, teško za precizno definisanje, onda nam možda i ne treba?
 
-Dalje, autorke podrazumevaju precizna ponašanja metoda. To ne mora biti slučaj. Metod `toString()`, na primer, ima vrlo slobodnu interpretaciju. Ako bi u Javi napisali: `object.toString().contains("@")` dobili bi vrlo _različita_ ponašanja. Poređenje (`equals`) je tek priča za sebe: da li su tačke `{x:0, y:0}` i `{x:0, y:0, z:1}` iste?
+Dalje, autorke podrazumevaju precizna ponašanja metoda. To ne mora biti slučaj. Metod `toString()`, na primer, ima vrlo slobodnu interpretaciju. Ako bi u Javi napisali: `object.toString().contains("@")` dobili bi vrlo _različita_ ponašanja. Poređenje (`equals`) je tek priča za sebe: da li su tačke `{x:0, y:0}` i `{x:0, y:0, z:1}` iste ako druga nasleđuje prvu?
 
 Ispostavlja se da je teško precizno opisati ponašanje; a još teže kada na to primenimo podtipove. `TreeSet#contains()` u Javi, na primer, koristi (ili je koristio) komparator da pronađe da li objekat postoji u setu. Komparator služi za ustanovljavanje redosleda, a ne jednakost. To je ponašanje koje se ne vidi spolja; opisano je samo kratko u dokumentaciji.
 
