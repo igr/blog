@@ -93,13 +93,13 @@ Takvu komponetu samo nazvao **Fleet** (flota). Flota traktora je posebna kompone
 + vodi računa da dva traktora nikada ne izvršavaju mutabilne operacije u isto vreme
 + izvršava poruke koje su poslate floti
 
-![](fleet.png)
+![](./fleet.png)
 
 Flota je takođe aktor sistem - i njoj se mogu proslediti poruke koje se tiču svih traktora (tj. podataka koji oni predstavljaju). Ukoliko su te operacije imutabilne, izvršavaju se paralelno sa drugim. Ukoliko je operacija mutabilna, ona uklanja sve (ili odgovarajuće) traktore u memoriji, kako bi se ponovo učitali sa novim stanjem podataka.
 
 Za razliku od aktora, Traktor nema svoje sanduče; sanduče se sada nalazi u Floti i isto je za sve traktore i za flotu. Zahvaljući zajedničkom sandučetu, flota može da kontroliše redosled izvršavanja poruka i da garantuje da dva traktora sa istom adresom neće mutirati podatke u isto vreme.
 
-![](flow.png)
+![](./flow.png)
 
 Da pogledamo primer. Hajde da imamo `100` brojača koji će na slučajan način biti izabrani i inkrementirani:
 
