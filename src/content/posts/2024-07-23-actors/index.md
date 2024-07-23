@@ -40,15 +40,15 @@ object Counter {
 }
 ```
 
-**Kuku** aktor sistem je mali i ne sadrži nikakvu magiju. Sanduče za poruke je ništa drugo do Kotlinov `Channel` koji se koristi za korutine. Upravo ovakva jednostavna arhitektura je pogodna da se sistem distribuira na više računara; sve šta nam treba je da postoji kanal komunikacije.
+**Kuku** aktor sistem je mali i ne sadrži nikakvu magiju. Sanduče za poruke je ništa drugo do Kotlinov `Channel` koji se koristi za korutine. Upravo ovakva jednostavna arhitektura je pogodna da se sistem distribuira na više računara; sve šta nam je potrebno je kanal komunikacije.
 
 ## Šta možemo da naučimo od Aktora?
 
-Paralelizam je teško implementirati. Ako je tako, što ga ne bi _izbegli_? Umesto komponenti koje rade paralelno nad zajedničkim stanjima podataka, hajde da imamo nezavisne komponente nad različitim podacima. U prvom, **tradicionalnom** pristupu, kada su podaci deljeni između procesa, moramo da se eksplicitno bavimo paralelizmom, lokovanjem i kojekakvim strategijama sinhronizacije. U drugom slučaju, kada podaci nisu deljeni, ima mnogo toga manje o čemu treba voditi računa.
+Paralelizam je teško implementirati. Ako je tako, što ga ne bi _izbegli_? Umesto komponenti koje rade paralelno nad zajedničkim stanjima podataka, hajde da imamo nezavisne komponente nad različitim podacima. U prvom, **tradicionalnom** pristupu, kada su podaci deljeni između procesa, moramo da se eksplicitno bavimo paralelizmom, kojekakvim strategijama lokovanja. U drugom slučaju, kada podaci nisu deljeni, ima mnogo toga manje o čemu treba voditi računa.
 
 Mašina stanja ponašanja je vredan način za modelovanje programa. Sve i da ne koristimo aktore, nema razloga nemati mašinu stanja ponašanja. Ona uklanja gomilu `if` upita u kodu. Ovo nas vraća na početke, kada smo učili algoritme - sve češće pomislim da je `if`/`else` način razmišljanja neprirodan i da nanosi štetu našem softversko-inženjerskom razmišljanju i razvoju. O tome neki drugi put.
 
-Sledeća lekcija je eventualna konzistentnost. Insistirati na drugačijem je besmisleno - zahteva ponovno baratanje lokovanjima i kojekakvim strategijama samo zbog fiktivnog zahteva da _sada_, ovog fiktivnog trenutka, sve mora bitie konzistentno. To je protivu-prirodna praksa: "sada" je iluzija; informacija ima svoju brzinu prenosa u prirodi. Zašto onda insistirati na tome u kodu? Da ponovim: program koji insistira na trenutnoj konzistenciji mora to da "plati" na drugim mestima, koja su (često nepotrebno) skuplja.
+Sledeća lekcija je eventualna konzistentnost. Insistirati na drugačijem je besmisleno skupo - zahteva ponovno baratanje kojekakvim strategijama zaključavanja samo zbog fiktivnog zahteva da _sada_, baš ovog trenutka, sve mora biti konzistentno. To je protivu-prirodna praksa: "sada" je iluzija; informacija ima svoju brzinu prenosa u prirodi. Zašto onda insistirati na tome u programu? Da ponovim: program koji insistira na trenutnoj konzistenciji mora to da "plati" na drugim mestima, koja su (često nepotrebno) skuplja.
 
 Aktori su glupi, mreže aktora su pametne. Ovo je suština sistema baziranih na aktorima. Često se porede sa trakom za proizvodnju, gde je svaki pojedinačni korak jednostavan, a rezultat može biti funkcionalno kompleksan. Arhitektura je dekompozicija sistema na granice i jednostavne celine, koje tek _zajedno_ ostvaraju funkcionalnost. Nema smisla imati sistem samo sa jednim aktorom.
 
@@ -74,15 +74,15 @@ Moja razmišljanja o OOP zapravo nisu krenula od aktora. Krenula su od enkapsula
 
 Da iskoristimo isti primer. Imamo nekakav brojač, `Counter`. On ima svoje stanje podataka: vrednost brojača. Njegovo ponašanje je jednostavno: kada mu se kaže da uveća brojač, to i uradi. Kada mu se kaže da se resetuje, vrednost se vrati na nulu. Kako sve vreme zapravo rešavamo paralelizam, hajde da imamo puno ovakvih brojača: svaki ima svoje stanje podataka, svoji brojač.
 
-`Counter` je jedan **Traktor**, trans-aktor, transformišući aktor: tako sam nazvao ove moje "aktore". Potrebno nam je novi naziv kako ne bi insistirali na već postojećim definicijama. Kako bilo, za sada ništa novo.
+`Counter` je jedan **Traktor**, trans-aktor, transformišući aktor: tako sam nazvao ove moje "aktore". Potrebno nam je novi naziv kako ne bi robovali već postojećim definicijama. Kako bilo, za sada ništa novo.
 
-Idemo dalje. Za razliku od Aktora koji nemaju posebnu vezu sa podacima osim da ih prenose, ovde _svaki traktor odgovara jednom podatku_. Zato svaki traktor ima svoju `adresu` - jedinstveni identifikator koji označava kom podataku pripada. To podseća na primarni ključ tabela u bazi. Za razliku od baze, jednu adresu može da opslužuje više instanci Traktora. Traktor ne mora nužno biti vezan za podatak iz baze; tj. njegova upotreba je šira od "mapiranja" na bazu.
+Idemo dalje. Za razliku od aktora koji nemaju posebnu vezu sa podacima osim da ih prenose, ovde _svaki traktor odgovara jednom podatku_. Zato svaki traktor ima svoju `adresu` - jedinstveni identifikator koji označava kom podataku pripada. To podseća na primarni ključ tabela u bazi. Za razliku od baze, jednu adresu može da opslužuje više instanci Traktora. Traktor ne mora nužno biti vezan za podatak iz baze; tj. njegova upotreba je šira od "mapiranja" na bazu.
 
 Idemo dalje. Paralelizam je teška za implementaciju. Zašto onda ne prepustimo računaru da sam vodi računa o tome? Dva procesa koji se bave različitim podacima se mogu izvršiti paralelno. Ako rade nad istim podacima, neka rade jedan za drugim. I to je sve.
 
 Sada je jasno zašto nam treba `adresa` - da bi razlikovati sa kojim stanjima podataka radimo. Uvodimo sledeće pravilo:
 
-> Dva Traktora sa istom adresom ne mutiraju paralelno.
+> Dva Traktora sa istom adresom ne mutiraju u isto vreme.
 
 Da bi implementirali pravilo, potrebna nam je još jedna softverska apstrakcija koja će poslužiti kao nekakav orkestrator izvršavanja traktora.
 
@@ -101,12 +101,12 @@ Za razliku od aktora, Traktor nema svoje sanduče; sanduče se sada nalazi u Flo
 
 ![](flow.png)
 
-Da pogledamo primer. Hajde da imamo `100` brojača koji će na slučajan način biti izabrani i inkrementirani:
+Da pogledamo primer. Hajde da imamo `100` brojača koji će na slučajan način biti birani i inkrementirani:
 
 ```kotlin
 val fleet = spawnFleet(...)
 repeat(1_000_000) {
-	val addr = TraktorAddress(Random.nextInt(100))
+	val addr = TraktorAddress.of(Random.nextInt(100))
 	fleet.tell(Counter.Inc(1) to address)
 }
 ```
@@ -117,7 +117,7 @@ repeat(1_000_000) {
 fleet shout Counters.Checksum
 ```
 
-Ovo je zanimljiv primer koji zahteva dodatnu pažnju. Uobičajeni način za čitanje podataka svih stanja podataka (svih redova u tabeli) je da se svaki traktor zapita za stanje. To je ekvivalentno učitavanju traktora u memoriju (ukoliko već nije učitan) i pojedinačno učitavanje podatka iz baze, zatim slanje podatka nazad. Ovo može biti skupo kada je broj podataka veliki. Zato dozvoljavam da flota sama odlučuje kako će da izvrši poruku i da, ako treba, sama kveruje bazu i vrati rezultat.
+Ovo je zanimljiv primer koji zahteva dodatnu pažnju. Uobičajeni način za čitanje podataka svih stanja podataka (svih redova u tabeli) je da se svaki traktor zapita za stanje. To je ekvivalentno učitavanju traktora u memoriju (ukoliko već nije učitan) i pojedinačno učitavanje podatka iz baze, zatim slanje podatka nazad. Ovo može biti skupo kada je broj podataka veliki. Zato dozvoljavam da flota sama odlučuje kako će da izvrši poruku i da, ako treba, sama kveruje bazu i vrati rezultat. Još nešto: reč je o imutabilnoj operaciji, pa se može izvršiti paralelno sa drugim operacijama.
 
 Ukoliko želimo da resetujemo sva stanja podataka:
 
@@ -125,9 +125,9 @@ Ukoliko želimo da resetujemo sva stanja podataka:
 fleet shout Counters.Reset
 ```
 
-Slično kao u prethodnom primeru, flota sama odlučuje kako će da izvrši poruku. Najednostavniji način je da se podaci direktno promene u bazi, te da se svi traktori ubiju, kako bi se ponovo učitali sa novim stanjem podataka.
+Slično kao u prethodnom primeru, flota sama odlučuje kako će izvršiti poruku. Najednostavniji način je da se podaci direktno promene u bazi, te da se svi traktori ubiju, kako bi se ponovo učitali sa novim stanjem podataka. Kako je ovo mutabilna operacija (poruka), flota _sama_ reguliše redosled izvršavanja.
 
-U primeru sam umesto baze koristio običnu mapu. Kao dokaz da paralelizam radi, dovoljno je bilo koristiti osnovnu implementaciju (`HashMap`), a ne `ConcurentHashMap`, kako bi nalagao tradicionalni model programiranja. Drugim rečima, nije bilo konkurentnih izmena na podacima! Flota je sama vodila računa o tome, a ne program brojača!
+U primeru sam umesto baze koristio običnu memorijsku key-value mapu. Kao dokaz da paralelizam radi, dovoljno je bilo koristiti uobičajenu implementaciju, `HashMap`, a ne thread-safe varijantu, `ConcurentHashMap`, kako bi nalagao tradicionalni model programiranja. Drugim rečima, nije bilo konkurentnih izmena na podacima! Flota je sama vodila računa o tome, a ne moj program brojača!
 
 ---
 
@@ -139,16 +139,16 @@ Baze su sjajna tehnologija, koja je (kako mi izgleda) napredovala brže nego pro
 
 Opisani Traktori oduzimaju deo funkcionalnosti baze koji se bavi paralelizmom i ostavljaju deo koji se bavi podacima. To radimo ne zato što baze ne rade kako treba, već iz drugih razloga:
 
-1. rešavanje paralelnog pristupa na sloju baze je suviše kasno,
-2. ukoliko je paralelizam rešen pre, u aplikativnom sloju, čak i pre samih izvšavanja procesa, otvara nam se ceo jedan novi horizont aplikativnih mogućnosti, a koje baze ne mogu da ponude.
+1. rešavanje paralelnog pristupa na sloju baze je suviše _kasno_,
+2. ukoliko je paralelizam rešen pre, u aplikativnom sloju, čak i pre samog izvšavanja procesa, otvara nam se ceo jedan novi horizont aplikativnih mogućnosti, a koje baze ne mogu da ponude.
 
 ## Ima li šta još?
 
-Izneta ideja me proganja već neko vreme i morala da je da završi primerom. Trudio sam se da ne tražim Akka alternative, upravo da bih mogao sam da sažvaćem ideju do kraja. Kako se ispostavilo, nešto slično već postoji - reč je o potcenjenom Microsoftovom projektu "Orleans". On uvodi pojam Vrituelnih Aktora koji na sličan način postoje u memoriji i koji su kontrolisani od strane frejmvorka, a ne programera. Nisam stigao da se posvetim detaljima, ali sve što sam usput načuo o Orleansu liči na iznetu ideju gore.
+Izneta ideja me proganja već neko vreme i morala da je da završi primerom. Trudio sam se da ne tražim Akka alternative, upravo da bih mogao sam da sažvaćem ideju do kraja. Kako se ispostavlja, nešto slično već postoji - reč je o potcenjenom Microsoftovom projektu "Orleans". On uvodi pojam Vrituelnih Aktora koji na sličan način postoje u memoriji i koji su kontrolisani od strane frejmvorka, a ne programera. Nisam stigao da se posvetim detaljima, ali sve što sam usput načuo o Orleansu liči na iznetu ideju gore.
 
 Kada sistem sam kontroliše život (tr)aktora, ostavlja mogućnost za interesantne funkcije; kao što bi bilo raspoređivanje traktora koji češće komuniciraju zajedno na istu instancu, radi boljih performansi.
 
-Ako se udubimo u problem, na koju god stranu da pogledamo uočava se jasan trend koji nagoveštava i naglašava vrednost postojanja _autonomnih programskih jedinica_ (aktora, traktora, virtualnih aktora, ćelija...) i _odbacivanja multi-threadinga_ kao nedvoljno dobre tehnike za paralelizam.
+Ako se udubimo u problem, na koju god stranu da pogledamo uočava se jasan trend koji nagoveštava i naglašava vrednost postojanja _autonomnih programskih jedinica_ (aktora, traktora, virtualnih aktora, ćelija...) i _odbacivanja multi-threadinga_ kao nedovoljno dobre tehnike za paralelizam.
 
 ## Za kraj
 
