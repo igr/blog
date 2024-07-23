@@ -150,6 +150,8 @@ Kada sistem sam kontroliše život (tr)aktora, ostavlja mogućnost za interesant
 
 Ako se udubimo u problem, na koju god stranu da pogledamo uočava se jasan trend koji nagoveštava i naglašava vrednost postojanja _autonomnih programskih jedinica_ (aktora, traktora, virtualnih aktora, ćelija...) i _odbacivanja multi-threadinga_ kao nedovoljno dobre tehnike za paralelizam.
 
+OOP kakav danas poznajemo je samo specijalan slučaj koncepta autonomnih jedinica. U njemu je neblokirajuće slanje poruka zamenjeno blokirajućim pozivima metoda, mogućnost distribucije objekata je ukinuta, red obrade poruka je izgubljen, a autonomija je svedena na minimum.
+
 ## Za kraj
 
 [Github sors](https://github.com/igr/traktor).
