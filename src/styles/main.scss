@@ -305,6 +305,7 @@ a#home {
 }
 
 footer {
+  z-index: 10;
   letter-spacing: -1.5px;
   border-top: 8px solid $red;
   margin: 100px 0 0 0;
@@ -342,6 +343,7 @@ footer {
     &:hover {
       background-color: var(--title-small-color);
       color: #fff;
+      border-radius: 4px;
     }
   }
 }
