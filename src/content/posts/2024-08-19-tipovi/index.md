@@ -90,11 +90,11 @@ Da li je `Int` podskup `Float` podskup `Double`? Ako imamo tipove `A < B < C` i 
 
 Pokazuje se da subtyping značajno komplikuje detekciju tipova (_type inference_) i da zahteva anotaciju varijanse i ko zna šta još. Naporno je raditi sa takvim kompleksnim formalizmom; naročito kada za tim nema potrebe. Mudriji programski jezici izbegavaju subtyping.
 
-Svrha tipova je tačniji program: način da se spreči pisanje lošeg programa, a da to ne naškodi pisanju dobrog programa. Kada se uvede subtyping, izviru različite situacije koje ne doprinose kvalitetu.
+Svrha tipova je tačniji program: način da se spreči pisanje lošeg programa, a da to ne naškodi pisanju dobrog programa. Kada se uvede subtyping, izviru različite situacije koje unose nedoumice.
 
 ## Nasleđivanje
 
-Nasleđivanje je nešto potpuno drugo: to je _specijalizacija_ deteta za konkretnu upotrebu, ponovna upotreba pojedinih ponašanja roditelja i, eventualno, njihova izmena. Nasleđivanje je jaka veza između dve klase. Kada interfejs nasleđuje drugi, on ga samo proširuje.
+Nasleđivanje je nešto potpuno drugo: to je _specijalizacija_ deteta (podtipa) za konkretnu upotrebu, ponovna upotreba pojedinih ponašanja roditelja (supertipa) i, eventualno, njihova izmena. Nasleđivanje je jaka veza između dve klase. Kada interfejs nasleđuje drugi, on ga samo proširuje.
 
 OOP bukvari pokušavaju da na nasleđivanje prilepe i "IS" (jeste) relaciju, vozeći se na talasu pogrešne pretpostavke da je klasa nekakva klasifikacija. Nasleđivanje nije "jeste" relacija.
 
@@ -114,8 +114,7 @@ Zamislimo da imamo klasu `Point` za dva propertija, `x` i `y`.
 class Point {
 	private final int x, y;
 	boolean eq(Point other) {
-    if (this.x == other.x &&
-        this.y == other.y) {
+    if (this.x == other.x && this.y == other.y) {
         return true;
     }
 		return false;
@@ -129,8 +128,7 @@ Sada nam treba nova klasa, `ColorPoint`, koja pored koordinata sadrži i boju.
 class ColorPoint extends Point {
 	private final Color color;
 	boolean eq(ColorNumber other) {
-    if (super.eq(other) &&
-        this.color == other.color) {
+    if (super.eq(other) && this.color == other.color) {
         return true;
     }
 		return false;
@@ -157,7 +155,7 @@ Nominalni OOP jezici su oni u kojima se nasleđivanje eksplicitno deklariše; st
 
 Nominalni OOP jezici (Java, C#) identifikuju subtyping kroz mehanizam nasleđivanja. Svaka klasa `A` ima svoj tip koji sadrži sve instance `A`, kao i sve instance svih klasa koje nasleđuju `A`. Drugim rečima, `B` je podtip `A` ako i samo ako `B` nasleđuje `A`.
 
-Pipavi deo dolazi sada: pošto je smisao subtypinga slobodno korišćenje podtipova umesto tipova, programer je taj koji **mora** da obezbedi ugovor roditeljske klase, tj. da obezbedi da se dete ponaša isto. Ovo je najvažniji - i jedini, rekao bih - stub OOP koji specifičan za tu paradigmu. Programer mora da poštuje LSP, kako bi nasleđivanje, pored onoga šta jeste, bilo ujedno i subtyping.
+Pipavi deo dolazi sada: pošto je smisao subtypinga korišćenje podtipova umesto supertipova, programer je taj koji **mora** da obezbedi ugovor roditeljske klase, tj. da obezbedi da se dete ponaša isto. Ovo je najvažniji - i jedini, rekao bih - stub OOP koji specifičan za tu paradigmu. Programer mora da poštuje LSP, kako bi nasleđivanje, pored onoga šta jeste, bilo ujedno i subtyping.
 
 Ako se osvrnemo, ispada da OOP zavisi samo od pažnje programera; a zauzvrat dobijamo sintaksni šećer klase i nametnutu hijerarhiju tipova. Ili postajem gluplji vremenom (sasvim validno), ili mi se OOP sve više čini nategnutim.
 
