@@ -127,7 +127,7 @@ Sada nam treba nova klasa, `ColorPoint`, koja pored koordinata sadrži i boju.
 ```java
 class ColorPoint extends Point {
 	private final Color color;
-	boolean eq(ColorNumber other) {
+	boolean eq(ColorPoint other) {
     if (super.eq(other) && this.color == other.color) {
         return true;
     }
@@ -141,8 +141,8 @@ Pitanje: koliko `eq()` metoda postoji u `ColorPoint`?
 Tačan odgovor je: dve metode. Ako raščlanimo sintaksni šećer klase, dobijamo da postoje sledeće _overloadovane_ (a ne overvrajtovane) funkcije:
 
 ```java
-boolean eq(Number, Number);
-boolean eq(ColorNumber, ColorNumber);
+boolean eq(Point, Point);
+boolean eq(ColorPoint, ColorPoint);
 ```
 
 Zato kada napišemo `cpoint.eq(point)`, poziva se metoda iz `Point` (prva funkcija), a ne iz `ColorPoint`. Da smo zaista overajdovali metodu `eq`, kompajler ne bi smeo da dozvoli poziv `cpoint.eq(point)`. Vrednosti podskupa se ne mogu porediti sa svim vrednostima super skupa! Ne možemo porediti `Short` sa `Int`.
@@ -164,7 +164,7 @@ Da se vratimo na `ColorPoint` - on je pod svetlom OOP-a pogrešno napisan. Da bi
 ```java
 class ColorPoint extends Point {
 	private final Color color;
-	boolean eq(Number other) {
+	boolean eq(Point other) {
     // pa... snađite se.
   }
 }
