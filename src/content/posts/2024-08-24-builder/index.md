@@ -54,7 +54,7 @@ Ako klasa ima pozamašan broj zavisnosti koji nam alarmira iskustvo da nešto ni
 
 Ma, 'bole nas ćošak za trivije. Red Hat dozovljava da Quarkus projekat insistira da nema `final` propertija, da se ne koristi konstruktori za zavisnosti i ne podržava lokalni rad sa modulima. Meni su navedene osobine _nedopustive_, a opet, ne potresamo se nešto zbog toga.
 
-Fer je priznati: svi smo mi Džo. U jednom trenutku, negde kada seniorstvo počinje da zrije, prirodno posežemo za načinima da učinimo kod "udobnijim". Razumemo alat, znamo šta radi, želimo da smo produktivni, korisniji - potpuno legitimna namera. Imam i sam koliko god voliš takvih primera na Github-u. I to je u redu - do onda kada nije. Drugim rečima, zašto ne bi preskočili ceo taj ciklus i odmah pisali samo precizan kod? Zahtevali bolje alate i bolje jezike?
+Fer je priznati: svi smo mi Džo. U jednom trenutku, negde kada seniorstvo počinje da zri, prirodno posežemo za načinima da učinimo kod "udobnijim". Razumemo alat, znamo šta radi, želimo da smo produktivni, korisniji - potpuno legitimna namera. Imam i sam koliko god voliš takvih primera na Github-u. I to je u redu - do onda kada nije. Drugim rečima, zašto ne bi preskočili ceo taj ciklus i odmah pisali samo precizan kod? Zahtevali bolje alate i bolje jezike?
 
 ---
 
