@@ -96,3 +96,7 @@ Ne znam kako bih ispravno napisao gornji kod. To je okej. Znam da bih vodio rač
 Tek nakon ovih izmena bih mogao da počnem sa rezonovanjem kako bolje napisati samu funkcionalnost.
 
 "Počisti, pa razmišljaj."
+
+## Adendum
+
+[Primeri refaktorisanja](https://gist.github.com/coka/f0458394b3b64cbbf8ffe2d1cf4db546) - autor [Bojan Čoka](https://www.linkedin.com/in/bcoka/)
