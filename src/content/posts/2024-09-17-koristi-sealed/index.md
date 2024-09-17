@@ -56,6 +56,6 @@ Nema nepotrebne `default` grane.
 
 Zašto ne vraćamo `Number`, pitaće neko? `Number` ne definiše skupove mogućih _vrednosti_, već definiše zajedničko ponašanje! Nažalost, problem sa Javom je što se različiti koncepti nazivaju i konstruišu na isti način. `ConvertedNumber` nije nikakav "interfejs"; to je prosta definicija data tipa.
 
-Ovo smo čekali dve decenije! Ne mogu da dočekam narednih dvadeset: pa biće od Jave nešto!
+Ovo smo čekali dve decenije! Ne mogu da dočekam narednih dvadeset godina: pa biće od Jave nešto!
 
 Idemo dalje.
