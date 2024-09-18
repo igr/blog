@@ -2,12 +2,10 @@
 title: "Mex"
 date: 2024-09-19T01:06:08+00:00
 slug: "mex"
-description: "Dat je niz celih brojeva. Pronađi najmanji broj koji nedostaje u poretku vrednosti skupa."
+description: "Dat je niz celih brojeva. Pronađi najmanji broj koji nedostaje u poretku vrednosti niza."
 ---
 
-# Mex
-
-Dat je niz celih brojeva dužine `N`. Pronađi najmanji broj koji nedostaje u poretku vrednosti skupa.
+Dat je niz celih brojeva dužine `N`. Pronađi najmanji broj koji nedostaje u poretku vrednosti niza.
 
 Primer: za niz `[4,-1,0,3]` rešenje je `1`.
 
@@ -30,7 +28,7 @@ Drugačije rešenje je sledeće:
 
 + odredimo `min` i `max` niza,
 + alociramo fleg-niz (`boolean` tip elementa) dužine `max - min + 1`,
-+ za svaki element ulaznog niza markiramo odgovarajući boolean fleg sa `true`,
++ za svaki element ulaznog niza markiramo odgovarajući fleg sa `true`,
 + konačno, prođemo fleg-niz do prvog `false` - njemu pripadajuću vrednost je rešenje.
 
 Drugim rečima: odredimo _raspon_ vrednosti sadržan u ulaznom nizu. Za ceo raspon vrednosti formiramo fleg-niz koji označava da li se određena vrednost pojavljuje ili ne. Na kraju pronađemo prvi fleg koji nije setovan i on nam označava vrednost rešenja.
@@ -94,6 +92,7 @@ int findMissingElement(const vector<int>& vector)
         }
     }
 
+    // locate result
     i = 0;
     while (i < N)
     {
@@ -113,19 +112,19 @@ Ideja je sledeća: ulazni niz se prvo "translira" u niz pozitivnih brojeva koji 
 
 Kod jesam sam napisao, ali rešenje nisam - pronašao sam ga na vikipediji. Ovo je jedan od onih algoritama koji se koriste u teoriji igara, a koji je dobio ime po "minimum excludant" (mex) operaciji. U teoriji igara, mex operacija predstavlja najmanji broj koji nije prisutan u skupu brojeva.
 
-Do poslednjeg rešenja verovatno ne bih došao ni da mi život zavisi od toga. Što je okej, jer se najmanje bavimo algoritmikom, a i verovatnoća da će mi staviti oružje na čelo i zahtevati da smislim algoritam je baš mala, bar do sledećeg razgovora za posao. Fokus softverskog inženjerstva je nekakva (neprestana) dekompozicija i potom kompozicija sistema do dovoljno dobrog rešenja. Za algoritmiku su potrebne druge veštine.
+Do poslednjeg rešenja verovatno ne bih došao ni da mi život zavisi od toga. Što je okej, jer se najmanje bavimo algoritmikom; a i verovatnoća da će mi staviti oružje na čelo i zahtevati da smislim algoritam je baš mala, bar do sledećeg razgovora za posao. Fokus softverskog inženjerstva je nekakva (neprestana) dekompozicija i potom kompozicija sistema do dovoljno dobrog rešenja. Za algoritmiku su potrebne druge veštine.
 
 Koje bi to bile veštine? TDD.
 
 ---
 
-Ha, upecali ste se ;) Ma kakve volšebne pseudo-prakse, kakvi bakrači!
+Ha, upecali ste se ;) Ma batalimo volšebne pseudo-prakse, kakvi bakrači!
 
 Zanimljivo mi je da u algoritamskom razmišljanju postoje nekakvi obrasci koji se ponavljaju i čine sastavne delove (_building blocks_) rešenja. Maštam da je moguće doći do elegantnog rešenja problema primenom i spajanjem takvih obrazaca.
 
 Dobar deo rezonovanja je u sagledavanju informacija koju podaci drže, direktno ili indirektno.
 
-U prvom rešenju informacija da li se vrednost sadrži u nizu se svaki put _izračunava_. U pitanju je _statička_ informacija u kontekstu funkcije; te repetativna, ponavljajuća izračunavanja je moguće zameniti preračunatom vrednošću - esencijalno lookup tabelom. Ova transformacija rešenja je već dobro poznata, ništa novo. Ali bi bilo lepo nekako je formalno opisati. Treće rešenje je već izazovno. Moja razmišljanja, pre nego što sam potražio rešenja, su krenula na sledeću stranu: šta sve od _informacija_ mogu da izvučem? Tako sam uzimao u obzir sledeće:
+U prvom rešenju informacija da li se vrednost sadrži u nizu se svaki put _izračunava_. U pitanju je _statička_ informacija u kontekstu funkcije; te repetativna, ponavljajuća izračunavanja je moguće zameniti preračunatom vrednošću - esencijalno lookup tabelom. Ova transformacija rešenja je već dobro poznata, ništa novo. Ali bi bilo lepo nekako je formalno opisati. Treće rešenje je već izazovno. Moja razmišljanja, pre nego što sam kukavički potražio rešenja, su krenula na sledeću stranu: šta sve od _informacija_ mogu da izvučem? Tako sam uzimao u obzir sledeće:
 
 + razlike između susednih vrednosti niza,
 + niz sa sledećim (`a[i]+1`) elementima, jer neko od njih nedostaje,
