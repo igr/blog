@@ -35,15 +35,15 @@ Alan je stvari video drugačije. Video je objekat kao kolekciju _mogućnosti_, _
 
 Znate šta može da bude objekat o kome govori Alan?
 
-Moduo.
+Modul.
 
 U **BOOP** mi grupišemo metode u objekte, pogrešno vođeni time šta sve možemo da radimo sa podacima iz objekta. To su samo sposobnosti koji dele zajedničko stanje.
 
 Ponavljam uporno pojam "sposobnost" dok čekam da se neko javi i kaže "funkcija". Upravo, sposobnosti jesu funkcije. Da podestim na [mudrost Broja Jedan](https://github.com/igr/color-code/blob/main/doc/13-function.md), funkcija o kojoj pričam nije deklarisana funkcija u programskom jeziku. Ne, to je _first-class citizen_, instanca; ono što nazivam FUNCTION (sve kapitalno) u prethodnim tekstovima.
 
-Kolekcija funkcija (sposobnosti) je moduo.
+Kolekcija funkcija (sposobnosti) je modula.
 
-Moduo definiše [poruke koje procesira](https://github.com/igr/color-code/blob/main/pectopah/office-api/src/main/kotlin/ac/obl/pectopah/api.kt). Moduo se danas implementira u kodu, sutra može da postane odvojena biblioteka ili udaljeni mikroservis. Moduo je izolovan i u vreme kompajliranja. I sam Alan se pitao da li je objekat kakav je u BOOP previše mali.
+Modul definiše [poruke koje procesira](https://github.com/igr/color-code/blob/main/pectopah/office-api/src/main/kotlin/ac/obl/pectopah/api.kt). Modul se danas implementira u kodu, sutra može da postane odvojena biblioteka ili udaljeni mikroservis. Modul je izolovan i u vreme kompajliranja. I sam Alan se pitao da li je objekat kakav je u BOOP previše mali.
 
 > Cijena? Prava sitnica.
 

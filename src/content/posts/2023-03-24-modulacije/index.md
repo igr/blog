@@ -12,16 +12,16 @@ Ne postoji jasna ili bar kompletna definicija modula u softverskoj struci, verov
 
 Za mene znači sledeće:
 
-1. Moduo ima definitivnu granicu u **compile-time** prema ostatku sveta. (Moduo ne pušta nikoga unutra.)
-2. Moduo definiše komunikaciju sa svetom. (Moduo priča sa svima.)
+1. Modul ima definitivnu granicu u **compile-time** prema ostatku sveta. (Modul ne pušta nikoga unutra.)
+2. Modul definiše komunikaciju sa svetom. (Modul priča sa svima.)
 
 ## Build moduli
 
-Da prvo napravimo razliku između pojma `moduo` i onoga što nazivam `build-moduo` (nemam bolje ime).
+Da prvo napravimo razliku između pojma `modul` i onoga što nazivam `build-modul` (nemam bolje ime).
 
-Build-moduo je celina definisana isključivo kroz alate za kompajliranje. To su, na primer, multi-project u sbt ili gradle, ili moduli u maven-u. Build-moduo je kod koji rezultuje jedan artefakt, jedna compile-time jedinica.
+Build-modul je celina definisana isključivo kroz alate za kompajliranje. To su, na primer, multi-project u sbt ili gradle, ili moduli u maven-u. Build-modul je kod koji rezultuje jedan artefakt, jedna compile-time jedinica.
 
-Moduo (onaj o kome pišem) se ne preslikava nužno na jedan build-moduo. Moduo mogu da čine više build-modula, tj. artifakta.
+Modul (onaj o kome pišem) se ne preslikava nužno na jedan build-modul. Modul mogu da čine više build-modula, tj. artifakta.
 
 ## Školski primer
 
@@ -69,9 +69,9 @@ Razlika je značajna. Prvo: `B` nije implementacija `A`, već je `A` opis domens
 
 ![](m6.png)
 
-To je već moduo.
+To je već modul.
 
-Ovakav moduo se može već odvajati, deliti na sitnije, zameniti, mikroservisirati... Još nešto krasi ovakav moduo: mogućnost da bude čist, sastavljen samo od čistih funkcija, bez efekata.
+Ovakav modul se može već odvajati, deliti na sitnije, zameniti, mikroservisirati... Još nešto krasi ovakav modul: mogućnost da bude čist, sastavljen samo od čistih funkcija, bez efekata.
 
 Više modula sarađuje zajedno i dozvoljeno im je da dele zajedničku implementaciju baze `D`.
 

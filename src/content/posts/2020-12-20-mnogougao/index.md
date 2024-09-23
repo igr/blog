@@ -22,7 +22,7 @@ Enkapsulacija je nešto što već (nadam se) radimo u kodu. Odvajamo ono čemu j
 
 Postoji, međutim, bolji način: entropija se obuzdava _granicama_. Šta više: smatram da su granice (_boundaries_) možda jedan od najvažnijih koncepata softverskog inženjerstva. Kad pogledaš, enkapuslacija je samo način povlačenja granica.
 
-U praksi to znači podelu koda na module. Time se celine potpuno odvajaju od ostatka aplikacije. Očigledno, neophodno je imati bar dva modula po celini: jedan moduo sa API-jem preko koga se komunicira (dakle, sa interfejsima i data klasama), a drugi sa implementacijom.
+U praksi to znači podelu koda na module. Time se celine potpuno odvajaju od ostatka aplikacije. Očigledno, neophodno je imati bar dva modula po celini: jedan modul sa API-jem preko koga se komunicira (dakle, sa interfejsima i data klasama), a drugi sa implementacijom.
 
 Da, monolitni, jedno-modularni projekat treba razbiti na pregršt manjih modula. Toliko jednostavno.
 
@@ -36,7 +36,7 @@ Neophodno je da postoje zajednički nosioci informacija za module. Odatle nastaj
 
 Programiranje preko APIja i modula garantuje da nema curenja logike - prosto, kod ne može da se kompajlira u suprotnom slučaju.
 
-Testiranje odjednom postaje neuporedivo lakše: svaki moduo se mokuje bez muke.
+Testiranje odjednom postaje neuporedivo lakše: svaki modul se mokuje bez muke.
 
 Najlepše je to što moduli mogu da se odvoje, započnu svoj život zasebno i podele sa drugim projektima. Jer, ko još ima vremena da sve piše ispočetka?
 
