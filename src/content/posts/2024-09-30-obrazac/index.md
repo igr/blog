@@ -5,7 +5,7 @@ slug: "obrazac-m97-cc-salter-4"
 description: "Hteo si da rešiš svoj PR i pridružiš ga ostatku projekta? Imaš li potvrdu BOB22/R?"
 ---
 
-Hteo si da rešiš svoj PR i pridružiš ga ostatku projekta? Imaš li potvrdu `BOB22/R`? Imaš? Osiguranje od `NullPointerException`-a? I to imaš? A obrazac `M97/CZ`? Ne? Šalter 4, moliću. Da, onaj na kome je najveća gužva. Ne, nema veze što je u pitanju samo ispravka slovne greške; pa nismo valjda divljaci, mora da se poštuje red! Drugi čekaju, pa sačekajte i vi!
+Hteo si da rešiš svoj PR i pridružiš ga ostatku projekta? Imaš li potvrdu `BOB22-R`? Imaš? Osiguranje od `NullPointerException`-a? I to imaš? A obrazac `M97/CC`? Ne? Šalter 4, moliću. Da, onaj na kome je najveća gužva. Ne, nema veze što je u pitanju samo ispravka slovne greške; pa nismo valjda divljaci, mora da se poštuje red! Drugi čekaju, pa sačekajte i vi!
 
 [Pull Request](https://oblac.rs/pr-pogreska/) je smišljen za kontribuciju na open-source projektima. U pitanju je _asinhroni_ proces u kome vreme obrade PR-a _nije_ u prvom planu. Pročitajte prethodnu rečenicu još jednom i iskreno poželite takav proces u dinamičnom softverskom projektu. Stvari idu dotle da se zahteva da svaki i baš svaki komit prođe kroz PR avanturu kliktanja po Githubu od strane jednog, dva, pa zašto i ne tri (ko da više!?) člana tima. Poseban pakao čeka one kojima se dve procedure uklješte: obavezan PR i nekakva CI procedura, na primer, objava nove verzije u tri laga(d)na koraka. Slek tada opravda svoju cenu: poruke "Može neko da mi apruvuje PR? Častim piće." zapljusnu kanale.
 
@@ -21,6 +21,6 @@ Zašto sam programer ne bi odlučivao o tome da li njegova izmena treba recenzij
 
 Procedure moraju da služe timu. Ako ne služe, nešto se mora menjati - odmah. Setimo se onoga šta Taiichi Ohno nije rekao:
 
-> Proceduri koja ometa kontinualno izvršenje posla treba hitna revizija. 諦めないで!
+> Procedura koja ometa kontinualno izvršavanje posla zahteva hitnu reviziju. 諦めないで!
 
 Idemo dalje.
