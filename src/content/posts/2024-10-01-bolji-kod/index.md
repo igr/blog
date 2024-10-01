@@ -75,7 +75,7 @@ Hajdemo po redu.
 
 Gornje rezonovanje o performansama koda je često pogrešno. Zaboravljamo da radimo na modernim VM, koji su godinama unazad optimizovane. Ono što je imalo smisla pre nekih 20-tak godina, danas ne važi: VM je toliko optimizovana da ne možemo da razmišljamo na isti način. Svaku diskusiju koja se vodi sličnim rezonovanjem gledam da što pre prekinem, jer spada u imaginaciju, a ne preciznu analizu.
 
-Pošto mi ne verujete (s razlogom, nemam YT kanal), napravio sam [test performasi](https://github.com/igr/java-benchmarks/blob/master/src/main/java/com/oblac/jmh/lang/IsoEncodeBenchmark.java). Rezultat je bio očekivan: razlike nema.
+Pošto mi ne verujete (s razlogom, nemam YT kanal), napravio sam [test performansi](https://github.com/igr/java-benchmarks/blob/master/src/main/java/com/oblac/jmh/lang/IsoEncodeBenchmark.java). Rezultat je očekivan: razlike nema.
 
 ```text
 Benchmark   (size)  Mode  Cnt      Score     Error  Units
@@ -93,25 +93,25 @@ Test je dobijen JMH-om (a čime drugim) nad stringovima različitih dužina.
 
 ## Testabilnost
 
-Jasno, kod **A** nije dostupan za testove. Što i dalje ne znači da je kod lošiji, ukoliko možemo da mu promenimo vidljivost. A trebalo bi da to možemo, jer nema razloga da ovakve metode ostanu privatne. Ako ju je već potrebno sakriti, može da ostane interna za modul ili samo paket.
+Jasno, kod **A** nije dostupan za testove. Što i dalje ne znači da je kod lošiji, ukoliko možemo da mu promenimo vidljivost. A trebalo bi da to možemo, jer nema razloga da ovakve metode ostanu privatne. Ako ju je već potrebno sakriti, može da ostane interna za modul ili samo za paket.
 
 ## Enkapsulacija
 
 Kada ugledamo kod **B**, OOP-ovac u nama usklikne s ljubavlju: tamo potok, ovde klasa, tamo cvet, ovde enkapsulacija. Kao što lasta ne čini proleće, klasa ne čini kod ispravnim. Štaviše, kod **B** je baš, baš loš.
 
-Naime, reč je o pokušaju da se definiše novi tip. Setimo se, tipovi su [podskupi vrednosti](https://oblac.rs/oop-kakav-tip-rece-klasa/). Dakle, ne bi trebalo biti moguće konstruisati instancu neispravnom vrednošću. Kao što ne bi imalo smisla pisati: `new Integer("12.5")` i da tek ko zna kada kasnije pri upotrebi proveravamo da li je zaista prosleđen ispravan prirodan broj, tako i ovde - provera (ujedno i konverzija) treba da se desi prilikom kreiranja instance.
+Naime, reč je o pokušaju da se definiše novi tip. Setimo se, tipovi su [podskupi vrednosti](https://oblac.rs/oop-kakav-tip-rece-klasa/). Dakle, ne bi uopšte trebalo biti moguće napraviti instancu s neispravnom vrednošću. Kao što ne bi imalo smisla pisati: `new Integer("12.5")` i da tek ko zna kada kasnije pri upotrebi proveravamo da li je zaista prosleđen ispravan string, tako i ovde - provera (ujedno i konverzija) treba da se desi prilikom kreiranja instance.
 
-Sve da i nije tako, koristiti `toString()` za bilo šta drugo osim za reprezentaciju objekta je pogrešno. To što nam je `toString` dostupno usled grešnog nasleđivanja nije razlog da se koristi za biznis funkcionalnost. Kako je ovde smisao konverzija (zapravo, smisao je novi tip, ali hajde da zažmurimo), ne bi trebalo da koristimo `toString`, već namensku metodu (ako to već nije konstruktor.) Metoda `toString` svojim ugovorom ne opisuje _ponašanje_.
+Sve da i nije tako, koristiti `toString()` za bilo šta drugo osim za reprezentaciju objekta je pogrešno. To što nam je `toString` dostupno usled grešnog nasleđivanja nije razlog da se koristi za biznis funkcionalnost. Kako je ovde smisao konverzija (zapravo, smisao je novi tip, ali hajde da zažmurimo), ne bi trebalo da koristimo `toString`, već namensku metodu (ako to već nije konstruktor.) Metoda `toString` svojim ugovorom ne opisuje _ponašanje_. [LSP](https://oblac.rs/liskov-substitution-problem/) i sav taj džez.
 
-Da pristupimo s potpuno druge strane: osim ako imamo konkretan razlog zašto tako ne raditi, klase dizajniramo da više čitamo nego pišemo/menjamo. U softverskim sistemima je, u proseku, drastična razlika između broja čitanja i broja upisa. Zato nema smisla da svaki put kada je potrebno dekodiramo string, umesto da samo vratimo referencu na prethodno dekodiranu vrednost.
+Da pristupimo s potpuno druge strane: osim kada imamo konkretan razlog zašto tako ne raditi, klase dizajniramo da više iz njih čitamo nego pišemo/menjamo. U softverskim sistemima je, u proseku, drastična razlika između broja čitanja i broja upisa. Zato nema smisla da svaki put pri čitanju iznova i iznova dekodiramo string, umesto da vratimo referencu na jednom prethodno dekodiranu vrednost.
 
 Methoda `getDecoded` presipa iz šupljeg u prazno da bi vratio polazni string. Može se zameniti samo sa `return str`. A ukoliko je predviđeno da uradi kakvu obradu, ne bi trebalo da bude getter. Getteri su čisto, glupo, čitanje; nedostatak programskog jezika, a ne poziv za implementaciju. Po [mom pravilu](https://oblac.rs/imenovanje-namera-i-interpretacija/) metoda bi trebalo da se zove `decoded`, jer ne radi ništa i služi kao zamena za vrednost, te je i ne treba glagolizovati (izmišljena reč, nema na čemu.)
 
-Opet oko imenovanja: imati `decoded()` i `toString()` koji vraćaju dve interpretacije ulaza? Ne.
+Opet oko imenovanja: imati `decoded()` i `toString()` koje vraćaju dve interpretacije ulaza? Ne.
 
 Zašto mislimo da u **A** nema enkapsulacije? Cvrc, ima je. Enkapsulairano je ponašanje funkcijom (statičkom metodom, jer Java.) Zapravo, **A** enkapsulacija je bolja, jer je funkcija `encodeToIso88591` jasno definisana i ne može se koristiti za nešto drugo. Ujedno je funkcija _čista_, što se ne može reći za drugi slučaj.
 
-Problem sa **A** je što baca izuzetak, a ne vraća nekakav `Either` rezultat. No to je već druga priča koju OOP veronauka baš i ne voli, te je nećemo sada izvoditi na videlo.
+Problem sa **A** je što baca izuzetak, a ne vraća nekakav `Either` rezultat. No to je već druga priča koju OOP veronauka baš i ne voli, te je nećemo sada iznositi na videlo.
 
 ## Na kraju
 
