@@ -2,7 +2,7 @@
 title: "Bolji od dva"
 date: 2024-10-01T01:06:08+00:00
 slug: "bolji-od-dva"
-description: "Koji je od dva koda bolji i zašto?
+description: "Koji je od dva koda bolji i zašto?"
 ---
 
 Primer iz Kluba programera koji mi je nedavno privukao pažnju.
