@@ -7,6 +7,7 @@ description: "Koji je od dva koda bolji i zašto?"
 
 Primer iz Kluba programera koji mi je nedavno privukao pažnju.
 Prebacio sam ga u Javu. Primer je isključivo ilustrativan.
+
 Koji je od ova dva koda bolji?
 
 ## A) Statičke metode
