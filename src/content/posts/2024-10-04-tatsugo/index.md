@@ -30,7 +30,7 @@ Ako u jednačinu uključimo i lokove radi kozistentnosti, dobijamo dodatno mesto
 
 Dalji problem sa nitima jeste što je njihovo izršavanje nedeterminističko. Da radimo sa čistim funkcijama to ne bi osetili; međutim, naše niti čekaju spoljne efekte. Rad sa nitima je težak i neprirodan za ljudski `if-then-else` način razmišljanja. Čak i sistemi koji se pažljivo pišu i proveravaju dožive grešku usled paralelnog izvršavanja koda - sistem se nađe u stanju koje je gotovo nemoguće predvideti. Čest odgovor na ovakve greške je dodatno lokovanje, proširivanje kritične sekcije. Dalje, kako, uopšte, dokazati da neterdeministički proces radi kako je zamišljeno?
 
-Da se vratimo bazi. Nivoi izolacije koja baza nudi rešavaju probleme specifične za paralelan rad sa podacima; zapravo nude nivoe izolacije transakcija. Meni "nivoi izolacije" oduvek zvuče čudno: da li su to različiti nivoi u kojima izolacija _ne radi_ kako treba? Šta će nam različiti nivoa nečega što ne radi? Pokazuje se (videti rad: ACIDRain) da današnje baze nude značajno slabiji model od klasične serializacije; i ujedno zahtevaju uključivanje programera u razrešavanje kojekakvih slučaja korišćenja, koji nisu direktno biznis logika. Dalje, baze mogu samo koliko mogu; pametno zaključavanje redova zna da preraste u zaključavanje cele tabele kako korišćenje raste.
+Da se vratimo bazi. Nivoi izolacije koja baza nudi rešavaju probleme specifične za paralelan rad sa podacima; zapravo nude nivoe izolacije transakcija. Meni "nivoi izolacije" oduvek zvuče čudno: da li su to različiti nivoi u kojima izolacija _ne radi_ kako treba? Šta će nam različiti nivoa nečega što ne radi? Pokazuje se (videti rad: ACIDRain) da današnje baze nude značajno slabiji model od klasične serializacije; ujedno zahtevaju uključivanje programera u razrešavanje kojekakvih slučaja korišćenja, koji nisu direktno biznis logika. Dalje, baze mogu samo koliko mogu; pametno zaključavanje redova zna da preraste u zaključavanje cele tabele kako korišćenje raste.
 
 Boli, zar ne?
 
@@ -49,7 +49,7 @@ Uveđenje odložene doslednosti "olakšava" neke od navedenih problema. Omoguća
 
 Idemo dalje. Šta ako izolaciju izmestimo iz baze? Naš Objekat (pravi objekat, ne pseudo-OOP objekat) bi mogao da predstavlja jedan zapis, jediničnu instancu svih mutacija nad jednim konkretnim podatkom (konkretni red iz baze, na primer.) Želimo da ukinemo lokovanje i da ne vodimo računa o tome. Kao kada bi napravili kanal samo za jedan tip izmena; ilustrativno: zasebnu konekciju ka bazi koja vidi samo tabele od interesa. Kao da iscepkamo ukupno stanja na ostrvca, koje svako živi nezavisno od sebe.
 
-Teško je objasniti ovu paralelu... "A-ha" momenat nećete dobiti prostim čitanjem teksta, već modelovanjem. Suštiniski, reč je o razbijanju jedne od najčvršćih i najčešćih kohezija koje postoje u kodu: kohezija podataka.
+"A-ha" momenat nećete dobiti prostim čitanjem teksta, već modelovanjem. Suštiniski, reč je o razbijanju jedne od najčvršćih i najčešćih kohezija koje postoje u kodu: kohezija podataka.
 
 Međutim, i nakon ostvarivanja izolacije podataka (razbijanje kohezije), ostaje problem paralelnog izvršavanja. Postoje niti koje žele da isto vreme mutiraju podatke. Kako to rešiti?
 
@@ -67,17 +67,17 @@ Jbg, ovo nije nasrećnije predstavljanje (n)ove paragime: mnogo toga sam sabio u
 
 ## Tatsugō & Game of Life
 
-Ko šta radi, ja modeliram Game of Life. Posle mnogih nedelja, došao sam do zanimljivog frameworka (**Tatsugō**) koji objedinjuje različite koncepte i dozvoljava da se primeni opisana paradigma.
+Ko šta radi, ja modeliram Game of Life. Posle mnogih nedelja, došao sam do zanimljivog frameworka (**Tatsugō**) koji objedinjuje različite koncepte i dozvoljava da se primeni opisana paradigma sa svega nekoliko apstrakcija.
 
 Primer je zamišljen na sledeći način.
 
-GoL igra zahteva tablu ćelija (`Cell`). Svaka ćelija ima svoje stanje: može biti živa ili mrtva. Svaka ćelija isključive brine o svom stanju. Takođe, svaka ćelija ima svoju jedinstvenu adresu koja je, u ovom slučaju, jednaka koordinatama ćelije. Ćelije nemaju pojma o drugim ćelijama, samo znaju sa koliko ćelija su okružene.
+GoL igra zahteva tablu ćelija (`Cell`). Svaka ćelija ima svoje stanje: može biti živa ili mrtva. Svaka ćelija isključivo brine o svom stanju. Takođe, svaka ćelija ima svoju jedinstvenu adresu koja je, u ovom slučaju, jednaka koordinatama ćelije. Ćelije nemaju pojma o drugim ćelijama, samo znaju sa koliko ćelija su okružene.
 
 Cela tabela se pamti u komponenti `Grid`, matrici. Matrica sadrži celokupno stanje ploče za igri. Matrica je zapravo duplikat stanja, ali i istorija svih stanja ćelija. Duplikat upravo zbog potpune izolacije - matrica ne potražuje stanje od ćelija, već ga dobija! Dalje, dovoljna je samo jedna instanca ove komponente. Matrica brine o tome kada je generacija gotova, kao i kada je završena poslednja generacija igre.
 
-Svaka ćelija obaveštava matricu kada dođe do promene stanja. Matrica prima poruke od ćelija, revidira svoje stanje tabele, a potom šalje svim okolnim ćelijama poruku o novom stanju njihovog suseda. Matrica takođe prati kada je jedna generacija završena, kako bi je ispisala.
+Svaka ćelija obaveštava matricu kada dođe do promene stanja. Matrica prima poruke od ćelija, revidira svoje stanje tabele, a potom šalje svim okolnim ćelijama poruku o novom stanju njihovog suseda. Matrica takođe prati kada je jedna generacija završena kako bi je ispisala.
 
-Poslednja komponenta igre je jednostavan statističar - brojač sivh poslatih evenata.
+Poslednja komponenta igre je jednostavan statističar - brojač evenata.
 
 ## Implementacija
 
@@ -87,11 +87,11 @@ U osnovi sistema mora da postoji nekakav `Bus` kojim se šalju eventovi. Date su
 
 Da krenemo od statističara: uobičajeni event handler. Prosto broji eventove.
 
-Matrica se modeluje kao `Queue`, red. Prihvata sve evente koji su za nju i obrađuje ih jedan po jedan. Nema bojazni da će se u isto vreme menjati stanje. Kod je potpuno lock-free!
+Matrica se modeluje kao `Queue`, red. Prihvata sve evente koji su za nju i prebacuje ih u svoje "sanduče" (običan red). Bus odmah nastavlja dalje, ne čeka završetak obrade! Queue paralelno obrađuje eventove iz svog sandučeta jedan po jedan. Nema bojazni da će se u isto vreme menjati stanje. Kod je potpuno lock-free.
 
-Konačno, ćelije su aktori. Svaki opet prati samo svoje stanje. `Fleet` je komponenta koja vodi računa o životnom veku ćelija i slanju poruka na pravu adresu. Zanimljivo, pošto ćelije mogu da rade nezavisno, dugo sam smatrao da ih je moguće paralelizovati. To je, naravno, moguće, ali kako se ispostavilo - potpuno nepotrebno. Rezultati paralelizovanog rada je besmisleno duže izvršavanje koda; od čega mi je laknulo, te sam vratio da se i te poruke aktora obrađuju serijski, po redu.
+Konačno, ćelije su aktori. Svaki opet prati samo svoje stanje. `Fleet` je komponenta koja vodi računa o životnom veku ćelija i slanju poruka na pravu adresu. I `Fleet` je takođe red, tako da čim Bus isporuči poruku za ćeliju, ona se preuzime, bus nastavlja dalje, a `Fleet` je prosleđuje na pravu adresu. Zanimljivo, pošto ćelije mogu da rade nezavisno, dugo sam smatrao da ih je moguće paralelizovati radi boljih performansi. To je, naravno, moguće, ali kako se ispostavilo - potpuno nepotrebno. Rezultati paralelizovanog rada je besmisleno duže izvršavanje koda; od čega mi je laknulo: izbačen je komplikovan kod zarad jednostavne, serijske obrade.
 
-Sa samo pet jednostavnih apstrakcija dobijamo event-driven framework koji spaja event handlere, redove i aktore; i brutalno brzo obrađuje poruke jer je lock-free i ne zahteva sinhronizaciju posla.
+Sa samo pet jednostavnih apstrakcija dobijamo event-driven framework koji spaja event handlere, redove i aktore; brutalno brzo obrađuje poruke jer je lock-free i ne zahteva sinhronizaciju posla.
 
 ## Sors
 
