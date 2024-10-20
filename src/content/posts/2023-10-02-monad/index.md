@@ -106,10 +106,10 @@ Kojim god redom da izvršavamo kompoziciju `∘`, rezultat ostaje isti. Zato nam
 + morfizmi - koji pripadaju klasi `hom(C)`. Kada se napiše `hom(A,B)` to označava `hom` klasu svih morfizama od `A` do `B`.
 + Binarna operacija `∘` koja se naziva "kompozicija morfizama", koja za svaka tri objekta `A`, `B` i `C` imamo definisano:
 
-  ```plaintext
-  ∘: hom(B,C) x hom(A,B) → hom(A,C)
-  ```
-  Ova binarna operacija se još pokorava zakonima: asocijativnost i identitet.
+```plaintext
+∘: hom(B,C) x hom(A,B) → hom(A,C)
+```
+Ova binarna operacija se još pokorava zakonima: asocijativnost i identitet.
 
 ## Primer kategorije: WWW
 
