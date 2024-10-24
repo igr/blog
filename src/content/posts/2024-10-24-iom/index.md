@@ -51,7 +51,7 @@ final var game = IoMonad
 		.bind(ignored -> generateRandomNumber())
 		.map(number -> number + 1)  // [0, 100) -> [1, 100]
 		.bind(number -> IoMonad.of(() -> {
-			out.println("I'm thinking of a number between 1 and 100.");
+			out.println("Guess a number between 1 and 100.");
 			return number;
 		}))
 		.bind(GuessingGame::guessLoop);
@@ -84,7 +84,7 @@ Ovde je trenutak da podignete dva prsta za pitanje: da li su metode klase čiste
 
 Čistoća funkcije je vezana i sa imutabilnošću: ukoliko funkcija primi argument `A` koji se može promeniti za vreme rada funkcije, onda je funkcija nečista. Ukoliko je stanje klase promenjivo, metode nisu čiste, jok.
 
-"Pa šta, briga me, valjda su objekti važniji!" uzviknu Maricija, majka dečaka; vreme je da joj damo ime i latinsko-američko poreklo. Nisu. Čiste funkcije su mnogostruko vrednije. "Kažeš ti", odfrknu ona. "Gde ti je taj Bob, bolji je frajer od tebe!"
+"Pa šta, briga me, valjda su objekti važniji!" uzviknu Maricija, majka dečaka; vreme je da joj damo ime i latinsko-američko poreklo. Nisu. Čiste funkcije su mnogostruko vrednije. "Kažeš ti", frknu ona. "Gde ti je taj Bob, bolji je frajer od tebe!"
 
 ## Kako zaista izgleda
 
@@ -118,7 +118,7 @@ checkGuess guess number
   | guess > number = do
     putStrLn "Too high! Try again."
     guessLoop number
-  | otherwise = putStrLn "Congratulations! You guessed the right number!"
+  | otherwise = putStrLn "You guessed the right number!"
 ```
 
 Ostatak koda je... nepostojeći: ovo je ceo program :) "Gde su ovde monade? Pa ovo je nekakav proceduralan kod!" Drago mi je da ste primetili. Jezici u kojima je monad prirodna (i ugrađena) stvar, ne zahtevaju da se eksplicitno koriste. Korišćenjem `do` notacije, koja je sintaksni šećer, omogućava se pisanje monadskog koda kao da je običan proceduralni kod. I to je to.
