@@ -12,7 +12,7 @@ Siguran sam da nikada niste poželeli da znate kako bi izgledao IO Monad u Javi,
 
 [Monad](https://oblac.rs/monad/) je kontejner vrednosti sa bar dve operacije: `lift` kojom se vrednost stavlja u kontejner i `bind` kojom se mapira jedan monad u drugi kakvom funkcijom. Suština Monada je kompozicija. Kroz niz `bind` poziva, ulaz se polako transformiše u rezultat. Najprostije: stavimo vrednost u kontejner kao u kakav lonac i potom dosipamo funkcije kojima modifikujemo vrednost koja se krčka.
 
-Monade postoji svuda. Svaka lista je monad; `Optional`, `Result`, `Either` su takođe monadi. Monad bi, verovatno, bio manje strašan kada se ne bi koristio u nazivu.
+Monade postoje svuda. Svaka lista je monad; `Optional`, `Result`, `Either` su takođe monadi. Monad bi, verovatno, bio manje strašan kada se ne bi koristio u nazivu.
 
 ## IO
 
