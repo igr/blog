@@ -10,7 +10,7 @@ Postoje druga dva simbola koja su kontroverznija.
 
 ## Eduardo
 
-Eduardo je često bio _necio_; ono što bi najbliže preveli kao "nedokazan". Imao je čvrste stavove oko većine pitanja; smatrao je, čak, da je dužnost da ih imamo - i potom neprestano branimo. Voleo je jasne odgovore, _SI_ i _NO_; kako pa i može drugačije? Ako se baviš softverskim razvojem tim pre: pa ne možemo "možda" otkucati u kodu, _ ¡maldita sea!_
+Eduardo je često bio _necio_; ono što bi najbliže preveli kao "nedokazan". Imao je čvrste stavove oko većine pitanja; smatrao je, čak, da je dužnost da ih imamo - i potom neprestano branimo. Voleo je jasne odgovore, _Si_ i _No_, crno i belo; kako pa i može drugačije? Ako se baviš softverskim razvojem tim pre: pa ne možemo "možda" otkucati u kodu, _¡maldita sea!_ Nejasnoće su ono što čine da kod truli, a Eduardo nije bio tip koji će dozvoliti da se to desi.
 
 ## Jamiko
 
@@ -20,7 +20,7 @@ _立つ鳥跡を濁さず_, imala bi običaj da govori. Red se mora aktivno odr�
 
 ## Eduardo
 
-Tog dana je preskočip fiestu; prokleti da su poslovi koji ne poštuju tradicije zaposlenih, ljutio se Eduardo u sebi. Ovo nema smisla, branio je Eduardo dalje svoj stav, naučno je dokazano da fiesta poboljšava kognitivne sposobnosti. Šta tu nije jasno?
+Tog dana je preskočio fiestu; prokleti da su poslovi koji ne poštuju tradicije zaposlenih, ljutio se Eduardo u sebi. Ovo nema smisla, branio je Eduardo dalje svoj stav, dokazano je da fiesta poboljšava kognitivne sposobnosti. Šta tu nije jasno?
 
 Za to vreme, Eduardo klikće po sajtu internog sistema sa registraciju API-ja. Zaustavlja se na ekranu za dodavanje identifikatora rola za upravo objavljen API. Kurzor treperi u ritmu koji mu takođe nema smisla, te mu misli odlutaše dalje na ko zna koju stranu... sve dok ga nije prenula zvučna notifikacija Sleka.
 
@@ -44,12 +44,12 @@ Petak se produžio kao kakav _新幹線_ sa beskonačno vagona koji nikako da pr
 
 Kada nije preostalo ništa drugo, posumnjala je u ispravnost klijentskih ključeva i rola. Konačno, uočila je grešku. Njena rola je bila nazvana na način kako su i sve ostale role u sistemu: `xtrop-backend:cart-write`.
 
-Bio je petak, bilo je kasno, Jamiko je bila umorna, a najviše: red je poremećen. Završila je brzo šta je preostalo i isključila se sa posla. Moraće da posegne u _幽玄_.
+Bio je petak, bilo je kasno, Jamiko je bila umorna, a najviše: red je poremećen. Završila je brzo šta je preostalo i isključila se sa posla. Moraće da posegne u sebe i potraži _幽玄_.
 
 ## Epilog
 
-U softverskim projektima postoji svojstveno uređenje, uvezanost, koja nije ničim garantovana: ne postoji alat koji je sprovodi. Reč je o konvencijama koje se jedino i isključivo održavaju neprestanim pažljivim i marljivim naporom da uređenje o(p)stane. Onog trenutka kada se naruši, pada u vodu: pravilo prestaje da važi i sve postaje dozvoljeno.
+U softverskim projektima postoje svojstvena uređenja, uvezanosti, koje nisu ničim garantovane: ne postoji alat koji ih sprovodi. Reč je o konvencijama koje se jedino i isključivo održavaju neprestanim pažljivim i marljivim naporom da uređenje o(p)stane. Onog trenutka kada se naruši, sve pada u vodu: pravilo prestaje da važi i sve postaje dozvoljeno.
 
-Na prvi pogled, priča deluje naivno. Međutim, gde je jedna pukotina, tu je i druga - teorija polomljenog prozora je strpljiva. Priča je preuzeta iz pravog projekta koji se pravio za ozbiljne klijente (ako ozbiljnost merimo količinom para kojima barataju). Projekat je vrištao ovakvim nedoslednostima: to je išlo dotle da se jedna od softverskih komponenti zvala u kodu "crveno", a pravo ime joj je bilo... ta-daa... "plavo"! (prava imena su drugačija, naravno.) Ovakve nedoslednosti su se prelivale u svakodnevne poslove, a konačno su završile u načinu rezonovanja svih na projektu.
+Na prvi pogled, priča deluje naivno. Međutim, gde je jedna pukotina, tu je i druga - teorija polomljenog prozora je strpljiva. Priča je preuzeta iz pravog projekta koji se pravio za ozbiljne klijente (ako ozbiljnost merimo količinom para kojima barataju). Projekat je vrištao ovakvim nedoslednostima: to je išlo dotle da se jedna od softverskih komponenti zvala u kodu "crveno", a pravo ime joj je bilo... ta-daa... "plavo"! (imena su drugačija, naravno.) Ovakve nedoslednosti su se prelivale u svakodnevne zadatke, a konačno su završile u načinu rezonovanja svih na projektu.
 
 Ne bih više ništa dodao.
