@@ -34,11 +34,11 @@ Jedino što uspevam da provučem na projektima je generisanje OpenAPI klijenta.
 
 Nijedan klijent za koga sam radio, a više ih je nego što priznajem, nije pridavao "developer-friendly" pažnju OpenAPI-ju. Sve se završavalo na objavljivanju OpenAPI šeme: neke su bile perfektne, neke su bile poput uvenulog karanfila. Kako bilo, sve se tu završavalo. Kada je reč o javnim API-jima, to može biti dovoljno. Međutim, drastično je drugačije kada su u pitanju interni servis projekta.
 
-Tokom razvoja, API interfejsi se učestano menjaju. Kako ispada, potpuno je okej plaćati sate i sate programera da precrtava OpenAPI šemu u kod projekta. Da, to je ono spajanje stringova, serijalizacija i deserijalizacija; i tako ukrug. Tek boli kada se API menja: treba prvo ustanoviti izmene. Tek je žurka kada je prenosni sadržaj netipiziran, pa jedan isti JSON može malo imati neka polja, malo ne, a malo su različitih tipova. Iz mog iskustva, ovo se sve smatra korektnom praksom.
+Tokom razvoja, API interfejsi se učestano menjaju. Kako ispada, potpuno je okej plaćati sate i sate programera da precrtava OpenAPI šemu u kod projekta. Da, to je ono spajanje stringova, serijalizacija i deserijalizacija; i tako ukrug. Tek boli kada se API menja: treba prvo ustanoviti izmene. Žurka je kada je prenosni sadržaj netipiziran, pa jedan isti JSON može malo imati neka polja, malo ne, a malo su različitih tipova. Iz mog iskustva, ovo se sve smatra korektnom praksom.
 
 Ne.
 
-Ručno pisanje klijenta za interne API je skupa budalaština. Ako postoje alati koji mogu da generišu pristojnu biblioteku dok si rekao "karanfil" i - pajz sad - koja uvek može biti ažurirana: zašto oberučke ne prihvatiti takav dar? Dalje, kada je reč o internim projektima firme, uveo bih pravilo da svaki servis koji objavi API, takođe mora da objavi ažurirane biblioteke u svakom od korišćenih programskih jezika. Tada OpenAPI šema čak i nije potrebna za deljenje; ha!
+Ručno pisanje klijenta za interne API je skupa budalaština. Ako postoje alati koji mogu da generišu pristojnu biblioteku dok si rekao "karanfil" i - pajz sad - koja uvek može biti ažurirana: zašto oberučke ne prihvatiti takav dar? Dalje, kada je reč o internim projektima firme, uveo bih pravilo da svaki servis koji objavi API, takođe mora da objavi ažurirane biblioteke u svakom od korišćenih programskih jezika. Tada OpenAPI šema čak i nije potrebna za deljenje; ha.
 
 ## Efikasno upucavanje stopala pri trčanju
 
@@ -59,21 +59,21 @@ Svako ko je koristio popularni generator OpenAPI klijenta zna da specifikacija 3
 Postoje dve opcije:
 
 1. Platiti za pronalaženje boljeg alata ili poduhvat nadogradnje postojećeg.
-2. Zameniti definiciju koja ne prolazi ekvivalentnom koja prolazi generator koda u upotrebi.
+2. Zameniti definiciju koja ne prolazi ekvivalentnom koja odgovara generatoru koda u upotrebi.
 
-Kako prvi izbor jedino može da bude opcija pod dva, pokušam sledeće: "Znate, mi generišemo klijenta za ovaj interni API, značajno bi nam uštedelo vreme ako bi izmenili taj i taj deo funkcionalno istom definicijom", trepnem dva puta i dodam: "pogotovo jer i vi sami generišete OpenAPI iz koda." Pogodite koji je _jedini_ odgovor koji sam dobio, na potpuno različitim projektima, sa potpuno različitim klijentima i potpuno različitim domenima: "Jok".
+Kako prvi izbor jedino može da bude opcija pod dva, pokušam sledeće: "znate, mi generišemo klijenta za ovaj vaš interni API, značajno bi nam uštedelo vreme ako bi izmenili taj i taj deo funkcionalno istom definicijom", trepnem dva puta i dodam: "pogotovo jer i vi sami generišete OpenAPI iz koda." Pogodite koji je _jedini_ odgovor koji sam dobio, na potpuno različitim projektima, sa potpuno različitim klijentima i potpuno različitim domenima: "Jok".
 
-Jedan put sam dobio i obrazloženje: insistiranje na validnosti definicije. To je argument na koji se, na prvi pogled, nema šta odgovoriti. Ispravna je definicija, a to što tamo neki alat ne radi, nije problem našeg tima.
+Jednom sam dobio i obrazloženje: insistiranje na validnosti definicije. To je argument na koji se, na prvi pogled, nema šta odgovoriti. Ispravna je definicija, a to što tamo neki alat ne radi, nije problem našeg tima.
 
 Ne.
 
 Tvoj API, tvoj problem. Tačnije: _naš_ API, _naš_ problem. Ako je reč o internoj komunikaciji servisa, postoji toliko drugih stvari na kojima moramo insistirati pre nego što dođemo na to da se bavimo _stilovima_ definisanja ispravnog internog OpenAPI-ja.
 
-> Insistiranje na preciznosti je esencijalno. Mudrost je razumeti razlike između preciznosti. Postoji preciznost koja umanjuje [nedoumicu](https://oblac.rs/kognitivna-entropija/). Postoji preciznost koja ima adekvatnu zamenu i nema opravdanje. Mudrost je razlučiti.
+> Insistiranje na preciznosti je esencijalno. Mudrost je razumeti razlike između preciznosti. Postoji preciznost koja umanjuje [nedoumicu](https://oblac.rs/kognitivna-entropija/). Postoji preciznost koja ima adekvatnu zamenu i nema opravdanje upotrebe.
 
 ## Za neverne Tome
 
-Generisanje koda je sjajna stvar. Većina programera danas svakodnevno koristi generisan kod, zahvaljući alatu koji se nedavno pojavio: A(jdT)I.
+Generisanje koda je sjajna stvar. Većina programera danas svakodnevno koristi generisan kod, zahvaljući alatu koji se nedavno pojavio: A(jdt)I.
 
 Ono šta smo propustili kao struka je da dobacimo do meta-programiranja pre pojave halucinacija.
 
