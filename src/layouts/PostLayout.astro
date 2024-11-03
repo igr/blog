@@ -46,7 +46,7 @@ let schema = JSON.stringify(
   <header class="site-header-small">
     <div id="title-small"><a id="home" href={Astro.url.origin}>{site.title}</a></div>
   </header>
-  <article class="post">
+  <article class="post" data-pagefind-body>
     <header class="post-header">
       <h1 class="post-title">{post.data.title}</h1>
       <PostDate date={post.data.date} short={false}/>

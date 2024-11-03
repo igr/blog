@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import mdx from "@astrojs/mdx";
 import sitemap from '@astrojs/sitemap';
 import remarkFlexibleContainers from 'remark-flexible-containers';
+import {pagefind} from "./src/integrations/pagefind.ts";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,6 +11,7 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap(),
+    pagefind()
   ],
   markdown: {
     remarkPlugins: [
