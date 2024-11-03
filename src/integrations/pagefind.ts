@@ -4,7 +4,11 @@ import {createIndex} from "pagefind";
 import * as path from "node:path";
 import sirv from "sirv";
 
-export const pagefind = (options?: Object): AstroIntegration => {
+export type PagefindOptions = {
+  urlPrefix: "/pagefind/";
+};
+
+export const pagefind = (options?: PagefindOptions): AstroIntegration => {
   let generate = true;
   let outDir: string;
   return {
@@ -20,7 +24,7 @@ export const pagefind = (options?: Object): AstroIntegration => {
         outDir = fileURLToPath(config.outDir);
       },
 
-      "astro:server:setup": ({ server, logger }) => {
+      "astro:server:setup": ({server, logger}) => {
         if (!outDir) {
           logger.warn(
             "astro-pagefind couldn't reliably determine the output directory. Search assets will not be served.",
@@ -33,7 +37,7 @@ export const pagefind = (options?: Object): AstroIntegration => {
           etag: true,
         });
         server.middlewares.use((req, res, next) => {
-          if (req.url?.startsWith("/pagefind/")) {
+          if (req.url?.startsWith(options?.urlPrefix || "/pagefind/")) {
             serve(req, res, next);
           } else {
             next();
@@ -41,18 +45,18 @@ export const pagefind = (options?: Object): AstroIntegration => {
         });
       },
 
-      "astro:build:done": async ({dir, logger}) => {
+      "astro:build:done": async ({logger}) => {
         if (!generate) {
           return;
         }
         const {index} = await createIndex();
         if (!index) {
-          logger.error("Pagefind failed to create index");
+          logger.error("Pagefind failed to create index!");
           return;
         }
         const {page_count, errors: addErrors} = await index.addDirectory({path: outDir});
         if (addErrors.length) {
-          logger.error("Pagefind failed to index files");
+          logger.error("Pagefind failed to index files!");
           addErrors.forEach((e) => logger.error(e));
           return;
         } else {
