@@ -14,7 +14,7 @@ Al' sam vas preveslao.
 
 Predavanje na arhitektonskom fakultetu:
 
-> Dragi studenti, osmotrite ovaj građevinski objekat; uočite stamenu osnovu i ispratite modularnu izgradnju spratova... sve je poput razvoja kakvog softverskog projekta.
+> Dragi studenti, osmotrite ovaj građevinski objekat; uočite stamenu osnovu i ispratite modularnost prostorija, nasleđivanje spratova... sve je poput razvoja kakvog softverskog projekta.
 
 (nijedan profesor arhitekture ikada.)
 
@@ -22,15 +22,15 @@ Da li su poređenja simetrična? Ako je razvoj softvera sličan arhitekturi, da 
 
 ## Metafora
 
-Analogije i metafore su neizbežne u naučnoj naraciji. Naučnici redovno posežu za poređenjima da bi formulisali hipoteze i interpretirali rezultate, kao i da komuniciraju nalaze, zapažanja, rezultate. Ovakav način izražavanja odgovara nestručnima: dobijaju smisao i kontekstualizuju apstraktne ideje, dobijaju nova znanja. Dakle, poređenja su neophodna - neki naučnici tvrde da su nisu u pitanju lingvističke figure, već osnova za misaone procese i konceptualna razumevanja, jer mapiraju značenja i znanja iz jednog domena u drugi.
+Analogije i metafore su neizbežne u naučnoj naraciji. Naučnici redovno posežu za poređenjima da bi formulisali hipoteze i interpretirali rezultate, kao i da komuniciraju nalaze, zapažanja, rezultate. Ovakav način izražavanja odgovara nestručnima: dobijaju smisao i kontekstualizuju apstraktne ideje, stiču nova znanja. Dakle, poređenja su neophodna - neki tvrde da su nisu u pitanju samo lingvističke figure, već osnova za misaone procese i konceptualna razumevanja, jer mapiraju značenja i znanja iz jednog domena u drugi.
 
-S druge strane, metafore mogu da ometaju razumevanje; čak i pojačavaju nedoumice i nesporazume. Zanimljiva je kritika metafore za gen: od "nacrt", koja se učestalo koristi, je bolje poređenje "recept", jer je preciznija analogija.
+S druge strane, metafore mogu da ometaju razumevanje; čak i pojačavaju nedoumice i nesporazume. Zanimljiva je kritika metafore za gen (jedinica nasleđivanja): od "nacrt", koja se učestalo koristi, bolje je poređenje "recept", jer je preciznija analogija. Nisam slučajno izabrao ovaj primer: gde su geni u programiranju? U klasama?
 
-Kakve veze ovo ima sa softverskim inženjerstvom? Velike! To što lingvistike nigde nema u korpusu inženjera koji se - ironije li - bave programskim _jezicima_ ne predstavlja izgovor. Programiranje je komunikcija sa drugim inženjerima kroz kod; u svetu koji je sačinjen od apstrakcija pravilna upotreba poređenja je važna.
+Kakve veze ovo ima sa softverskim inženjerstvom? Velike. To što lingvistike nigde nema u korpusu inženjera koji se - ironije li - bave programskim _jezicima_ ne predstavlja izgovor. Programiranje je komunikcija sa drugim inženjerima kroz kod; u svetu koji je sačinjen od apstrakcija pravilna upotreba poređenja je važna.
 
 ## Etika poređenja
 
-Pristižem do teme. Uočavam učestalu potreba za nečim što nazivam "generalizacija poređenjem." To su poređenja koja generalizuju celu struku, poredeći je sa drugim aktivnostima; na primer:
+Pristižem do teme. Uočavam učestalu potrebu za nečim što nazivam "generalizacija poređenjem." To su poređenja koja generalizuju celu struku, poredeći je sa drugim aktivnostima:
 
 + Softverska arhitektura je kao arhitektura građevina,
 + Vođenje tima je kao obrada polja,
@@ -40,22 +40,22 @@ Pristižem do teme. Uočavam učestalu potreba za nečim što nazivam "generaliz
 + Razvoj je poput snimanja filma,
 + ...
 
-...i tako se ovaj niz svakodnevno nastavlja dalje, dovoljno je uključiti se na LI.
+...i tako se ovaj niz svakodnevno nastavlja dalje, za inspiraciju he dovoljno uključiti se na LI.
 
-Kakve besmislice.
+Besmislice.
 
-Problem sa ovakvim poređenjima je _stručnost_. Ovakvo poređenje može da pruži samo onaj ko je profesionalno radio u obe struke. Mnogi od autora gornjih izjava zapravo pružaju privid razumevanja pružajući nam poređenje koje nam na prvi pogled izgleda smisleno, jer, zapravo, pojma nemamo kako ta druga aktivnost (obrada polja, snimanje filma...) izgleda. Kako ispada, isti slučaj je i sa autorima "pametnih" misli: ni oni sami nemaju profesionalna iskustva iz bilo koje navedene oblasti sa kojom porede razvoj softvera.
+Problem sa ovakvim poređenjima je _stručnost_. Poređenje dve prakse može da pruži samo onaj ko je profesionalno radio u obe struke. Mnogi od autora gornjih izjava nude privid razumevanja pružajući nam poređenje koje nam na prvi pogled izgleda smisleno, jer, zapravo, pojma nemamo kako ta druga aktivnost (obrada polja, snimanje filma...) zaista izgleda. Kako ispada, isti slučaj je i sa autorima "pametnih" misli: ni oni sami nemaju profesionalna iskustva iz bilo koje navedene oblasti sa kojom porede razvoj softvera.
 
-Da sumiramo: autori porede razvoj softvera sa praksamo o kojima sami nemaju pojma. To dovodi u pitanju njihovu _etiku_.
+Autori, dakle, porede razvoj softvera sa praksamo o kojima sami nemaju pojma. To dovodi u pitanju njihovu _etiku_: pričaju o nečemu o čemu ne znaju.
 
 ## Samo-šamar
 
 Oblače, šta je [ovo](https://oblac.rs/return/)? Šta pa ti, Oblače, znaš o baštovanstvu!?
 
-Sad bi bio štos da izvučem moju diplomu hortikulture sa poljoprivrednog fakulteta - ali, jbg, nemam. Greši čovek.
+Sad bi bio štos da izvučem diplomu hortikulture sa poljoprivrednog fakulteta - ali, jbg, nemam. Greši čovek.
 
 Inače, "snimanje filma" je moja ideja o tome na šta bi razvoj softvera mogao da liči - uz sva upozorenja da o snimanju filmova znam tek ono šta sam pročitao iz popularističkih knjiga. Čini mi se da je taj proces na sličan način u isto vreme i besramno egoističan i podvrgnut strogim pravilima kompozicije kadrova u službi pričanja priče.
 
 ## Umetnost
 
-Granica preko koje ne prelazim je poređenje razvoja sa _umetnošću_. To mi govori da 1) ništa ne znate o [umetnosti](https://oblac.rs/pisanje-programa-umetnost-ili-nauka/) i 2) ništa ne znate o [razvoju](https://oblac.rs/neostvareni-umetnici-razvoja/).
+Granica koju ne prelazim je poređenje razvoja sa _umetnošću_. To mi govori da 1) ništa ne znate o [umetnosti](https://oblac.rs/pisanje-programa-umetnost-ili-nauka/) i 2) ništa ne znate o [razvoju](https://oblac.rs/neostvareni-umetnici-razvoja/).
