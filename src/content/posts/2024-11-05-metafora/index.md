@@ -40,7 +40,7 @@ Pristižem do teme. Uočavam učestalu potrebu za nečim što nazivam "generaliz
 + Razvoj je poput snimanja filma,
 + ...
 
-...i tako se ovaj niz svakodnevno nastavlja dalje, za inspiraciju he dovoljno uključiti se na LI.
+...i tako se ovaj niz svakodnevno nastavlja dalje, za inspiraciju je dovoljno uključiti se na LI.
 
 Besmislice.
 
@@ -54,7 +54,7 @@ Oblače, šta je [ovo](https://oblac.rs/return/)? Šta pa ti, Oblače, znaš o b
 
 Sad bi bio štos da izvučem diplomu hortikulture sa poljoprivrednog fakulteta - ali, jbg, nemam. Greši čovek.
 
-Inače, "snimanje filma" je moja ideja o tome na šta bi razvoj softvera mogao da liči - uz sva upozorenja da o snimanju filmova znam tek ono šta sam pročitao iz popularističkih knjiga. Čini mi se da je taj proces na sličan način u isto vreme i besramno egoističan i podvrgnut strogim pravilima kompozicije kadrova u službi pričanja priče.
+Inače, "snimanje filma" je moja ideja o tome na šta bi razvoj softvera mogao da liči - uz sva upozorenja da o snimanju filmova znam tek ono šta sam pročitao iz popularističkih knjiga. Čini mi se da je taj proces u isto vreme i besramno egoističan i podvrgnut pravilima kompozicije kadrova u službi pričanja priče; slično razvoju softvera?
 
 ## Umetnost
 
