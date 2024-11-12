@@ -105,8 +105,9 @@ blockquote {
 a {
   color: var(--red-color);
   transition: .2s;
-  padding: 2px 0 0 0;
-
+  padding: 2px 2px 0 2px;
+  margin-left: -2px;
+  border-radius: 2px;
   &:hover {
     color: #fff;
     background-color: var(--red-color);
