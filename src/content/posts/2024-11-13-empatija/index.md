@@ -49,7 +49,7 @@ Soba je velika i vlažna. Redovi sačuvane starudije uredno su naslagani uz zido
 
 ## Empatija
 
-Pre svake diskusije je potreban lakmus test kojim se strane moraju uveriti da li se podjednako poštuju, kako bi na sličan način dozvolile i uvažile razlike u mišljenjima.
+Pre svake diskusije je potreban lakmus test kojim se strane moraju uveriti da li se podjednako poštuju, kako bi na sličan način dozvolile i uvažile razlike u mišljenjima. Empatija nije samo saosećanje; već i želja za razumevanjem. Bilo kakva razmena mišljenja koja ne nagriza vašu polaznu osnovu, neće doneti ništa novo i - na kraju - nije diskusija, već monolog, gubljenje vremena, linked in.
 
 Aristotel nije rekao sledeće, ali bolje zvuči kada mislite tako:
 
