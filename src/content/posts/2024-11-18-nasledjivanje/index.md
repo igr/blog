@@ -39,9 +39,10 @@ Razlozi za baznu klasu:
 Primer korišćenja:
 
 ```java
-public class ClientAVerification extends BaseVerification implements Verify {
+public class ClientAVerification
+    extends BaseVerification implements Verify {
 
-	public VerifyResult verifyOnFoo(Task task, Employee employee) {
+	public VerifyResult verifyOnFoo(...) {
 		if (uslov()) {
 			approve();
 		}
@@ -68,7 +69,10 @@ Način da se iščupamo iz ove situacije je pravljenje nove abstraktne klase i, 
 ```java
 public abstract class CommonVerification extends BaseVerification implements Verify {
 
-	protected void commonVerify(Task task, Employee employee, Supplier<Boolean> uslov) {
+	protected void commonVerify(
+	    Task task, Employee employee,
+		  Supplier<Boolean> uslov
+	) {
 		if (uslov.get()) {
 			approve();
 		}
@@ -83,10 +87,10 @@ Odjednom sam završio sa hijerarhijom od dve podklase.
 
 Problem su višestruki razlozi za nasleđivanjem. Da se podsetimo, nasleđivanje je samo redefinisanje funkcija i varijabli u podskupu. U mom slučaju sam imao OOPotrebu da 1) definišem zajedničke metode za DSL validaciju i 2) izdvojim uočeno zajedničko ponašanje. Namere su ortogonalne: nisu kompatibilne, tiču se drugačijih ciljeva. OOP način da ih rešim je forsiranje hijerarhije.
 
-Da se ispravim: "višestruki razlozi za nasleđivanjem" nisu problem, već su uobičajena potreba. Problem je mehanizam razrešavanja potrebe: nasleđivanje.
+Da se ispravim: "višestruki razlozi za nasleđivanjem" nisu problem. Problem je mehanizam razrešavanja potrebe: nasleđivanje. Java utiče na naš mentalni aparat i čino da olako donosimo odluke o nasleđivanju - jednoj od najčvršćih veza u OOP, i, dodao bih, koja unosi dovoljno nedoumica se je upotreba upitna.
 
 ## Razrešenje
 
-DSL jezik je izvučen u funkcije (statičke metode.) Time je uklonjen jedan stepen hijerarhije; ostaje samo "lagana" bazna klasa za zajedničkim ponašanjem. I ona je mogla da nestane; no s obzirom da sadrži samo jednu metodu, dozvoljavam joj da poživi... još malo.
+DSL jezik je izvučen u funkcije. Time je uklonjen jedan stepen hijerarhije; ostaje samo "lagana" bazna klasa za zajedničkim ponašanjem. I ona je mogla da nestane; no s obzirom da sadrži samo jednu metodu, dozvoljavam joj da poživi... još malo.
 
 Ništa novo: kompozicija pre, pre, pre i mnogo pre nasleđivanja.
