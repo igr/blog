@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ApoCard from "../../components/ApoCard.astro";
+import {getCollection} from "astro:content";
+
+const aposEntries = await getCollection('apothegms')
+  .then(entries => entries.sort((a, b) => a.id.localeCompare(b.id)));
+---
+
+<BaseLayout home={true}>
+  <header class="site-header">
+    <h1 id="title">Apothegms</h1>
+  </header>
+  <main>
+    {aposEntries.map(entry => <ApoCard entry={entry} link=true />) }
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    margin-bottom: 10rem;
+  }
+</style>

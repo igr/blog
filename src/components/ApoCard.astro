@@ -1,0 +1,74 @@
+---
+const { entry, link } = Astro.props;
+const { Content } = await entry.render();
+const title = entry.data.title
+const no = entry.id.split("-")[0];
+const href = (link) ? '/apothegms/' + no : '/apothegms/#' + no;
+---
+
+<a id={no}/>
+<div class="apo">
+  <div class="no">{no}</div>
+  <a href={href}>
+    <div class="unr">
+      <div class="title">{title}</div>
+      <div class="details">
+        <Content/>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+  .apo {
+    font-size: 1.4rem;
+    a {
+      padding: 0;
+      margin: 0;
+      display: block;
+      text-decoration: none;
+      color: var(--text-color);
+      &:hover {
+        background-color: var(--bg-color);
+        color: var(--red-color);
+      }
+    }
+    .no {
+      position: absolute;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      width: inherit;
+      height: inherit;
+      z-index: 1;
+      overflow: hidden;
+      font-size: 1.2rem;
+      margin-top: -20px;
+      margin-left: 30px;
+      padding: 0 4px;
+      background-color: var(--bg-color);
+      font-family: var(--font-monospace);
+    }
+    .title {
+      font-family: var(--font-serif-oblac);
+      text-decoration: none;
+      color: var(--text-color);
+      padding: 0;
+      letter-spacing: -1px;
+      margin-bottom: 0.3rem;
+    }
+    .details {
+      font-size: 0.9rem;
+      line-height: 1rem;
+      p {
+        margin-bottom: 0.4rem;
+      }
+    }
+    code {
+      padding: 0 4px;
+    }
+  }
+  .unr {
+    padding: 20px;
+  }
+</style>

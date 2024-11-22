@@ -1,0 +1,31 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import ApoCard from "../components/ApoCard.astro";
+const {apo} = Astro.props
+const no = apo.slug.split("-")[0]
+---
+
+<BaseLayout home={false} title={apo.title} description={apo.title}>
+  <header class="site-header-small">
+    <div id="title-small">Apothegms #{no}</div>
+  </header>
+  <ApoCard entry={apo} />
+</BaseLayout>
+
+<style is:global>
+  body {
+    background-color: var(--red-color);
+    width: 100vw;
+    height: 100vh;
+  }
+  #title-small {
+    color: var(--text-color) !important;
+  }
+  div.unr {
+    background-color: var(--bg-color) !important;
+    border: 2px solid black;
+  }
+  div.no {
+    display: none !important;
+  }
+</style>

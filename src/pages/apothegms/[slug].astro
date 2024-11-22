@@ -1,0 +1,18 @@
+---
+import {getCollection} from 'astro:content';
+import ApoLayout from "../../layouts/ApoLayout.astro";
+
+export async function getStaticPaths() {
+  const aposEntries = await getCollection('apothegms');
+  return aposEntries
+    .map(entry => ({
+      params: {slug: entry.slug.split("-")[0]},
+      props: { entry },
+    }));
+}
+
+const {entry} = Astro.props;
+const {Content} = await entry.render();
+---
+
+<ApoLayout apo={entry} />

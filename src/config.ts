@@ -1,19 +1,28 @@
 export const site = {
-    title: "Oblac",
-    description: "Oblac blog : stav | razvoj | lično",
-    author: "Igor",
+  title: "Oblac",
+  description: "Oblac blog : stav | razvoj | lično",
+  author: "Igor",
 }
 
-import { z, defineCollection } from "astro:content";
+import {z, defineCollection} from "astro:content";
+
 const postsCollection = defineCollection({
-    type: 'content',
-    schema: z.object({
-        title: z.string(),
-        date: z.date(),
-        description: z.string(),
-        slug: z.optional(z.string())
-    })
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+    description: z.string(),
+    slug: z.optional(z.string())
+  })
 });
+const apoCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string()
+  })
+});
+
 export const collections = {
-    posts: postsCollection,
+  posts: postsCollection,
+  apos: apoCollection
 };
