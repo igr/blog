@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout.astro"
 import PostDate from "../components/PostDate.astro"
 import type {CollectionEntry} from 'astro:content';
 import Search from "../components/Search.astro";
+import Menu from "../components/Menu.astro";
 
 const allPosts: CollectionEntry<"posts">[] = (await getCollection('posts'))
   .sort((a, b) => b.data.date - a.data.date);
@@ -21,6 +22,7 @@ const years = Array.from(groups.keys()).sort((a, b) => b.localeCompare(a));
 ---
 
 <MainLayout>
+  <Menu />
   <Search id="search" />
   <article class="posts">
   {years.map(year => (
