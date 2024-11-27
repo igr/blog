@@ -1,4 +1,5 @@
 ---
+import Menu from "../components/Menu.astro";
 const {post} = Astro.props
 import Disclaimer from "../components/Disclaimer.astro"
 import BaseLayout from "../layouts/BaseLayout.astro"
@@ -45,6 +46,7 @@ let schema = JSON.stringify(
 <BaseLayout home={false} title={post.data.title} description={post.data.description}>
   <header class="site-header-small">
     <div id="title-small"><a id="home" href={Astro.url.origin}>{site.title}</a></div>
+    <Menu />
   </header>
   <article class="post" data-pagefind-body>
     <header class="post-header">
