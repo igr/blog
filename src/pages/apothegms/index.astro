@@ -7,7 +7,7 @@ const aposEntries = await getCollection('apothegms')
   .then(entries => entries.sort((a, b) => a.id.localeCompare(b.id)));
 ---
 
-<BaseLayout home={true}>
+<BaseLayout home={true} title="Apothegms" description="Modest words, profound meanings." ogImg="/o-a.png">
   <header class="site-header">
     <h1 id="title">Apothegms</h1>
   </header>

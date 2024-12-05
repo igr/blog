@@ -5,7 +5,7 @@ const {apo} = Astro.props
 const no = apo.slug.split("-")[0]
 ---
 
-<BaseLayout home={false} title={apo.title} description={apo.title}>
+<BaseLayout home={false} title="Apothegms" description={no + '. ' + apo.data.title} ogImg="/o-a.png">
   <header class="site-header-small">
     <div id="title-small">Apothegms #{no}</div>
   </header>

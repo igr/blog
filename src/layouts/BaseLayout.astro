@@ -1,9 +1,12 @@
 ---
-const {home, title, description} = Astro.props
+const {home, title, description, ogImg} = Astro.props
 import {site} from '../config'
 import '../styles/main.scss';
 import Footer from '../components/Footer.astro'
 const postTitle = title + " - " + site.title
+const ogImage = ogImg ? Astro.url.origin + ogImg : Astro.url.origin + "/o-wide.png"
+const siteTitle = title ? title + " - " + site.title : site.title
+const siteDescription = description ? description : site.description
 ---
 <!DOCTYPE html>
 <html lang="sr-rs">
@@ -14,17 +17,17 @@ const postTitle = title + " - " + site.title
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes"/>
   <meta name="author" content={site.author}/>
   <meta name="twitter:site" content="@oblac_rs"/>
-  <meta name="twitter:card" content={site.description}/>
+  <meta name="twitter:card" content={siteDescription}/>
 
   {home
     ?
-    <title>{site.title}</title>
-    <meta property="og:title" content={site.title}/>
-    <meta name="twitter:title" content={site.title}/>
+    <title>{siteTitle}</title>
+    <meta property="og:title" content={siteTitle}/>
+    <meta name="twitter:title" content={siteTitle}/>
     <meta property="og:type" content="website"/>
-    <meta name="description" content={site.description}/>
-    <meta name="twitter:description" content={site.description}/>
-    <meta property="og:description" content={site.description}/>
+    <meta name="description" content={siteDescription}/>
+    <meta name="twitter:description" content={siteDescription}/>
+    <meta property="og:description" content={siteDescription}/>
     :
     <title>{postTitle}</title>
     <meta property="og:title" content={postTitle}/>
@@ -39,8 +42,8 @@ const postTitle = title + " - " + site.title
   <meta property="og:locale" content="sr_RS"/>
   <meta property="og:url" content={Astro.url}/>
   <meta property="og:site_name" content="Oblac"/>
-  <meta property="og:image" content={Astro.url.origin + "/o-wide.png"}/>
-  <meta name="twitter:image" content={Astro.url.origin + "/o-wide.png"}/>
+  <meta property="og:image" content={ogImage}/>
+  <meta name="twitter:image" content={ogImage}/>
 
   <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Josefin+Sans:400,700|Domine:400,700&display=swap"
