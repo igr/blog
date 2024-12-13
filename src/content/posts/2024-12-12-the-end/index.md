@@ -1,6 +1,6 @@
 ---
 title: "Bez dobrog naslova"
-date: 2025-12-12T01:06:08+00:00
+date: 2024-12-12T01:06:08+00:00
 slug: the-end
 description: "..."
 ---
