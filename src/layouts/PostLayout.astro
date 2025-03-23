@@ -8,6 +8,7 @@ import PostDate from "../components/PostDate.astro"
 const postDate = new Date(post.data.date);
 const link = encodeURIComponent(Astro.url.origin + Astro.url.pathname);
 const linkTitle = encodeURIComponent(post.data.title);
+const lang = post.data.lang || "rs";
 let schema = JSON.stringify(
   {
     "@context": "https://schema.org",
@@ -42,21 +43,21 @@ let schema = JSON.stringify(
   }
 );
 ---
-
 <BaseLayout home={false} title={post.data.title} description={post.data.description}>
   <header class="site-header-small">
     <div id="title-small"><a id="home" href={Astro.url.origin}>{site.title}</a></div>
-    <Menu />
   </header>
   <article class="post" data-pagefind-body>
     <header class="post-header">
       <h1 class="post-title">{post.data.title}</h1>
-      <PostDate date={post.data.date} short={false}/>
+      <PostDate date={post.data.date} short={false} lang={lang} />
+      {lang === "rs" ?
       <div id="lang">
         <a
           href={"https://oblac-rs.translate.goog" + Astro.url.pathname + "?_x_tr_sl=sr&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp"}
           target="blank">Translate</a>
       </div>
+        : ""}
     </header>
 
     <slot/>
@@ -85,7 +86,7 @@ let schema = JSON.stringify(
     </ul>
 
   </article>
-  <Disclaimer/>
+  <Disclaimer lang={lang}/>
 </BaseLayout>
 
 <script type="application/ld+json" set:html={schema} is:inline></script>

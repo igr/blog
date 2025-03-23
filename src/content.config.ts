@@ -6,7 +6,8 @@ const postsCollection = defineCollection({
     title: z.string(),
     date: z.date(),
     description: z.string(),
-    slug: z.optional(z.string())
+    slug: z.optional(z.string()),
+    lang: z.optional(z.string())
   })
 });
 const apothegmsCollection = defineCollection({

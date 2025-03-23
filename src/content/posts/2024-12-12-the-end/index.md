@@ -1,8 +1,9 @@
 ---
-title: "Bez dobrog naslova"
+title: "Without a Proper Title"
 date: 2024-12-12T01:06:08+00:00
 slug: the-end
 description: "..."
+lang: en
 ---
 
 Gilles Deleuze, "Negotiations" (1985):

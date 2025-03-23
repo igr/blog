@@ -1,10 +1,18 @@
 ---
-
+const {lang} = Astro.props
 ---
-
+{lang === "rs" ?
 <div id="stav">
   🧧<br>
   Nisam definisan svojim stavovima. Stavove usvajamo, menjamo, nadograđujemo, ali oni ne čine nas same.
   Manje je važno da li se slažemo,<br>koliko da se razumemo.<br>
   <a href="https://buymeacoffee.com/oblac" target="_blank">&gt; ČASTI KAFU &lt;</a>
 </div>
+:
+<div id="stav">
+  🧧<br>
+  I am not defined by my opinions. We adopt, change, and refine our opinions,
+  but they do not make us who we are. It matters less whether we agree and more whether we understand each other.<br>
+  <a href="https://buymeacoffee.com/oblac" target="_blank">&gt; BUY ME A COFFEE &lt;</a>
+</div>
+}
