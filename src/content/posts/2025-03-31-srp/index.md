@@ -3,7 +3,7 @@ title: "The Liskov Substitution Problem"
 date: 2025-03-31T01:06:08+00:00
 slug: "lsp"
 description: >
-  SRP has a problem.
+  LSP is a well-constructed attempt at defining subtypes, yet most of its ideas remain in academic texts rather than programming languages. And perhaps that fact itself is telling: if inheritance is still challenging to define precisely after half a century, do we even need it?
 ---
 
 Barbara Liskov, recipient of the 2008 Turing Award, offered profound insights into behavior and type systems.
