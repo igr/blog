@@ -76,7 +76,7 @@ All my algebraic data types (ADTs) are modeled as records implementing sealed in
 public sealed interface AssessmentError {
 	record NoError
 		implements AssessmentError {}
-	record JobException(String className, String message)
+	record JobException(String message)
 		implements AssessmentError  {}
 }
 ```
