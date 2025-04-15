@@ -2,12 +2,12 @@
 title: "When Life Gives You Java"
 date: 2025-04-15T01:06:08+00:00
 description: >
-  Object-Oriented Programming should focus on hiding data and exposing interactions, yet it’s often missing the essence.
+  What to do when you are stuck with Java? Make lemonade!
 ---
 
-Java is a programming language designed for embedded devices and web applets. But the real powerhouse behind it is the Java Virtual Machine (JVM) ecosystem — a remarkably robust and versatile platform.
+Java is a programming language designed for small devices and web applets. The real powerhouse behind it is not the language, but the JVM ecosystem — a remarkably robust and versatile platform.
 
-Java brings with it a strong object-oriented programming (OOP) paradigm. Unfortunately, in practice, this paradigm often diverges from its [original intent](https://oblac.rs/woof-oop/). Over time, OOP in Java has become more of a justification for clinging to outdated design choices than a path toward better software architecture.
+Java brings with it a strong OOP paradigm. Unfortunately, in practice, this paradigm often diverges from its [original intent](https://oblac.rs/woof-oop/). Over time, OOP in Java has become more of a justification for clinging to outdated design choices than a path toward better software architecture.
 
 That being sa(i)d, I’ve significantly changed the way I write Java code — at least when I have the freedom to do so. What follows are a few personal practices I’ve found valuable. These aren’t revolutionary ideas, just lessons borrowed from more expressive, often functional, languages. And no, I’m not talking about Java’s `Stream`, `Optional`, or `Function` APIs.
 
@@ -21,7 +21,7 @@ What I’m essentially doing is treating packages like modules. This works, to a
 
 ## `final` Is Your Friend. `null` Is Not.
 
-I try to work with immutability as much as possible — about 95% of my references are `final`. Unfortunately, Java doesn’t make this easy. Declaring final requires explicit, repetitive effort, but thankfully, there are IDE plugins that automate this.
+I try to work with immutability as much as possible — about 95% of my references are `final`. Unfortunately, Java doesn’t make this easy. Declaring `final` requires explicit, repetitive effort, but thankfully, there are IDE plugins that automate this.
 
 Once you embrace immutability, `null` starts to disappear. Of course, I’m not dogmatic — if writing 20+ lines of workaround code just to avoid a `null` makes no sense, I’ll use `null` (in Java.) But I’ll scope its usage as tightly as possible.
 
@@ -87,8 +87,10 @@ Yes, I’ve included Jackson annotations — a reminder that serialization is of
 
 I reserve exceptions for actual runtime failures — things like memory errors, I/O issues, or failed database connections.
 
-Business logic errors are returned as part of the result. I don’t use a generic `Either` or `Response` wrapper (no composition in Java); instead, I define a dedicated ADT for each result type.
+Business logic errors are returned as part of the result. I don’t use a generic `Either` or `Response` wrapper (no compositions in Java); instead, I define a dedicated ADT for each result type.
 
 ## Consequences
 
 One natural consequence of this style is an increase in the number of small classes. That’s a trade-off I’m happy to make if it means better modularity, and fewer surprises.
+
+Drink lemonade!
