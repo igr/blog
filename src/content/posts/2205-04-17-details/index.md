@@ -18,7 +18,7 @@ There’s only context.
 
 ## What Is a Detail?
 
-A detail is a cognitive compression of everything outside our current mental focus.
+> A detail is a cognitive compression of everything outside our current mental focus.
 
 In other words, something becomes a detail when we _choose_ not to engage with its complexity—when we mentally abstract it away to simplify the task at hand. This makes "detail" not a property of the component itself, but a property of our relationship to it at a specific moment.
 
@@ -34,10 +34,10 @@ When implementing a command handler, the event bus that delivers the command fee
 
 ## Details Are Relative
 
-"Detail" is not a synonym for "irrelevant." It’s a reflection of our mental spotlight—what we’re choosing to illuminate, and what we’re willing to let fade into the background. In the ever-shifting landscape of software development, the center is wherever we put our attention.
+"Detail" is not a synonym for "irrelevant." It’s a reflection of our mental spotlight—what we’re choosing to illuminate, and what we’re willing to let fade into the background.
 
-The relativity is crucial. Declaring that a component is a "detail" is thus an incomplete statement. The phrase "X is just a detail" only makes sense if we also ask, _relative to what_?
+The relativity is crucial. Declaring that a component is a "detail" is thus an incomplete statement. Much like velocity, which must be defined relative to another object, the notion of a "detail" must be expressed in terms of which part of the system is being temporarily abstracted away from our cognitive focus. A component becomes a detail only relative to the part of the system we’re currently focusing on. Just like velocity, "detail" is not absolute.
 
-Much like velocity, which must be defined relative to another object, the notion of a "detail" must be expressed in terms of which part of the system is being temporarily abstracted away from our cognitive focus. A component becomes a detail only relative to the part of the system we’re currently focusing on. Just like velocity, "detail" is not absolute. It’s a **relationship**.
+It’s a **relationship**.
 
 
