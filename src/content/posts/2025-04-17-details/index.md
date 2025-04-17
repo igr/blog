@@ -2,6 +2,7 @@
 title: "When Is a Detail Just a Detail?"
 date: 2025-04-17T01:05:03+00:00
 lang: en
+slug: "when-is-a-details-just-a-detail"
 description: >
   A common phrase in software development claims that "X is just a detail"—but is that really true?
 ---
