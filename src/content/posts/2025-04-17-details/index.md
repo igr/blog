@@ -33,6 +33,8 @@ When writing SQL, the tables, joins, and indexes are front and center. The servi
 
 When implementing a command handler, the event bus that delivers the command feels like a black box. It simply "calls" my function. I don't care about how the subjects are partitioned, how the events are stored, or how the bus is implemented. It's just a detail at this moment.
 
+There’s no exclusivity in this relationship—both the business function and the database can simultaneously be in focus. This (offten) happens when we’re not only concerned with stored data or business logic in isolation, but also with how they interact and influence each other.
+
 ## Details Are Relative
 
 "Detail" is not a synonym for "irrelevant." It’s a reflection of our mental spotlight—what we’re choosing to illuminate, and what we’re willing to let fade into the background.
