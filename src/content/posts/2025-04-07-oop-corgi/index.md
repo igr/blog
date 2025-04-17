@@ -2,6 +2,7 @@
 title: "Woof, OOP?"
 date: 2025-04-07T01:06:08+00:00
 slug: "woof-oop"
+lang: en
 description: >
   Object-Oriented Programming should focus on hiding data and exposing interactions, yet it’s often missing the essence.
 ---

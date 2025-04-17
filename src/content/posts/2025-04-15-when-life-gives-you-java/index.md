@@ -1,6 +1,7 @@
 ---
 title: "When Life Gives You Java"
 date: 2025-04-15T01:06:08+00:00
+lang: en
 description: >
   What to do when you are stuck with Java? Make lemonade!
 ---

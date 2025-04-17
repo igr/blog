@@ -2,6 +2,7 @@
 title: "The Liskov Substitution Problem"
 date: 2025-04-01T01:06:08+00:00
 slug: "lsp"
+lang: en
 description: >
   LSP is a well-constructed attempt at defining subtypes, yet most of its ideas remain in academic texts rather than programming languages. And perhaps that fact itself is telling: if inheritance is still challenging to define precisely after half a century, do we even need it?
 ---

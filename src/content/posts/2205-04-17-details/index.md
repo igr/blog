@@ -1,6 +1,7 @@
 ---
 title: "When Is a Detail Just a Detail?"
-date: 2025-04-17T01:06:08+00:00
+date: 2025-04-17T01:05:03+00:00
+lang: en
 description: >
   A common phrase in software development claims that "X is just a detail"—but is that really true?
 ---
