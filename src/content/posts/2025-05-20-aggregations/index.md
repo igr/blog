@@ -4,7 +4,7 @@ date: 2025-05-20T01:05:03+00:00
 lang: en
 slug: "aggregations"
 description: >
-  Aggregations are a composite of parts. They should be modeled as data types, not collections.
+  Aggregations should be modeled as data types, not collections.
 ---
 
 This is a practice that is rarely discussed. Let us examine it more closely.
@@ -19,7 +19,7 @@ In OOP, associations are represented through method arguments within a class. Fo
 
 **Aggregation** is a special form of association that represents a "has-a" or "is-part-of" relationship. It implies a _whole-part_ relationship where the "part" can exist independently of the "whole." The "whole" (aggregate) object has a reference to the "part" (aggregated) object, but the "part" object's lifecycle is not strictly tied to the "whole." If the "whole" is destroyed, the "part" can still exist. The "part" can also be shared among multiple "wholes." Examples: A professor belongs to a department. A playlist has a song. A team contains a player.
 
-A common approach to implementing aggregations in OOP design is through collections stored within a container object. For example, a `Team` class typically contains a collection of `Player` instances. This pattern is widely adopted and reinforced in many ORM tutorials, where relationships are often modeled in this way. At first glance, it seems intuitive: a team has a collection of players—doesn’t it?
+A common approach to implementing aggregations is through collections stored within a container object. For example, a `Team` class typically contains a collection of `Player` instances. This pattern is widely adopted and reinforced in many ORM tutorials, where relationships are often modeled in this way. At first glance, it seems intuitive: a team has a collection of players—doesn’t it?
 
 ## Composition
 
@@ -39,7 +39,7 @@ From the `Team`'s perspective, there's no difference between containing a `Playe
 
 To summarize: using a collection to implement an aggregation between a "whole" and its "parts" effectively creates a composite relationship between the "whole" and the "part-collection." And that's problematic.
 
-## Aggregation is a Composite of Parts
+## Aggregation is a Composite of Whole and Parts
 
 The correct way to model aggregations is through a data type that contains both the "whole" and the collection of "parts."
 
