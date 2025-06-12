@@ -19,7 +19,7 @@ In OOP, associations are represented through method arguments within a class. Fo
 
 **Aggregation** is a special form of association that represents a "has-a" or "is-part-of" relationship. It implies a _whole-part_ relationship where the "part" can exist independently of the "whole." The "whole" (aggregate) object has a reference to the "part" (aggregated) object, but the "part" object's lifecycle is not strictly tied to the "whole." If the "whole" is destroyed, the "part" can still exist. The "part" can also be shared among multiple "wholes." Examples: A professor belongs to a department. A playlist has a song. A team contains a player.
 
-A common approach to implementing aggregations is through collections stored within a container object. For example, a `Team` class typically contains a collection of `Player` instances. This pattern is widely adopted and reinforced in many ORM tutorials, where relationships are often modeled in this way. At first glance, it seems intuitive: a team has a collection of players—doesn’t it?
+A common approach to implementing aggregations is through collections stored within a container object. For example, a `Team` class typically contains a collection of `Player` instances. This pattern is widely adopted and reinforced in many ORM tutorials, where relationships are often modeled in this way. At first glance, it seems intuitive: a team has a collection of players, doesn’t it?
 
 ## Composition
 
@@ -35,7 +35,7 @@ When the `Team` class has a collection of `Player` objects, we assume an aggrega
 
 Using a collection in this way reflects a form of primitive obsession: a common code smell. Every time we use a collection, we implicitly omit the specification of what that collection represents. It could be all players, active players, the top five players, etc. Each of these is different, yet they are all modeled the same way: as a collection, distinguished only by the field or variable name.
 
-From the `Team`'s perspective, there's no difference between containing a `Player[]` or a single `Player`—both establish a strong, composite relationship. In the `Team`–`Player[]` model, while `Team` may act as an aggregate for `Player`, it becomes a composite with respect to the `Player[]`. This implicitly strengthens the relationship between these two domain types.
+From the `Team`'s perspective, there's no difference between containing a `Player[]` or a single `Player` - both establish a strong, composite relationship. In the `Team`–`Player[]` model, while `Team` may act as an aggregate for `Player`, it becomes a composite with respect to the `Player[]`. This implicitly strengthens the relationship between these two domain types.
 
 To summarize: using a collection to implement an aggregation between a "whole" and its "parts" effectively creates a composite relationship between the "whole" and the "part-collection." And that's problematic.
 
@@ -43,4 +43,4 @@ To summarize: using a collection to implement an aggregation between a "whole" a
 
 The correct way to model aggregations is through a data type that contains both the "whole" and the collection of "parts."
 
-Rather than representing aggregations as raw collections, define a data type—e.g., `ActivePlayers(Team, Player[])`. The team no longer directly holds a collection of players. More important, the aggregate type now clearly communicates the nature of the relationship.
+Rather than representing aggregations as raw collections, define a data type: e.g., `ActivePlayers(Team, Player[])`. The team no longer directly holds a collection of players. More important, the aggregate type now clearly communicates the nature of the relationship.

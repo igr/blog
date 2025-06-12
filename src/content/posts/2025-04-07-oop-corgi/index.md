@@ -20,15 +20,15 @@ Maybe it’s just my two decades of missing the point, but I believe something i
 
 🔥 **Objects don’t exist without interaction.**
 
-This is a fundamental law of nature—and it applies to software too. You can’t model an object without knowing how it interacts with the world around it. Yet, OOP books always start with isolated objects: a bicycle has gears and can be ridden, a person has a name and age, a dog can bark. But that’s the wrong approach. You can’t design an object in isolation — you have to understand how it’s used.
+This is a fundamental law of nature and it applies to software too. You can’t model an object without knowing how it interacts with the world around it. Yet, OOP books always start with isolated objects: a bicycle has gears and can be ridden, a person has a name and age, a dog can bark. But that’s the wrong approach. You can’t design an object in isolation; you have to understand how it’s used.
 
 🔥 **Prioritize interactions over behavior.**
 
-Behavior is a response to interaction. This principle reflects the fundamental nature of systems, where interactions between components or entities drive the behaviors that follow. That’s why we should first focus on interactions—only then can we determine the necessary behaviors and design abstractions that fit the system.
+Behavior is a response to interaction. This principle reflects the fundamental nature of systems, where interactions between components or entities drive the behaviors that follow. That’s why we should first focus on interactions; only then can we determine the necessary behaviors and design abstractions that fit the system.
 
 🔥 **Data stays hidden inside objects.**
 
-This point can’t be emphasized enough. Even though OOP theory talks about data encapsulation, I rarely see it respected in practice. There should be no shared global state, no public getters or setters. Each object keeps its own private data — only what it needs to operate.
+This point can’t be emphasized enough. Even though OOP theory talks about data encapsulation, I rarely see it respected in practice. There should be no shared global state, no public getters or setters. Each object keeps its own private data, only what it needs to operate.
 
 🔥 **Channels connect senders and receivers.**
 
@@ -36,11 +36,11 @@ In the context of OOP, the concept of channels can be thought of as a metaphor f
 
 🔥 **Messages are signals.**
 
-A message is a signal to the receiver: "Hey, do something" or "Hey, something happened." The message includes data the receiver actually needs — not whatever the sender happens to have lying around.
+A message is a signal to the receiver: "Hey, do something" or "Hey, something happened." The message includes data the receiver actually needs; not whatever the sender happens to have lying around.
 
 🔥 **Objects are not shared.**
 
-In OOP, the principle of object isolation is crucial for maintaining the integrity and independence of objects. When objects communicate, they should exchange data rather than references to other objects. You don’t inject one object into another — you connect them with a communication channel. Objects are isolated and self-contained.
+In OOP, the principle of object isolation is crucial for maintaining the integrity and independence of objects. When objects communicate, they should exchange data rather than references to other objects. You don’t inject one object into another: you connect them with a communication channel. Objects are isolated and self-contained.
 
 ## Example in Java
 

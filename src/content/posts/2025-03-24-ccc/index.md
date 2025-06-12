@@ -6,17 +6,17 @@ description: "Communication as the foundation of software development and engine
 lang: en
 ---
 
-Programming is not a solitary activity. It’s easy to be misled into thinking otherwise since writing code is an individual process. But what is programming, then? Fundamentally, it is a form of _communication between humans_—software developers and all those involved in the engineering process. This principle serves as the foundation of the **Critical Communication (CCC)** meta-framework.
+Programming is not a solitary activity. It’s easy to be misled into thinking otherwise since writing code is an individual process. But what is programming, then? Fundamentally, it is a form of _communication between humans_: software developers and all those involved in the engineering process. This principle serves as the foundation of the **Critical Communication (CCC)** meta-framework.
 
-**CCC** (or **Triple-C**) is a meta-framework focused on cognitive understanding. Unlike traditional frameworks, it does not prescribe rules. Developers often seek structure—discrete answers (yes/no, 1/0) offer a sense of certainty, and rules provide comfort. However, the truth is: rules alone are meaningless without context and understanding.
+**CCC** (or **Triple-C**) is a meta-framework focused on cognitive understanding. Unlike traditional frameworks, it does not prescribe rules. Developers often seek structure, discrete answers (yes/no, 1/0) offer a sense of certainty, and rules provide comfort. However, the truth is: rules alone are meaningless without context and understanding.
 
-Rules are merely cognitive compressions—shortcuts derived from pre-established knowledge. **CCC** does not impose rigid rules but instead explains _how we think and work_, allowing us to focus on what software engineering truly is: communication. This perspective represents a radical shift—viewing every engineering activity as an _act of communication_.
+Rules are merely cognitive compressions, shortcuts derived from pre-established knowledge. **CCC** does not impose rigid rules but instead explains _how we think and work_, allowing us to focus on what software engineering truly is: communication. This perspective represents a radical shift: viewing every engineering activity as an _act of communication_.
 
 ## The Cognitive Journey
 
-**CCC** dissects the **cognitive journey**: a single cognitive activity that results in a concrete decision and outcome. There are no constraints on size or duration; its limits are set only by the human mind. And while the mind is powerful, its capacity for processing information is limited—we can only make so much progress in a given time.
+**CCC** dissects the **cognitive journey**: a single cognitive activity that results in a concrete decision and outcome. There are no constraints on size or duration; its limits are set only by the human mind. And while the mind is powerful, its capacity for processing information is limited: we can only make so much progress in a given time.
 
-A cognitive journey is what occurs whenever we make a decision and act upon it. This process happens countless times each day—whether we are choosing a variable name, selecting an architectural approach, or writing a project ticket. Despite differences in scale, all these activities follow the same cognitive phases.
+A cognitive journey is what occurs whenever we make a decision and act upon it. This process happens countless times each day, whether we are choosing a variable name, selecting an architectural approach, or writing a project ticket. Despite differences in scale, all these activities follow the same cognitive phases.
 
 ## The Two Realms of Cognition
 
@@ -29,13 +29,13 @@ Reality is singular and external; cognition is internal, multiplied, and shaped 
 
 ## Phase 1: *️⃣ Gathering Data
 
-Data consists of raw facts—unprocessed, qualitative, or quantitative. This initial phase does not involve action but simply acknowledges the existence of data within a given context.
+Data consists of raw facts: unprocessed, qualitative, or quantitative. This initial phase does not involve action but simply acknowledges the existence of data within a given context.
 
 Data can be accurate or inaccurate, relevant or irrelevant, complete or incomplete, and may have a limited lifespan.
 
 ## Phase 2: 🧠 Sensemaking for Information
 
-At this stage, individuals detect, process, organize, and structure data, assigning meaning within a specific context. This process—_understanding_—takes place in the cognitive realm, and each individual forms their own interpretation.
+At this stage, individuals detect, process, organize, and structure data, assigning meaning within a specific context. This process, _understanding_, takes place in the cognitive realm, and each individual forms their own interpretation.
 
 However, understanding is not necessarily correct.
 
@@ -45,9 +45,9 @@ DATA + MEANING -> INFORMATION + CONTEXT -> KNOWLEDGE
 
 ## Phase 3: 🧠 Forming Beliefs
 
-Beliefs represent what we _know_—a form of knowledge uniquely shaped by each individual. One part of belief emerges from structured understanding developed in the previous phase, based on data. However, even this component is not guaranteed to be accurate.
+Beliefs represent what we _know_: a form of knowledge uniquely shaped by each individual. One part of belief emerges from structured understanding developed in the previous phase, based on data. However, even this component is not guaranteed to be accurate.
 
-The other part of belief arises from _assumptions_—conscious or unconscious—about reality. Some assumptions are explicitly acknowledged, but many remain hidden.
+The other part of belief arises from _assumptions_, conscious or unconscious, about reality. Some assumptions are explicitly acknowledged, but many remain hidden.
 
 Beliefs are _cumulative_, shaped by prior experiences and knowledge. They are also _dynamic_, continuously evolving with new activities and insights. This reflects the ever-changing nature of software systems.
 
@@ -71,7 +71,7 @@ Every action generates new data, which feeds back into Phase 1, initiating a new
 
 Each cognitive phase is _individual_ and _subjective_. Even when given identical input, different individuals may form distinct beliefs. Additionally, individual beliefs may diverge from objective reality.
 
-This divergence—both among individuals and between individuals and reality—is known as **Uncertainty**.
+This divergence, both among individuals and between individuals and reality, is known as **Uncertainty**.
 
 Uncertainty can be described in two ways:
 
@@ -82,7 +82,7 @@ Higher uncertainty means greater ambiguity in shared beliefs, increasing the lik
 
 ## The Role of Communication
 
-Communication is the process of _exchanging data_—whether through speech, writing (code, documentation), or other means. The purpose of communication is to **reduce uncertainty** by aligning individual beliefs as closely as possible to reality.
+Communication is the process of _exchanging data_: whether through speech, writing (code, documentation), or other means. The purpose of communication is to **reduce uncertainty** by aligning individual beliefs as closely as possible to reality.
 
 Since decision-making and action stem from shared beliefs, maintaining a low level of uncertainty within a given context is crucial.
 
@@ -90,7 +90,7 @@ However, communication is inherently imperfect:
 
 + We can only transmit raw data, not meaning.
 + We are constrained by bandwidth (how much we can communicate) and processing speed (how quickly we can understand).
-+ Communication is inherently asynchronous. Each individual defines their own “now” within their unique cognitive realm, meaning these mental spaces are never perfectly synchronized. Perception, interpretation, and understanding occur at different times for different individuals—everything is relative.
++ Communication is inherently asynchronous. Each individual defines their own “now” within their unique cognitive realm, meaning these mental spaces are never perfectly synchronized. Perception, interpretation, and understanding occur at different times for different individuals: everything is relative.
 
 Thus, reducing uncertainty is both fragile and challenging.
 
@@ -106,7 +106,7 @@ At its core, **Critical Communication distributes cognitive processing across in
 
 ## How CCC Helps
 
-Uncertainty is inherent in software engineering—it arises from our ability to understand systems, work with abstractions, process data, adhere to project rules, communicate effectively, and apply methodologies. Fundamentally, uncertainty reflects our doubts about the systems we develop.
+Uncertainty is inherent in software engineering: it arises from our ability to understand systems, work with abstractions, process data, adhere to project rules, communicate effectively, and apply methodologies. Fundamentally, uncertainty reflects our doubts about the systems we develop.
 
 To mitigate uncertainty, we must:
 

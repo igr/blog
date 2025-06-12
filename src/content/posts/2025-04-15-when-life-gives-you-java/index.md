@@ -7,25 +7,25 @@ description: >
   What to do when you are stuck with Java? Make lemonade!
 ---
 
-Java is a programming language designed for small devices and web applets. The real powerhouse behind it is not the language, but the JVM ecosystem — a remarkably robust and versatile platform.
+Java is a programming language designed for small devices and web applets. The real powerhouse behind it is not the language, but the JVM ecosystem - a remarkably robust and versatile platform.
 
 Java brings with it a strong OOP paradigm. Unfortunately, in practice, this paradigm often diverges from its [original intent](https://oblac.rs/woof-oop/). Over time, OOP in Java has become more of a justification for clinging to outdated design choices than a path toward better software architecture.
 
-That being sa(i)d, I’ve significantly changed the way I write Java code — at least when I have the freedom to do so. What follows are a few personal practices I’ve found valuable. These aren’t revolutionary ideas, just lessons borrowed from more expressive, often functional, languages. And no, I’m not talking about Java’s `Stream`, `Optional`, or `Function` APIs.
+That being sa(i)d, I’ve significantly changed the way I write Java code, at least when I have the freedom to do so. What follows are a few personal practices I’ve found valuable. These aren’t revolutionary ideas, just lessons borrowed from more expressive, often functional, languages. And no, I’m not talking about Java’s `Stream`, `Optional`, or `Function` APIs.
 
 ## Package Is Your Friend
 
 I default all internal code to package-private scope. If something needs to be exposed outside the package, only then do I make it public.
 
-Contrary to what the dot notation might imply, Java doesn’t truly support sub-packages. Funny "feature" for a language that leans heavily on inheritance:) By keeping everything in a single package, I’m forced to apply naming conventions to organize classes by capability — something I’m not particularly fond of.
+Contrary to what the dot notation might imply, Java doesn’t truly support sub-packages. Funny "feature" for a language that leans heavily on inheritance:) By keeping everything in a single package, I’m forced to apply naming conventions to organize classes by capability, something I’m not particularly fond of.
 
-What I’m essentially doing is treating packages like modules. This works, to a point. But occasionally — often due to external frameworks — implementation details leak beyond package boundaries. In those cases, I split the package into two separate, compilable units: one containing the public API, and the other holding its implementation.
+What I’m essentially doing is treating packages like modules. This works, to a point. But occasionally - often due to external frameworks - implementation details leak beyond package boundaries. In those cases, I split the package into two separate, compilable units: one containing the public API, and the other holding its implementation.
 
 ## `final` Is Your Friend. `null` Is Not.
 
-I try to work with immutability as much as possible — about 95% of my references are `final`. Unfortunately, Java doesn’t make this easy. Declaring `final` requires explicit, repetitive effort, but thankfully, there are IDE plugins that automate this.
+I try to work with immutability as much as possible: about 95% of my references are `final`. Unfortunately, Java doesn’t make this easy. Declaring `final` requires explicit, repetitive effort, but thankfully, there are IDE plugins that automate this.
 
-Once you embrace immutability, `null` starts to disappear. Of course, I’m not dogmatic — if writing 20+ lines of workaround code just to avoid a `null` makes no sense, I’ll use `null` (in Java.) But I’ll scope its usage as tightly as possible.
+Once you embrace immutability, `null` starts to disappear. Of course, I’m not dogmatic: if writing 20+ lines of workaround code just to avoid a `null` makes no sense, I’ll use `null` (in Java.) But I’ll scope its usage as tightly as possible.
 
 ## No `extend`
 
@@ -83,11 +83,11 @@ public sealed interface AssessmentError {
 }
 ```
 
-Yes, I’ve included Jackson annotations — a reminder that serialization is often part of the picture, and we still need to deal with it.
+Yes, I’ve included Jackson annotations: a reminder that serialization is often part of the picture, and we still need to deal with it.
 
 ## No Exceptions for Business Logic
 
-I reserve exceptions for actual runtime failures — things like memory errors, I/O issues, or failed database connections.
+I reserve exceptions for actual runtime failures: things like memory errors, I/O issues, or failed database connections.
 
 Business logic errors are returned as part of the result. I don’t use a generic `Either` or `Response` wrapper (no compositions in Java); instead, I define a dedicated ADT for each result type.
 

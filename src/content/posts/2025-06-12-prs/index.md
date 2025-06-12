@@ -4,12 +4,12 @@ date: 2025-06-12T01:05:03+00:00
 lang: en
 slug: "proud-to-procrastinate"
 description: >
-  First-IN-Last-OUT - this is how so many development practices end up shaping our engineering lives. Including Pull Requests.
+  First-IN-Last-OUT: this is how so many development practices end up shaping our engineering lives. Including Pull Requests.
 ---
 
-Pull Requests were invented by Git’s creator and later blasted into fame by GitHub around 2008. PRs are specifically designed to simplify accepting contributions from the outside world—contributors we may not know, who might not fully grasp all the intricate details of the project and its domain.
+Pull Requests were invented by Git’s creator and later blasted into fame by GitHub around 2008. PRs are specifically designed to simplify accepting contributions from the outside world; contributors we may not know, who might not fully grasp all the intricate details of the project and its domain.
 
-In the open-source world, PRs make perfect sense. They offer a straightforward way for people _outside_ the core team to get involved. Meanwhile, the core team retains control: they can review proposals, suggest improvements, and ultimately decide whether to integrate the changes. That’s the beauty of PRs — they’ve significantly enhanced collaboration in open-source projects.
+In the open-source world, PRs make perfect sense. They offer a straightforward way for people _outside_ the core team to get involved. Meanwhile, the core team retains control: they can review proposals, suggest improvements, and ultimately decide whether to integrate the changes. That’s the beauty of PRs: they’ve significantly enhanced collaboration in open-source projects.
 
 Or, as Hermann Hesse put it in Steppenwolf:
 
@@ -23,11 +23,11 @@ Now, wait a second: just because something was invented for one purpose doesn’
 
 So, what’s the core problem with PRs?
 
-We’re essentially asking engineers to contribute to a codebase while _denying_ them full **ownership** of that codebase—they can’t even decide whether their own change gets accepted. Why on earth would we ask someone to request permission to change code they’re supposed to own?
+We’re essentially asking engineers to contribute to a codebase while _denying_ them full **ownership** of that codebase; they can’t even decide whether their own change gets accepted. Why on earth would we ask someone to request permission to change code they’re supposed to own?
 
 And that’s where dysfunction creeps in.
 
-Stripping ownership from the team is a critical mistake—it goes against the very essence of teamwork. Without clear ownership, no one cares deeply, and everyone gets pulled into endless opinions and debates. In my native tongue, there’s a proverb: "mnogo babica, kilavo dete," which loosely translates to the English "Too many cooks spoil the broth." When too many people try to manage or interfere, the end result often suffers.
+Stripping ownership from the team is a critical mistake: it goes against the very essence of teamwork. Without clear ownership, no one cares deeply, and everyone gets pulled into endless opinions and debates. In my native tongue, there’s a proverb: "mnogo babica, kilavo dete," which loosely translates to the English "Too many cooks spoil the broth." When too many people try to manage or interfere, the end result often suffers.
 
 And that’s just the tip of the iceberg. Who decides what changes go in? The architect? Only seniors? What knowledge must they have? Do you accept all their remarks? Should non-functional changes even block a PR? And who reviews the reviewers?
 
@@ -41,7 +41,7 @@ And again, this is still just the tip of the iceberg. I won’t dive into all th
 
 ## FILO Development Practices
 
-**First-IN-Last-OUT** - this is how so many development practices end up shaping our engineering lives. We’re always eager to adopt new practices—and understandably so. After all, software engineering seems to be getting less and less like actual engineering, right? New practices are shiny, each promising to be the solution.
+**First-IN-Last-OUT** - this is how so many development practices end up shaping our engineering lives. We’re always eager to adopt new practices, and understandably so. After all, software engineering seems to be getting less and less like actual engineering, right? New practices are shiny, each promising to be the solution.
 
 + Take a shot of TDD - your project will flourish!
 + Sniff that OOP - your business problems are covered!

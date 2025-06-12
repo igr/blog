@@ -50,7 +50,7 @@ pretvaranja namera u _izvršenja_: akcije koje obavlja softverski sistem. Transf
 namera -> izvršenje + entropija
 ```
 
-Svaka komponenta softverskog sistema ima ugrađene namere. Bilo da se radi o jednostavnoj funkciji, modulu, strategiji implementacije, dokumentaciji, testovima, upravljanju projektom — svaka ljudska interakcija s projektom proizilazi iz namere i proizvodi nameru.
+Svaka komponenta softverskog sistema ima ugrađene namere. Bilo da se radi o jednostavnoj funkciji, modulu, strategiji implementacije, dokumentaciji, testovima, upravljanju projektom - svaka ljudska interakcija s projektom proizilazi iz namere i proizvodi nameru.
 
 Impuls promene je motivacija ili zahtev za izmenom sistema. Promena, dakle, proizvodi nove namere: dodavanje novih funkcionalnosti, menjanje postojećih, ispravke, dopune:
 
@@ -83,6 +83,6 @@ relevantne informacije -> smanjenje nedoumice
 + Primenom pritiska dolazimo do relevantnih informacija.
 + Informacijama smanjujemo nedoumice i dobijamo precizniji i zdraviji softverski sistema.
 
-Ovaj okvir mi svakodnevno pomaže u detektovanju loših obrazaca razvoja. Primetio sam da i mnogi poznati softverski principi proizilaze iz ovog okvira. Nije iznenađujuće, na kraju krajeva, jer je razvoj softvera — komunikacija.
+Ovaj okvir mi svakodnevno pomaže u detektovanju loših obrazaca razvoja. Primetio sam da i mnogi poznati softverski principi proizilaze iz ovog okvira. Nije iznenađujuće, na kraju krajeva, jer je razvoj softvera - komunikacija.
 
 Sigurno da postoji sličnosti sa drugim metrikama softverskih sistema, kao što su kohezija, uvezanost itd. Verovatmo je da pričamo o istim principima. Važna razlika je što, za razliku od knjiških definicija ostalih metrika, naglašeno na prvo mesto stavljam upravo ljudski faktor: razumevanje.
