@@ -30,7 +30,7 @@ For example, I was once asked about the database-per-microservice scenario. I an
 
 But I got the job, and I found a complete, utter mess in the project. They were just doing things for the sake of doing them. That was the first and only contract I quit after two months.
 
-Another example: I was asked how I would maintain the quality of a project about six minutes before the end of the interview. I asked: "What is quality?" I could probably write a small book about software quality (not saying it would be correct, but I'd have something to say since I think about it a lot). This response wasn't in alignment with what the interviewer expected, so they never returned my call. C'est la vie.
+Another example: I was asked how I would maintain the quality of a project about six minutes before the end of the interview. I asked: "What is quality for you?" I could probably write a small book about software quality (not saying it would be correct, but I'd have something to say since I think about it a lot). This response wasn't in alignment with what the interviewer expected, so they never returned my call. I simply cannot answer that question in five minutes or less. C'est la vie.
 
 This all _feels_ fundamentally wrong. Alignment of ideas should not be the metric for interviews, nor should it determine a candidate's capabilities. We're not hiring for ideological conformity: we're supposed to be hiring for technical competence and problem-solving ability. When interviews become about saying the "right" buzzwords rather than demonstrating actual understanding, we've turned the hiring process into a game of corporate Simon Says.
 
