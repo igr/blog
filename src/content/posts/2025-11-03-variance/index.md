@@ -54,6 +54,8 @@ Welcome to variance.
 + In Scala: `List[+A]` is covariant
 + `List[Nothing] <: List[Ostrich] <: List[Bird] <: List[Animal] <: List[Any]`
 
+Why does this make sense? A `List[Ostrich]` can safely be used wherever a `List[Bird]` is expected, because if you're reading from a list expecting `Bird` elements, getting `Ostrich` elements is perfectly safe. You can treat every `Ostrich` as a `Bird`. This is why covariance works for immutable collections that you only read from.
+
 Covariance problem with writing:
 
 ```scala
