@@ -46,7 +46,7 @@ Welcome to variance.
 
 ## The Three Kinds of Variance
 
-\1. **Covariance** (preserves subtyping direction)
+1. **Covariance** (preserves subtyping direction)
 
 + The relationship goes in the same direction
 + Safe for output/producers (things you read from)
@@ -66,7 +66,7 @@ animals = animals :+ new Animal() // add a generic Animal
 // now birds would contain a generic Animal, not a Bird!
 ```
 
-\2. **Contravariance** (reverses subtyping direction)
+2. **Contravariance** (reverses subtyping direction)
 
 + The relationship goes in the opposite direction
 + Safe for input/consumers (things you write to)
@@ -88,7 +88,7 @@ val ostrich: Ostrich = ostriches.head // expecting an Ostrich...
 // ...but we'd get a generic Animal or Bird!
 ```
 
-\3. **Invariant** (no subtyping relationship)
+3. **Invariant** (no subtyping relationship)
 
 + No relationship between the complex types, regardless of component types
 + Safe for both reading and writing (mutable structures)
