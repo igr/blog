@@ -2,6 +2,7 @@
 title: "Types, Again"
 date: 2025-11-02T01:06:08+00:00
 slug: "types-again"
+lang: en
 description: "Classes and types are not the same thing."
 ---
 
