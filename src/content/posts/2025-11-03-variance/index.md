@@ -108,22 +108,36 @@ The first answer is simple:
 Any => Nothing ✅
 ```
 
-It is correct, since `-T` can be replaced with `Any`, and `+R` can be replaced with `Nothing`.
+It is correct since `-T` can be replaced with `Any`, and `+R` can be replaced with `Nothing`.
 
 Now let's analyze `transformPrinter(f: Printer[Bird] => List[Bird])`. We need a function of type `Printer[Bird] => List[Bird]`, which is `Function1[Printer[Bird], List[Bird]]`. Since functions are `Function1[-T, +R]`:
 
-+ Input (`-T`): We can provide a _supertype_ of `Printer[Bird]`
-+ Output (`+R`): We can provide a _subtype_ of `List[Bird]`
++ Input (`-T`): we can provide a _supertype_ of `Printer[Bird]`
++ Output (`+R`): we can provide a _subtype_ of `List[Bird]`
 
 What are the supertypes of `Printer[Bird]`?
 
-Since `Printer[-A]` is contravariant: `Printer[Any] <: Printer[Animal] <: Printer[Bird] <: Printer[Ostrich] <: Printer[Nothing]`. Supertypes are on the right; the answer is: `Printer[Bird] <: Printer[Ostrich] <: Printer[Nothing]`.
+Since `Printer[-A]` is contravariant:
+
+```
+Printer[Any] <: Printer[Animal] <: Printer[Bird] <: Printer[Ostrich] <: Printer[Nothing]
+```
+
+Supertypes are on the right; the answer is: `Printer[Bird] <: Printer[Ostrich] <: Printer[Nothing]`.
 
 What are the subtypes of `List[Bird]`?
 
-Since `List[+A]` is covariant: `List[Nothing] <: List[Ostrich] <: List[Bird] <: List[Animal] <: List[Any]`. Subtypes are on the left; the answer is: `List[Nothing] <: List[Ostrich] <: List[Bird]`.
+Since `List[+A]` is covariant:
 
-Answers:
+```
+List[Nothing] <: List[Ostrich] <: List[Bird] <: List[Animal] <: List[Any]
+```
+
+Subtypes are on the left; the answer is: `List[Nothing] <: List[Ostrich] <: List[Bird]`.
+
+Now we know supertypes of the input and subtypes of the output.
+
+Final answers:
 
 ```scala
 Printer[Nothing] => List[Nothing] ✅
