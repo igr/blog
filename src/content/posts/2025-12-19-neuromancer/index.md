@@ -2,7 +2,7 @@
 title: "Algorithms, AI, Art and Neuromancer"
 date: 2025-12-19T01:06:08+00:00
 slug: algorithms-ai-art-neuromancer
-description: "..."
+description: "Algorithmic art is not AI art, even if both use computers. This is a reflection on creation, intention, and what we lose when we confuse making with choosing."
 lang: en
 ---
 
