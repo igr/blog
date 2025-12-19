@@ -20,7 +20,11 @@ That reaction is understandable; I cannot deny that. However, it may also be a w
 
 I wanted to explore and better understand what happened here, hence this text. It is not an excuse, as I do not need one. I am fine with my work. I enjoy creating it, I enjoy programming, and I feel I can express myself this way.
 
-Let me conclude this chapter with a message from a fellow redditor:
+Let me conclude this chapter with two messages from a fellow redditors:
+
+> Wow. This sucks actually. You did a great job showing how overreliance on technology can destroy our humanity.
+
+And:
 
 > I'm sorry people in a cyberpunk chat of all subs don't understand algorithmic art. as a fellow artist, I just want to recognize your image, it's good, clever, and a great text to choose as the base. it's really disheartening to see people just assume it's AI and come out firing
 
@@ -46,7 +50,7 @@ There is one big difference: the initial spark, the idea, the urge, the message,
 
 This is similar to choosing which pictures to hang on your walls. That does not make you a _creator_, but a _curator_.
 
-Nano Banana, after couple of tries:
+Nano Banana, after couple of tries (🤦‍♂️):
 
 ![Nano Banana](nano2.jpg)
 
