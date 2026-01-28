@@ -1,7 +1,7 @@
 ---
 title: "The Day the Sun Didn't Shine"
 date: 2026-01-28T01:06:08+00:00
-slug: definitions-to-clarify-typing
+slug: the-day-the-sun-didnt-shine
 description: "A 114-page specification about reusable visual components. And a generation of developers who only heard what they wanted to hear."
 lang: en
 ---
