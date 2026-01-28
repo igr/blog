@@ -26,7 +26,7 @@ Exactly. JavaBeans is all about components that are, to put it simply, connector
 
 The specification says nothing about how to build the application itself. There's nothing about how you should model your state. There's nothing about your state needing to be modeled with setters and getters. JavaBeans: yes. State: no. And, keeping in mind that it's a definition for visual components, I can see why there are setters and getters for JavaBeans. But no, a JavaBean is not your internal state. In fact, Chapter 8 contains an explicit note on this:
 
-Property editors are given an object representing the current value of a property. However a property editor should not directly change this initial object. Instead, based on user input, it should create a new object to reflect the revised state of the property.
+> Property editors are given an object representing the current value of a property. However a property editor should not directly change this initial object. Instead, based on user input, it should create a new object to reflect the revised state of the property.
 
 Truth be told, the specification could have done a better job explaining JavaBeans versus internal application state. Well, given it's Java and the OOP madness of the time, I can see how that was never going to happen.
 
