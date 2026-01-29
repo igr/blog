@@ -2,7 +2,7 @@
 title: "Me, Myself and AI"
 date: 2026-01-29T01:06:08+00:00
 slug: me-myself-and-ai
-description: "My AI workflow is fast, lean, and deliberately low-effort. Yet the most productive moments happen when I pull the plug entirely. This isn't about AI. It's about something we've been doing long before it existed."
+description: "Effective AI-assisted development isn't about maximizing code generation. It's about staying in control and preserving space for thought."
 lang: en
 ---
 
