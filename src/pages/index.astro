@@ -31,7 +31,7 @@ const years = Array.from(groups.keys()).sort((a, b) => b.localeCompare(a));
         {groups.get(year)!.map(post => (
           <li>
             <PostDate date={post.data.date} short={true}/>
-            <div><a href={post.slug}>{post.data.title}</a><br>
+            <div><a href={post.id}>{post.data.title}</a><br>
               <div class="desc">{post.data.description}</div>
             </div>
           </li>

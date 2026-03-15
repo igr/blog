@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /Users/igorspasic/prj/igr/blog/src/styles/*.scss)",
+      "Bash(npm list astro)"
+    ]
+  }
+}

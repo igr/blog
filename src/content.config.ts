@@ -1,7 +1,16 @@
-import {z, defineCollection} from "astro:content";
+import {defineCollection} from "astro:content";
+import {z} from "astro/zod";
+import {glob} from "astro/loaders";
 
 const postsCollection = defineCollection({
-  type: 'content',
+  loader: glob({
+    pattern: '**/*.md',
+    base: './src/content/posts',
+    generateId: ({entry, data}) => {
+      if (data.slug) return data.slug as string;
+      return entry.replace(/\/index\.md$/, '').replace(/\.md$/, '');
+    }
+  }),
   schema: z.object({
     title: z.string(),
     date: z.date(),
@@ -11,7 +20,10 @@ const postsCollection = defineCollection({
   })
 });
 const apothegmsCollection = defineCollection({
-  type: 'content',
+  loader: glob({
+    pattern: '**/*.md',
+    base: './src/content/apothegms',
+  }),
   schema: z.object({
     title: z.string()
   })

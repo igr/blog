@@ -1,6 +1,7 @@
 ---
+import {render} from 'astro:content';
 const { entry, link } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 const title = entry.data.title
 const no = entry.id.split("-")[0];
 const href = (link) ? '/apothegms/' + no : '/apothegms/#' + no;

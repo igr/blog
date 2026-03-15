@@ -13,7 +13,7 @@ export async function GET(context) {
       title: post.data.title,
       description: post.data.description,
       pubDate: post.data.date,
-      link: `/${post.slug}/`,
+      link: `/${post.id}/`,
     })),
     customData: `<language>sr-RS</language>`,
   });

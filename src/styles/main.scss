@@ -1,5 +1,7 @@
-@import "vars";
-@import "root";
+@use "vars" as *;
+@use "root";
+@use "button";
+@use "dark";
 
 *,
 *::before,
@@ -639,5 +641,3 @@ figcaption p {
   display: none !important;
 }
 
-@import "button";
-@import "dark";

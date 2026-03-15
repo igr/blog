@@ -2,7 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import ApoCard from "../components/ApoCard.astro";
 const {apo} = Astro.props
-const no = apo.slug.split("-")[0]
+const no = apo.id.split("-")[0]
 ---
 
 <BaseLayout home={false} title="Apothegms" description={no + '. ' + apo.data.title} ogImg="/o-a.png">
