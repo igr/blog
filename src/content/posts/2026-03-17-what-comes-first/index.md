@@ -19,6 +19,8 @@ So my answer isn't a single ranking. I want **Simple** and **Correct** to be _en
 
 Both traits are present, just in different contexts.
 
+> By making it correct, we are able to make it simple.
+
 ## Trios de Orderos
 
 This is an old question, not invented by me. After sitting with it for a while, I realized that ordering traits is a surprisingly effective way to interrogate your own assumptions. Here are a few trios worth ranking:
