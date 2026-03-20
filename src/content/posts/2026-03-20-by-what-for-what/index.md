@@ -91,3 +91,15 @@ Now you know why I preach modules: clean boundaries are not optional.
 What this means for everyday development: we need two views of the code simultaneously. One is by type: packages, layers, and all that. The other is by capability: essentially a set of function calls across packages that together deliver a single piece of value, something closer to a stack trace than a directory listing.
 
 Something worth pondering: OOP is fundamentally about organizing types around data. This is the essential reason why thinking about capabilities in OOP is not about hierarchies; it should be about functions, kept separate from data.
+
+## Pattern Emerges
+
+The pattern across every domain and example in this piece is consistent enough to be called a law.
+
+_Type-based organization is good for building capability and storage._ It is where expertise lives, where the army trains its recruits, where the library catalogs, where the museum builds curatorial knowledge, where the engineer goes deep.
+
+_Function-based organization is good for deploying capability._ It is where the dish gets made, where the mission gets executed, where the neighborhood actually works, where the feature gets shipped.
+
+Every mature system eventually figures this out and _runs both in parallel._ The interesting part is not which one to pick; it is the ritual of switching between them: mise en place, the combat task force, the sprint kickoff, the museum rehang. Herbert Simon (American psychologist) called these "**nearly decomposable hierarchies**": a structure found in complex systems, both natural and artificial, where subsystems are relatively independent of each other in the short term, but interact in meaningful ways over longer timescales. The domains where things go badly wrong are usually the ones that picked one organizational principle and declared the problem solved.
+
+There is no wrong answer to the question: "By What, or For What?" The trick is recognizing that it was never really a choice.
