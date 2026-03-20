@@ -2,7 +2,7 @@
 title: "By What, or For What?"
 date: 2026-03-20T01:06:08+00:00
 slug: by-what-or-for-what
-description: ""
+description: "Every field has the same drawer problem. Some figured it out. Some had to demolish a building first."
 lang: en
 ---
 
