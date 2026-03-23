@@ -8,9 +8,7 @@ lang: en
 
 There was a time when we were all family.
 
-> We are family
-> Get up, everybody, and sing
-> We are family
+> We are family / Get up, everybody, and sing / We are family
 
 The ubiquitous question in job interviews (once you had survived the inverted-binary-tree challenge) was: "We are all like family here... why are you excited to work with us?"
 
@@ -18,10 +16,7 @@ Saying that you simply found a job listing and that your skills seemed like a re
 
 Things changed. AI is the new family.
 
-> Computer love, computer love
-> Another lonely night
-> Stare at the TV screen
-> I don't know what to do
+> Computer love, computer love / Another lonely night / Stare at the TV screen / I don't know what to do
 
 The new ubiquitous question in job interviews is: "how do you use AI?" I once answered honestly: "It's a tool. I try to understand where it works and where it fails, and I have a couple of years of real experience with it." Red flag. Fast track to the end of the interview.
 
